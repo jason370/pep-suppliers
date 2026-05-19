@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pep Suppliers - Global research peptide sourcing. Domestic fast-ship or overseas discount. Transparent sourcing, quality screening, competitive pricing for laboratory research.">
+<meta name="keywords" content="research peptides, peptide sourcing, laboratory peptides, research chemicals, peptide supplier">
+<meta name="author" content="Pep Suppliers">
+<title>Pep Suppliers – Research Peptide Sourcing</title>
+<style>
+/* ===== RESET & BASE ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: #1a1a2e;
+  background: #fafbfc;
+  line-height: 1.6;
+}
+
+/* ===== HEADER / NAV ===== */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e4e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.3px;
+}
+
+nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: #5a6270;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+nav a:hover, nav a.active {
+  color: #0052cc;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f9 100%);
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #5a6270;
+  margin-bottom: 0;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== SHIPPING OPTIONS GRID ===== */
+.shipping-section {
+  max-width: 1240px;
+  margin: 4rem auto 0;
+  padding: 0 2rem;
+}
+
+.shipping-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.shipping-card {
+  background: #ffffff;
+  border: 1.5px solid #e0e4e8;
+  border-radius: 16px;
+  padding: 3rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.shipping-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.shipping-card.overseas::before {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.shipping-card:hover {
+  border-color: #0052cc;
+  box-shadow: 0 16px 40px rgba(0, 82, 204, 0.1);
+  transform: translateY(-4px);
+}
+
+.shipping-card.overseas:hover {
+  border-color: #d97706;
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.1);
+}
+
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.shipping-card.overseas .card-badge {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.shipping-card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 1rem;
+  letter-spacing: -0.3px;
+}
+
+.shipping-card > p {
+  color: #5a6270;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.card-features {
+  list-style: none;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.card-features li {
+  color: #5a6270;
+  font-size: 14px;
+  padding: 0.6rem 0 0.6rem 1.75rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.card-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.shipping-card.overseas .card-features li::before {
+  color: #f59e0b;
+}
+
+.price-highlight {
+  background: #f3f4f6;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.price-highlight .label {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.price-highlight .amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #0052cc;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #0041a3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 82, 204, 0.25);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section-alt {
+  background: #ffffff;
+}
+
+.section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #5a6270;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 2rem 0 1rem;
+  letter-spacing: -0.3px;
+}
+
+.section p {
+  color: #5a6270;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* ===== ABOUT / HOW IT WORKS ===== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.content-text p {
+  margin-bottom: 1rem;
+}
+
+.process-steps {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.process-steps li {
+  padding: 1.25rem 0 1.25rem 2.5rem;
+  position: relative;
+  color: #5a6270;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.process-steps li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #0052cc;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.highlight-box {
+  background: #e8f3ff;
+  border-left: 4px solid #0052cc;
+  padding: 1.75rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.highlight-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #0052cc;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ===== QUALITY/TRUST CARDS ===== */
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.quality-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #0052cc;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.quality-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.quality-card p {
+  font-size: 14px;
+  color: #5a6270;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.quality-card:hover {
+  border-left-color: #059669;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== PRODUCTS GRID ===== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  border-color: #0052cc;
+  box-shadow: 0 12px 32px rgba(0, 82, 204, 0.08);
+  transform: translateY(-2px);
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.product-strength {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.coa-badge {
+  display: inline-block;
+  background: #e8f3ff;
+  color: #0052cc;
+  font-size: 11px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.product-pricing {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  border: 1px solid #e5e7eb;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price-row .label {
+  color: #6b7280;
+}
+
+.price-row .amount {
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.price-row.domestic .amount {
+  color: #059669;
+}
+
+.price-row.overseas .amount {
+  color: #d97706;
+}
+
+.shipping-time {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===== FAQ ===== */
+.faq-container {
+  max-width: 820px;
+  margin: 2rem auto 0;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: #0052cc;
+  box-shadow: 0 4px 12px rgba(0, 82, 204, 0.06);
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #1a1a2e;
+  background: #ffffff;
+  transition: background 0.2s ease;
+  user-select: none;
+}
+
+.faq-question:hover {
+  background: #f9fafb;
+}
+
+.faq-toggle {
+  font-size: 20px;
+  color: #0052cc;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.faq-item.open .faq-toggle {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  background: #f9fafb;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-top: 1px solid #e5e7eb;
+}
+
+.faq-item.open .faq-answer {
+  padding: 1.5rem;
+  max-height: 600px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: #5a6270;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ===== COMPARISON TABLE ===== */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #ffffff;
+  border: 1px solid #e0e4e8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.comparison-table th {
+  background: #f3f4f6;
+  padding: 1.25rem;
+  text-align: left;
+  font-weight: 700;
+  color: #1a1a2e;
+  border-bottom: 2px solid #e0e4e8;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.comparison-table td {
+  padding: 1.25rem;
+  border-bottom: 1px solid #e0e4e8;
+  font-size: 14px;
+  color: #5a6270;
+}
+
+.comparison-table .feature {
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.check {
+  color: #10b981;
+  font-weight: 700;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #f9fafb;
+  border-top: 1px solid #e0e4e8;
+  padding: 3.5rem 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  color: #5a6270;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0.75rem 0;
+}
+
+.footer-content strong {
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.footer-contact {
+  margin: 1.5rem 0;
+}
+
+.footer-contact a {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-contact a:hover {
+  color: #0041a3;
+}
+
+.footer-disclaimer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e4e8;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* ===== PAGE NAVIGATION ===== */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.25s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .shipping-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .shipping-card {
+    padding: 2rem;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 1.25rem;
+    font-size: 12px;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+<div class="navbar">
+<div class="logo">Pep Suppliers</div>
+<nav>
+<a href="#" onclick="showPage('home')" class="nav-link active">Home</a>
+<a href="#" onclick="showPage('about')" class="nav-link">About</a>
+<a href="#" onclick="showPage('how')" class="nav-link">How it works</a>
+<a href="#" onclick="showPage('shipping')" class="nav-link">Shipping</a>
+<a href="#" onclick="showPage('products')" class="nav-link">Products</a>
+<a href="#" onclick="showPage('quality')" class="nav-link">Quality</a>
+<a href="#" onclick="showPage('faq')" class="nav-link">FAQ</a>
+</nav>
+</div>
+</header>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="home" class="page active">
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-container">
+<h1>Global peptide sourcing</h1>
+<p>We source from research labs worldwide, screen suppliers, and organize two clear paths: domestic speed or overseas savings.</p>
+</div>
+</div>
+
+<!-- SHIPPING OPTIONS -->
+<div class="shipping-section">
+<div class="shipping-grid">
+<!-- DOMESTIC -->
+<div class="shipping-card domestic">
+<div class="card-badge">⚡ Fast track</div>
+<h3>Domestic</h3>
+<p>US-based inventory. Predictable, fast delivery.</p>
+<div class="price-highlight">
+<span class="label">Typical pricing</span>
+<span class="amount">Premium</span>
+</div>
+<ul class="card-features">
+<li>Shipping: 2–5 days</li>
+<li>US inventory</li>
+<li>Predictable timeline</li>
+<li>No customs delays</li>
+</ul>
+<button class="btn btn-primary" onclick="showPage('shipping')">Learn more</button>
+</div>
+
+<!-- OVERSEAS -->
+<div class="shipping-card overseas">
+<div class="card-badge">💰 Value path</div>
+<h3>Overseas</h3>
+<p>Direct lab sourcing. Deep discounts, longer timeline.</p>
+<div class="price-highlight">
+<span class="label">Typical pricing</span>
+<span class="amount">Discounted</span>
+</div>
+<ul class="card-features">
+<li>Shipping: 2–3 weeks</li>
+<li>Direct sourcing</li>
+<li>Deep discounts</li>
+<li>Bulk-friendly</li>
+</ul>
+<button class="btn btn-primary" onclick="showPage('shipping')">Learn more</button>
+</div>
+</div>
+</div>
+
+<!-- WHY PEP SUPPLIERS -->
+<div class="section">
+<h2>Why Pep Suppliers</h2>
+<div class="quality-grid">
+<div class="quality-card">
+<h4>Transparent sourcing</h4>
+<p>We disclose our approach and let you choose speed or savings.</p>
+</div>
+<div class="quality-card">
+<h4>Quality screening</h4>
+<p>We evaluate suppliers and organize available documentation.</p>
+</div>
+<div class="quality-card">
+<h4>Competitive options</h4>
+<p>Compare domestic and overseas paths side by side.</p>
+</div>
+<div class="quality-card">
+<h4>Research focus</h4>
+<p>Clear positioning for laboratory applications only.</p>
+</div>
+</div>
+</div>
+
+<!-- FEATURED PRODUCTS PREVIEW -->
+<div class="section section-alt">
+<h2>Featured products</h2>
+<p class="section-subtitle">Demo pricing shown. All products intended for laboratory research use only.</p>
+<div class="products-grid">
+<div class="product-card">
+<div class="product-name">BPC-157</div>
+<div class="product-strength">5mg vial</div>
+<div class="coa-badge">Documentation available</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$89.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$29.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">TB-500</div>
+<div class="product-strength">2mg vial</div>
+<div class="coa-badge">Documentation available</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$109.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$39.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">GHK-Cu</div>
+<div class="product-strength">1mg vial</div>
+<div class="coa-badge">Documentation available</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$69.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$24.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 2.5rem;">
+<button class="btn btn-primary" style="width: auto; display: inline-block; padding: 1rem 2.5rem;" onclick="showPage('products')">View all products</button>
+</div>
+</div>
+
+</div>
+
+<!-- ===== ABOUT PAGE ===== -->
+<div id="about" class="page">
+<div class="section">
+<h2>About Pep Suppliers</h2>
+<div class="content-grid">
+<div class="content-text">
+<h3>We handle the complexity</h3>
+<p>Pep Suppliers sources research peptides from trusted suppliers around the world. We evaluate suppliers, organize options, and present clear choices so you can decide between speed and savings.</p>
+<p>Global sourcing is complex. We do that work so you focus on your research.</p>
+<ul class="process-steps">
+<li>Source from vetted suppliers globally</li>
+<li>Review supplier quality and documentation</li>
+<li>Organize domestic fast-ship and overseas discount options</li>
+<li>Present transparent choices with clear trade-offs</li>
+<li>Support bulk orders and long-term planning</li>
+</ul>
+</div>
+<div>
+<div class="highlight-box">
+<p><strong>Our promise:</strong> Transparent sourcing paths, quality screening, competitive pricing, and clear research-use positioning.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== HOW IT WORKS PAGE ===== -->
+<div id="how" class="page">
+<div class="section">
+<h2>How it works</h2>
+<div class="content-grid">
+<div>
+<h3>Our process</h3>
+<p>We've built a system to make global peptide sourcing simple and transparent.</p>
+<ul class="process-steps">
+<li><strong>Source globally</strong> – We identify suppliers across multiple regions and evaluate quality.</li>
+<li><strong>Review quality</strong> – We screen for supplier credentials and review available documentation.</li>
+<li><strong>Organize options</strong> – We separate domestic fast-ship from overseas discount paths.</li>
+<li><strong>Present choices</strong> – You choose: speed or savings. Both transparent, both quality-screened.</li>
+<li><strong>Support planning</strong> – We help with bulk orders and research timelines.</li>
+</ul>
+</div>
+<div>
+<div class="highlight-box">
+<p><strong>Result:</strong> You get competitive pricing, transparent sourcing, and full control over speed vs. savings.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== SHIPPING PAGE ===== -->
+<div id="shipping" class="page">
+<div class="section">
+<h2>Shipping options</h2>
+<p class="section-subtitle">Choose the path that fits your timeline and budget.</p>
+
+<table class="comparison-table">
+<tr>
+<th>Factor</th>
+<th>Domestic</th>
+<th>Overseas</th>
+</tr>
+<tr>
+<td class="feature">Shipping speed</td>
+<td><span class="check">✓</span> 2–5 days</td>
+<td>2–3 weeks</td>
+</tr>
+<tr>
+<td class="feature">Inventory type</td>
+<td><span class="check">✓</span> US stock</td>
+<td>Direct sourced</td>
+</tr>
+<tr>
+<td class="feature">Typical pricing</td>
+<td>Premium</td>
+<td><span class="check">✓</span> Discounted</td>
+</tr>
+<tr>
+<td class="feature">Customs/clearance</td>
+<td><span class="check">✓</span> None</td>
+<td>Standard process</td>
+</tr>
+<tr>
+<td class="feature">Bulk discounts</td>
+<td>Standard</td>
+<td><span class="check">✓</span> Up to 30% off</td>
+</tr>
+<tr>
+<td class="feature">Best for</td>
+<td><span class="check">✓</span> Urgent orders</td>
+<td><span class="check">✓</span> Planned/bulk orders</td>
+</tr>
+</table>
+
+<h3>Domestic details</h3>
+<ul class="process-steps">
+<li>US warehouse inventory ensures immediate availability</li>
+<li>Orders placed before 2 PM EST ship same day</li>
+<li>Delivery via priority courier (2–5 business days)</li>
+<li>Predictable delivery windows</li>
+<li>No international customs or delays</li>
+</ul>
+
+<h3>Overseas details</h3>
+<ul class="process-steps">
+<li>Direct sourced from global suppliers</li>
+<li>Synthesized fresh to order (5–7 days production)</li>
+<li>International courier with tracking</li>
+<li>Customs clearance included (documentation provided)</li>
+<li>Total time: 2–3 weeks typical</li>
+<li>Deep discounts reflect direct sourcing and timeline</li>
+</ul>
+</div>
+</div>
+
+<!-- ===== PRODUCTS PAGE ===== -->
+<div id="products" class="page">
+<div class="section section-alt">
+<h2>Products</h2>
+<p class="section-subtitle">Demo pricing shown. All products intended for laboratory research use only.</p>
+
+<div class="products-grid">
+<!-- EDITABLE: Update these product cards with real pricing -->
+<div class="product-card">
+<div class="product-name">BPC-157</div>
+<div class="product-strength">Body Protection Compound | 5mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$89.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$29.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">TB-500</div>
+<div class="product-strength">Thymosin Beta-4 | 2mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$109.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$39.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">GHK-Cu</div>
+<div class="product-strength">Copper Peptide | 1mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$69.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$24.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">Semax</div>
+<div class="product-strength">Nootropic Research Peptide | 3mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$74.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$27.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">Melanotan II</div>
+<div class="product-strength">Research Peptide | 10mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$79.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$32.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+
+<div class="product-card">
+<div class="product-name">Epithalon</div>
+<div class="product-strength">Anti-Aging Research | 2mg vial</div>
+<div class="coa-badge">Documentation available where provided</div>
+<div class="product-pricing">
+<div class="price-row domestic">
+<span class="label">Domestic:</span>
+<span class="amount">$99.99</span>
+</div>
+<div class="price-row overseas">
+<span class="label">Overseas:</span>
+<span class="amount">$34.99</span>
+</div>
+</div>
+<div class="shipping-time">⚡ 2–5 days | 🌍 2–3 weeks</div>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 2.5rem; padding: 1.5rem; background: #f3f4f6; border-radius: 10px;">
+<p style="font-size: 13px; color: #5a6270; margin: 0;"><strong>Prices are demo/placeholder.</strong> For current pricing and availability, contact support@pep-suppliers.com</p>
+</div>
+</div>
+</div>
+
+<!-- ===== QUALITY PAGE ===== -->
+<div id="quality" class="page">
+<div class="section">
+<h2>Quality standards</h2>
+<p class="section-subtitle">How we evaluate suppliers and ensure transparency.</p>
+
+<p>Most products include available supplier documentation, and many products may have COAs or Janoshik testing available. Because documentation can vary by supplier and batch, Pep Suppliers focuses on transparency: showing what is available, identifying documentation limitations, and offering optional upgraded testing where possible. Optional testing may affect fulfillment or shipping timelines.</p>
+
+<h3>Supplier screening</h3>
+<p>We evaluate suppliers based on credentials, quality control practices, documentation availability, and reliability. This is an ongoing process.</p>
+
+<h3>Documentation</h3>
+<p>When available from suppliers, documentation may include Certificate of Analysis (COA), Janoshik testing, purity specifications, batch information, and HPLC or equivalent testing data.</p>
+
+<div class="highlight-box">
+<p><strong>Important:</strong> Documentation availability varies by supplier and product. We provide what is available and transparently note when documentation is limited. All products are intended for laboratory research use only.</p>
+</div>
+
+<h3>Our commitment</h3>
+<ul class="process-steps">
+<li>Transparent about what documentation is available</li>
+<li>No invented or fake certifications</li>
+<li>No exaggerated claims about quality</li>
+<li>Clear research-use-only positioning</li>
+<li>Honest assessment of supplier options</li>
+</ul>
+
+<div class="quality-grid" style="margin-top: 2.5rem;">
+<div class="quality-card">
+<h4>Supplier evaluation</h4>
+<p>We assess credentials, quality control, and track record before sourcing.</p>
+</div>
+<div class="quality-card">
+<h4>Documentation review</h4>
+<p>We organize available batch data and testing information for transparency.</p>
+</div>
+<div class="quality-card">
+<h4>Batch tracking</h4>
+<p>Each product includes batch information where available from the supplier.</p>
+</div>
+<div class="quality-card">
+<h4>Honest limitations</h4>
+<p>We disclose when documentation is unavailable or limited.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== FAQ PAGE ===== -->
+<div id="faq" class="page">
+<div class="section">
+<h2>Frequently asked questions</h2>
+<p class="section-subtitle">Common questions about sourcing, pricing, and quality.</p>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Why are overseas options cheaper?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Overseas sourcing is direct from manufacturers, avoiding middleman markups. You accept a longer shipping timeline (2–3 weeks) instead of paying for fast logistics and US warehouse inventory. This creates significant cost savings we pass directly to you.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Why does overseas shipping take 2–3 weeks?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Overseas sourcing includes synthesis time (5–7 days), international courier shipping (7–10 days), and customs clearance. We provide full tracking throughout. The timeline is predictable but longer than domestic inventory.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Why is domestic more expensive?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Domestic pricing reflects the cost of maintaining US inventory, inventory risk, temperature-controlled storage, and fast dispatch logistics. You pay a premium for convenience and predictable 2–5 day delivery.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Are domestic and overseas products the same quality?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Both sourcing paths use suppliers we've screened. The key difference is sourcing method and timeline, not quality. Documentation availability may vary by supplier, and we're transparent about what's available for each product.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Do you provide Certificates of Analysis or third-party testing?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Most products include available documentation, and many products have COAs or Janoshik testing available. Documentation varies by supplier, batch, and sourcing path, so we clearly show what is available before purchase whenever possible. Optional upgraded testing may be available on select products, but it can add time to fulfillment or shipping.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Can I order in bulk?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Yes. Bulk orders are encouraged, especially for overseas sourcing where you benefit from discount tiers. Contact support@pep-suppliers.com for bulk pricing and custom orders.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Can I mix domestic and overseas in one order?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Yes. You can choose domestic (fast, premium) for some products and overseas (slow, discounted) for others in the same order. Select your preference for each item.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+<span>Are these products for research use only?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Yes. All products are intended for laboratory research use only. They are not intended for human consumption, diagnosis, treatment, or prevention of disease.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+<div class="footer-content">
+<p><strong>Pep Suppliers</strong> – Research peptide sourcing</p>
+<div class="footer-contact">
+<p>Questions? <a href="mailto:support@pep-suppliers.com">support@pep-suppliers.com</a></p>
+</div>
+<div class="footer-disclaimer">
+<p>Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease. All content on this site is for informational purposes. Consult relevant regulations in your jurisdiction before ordering.</p>
+<p>© 2026 Pep Suppliers. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+function showPage(pageName) {
+  // Hide all pages
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => page.classList.remove('active'));
+
+  // Show selected page
+  document.getElementById(pageName).classList.add('active');
+
+  // Update nav links
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => link.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Scroll to top
+  window.scrollTo(0, 0);
+}
+
+// FAQ toggle functionality
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', function() {
+    const parent = this.parentElement;
+    parent.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
