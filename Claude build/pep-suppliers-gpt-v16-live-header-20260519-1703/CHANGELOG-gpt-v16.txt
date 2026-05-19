@@ -1,0 +1,7 @@
+CHANGELOG GPT V16 — 20260519-1703
+
+- Fixed v15 right-side header/nav cutoff.
+- Removed embedded full-header image layout.
+- Added live CSS 2x2 nav pills beside approved logo crop.
+- Kept no Rx / Peps / Vitamins.
+- Kept approved hero/card color-fill style.
