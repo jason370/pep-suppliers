@@ -1,0 +1,6 @@
+CHANGELOG GPT V14 — SHIP
+
+- Ship package created.
+- Included HTML, logo/header reference asset, README.
+- Rx / Peps / Vitamins removed from the standalone logo crop.
+- Retained approved hero/card layout and copy.
