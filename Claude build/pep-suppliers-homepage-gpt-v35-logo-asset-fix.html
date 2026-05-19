@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pep Suppliers – Global research peptide sourcing. Domestic fast-ship or overseas savings.">
+<title>Pep Suppliers</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: #081833; background: linear-gradient(135deg, rgba(255,240,247,0.4) 0%, rgba(234,244,255,0.3) 25%, rgba(255,255,255,0.8) 50%, rgba(234,251,243,0.3) 75%, rgba(243,228,196,0.2) 100%); line-height: 1.6; overflow-x: hidden; }
+.scroll-controls { position: fixed; right: 20px; bottom: 32px; z-index: 100; display: flex; flex-direction: column; gap: 8px; }
+.scroll-btn { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,253,248,0.93)); border: 1.5px solid #ddeaf5; color: #075fea; font-size: 18px; font-weight: 700; cursor: pointer; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(8, 24, 51, 0.08); }
+.scroll-btn:hover { background: #ffffff; border-color: #075fea; box-shadow: 0 8px 20px rgba(7, 95, 234, 0.15); transform: translateY(-2px); }
+.scroll-btn:focus { outline: 2px solid #075fea; outline-offset: 2px; }
+header { width: min(1360px, calc(100% - 32px)); margin: 12px auto 0; padding: 10px 22px; min-height: 130px; max-height: 150px; display: grid; grid-template-columns: minmax(420px, 1fr) auto; align-items: center; gap: 28px; border-radius: 20px; background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,253,248,0.92)); border: 1px solid #ddeaf5; box-shadow: 0 12px 32px rgba(18,48,74,0.08); overflow: hidden; }
+.logo-link { display: flex; align-items: center; text-decoration: none; cursor: pointer; transition: transform 0.2s ease; background: transparent; padding: 0; border: none; }
+.logo-link:hover { transform: translateY(-2px); }
+.logo-link:focus { outline: 2px solid #075fea; outline-offset: 2px; border-radius: 8px; }
+.logo-img { width: min(500px, 100%); max-height: 130px; height: auto; object-fit: contain; object-position: left center; display: block; background: transparent; }
+.logo-fallback { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+.logo-icon { font-size: 28px; font-weight: 700; background: linear-gradient(90deg, #075fea, #12a66a, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.logo-text { font-size: 18px; font-weight: 700; color: #081833; }
+.logo-tagline { font-size: 9px; font-weight: 600; letter-spacing: 0.5px; color: #5a6270; text-transform: uppercase; }
+nav { display: grid; grid-template-columns: repeat(4, minmax(95px, 1fr)); gap: 10px; flex-shrink: 0; }
+.nav-pill { padding: 0.6rem 1rem; border-radius: 22px; font-size: 11px; font-weight: 600; text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; }
+.nav-pill:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+.nav-pill.home { background: #eaf4ff; border-color: #075fea; color: #0052cc; }
+.nav-pill.home:hover { background: #d9ebff; box-shadow: 0 4px 12px rgba(7, 95, 234, 0.2); transform: translateY(-2px); }
+.nav-pill.products { background: #fff0f7; border-color: #f05ba8; color: #c2185b; }
+.nav-pill.products:hover { background: #ffd4e5; box-shadow: 0 4px 12px rgba(240, 91, 168, 0.2); transform: translateY(-2px); }
+.nav-pill.faq { background: #ffe8f0; border-color: #ff69b4; color: #c2185b; }
+.nav-pill.faq:hover { background: #ffd4e5; box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2); transform: translateY(-2px); }
+.nav-pill.contact { background: #e8f5e9; border-color: #10b981; color: #065f46; }
+.nav-pill.contact:hover { background: #d1fae5; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2); transform: translateY(-2px); }
+.hero { max-width: 1360px; margin: 1.2rem auto 2rem; padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: flex-start; background: radial-gradient(ellipse 900px 400px at 15% 50%, rgba(255,240,247,0.5) 0%, transparent 70%), radial-gradient(ellipse 700px 300px at 85% 45%, rgba(234,251,243,0.4) 0%, transparent 65%); border-radius: 20px; }
+.hero-left h1 { font-size: clamp(40px, 4.4vw, 62px); font-weight: 700; line-height: 1.04; letter-spacing: -0.045em; margin-bottom: 1.2rem; color: #081833; max-width: 620px; }
+.hero-left p { font-size: 18px; color: #5a6270; line-height: 1.55; max-width: 620px; }
+.hero-right { display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 22px; align-items: stretch; }
+.choice-card { background: linear-gradient(135deg, #ffffff 0%, #eaf4ff 100%); border: 1.5px solid #ddeaf5; border-radius: 14px; padding: 24px; transition: all 0.3s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 440px; height: 100%; }
+.choice-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #075fea, #0052cc); }
+.choice-card.overseas { background: linear-gradient(135deg, #ffffff 0%, #eafbf3 100%); }
+.choice-card.overseas::before { background: linear-gradient(90deg, #12a66a, #10b981); }
+.choice-card:hover { border-color: #b3d9ff; box-shadow: 0 12px 32px rgba(7, 95, 234, 0.12); transform: translateY(-2px); }
+.choice-card.overseas:hover { border-color: #a0e0c3; box-shadow: 0 12px 32px rgba(18, 166, 106, 0.12); }
+.card-badge { width: 42px; height: 42px; border-radius: 50%; background: #075fea; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; margin-bottom: 16px; font-weight: 700; }
+.choice-card.overseas .card-badge { background: #12a66a; }
+.choice-card h3 { font-size: 18px; font-weight: 700; color: #081833; margin-bottom: 10px; min-height: 32px; }
+.choice-card p { font-size: 14px; color: #5a6270; line-height: 1.6; margin-bottom: 14px; min-height: 72px; }
+.choice-bullets { list-style: none; background: #f0f7ff; padding: 1.25rem; border-radius: 10px; border: 1px solid #ddeaf5; min-height: 170px; margin: 14px 0 18px; display: flex; flex-direction: column; justify-content: space-around; }
+.choice-card.overseas .choice-bullets { background: #f0fbf7; border-color: #d0ebe1; }
+.choice-bullets li { font-size: 13px; color: #5a6270; padding: 0.4rem 0 0.4rem 1.5rem; position: relative; font-weight: 500; }
+.choice-bullets li::before { content: "•"; position: absolute; left: 0; color: #075fea; font-weight: bold; }
+.choice-card.overseas .choice-bullets li::before { color: #12a66a; }
+.choice-btn { padding: 1rem; border-radius: 10px; background: #075fea; color: #fff; border: none; font-size: 14px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; width: 100%; margin-top: auto; }
+.choice-card.overseas .choice-btn { background: #12a66a; }
+.choice-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(7, 95, 234, 0.3); }
+.choice-btn:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+.section { max-width: 1360px; margin: 2rem auto; padding: 3rem 2rem; background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,253,248,0.9)); border-radius: 18px; border: 1px solid #ddeaf5; }
+.section.alt-bg { background: linear-gradient(135deg, rgba(234,244,255,0.5) 0%, rgba(255,255,255,0.8) 50%, rgba(234,251,243,0.3) 100%); }
+.section.products-bg { background: linear-gradient(135deg, rgba(255,240,247,0.5) 0%, rgba(234,244,255,0.4) 30%, rgba(255,255,255,0.8) 60%, rgba(234,251,243,0.3) 100%); }
+.section.faq-bg { background: linear-gradient(135deg, rgba(255,240,247,0.4) 0%, rgba(245,240,255,0.3) 50%, rgba(255,248,240,0.4) 100%); }
+.section.contact-bg { background: linear-gradient(135deg, rgba(234,251,243,0.4) 0%, rgba(255,255,255,0.9) 50%, rgba(234,244,255,0.3) 100%); }
+.section h2 { font-size: 36px; font-weight: 700; color: #081833; margin-bottom: 0.75rem; text-align: center; }
+.section-subtitle { font-size: 15px; color: #5a6270; text-align: center; margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.product-card { background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%); border: 1px solid #ddeaf5; border-radius: 14px; padding: 1.75rem; transition: all 0.3s ease; position: relative; overflow: hidden; }
+.product-card::before { content: ''; position: absolute; top: -40%; right: -40%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(234,244,255,0.3) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+.product-card:hover { border-color: #b3d9ff; box-shadow: 0 12px 32px rgba(7, 95, 234, 0.1); transform: translateY(-2px); }
+.product-name { font-size: 18px; font-weight: 700; color: #081833; margin-bottom: 0.75rem; position: relative; z-index: 1; }
+.badge { display: inline-block; font-size: 11px; padding: 0.35rem 0.75rem; border-radius: 6px; font-weight: 600; margin-right: 0.5rem; margin-bottom: 1rem; position: relative; z-index: 1; }
+.strength-badge { background: #eaf4ff; color: #075fea; }
+.research-badge { background: #fff0f7; color: #c2185b; }
+.price-row { background: linear-gradient(135deg, #eaf4ff 0%, #f0f7ff 100%); border-radius: 10px; padding: 1rem; margin: 1rem 0; border: 1px solid #ddeaf5; position: relative; z-index: 1; }
+.price-row.overseas { background: linear-gradient(135deg, #eafbf3 0%, #f0fbf7 100%); border-color: #d0ebe1; }
+.price-label { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 0.4rem; }
+.price-amount { font-size: 20px; font-weight: 700; color: #075fea; }
+.price-row.overseas .price-amount { color: #12a66a; }
+.shipping-note { font-size: 12px; color: #888; margin: 1rem 0; padding: 0.75rem; background: #f5f9ff; border-radius: 6px; border: 1px solid #ddeaf5; position: relative; z-index: 1; }
+.doc-badge { display: inline-block; background: #f5f0ff; color: #8d6bff; font-size: 11px; padding: 0.35rem 0.75rem; border-radius: 6px; margin-bottom: 1rem; font-weight: 600; position: relative; z-index: 1; }
+.details-btn { width: 100%; padding: 0.8rem; background: #075fea; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; position: relative; z-index: 1; }
+.details-btn:hover { background: #0645c7; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(7, 95, 234, 0.2); }
+.details-btn:focus { outline: 2px solid #075fea; outline-offset: 2px; }
+.faq-item { background: linear-gradient(135deg, rgba(255,240,247,0.4) 0%, rgba(248,251,255,0.6) 100%); border-radius: 12px; margin-bottom: 1.25rem; overflow: hidden; border: 1px solid #ddeaf5; }
+.faq-question { padding: 1.75rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: #081833; transition: background 0.2s; }
+.faq-question:hover { background: rgba(7, 95, 234, 0.04); }
+.faq-question:focus-within { outline: 2px solid #075fea; outline-offset: -4px; }
+.faq-toggle { color: #075fea; transition: transform 0.3s; font-size: 18px; font-weight: 700; }
+.faq-answer { background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,253,248,0.95)); padding: 0; max-height: 0; overflow: hidden; transition: all 0.3s ease; border-top: 1px solid #ddeaf5; }
+.faq-item.open .faq-answer { padding: 1.75rem; max-height: 600px; }
+.faq-item.open .faq-toggle { transform: rotate(180deg); }
+.faq-answer p { font-size: 14px; color: #5a6270; line-height: 1.7; margin: 0; }
+footer { background: linear-gradient(135deg, rgba(234,244,255,0.3) 0%, rgba(255,255,255,0.92) 50%, rgba(243,228,196,0.2) 100%); border-top: 1px solid #ddeaf5; padding: 3rem 2rem; text-align: center; margin-top: 3.5rem; }
+.footer-content { max-width: 1360px; margin: 0 auto; }
+.footer-logo { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1.75rem; cursor: pointer; transition: transform 0.2s ease; }
+.footer-logo:hover { transform: translateY(-2px); }
+.footer-logo:focus { outline: 2px solid #075fea; outline-offset: 2px; border-radius: 8px; }
+.footer-logo-icon { font-size: 26px; }
+.footer-logo-text { font-size: 17px; font-weight: 700; background: linear-gradient(90deg, #075fea, #12a66a, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.footer-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; max-width: 500px; margin: 2rem auto; }
+.footer-pill { padding: 0.55rem 0.9rem; border-radius: 22px; font-size: 11px; font-weight: 600; background: #eaf4ff; color: #081833; text-decoration: none; transition: all 0.2s; border: 1px solid #ddeaf5; }
+.footer-pill:hover { background: #d9ebff; transform: translateY(-1px); }
+.footer-pill:focus { outline: 2px solid #075fea; outline-offset: 2px; }
+.footer-disclaimer { font-size: 12px; color: #888; line-height: 1.8; margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid #ddeaf5; }
+@media (max-width: 1200px) { header { grid-template-columns: 1fr; gap: 1rem; min-height: auto; } nav { width: 100%; } .hero { grid-template-columns: 1fr; gap: 1.5rem; } .hero-right { grid-template-columns: 1fr; } .products-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { header { padding: 10px 14px; gap: 0.75rem; margin: 10px auto 0; min-height: 120px; } .logo-fallback { gap: 1px; } .logo-text { font-size: 16px; } .logo-tagline { font-size: 8px; } nav { grid-template-columns: repeat(2, 1fr); gap: 8px; } .nav-pill { font-size: 10px; padding: 0.5rem 0.7rem; } .hero { padding: 1.5rem; gap: 1.5rem; } .hero-left h1 { font-size: clamp(32px, 6vw, 48px); margin-bottom: 1rem; } .hero-left p { font-size: 15px; } .hero-right { grid-template-columns: 1fr; } .choice-card { min-height: 400px; padding: 20px; } .section { padding: 2rem 1.5rem; margin: 1.5rem auto; } .products-grid { grid-template-columns: 1fr; } .footer-nav { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; } .footer-pill { font-size: 10px; padding: 0.45rem 0.7rem; } .scroll-controls { right: 12px; bottom: 20px; } .scroll-btn { width: 40px; height: 40px; font-size: 16px; } }
+</style>
+</head>
+<body>
+
+<!-- Page top anchor for scroll-to-top behavior -->
+<div id="top"></div>
+
+<div class="scroll-controls">
+<button class="scroll-btn" id="scrollUp" title="Previous section" aria-label="Previous section">↑</button>
+<button class="scroll-btn" id="scrollDown" title="Next section" aria-label="Next section">↓</button>
+<button class="scroll-btn" id="scrollTop" title="Back to top" aria-label="Back to top">⇧</button>
+</div>
+
+<header>
+<a href="#top" class="logo-link" title="Return to top">
+<div class="logo-fallback">
+<div class="logo-icon">💉</div>
+<div style="display: flex; flex-direction: column; gap: 0;">
+<div class="logo-text">Pep Suppliers</div>
+<div class="logo-tagline">All-In-One Peptide Source</div>
+</div>
+</div>
+</a>
+<nav>
+<a href="#top" class="nav-pill home">Home</a>
+<a href="#products" class="nav-pill products">Products</a>
+<a href="#faq" class="nav-pill faq">FAQ</a>
+<a href="#contact" class="nav-pill contact">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-left">
+<h1>Global peptide sourcing. Domestic speed or overseas savings.</h1>
+<p>Organized global sourcing, verified suppliers, transparent documentation, and clear buying paths — so you can order with confidence.</p>
+</div>
+<div class="hero-right">
+<div class="choice-card">
+<div class="card-badge">⚡</div>
+<h3>Domestic Fast-Ship</h3>
+<p>Overnight options available on select U.S.-based inventory, with quick fulfillment and tracking.</p>
+<ul class="choice-bullets">
+<li>Ships from U.S. warehouses</li>
+<li>Overnight available on select items</li>
+<li>2–5 day typical delivery</li>
+<li>Best for urgent research timelines</li>
+</ul>
+<button class="choice-btn">Browse Domestic</button>
+</div>
+<div class="choice-card overseas">
+<div class="card-badge">🌍</div>
+<h3>Overseas Savings</h3>
+<p>Global suppliers with competitive pricing and flexible options.</p>
+<ul class="choice-bullets">
+<li>Ships from international suppliers</li>
+<li>2–3 week typical delivery</li>
+<li>Best value for planned or bulk orders</li>
+</ul>
+<button class="choice-btn">Browse Overseas</button>
+</div>
+</div>
+</section>
+
+<div id="about" class="section alt-bg">
+<h2>Featured Research Products</h2>
+<p class="section-subtitle">Compare domestic and overseas sourcing options with demo pricing placeholders.</p>
+<div class="products-grid">
+<div class="product-card">
+<div class="product-name">Semaglutide</div>
+<span class="badge strength-badge">5mg vial</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+<div class="product-card">
+<div class="product-name">Tirzepatide</div>
+<span class="badge strength-badge">10mg vial</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+<div class="product-card">
+<div class="product-name">BPC-157</div>
+<span class="badge strength-badge">5mg vial</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+</div>
+</div>
+
+<section id="products" class="section products-bg">
+<h2>Research Product Catalog</h2>
+<p class="section-subtitle">Compare domestic and overseas sourcing with clear pricing, shipping, and documentation.</p>
+<div class="products-grid">
+<div class="product-card">
+<div class="product-name">TB-500</div>
+<span class="badge strength-badge">2mg vial</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+<div class="product-card">
+<div class="product-name">Retatrutide</div>
+<span class="badge strength-badge">10mg vial</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+<div class="product-card">
+<div class="product-name">CJC-1295 / Ipamorelin</div>
+<span class="badge strength-badge">Blend kit</span>
+<span class="badge research-badge">Research</span>
+<div class="price-row">
+<div class="price-label">Domestic Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="price-row overseas">
+<div class="price-label">Overseas Demo Price</div>
+<div class="price-amount">$XX.XX</div>
+</div>
+<div class="shipping-note">⚡ 2–5 days | 🌍 2–3 weeks</div>
+<span class="doc-badge">Documentation varies</span>
+<button class="details-btn">View Details</button>
+</div>
+</div>
+</section>
+
+<section id="faq" class="section faq-bg">
+<h2>Frequently Asked Questions</h2>
+<p class="section-subtitle">Research-use peptide sourcing</p>
+<div style="max-width: 820px; margin: 2rem auto 0;">
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFaq(this)">
+<span>Are products for research use only?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Yes. All products are intended for laboratory research use only. They are not intended for human consumption, diagnosis, treatment, or prevention of disease.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFaq(this)">
+<span>What is the difference between domestic and overseas?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Domestic sources use U.S. warehouses with overnight options and premium pricing. Overseas sources direct from global suppliers with longer 2–3 week shipping and significant savings.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFaq(this)">
+<span>Do you provide COAs or third-party testing?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Many products include available documentation, and many products have COAs or Janoshik testing available. Documentation varies by supplier, batch, and sourcing path. Optional upgraded testing may be available on select products.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question" onclick="toggleFaq(this)">
+<span>Can I order in bulk?</span>
+<span class="faq-toggle">▼</span>
+</div>
+<div class="faq-answer">
+<p>Yes. Bulk orders are encouraged, especially for overseas sourcing where you benefit from discount tiers. Contact support@pep-suppliers.com for bulk pricing and custom orders.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section contact-bg">
+<h2>Get in Touch</h2>
+<p class="section-subtitle">Questions about sourcing, bulk orders, or product details?</p>
+<p style="font-size: 16px; text-align: center; color: #5a6270; margin-top: 2rem;"><strong>Email:</strong> <a href="mailto:support@pep-suppliers.com" style="color: #075fea; text-decoration: none;">support@pep-suppliers.com</a></p>
+</section>
+
+<footer>
+<div class="footer-content">
+<div class="footer-logo" onclick="scrollToSection('top');" style="cursor: pointer;">
+<div class="footer-logo-icon">💉</div>
+<div class="footer-logo-text">Pep Suppliers</div>
+</div>
+<div class="footer-nav">
+<a href="#top" class="footer-pill">Home</a>
+<a href="#products" class="footer-pill">Products</a>
+<a href="#faq" class="footer-pill">FAQ</a>
+<a href="#contact" class="footer-pill">Contact</a>
+</div>
+<div class="footer-disclaimer">
+Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.
+</div>
+</div>
+</footer>
+
+<script>
+const sections = ['top', 'home', 'products', 'faq', 'contact'];
+
+function getCurrentSection() {
+  const scrollPos = window.scrollY + 100;
+  let currentSection = 'top';
+  for (let id of sections) {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= scrollPos) {
+      currentSection = id;
+    }
+  }
+  return currentSection;
+}
+
+function scrollToSection(sectionId) {
+  if (sectionId === 'top') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+
+function getNextSection(direction) {
+  const current = getCurrentSection();
+  const currentIndex = sections.indexOf(current);
+  if (direction === 'down') {
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < sections.length) {
+      return sections[nextIndex];
+    }
+    return current;
+  } else {
+    const prevIndex = currentIndex - 1;
+    if (prevIndex >= 0) {
+      return sections[prevIndex];
+    }
+    return 'top';
+  }
+}
+
+document.getElementById('scrollDown').addEventListener('click', () => {
+  const next = getNextSection('down');
+  scrollToSection(next);
+});
+
+document.getElementById('scrollUp').addEventListener('click', () => {
+  const prev = getNextSection('up');
+  scrollToSection(prev);
+});
+
+document.getElementById('scrollTop').addEventListener('click', () => {
+  scrollToSection('top');
+});
+
+function toggleFaq(element) {
+  const item = element.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
