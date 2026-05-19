@@ -1,0 +1,6 @@
+CHANGELOG GPT V15 — 20260519-1700
+
+- Fixed v14 tiny/collapsed header issue.
+- Replaced split logo + CSS nav layout with full approved header banner image.
+- Added invisible clickable link targets over the header pills.
+- Kept approved hero/card style and copy.
