@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pep Suppliers - Premium peptides from global research labs. Choose fast domestic delivery or deep discount overseas. 98%+ purity guaranteed.">
+<meta name="keywords" content="peptides, research peptides, BPC-157, TB-500, GHK-Cu, direct sourcing, lab peptides, pep suppliers">
+<title>Pep Suppliers - Premium Peptides Direct from Labs</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #1a1a1a; background: #f8f8f8; line-height: 1.7; }
+@media (prefers-color-scheme: dark) {
+  body { color: #e0e0e0; background: #1a1a1a; }
+}
+.navbar { background: #fff; border-bottom: 0.5px solid #e0e0e0; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+@media (prefers-color-scheme: dark) {
+  .navbar { background: #0f0f0f; border-bottom-color: #333; }
+}
+.logo { font-size: 18px; font-weight: 500; cursor: pointer; user-select: none; }
+.nav { display: flex; gap: 2rem; flex-wrap: wrap; }
+.nav button { background: none; border: none; color: #1a1a1a; font-size: 14px; cursor: pointer; padding: 0.5rem 0; transition: color 0.2s; font-family: inherit; }
+@media (prefers-color-scheme: dark) {
+  .nav button { color: #e0e0e0; }
+}
+.nav button:hover { color: #0066cc; }
+.nav button.active { color: #0066cc; font-weight: 500; border-bottom: 2px solid #0066cc; }
+.page { display: none; animation: fadeIn 0.3s ease; }
+.page.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.hero-section { background: #f0f6ff; padding: 3rem 2rem; text-align: center; }
+@media (prefers-color-scheme: dark) {
+  .hero-section { background: #1a2a3a; }
+}
+.hero-section h1 { font-size: 36px; font-weight: 500; margin-bottom: 1rem; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .hero-section h1 { color: #e0e0e0; }
+}
+.hero-section p { font-size: 16px; color: #666; max-width: 700px; margin: 0 auto 2rem; }
+@media (prefers-color-scheme: dark) {
+  .hero-section p { color: #aaa; }
+}
+.content { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+.content h2 { font-size: 24px; font-weight: 500; margin-top: 2rem; margin-bottom: 1rem; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .content h2 { color: #e0e0e0; }
+}
+.content h3 { font-size: 18px; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .content h3 { color: #e0e0e0; }
+}
+.content p { font-size: 15px; color: #666; margin-bottom: 1rem; line-height: 1.8; }
+@media (prefers-color-scheme: dark) {
+  .content p { color: #aaa; }
+}
+.shipping-options { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+@media (max-width: 768px) {
+  .shipping-options { grid-template-columns: 1fr; }
+}
+.shipping-card { background: #fff; border: 2px solid #e0e0e0; border-radius: 12px; padding: 2rem; }
+@media (prefers-color-scheme: dark) {
+  .shipping-card { background: #0f0f0f; border-color: #333; }
+}
+.shipping-card.domestic { border: 2px solid #22c55e; }
+.shipping-card.overseas { border: 2px solid #f59e0b; }
+.card-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; margin-bottom: 1rem; }
+.domestic .card-badge { background: #dcfce7; color: #166534; }
+@media (prefers-color-scheme: dark) {
+  .domestic .card-badge { background: #1e3a1f; color: #86efac; }
+}
+.overseas .card-badge { background: #fef3c7; color: #92400e; }
+@media (prefers-color-scheme: dark) {
+  .overseas .card-badge { background: #3a2f1f; color: #fcd34d; }
+}
+.shipping-card h3 { margin-top: 0; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .shipping-card h3 { color: #e0e0e0; }
+}
+.option-grid { display: grid; gap: 1rem; margin: 1.5rem 0; }
+.option-item { display: flex; gap: 1rem; align-items: flex-start; }
+.option-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.option-text { font-size: 14px; color: #666; }
+@media (prefers-color-scheme: dark) {
+  .option-text { color: #aaa; }
+}
+.option-text strong { color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .option-text strong { color: #e0e0e0; }
+}
+.price-display { background: #f5f5f5; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; text-align: center; }
+@media (prefers-color-scheme: dark) {
+  .price-display { background: #2a2a2a; }
+}
+.price-display .label { font-size: 12px; color: #999; text-transform: uppercase; margin-bottom: 0.5rem; }
+@media (prefers-color-scheme: dark) {
+  .price-display .label { color: #777; }
+}
+.price-display .amount { font-size: 28px; font-weight: 500; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .price-display .amount { color: #e0e0e0; }
+}
+.price-display .subtext { font-size: 12px; color: #999; margin-top: 0.5rem; }
+@media (prefers-color-scheme: dark) {
+  .price-display .subtext { color: #777; }
+}
+.comparison-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 14px; }
+.comparison-table td, .comparison-table th { padding: 12px; border: 0.5px solid #e0e0e0; text-align: left; }
+@media (prefers-color-scheme: dark) {
+  .comparison-table td, .comparison-table th { border-color: #333; }
+}
+.comparison-table th { background: #f5f5f5; font-weight: 500; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .comparison-table th { background: #2a2a2a; color: #e0e0e0; }
+}
+.comparison-table .feature { font-weight: 500; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .comparison-table .feature { color: #e0e0e0; }
+}
+.checkmark { color: #22c55e; font-weight: bold; }
+.warning-icon { color: #f59e0b; font-weight: bold; }
+.process-flow { background: #f5f5f5; border-radius: 12px; padding: 2rem; margin: 2rem 0; }
+@media (prefers-color-scheme: dark) {
+  .process-flow { background: #2a2a2a; }
+}
+.process-step { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+.process-step:last-child { margin-bottom: 0; }
+.step-num { background: #0066cc; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 500; flex-shrink: 0; }
+.step-content h4 { font-size: 15px; font-weight: 500; margin-bottom: 0.5rem; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .step-content h4 { color: #e0e0e0; }
+}
+.step-content p { font-size: 14px; color: #666; margin: 0; }
+@media (prefers-color-scheme: dark) {
+  .step-content p { color: #aaa; }
+}
+.cta-button { background: #0066cc; color: #fff; padding: 12px 28px; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; margin-top: 1rem; transition: background 0.2s; font-family: inherit; }
+.cta-button:hover { background: #0052a3; }
+.cta-button:active { transform: scale(0.98); }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.product-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; transition: transform 0.2s; }
+@media (prefers-color-scheme: dark) {
+  .product-card { background: #0f0f0f; border-color: #333; }
+}
+.product-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+@media (prefers-color-scheme: dark) {
+  .product-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+}
+.product-name { font-size: 15px; font-weight: 500; margin-bottom: 0.5rem; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .product-name { color: #e0e0e0; }
+}
+.pricing-row { display: flex; justify-content: space-between; align-items: center; margin: 1rem 0; padding: 0.75rem; background: #f5f5f5; border-radius: 6px; font-size: 13px; }
+@media (prefers-color-scheme: dark) {
+  .pricing-row { background: #2a2a2a; }
+}
+.pricing-row .label { color: #666; }
+@media (prefers-color-scheme: dark) {
+  .pricing-row .label { color: #aaa; }
+}
+.pricing-row .price { font-weight: 500; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .pricing-row .price { color: #e0e0e0; }
+}
+.pricing-row.domestic-price .price { color: #22c55e; }
+.pricing-row.overseas-price .price { color: #f59e0b; }
+.faq-item { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; }
+@media (prefers-color-scheme: dark) {
+  .faq-item { background: #0f0f0f; border-color: #333; }
+}
+.faq-question { font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1a1a1a; user-select: none; }
+@media (prefers-color-scheme: dark) {
+  .faq-question { color: #e0e0e0; }
+}
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; margin-top: 0; font-size: 14px; color: #666; }
+@media (prefers-color-scheme: dark) {
+  .faq-answer { color: #aaa; }
+}
+.faq-item.open .faq-answer { max-height: 500px; margin-top: 1rem; }
+.faq-toggle { font-size: 18px; transition: transform 0.3s; }
+.faq-item.open .faq-toggle { transform: rotate(45deg); }
+.footer { background: #fff; border-top: 0.5px solid #e0e0e0; padding: 2rem; text-align: center; color: #666; font-size: 12px; margin-top: 3rem; }
+@media (prefers-color-scheme: dark) {
+  .footer { background: #0f0f0f; border-top-color: #333; color: #aaa; }
+}
+.footer a { color: #0066cc; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.guarantee-box { background: #e8f3ff; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center; border: 1px solid #b3d9ff; }
+@media (prefers-color-scheme: dark) {
+  .guarantee-box { background: #1a2a3a; border-color: #2a4a6a; }
+}
+.guarantee-box h3 { font-size: 18px; margin: 0 0 0.5rem; color: #0066cc; }
+@media (prefers-color-scheme: dark) {
+  .guarantee-box h3 { color: #66b3ff; }
+}
+.guarantee-box p { margin: 0; font-size: 14px; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) {
+  .guarantee-box p { color: #e0e0e0; }
+}
+.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; margin: 2rem 0; }
+@media (max-width: 768px) {
+  .two-column { grid-template-columns: 1fr; }
+}
+.two-column img { width: 100%; border-radius: 12px; }
+ul { font-size: 15px; color: #666; margin: 1rem 0; }
+@media (prefers-color-scheme: dark) {
+  ul { color: #aaa; }
+}
+ul li { margin-bottom: 0.75rem; padding-left: 24px; position: relative; }
+ul li:before { content: "✓"; position: absolute; left: 0; color: #22c55e; font-weight: bold; }
+@media (max-width: 768px) {
+  .hero-section h1 { font-size: 24px; }
+  .nav { gap: 1rem; font-size: 12px; }
+  .nav button { padding: 0.25rem; }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<div class="logo" onclick="showPage('home')" style="cursor: pointer;">🧬 Pep Suppliers</div>
+<div class="nav">
+<button class="active" onclick="showPage('home')">Home</button>
+<button onclick="showPage('shipping')">Shipping</button>
+<button onclick="showPage('products')">Products</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('faq')">FAQ</button>
+</div>
+</div>
+
+<div id="home" class="page active">
+<div class="hero-section">
+<h1>Premium peptides. Your timeline. Your budget.</h1>
+<p>Choose your path: Ultra-fast domestic (2-5 days) or deep-discount overseas (2-3 weeks). Same quality. Different pricing.</p>
+</div>
+
+<div class="content">
+<h2>Two ways to shop</h2>
+<div class="shipping-options">
+<div class="shipping-card domestic">
+<div class="card-badge">⚡ FASTEST</div>
+<h3>Domestic (US)</h3>
+<p>Stock in the USA. Ships within 2-5 days. Premium pricing reflects speed and convenience.</p>
+<div class="option-grid">
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Shipping:</strong> 2-5 days</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>No wait:</strong> Predictable timeline</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Full inventory:</strong> All peptides in stock</div>
+</div>
+</div>
+<button class="cta-button" onclick="showPage('shipping')">Learn more</button>
+</div>
+
+<div class="shipping-card overseas">
+<div class="card-badge">💰 DEEPEST DISCOUNT</div>
+<h3>Overseas (Direct from labs)</h3>
+<p>Direct from synthesis labs globally. Heavily discounted. Ships 2-3 weeks. Best for bulk and non-urgent research.</p>
+<div class="option-grid">
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Pricing:</strong> Up to 70% off</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Shipping:</strong> 2-3 weeks</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Bulk friendly:</strong> Best value</div>
+</div>
+</div>
+<button class="cta-button" onclick="showPage('shipping')">Learn more</button>
+</div>
+</div>
+
+<h2>Why two options?</h2>
+<p>Researchers have different needs. Some need peptides in days. Others can wait 2-3 weeks but want the deepest discounts. We've optimized both paths:</p>
+
+<div class="process-flow">
+<div class="process-step">
+<div class="step-num">1</div>
+<div class="step-content">
+<h4>Domestic = convenience</h4>
+<p>US warehouse inventory. Fast dispatch. Perfect for urgent research or pilots.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">2</div>
+<div class="step-content">
+<h4>Overseas = value</h4>
+<p>Direct from labs. Heavily discounted. Ideal for bulk orders and long-term projects.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">3</div>
+<div class="step-content">
+<h4>Same quality</h4>
+<p>Both paths use the same purity standards, testing, and COA documentation.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">4</div>
+<div class="step-content">
+<h4>You choose</h4>
+<p>At checkout, pick your option. Speed + premium price or patience + deep discount.</p>
+</div>
+</div>
+</div>
+
+<h2>Example pricing</h2>
+<p><strong>BPC-157 (5mg vial)</strong></p>
+<table class="comparison-table">
+<tr>
+<th>Option</th>
+<th>Price</th>
+<th>Shipping</th>
+<th>Timeline</th>
+</tr>
+<tr>
+<td class="feature">Domestic (US)</td>
+<td><strong>$89.99</strong></td>
+<td>2-5 days</td>
+<td>Fast</td>
+</tr>
+<tr>
+<td class="feature">Overseas (Labs)</td>
+<td><strong>$29.99</strong></td>
+<td>2-3 weeks</td>
+<td>Patient</td>
+</tr>
+<tr>
+<td class="feature">Market average</td>
+<td><strong>$180</strong></td>
+<td>5-7 days</td>
+<td>Slow</td>
+</tr>
+</table>
+
+<button class="cta-button" onclick="showPage('products')">See all products</button>
+</div>
+</div>
+
+<div id="shipping" class="page">
+<div class="hero-section">
+<h1>Shipping options explained</h1>
+<p>Choose speed or savings. Or do both by mixing orders.</p>
+</div>
+
+<div class="content">
+<h2>Domestic (US warehouse)</h2>
+<div class="shipping-card domestic">
+<div class="card-badge">⚡ FASTEST OPTION</div>
+
+<h3>For when you need peptides fast</h3>
+<p>We maintain inventory in a US warehouse. Orders placed before 2 PM EST ship same-day. Delivery within 2-5 business days via FedEx overnight or 2-day priority.</p>
+
+<h3>Why choose domestic?</h3>
+<div class="option-grid">
+<div class="option-item">
+<div class="option-icon">⚡</div>
+<div class="option-text"><strong>Ultra-fast:</strong> 2-5 days to your door</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Predictable:</strong> Exact delivery date guaranteed</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Full inventory:</strong> All peptides in stock</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>No customs:</strong> No border delays or paperwork</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Urgent research:</strong> Perfect for time-sensitive projects</div>
+</div>
+</div>
+
+<h3>Domestic pricing</h3>
+<div class="price-display">
+<div class="label">Standard peptides cost</div>
+<div class="amount">$79.99 - $119.99</div>
+<div class="subtext">Premium reflects warehouse storage, inventory risk, and fast dispatch capability</div>
+</div>
+
+<h3>Domestic process</h3>
+<div class="process-flow">
+<div class="process-step">
+<div class="step-num">Order</div>
+<div class="step-content">
+<p>Place order before 2 PM EST for same-day dispatch</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Pack</div>
+<div class="step-content">
+<p>Temperature-controlled packaging, discreet label, full COA included</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Ship</div>
+<div class="step-content">
+<p>FedEx Priority (2-day) or Overnight. Full tracking. Temperature logs.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Arrive</div>
+<div class="step-content">
+<p>2-5 business days. Cold-chain maintained. Ready to use immediately.</p>
+</div>
+</div>
+</div>
+
+<h2 style="margin-top: 3rem;">Overseas (Direct from labs)</h2>
+<div class="shipping-card overseas">
+<div class="card-badge">💰 DEEPEST DISCOUNT</div>
+
+<h3>For bulk orders and patient researchers</h3>
+<p>Direct from our synthesis lab partners globally. Heavily discounted because you're getting fresh synthesis (not warehouse inventory) and you can wait for shipping. Ships via international courier with full temperature control and tracking. Delivery 2-3 weeks.</p>
+
+<h3>Why choose overseas?</h3>
+<div class="option-grid">
+<div class="option-item">
+<div class="option-icon">💰</div>
+<div class="option-text"><strong>Deep discounts:</strong> Up to 70% off domestic prices</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Fresh synthesis:</strong> Peptides made to order, not stored</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Bulk friendly:</strong> Better pricing at 3+ vials</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Lab direct:</strong> Zero warehouse markup</div>
+</div>
+<div class="option-item">
+<div class="option-icon">✓</div>
+<div class="option-text"><strong>Long-term research:</strong> Best for multi-month projects</div>
+</div>
+</div>
+
+<h3>Overseas pricing</h3>
+<div class="price-display">
+<div class="label">Direct lab cost</div>
+<div class="amount">$29.99 - $59.99</div>
+<div class="subtext">Heavily discounted because peptides are synthesized fresh and you accept 2-3 week timeline</div>
+</div>
+
+<h3>Overseas bulk discounts</h3>
+<table class="comparison-table">
+<tr>
+<th>Quantity</th>
+<th>Discount</th>
+<th>Example: BPC-157 (5mg)</th>
+</tr>
+<tr>
+<td class="feature">1 vial</td>
+<td>Standard</td>
+<td>$29.99</td>
+</tr>
+<tr>
+<td class="feature">3-5 vials</td>
+<td>-15% off</td>
+<td>$25.49 each</td>
+</tr>
+<tr>
+<td class="feature">6-10 vials</td>
+<td>-25% off</td>
+<td>$22.49 each</td>
+</tr>
+<tr>
+<td class="feature">11+ vials</td>
+<td>-35% off</td>
+<td>$19.49 each</td>
+</tr>
+</table>
+
+<h3>Overseas process</h3>
+<div class="process-flow">
+<div class="process-step">
+<div class="step-num">Order</div>
+<div class="step-content">
+<p>Place order. We confirm with synthesis lab within 24 hours.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Synthesize</div>
+<div class="step-content">
+<p>Lab synthesizes fresh batch to order. 5-7 days for production.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Test & ship</div>
+<div class="step-content">
+<p>HPLC testing, COA generated, temperature-controlled packaging. Ships within 2-3 days of completion.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">Customs & arrive</div>
+<div class="step-content">
+<p>International courier handling. Customs clearance (we provide all docs). 2-3 weeks total. Full tracking.</p>
+</div>
+</div>
+</div>
+
+<h2 style="margin-top: 3rem;">Head-to-head comparison</h2>
+<table class="comparison-table">
+<tr>
+<th>Factor</th>
+<th>Domestic</th>
+<th>Overseas</th>
+</tr>
+<tr>
+<td class="feature">Shipping speed</td>
+<td><span class="checkmark">✓</span> 2-5 days</td>
+<td>2-3 weeks</td>
+</tr>
+<tr>
+<td class="feature">Price per vial</td>
+<td>$79.99 - $119.99</td>
+<td><span class="checkmark">✓</span> $29.99 - $59.99</td>
+</tr>
+<tr>
+<td class="feature">Inventory</td>
+<td><span class="checkmark">✓</span> Full stock</td>
+<td>Made to order</td>
+</tr>
+<tr>
+<td class="feature">Predictability</td>
+<td><span class="checkmark">✓</span> Guaranteed dates</td>
+<td>2-3 week window</td>
+</tr>
+<tr>
+<td class="feature">Bulk discounts</td>
+<td>No bulk pricing</td>
+<td><span class="checkmark">✓</span> Up to 35% off</td>
+</tr>
+<tr>
+<td class="feature">Customs</td>
+<td><span class="checkmark">✓</span> No customs</td>
+<td>Customs clearance</td>
+</tr>
+<tr>
+<td class="feature">Purity & testing</td>
+<td><span class="checkmark">✓</span> 98%+, HPLC COA</td>
+<td><span class="checkmark">✓</span> 98%+, HPLC COA</td>
+</tr>
+<tr>
+<td class="feature">Best for</td>
+<td><span class="checkmark">✓</span> Urgent research</td>
+<td><span class="checkmark">✓</span> Bulk & budget</td>
+</tr>
+</table>
+
+<h2 style="margin-top: 3rem;">Why both options?</h2>
+<p>Different researchers have different constraints. Someone running a pilot study needs results in days. Someone doing a 6-month study can wait 3 weeks and save 60%. We've optimized both paths so you get the best deal for your timeline.</p>
+
+<div class="guarantee-box">
+<h3>✓ Quality guarantee both ways</h3>
+<p>Whether you choose domestic speed or overseas savings, you get the same 98%+ purity, independent HPLC testing, full COA documentation, and money-back guarantee.</p>
+</div>
+
+</div>
+</div>
+
+<div id="products" class="page">
+<div class="hero-section">
+<h1>Products</h1>
+<p>Compare pricing for domestic (fast) vs overseas (discounted)</p>
+</div>
+
+<div class="content">
+<h2>Featured peptides</h2>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-name">BPC-157</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Body Protection Compound • 5mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$89.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$29.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+
+<div class="product-card">
+<div class="product-name">TB-500</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Thymosin beta-4 • 2mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$109.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$39.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+
+<div class="product-card">
+<div class="product-name">GHK-Cu</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Copper peptide • 1mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$69.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$24.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+
+<div class="product-card">
+<div class="product-name">Semax</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Nootropic peptide • 3mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$74.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$27.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+
+<div class="product-card">
+<div class="product-name">Melanotan II</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Research compound • 10mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$79.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$32.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+
+<div class="product-card">
+<div class="product-name">Epithalon</div>
+<p style="font-size: 12px; color: #666; margin-bottom: 1rem;">Anti-aging research • 2mg vial</p>
+<div class="pricing-row domestic-price">
+<span class="label">Domestic:</span>
+<span class="price">$99.99</span>
+</div>
+<div class="pricing-row overseas-price">
+<span class="label">Overseas:</span>
+<span class="price">$34.99</span>
+</div>
+<p style="font-size: 11px; color: #999; margin-top: 0.75rem;">⚡ 2-5 days | 🌍 2-3 weeks</p>
+<button class="cta-button" style="width: 100%;">Add to cart</button>
+</div>
+</div>
+</div>
+</div>
+
+<div id="about" class="page">
+<div class="hero-section">
+<h1>About us</h1>
+<p>We source from the world's best labs. You get all the benefit at the best price.</p>
+</div>
+
+<div class="content">
+<h2>Who we are</h2>
+<p>Pep Suppliers exists because the peptide market was broken. Researchers were paying 2-3x what labs actually charge. Middlemen, distributors, and resellers were taking 60-70% margins while scientists footed the bill.</p>
+
+<p>We decided to fix it. Our team has spent years building direct relationships with the world's top peptide research labs. Today, we source directly from synthesis facilities in Europe, Asia, and the USA, then handle all the quality verification ourselves. You get the benefit: pharmaceutical-grade peptides at lab costs.</p>
+
+<h2>Our mission</h2>
+<p>Make cutting-edge peptide research accessible and affordable. We believe scientists shouldn't have to choose between quality and cost. By eliminating the middleman, we pass 50-70% savings directly to you while maintaining the highest purity standards.</p>
+
+<h2>How it works</h2>
+<div class="process-flow">
+<div class="process-step">
+<div class="step-num">1</div>
+<div class="step-content">
+<h4>We negotiate directly with labs</h4>
+<p>Our team maintains ongoing relationships with 15+ premier peptide synthesis facilities worldwide. We negotiate bulk pricing and exclusive access.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">2</div>
+<div class="step-content">
+<h4>We verify everything</h4>
+<p>Every batch gets independent HPLC testing from US accredited labs. We check purity, potency, and sterility. No shortcuts.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">3</div>
+<div class="step-content">
+<h4>We handle logistics</h4>
+<p>Temperature-controlled storage, discreet packaging, cold-chain shipping. We manage every detail so you don't have to.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">4</div>
+<div class="step-content">
+<h4>You get the benefit</h4>
+<p>Premium quality at 50-70% off. Complete transparency. Expert support. You keep all the savings we create by cutting out middlemen.</p>
+</div>
+</div>
+</div>
+
+<h2>Two supply paths</h2>
+<p>We've created two options to meet different research needs:</p>
+
+<h3>Domestic (fast)</h3>
+<p>US warehouse inventory. 2-5 day shipping. Premium pricing reflects the cost of maintaining inventory and fast logistics. Perfect for urgent research or pilots.</p>
+
+<h3>Overseas (discounted)</h3>
+<p>Direct from synthesis labs globally. Fresh synthesis made to order. 2-3 week shipping. Heavily discounted because you're getting lab pricing and you can wait. Perfect for bulk orders and long-term projects.</p>
+
+<h2>What you actually get</h2>
+<ul>
+<li>Full transparency — Know your source. Batch ID links to synthesis facility and HPLC test data.</li>
+<li>Guaranteed purity — 98%+ on every batch. Independent testing. Certificate of Analysis with every order.</li>
+<li>White-glove delivery — Temperature controlled. Discreet packaging. Shipped within 24 hours. Fully tracked.</li>
+<li>Expert support — Real scientists answer your questions. Protocol guidance. Dosing support.</li>
+</ul>
+
+<div class="guarantee-box">
+<h3>✓ Our guarantee</h3>
+<p>Not satisfied? Full refund. We stand behind every peptide we sell. Your satisfaction is our priority.</p>
+</div>
+</div>
+</div>
+
+<div id="faq" class="page">
+<div class="hero-section">
+<h1>Frequently asked questions</h1>
+<p>Common questions about domestic vs overseas, pricing, and quality.</p>
+</div>
+
+<div class="content">
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Is the overseas option as good quality as domestic?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Yes. Absolutely. Both options use the same 98%+ purity standard, independent HPLC testing, and full COA documentation. The only difference is timing and pricing. Overseas is fresh synthesis (often higher purity) and cheaper because you can wait.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Why is overseas 70% cheaper?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Three reasons: (1) Direct from synthesis lab with no warehouse markup, (2) Fresh synthesis made to order (no inventory carrying costs), (3) You accept 2-3 week shipping (no premium for speed). Domestic requires warehouse stock, inventory risk, and fast dispatch logistics.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>How long is overseas shipping really?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Typically 2-3 weeks from order to your door. 5-7 days for synthesis + 7-10 days international courier + customs clearance. We provide full tracking. It's slower but very predictable.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Will customs delay my overseas order?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Possibly, but rarely. We include full documentation and declarations. "Research purposes only" labeling is standard. Delays are uncommon but possible. If customs is a risk for your timeline, choose domestic instead.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Can I mix domestic and overseas in one order?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Yes. You can order some peptides from domestic (fast, higher price) and others from overseas (slow, cheaper). Just select your preference for each item at checkout.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>What's the catch with overseas pricing?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+No catch. You get lower price in exchange for longer wait time. Quality is identical. Testing is identical. COA is identical. It's simply a different supply chain: warehouse inventory + fast logistics (domestic) vs fresh synthesis + patient shipping (overseas).
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Does overseas qualify for bulk discounts?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Yes. Overseas bulk discounts are even better: 3-5 vials -15%, 6-10 vials -25%, 11+ vials -35%. Domestic doesn't have bulk pricing. That's where overseas really shines for large orders.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Which should I choose?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Choose domestic if: You need peptides in days (urgent research, pilots). Choose overseas if: You're doing bulk orders, long-term projects, or want max savings. Most researchers do a mix depending on their project timeline.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>Is there a money-back guarantee on both?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+Yes. Both domestic and overseas orders come with our full satisfaction guarantee. If a batch fails our 98%+ purity standard or you're unsatisfied, we'll replace or refund you. No questions asked.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>How do you handle privacy?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+All orders ship in discreet packaging with no branding or external labeling. We use encrypted communication, HTTPS checkout, and never share customer data with third parties. Your privacy is protected.
+</div>
+</div>
+
+<div class="faq-item" onclick="toggleFAQ(this)">
+<div class="faq-question">
+<span>What about customs and legal issues?</span>
+<span class="faq-toggle">+</span>
+</div>
+<div class="faq-answer">
+All our products are clearly labeled "for research purposes only." Peptide legality varies by jurisdiction. It's your responsibility to verify legality in your location. We ship in compliance with US law and provide all documentation needed for customs clearance.
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p><strong>Pep Suppliers</strong> — Direct lab sourcing. Speed or savings. Your choice.</p>
+<p>Questions? Email <a href="mailto:support@pep-suppliers.com">support@pep-suppliers.com</a></p>
+<p style="margin-top: 1rem;">All products strictly for research purposes only. Not for human consumption.</p>
+</div>
+
+<script>
+function showPage(pageName) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => page.classList.remove('active'));
+  document.getElementById(pageName).classList.add('active');
+  
+  const buttons = document.querySelectorAll('.nav button');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  window.scrollTo(0, 0);
+}
+
+function toggleFAQ(element) {
+  element.classList.toggle('open');
+}
+</script>
+</body>
+</html>
