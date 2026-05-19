@@ -1,1 +1,35 @@
-[paste entire HTML from my earlier message starting with <!DOCTYPE html>]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pep Suppliers – Global research peptide sourcing. Domestic fast-ship or overseas savings.">
+<title>Pep Suppliers</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; color: #081833; background: linear-gradient(135deg, rgba(255,240,247,0.4) 0%, rgba(234,244,255,0.3) 25%, rgba(255,255,255,0.8) 50%, rgba(234,251,243,0.3) 75%, rgba(243,228,196,0.2) 100%); line-height: 1.6; overflow-x: hidden; }
+.scroll-controls { position: fixed; right: 20px; bottom: 32px; z-index: 100; display: flex; flex-direction: column; gap: 8px; }
+.scroll-btn { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,253,248,0.93)); border: 1.5px solid #ddeaf5; color: #075fea; font-size: 18px; font-weight: 700; cursor: pointer; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(8, 24, 51, 0.08); }
+.scroll-btn:hover { background: #ffffff; border-color: #075fea; box-shadow: 0 8px 20px rgba(7, 95, 234, 0.15); transform: translateY(-2px); }
+header { width: min(1360px, calc(100% - 32px)); margin: 14px auto 0; padding: 6px 18px; min-height: 120px; max-height: 155px; display: grid; grid-template-columns: minmax(560px, 1fr) auto; align-items: center; gap: 24px; border-radius: 20px; background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,253,248,0.92)); border: 1px solid #ddeaf5; box-shadow: 0 12px 32px rgba(18,48,74,0.08); overflow: hidden; }
+.logo-section { height: 118px; display: flex; align-items: center; flex-shrink: 0; cursor: pointer; }
+.logo-text { font-size: 20px; font-weight: 700; background: linear-gradient(90deg, #075fea, #12a66a, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+nav { display: grid; grid-template-columns: repeat(4, minmax(95px, 1fr)); gap: 10px; flex-shrink: 0; }
+.nav-pill { padding: 0.6rem 1rem; border-radius: 22px; font-size: 11px; font-weight: 600; text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; }
+.nav-pill.home { background: #eaf4ff; border-color: #075fea; color: #0052cc; }
+.nav-pill.home:hover { background: #d9ebff; box-shadow: 0 4px 12px rgba(7, 95, 234, 0.2); transform: translateY(-2px); }
+.nav-pill.products { background: #fff0f7; border-color: #f05ba8; color: #c2185b; }
+.nav-pill.products:hover { background: #ffd4e5; box-shadow: 0 4px 12px rgba(240, 91, 168, 0.2); transform: translateY(-2px); }
+.nav-pill.faq { background: #ffe8f0; border-color: #ff69b4; color: #c2185b; }
+.nav-pill.faq:hover { background: #ffd4e5; box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2); transform: translateY(-2px); }
+.nav-pill.contact { background: #e8f5e9; border-color: #10b981; color: #065f46; }
+.nav-pill.contact:hover { background: #d1fae5; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2); transform: translateY(-2px); }
+.hero { max-width: 1360px; margin: 1.2rem auto 2rem; padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: flex-start; background: radial-gradient(ellipse 900px 400px at 15% 50%, rgba(255,240,247,0.5) 0%, transparent 70%), radial-gradient(ellipse 700px 300px at 85% 45%, rgba(234,251,243,0.4) 0%, transparent 65%); border-radius: 20px; }
+.hero-left h1 { font-size: clamp(42px, 4.8vw, 68px); font-weight: 700; line-height: 1.02; letter-spacing: -0.05em; margin-bottom: 1.2rem; color: #081833; max-width: 600px; }
+.hero-left p { font-size: 18px; color: #5a6270; line-height: 1.55; max-width: 620px; }
+.hero-right { display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 22px; align-items: stretch; }
+.choice-card { background: linear-gradient(135deg, #ffffff 0%, #eaf4ff 100%); border: 1.5px solid #ddeaf5; border-radius: 14px; padding: 24px; transition: all 0.3s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 430px; height: 100%; }
+.choice-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #075fea, #0052cc); }
+.choice-card.overseas { background: linear-gradient(1
