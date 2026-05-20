@@ -256,79 +256,354 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </section>
 
 <section id="products">
-<div style="padding: 28px; background: linear-gradient(135deg, var(--blush) 0%, var(--sky) 50%, var(--ivory) 100%); border-radius: 12px; border: 1px solid var(--line); margin-bottom: 32px;">
-<h2 style="margin: 0 0 8px 0; font-size: 32px; color: var(--navy); font-weight: 700;">Research Product Catalog</h2>
-<p style="margin: 0 0 18px 0; color: var(--muted); font-size: 14px; line-height: 1.7; max-width: 700px;">Compare domestic fast-ship availability, overseas savings, documentation visibility, and demo pricing placeholders in one clean catalog.</p>
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-<span style="padding: 6px 12px; background: white; border-radius: 20px; border: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--navy);">⚡ Domestic Fast-Ship</span>
-<span style="padding: 6px 12px; background: white; border-radius: 20px; border: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--navy);">🌍 Overseas Savings</span>
-<span style="padding: 6px 12px; background: white; border-radius: 20px; border: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--navy);">📄 COAs / Testing</span>
-<span style="padding: 6px 12px; background: white; border-radius: 20px; border: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--navy);">🔬 Research Use Only</span>
+<!-- CATALOG HERO -->
+<div style="background: linear-gradient(135deg, #fff0f7 0%, #eaf4ff 50%, #fffdf8 100%); padding: 40px; border-radius: 16px; margin-bottom: 40px; border: 1px solid #dbeaf6; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+<h1 style="margin: 0 0 12px 0; font-size: 48px; font-weight: 700; color: #071833;">Research Product Catalog</h1>
+<p style="margin: 0 0 24px 0; font-size: 16px; color: #5f6f86; line-height: 1.8; max-width: 800px;">Premium research-grade peptides with transparent sourcing. Compare domestic fast-ship and overseas savings paths. All products include documentation where available.</p>
+<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+<div style="background: #eaf4ff; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #126cff;">⚡ Domestic 2–5 days</div>
+<div style="background: #eafbf3; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #13b887;">🌍 Overseas 2–3 weeks</div>
+<div style="background: #f4efff; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #8d6bff;">📄 Documentation</div>
+<div style="background: #fff0f7; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #f05ba8;">🔬 Research Only</div>
 </div>
 </div>
 
-<div class="catalog-stats">
-<div class="stat-card"><div style="font-size: 24px; margin-bottom: 8px;">🔄</div><div class="stat-num">2</div><div class="stat-label">Sourcing Paths</div></div>
-<div class="stat-card"><div style="font-size: 24px; margin-bottom: 8px;">📦</div><div class="stat-num">9</div><div class="stat-label">Products</div></div>
-<div class="stat-card"><div style="font-size: 24px; margin-bottom: 8px;">⚡</div><div class="stat-num">2–5</div><div class="stat-label">Days Domestic</div></div>
-<div class="stat-card"><div style="font-size: 24px; margin-bottom: 8px;">🌍</div><div class="stat-num">2–3</div><div class="stat-label">Weeks Overseas</div></div>
+<!-- STATS STRIP -->
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px;">
+<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 32px; margin-bottom: 8px;">🔄</div>
+<div style="font-size: 24px; font-weight: 700; color: #126cff;">2</div>
+<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Sourcing Paths</div>
+</div>
+<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 32px; margin-bottom: 8px;">📦</div>
+<div style="font-size: 24px; font-weight: 700; color: #126cff;">9</div>
+<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Products</div>
+</div>
+<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 32px; margin-bottom: 8px;">✓</div>
+<div style="font-size: 24px; font-weight: 700; color: #13b887;">Most</div>
+<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Have Docs</div>
+</div>
+<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 32px; margin-bottom: 8px;">🏆</div>
+<div style="font-size: 24px; font-weight: 700; color: #f5a24c;">50–70%</div>
+<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Overseas Savings</div>
+</div>
 </div>
 
-<div style="display: grid; grid-template-columns: 200px 1fr; gap: 28px;">
-<div style="background: white; padding: 18px; border-radius: 10px; border: 1px solid var(--line);">
-<div style="margin: 0 0 14px 0; font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.5px;">Filter Catalog</div>
-<div style="margin-bottom: 18px;">
-<div style="font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin-bottom: 8px;">Category</div>
-<label style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 12px; color: var(--navy);"><input type="checkbox" checked style="accent-color: var(--blue);"> All Vials</label>
-<label style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 12px; color: var(--navy);"><input type="checkbox" style="accent-color: var(--blue);"> Peptides</label>
-<label style="display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--navy);"><input type="checkbox" style="accent-color: var(--blue);"> Blends</label>
+<!-- FILTER + CATALOG LAYOUT -->
+<div style="display: grid; grid-template-columns: 220px 1fr; gap: 32px;">
+
+<!-- SIDEBAR FILTER -->
+<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; height: fit-content; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+<div style="font-size: 13px; font-weight: 700; color: #071833; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 20px;">Filter Catalog</div>
+
+<div style="margin-bottom: 20px;">
+<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Category</div>
+<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> All Products</label>
+<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Peptides</label>
+<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Blends</label>
 </div>
-<div style="margin-bottom: 18px;">
-<div style="font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin-bottom: 8px;">Shipping</div>
-<label style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 12px; color: var(--navy);"><input type="checkbox" checked style="accent-color: var(--blue);"> Domestic</label>
-<label style="display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--navy);"><input type="checkbox" checked style="accent-color: var(--blue);"> Overseas</label>
+
+<div style="margin-bottom: 20px; padding-top: 20px; border-top: 1px solid #dbeaf6;">
+<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Shipping</div>
+<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> Domestic</label>
+<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> Overseas</label>
 </div>
+
+<div style="padding-top: 20px; border-top: 1px solid #dbeaf6;">
+<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Docs</div>
+<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Available</label>
+</div>
+</div>
+
+<!-- CATALOG MAIN -->
 <div>
-<div style="font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin-bottom: 8px;">Documentation</div>
-<label style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px; font-size: 12px; color: var(--navy);"><input type="checkbox" style="accent-color: var(--blue);"> COA/Testing</label>
-<label style="display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--navy);"><input type="checkbox" style="accent-color: var(--blue);"> Upgrade</label>
+<!-- TOOLBAR -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid #dbeaf6;">
+<div style="font-size: 12px; color: #5f6f86; font-weight: 600;">Showing 1–9 demo products</div>
+<select style="padding: 8px 12px; border: 1px solid #dbeaf6; border-radius: 6px; font-size: 12px; background: white; cursor: pointer; color: #071833;">
+<option>Featured</option>
+<option>Name A–Z</option>
+<option>Domestic First</option>
+<option>Overseas Savings</option>
+</select>
+</div>
+
+<!-- PRODUCT GRID (3 COLUMNS) -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+
+<!-- PRODUCT 1: RETATRUTIDE -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Retatrutide</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">10mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Retatrutide</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">10mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
 </div>
 </div>
 
-<div>
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px;">
-<div style="font-size: 12px; color: var(--muted);">Showing 1–9 demo products</div>
-<div style="display: flex; gap: 8px;">
-<select style="padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 11px; background: white; cursor: pointer;"><option>Featured</option><option>Name A–Z</option><option>Domestic</option><option>Overseas</option></select>
+<!-- PRODUCT 2: TIRZEPATIDE -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Tirzepatide</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">10mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Tirzepatide</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">10mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 40px;">
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">Retatrutide</div><div style="font-size: 5px; color: var(--muted);">10mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">Retatrutide</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">10mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">Tirzepatide</div><div style="font-size: 5px; color: var(--muted);">10mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">Tirzepatide</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">10mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">Tesamorelin</div><div style="font-size: 5px; color: var(--muted);">2mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">Tesamorelin</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">2mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">BPC-157</div><div style="font-size: 5px; color: var(--muted);">5mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">BPC-157</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">5mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">TB-500</div><div style="font-size: 5px; color: var(--muted);">2mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">TB-500</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">2mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">CJC/Ipam</div><div style="font-size: 5px; color: var(--muted);">Blend</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">CJC-1295 / Ipamorelin</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">Blend kit</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">NAD+</div><div style="font-size: 5px; color: var(--muted);">500mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">NAD+</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">500mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">MOTS-C</div><div style="font-size: 5px; color: var(--muted);">5mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">MOTS-C</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">5mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
-
-<div style="background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden;"><div style="height: 140px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative;"><div style="width: 60px; height: 100px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 4px 4px 10px 10px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; flex-direction: column;"><div style="width: 50px; height: 8px; background: #0f1f4a; border-radius: 2px 2px 0 0; margin: 0 auto;"></div><div style="width: 56px; height: 60px; background: white; margin: 3px auto 0; border-radius: 2px; padding: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2;"><div style="font-size: 6px; color: var(--blue); margin-bottom: 1px;">Pep Suppliers</div><div style="font-size: 8px; margin-bottom: 1px;">Semaglutide</div><div style="font-size: 5px; color: var(--muted);">5mg</div></div></div><div style="position: absolute; top: 8px; right: 8px; background: var(--lav); color: var(--purple); padding: 3px 6px; border-radius: 3px; font-size: 9px; font-weight: 700;">📄</div></div><div style="padding: 14px;"><h3 style="margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600;">Semaglutide</h3><p style="margin: 0 0 8px 0; font-size: 11px; color: var(--muted);">5mg vial</p><div style="display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap;"><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--sky); color: var(--blue);">Domestic</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--mint); color: var(--teal);">Overseas</span><span style="font-size: 9px; padding: 3px 7px; border-radius: 3px; font-weight: 600; background: var(--blush); color: var(--pink);">Research Only</span></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;"><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Domestic</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div><div style="padding: 8px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line);"><div style="font-size: 9px; color: var(--muted); font-weight: 600;">Overseas</div><div style="font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px;">$—</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; font-size: 10px;"><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Domestic</div><div style="color: var(--navy); margin-top: 2px;">2–5 days</div></div><div style="padding: 6px; background: var(--ivory); border-radius: 4px; border: 1px solid var(--line);"><div style="color: var(--muted); font-weight: 600;">Overseas</div><div style="color: var(--navy); margin-top: 2px;">2–3 weeks</div></div></div><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;"><button style="padding: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 11px; font-weight: 600; cursor: pointer;">Compare</button><a href="#contact" style="text-align: center; font-size: 10px; color: var(--blue); text-decoration: none; padding: 8px;">Details</a></div></div></div>
+<!-- PRODUCT 3: TESAMORELIN -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Tesamorelin</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">2mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Tesamorelin</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">2mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
 </div>
 
-<div style="background: linear-gradient(135deg, var(--mint) 0%, var(--sky) 100%); padding: 28px; border-radius: 10px; border: 1px solid var(--line); margin-top: 40px; text-align: center;">
-<h3 style="margin: 0 0 8px 0; font-size: 20px; color: var(--navy); font-weight: 700;">Need help comparing sourcing paths?</h3>
-<p style="margin: 0 0 16px 0; color: var(--muted); font-size: 13px; line-height: 1.7;">Ask about domestic availability, overseas planning, documentation visibility, or bulk-friendly sourcing options. Contact Pep Suppliers or explore the FAQ.</p>
-<div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-<button style="padding: 10px 20px; background: var(--teal); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;" onclick="document.location='#contact'">Contact Pep Suppliers</button>
-<button style="padding: 10px 20px; background: transparent; color: var(--blue); border: 1px solid var(--blue); border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;" onclick="document.location='#faq'">View FAQ</button>
+<!-- PRODUCT 4: BPC-157 -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">BPC-157</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">BPC-157</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
+<!-- PRODUCT 5: TB-500 -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">TB-500</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">2mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">TB-500</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">2mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
+<!-- PRODUCT 6: CJC / IPAMORELIN -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 8px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.1;">CJC/Ipam</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">Blend</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">CJC-1295 / Ipamorelin</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">Blend kit</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
+<!-- PRODUCT 7: NAD+ -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">NAD+</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">500mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">NAD+</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">500mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
+<!-- PRODUCT 8: MOTS-C -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">MOTS-C</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">MOTS-C</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
+<!-- PRODUCT 9: SEMAGLUTIDE -->
+<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
+<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
+<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
+<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
+<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Semaglutide</div>
+<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
+<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+</div>
+</div>
+<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+</div>
+<div style="padding: 16px;">
+<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Semaglutide</h3>
+<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
+<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
+<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
+<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+</div>
+<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+</div>
+</div>
+
 </div>
 </div>
 </div>
