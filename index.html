@@ -21,30 +21,34 @@ header { position: sticky; top: 0; background: white; padding: 14px 18px; border
 .header-wrap { max-width: var(--max); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .logo-link { display: flex; align-items: center; text-decoration: none; height: 50px; }
 .logo-link img { max-width: 160px; max-height: 50px; width: auto; height: auto; }
-nav { display: flex; gap: 6px; }
-nav a { padding: 8px 14px; background: var(--blue); color: white; border-radius: 6px; text-decoration: none; border: none; font-size: 12px; font-weight: 600; cursor: pointer; }
-nav a:hover { background: var(--blue2); }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 8px 14px; background: var(--blue); color: white; border-radius: 6px; text-decoration: none; border: none; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+nav a:hover { background: var(--blue2); transform: translateY(-1px); }
 main { max-width: var(--max); margin: 0 auto; padding: 18px; }
 section { margin: 0; padding: 60px 40px; }
 section[id] { scroll-margin-top: 80px; }
 #top { position: absolute; top: 0; left: 0; }
-#hero { background: linear-gradient(135deg, var(--sky) 0%, #f5f9ff 100%); padding: 60px 40px; }
+h1 { font-size: clamp(40px, 5vw, 56px); color: var(--navy); margin: 0 0 20px 0; font-weight: 700; line-height: 1.15; }
+h2 { font-size: 42px; color: var(--navy); margin: 0 0 16px 0; font-weight: 700; }
+h3 { font-size: 18px; color: var(--navy); margin: 0 0 10px 0; font-weight: 600; }
+p { margin: 0 0 16px 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.btn { display: inline-block; padding: 10px 20px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+.btn:hover { background: var(--blue2); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-teal { background: var(--teal); }
+.btn-teal:hover { background: var(--green); }
+.card { background: white; padding: 20px; border-radius: 10px; border: 1px solid var(--line); box-shadow: var(--shadow); transition: all 0.2s; }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+input, select, textarea { padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-family: inherit; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(18,108,255,0.1); }
+#hero { background: linear-gradient(135deg, var(--sky) 0%, #f5f9ff 100%); }
 .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-#hero h1 { font-size: clamp(40px, 5vw, 56px); color: var(--navy); margin: 0 0 20px 0; font-weight: 700; line-height: 1.15; }
 .hero-subheading { background: white; padding: 20px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 30px; }
-.hero-subheading p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
 .hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .hero-card { padding: 24px; background: white; border-radius: 10px; border-left: 4px solid; box-shadow: var(--shadow); }
 .hero-card.domestic { border-left-color: var(--blue); }
 .hero-card.overseas { border-left-color: var(--teal); }
-.hero-card h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--navy); font-weight: 600; }
-.hero-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .calc-card { background: linear-gradient(135deg, var(--lav) 0%, white 100%); padding: 28px; border-radius: 10px; box-shadow: var(--shadow-md); border-top: 4px solid var(--purple); }
-.calc-label { font-size: 11px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-.calc-card h4 { margin: 0 0 6px 0; font-size: 20px; color: var(--navy); font-weight: 700; }
-.calc-subtext { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
 .calc-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
-.calc-inputs input, .calc-inputs select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-family: inherit; }
 .calc-buttons { display: flex; gap: 10px; margin-bottom: 16px; }
 .calc-btn { padding: 9px 16px; background: var(--purple); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
 .calc-btn:hover { background: #7a5ae6; }
@@ -54,68 +58,65 @@ section[id] { scroll-margin-top: 80px; }
 .calc-result-label { font-size: 11px; color: var(--muted); font-weight: 600; }
 .calc-result-value { font-size: 16px; color: var(--navy); font-weight: 700; margin-top: 4px; }
 .calc-note { font-size: 11px; color: var(--muted); padding: 8px; background: rgba(255,255,255,0.7); border-radius: 4px; }
-#products { background: linear-gradient(135deg, var(--blush) 0%, #fef7fb 100%); }
-#products h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
-#products > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; max-width: 700px; }
+#products { background: white; }
+.catalog-hero { background: linear-gradient(135deg, #fff0f7 0%, #eaf4ff 50%, #fffdf8 100%); padding: 40px; border-radius: 16px; margin-bottom: 40px; border: 1px solid var(--line); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.catalog-hero h2 { font-size: 48px; }
+.catalog-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+.catalog-badge { padding: 8px 16px; background: white; border-radius: 20px; border: 1px solid var(--line); font-size: 11px; font-weight: 600; color: var(--navy); }
 .catalog-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
-.stat-card { padding: 16px; background: white; border-radius: 10px; border: 1px solid var(--line); text-align: center; }
-.stat-card .stat-num { font-size: 22px; font-weight: 700; color: var(--blue); }
-.stat-card .stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; font-weight: 600; }
-.catalog-filter { display: flex; gap: 16px; margin-bottom: 32px; }
-.catalog-sidebar { flex: 0 0 180px; }
-.filter-section { margin-bottom: 24px; }
-.filter-section h4 { margin: 0 0 10px 0; font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; }
-.filter-section label { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-size: 12px; color: var(--muted); cursor: pointer; }
-.filter-section input[type="checkbox"] { margin: 0; }
-.catalog-main { flex: 1; }
-.catalog-controls { display: flex; gap: 12px; margin-bottom: 24px; align-items: center; }
-.catalog-controls input { padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; font-size: 12px; flex: 1; max-width: 250px; }
-.catalog-controls select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; }
-.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.product-card { background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden; transition: all 0.2s; }
-.product-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
-.product-vial { height: 120px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 10px; text-align: center; padding: 12px; }
-.vial-text { line-height: 1.4; }
-.vial-brand { font-size: 9px; opacity: 0.8; margin-bottom: 6px; }
-.vial-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
-.vial-strength { font-size: 8px; opacity: 0.7; }
-.product-info { padding: 14px; }
-.product-info h3 { margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
-.product-strength { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
-.product-badges { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
-.badge { font-size: 9px; padding: 3px 7px; border-radius: 4px; font-weight: 600; }
-.badge.domestic { background: var(--sky); color: var(--blue); }
-.badge.overseas { background: var(--mint); color: var(--teal); }
-.badge.docs { background: var(--lav); color: var(--purple); }
-.product-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
-.price-box { padding: 8px; background: var(--ivory); border-radius: 6px; border: 1px solid var(--line); }
-.price-label { font-size: 9px; color: var(--muted); font-weight: 600; }
-.price-value { font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px; }
-.product-note { font-size: 10px; color: var(--muted); padding: 6px; background: var(--blush); border-radius: 4px; }
+.stat-card { padding: 24px; background: white; border-radius: 12px; border: 1px solid var(--line); text-align: center; box-shadow: var(--shadow); }
+.stat-icon { font-size: 32px; margin-bottom: 8px; }
+.stat-num { font-size: 24px; font-weight: 700; color: var(--blue); }
+.stat-label { font-size: 11px; color: var(--muted); margin-top: 6px; font-weight: 600; }
+.catalog-layout { display: grid; grid-template-columns: 220px 1fr; gap: 32px; }
+.filter-card { background: white; padding: 24px; border-radius: 12px; border: 1px solid var(--line); height: fit-content; box-shadow: var(--shadow); }
+.filter-title { margin: 0 0 20px 0; font-size: 13px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.5px; }
+.filter-section { margin-bottom: 20px; }
+.filter-section:not(:last-child) { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.filter-section-title { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+.filter-option { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-size: 12px; color: var(--navy); cursor: pointer; }
+.filter-option input[type="checkbox"] { accent-color: var(--blue); }
+.catalog-controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.catalog-showing { font-size: 12px; color: var(--muted); font-weight: 600; }
+.catalog-controls select { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; background: white; cursor: pointer; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.product-card { background: white; border-radius: 12px; border: 1px solid var(--line); overflow: hidden; box-shadow: var(--shadow); transition: all 0.2s; }
+.product-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.product-vial-wrapper { height: 160px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; position: relative; }
+.product-vial { width: 70px; height: 120px; background: linear-gradient(90deg, #2a5aef 0%, #1d3fbd 100%); border-radius: 6px 6px 14px 14px; position: relative; box-shadow: 0 6px 16px rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; }
+.vial-cap { width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0; }
+.vial-label { width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-size: 7px; color: var(--navy); font-weight: 700; line-height: 1.2; }
+.vial-brand { font-size: 6px; color: var(--blue); margin-bottom: 2px; }
+.vial-name { font-size: 9px; margin-bottom: 2px; }
+.vial-strength { font-size: 6px; color: var(--muted); }
+.vial-docs-badge { position: absolute; top: 12px; right: 12px; background: var(--lav); color: var(--purple); padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; }
+.product-info { padding: 16px; }
+.product-badges { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.badge { font-size: 10px; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
+.badge-domestic { background: var(--sky); color: var(--blue); }
+.badge-overseas { background: var(--mint); color: var(--teal); }
+.badge-research { background: var(--blush); color: var(--pink); }
+.product-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.price-box { padding: 10px; background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); border-radius: 6px; border: 1px solid var(--line); }
+.price-label { font-size: 10px; color: var(--muted); font-weight: 600; }
+.price-value { font-size: 14px; color: var(--navy); font-weight: 700; margin-top: 2px; }
+.product-compare { width: 100%; padding: 10px; background: var(--blue); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.product-compare:hover { background: var(--blue2); }
 #shipping { background: white; }
-#shipping h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
-#shipping > p { color: var(--muted); font-size: 15px; margin: 0 0 40px 0; line-height: 1.7; }
 .shipping-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .shipping-card { padding: 36px; background: linear-gradient(135deg, var(--sky) 0%, #fafbff 100%); border-radius: 12px; border: 1px solid var(--line); }
 .shipping-card.overseas { background: linear-gradient(135deg, var(--mint) 0%, #fafdfc 100%); }
 .ship-badge { display: inline-block; padding: 6px 12px; background: var(--blue); color: white; border-radius: 20px; font-size: 10px; font-weight: 700; margin-bottom: 16px; }
 .shipping-card.overseas .ship-badge { background: var(--teal); }
-.shipping-card h3 { margin: 0 0 12px 0; font-size: 22px; color: var(--navy); font-weight: 700; }
-.shipping-card p { margin: 0 0 16px 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .shipping-features { list-style: none; margin: 20px 0 0 0; padding: 0; }
 .shipping-features li { padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 12px; color: var(--navy); }
 .shipping-features li:before { content: "✓ "; color: var(--blue); font-weight: 700; margin-right: 8px; }
 .shipping-card.overseas .shipping-features li:before { color: var(--teal); }
 .shipping-features li:last-child { border-bottom: none; }
 #quality { background: linear-gradient(135deg, var(--lav) 0%, #f9f7ff 100%); }
-#quality h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
-#quality > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; }
 .quality-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .quality-card { padding: 24px; background: white; border-radius: 10px; border: 1px solid var(--line); border-left: 4px solid var(--purple); }
-.quality-card h3 { margin: 0 0 8px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
-.quality-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 #faq { background: white; }
-#faq h1 { font-size: 48px; color: var(--navy); margin: 0 0 28px 0; font-weight: 700; }
 .faq-categories { display: flex; gap: 10px; margin-bottom: 28px; flex-wrap: wrap; }
 .faq-cat { padding: 8px 16px; background: var(--ivory); border: 1px solid var(--line); border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; color: var(--muted); transition: all 0.2s; }
 .faq-cat.active { background: var(--purple); color: white; border-color: var(--purple); }
@@ -128,68 +129,63 @@ section[id] { scroll-margin-top: 80px; }
 .faq-item.open .faq-a { max-height: 400px; }
 .faq-a-text { padding: 14px 16px; color: var(--muted); font-size: 12px; line-height: 1.7; font-weight: 400; }
 #tracking { background: linear-gradient(135deg, var(--champagne) 0%, #fffaf5 100%); }
-#tracking h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
-#tracking > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; }
 .tracking-form { max-width: 420px; background: white; padding: 24px; border-radius: 10px; box-shadow: var(--shadow); }
 .form-group { margin-bottom: 14px; }
 .form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--navy); font-size: 12px; }
-.form-group input { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-family: inherit; }
 .form-btn { width: 100%; background: var(--teal); color: white; padding: 10px; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; margin-top: 4px; }
 .form-btn:hover { background: var(--green); }
 .form-note { font-size: 10px; color: var(--muted); margin-top: 10px; padding: 8px; background: var(--ivory); border-radius: 4px; }
 #about { background: white; }
-#about h1 { font-size: 48px; color: var(--navy); margin: 0 0 20px 0; font-weight: 700; }
-.about-text p { color: var(--muted); font-size: 14px; margin: 0 0 16px 0; line-height: 1.8; max-width: 800px; }
 .about-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 32px; }
 .about-feature { padding: 20px; background: var(--sky); border-radius: 10px; border-left: 4px solid var(--blue); }
-.about-feature h3 { margin: 0 0 8px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
-.about-feature p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 #contact { background: linear-gradient(135deg, var(--mint) 0%, #fafdfc 100%); }
-#contact h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
-#contact > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; max-width: 700px; }
 .contact-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; }
 .contact-form { background: white; padding: 24px; border-radius: 10px; box-shadow: var(--shadow); }
-.contact-form .form-group { margin-bottom: 12px; }
 .contact-form textarea { resize: vertical; min-height: 100px; }
-.contact-info { }
 .contact-reason-card { background: white; padding: 16px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 12px; }
 .contact-reason-card h4 { margin: 0 0 4px 0; font-size: 12px; color: var(--navy); font-weight: 600; }
 .contact-reason-card p { margin: 0; font-size: 11px; color: var(--muted); }
 .compliance-notice { background: var(--blush); padding: 14px; border-radius: 8px; border-left: 4px solid var(--pink); font-size: 11px; color: var(--muted); line-height: 1.6; margin-top: 16px; }
 #account { background: white; }
-#account h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; font-weight: 700; }
 .login-container { max-width: 400px; background: white; border-radius: 10px; box-shadow: var(--shadow); overflow: hidden; border: 1px solid var(--line); }
 .login-tabs { display: flex; border-bottom: 1px solid var(--line); }
 .login-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; transition: all 0.2s; }
 .login-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
 .login-panel { display: none; padding: 24px; }
 .login-panel.active { display: block; }
-.login-panel .form-group { margin-bottom: 12px; }
-.login-note { font-size: 10px; color: var(--muted); margin-top: 10px; padding: 8px; background: var(--blush); border-radius: 4px; }
+#privacy { background: white; }
+.privacy-panel { background: linear-gradient(135deg, var(--lav) 0%, white 100%); padding: 32px; border-radius: 12px; border: 1px solid var(--line); max-width: 900px; }
 footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 60px; }
 .footer-wrap { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 28px; }
 .footer-col h4 { margin: 0 0 12px 0; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 .footer-col a { display: block; margin-bottom: 6px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 11px; }
 .footer-col a:hover { color: white; }
 .footer-disclaimer { grid-column: 1 / -1; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 10px; color: rgba(255,255,255,0.6); line-height: 1.6; }
-.chat-btn { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; background: var(--blue); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; z-index: 999; box-shadow: 0 4px 12px rgba(18,108,255,0.3); }
-.chat-btn:hover { background: var(--blue2); }
-.chat-panel { display: none; position: fixed; bottom: 80px; right: 20px; width: 320px; background: white; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); padding: 16px; z-index: 999; }
+.chat-btn { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; background: var(--blue); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; z-index: 999; box-shadow: 0 4px 12px rgba(18,108,255,0.3); transition: all 0.2s; }
+.chat-btn:hover { transform: scale(1.1); }
+.chat-panel { display: none; position: fixed; bottom: 80px; right: 20px; width: 320px; background: white; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); padding: 16px; z-index: 999; border: 1px solid var(--line); }
 .chat-panel.open { display: block; }
-.chat-panel h3 { margin: 0 0 8px 0; color: var(--navy); font-size: 13px; font-weight: 600; }
-.chat-panel p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+#scroll-top { position: fixed; bottom: 80px; right: 80px; width: 40px; height: 40px; background: var(--blue); color: white; border: none; border-radius: 50%; cursor: pointer; display: none; align-items: center; justify-content: center; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+#scroll-top.show { display: flex; }
+@media (max-width: 1024px) {
+  .catalog-stats { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .shipping-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 768px) {
   section { padding: 40px 18px; }
-  .hero-grid, .shipping-grid, .contact-grid { grid-template-columns: 1fr; }
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
-  .catalog-filter { flex-direction: column; }
-  .catalog-sidebar { flex: none; width: 100%; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .catalog-layout { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
+  .about-features { grid-template-columns: 1fr; }
   nav a { font-size: 11px; padding: 6px 10px; }
 }
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
 <div class="header-wrap">
 <a href="#top" class="logo-link">
@@ -207,6 +203,7 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 <main>
 <div id="top"></div>
 
+<!-- HERO SECTION -->
 <section id="hero">
 <div class="hero-grid">
 <div>
@@ -226,10 +223,11 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </div>
 
+<!-- CALCULATOR -->
 <div class="calc-card">
-<div class="calc-label">Research Planning Tool</div>
-<h4>Concentration & Volume Calculator</h4>
-<p class="calc-subtext">Estimate concentration and volume for laboratory research planning.</p>
+<div style="font-size: 11px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Research Planning Tool</div>
+<h4 style="margin: 0 0 6px 0; font-size: 20px; color: var(--navy); font-weight: 700;">Reconstitution & Volume Calculator</h4>
+<p style="font-size: 12px; color: var(--muted); margin-bottom: 20px;">Estimate concentration and volume for laboratory research planning.</p>
 <div class="calc-inputs">
 <input type="number" placeholder="Vial amount (mg)" id="vialMg">
 <input type="number" placeholder="Diluent (mL)" id="diluentMl">
@@ -255,363 +253,329 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- PRODUCTS SECTION -->
 <section id="products">
-<!-- CATALOG HERO -->
-<div style="background: linear-gradient(135deg, #fff0f7 0%, #eaf4ff 50%, #fffdf8 100%); padding: 40px; border-radius: 16px; margin-bottom: 40px; border: 1px solid #dbeaf6; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
-<h1 style="margin: 0 0 12px 0; font-size: 48px; font-weight: 700; color: #071833;">Research Product Catalog</h1>
-<p style="margin: 0 0 24px 0; font-size: 16px; color: #5f6f86; line-height: 1.8; max-width: 800px;">Premium research-grade peptides with transparent sourcing. Compare domestic fast-ship and overseas savings paths. All products include documentation where available.</p>
-<div style="display: flex; gap: 12px; flex-wrap: wrap;">
-<div style="background: #eaf4ff; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #126cff;">⚡ Domestic 2–5 days</div>
-<div style="background: #eafbf3; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #13b887;">🌍 Overseas 2–3 weeks</div>
-<div style="background: #f4efff; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #8d6bff;">📄 Documentation</div>
-<div style="background: #fff0f7; padding: 8px 16px; border-radius: 24px; border: 1px solid #dbeaf6; font-size: 12px; font-weight: 600; color: #f05ba8;">🔬 Research Only</div>
+<div class="catalog-hero">
+<h2>Research Product Catalog</h2>
+<p>Premium research-grade peptides with transparent sourcing. Compare domestic fast-ship and overseas savings paths. All products include documentation where available.</p>
+<div class="catalog-badges">
+<div class="catalog-badge">⚡ Domestic 2–5 days</div>
+<div class="catalog-badge">🌍 Overseas 2–3 weeks</div>
+<div class="catalog-badge">📄 Documentation</div>
+<div class="catalog-badge">🔬 Research Only</div>
 </div>
 </div>
 
-<!-- STATS STRIP -->
-<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px;">
-<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<div style="font-size: 32px; margin-bottom: 8px;">🔄</div>
-<div style="font-size: 24px; font-weight: 700; color: #126cff;">2</div>
-<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Sourcing Paths</div>
+<div class="catalog-stats">
+<div class="stat-card">
+<div class="stat-icon">🔄</div>
+<div class="stat-num">2</div>
+<div class="stat-label">Sourcing Paths</div>
 </div>
-<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<div style="font-size: 32px; margin-bottom: 8px;">📦</div>
-<div style="font-size: 24px; font-weight: 700; color: #126cff;">9</div>
-<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Products</div>
+<div class="stat-card">
+<div class="stat-icon">📦</div>
+<div class="stat-num">9</div>
+<div class="stat-label">Products</div>
 </div>
-<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<div style="font-size: 32px; margin-bottom: 8px;">✓</div>
-<div style="font-size: 24px; font-weight: 700; color: #13b887;">Most</div>
-<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Have Docs</div>
+<div class="stat-card">
+<div class="stat-icon">✓</div>
+<div class="stat-num">Most</div>
+<div class="stat-label">Have Docs</div>
 </div>
-<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<div style="font-size: 32px; margin-bottom: 8px;">🏆</div>
-<div style="font-size: 24px; font-weight: 700; color: #f5a24c;">50–70%</div>
-<div style="font-size: 12px; color: #5f6f86; font-weight: 600; margin-top: 6px;">Overseas Savings</div>
-</div>
-</div>
-
-<!-- FILTER + CATALOG LAYOUT -->
-<div style="display: grid; grid-template-columns: 220px 1fr; gap: 32px;">
-
-<!-- SIDEBAR FILTER -->
-<div style="background: white; padding: 24px; border-radius: 12px; border: 1px solid #dbeaf6; height: fit-content; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-<div style="font-size: 13px; font-weight: 700; color: #071833; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 20px;">Filter Catalog</div>
-
-<div style="margin-bottom: 20px;">
-<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Category</div>
-<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> All Products</label>
-<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Peptides</label>
-<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Blends</label>
-</div>
-
-<div style="margin-bottom: 20px; padding-top: 20px; border-top: 1px solid #dbeaf6;">
-<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Shipping</div>
-<label style="display: flex; gap: 8px; margin-bottom: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> Domestic</label>
-<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" checked style="accent-color: #126cff;"> Overseas</label>
-</div>
-
-<div style="padding-top: 20px; border-top: 1px solid #dbeaf6;">
-<div style="font-size: 11px; font-weight: 700; color: #5f6f86; text-transform: uppercase; margin-bottom: 10px;">Docs</div>
-<label style="display: flex; gap: 8px; cursor: pointer; font-size: 12px; color: #071833;"><input type="checkbox" style="accent-color: #126cff;"> Available</label>
+<div class="stat-card">
+<div class="stat-icon">🏆</div>
+<div class="stat-num">50–70%</div>
+<div class="stat-label">Overseas Savings</div>
 </div>
 </div>
 
-<!-- CATALOG MAIN -->
+<div class="catalog-layout">
+<div class="filter-card">
+<div class="filter-title">Filter Catalog</div>
+<div class="filter-section">
+<div class="filter-section-title">Category</div>
+<label class="filter-option"><input type="checkbox" checked> All Products</label>
+<label class="filter-option"><input type="checkbox"> Peptides</label>
+<label class="filter-option"><input type="checkbox"> Blends</label>
+</div>
+<div class="filter-section">
+<div class="filter-section-title">Shipping</div>
+<label class="filter-option"><input type="checkbox" checked> Domestic</label>
+<label class="filter-option"><input type="checkbox" checked> Overseas</label>
+</div>
+<div class="filter-section">
+<div class="filter-section-title">Documentation</div>
+<label class="filter-option"><input type="checkbox"> Available</label>
+<label class="filter-option"><input type="checkbox"> Optional Upgrade</label>
+</div>
+</div>
+
 <div>
-<!-- TOOLBAR -->
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid #dbeaf6;">
-<div style="font-size: 12px; color: #5f6f86; font-weight: 600;">Showing 1–9 demo products</div>
-<select style="padding: 8px 12px; border: 1px solid #dbeaf6; border-radius: 6px; font-size: 12px; background: white; cursor: pointer; color: #071833;">
-<option>Featured</option>
-<option>Name A–Z</option>
-<option>Domestic First</option>
-<option>Overseas Savings</option>
-</select>
+<div class="catalog-controls">
+<div class="catalog-showing">Showing 1–9 demo products</div>
+<select><option>Featured</option><option>Name A–Z</option><option>Domestic First</option><option>Overseas Savings</option></select>
 </div>
 
-<!-- PRODUCT GRID (3 COLUMNS) -->
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-
-<!-- PRODUCT 1: RETATRUTIDE -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Retatrutide</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">10mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+<div class="product-grid">
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">Retatrutide</div>
+<div class="vial-strength">10mg</div>
 </div>
 </div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+<div class="vial-docs-badge">📄</div>
 </div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Retatrutide</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">10mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+<div class="product-info">
+<h3>Retatrutide</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">10mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
 </div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+<button class="product-compare">Compare Options</button>
 </div>
 </div>
 
-<!-- PRODUCT 2: TIRZEPATIDE -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Tirzepatide</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">10mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">Tirzepatide</div>
+<div class="vial-strength">10mg</div>
 </div>
 </div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+<div class="vial-docs-badge">📄</div>
 </div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Tirzepatide</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">10mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+<div class="product-info">
+<h3>Tirzepatide</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">10mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
 </div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
-</div>
-</div>
-
-<!-- PRODUCT 3: TESAMORELIN -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Tesamorelin</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">2mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
-</div>
-</div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
-</div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Tesamorelin</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">2mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
-</div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-</div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+<button class="product-compare">Compare Options</button>
 </div>
 </div>
 
-<!-- PRODUCT 4: BPC-157 -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">BPC-157</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">Tesamorelin</div>
+<div class="vial-strength">2mg</div>
 </div>
 </div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+<div class="vial-docs-badge">📄</div>
 </div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">BPC-157</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+<div class="product-info">
+<h3>Tesamorelin</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">2mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
 </div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
-</div>
-</div>
-
-<!-- PRODUCT 5: TB-500 -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">TB-500</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">2mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
-</div>
-</div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
-</div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">TB-500</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">2mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
-</div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-</div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+<button class="product-compare">Compare Options</button>
 </div>
 </div>
 
-<!-- PRODUCT 6: CJC / IPAMORELIN -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 8px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.1;">CJC/Ipam</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">Blend</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">BPC-157</div>
+<div class="vial-strength">5mg</div>
 </div>
 </div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+<div class="vial-docs-badge">📄</div>
 </div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">CJC-1295 / Ipamorelin</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">Blend kit</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+<div class="product-info">
+<h3>BPC-157</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">5mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
 </div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
-</div>
-</div>
-
-<!-- PRODUCT 7: NAD+ -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">NAD+</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">500mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
-</div>
-</div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
-</div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">NAD+</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">500mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
-</div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-</div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+<button class="product-compare">Compare Options</button>
 </div>
 </div>
 
-<!-- PRODUCT 8: MOTS-C -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">MOTS-C</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">TB-500</div>
+<div class="vial-strength">2mg</div>
 </div>
 </div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
+<div class="vial-docs-badge">📄</div>
 </div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">MOTS-C</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
+<div class="product-info">
+<h3>TB-500</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">2mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
 </div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
-</div>
-</div>
-
-<!-- PRODUCT 9: SEMAGLUTIDE -->
-<div style="background: white; border-radius: 12px; border: 1px solid #dbeaf6; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: all 0.2s;">
-<div style="height: 160px; background: linear-gradient(135deg, #071833 0%, #12304a 100%); display: flex; align-items: center; justify-content: center; position: relative;">
-<div style="width: 70px; height: 120px; background: linear-gradient(to bottom, #2a5aef, #1d3fbd); border-radius: 6px 6px 14px 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.3); position: relative; display: flex; flex-direction: column; align-items: center;">
-<div style="width: 60px; height: 12px; background: #0f1f4a; border-radius: 3px 3px 0 0; margin-top: 0;"></div>
-<div style="width: 64px; height: 70px; background: white; margin-top: 4px; border-radius: 3px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-<div style="font-size: 6px; font-weight: 700; color: #126cff; margin-bottom: 2px;">Pep Suppliers</div>
-<div style="font-size: 9px; font-weight: 700; color: #071833; margin-bottom: 2px; line-height: 1.2;">Semaglutide</div>
-<div style="font-size: 6px; color: #5f6f86; font-weight: 600;">5mg</div>
-<div style="font-size: 5px; color: #f05ba8; margin-top: 2px; font-weight: 600;">Research Use</div>
-</div>
-</div>
-<div style="position: absolute; top: 12px; right: 12px; background: #f4efff; color: #8d6bff; padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: 700;">📄</div>
-</div>
-<div style="padding: 16px;">
-<h3 style="margin: 0 0 4px 0; font-size: 15px; font-weight: 700; color: #071833;">Semaglutide</h3>
-<p style="margin: 0 0 10px 0; font-size: 12px; color: #5f6f86;">5mg vial</p>
-<div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
-<span style="background: #eaf4ff; color: #126cff; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Domestic</span>
-<span style="background: #eafbf3; color: #13b887; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Overseas</span>
-<span style="background: #fff0f7; color: #f05ba8; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600;">Research</span>
-</div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
-<div style="background: #eaf4ff; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Domestic</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-<div style="background: #eafbf3; padding: 10px; border-radius: 6px; border: 1px solid #dbeaf6;"><div style="font-size: 10px; color: #5f6f86; font-weight: 600;">Overseas</div><div style="font-size: 14px; font-weight: 700; color: #071833; margin-top: 2px;">$—</div></div>
-</div>
-<button style="width: 100%; padding: 10px; background: #126cff; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer;">Compare Options</button>
+<button class="product-compare">Compare Options</button>
 </div>
 </div>
 
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">CJC/Ipam</div>
+<div class="vial-strength">Blend</div>
+</div>
+</div>
+<div class="vial-docs-badge">📄</div>
+</div>
+<div class="product-info">
+<h3>CJC-1295 / Ipamorelin</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">Blend kit</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
+</div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
+</div>
+<button class="product-compare">Compare Options</button>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">NAD+</div>
+<div class="vial-strength">500mg</div>
+</div>
+</div>
+<div class="vial-docs-badge">📄</div>
+</div>
+<div class="product-info">
+<h3>NAD+</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">500mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
+</div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
+</div>
+<button class="product-compare">Compare Options</button>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">MOTS-C</div>
+<div class="vial-strength">5mg</div>
+</div>
+</div>
+<div class="vial-docs-badge">📄</div>
+</div>
+<div class="product-info">
+<h3>MOTS-C</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">5mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
+</div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
+</div>
+<button class="product-compare">Compare Options</button>
+</div>
+</div>
+
+<div class="product-card">
+<div class="product-vial-wrapper">
+<div class="product-vial">
+<div class="vial-cap"></div>
+<div class="vial-label">
+<div class="vial-brand">Pep Suppliers</div>
+<div class="vial-name">Semaglutide</div>
+<div class="vial-strength">5mg</div>
+</div>
+</div>
+<div class="vial-docs-badge">📄</div>
+</div>
+<div class="product-info">
+<h3>Semaglutide</h3>
+<p style="font-size: 12px; margin-bottom: 10px;">5mg vial</p>
+<div class="product-badges">
+<span class="badge badge-domestic">Domestic</span>
+<span class="badge badge-overseas">Overseas</span>
+<span class="badge badge-research">Research Only</span>
+</div>
+<div class="product-prices">
+<div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div>
+<div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div>
+</div>
+<button class="product-compare">Compare Options</button>
+</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 
-
+<!-- SHIPPING SECTION -->
 <section id="shipping">
-<h1>Choose Speed or Savings</h1>
+<h2>Choose Speed or Savings</h2>
 <p>Domestic options prioritize faster fulfillment. Overseas sourcing offers deeper savings when timelines allow.</p>
 
 <div class="shipping-grid">
@@ -643,14 +607,15 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- QUALITY SECTION -->
 <section id="quality">
-<h1>Documentation & Quality</h1>
+<h2>Documentation & Quality</h2>
 <p>Most products include available supplier documentation. Many have COAs or Janoshik testing available. Optional upgraded testing may be available on select products and can affect fulfillment time.</p>
 
 <div class="quality-cards">
 <div class="quality-card">
 <h3>Supplier Screening</h3>
-<p>All labs are screened for quality, documentation, and compliance standards.</p>
+<p>All labs screened for quality, documentation, and compliance standards.</p>
 </div>
 
 <div class="quality-card">
@@ -670,8 +635,9 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- FAQ SECTION -->
 <section id="faq">
-<h1>Help Center</h1>
+<h2>Help Center</h2>
 
 <div class="faq-categories">
 <button class="faq-cat active" data-cat="all">All Questions</button>
@@ -748,8 +714,9 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- ORDER TRACKING SECTION -->
 <section id="tracking">
-<h1>Track Your Order</h1>
+<h2>Track Your Order</h2>
 <p>Sign in or use your order number and email to view shipping status, documentation availability, and account history.</p>
 
 <div class="tracking-form">
@@ -768,12 +735,11 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- ABOUT SECTION -->
 <section id="about">
-<h1>About Pep Suppliers</h1>
-<div class="about-text">
+<h2>About Pep Suppliers</h2>
 <p>Pep Suppliers organizes research peptide sourcing options so researchers can access global options without guesswork. We source directly from verified labs, eliminate middleman markups, and maintain full documentation transparency.</p>
-<p>Our mission: Make research-grade peptides accessible, affordable, and transparent through organized sourcing.</p>
-</div>
+<p style="margin-bottom: 32px;">Our mission: Make research-grade peptides accessible, affordable, and transparent through organized sourcing.</p>
 
 <div class="about-features">
 <div class="about-feature">
@@ -798,8 +764,9 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- CONTACT SECTION -->
 <section id="contact">
-<h1>Contact & Support</h1>
+<h2>Contact & Support</h2>
 <p>Reach out about products, shipping, documentation, bulk orders, or general questions. We typically respond within 24 hours.</p>
 
 <div class="contact-grid">
@@ -863,8 +830,9 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 </section>
 
+<!-- ACCOUNT SECTION -->
 <section id="account">
-<h1>Secure Account Access</h1>
+<h2>Secure Account Access</h2>
 
 <div class="login-container">
 <div class="login-tabs">
@@ -884,7 +852,7 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 
 <button class="form-btn">Sign In</button>
-<div class="login-note"><!-- TODO: connect authentication provider --> Secure authentication.</div>
+<div class="form-note"><!-- TODO: connect authentication provider --> Secure authentication.</div>
 </div>
 
 <div class="login-panel create">
@@ -906,14 +874,30 @@ I understand products are for research use only and acknowledge all compliance t
 </div>
 
 <button class="form-btn">Create Account</button>
-<div class="login-note"><!-- TODO: connect authentication provider --> Secure registration.</div>
+<div class="form-note"><!-- TODO: connect authentication provider --> Secure registration.</div>
 </div>
 </div>
 </div>
 </section>
 
+<!-- PRIVACY SECTION -->
+<section id="privacy">
+<h2>Privacy & Legal</h2>
+
+<div class="privacy-panel">
+<h3>Privacy Policy</h3>
+<p style="margin-bottom: 16px;"><strong>[Placeholder] Final privacy policy pending legal review.</strong></p>
+<p>Pep Suppliers respects your privacy. This placeholder will be replaced with a comprehensive privacy policy before launch. The policy will cover data collection, use, storage, and protection practices.</p>
+<p style="margin-bottom: 16px;">Your personal information is handled securely and in compliance with applicable privacy laws. We do not sell or share your data with third parties without consent.</p>
+<h3 style="margin-top: 24px;">Terms of Service</h3>
+<p><strong>[Placeholder] Final terms pending legal review.</strong></p>
+<p>By using Pep Suppliers, you agree to our terms of service. All products are for research use only. Users must be 18+ and comply with applicable laws and regulations in their jurisdiction.</p>
+</div>
+</section>
+
 </main>
 
+<!-- FOOTER -->
 <footer>
 <div class="footer-wrap">
 <div class="footer-col">
@@ -941,7 +925,7 @@ I understand products are for research use only and acknowledge all compliance t
 <h4>Company</h4>
 <a href="#about">About</a>
 <a href="#shipping">Shipping</a>
-<a href="#top">Privacy</a>
+<a href="#privacy">Privacy</a>
 </div>
 
 <div class="footer-disclaimer">
@@ -951,12 +935,16 @@ I understand products are for research use only and acknowledge all compliance t
 </div>
 </footer>
 
-<button class="chat-btn" id="chatBtn" onclick="toggleChat()">💬</button>
+<!-- LIVE CHAT -->
+<button class="chat-btn" id="chatBtn" onclick="toggleChat()" aria-label="Open chat">💬</button>
 <div class="chat-panel" id="chatPanel">
 <h3>Chat Support</h3>
 <p>Live chat placeholder — connect a chat provider before launch.</p>
 <p style="margin-top: 10px; font-size: 10px;">Email: support@pep-suppliers.com</p>
 </div>
+
+<!-- SCROLL TO TOP -->
+<button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
 
 <script>
 // Home anchor
@@ -1032,14 +1020,16 @@ function toggleChat() {
   document.getElementById("chatPanel").classList.toggle("open");
 }
 
-// Product search
-document.getElementById("searchBox").addEventListener("input", e => {
-  const query = e.target.value.toLowerCase();
-  document.querySelectorAll(".product-card").forEach(card => {
-    const name = card.querySelector("h3").textContent.toLowerCase();
-    card.style.display = name.includes(query) ? "block" : "none";
-  });
+// Scroll to top
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("scroll-top");
+  if (window.scrollY > 300) btn.classList.add("show");
+  else btn.classList.remove("show");
 });
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 </script>
 
 </body>
