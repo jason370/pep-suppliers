@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pep Suppliers | Global Peptide Sourcing</title>
+<title>Pep Suppliers | Research Peptide Sourcing</title>
 <style>
 :root {
   --navy: #071833; --ink: #12304A; --muted: #5f6f86;
@@ -11,110 +11,180 @@
   --pink: #f05ba8; --purple: #8d6bff; --orange: #f5a24c;
   --champagne: #f3e4c4; --sky: #eaf4ff; --mint: #eafbf3;
   --blush: #fff0f7; --lav: #f4efff; --ivory: #fffdf8;
-  --line: #dbeaf6; --max: 1480px; --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --line: #dbeaf6; --max: 1480px; --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--navy); background: var(--ivory); line-height: 1.6; }
-header { position: sticky; top: 0; background: white; padding: 16px 18px; border-bottom: 1px solid var(--line); z-index: 1000; box-shadow: var(--shadow); }
+body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--navy); background: #fafbfd; line-height: 1.6; }
+header { position: sticky; top: 0; background: white; padding: 14px 18px; border-bottom: 1px solid var(--line); z-index: 1000; box-shadow: var(--shadow); }
 .header-wrap { max-width: var(--max); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-.logo-link { display: flex; align-items: center; text-decoration: none; }
-.logo-link img { max-width: 180px; max-height: 60px; width: auto; height: auto; }
-nav { display: flex; gap: 8px; flex-wrap: wrap; }
-nav a { padding: 10px 18px; background: var(--blue); color: white; border-radius: 8px; text-decoration: none; border: none; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.logo-link { display: flex; align-items: center; text-decoration: none; height: 50px; }
+.logo-link img { max-width: 160px; max-height: 50px; width: auto; height: auto; }
+nav { display: flex; gap: 6px; }
+nav a { padding: 8px 14px; background: var(--blue); color: white; border-radius: 6px; text-decoration: none; border: none; font-size: 12px; font-weight: 600; cursor: pointer; }
 nav a:hover { background: var(--blue2); }
 main { max-width: var(--max); margin: 0 auto; padding: 18px; }
-section { margin: 0; padding: 80px 40px; }
-section[id] { scroll-margin-top: 160px; }
+section { margin: 0; padding: 60px 40px; }
+section[id] { scroll-margin-top: 80px; }
 #top { position: absolute; top: 0; left: 0; }
-#hero { background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); }
-#hero h1 { font-size: clamp(42px, 5vw, 56px); color: var(--navy); margin: 0 0 16px 0; font-weight: 700; }
-#hero p { font-size: 18px; color: var(--muted); margin: 0; line-height: 1.7; max-width: 700px; }
-.hero-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
-.hero-card { background: white; padding: 32px; border-radius: 12px; border-left: 4px solid; box-shadow: var(--shadow); }
-.hero-card.domestic { border-left-color: var(--green); }
-.hero-card.overseas { border-left-color: var(--orange); }
-.hero-card h3 { margin: 0 0 12px 0; font-size: 20px; color: var(--navy); }
-.hero-card p { margin: 0; color: var(--muted); font-size: 14px; }
-#products { background: linear-gradient(135deg, var(--blush) 0%, var(--ivory) 100%); }
-#products h1 { font-size: 48px; color: var(--navy); margin: 0 0 12px 0; }
-#products > p { color: var(--muted); font-size: 16px; margin: 0 0 40px 0; max-width: 700px; }
-.product-controls { display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; align-items: center; }
-.product-controls input { padding: 10px 16px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; width: 200px; }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
-.product-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid var(--line); transition: all 0.3s; }
-.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
-.product-card h3 { margin: 0 0 8px 0; font-size: 18px; color: var(--navy); font-weight: 600; }
-.product-card .strength { font-size: 13px; color: var(--muted); margin: 4px 0; }
-.product-badges { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-.badge { font-size: 11px; padding: 4px 10px; border-radius: 4px; font-weight: 600; }
-.badge.domestic { background: var(--mint); color: var(--teal); }
-.badge.overseas { background: var(--champagne); color: var(--orange); }
-.badge.docs { background: var(--sky); color: var(--blue); }
-.product-price { margin-top: 12px; font-size: 16px; font-weight: 700; color: var(--navy); }
-#faq { background: linear-gradient(135deg, var(--lav) 0%, var(--ivory) 100%); }
-#faq h1 { font-size: 48px; color: var(--navy); margin: 0 0 12px 0; }
-.faq-search { max-width: 500px; margin: 20px 0 40px 0; }
-.faq-search input { width: 100%; padding: 14px 18px; border: 2px solid var(--line); border-radius: 8px; font-size: 14px; }
-.faq-categories { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
-.faq-cat { padding: 8px 16px; background: white; border: 1px solid var(--line); border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--muted); transition: all 0.2s; }
+#hero { background: linear-gradient(135deg, var(--sky) 0%, #f5f9ff 100%); padding: 60px 40px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+#hero h1 { font-size: clamp(40px, 5vw, 56px); color: var(--navy); margin: 0 0 20px 0; font-weight: 700; line-height: 1.15; }
+.hero-subheading { background: white; padding: 20px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 30px; }
+.hero-subheading p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.hero-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.hero-card { padding: 24px; background: white; border-radius: 10px; border-left: 4px solid; box-shadow: var(--shadow); }
+.hero-card.domestic { border-left-color: var(--blue); }
+.hero-card.overseas { border-left-color: var(--teal); }
+.hero-card h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--navy); font-weight: 600; }
+.hero-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.calc-card { background: linear-gradient(135deg, var(--lav) 0%, white 100%); padding: 28px; border-radius: 10px; box-shadow: var(--shadow-md); border-top: 4px solid var(--purple); }
+.calc-label { font-size: 11px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.calc-card h4 { margin: 0 0 6px 0; font-size: 20px; color: var(--navy); font-weight: 700; }
+.calc-subtext { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+.calc-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.calc-inputs input, .calc-inputs select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-family: inherit; }
+.calc-buttons { display: flex; gap: 10px; margin-bottom: 16px; }
+.calc-btn { padding: 9px 16px; background: var(--purple); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+.calc-btn:hover { background: #7a5ae6; }
+.calc-btn.reset { background: #ccc; color: #333; }
+.calc-results { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.calc-result { padding: 12px; background: white; border-radius: 6px; border: 1px solid var(--line); }
+.calc-result-label { font-size: 11px; color: var(--muted); font-weight: 600; }
+.calc-result-value { font-size: 16px; color: var(--navy); font-weight: 700; margin-top: 4px; }
+.calc-note { font-size: 11px; color: var(--muted); padding: 8px; background: rgba(255,255,255,0.7); border-radius: 4px; }
+#products { background: linear-gradient(135deg, var(--blush) 0%, #fef7fb 100%); }
+#products h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
+#products > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; max-width: 700px; }
+.catalog-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+.stat-card { padding: 16px; background: white; border-radius: 10px; border: 1px solid var(--line); text-align: center; }
+.stat-card .stat-num { font-size: 22px; font-weight: 700; color: var(--blue); }
+.stat-card .stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; font-weight: 600; }
+.catalog-filter { display: flex; gap: 16px; margin-bottom: 32px; }
+.catalog-sidebar { flex: 0 0 180px; }
+.filter-section { margin-bottom: 24px; }
+.filter-section h4 { margin: 0 0 10px 0; font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; }
+.filter-section label { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; font-size: 12px; color: var(--muted); cursor: pointer; }
+.filter-section input[type="checkbox"] { margin: 0; }
+.catalog-main { flex: 1; }
+.catalog-controls { display: flex; gap: 12px; margin-bottom: 24px; align-items: center; }
+.catalog-controls input { padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; font-size: 12px; flex: 1; max-width: 250px; }
+.catalog-controls select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.product-card { background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden; transition: all 0.2s; }
+.product-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.product-vial { height: 120px; background: linear-gradient(135deg, var(--navy) 0%, var(--ink) 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 10px; text-align: center; padding: 12px; }
+.vial-text { line-height: 1.4; }
+.vial-brand { font-size: 9px; opacity: 0.8; margin-bottom: 6px; }
+.vial-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.vial-strength { font-size: 8px; opacity: 0.7; }
+.product-info { padding: 14px; }
+.product-info h3 { margin: 0 0 4px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
+.product-strength { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+.product-badges { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.badge { font-size: 9px; padding: 3px 7px; border-radius: 4px; font-weight: 600; }
+.badge.domestic { background: var(--sky); color: var(--blue); }
+.badge.overseas { background: var(--mint); color: var(--teal); }
+.badge.docs { background: var(--lav); color: var(--purple); }
+.product-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.price-box { padding: 8px; background: var(--ivory); border-radius: 6px; border: 1px solid var(--line); }
+.price-label { font-size: 9px; color: var(--muted); font-weight: 600; }
+.price-value { font-size: 13px; color: var(--navy); font-weight: 700; margin-top: 2px; }
+.product-note { font-size: 10px; color: var(--muted); padding: 6px; background: var(--blush); border-radius: 4px; }
+#shipping { background: white; }
+#shipping h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
+#shipping > p { color: var(--muted); font-size: 15px; margin: 0 0 40px 0; line-height: 1.7; }
+.shipping-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.shipping-card { padding: 36px; background: linear-gradient(135deg, var(--sky) 0%, #fafbff 100%); border-radius: 12px; border: 1px solid var(--line); }
+.shipping-card.overseas { background: linear-gradient(135deg, var(--mint) 0%, #fafdfc 100%); }
+.ship-badge { display: inline-block; padding: 6px 12px; background: var(--blue); color: white; border-radius: 20px; font-size: 10px; font-weight: 700; margin-bottom: 16px; }
+.shipping-card.overseas .ship-badge { background: var(--teal); }
+.shipping-card h3 { margin: 0 0 12px 0; font-size: 22px; color: var(--navy); font-weight: 700; }
+.shipping-card p { margin: 0 0 16px 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.shipping-features { list-style: none; margin: 20px 0 0 0; padding: 0; }
+.shipping-features li { padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.06); font-size: 12px; color: var(--navy); }
+.shipping-features li:before { content: "✓ "; color: var(--blue); font-weight: 700; margin-right: 8px; }
+.shipping-card.overseas .shipping-features li:before { color: var(--teal); }
+.shipping-features li:last-child { border-bottom: none; }
+#quality { background: linear-gradient(135deg, var(--lav) 0%, #f9f7ff 100%); }
+#quality h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
+#quality > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; }
+.quality-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.quality-card { padding: 24px; background: white; border-radius: 10px; border: 1px solid var(--line); border-left: 4px solid var(--purple); }
+.quality-card h3 { margin: 0 0 8px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
+.quality-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+#faq { background: white; }
+#faq h1 { font-size: 48px; color: var(--navy); margin: 0 0 28px 0; font-weight: 700; }
+.faq-categories { display: flex; gap: 10px; margin-bottom: 28px; flex-wrap: wrap; }
+.faq-cat { padding: 8px 16px; background: var(--ivory); border: 1px solid var(--line); border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; color: var(--muted); transition: all 0.2s; }
 .faq-cat.active { background: var(--purple); color: white; border-color: var(--purple); }
-.faq-items { display: grid; gap: 16px; }
+.faq-items { display: grid; gap: 10px; }
 .faq-item { background: white; border-radius: 10px; border: 1px solid var(--line); overflow: hidden; }
-.faq-q { padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--navy); background: var(--ivory); }
+.faq-q { padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--navy); background: var(--ivory); }
 .faq-q:hover { background: var(--sky); }
-.faq-a { padding: 0 16px; max-height: 0; overflow: hidden; transition: all 0.3s; color: var(--muted); font-size: 14px; line-height: 1.7; }
-.faq-item.open .faq-a { padding: 16px; max-height: 500px; }
-#about { background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); }
-#about h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; }
-.about-text { max-width: 900px; }
-.about-text p { color: var(--muted); font-size: 16px; margin: 0 0 20px 0; line-height: 1.8; }
-.about-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 40px; }
-.about-feature { padding: 24px; background: white; border-radius: 10px; border-left: 4px solid var(--blue); }
-.about-feature h3 { margin: 0 0 12px 0; font-size: 18px; color: var(--navy); }
-.about-feature p { margin: 0; color: var(--muted); font-size: 14px; }
-#contact { background: linear-gradient(135deg, var(--mint) 0%, var(--ivory) 100%); }
-#contact h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; }
-.contact-form { max-width: 600px; background: white; padding: 32px; border-radius: 12px; box-shadow: var(--shadow); }
-.form-group { margin-bottom: 20px; }
-.form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--navy); font-size: 14px; }
-.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; font-family: inherit; }
-.form-group textarea { resize: vertical; min-height: 120px; }
-.form-btn { background: var(--teal); color: white; padding: 12px 32px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.faq-q-toggle { font-size: 16px; color: var(--blue); }
+.faq-a { max-height: 0; overflow: hidden; transition: all 0.3s; }
+.faq-item.open .faq-a { max-height: 400px; }
+.faq-a-text { padding: 14px 16px; color: var(--muted); font-size: 12px; line-height: 1.7; font-weight: 400; }
+#tracking { background: linear-gradient(135deg, var(--champagne) 0%, #fffaf5 100%); }
+#tracking h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
+#tracking > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; }
+.tracking-form { max-width: 420px; background: white; padding: 24px; border-radius: 10px; box-shadow: var(--shadow); }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--navy); font-size: 12px; }
+.form-group input { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-family: inherit; }
+.form-btn { width: 100%; background: var(--teal); color: white; padding: 10px; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; margin-top: 4px; }
 .form-btn:hover { background: var(--green); }
-.disclaimer { background: var(--blush); padding: 20px; border-radius: 8px; border-left: 4px solid var(--pink); margin-top: 24px; }
-.disclaimer p { margin: 0; color: var(--muted); font-size: 13px; }
-#tracking { background: linear-gradient(135deg, var(--champagne) 0%, var(--ivory) 100%); }
-#tracking h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; }
-.tracking-form { max-width: 500px; background: white; padding: 28px; border-radius: 12px; box-shadow: var(--shadow); }
-.tracking-form .form-group { margin-bottom: 16px; }
-.tracking-form .form-btn { width: 100%; }
-#login { background: linear-gradient(135deg, var(--sky) 0%, var(--ivory) 100%); }
-#login h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; }
-.login-container { max-width: 450px; background: white; border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+.form-note { font-size: 10px; color: var(--muted); margin-top: 10px; padding: 8px; background: var(--ivory); border-radius: 4px; }
+#about { background: white; }
+#about h1 { font-size: 48px; color: var(--navy); margin: 0 0 20px 0; font-weight: 700; }
+.about-text p { color: var(--muted); font-size: 14px; margin: 0 0 16px 0; line-height: 1.8; max-width: 800px; }
+.about-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 32px; }
+.about-feature { padding: 20px; background: var(--sky); border-radius: 10px; border-left: 4px solid var(--blue); }
+.about-feature h3 { margin: 0 0 8px 0; font-size: 14px; color: var(--navy); font-weight: 600; }
+.about-feature p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+#contact { background: linear-gradient(135deg, var(--mint) 0%, #fafdfc 100%); }
+#contact h1 { font-size: 48px; color: var(--navy); margin: 0 0 8px 0; font-weight: 700; }
+#contact > p { color: var(--muted); font-size: 15px; margin: 0 0 32px 0; line-height: 1.7; max-width: 700px; }
+.contact-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; }
+.contact-form { background: white; padding: 24px; border-radius: 10px; box-shadow: var(--shadow); }
+.contact-form .form-group { margin-bottom: 12px; }
+.contact-form textarea { resize: vertical; min-height: 100px; }
+.contact-info { }
+.contact-reason-card { background: white; padding: 16px; border-radius: 10px; border: 1px solid var(--line); margin-bottom: 12px; }
+.contact-reason-card h4 { margin: 0 0 4px 0; font-size: 12px; color: var(--navy); font-weight: 600; }
+.contact-reason-card p { margin: 0; font-size: 11px; color: var(--muted); }
+.compliance-notice { background: var(--blush); padding: 14px; border-radius: 8px; border-left: 4px solid var(--pink); font-size: 11px; color: var(--muted); line-height: 1.6; margin-top: 16px; }
+#account { background: white; }
+#account h1 { font-size: 48px; color: var(--navy); margin: 0 0 24px 0; font-weight: 700; }
+.login-container { max-width: 400px; background: white; border-radius: 10px; box-shadow: var(--shadow); overflow: hidden; border: 1px solid var(--line); }
 .login-tabs { display: flex; border-bottom: 1px solid var(--line); }
-.login-tab { flex: 1; padding: 16px; text-align: center; cursor: pointer; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; }
+.login-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; transition: all 0.2s; }
 .login-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
-.login-panel { display: none; padding: 32px; }
+.login-panel { display: none; padding: 24px; }
 .login-panel.active { display: block; }
-.login-panel .form-group { margin-bottom: 16px; }
-.login-panel .form-btn { width: 100%; }
-footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 80px; }
-.footer-wrap { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
-.footer-col h4 { margin: 0 0 16px 0; font-size: 14px; font-weight: 700; }
-.footer-col a { display: block; margin-bottom: 10px; color: #aaa; text-decoration: none; font-size: 13px; }
+.login-panel .form-group { margin-bottom: 12px; }
+.login-note { font-size: 10px; color: var(--muted); margin-top: 10px; padding: 8px; background: var(--blush); border-radius: 4px; }
+footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 60px; }
+.footer-wrap { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 28px; }
+.footer-col h4 { margin: 0 0 12px 0; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-col a { display: block; margin-bottom: 6px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 11px; }
 .footer-col a:hover { color: white; }
-.footer-disclaimer { grid-column: 1 / -1; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); text-align: center; font-size: 12px; color: #888; }
-.chat-button { position: fixed; bottom: 24px; right: 24px; width: 56px; height: 56px; background: var(--blue); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; z-index: 999; box-shadow: 0 4px 12px rgba(18, 108, 255, 0.3); transition: all 0.2s; }
-.chat-button:hover { background: var(--blue2); }
-.chat-panel { display: none; position: fixed; bottom: 100px; right: 24px; width: 360px; background: white; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); padding: 20px; z-index: 999; }
+.footer-disclaimer { grid-column: 1 / -1; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 10px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+.chat-btn { position: fixed; bottom: 20px; right: 20px; width: 48px; height: 48px; background: var(--blue); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; z-index: 999; box-shadow: 0 4px 12px rgba(18,108,255,0.3); }
+.chat-btn:hover { background: var(--blue2); }
+.chat-panel { display: none; position: fixed; bottom: 80px; right: 20px; width: 320px; background: white; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.15); padding: 16px; z-index: 999; }
 .chat-panel.open { display: block; }
-.chat-panel h3 { margin: 0 0 12px 0; color: var(--navy); }
-.chat-panel p { margin: 0; color: var(--muted); font-size: 13px; }
+.chat-panel h3 { margin: 0 0 8px 0; color: var(--navy); font-size: 13px; font-weight: 600; }
+.chat-panel p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 @media (max-width: 768px) {
-  section { padding: 40px 20px; }
-  nav { gap: 4px; }
-  nav a { padding: 8px 12px; font-size: 12px; }
+  section { padding: 40px 18px; }
+  .hero-grid, .shipping-grid, .contact-grid { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .catalog-filter { flex-direction: column; }
+  .catalog-sidebar { flex: none; width: 100%; }
+  nav a { font-size: 11px; padding: 6px 10px; }
 }
 </style>
 </head>
@@ -130,9 +200,6 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 <a href="#products">Products</a>
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
-<a href="#about">About</a>
-<a href="#tracking">Orders</a>
-<a href="#login">Account</a>
 </nav>
 </div>
 </header>
@@ -141,160 +208,363 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 <div id="top"></div>
 
 <section id="hero">
+<div class="hero-grid">
+<div>
 <h1>Global peptide sourcing. Domestic speed and overseas savings.</h1>
-<p>Pep Suppliers organizes research peptide sourcing options so you can compare domestic availability, overseas value, documentation visibility, and timeline — without guesswork.</p>
+<div class="hero-subheading">
+<p>Organized global sourcing, verified suppliers, transparent documentation, and clear buying paths — so you can order with confidence.</p>
+</div>
 <div class="hero-cards">
 <div class="hero-card domestic">
 <h3>⚡ Domestic</h3>
-<p>Fast shipping availability. 2-5 days standard, overnight on select peptides. Verification, COAs, Janoshik testing available.</p>
+<p>2-5 days. Overnight on select items. Higher cost, faster path.</p>
 </div>
 <div class="hero-card overseas">
 <h3>🌍 Overseas</h3>
-<p>Significant savings. 2-3 week fulfillment. Direct lab sourcing = 50-70% below market. Optional upgraded testing available.</p>
+<p>2-3 weeks. 50-70% savings. Best for planned orders.</p>
+</div>
+</div>
+</div>
+
+<div class="calc-card">
+<div class="calc-label">Research Planning Tool</div>
+<h4>Concentration & Volume Calculator</h4>
+<p class="calc-subtext">Estimate concentration and volume for laboratory research planning.</p>
+<div class="calc-inputs">
+<input type="number" placeholder="Vial amount (mg)" id="vialMg">
+<input type="number" placeholder="Diluent (mL)" id="diluentMl">
+<input type="number" placeholder="Target amount" id="targetAmt">
+<select id="targetUnit"><option value="mcg">mcg</option><option value="mg">mg</option></select>
+</div>
+<div class="calc-buttons">
+<button class="calc-btn" onclick="doCalc()">Calculate</button>
+<button class="calc-btn reset" onclick="doReset()">Reset</button>
+</div>
+<div class="calc-results">
+<div class="calc-result">
+<div class="calc-result-label">Concentration</div>
+<div class="calc-result-value" id="concResult">—</div>
+</div>
+<div class="calc-result">
+<div class="calc-result-label">Volume (mL)</div>
+<div class="calc-result-value" id="volResult">—</div>
+</div>
+</div>
+<div class="calc-note">For laboratory research planning only. Not for human use or dosing guidance.</div>
 </div>
 </div>
 </section>
 
 <section id="products">
 <h1>Research Product Catalog</h1>
-<p>Compare pricing, availability, and documentation options across domestic and overseas sources.</p>
-<div class="product-controls">
+<p>Compare domestic fast-ship availability, overseas savings, documentation visibility, and demo pricing across 9 research-grade products.</p>
+
+<div class="catalog-stats">
+<div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Sourcing Paths</div></div>
+<div class="stat-card"><div class="stat-num">9</div><div class="stat-label">Products</div></div>
+<div class="stat-card"><div class="stat-num">2-5 days</div><div class="stat-label">Domestic Typical</div></div>
+<div class="stat-card"><div class="stat-num">2-3 wks</div><div class="stat-label">Overseas Typical</div></div>
+</div>
+
+<div class="catalog-filter">
+<div class="catalog-sidebar">
+<div class="filter-section">
+<h4>Category</h4>
+<label><input type="checkbox" checked> All Products</label>
+<label><input type="checkbox"> Peptides</label>
+<label><input type="checkbox"> Blends</label>
+</div>
+<div class="filter-section">
+<h4>Shipping</h4>
+<label><input type="checkbox" checked> Domestic</label>
+<label><input type="checkbox" checked> Overseas</label>
+</div>
+<div class="filter-section">
+<h4>Documentation</h4>
+<label><input type="checkbox"> COA / Testing</label>
+<label><input type="checkbox"> Available</label>
+</div>
+</div>
+
+<div class="catalog-main">
+<div class="catalog-controls">
 <input type="text" placeholder="Search products..." id="searchBox">
+<select><option>Sort by Name</option><option>Sort by Strength</option></select>
 </div>
-<div class="product-grid">
+
+<div class="product-grid" id="productGrid">
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">Retatrutide</div><div class="vial-strength">10mg Research Only</div></div></div>
+<div class="product-info">
 <h3>Retatrutide</h3>
-<p class="strength">10mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">10mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">Tirzepatide</div><div class="vial-strength">10mg Research Only</div></div></div>
+<div class="product-info">
 <h3>Tirzepatide</h3>
-<p class="strength">10mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">10mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">Tesamorelin</div><div class="vial-strength">2mg Research Only</div></div></div>
+<div class="product-info">
 <h3>Tesamorelin</h3>
-<p class="strength">2mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">2mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">BPC-157</div><div class="vial-strength">5mg Research Only</div></div></div>
+<div class="product-info">
 <h3>BPC-157</h3>
-<p class="strength">5mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">5mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">TB-500</div><div class="vial-strength">2mg Research Only</div></div></div>
+<div class="product-info">
 <h3>TB-500</h3>
-<p class="strength">2mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">2mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">CJC / Ipamorelin</div><div class="vial-strength">Blend Research Only</div></div></div>
+<div class="product-info">
 <h3>CJC-1295 / Ipamorelin</h3>
-<p class="strength">Blend kit</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">Blend kit</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">NAD+</div><div class="vial-strength">500mg Research Only</div></div></div>
+<div class="product-info">
 <h3>NAD+</h3>
-<p class="strength">500mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">500mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">MOTS-C</div><div class="vial-strength">5mg Research Only</div></div></div>
+<div class="product-info">
 <h3>MOTS-C</h3>
-<p class="strength">5mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">5mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
 </div>
 
 <div class="product-card">
+<div class="product-vial"><div class="vial-text"><div class="vial-brand">Pep Suppliers</div><div class="vial-name">Semaglutide</div><div class="vial-strength">5mg Research Only</div></div></div>
+<div class="product-info">
 <h3>Semaglutide</h3>
-<p class="strength">5mg vial</p>
-<div class="product-badges">
-<span class="badge domestic">Domestic</span>
-<span class="badge overseas">Overseas</span>
+<p class="product-strength">5mg vial</p>
+<div class="product-badges"><span class="badge domestic">Domestic</span><span class="badge overseas">Overseas</span><span class="badge docs">Docs</span></div>
+<div class="product-prices"><div class="price-box"><div class="price-label">Domestic</div><div class="price-value">$—</div></div><div class="price-box"><div class="price-label">Overseas</div><div class="price-value">$—</div></div></div>
+<p class="product-note">Research use only. Not for human use.</p>
 </div>
-<div class="product-price">$—</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="shipping">
+<h1>Choose Speed or Savings</h1>
+<p>Domestic options prioritize faster fulfillment. Overseas sourcing offers deeper savings when timelines allow.</p>
+
+<div class="shipping-grid">
+<div class="shipping-card">
+<span class="ship-badge">⚡ FAST FULFILLMENT</span>
+<h3>Domestic Fast-Ship</h3>
+<p>Fastest path for U.S.-based research inventory with quick fulfillment and tracking.</p>
+<ul class="shipping-features">
+<li>U.S. warehouse shipping</li>
+<li>2-5 day typical delivery</li>
+<li>Overnight available on select items</li>
+<li>Tracking where available</li>
+<li>Higher price, faster path</li>
+</ul>
+</div>
+
+<div class="shipping-card overseas">
+<span class="ship-badge">💰 DEEP SAVINGS</span>
+<h3>Overseas Savings</h3>
+<p>Best value path for planned sourcing and bulk-friendly orders with significant cost reduction.</p>
+<ul class="shipping-features">
+<li>International supplier sourcing</li>
+<li>2-3 week typical delivery</li>
+<li>Lower-cost sourcing path</li>
+<li>Flexible planning options</li>
+<li>More patience, better savings</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="quality">
+<h1>Documentation & Quality</h1>
+<p>Most products include available supplier documentation. Many have COAs or Janoshik testing available. Optional upgraded testing may be available on select products and can affect fulfillment time.</p>
+
+<div class="quality-cards">
+<div class="quality-card">
+<h3>Supplier Screening</h3>
+<p>All labs are screened for quality, documentation, and compliance standards.</p>
+</div>
+
+<div class="quality-card">
+<h3>COA & Testing</h3>
+<p>Most products include available supplier documentation and testing options.</p>
+</div>
+
+<div class="quality-card">
+<h3>Documentation Visibility</h3>
+<p>Clear access to documentation, COAs, Janoshik tests, and certifications where available.</p>
+</div>
+
+<div class="quality-card">
+<h3>Optional Upgrades</h3>
+<p>Upgraded testing available on select products; may affect fulfillment timeline.</p>
 </div>
 </div>
 </section>
 
 <section id="faq">
 <h1>Help Center</h1>
+
 <div class="faq-categories">
-<button class="faq-cat active" data-cat="all">All</button>
-<button class="faq-cat" data-cat="shipping">Shipping</button>
+<button class="faq-cat active" data-cat="all">All Questions</button>
 <button class="faq-cat" data-cat="products">Products</button>
+<button class="faq-cat" data-cat="shipping">Shipping</button>
+<button class="faq-cat" data-cat="account">Account</button>
 <button class="faq-cat" data-cat="compliance">Compliance</button>
 </div>
+
 <div class="faq-items">
-<div class="faq-item" data-cat="shipping">
-<div class="faq-q">What's the difference between domestic and overseas?</div>
-<div class="faq-a">Domestic: 2-5 days, fast shipping, higher prices. Overseas: 2-3 weeks, significant savings (50-70% below market), direct lab sourcing.</div>
-</div>
-
-<div class="faq-item" data-cat="products">
-<div class="faq-q">Do you have documentation for products?</div>
-<div class="faq-a">Most products include available supplier documentation. Many have COAs or Janoshik testing available. Optional upgraded testing may be available.</div>
-</div>
-
 <div class="faq-item" data-cat="compliance">
-<div class="faq-q">What are the research-use requirements?</div>
-<div class="faq-a">All products are for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.</div>
+<div class="faq-q">
+<span>Are products for research use only?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Yes. All products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.</div></div>
+</div>
+
+<div class="faq-item" data-cat="shipping">
+<div class="faq-q">
+<span>What's the difference between domestic and overseas?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Domestic: 2-5 days, fast shipping, higher prices. Overseas: 2-3 weeks, significant savings (50-70% below market), direct lab sourcing.</div></div>
 </div>
 
 <div class="faq-item" data-cat="products">
-<div class="faq-q">Can I order bulk?</div>
-<div class="faq-a">Yes. Contact support@pep-suppliers.com for bulk pricing and custom sourcing arrangements.</div>
+<div class="faq-q">
+<span>Do you provide COAs or third-party testing?</span>
+<span class="faq-q-toggle">+</span>
 </div>
+<div class="faq-a"><div class="faq-a-text">Most products include available supplier documentation. Many have COAs or Janoshik testing available. Optional upgraded testing may be available on select products.</div></div>
+</div>
+
+<div class="faq-item" data-cat="shipping">
+<div class="faq-q">
+<span>Can upgraded testing affect shipping time?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Yes. Optional upgraded testing may affect fulfillment or shipping time on select products.</div></div>
+</div>
+
+<div class="faq-item" data-cat="account">
+<div class="faq-q">
+<span>How do I track my order?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Use the Order Tracking section. Enter your order number and email address to check status and estimated delivery.</div></div>
+</div>
+
+<div class="faq-item" data-cat="products">
+<div class="faq-q">
+<span>Can I order in bulk?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Yes. Contact support@pep-suppliers.com for bulk pricing, planned supply schedules, and custom sourcing arrangements.</div></div>
+</div>
+
+<div class="faq-item" data-cat="shipping">
+<div class="faq-q">
+<span>Why does overseas take longer?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">International sourcing and shipping naturally take longer but offer significant cost savings. Typical 2-3 week delivery depending on product and destination.</div></div>
+</div>
+
+<div class="faq-item" data-cat="account">
+<div class="faq-q">
+<span>Can I mix domestic and overseas items?</span>
+<span class="faq-q-toggle">+</span>
+</div>
+<div class="faq-a"><div class="faq-a-text">Yes. Orders can include both domestic and overseas items. Fulfillment will follow the longest timeline in the order.</div></div>
+</div>
+</div>
+</section>
+
+<section id="tracking">
+<h1>Track Your Order</h1>
+<p>Sign in or use your order number and email to view shipping status, documentation availability, and account history.</p>
+
+<div class="tracking-form">
+<div class="form-group">
+<label>Order Number</label>
+<input type="text" placeholder="e.g., ORD-123456">
+</div>
+
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" placeholder="your@email.com">
+</div>
+
+<button class="form-btn">Track Order</button>
+<div class="form-note"><!-- TODO: connect order tracking endpoint --> Enter your order information to check status.</div>
 </div>
 </section>
 
 <section id="about">
 <h1>About Pep Suppliers</h1>
 <div class="about-text">
-<p>Pep Suppliers organizes research peptide sourcing so researchers can access global options without guesswork. We source directly from verified labs, eliminate middleman markups, and maintain full documentation transparency.</p>
+<p>Pep Suppliers organizes research peptide sourcing options so researchers can access global options without guesswork. We source directly from verified labs, eliminate middleman markups, and maintain full documentation transparency.</p>
 <p>Our mission: Make research-grade peptides accessible, affordable, and transparent through organized sourcing.</p>
 </div>
+
 <div class="about-features">
 <div class="about-feature">
 <h3>Verified Suppliers</h3>
-<p>All labs are screened for quality, documentation, and compliance.</p>
+<p>All labs screened for quality, documentation, and compliance standards.</p>
 </div>
 
 <div class="about-feature">
@@ -309,13 +579,16 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 
 <div class="about-feature">
 <h3>Bulk & Planned Ordering</h3>
-<p>Support for ongoing research supply needs and custom sourcing.</p>
+<p>Support for ongoing research supply and custom sourcing arrangements.</p>
 </div>
 </div>
 </section>
 
 <section id="contact">
 <h1>Contact & Support</h1>
+<p>Reach out about products, shipping, documentation, bulk orders, or general questions. We typically respond within 24 hours.</p>
+
+<div class="contact-grid">
 <form class="contact-form">
 <div class="form-group">
 <label>Your Name</label>
@@ -328,12 +601,13 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 
 <div class="form-group">
-<label>Subject</label>
+<label>Inquiry Type</label>
 <select required>
 <option value="">Select a reason</option>
-<option value="inquiry">Product Inquiry</option>
+<option value="product">Product Inquiry</option>
 <option value="bulk">Bulk Pricing</option>
 <option value="shipping">Shipping Question</option>
+<option value="documentation">Documentation / COA</option>
 <option value="other">Other</option>
 </select>
 </div>
@@ -344,32 +618,40 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 
 <button type="submit" class="form-btn">Send Message</button>
+<div class="form-note"><!-- TODO: connect contact form endpoint --> Secure message submission.</div>
 </form>
 
-<div class="disclaimer">
-<p><strong>Research Use Only:</strong> Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.</p>
+<div class="contact-info">
+<div class="contact-reason-card">
+<h4>📦 Product Questions</h4>
+<p>Learn about products, strengths, and sourcing options.</p>
+</div>
+
+<div class="contact-reason-card">
+<h4>📄 Documentation</h4>
+<p>Request COAs, Janoshik tests, or certifications.</p>
+</div>
+
+<div class="contact-reason-card">
+<h4>🚚 Shipping & Orders</h4>
+<p>Track orders or ask about fulfillment timelines.</p>
+</div>
+
+<div class="contact-reason-card">
+<h4>💼 Bulk & Planned</h4>
+<p>Custom sourcing and planned supply orders.</p>
+</div>
+
+<div class="compliance-notice">
+<strong>Research Use Only:</strong> Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.
+</div>
+</div>
 </div>
 </section>
 
-<section id="tracking">
-<h1>Track Your Order</h1>
-<div class="tracking-form">
-<div class="form-group">
-<label>Order Number</label>
-<input type="text" placeholder="e.g., ORD-123456">
-</div>
+<section id="account">
+<h1>Secure Account Access</h1>
 
-<div class="form-group">
-<label>Email Address</label>
-<input type="email" placeholder="your@email.com">
-</div>
-
-<button class="form-btn">Track Order</button>
-</div>
-</section>
-
-<section id="login">
-<h1>Account Access</h1>
 <div class="login-container">
 <div class="login-tabs">
 <div class="login-tab active" data-tab="signin">Sign In</div>
@@ -388,6 +670,7 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 
 <button class="form-btn">Sign In</button>
+<div class="login-note"><!-- TODO: connect authentication provider --> Secure authentication.</div>
 </div>
 
 <div class="login-panel create">
@@ -402,13 +685,15 @@ footer { background: var(--navy); color: white; padding: 40px 18px; margin-top: 
 </div>
 
 <div class="form-group">
-<label style="display: flex; gap: 8px; font-weight: 400;">
-<input type="checkbox" required>
-I understand products are for research use only.
+<label style="display: flex; gap: 8px; align-items: flex-start; font-weight: 400;">
+<input type="checkbox" required style="margin-top: 2px;">
+I understand products are for research use only and acknowledge all compliance terms.
 </label>
 </div>
 
 <button class="form-btn">Create Account</button>
+<div class="login-note"><!-- TODO: connect authentication provider --> Secure registration.</div>
+</div>
 </div>
 </div>
 </section>
@@ -421,6 +706,7 @@ I understand products are for research use only.
 <h4>Products</h4>
 <a href="#products">Catalog</a>
 <a href="#products">Pricing</a>
+<a href="#quality">Documentation</a>
 </div>
 
 <div class="footer-col">
@@ -432,30 +718,34 @@ I understand products are for research use only.
 
 <div class="footer-col">
 <h4>Account</h4>
-<a href="#login">Sign In</a>
-<a href="#login">Create Account</a>
+<a href="#account">Sign In</a>
+<a href="#account">Create Account</a>
+<a href="#tracking">My Orders</a>
 </div>
 
 <div class="footer-col">
 <h4>Company</h4>
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#shipping">Shipping</a>
+<a href="#top">Privacy</a>
 </div>
 
 <div class="footer-disclaimer">
 <p>Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.</p>
-<p style="margin-top: 12px;">&copy; 2026 Pep Suppliers. All rights reserved.</p>
+<p>&copy; 2026 Pep Suppliers. All rights reserved.</p>
 </div>
 </div>
 </footer>
 
-<button class="chat-button" onclick="toggleChat()">💬</button>
+<button class="chat-btn" id="chatBtn" onclick="toggleChat()">💬</button>
 <div class="chat-panel" id="chatPanel">
 <h3>Chat Support</h3>
 <p>Live chat placeholder — connect a chat provider before launch.</p>
+<p style="margin-top: 10px; font-size: 10px;">Email: support@pep-suppliers.com</p>
 </div>
 
 <script>
+// Home anchor
 document.querySelectorAll('a[href="#top"]').forEach(a => {
   a.addEventListener("click", e => {
     e.preventDefault();
@@ -463,6 +753,37 @@ document.querySelectorAll('a[href="#top"]').forEach(a => {
   });
 });
 
+// Calculator
+function doCalc() {
+  const vial = parseFloat(document.getElementById("vialMg").value);
+  const diluent = parseFloat(document.getElementById("diluentMl").value);
+  const target = parseFloat(document.getElementById("targetAmt").value);
+  const unit = document.getElementById("targetUnit").value;
+  
+  if (!vial || !diluent || !target) {
+    document.getElementById("concResult").textContent = "Enter values";
+    document.getElementById("volResult").textContent = "—";
+    return;
+  }
+  
+  const conc = vial / diluent;
+  const targetMg = unit === "mcg" ? target / 1000 : target;
+  const vol = targetMg / conc;
+  
+  document.getElementById("concResult").textContent = conc.toFixed(3) + " mg/mL";
+  document.getElementById("volResult").textContent = vol.toFixed(3) + " mL";
+}
+
+function doReset() {
+  document.getElementById("vialMg").value = "";
+  document.getElementById("diluentMl").value = "";
+  document.getElementById("targetAmt").value = "";
+  document.getElementById("targetUnit").value = "mcg";
+  document.getElementById("concResult").textContent = "—";
+  document.getElementById("volResult").textContent = "—";
+}
+
+// FAQ
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener("click", () => {
     q.parentElement.classList.toggle("open");
@@ -481,6 +802,7 @@ document.querySelectorAll('.faq-cat').forEach(btn => {
   });
 });
 
+// Login tabs
 document.querySelectorAll('.login-tab').forEach(tab => {
   tab.addEventListener("click", () => {
     const tabName = tab.dataset.tab;
@@ -491,10 +813,12 @@ document.querySelectorAll('.login-tab').forEach(tab => {
   });
 });
 
+// Chat
 function toggleChat() {
   document.getElementById("chatPanel").classList.toggle("open");
 }
 
+// Product search
 document.getElementById("searchBox").addEventListener("input", e => {
   const query = e.target.value.toLowerCase();
   document.querySelectorAll(".product-card").forEach(card => {
