@@ -26,7 +26,7 @@
   --line:#dbeaf6;
   --shadow:0 24px 70px rgba(18,48,74,.12);
   --shadow2:0 16px 40px rgba(18,48,74,.10);
-  --max:1280px;
+  --max:1380px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -45,18 +45,18 @@ body{
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
 button,input,select,textarea{font:inherit}
-.wrap{width:min(var(--max), calc(100% - 42px));margin:0 auto}
+.wrap{width:min(var(--max), calc(100% - 26px));margin:0 auto}
 #top{position:absolute;top:0;left:0}
 
 .site-header{
   width:min(1380px, calc(100% - 26px));
   margin:14px auto 0;
   display:grid;
-  grid-template-columns:minmax(430px, 1fr) auto;
+  grid-template-columns:minmax(500px, 1fr) auto;
   align-items:center;
   gap:18px;
-  padding:8px 18px 8px 12px;
-  min-height:108px;
+  padding:10px 20px 10px 14px;
+  min-height:126px;
   border:1px solid rgba(219,234,246,.95);
   border-radius:30px;
   box-shadow:var(--shadow);
@@ -67,9 +67,9 @@ button,input,select,textarea{font:inherit}
 }
 .logo-link{display:flex;align-items:center;justify-content:flex-start;min-width:0}
 .site-logo{
-  width:min(520px,100%);
+  width:min(624px,100%);
   height:auto;
-  max-height:96px;
+  max-height:116px;
   object-fit:contain;
   object-position:left center;
   filter:drop-shadow(0 14px 20px rgba(18,48,74,.10));
@@ -95,12 +95,12 @@ button,input,select,textarea{font:inherit}
 .nav-faq{background:linear-gradient(135deg,#f4efff,#fff);border-color:#c7b8ff} .nav-faq i{background:var(--purple)}
 .nav-contact{background:linear-gradient(135deg,#eafbf3,#fff);border-color:#9fe4c6} .nav-contact i{background:var(--green)}
 
-.hero{padding:28px 0 28px}
+.hero{padding:20px 0 26px}
 .hero-panel{
   position:relative;
   overflow:hidden;
   display:grid;
-  grid-template-columns:minmax(0,.98fr) minmax(560px,1.02fr);
+  grid-template-columns:minmax(0,1fr) minmax(620px,1fr);
   gap:24px;
   align-items:start;
   padding:34px;
@@ -389,9 +389,9 @@ footer{padding:0 0 40px}
   .choice-grid,.product-grid,.process-grid,.quality-grid,.contact-cards,.contact-layout,.choose-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .wrap{width:min(var(--max), calc(100% - 24px))}
+  .wrap{width:min(var(--max), calc(100% - 18px))}
   .site-header{width:calc(100% - 18px);padding:10px;border-radius:22px;min-height:auto}
-  .site-logo{width:100%;max-height:92px}
+  .site-logo{width:100%;max-height:98px}
   .header-nav{width:100%;grid-template-columns:1fr 1fr}
   .hero{padding:22px 0}
   .hero-panel,.section-panel{padding:20px;border-radius:24px}
@@ -404,12 +404,14 @@ footer{padding:0 0 40px}
 </style>
 
 <!-- Tightened spacing build v53 20260520-0055 -->
+
+<!-- Alignment pass v54 20260520-0059: larger header/logo, wider wrap alignment -->
 </head>
 <body>
 <div id="top"></div>
 <header class="site-header">
   <a class="logo-link" href="#top" aria-label="Pep Suppliers home">
-    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v53.png" alt="Pep Suppliers — All-in-one peptide tool">
+    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v54.png" alt="Pep Suppliers — All-in-one peptide tool">
   </a>
   <nav class="header-nav" aria-label="Primary navigation">
     <a class="nav-pill nav-home" href="#top"><i></i>Home</a>
@@ -659,7 +661,7 @@ footer{padding:0 0 40px}
 
 <footer>
   <div class="wrap footer-panel">
-    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v53.png" alt="Pep Suppliers — All-in-one peptide tool" style="max-width:340px">
+    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v54.png" alt="Pep Suppliers — All-in-one peptide tool" style="max-width:340px">
     <nav class="footer-nav">
       <a class="footer-link" href="#top">Home</a><a class="footer-link" href="#products">Products</a><a class="footer-link" href="#about">About</a><a class="footer-link" href="#shipping">Shipping</a><a class="footer-link" href="#quality">Quality</a><a class="footer-link" href="#faq">FAQ</a><a class="footer-link" href="#contact">Contact</a>
     </nav>
