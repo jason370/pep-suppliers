@@ -13,7 +13,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
 .scroll-btn { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,253,248,0.93)); border: 1.5px solid #ddeaf5; color: #075fea; font-size: 18px; font-weight: 700; cursor: pointer; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(8, 24, 51, 0.08); }
 .scroll-btn:hover { background: #ffffff; border-color: #075fea; box-shadow: 0 8px 20px rgba(7, 95, 234, 0.15); transform: translateY(-2px); }
 .scroll-btn:focus { outline: 2px solid #075fea; outline-offset: 2px; }
-header { width: min(1360px, calc(100% - 32px)); margin: 14px auto 0; padding: 14px 22px; min-height: auto; display: grid; grid-template-columns: minmax(520px, 1fr) auto; align-items: center; gap: 28px; border-radius: 28px; background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,253,248,0.92)); border: 1px solid #ddeaf5; box-shadow: 0 12px 32px rgba(18,48,74,0.08); overflow: visible; }
+header { width: min(1360px, calc(100% - 32px)); margin: 14px auto 0; padding: 8px 18px 8px 12px; min-height: auto; display: grid; grid-template-columns: minmax(520px, 1fr) auto; align-items: center; gap: 20px; border-radius: 28px; background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(255,253,248,0.92)); border: 1px solid #ddeaf5; box-shadow: 0 12px 32px rgba(18,48,74,0.08); overflow: visible; }
 .logo-link { display: flex; align-items: center; text-decoration: none; cursor: pointer; transition: transform 0.2s ease; background: transparent; padding: 0; border: none; height: auto; }
 .logo-link:hover { transform: translateY(-2px); }
 .logo-link:focus { outline: 2px solid #075fea; outline-offset: 2px; border-radius: 8px; }
@@ -30,10 +30,31 @@ nav { display: grid; grid-template-columns: repeat(2, minmax(110px, 1fr)); gap: 
 .nav-pill.contact { background: #e8f5e9; border-color: #10b981; color: #065f46; }
 .nav-pill.contact:hover { background: #d1fae5; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2); transform: translateY(-2px); }
 .hero { max-width: 1360px; margin: 1.2rem auto 2rem; padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: flex-start; background: radial-gradient(ellipse 900px 400px at 15% 50%, rgba(255,240,247,0.5) 0%, transparent 70%), radial-gradient(ellipse 700px 300px at 85% 45%, rgba(234,251,243,0.4) 0%, transparent 65%); border-radius: 20px; }
-.hero h1 { font-size: clamp(38px, 4.0vw, 58px); font-weight: 700; line-height: 1.06; letter-spacing: -0.045em; margin-bottom: 1.2rem; color: #081833; max-width: 660px; }
+.hero h1 { font-size: clamp(40px, 4.2vw, 60px); font-weight: 700; line-height: 1.05; letter-spacing: -0.045em; margin-bottom: 1.2rem; color: #081833; max-width: 660px; }
 .hero p { font-size: 18px; color: #5a6270; line-height: 1.55; max-width: 620px; }
 .hero-right { display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 22px; align-items: stretch; }
-.choice-card { background: linear-gradient(135deg, #ffffff 0%, #eaf4ff 100%); border: 1.5px solid #ddeaf5; border-radius: 14px; padding: 24px; transition: all 0.3s ease; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 440px; height: 100%; }
+.calc-card { margin-top: 26px; padding: 22px; border-radius: 26px; background: rgba(255,255,255,0.78); border: 1px solid rgba(223,233,244,0.95); box-shadow: 0 20px 40px rgba(18,48,74,0.08); max-width: 640px; }
+.calc-eyebrow { font-size: 10px; font-weight: 900; color: #5B6980; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
+.calc-title { font-size: 20px; font-weight: 700; color: #081833; margin-bottom: 6px; }
+.calc-subtitle { font-size: 13px; color: #5a6270; margin-bottom: 14px; line-height: 1.5; }
+.calc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 14px; }
+.calc-field { display: flex; flex-direction: column; }
+.calc-field label { display: block; margin-bottom: 6px; font-size: 12px; font-weight: 800; color: #5B6980; letter-spacing: 0.04em; text-transform: uppercase; }
+.calc-field input, .calc-field select { width: 100%; min-height: 46px; border-radius: 14px; border: 1px solid rgba(209,223,236,0.95); background: #fff; padding: 0 14px; font-size: 15px; font-family: inherit; color: #081833; }
+.calc-field input:focus, .calc-field select:focus { outline: none; border-color: #075fea; box-shadow: 0 0 0 3px rgba(7,95,234,0.08); }
+.calc-results { margin-top: 16px; padding: 14px 16px; border-radius: 18px; background: linear-gradient(135deg, rgba(18,108,255,0.08), rgba(20,184,135,0.08)); border: 1px solid rgba(210,225,239,0.95); }
+.calc-result-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 8px; }
+.calc-result-row:last-child { margin-bottom: 0; }
+.calc-result-label { font-size: 12px; font-weight: 600; color: #5B6980; text-transform: uppercase; letter-spacing: 0.04em; }
+.calc-result-value { font-size: 18px; font-weight: 900; color: #075fea; }
+.calc-actions { display: flex; gap: 10px; margin-top: 14px; }
+.calc-btn { min-height: 46px; border-radius: 14px; padding: 0 18px; font-weight: 900; border: none; cursor: pointer; font-size: 14px; transition: all 0.2s ease; }
+.calc-btn-primary { background: #075fea; color: #fff; flex: 1; }
+.calc-btn-primary:hover { background: #0645c7; box-shadow: 0 6px 16px rgba(7,95,234,0.2); }
+.calc-btn-secondary { background: #f0f7ff; color: #075fea; flex: 1; border: 1px solid #ddeaf5; }
+.calc-btn-secondary:hover { background: #e8f3ff; }
+.calc-note { margin-top: 10px; font-size: 12px; color: #66768B; line-height: 1.4; }
+
 .choice-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #075fea, #0052cc); }
 .choice-card.overseas { background: linear-gradient(135deg, #ffffff 0%, #eafbf3 100%); }
 .choice-card.overseas::before { background: linear-gradient(90deg, #12a66a, #10b981); }
@@ -128,6 +149,45 @@ footer { background: linear-gradient(135deg, rgba(234,244,255,0.3) 0%, rgba(255,
 <div>
 <h1>Global peptide sourcing. Domestic speed and overseas savings.</h1>
 <p>Organized global sourcing, verified suppliers, transparent documentation, and clear buying paths — so you can order with confidence.</p>
+<div class="calc-card">
+<div class="calc-eyebrow">Quick Tool</div>
+<div class="calc-title">Research Calculator</div>
+<div class="calc-subtitle">Laboratory reconstitution & concentration planning.</div>
+<div class="calc-grid">
+<div class="calc-field">
+<label>Vial Amount</label>
+<input type="number" id="vialAmount" placeholder="e.g., 5" min="0" step="0.1">
+<span style="font-size: 11px; color: #888; margin-top: 2px;">mg</span>
+</div>
+<div class="calc-field">
+<label>Diluent Added</label>
+<input type="number" id="diluentAmount" placeholder="e.g., 1" min="0" step="0.01">
+<span style="font-size: 11px; color: #888; margin-top: 2px;">mL</span>
+</div>
+<div class="calc-field">
+<label>Target Amount</label>
+<input type="number" id="targetAmount" placeholder="e.g., 50" min="0" step="0.1">
+</div>
+<div class="calc-field">
+<label>Unit</label>
+<select id="targetUnit">
+<option value="mcg">mcg (micrograms)</option>
+<option value="mg">mg (milligrams)</option>
+</select>
+</div>
+</div>
+<div class="calc-results" id="calcResults" style="display: none;">
+<div class="calc-result-row">
+<div><div class="calc-result-label">Concentration</div><div class="calc-result-value" id="concentration">—</div></div>
+<div><div class="calc-result-label">Volume Needed</div><div class="calc-result-value" id="volumeNeeded">—</div></div>
+</div>
+</div>
+<div class="calc-actions">
+<button class="calc-btn calc-btn-primary" onclick="calculatePeptide()">Calculate</button>
+<button class="calc-btn calc-btn-secondary" onclick="resetCalculator()">Reset</button>
+</div>
+<div class="calc-note">For laboratory research planning only. Not medical advice.</div>
+</div>
 </div>
 <div class="hero-right">
 <div class="choice-card">
@@ -355,5 +415,46 @@ document.getElementById('scrollTop').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+<script>
+function calculatePeptide() {
+  const vialAmount = parseFloat(document.getElementById('vialAmount').value) || 0;
+  const diluentAmount = parseFloat(document.getElementById('diluentAmount').value) || 0;
+  const targetAmount = parseFloat(document.getElementById('targetAmount').value) || 0;
+  const targetUnit = document.getElementById('targetUnit').value;
+  
+  if (vialAmount <= 0 || diluentAmount <= 0 || targetAmount <= 0) {
+    alert('Please enter valid numbers for all fields.');
+    return;
+  }
+  
+  const concentration = (vialAmount / diluentAmount).toFixed(3);
+  let volumeNeeded;
+  
+  if (targetUnit === 'mcg') {
+    volumeNeeded = ((targetAmount / 1000) / concentration).toFixed(3);
+  } else {
+    volumeNeeded = (targetAmount / concentration).toFixed(3);
+  }
+  
+  document.getElementById('concentration').textContent = concentration + ' mg/mL';
+  document.getElementById('volumeNeeded').textContent = volumeNeeded + ' mL';
+  document.getElementById('calcResults').style.display = 'block';
+}
+
+function resetCalculator() {
+  document.getElementById('vialAmount').value = '';
+  document.getElementById('diluentAmount').value = '';
+  document.getElementById('targetAmount').value = '';
+  document.getElementById('targetUnit').value = 'mcg';
+  document.getElementById('calcResults').style.display = 'none';
+}
+
+document.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    calculatePeptide();
+  }
+});
+</script>
+
 </body>
 </html>
