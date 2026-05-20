@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pep Suppliers | Global Peptide Sourcing</title>
+<meta name="description" content="Pep Suppliers organizes research peptide sourcing options with domestic fast-ship availability, overseas savings, supplier screening, and documentation visibility." />
+<style>
+:root {
+  --navy:#071833;
+  --ink:#12304A;
+  --muted:#5f6f86;
+  --blue:#126cff;
+  --blue2:#0a55d9;
+  --teal:#13b887;
+  --green:#17a76f;
+  --pink:#f05ba8;
+  --purple:#8d6bff;
+  --orange:#f5a24c;
+  --champagne:#f3e4c4;
+  --sky:#eaf4ff;
+  --mint:#eafbf3;
+  --blush:#fff0f7;
+  --lav:#f4efff;
+  --ivory:#fffdf8;
+  --line:#dbeaf6;
+  --shadow:0 24px 70px rgba(18,48,74,.12);
+  --shadow2:0 16px 40px rgba(18,48,74,.10);
+  --max:1480px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:160px}
+/* Ensures anchors land below fixed header */
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:var(--navy);
+  background:
+    radial-gradient(circle at 8% 7%, rgba(240,91,168,.18), transparent 30rem),
+    radial-gradient(circle at 88% 12%, rgba(20,184,135,.18), transparent 32rem),
+    radial-gradient(circle at 12% 58%, rgba(18,108,255,.12), transparent 34rem),
+    radial-gradient(circle at 88% 86%, rgba(245,162,76,.14), transparent 32rem),
+    linear-gradient(180deg,#f7fbff 0%,#fffdf8 44%,#f7fbff 100%);
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+button,input,select,textarea{font:inherit}
+.wrap{width:min(var(--max), calc(100% - 18px));margin:0 auto}
+#top{position:absolute;top:0;left:0}
+
+.site-header{
+  width:min(1480px, calc(100% - 18px));
+  margin:12px auto 0;
+  display:grid;
+  grid-template-columns:minmax(620px, 1fr) auto;
+  align-items:center;
+  gap:18px;
+  padding:12px 20px 12px 12px;
+  min-height:140px;
+  border:1px solid rgba(219,234,246,.95);
+  border-radius:30px;
+  box-shadow:var(--shadow);
+  background:
+    radial-gradient(circle at 7% 40%, rgba(245,162,76,.12), transparent 18rem),
+    radial-gradient(circle at 72% 18%, rgba(240,91,168,.10), transparent 18rem),
+    linear-gradient(135deg,rgba(255,255,255,.96),rgba(255,253,248,.92));
+}
+.logo-link{display:flex;align-items:center;justify-content:flex-start;min-width:0}
+.site-logo{
+  width:min(720px,100%);
+  height:auto;
+  max-height:132px;
+  object-fit:contain;
+  object-position:left center;
+  filter:drop-shadow(0 14px 20px rgba(18,48,74,.10));
+}
+.header-nav{display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:10px;align-items:center}
+.nav-pill{
+  min-height:48px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:8px 16px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:14px;
+  color:var(--ink);
+  border:1.5px solid rgba(18,48,74,.1);
+  box-shadow:0 10px 24px rgba(18,48,74,.07);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.nav-pill:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(18,48,74,.12)}
+.nav-pill:focus-visible,.btn:focus-visible,.scroll-btn:focus-visible{outline:3px solid rgba(18,108,255,.25);outline-offset:3px}
+.nav-pill i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.nav-home{background:linear-gradient(135deg,#eef6ff,#fff);border-color:#8fb9ff} .nav-home i{background:var(--blue)}
+.nav-prod{background:linear-gradient(135deg,#fff0f7,#fff);border-color:#f7a9d0} .nav-prod i{background:var(--pink)}
+.nav-faq{background:linear-gradient(135deg,#f4efff,#fff);border-color:#c7b8ff} .nav-faq i{background:var(--purple)}
+.nav-contact{background:linear-gradient(135deg,#eafbf3,#fff);border-color:#9fe4c6} .nav-contact i{background:var(--green)}
+
+.hero{padding:18px 0 24px}
+.hero-panel{
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(650px,1fr);
+  gap:26px;
+  align-items:start;
+  padding:34px;
+  border:1px solid rgba(219,234,246,.92);
+  border-radius:42px;
+  box-shadow:var(--shadow);
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255,240,247,.92), transparent 27rem),
+    radial-gradient(circle at 92% 24%, rgba(234,251,243,.96), transparent 28rem),
+    radial-gradient(circle at 42% 92%, rgba(234,244,255,.9), transparent 26rem),
+    linear-gradient(135deg,rgba(255,255,255,.74),rgba(255,253,248,.78));
+}
+.hero-panel:before{
+  content:"";
+  position:absolute; inset:auto -120px -160px auto;
+  width:420px;height:420px;
+  background:radial-gradient(circle,rgba(245,162,76,.20),transparent 68%);
+  pointer-events:none;
+}
+.hero-copy,.choice-grid{position:relative;z-index:1}
+.hero-copy{padding-top:2px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 12px;
+  margin-bottom:18px;
+  border-radius:999px;
+  border:1px solid rgba(219,234,246,.96);
+  background:rgba(255,255,255,.72);
+  box-shadow:0 10px 24px rgba(18,48,74,.06);
+  font-size:13px;font-weight:900;letter-spacing:.04em;color:var(--ink);
+}
+.eyebrow .dot{width:9px;height:9px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--orange))}
+h1,h2,h3,p{margin-top:0}
+h1{
+  margin-bottom:16px;
+  max-width:640px;
+  font-size:clamp(42px,4.3vw,62px);
+  line-height:1.03;
+  letter-spacing:-.055em;
+  font-weight:950;
+}
+.hero-lead{
+  max-width:660px;
+  margin:0;
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.58;
+}
+.hero-lead strong{font-weight:900}
+.hero-lead .blue{color:var(--blue)}
+.hero-lead .green{color:var(--teal)}
+.hero-lead .purple{color:var(--purple)}
+.hero-lead .warm{color:var(--pink)}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.hero-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 12px;
+  border-radius:999px;
+  border:1px solid rgba(219,234,246,.95);
+  background:rgba(255,255,255,.72);
+  box-shadow:0 8px 20px rgba(18,48,74,.06);
+  color:var(--ink);
+  font-size:13px;
+  font-weight:850;
+}
+.hero-chip i{width:8px;height:8px;border-radius:50%;display:block}
+.chip-blue i{background:var(--blue)} .chip-green i{background:var(--teal)} .chip-purple i{background:var(--purple)} .chip-warm i{background:var(--pink)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:50px;
+  padding:13px 22px;
+  border:0;
+  border-radius:17px;
+  font-weight:950;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 16px 30px rgba(18,48,74,.16);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 20px 38px rgba(18,48,74,.20);filter:saturate(1.04)}
+.btn-blue{background:linear-gradient(135deg,#126cff,#5aa8ff)}
+.btn-green{background:linear-gradient(135deg,#12a66a,#67d9a9)}
+.btn-soft{background:rgba(255,255,255,.85);color:var(--ink);border:1px solid var(--line)}
+
+.choice-grid{display:grid;grid-template-columns:repeat(2,minmax(285px,1fr));gap:18px;align-items:start}
+.choice-card{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:450px;
+  padding:22px;
+  border-radius:32px;
+  border:1px solid rgba(219,234,246,.95);
+  box-shadow:var(--shadow2);
+  background:rgba(255,255,255,.86);
+}
+.choice-card:before{content:"";position:absolute;inset:0 0 auto;height:7px}
+.choice-card:after{content:"";position:absolute;inset:-70px -80px auto auto;width:170px;height:170px;border-radius:50%;opacity:.42;pointer-events:none}
+.domestic:before{background:linear-gradient(90deg,var(--blue),#8ed0ff)}
+.domestic:after{background:radial-gradient(circle,rgba(18,108,255,.22),transparent 68%)}
+.overseas:before{background:linear-gradient(90deg,var(--teal),#d8c7a3)}
+.overseas:after{background:radial-gradient(circle,rgba(20,184,135,.22),transparent 68%)}
+.card-top{position:relative;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.icon-badge{width:54px;height:54px;border-radius:20px;display:grid;place-items:center;font-size:25px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8), 0 12px 24px rgba(18,48,74,.10)}
+.domestic .icon-badge{background:linear-gradient(135deg,#dcecff,#f4f9ff);color:var(--blue)}
+.overseas .icon-badge{background:linear-gradient(135deg,#dff8ed,#f4fff9);color:var(--teal)}
+.choice-card h3{font-size:24px;letter-spacing:-.035em;margin:18px 0 10px}
+.card-intro{min-height:88px;color:var(--muted);font-size:15px;line-height:1.55;margin-bottom:0}
+.best-for{
+  width:fit-content;
+  display:inline-flex;align-items:center;gap:8px;
+  margin:10px 0 10px;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:950;
+}
+.domestic .best-for{background:#eaf4ff;color:var(--blue)}
+.overseas .best-for{background:#eafbf3;color:var(--teal)}
+.best-for i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.feature-list{
+  display:grid;
+  gap:8px;
+  min-height:186px;
+  padding:12px;
+  margin:0 0 14px;
+  border-radius:22px;
+  border:1px solid rgba(219,234,246,.92);
+}
+.domestic .feature-list{background:linear-gradient(135deg,#f0f7ff,#fbfdff)}
+.overseas .feature-list{background:linear-gradient(135deg,#f0fff8,#fbfffd)}
+.feature-row{
+  display:grid;
+  grid-template-columns:24px 1fr;
+  gap:9px;
+  align-items:center;
+  padding:7px 9px;
+  border-radius:15px;
+  background:rgba(255,255,255,.68);
+  border:1px solid rgba(255,255,255,.85);
+  color:#34475e;
+  font-size:14px;
+  line-height:1.34;
+  font-weight:760;
+}
+.feature-icon{width:21px;height:21px;border-radius:999px;display:grid;place-items:center;font-size:12px;font-weight:950}
+.domestic .feature-icon{background:#dcecff;color:var(--blue)}
+.overseas .feature-icon{background:#ddf8ea;color:var(--teal)}
+.choice-card .btn{margin-top:auto;width:100%}
+
+.calc-card{
+  position:relative;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:670px;
+  padding:20px;
+  border-radius:30px;
+  border:1px solid rgba(219,234,246,.95);
+  background:
+    radial-gradient(circle at 5% 10%, rgba(18,108,255,.10), transparent 16rem),
+    radial-gradient(circle at 100% 0%, rgba(240,91,168,.10), transparent 18rem),
+    rgba(255,255,255,.80);
+  box-shadow:var(--shadow2);
+}
+.calc-card:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,var(--blue),var(--teal),var(--pink))}
+.calc-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.calc-icon{width:44px;height:44px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,#eaf4ff,#fff0f7);font-size:22px}
+.calc-card h3{margin:6px 0 6px;font-size:24px}
+.calc-card .mini{font-size:13px;font-weight:950;letter-spacing:.08em;color:#5d6b82;margin:0 0 4px;text-transform:uppercase}
+.calc-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.calc-field label{display:block;margin-bottom:6px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;color:#56677f}
+.calc-field input,.calc-field select,.contact-form input,.contact-form select,.contact-form textarea{
+  width:100%;
+  min-height:48px;
+  border-radius:15px;
+  border:1px solid rgba(209,223,236,.98);
+  background:rgba(255,255,255,.88);
+  padding:0 14px;
+  color:var(--ink);
+  outline:none;
+  transition:border .18s ease, box-shadow .18s ease;
+}
+.calc-field input:focus,.calc-field select:focus,.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#91c4ff;box-shadow:0 0 0 4px rgba(18,108,255,.12)}
+.calc-results{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.result-card{padding:14px 15px;border-radius:18px;border:1px solid rgba(219,234,246,.95)}
+.result-card.blue{background:#eff7ff} .result-card.green{background:#effff7}
+.result-card span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#5b6b82;font-weight:900}
+.result-card strong{display:block;margin-top:4px;font-size:19px;color:var(--ink)}
+.calc-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.calc-note{margin-top:10px;font-size:12px;color:#66768b}
+
+.section{padding:50px 0}
+.section-panel{
+  position:relative;
+  overflow:hidden;
+  padding:34px;
+  border-radius:40px;
+  border:1px solid rgba(219,234,246,.92);
+  box-shadow:var(--shadow);
+  background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(255,253,248,.84));
+}
+.section-panel h2{font-size:clamp(34px,4vw,54px);letter-spacing:-.055em;line-height:1;margin-bottom:16px}
+.section-intro{max-width:760px;margin-bottom:22px}
+
+.filter-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.filter-pill{padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);font-weight:850;font-size:13px;color:var(--ink)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product-card{
+  padding:18px;
+  border-radius:28px;
+  background:rgba(255,255,255,.9);
+  border:1px solid rgba(219,234,246,.94);
+  box-shadow:var(--shadow2);
+}
+.product-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:15px}
+.product-top h3{margin:0}
+.badge{display:inline-flex;align-items:center;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;color:var(--ink);border:1px solid rgba(18,48,74,.08);background:#f6fbff;white-space:nowrap}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.price-box{padding:12px;border-radius:17px;border:1px solid var(--line);background:#f7fbff}
+.price-box.green{background:#f1fff8}
+.price-box small{display:block;color:var(--muted);font-weight:850}
+.price-box strong{display:block;font-size:20px;margin-top:3px}
+.product-meta{font-size:13px;color:var(--muted);line-height:1.5;margin:10px 0 14px}
+
+.process-grid,.contact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.process-card,.contact-card,.quality-card{
+  padding:22px;
+  border-radius:26px;
+  border:1px solid rgba(219,234,246,.94);
+  background:rgba(255,255,255,.76);
+  box-shadow:0 12px 28px rgba(18,48,74,.07);
+}
+.process-num{width:34px;height:34px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--teal));color:white;font-weight:950;margin-bottom:14px}
+
+.shipping-panel{background:
+  radial-gradient(circle at 0 0,rgba(18,108,255,.10),transparent 24rem),
+  radial-gradient(circle at 100% 5%,rgba(20,184,135,.12),transparent 26rem),
+  linear-gradient(135deg,rgba(255,255,255,.82),rgba(255,253,248,.84));
+}
+.choose-panel{margin-top:20px;padding:20px;border-radius:26px;background:rgba(255,255,255,.72);border:1px solid var(--line)}
+.choose-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.choose-item{padding:14px;border-radius:18px;background:#f8fbff;border:1px solid var(--line);font-weight:850;color:var(--ink)}
+
+.quality-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.quality-card:nth-child(1){background:linear-gradient(135deg,#fff,#eaf4ff)}
+.quality-card:nth-child(2){background:linear-gradient(135deg,#fff,#eafbf3)}
+.quality-card:nth-child(3){background:linear-gradient(135deg,#fff,#f4efff)}
+.quality-card:nth-child(4){background:linear-gradient(135deg,#fff,#fff8ec)}
+
+.contact-section{background:
+  radial-gradient(circle at 0 10%,rgba(20,184,135,.14),transparent 24rem),
+  radial-gradient(circle at 100% 0,rgba(18,108,255,.12),transparent 24rem),
+  linear-gradient(135deg,rgba(255,255,255,.84),rgba(234,251,243,.76));
+}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:16px;align-items:start}
+.contact-form{display:grid;gap:12px;padding:24px;border-radius:28px;background:rgba(255,255,255,.82);border:1px solid var(--line);box-shadow:var(--shadow2)}
+.contact-form textarea{min-height:130px;padding:14px;resize:vertical}
+.checkline{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;color:var(--muted);font-size:13px;line-height:1.45}
+.side-note{padding:24px;border-radius:28px;background:linear-gradient(135deg,#f0fff8,#fffdf8);border:1px solid var(--line);box-shadow:var(--shadow2)}
+.side-note ul{margin:12px 0 0;padding-left:20px;color:var(--ink);line-height:1.8}
+
+.faq-list{display:grid;gap:10px}
+details{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:20px;padding:15px 18px;box-shadow:0 8px 20px rgba(18,48,74,.05)}
+summary{cursor:pointer;font-weight:950;color:var(--ink)}
+details p{font-size:15px;margin:12px 0 0}
+
+footer{padding:0 0 40px}
+.footer-panel{padding:22px;border-radius:30px;background:linear-gradient(135deg,rgba(255,255,255,.9),rgba(234,244,255,.82),rgba(255,248,236,.72));border:1px solid var(--line);box-shadow:var(--shadow)}
+.footer-nav{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.footer-link{padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid var(--line);font-size:13px;font-weight:850}
+.disclaimer{font-size:13px;color:var(--muted);line-height:1.6}
+
+.scroll-tools{position:fixed;right:18px;bottom:22px;z-index:80;display:grid;gap:8px}
+.scroll-btn{width:48px;height:48px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.86);box-shadow:0 12px 28px rgba(18,48,74,.12);color:var(--blue);font-weight:950;cursor:pointer;backdrop-filter:blur(12px)}
+
+@media(max-width:1120px){
+  .site-header{grid-template-columns:1fr;gap:14px}
+  .header-nav{justify-self:start}
+  .hero-panel{grid-template-columns:1fr;padding:26px}
+  .choice-grid{max-width:760px}
+}
+@media(max-width:860px){
+  .choice-grid,.product-grid,.process-grid,.quality-grid,.contact-cards,.contact-layout,.choose-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .wrap{width:min(var(--max), calc(100% - 16px))}
+  .site-header{width:calc(100% - 16px);padding:10px;border-radius:22px;min-height:auto}
+  .site-logo{width:100%;max-height:108px}
+  .header-nav{width:100%;grid-template-columns:1fr 1fr}
+  .hero{padding:22px 0}
+  .hero-panel,.section-panel{padding:20px;border-radius:24px}
+  h1{font-size:42px}
+  .choice-grid,.product-grid,.process-grid,.quality-grid,.contact-cards,.contact-layout,.choose-grid,.calc-grid,.calc-results,.price-grid{grid-template-columns:1fr}
+  .choice-card{min-height:auto}
+  .feature-list{min-height:auto}
+/* PRODUCTS / SHOP PAGE */
+.catalog-hero h1{font-size:clamp(42px, 5vw, 56px);margin-bottom:12px;color:var(--navy)}
+.catalog-hero p{font-size:18px;color:var(--muted);max-width:680px}
+.stats-strip{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:20px;margin:2.5rem 0;background:linear-gradient(135deg, rgba(18,108,255,.08) 0%, rgba(20,184,135,.06) 100%);padding:24px;border-radius:18px}
+.stat-item{text-align:center}
+.stat-value{font-size:28px;font-weight:700;color:var(--blue)}
+.stat-label{font-size:13px;color:var(--muted);margin-top:4px}
+.catalog-wrapper{display:grid;grid-template-columns:240px 1fr;gap:28px;margin:2rem 0}
+.filter-sidebar{background:var(--ivory);border:1px solid var(--line);border-radius:16px;padding:20px;height:fit-content;position:sticky;top:100px}
+.filter-group{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.filter-group:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.filter-title{font-size:13px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:10px}
+.filter-option{display:flex;align-items:center;gap:8px;margin-bottom:8px;cursor:pointer;font-size:14px;color:var(--muted)}
+.filter-option input{cursor:pointer}
+.product-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.sort-controls{display:flex;gap:10px}
+.sort-select,.view-toggle{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--navy);cursor:pointer;font-size:13px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));gap:20px;margin:1.5rem 0}
+.product-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:all .3s;cursor:pointer}
+.product-card:hover{box-shadow:var(--shadow2);transform:translateY(-4px)}
+.product-image{width:100%;height:180px;background:linear-gradient(135deg, var(--sky) 0%, var(--mint) 100%);display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:700;color:var(--blue)}
+.product-label{padding:14px;text-align:center;background:var(--blush);border-bottom:1px solid var(--line)}
+.product-label-name{font-size:16px;font-weight:700;color:var(--navy)}
+.product-label-strength{font-size:12px;color:var(--muted);margin-top:2px}
+.product-body{padding:14px}
+.product-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:4px 8px;border-radius:12px;text-transform:uppercase}
+.badge-domestic{background:var(--sky);color:var(--blue)}
+.badge-overseas{background:var(--mint);color:var(--teal)}
+.badge-research{background:var(--blush);color:var(--pink)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.price-block{background:var(--sky);padding:10px;border-radius:10px;text-align:center}
+.price-block h4{font-size:11px;color:var(--muted);margin:0 0 4px}
+.price-block p{font-size:16px;font-weight:700;color:var(--blue);margin:0}
+.product-timeline{font-size:12px;color:var(--muted);text-align:center;margin:10px 0}
+.product-cta{width:100%;padding:10px;background:var(--blue);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all .2s}
+.product-cta:hover{background:var(--blue2)}
+
+/* FAQ / HELP CENTER */
+.help-hero h1{font-size:clamp(42px, 5vw, 56px);margin-bottom:12px}
+.help-hero p{font-size:16px;color:var(--muted);max-width:600px}
+.search-box{width:100%;max-width:520px;margin:2rem 0;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;font-size:14px;background:#fff}
+.faq-cats{display:flex;gap:10px;margin:1.5rem 0;flex-wrap:wrap}
+.faq-cat{padding:8px 14px;border:1px solid var(--line);border-radius:18px;cursor:pointer;background:#fff;font-size:13px;font-weight:600;color:var(--navy);transition:all .2s}
+.faq-cat.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.faq-grid{display:grid;gap:14px;margin:2rem 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;cursor:pointer;transition:all .2s}
+.faq-item:hover{border-color:var(--blue);box-shadow:0 4px 12px rgba(18,108,255,.08)}
+.faq-q{font-size:15px;font-weight:700;color:var(--navy);margin:0}
+.faq-a{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.6;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-icon{float:right;color:var(--blue);font-weight:700}
+
+/* ABOUT PAGE */
+.about-hero h1{font-size:clamp(42px, 5vw, 56px);margin-bottom:12px}
+.about-section{margin:3rem 0;padding:2.5rem;background:var(--ivory);border-radius:18px;border:1px solid var(--line)}
+.about-section h2{font-size:28px;color:var(--navy);margin-top:0}
+.about-section p{font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+
+/* ACCOUNT / LOGIN PAGE */
+.login-wrapper{max-width:520px;margin:3rem auto}
+.login-tabs{display:flex;gap:0;border-bottom:2px solid var(--line)}
+.login-tab{flex:1;padding:14px;text-align:center;cursor:pointer;border:none;background:none;font-size:14px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent;transition:all .2s}
+.login-tab.active{color:var(--blue);border-bottom-color:var(--blue)}
+.tab-content{display:none;margin-top:20px}
+.tab-content.active{display:block}
+.form-field{margin-bottom:16px}
+.form-field label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;text-transform:uppercase}
+.form-field input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font-size:14px;background:#fff;color:var(--navy);transition:all .2s}
+.form-field input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(18,108,255,.1)}
+.form-submit{width:100%;padding:12px;background:var(--blue);color:#fff;border:none;border-radius:10px;font-weight:700;cursor:pointer;margin-top:20px;transition:all .2s}
+.form-submit:hover{background:var(--blue2)}
+.form-notice{font-size:12px;color:var(--muted);margin:16px 0;padding:12px;background:var(--blush);border-radius:8px;border-left:3px solid var(--pink)}
+
+/* ORDER TRACKING PAGE */
+.tracking-hero h1{font-size:clamp(42px, 5vw, 56px);margin-bottom:12px}
+.tracking-wrapper{max-width:680px;margin:2rem auto}
+.tracking-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:20px}
+.tracking-form{display:grid;gap:16px}
+.tracking-btn{width:100%;padding:12px;background:var(--blue);color:#fff;border:none;border-radius:10px;font-weight:700;cursor:pointer}
+.order-status{background:linear-gradient(135deg, var(--sky) 0%, var(--mint) 100%);padding:20px;border-radius:14px;margin:20px 0;border-left:4px solid var(--blue)}
+.status-label{font-size:12px;font-weight:700;color:var(--blue);text-transform:uppercase}
+.status-text{font-size:16px;color:var(--navy);margin-top:4px}
+
+/* LIVE CHAT */
+.chat-toggle{position:fixed;bottom:20px;right:20px;width:56px;height:56px;background:var(--blue);border:none;border-radius:50%;color:#fff;font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(18,108,255,.25);transition:all .3s;z-index:999}
+.chat-toggle:hover{transform:scale(1.1)}
+.chat-panel{position:fixed;bottom:80px;right:20px;width:360px;background:#fff;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);padding:20px;display:none;z-index:999;max-height:500px;overflow-y:auto}
+.chat-panel.open{display:block}
+.chat-close{float:right;background:none;border:none;cursor:pointer;font-size:20px;color:var(--muted)}
+.chat-msg{margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.chat-msg:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.chat-input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;margin-top:12px;font-size:13px}
+
+/* FOOTER UPDATES */
+.footer-nav{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:2rem 0}
+.footer-link{font-size:13px;color:var(--muted);transition:color .2s}
+.footer-link:hover{color:var(--blue)}
+.compliance-banner{background:linear-gradient(135deg, var(--blush) 0%, var(--lav) 100%);border:1px solid var(--line);border-radius:12px;padding:16px;margin:2rem 0;text-align:center;font-size:12px;color:var(--navy)}
+
+@media (max-width:768px){
+  .catalog-wrapper{grid-template-columns:1fr}
+  .filter-sidebar{position:static;top:auto}
+  .product-grid{grid-template-columns:repeat(auto-fill, minmax(200px, 1fr))}
+  .login-wrapper{max-width:100%;margin:2rem}
+  .chat-panel{width:90vw;max-width:400px;bottom:70px;right:10px}
+}
+
+<!-- Tightened spacing build v53 20260520-0055 -->
+
+<!-- Alignment pass v54 20260520-0059: larger header/logo, wider wrap alignment -->
+
+<!-- v55 margin/logo tune: wider content rails, larger logo banner -->
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header">
+  <a class="logo-link" href="#top" aria-label="Pep Suppliers home">
+    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v55.png" alt="Pep Suppliers — All-in-one peptide tool">
+  </a>
+  <nav class="header-nav" aria-label="Primary navigation">
+    <a class="nav-pill nav-home" href="#top"><i></i>Home</a>
+    <a class="nav-pill nav-prod" href="#products"><i></i>Products</a>
+    <a class="nav-pill nav-faq" href="#faq"><i></i>FAQ</a>
+    <a class="nav-pill nav-contact" href="#contact"><i></i>Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-panel">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> Curated research sourcing</div>
+      <h1>Global peptide sourcing.<br>Domestic speed and overseas savings.</h1>
+      <p class="hero-lead">Organized <strong class="blue">global sourcing</strong>, <strong class="green">verified suppliers</strong>, <strong class="purple">transparent documentation</strong>, and <strong class="warm">clear buying paths</strong> — so you can order with confidence.</p>
+      <div class="hero-chips" aria-label="Pep Suppliers strengths">
+        <span class="hero-chip chip-blue"><i></i>Global sourcing</span>
+        <span class="hero-chip chip-green"><i></i>Verified suppliers</span>
+        <span class="hero-chip chip-purple"><i></i>Documentation visibility</span>
+        <span class="hero-chip chip-warm"><i></i>Clear buying paths</span>
+      </div>
+
+      <div class="calc-card" id="calculator">
+        <div class="calc-head">
+          <div>
+            <p class="mini">Quick tool</p>
+            <h3>Research Calculator</h3>
+            <p>Estimate concentration and volume for laboratory research planning.</p>
+          </div>
+          <div class="calc-icon" aria-hidden="true">⚗</div>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-field"><label for="vialMg">Vial amount</label><input id="vialMg" type="number" min="0" step="any" placeholder="e.g., 5"><p class="calc-note">mg</p></div>
+          <div class="calc-field"><label for="diluentMl">Diluent added</label><input id="diluentMl" type="number" min="0" step="any" placeholder="e.g., 1"><p class="calc-note">mL</p></div>
+          <div class="calc-field"><label for="targetAmt">Target amount</label><input id="targetAmt" type="number" min="0" step="any" placeholder="e.g., 250"></div>
+          <div class="calc-field"><label for="targetUnit">Unit</label><select id="targetUnit"><option value="mcg">mcg</option><option value="mg">mg</option></select></div>
+        </div>
+        <div class="calc-results" aria-live="polite">
+          <div class="result-card blue"><span>Concentration</span><strong id="concResult">—</strong></div>
+          <div class="result-card green"><span>Volume needed</span><strong id="volResult">—</strong></div>
+        </div>
+        <div class="calc-actions">
+          <button class="btn btn-blue" type="button" id="calcBtn">Calculate</button>
+          <button class="btn btn-soft" type="button" id="resetBtn">Reset</button>
+        </div>
+        <p class="calc-note">For laboratory research planning only. Not for human use or dosing guidance.</p>
+      </div>
+    </div>
+
+    <div class="choice-grid" id="shipping">
+      <article class="choice-card domestic">
+        <div class="card-top"><div class="icon-badge">🚀</div></div>
+        <h3>Domestic Fast-Ship</h3>
+        <p class="card-intro">Fastest path for U.S.-based research inventory, with quick fulfillment, tracking, and overnight options on select items.</p>
+        <span class="best-for"><i></i>Best for urgent research timelines</span>
+        <div class="feature-list">
+          <div class="feature-row"><span class="feature-icon">✓</span><span>U.S. warehouse shipping</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>Overnight available on select items</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>2–5 day typical delivery</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>Tracking where available</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>Higher price, faster path</span></div>
+        </div>
+        <a class="btn btn-blue" href="#products">Explore Domestic</a>
+      </article>
+
+      <article class="choice-card overseas">
+        <div class="card-top"><div class="icon-badge">🌍</div></div>
+        <h3>Overseas Savings</h3>
+        <p class="card-intro">Best value path for planned sourcing, bulk-friendly orders, and buyers who can wait longer for deeper savings.</p>
+        <span class="best-for"><i></i>Best for planned and bulk orders</span>
+        <div class="feature-list">
+          <div class="feature-row"><span class="feature-icon">✓</span><span>International supplier sourcing</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>2–3 week typical delivery</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>Lower-cost sourcing path</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>Flexible planning options</span></div>
+          <div class="feature-row"><span class="feature-icon">✓</span><span>More patience, better savings</span></div>
+        </div>
+        <a class="btn btn-green" href="#products">Explore Overseas</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap section-panel">
+    <div class="eyebrow"><span class="dot"></span> About</div>
+    <h2>Global sourcing made clearer.</h2>
+    <p class="section-intro">Pep Suppliers organizes research peptide sourcing options so buyers can compare domestic availability, overseas value, documentation visibility, and timeline tradeoffs without guesswork.</p>
+    <div class="process-grid">
+      <article class="process-card"><div class="process-num">1</div><h3>Global sourcing</h3><p>We organize sourcing paths across domestic and overseas options.</p></article>
+      <article class="process-card"><div class="process-num">2</div><h3>Clear paths</h3><p>Speed, savings, timelines, and documentation visibility are presented clearly.</p></article>
+      <article class="process-card"><div class="process-num">3</div><h3>Documentation</h3><p>COAs, Janoshik testing, and batch details are shown where available.</p></article>
+      <article class="process-card"><div class="process-num">4</div><h3>Planning</h3><p>Bulk and repeat-order planning can be compared around timeline and sourcing needs.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap section-panel shipping-panel">
+    <div class="eyebrow"><span class="dot"></span> Shipping comparison</div>
+    <h2>Choose speed or savings with clear expectations.</h2>
+    <p class="section-intro">Domestic options prioritize faster fulfillment. Overseas sourcing can offer deeper savings when timelines allow.</p>
+    <div class="choice-grid">
+      <article class="choice-card domestic"><h3>Domestic Fast-Ship</h3><span class="best-for"><i></i>Best when timing matters</span><div class="feature-list"><div class="feature-row"><span class="feature-icon">✓</span><span>U.S. warehouse shipping</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>Overnight available on select items</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>2–5 day typical delivery</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>Higher price, faster path</span></div></div></article>
+      <article class="choice-card overseas"><h3>Overseas Savings</h3><span class="best-for"><i></i>Best when planning ahead</span><div class="feature-list"><div class="feature-row"><span class="feature-icon">✓</span><span>International supplier sourcing</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>2–3 week typical delivery</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>Lower-cost sourcing path</span></div><div class="feature-row"><span class="feature-icon">✓</span><span>More patience, better savings</span></div></div></article>
+    </div>
+    <div class="choose-panel"><h3>How to choose</h3><p>Choose Domestic when timing matters. Choose Overseas when planning ahead and price matters more.</p><div class="choose-grid"><div class="choose-item">Need faster fulfillment? Domestic.</div><div class="choose-item">Planning ahead or buying larger? Overseas.</div><div class="choose-item">Need added documentation/testing? Ask before ordering.</div></div></div>
+  </div>
+</section>
+
+<section class="section" id="quality">
+  <div class="wrap section-panel">
+    <div class="eyebrow"><span class="dot"></span> Quality & documentation</div>
+    <h2>Documentation visibility without unsupported claims.</h2>
+    <p class="section-intro">Most products include available supplier documentation, and many products may have COAs or Janoshik testing available. Optional upgraded testing may be available on select products and can affect fulfillment or shipping time.</p>
+    <div class="quality-grid">
+      <article class="quality-card"><h3>Supplier Screening</h3><p>Reviewed for reliability, communication, and sourcing consistency.</p></article>
+      <article class="quality-card"><h3>Documentation Visibility</h3><p>COAs, batch notes, and supplier documents are shown where available.</p></article>
+      <article class="quality-card"><h3>Optional Testing</h3><p>Upgraded testing may be available on select products and may affect timing.</p></article>
+      <article class="quality-card"><h3>Batch Details</h3><p>Availability varies by product, supplier, batch, and sourcing path.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap section-panel contact-section">
+    <div class="eyebrow"><span class="dot"></span> Contact</div>
+    <h2>Questions about sourcing, documentation, or bulk planning?</h2>
+    <p class="section-intro">Reach out about domestic availability, overseas sourcing timelines, documentation visibility, optional testing, or planned research supply orders.</p>
+    <div class="contact-cards">
+      <article class="contact-card"><h3>Sourcing Help</h3><p>Ask about domestic availability, overseas sourcing paths, or comparing speed versus savings.</p></article>
+      <article class="contact-card"><h3>Documentation Questions</h3><p>Request information about COAs, Janoshik testing, supplier documentation, or optional upgraded testing.</p></article>
+      <article class="contact-card"><h3>Bulk / Planned Orders</h3><p>Plan larger or repeat orders around timeline, availability, and documentation needs.</p></article>
+      <article class="contact-card"><h3>Account / Order Support</h3><p>Get help with account access, order questions, tracking details where available, or follow-up requests.</p></article>
+    </div>
+    <div class="contact-layout" style="margin-top:22px">
+      <form class="contact-form">
+        <!-- TODO: connect contact form endpoint -->
+        <input type="text" placeholder="Name" aria-label="Name">
+        <input type="email" placeholder="Email" aria-label="Email">
+        <select aria-label="Inquiry type"><option>Sourcing question</option><option>Documentation / COA question</option><option>Optional testing question</option><option>Bulk planning</option><option>Shipping timeline</option><option>Account support</option><option>Other</option></select>
+        <input type="text" placeholder="Optional order/reference number" aria-label="Optional order or reference number">
+        <textarea placeholder="Message" aria-label="Message"></textarea>
+        <label class="checkline"><input type="checkbox"> <span>I understand that Pep Suppliers products and information are intended for laboratory research use only.</span></label>
+        <button class="btn btn-green" type="button">Send message</button>
+      </form>
+      <aside class="side-note"><h3>What to include</h3><ul><li>Product or sourcing path</li><li>Domestic or overseas preference</li><li>Documentation/testing needs</li><li>Timeline expectations</li><li>Bulk quantity or repeat-order details</li></ul><p>Pep Suppliers provides sourcing information and product options for laboratory research use only. We cannot provide medical advice, dosing guidance, or human-use recommendations.</p></aside>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap section-panel">
+    <div class="eyebrow"><span class="dot"></span> FAQ</div>
+    <h2>Clear answers before you choose.</h2>
+    <div class="faq-list">
+      <details open><summary>Are your products for research use only?</summary><p>Yes. Products are intended for laboratory research use only and are not for human consumption, diagnosis, treatment, or prevention of disease.</p></details>
+      <details><summary>What is the difference between domestic and overseas?</summary><p>Domestic options usually ship faster from U.S.-based inventory at a higher price. Overseas options usually offer deeper savings with longer lead times.</p></details>
+      <details><summary>Do you provide COAs or third-party testing?</summary><p>Most products include available documentation, and many products have COAs or Janoshik testing available. Documentation varies by supplier, batch, and sourcing path, so we clearly show what is available before purchase whenever possible.</p></details>
+      <details><summary>Can optional testing affect shipping time?</summary><p>Yes. Optional upgraded testing may be available on select products, but it can add time to fulfillment or shipping.</p></details>
+      <details><summary>Can I order in bulk?</summary><p>Bulk-friendly sourcing may be available. Planned orders typically make it easier to compare price, timeline, and documentation options.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- PRODUCTS PAGE -->
+<section id="products" class="section">
+  <div class="wrap">
+    <div class="catalog-hero">
+      <h1>Research Product Catalog</h1>
+      <p>Compare domestic fast-ship availability, overseas savings, documentation visibility, and demo pricing placeholders in one clean catalog.</p>
+    </div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-value">2</div><div class="stat-label">Sourcing Paths</div></div>
+      <div class="stat-item"><div class="stat-value">2–5 days</div><div class="stat-label">Domestic Delivery</div></div>
+      <div class="stat-item"><div class="stat-value">2–3 weeks</div><div class="stat-label">Overseas Delivery</div></div>
+      <div class="stat-item"><div class="stat-value">COAs</div><div class="stat-label">Where Available</div></div>
+    </div>
+    <div class="catalog-wrapper">
+      <aside class="filter-sidebar">
+        <div class="filter-group">
+          <div class="filter-title">Category</div>
+          <label class="filter-option"><input type="checkbox" checked> All Products</label>
+          <label class="filter-option"><input type="checkbox"> Peptides</label>
+          <label class="filter-option"><input type="checkbox"> Peptide Blends</label>
+          <label class="filter-option"><input type="checkbox"> Research Support</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-title">Shipping Path</div>
+          <label class="filter-option"><input type="checkbox"> Domestic Fast-Ship</label>
+          <label class="filter-option"><input type="checkbox"> Overseas Savings</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-title">Documentation</div>
+          <label class="filter-option"><input type="checkbox"> COA Available</label>
+          <label class="filter-option"><input type="checkbox"> Optional Testing</label>
+        </div>
+        <div class="filter-group">
+          <div class="filter-title">Stock Status</div>
+          <label class="filter-option"><input type="checkbox"> In Stock</label>
+          <label class="filter-option"><input type="checkbox"> Planned Sourcing</label>
+        </div>
+      </aside>
+      <div>
+        <div class="product-header">
+          <h2 style="margin:0;font-size:18px">9 Products</h2>
+          <div class="sort-controls">
+            <select class="sort-select"><option>Sort by name</option><option>Sort by price: low to high</option><option>Sort by price: high to low</option></select>
+            <button class="view-toggle">Grid</button>
+          </div>
+        </div>
+        <div class="product-grid">
+          <!-- Product Cards -->
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">Retatrutide</div><div class="product-label-strength">10mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">Tirzepatide</div><div class="product-label-strength">10mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">Tesamorelin</div><div class="product-label-strength">2mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">BPC-157</div><div class="product-label-strength">5mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">TB-500</div><div class="product-label-strength">2mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">CJC-1295 / Ipamorelin</div><div class="product-label-strength">Blend Kit</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">NAD+</div><div class="product-label-strength">500mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">MOTS-C</div><div class="product-label-strength">5mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">💉</div>
+            <div class="product-label"><div class="product-label-name">Semaglutide</div><div class="product-label-strength">5mg Vial</div></div>
+            <div class="product-body">
+              <div class="product-badges"><span class="badge badge-domestic">Domestic</span><span class="badge badge-overseas">Overseas</span><span class="badge badge-research">Research Use</span></div>
+              <div class="price-grid">
+                <div class="price-block"><h4>Domestic</h4><p>$—</p></div>
+                <div class="price-block"><h4>Overseas</h4><p>$—</p></div>
+              </div>
+              <div class="product-timeline">2–5 day / 2–3 week delivery</div>
+              <button class="product-cta">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compliance-banner">
+      💡 Demo pricing shown. Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.
+    </div>
+  </div>
+</section>
+
+<!-- FAQ PAGE -->
+<section id="faq" class="section">
+  <div class="wrap">
+    <div class="help-hero">
+      <h1>Help Center</h1>
+      <p>Find answers to common questions about products, sourcing, shipping, accounts, and documentation.</p>
+    </div>
+    <input type="text" class="search-box" placeholder="Search FAQs...">
+    <div class="faq-cats">
+      <button class="faq-cat active">All Questions</button>
+      <button class="faq-cat">Products</button>
+      <button class="faq-cat">Shipping</button>
+      <button class="faq-cat">Account & Orders</button>
+      <button class="faq-cat">Documentation</button>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item open">
+        <div class="faq-q">Are your products for research use only? <span class="faq-icon">−</span></div>
+        <div class="faq-a">Yes. Products are intended for laboratory research use only and are not for human consumption, diagnosis, treatment, or prevention of disease.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the difference between domestic and overseas sourcing? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Domestic sourcing ships from U.S. warehouses in 2–5 days with higher pricing. Overseas sourcing comes from international suppliers in 2–3 weeks with deeper savings. Choose based on your timeline and budget priorities.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide COAs or third-party testing? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Many products have supplier documentation and available COAs. Optional upgraded testing (Janoshik) is available on select products and may affect fulfillment timelines.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can optional testing affect shipping time? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes. Optional upgraded testing may add 5–10 business days to fulfillment. Plan your timeline accordingly when requesting testing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I track my order? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Use the Order Tracking page with your order number and email. For domestic orders, tracking is typically available immediately. Overseas orders provide tracking after shipment from international suppliers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I order in bulk or set up planned orders? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Yes. Bulk and planned orders are welcome. Contact us with your timeline and quantity needs, and we'll help organize sourcing around your research schedule.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why does overseas shipping take longer? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Overseas sourcing involves international suppliers, customs clearance, and international shipping. The longer timeline reflects real supply chain logistics but offers significant cost savings.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I mix domestic and overseas items in one order? <span class="faq-icon">+</span></div>
+        <div class="faq-a">Best practice is to order domestic and overseas items separately to avoid delays. Contact us if you need combined ordering help.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin:3rem 0">
+      <p style="color:var(--muted);margin:0 0 12px">Still have questions?</p>
+      <a href="#contact" style="display:inline-block;padding:10px 20px;background:var(--blue);color:#fff;border-radius:8px;font-weight:600">Contact Support</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="about-hero">
+      <h1>About Pep Suppliers</h1>
+      <p style="font-size:18px;color:var(--muted);max-width:680px">We organize research peptide sourcing so buyers can compare domestic availability, overseas savings, documentation visibility, and timeline tradeoffs without guesswork.</p>
+    </div>
+    <div class="about-section">
+      <h2>Who We Are</h2>
+      <p>Pep Suppliers is a sourcing platform dedicated to making research peptide procurement transparent and straightforward. We screen suppliers, organize sourcing paths, and provide clear timelines and pricing—so you can focus on your research.</p>
+    </div>
+    <div class="about-section">
+      <h2>What We Organize</h2>
+      <p>We bring together two distinct sourcing paths: domestic fast-ship options for urgent timelines, and overseas savings options for planned sourcing. Both paths come with transparent documentation visibility, supplier screening, and bulk-friendly planning support.</p>
+    </div>
+    <div class="about-section">
+      <h2>Domestic Speed vs Overseas Savings</h2>
+      <p>Domestic sourcing prioritizes fulfillment speed with 2–5 day typical delivery from U.S. warehouses. Overseas sourcing prioritizes value with 2–3 week typical delivery and deeper pricing. Choose the path that matches your research timeline and budget.</p>
+    </div>
+    <div class="about-section">
+      <h2>Documentation Visibility</h2>
+      <p>Many products include available supplier documentation. Optional upgraded testing (Janoshik) is available on select products. We help you understand what's available and plan accordingly.</p>
+    </div>
+    <div class="about-section">
+      <h2>Supplier Screening</h2>
+      <p>We work with vetted international suppliers who meet our standards for reliability, documentation, and professional sourcing practices. Not all suppliers appear on our catalog—we filter for quality and consistency.</p>
+    </div>
+    <div class="about-section">
+      <h2>Bulk & Planned Ordering</h2>
+      <p>Research often requires planned sourcing around timelines, budgets, and documentation needs. We support bulk orders and help organize repeat sourcing so you can focus on your research schedule.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER TRACKING PAGE -->
+<section id="tracking" class="section">
+  <div class="wrap">
+    <div class="tracking-hero">
+      <h1>Track Your Order</h1>
+      <p style="font-size:16px;color:var(--muted);max-width:680px">Sign in or use your order number and email to view shipping status, documentation availability, and account history.</p>
+    </div>
+    <div class="tracking-wrapper">
+      <div class="tracking-card">
+        <h3 style="margin-top:0">Quick Order Lookup</h3>
+        <div class="tracking-form">
+          <input type="text" placeholder="Order number" style="padding:10px 12px;border:1px solid var(--line);border-radius:8px">
+          <input type="email" placeholder="Email address" style="padding:10px 12px;border:1px solid var(--line);border-radius:8px">
+          <button class="tracking-btn">Find Order</button>
+        </div>
+        <!-- TODO: connect order tracking endpoint -->
+      </div>
+      <div class="tracking-card">
+        <h3 style="margin-top:0">Sign In to Account</h3>
+        <p style="color:var(--muted);margin:0 0 12px">Create an account or sign in to view your order history and documentation access.</p>
+        <a href="#login" style="display:inline-block;padding:10px 16px;background:var(--blue);color:#fff;border-radius:8px;text-decoration:none;font-weight:600">Sign In / Create Account</a>
+        <!-- TODO: connect account authentication -->
+      </div>
+      <div class="order-status">
+        <div class="status-label">Order Status</div>
+        <div class="status-text">Enter your order number above to view real-time shipping and documentation status.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGIN / ACCOUNT PAGE -->
+<section id="login" class="section">
+  <div class="wrap">
+    <div class="login-wrapper">
+      <h1 style="text-align:center;margin-bottom:24px">Secure Account Access</h1>
+      <div class="login-tabs">
+        <button class="login-tab active" onclick="switchTab('signin')">Sign In</button>
+        <button class="login-tab" onclick="switchTab('signup')">Create Account</button>
+      </div>
+      <div id="signin" class="tab-content active">
+        <div class="tracking-form">
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-field">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <button class="form-submit">Sign In</button>
+        </div>
+      </div>
+      <div id="signup" class="tab-content">
+        <div class="tracking-form">
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-field">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="form-field">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+          <div class="form-notice">
+            ✓ Research-use-only platform: By creating an account, you agree that Pep Suppliers products are for laboratory research use only.
+          </div>
+          <button class="form-submit">Create Account</button>
+        </div>
+      </div>
+      <!-- TODO: connect authentication provider -->
+    </div>
+  </div>
+</section>
+
+<!-- LIVE CHAT -->
+<button class="chat-toggle" onclick="toggleChat()">💬</button>
+<div id="chat-panel" class="chat-panel">
+  <button class="chat-close" onclick="toggleChat()">✕</button>
+  <h3 style="margin-top:0;font-size:16px">Live Chat</h3>
+  <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Live chat placeholder — connect messaging provider before launch.</p>
+  <input type="text" class="chat-input" placeholder="Send a message...">
+</div>
+
+<script>
+function switchTab(tab){
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.login-tab').forEach(el => el.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  event.target.classList.add('active');
+}
+function toggleChat(){
+  document.getElementById('chat-panel').classList.toggle('open');
+}
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    item.classList.toggle('open');
+    item.querySelector('.faq-icon').textContent = item.classList.contains('open') ? '−' : '+';
+  });
+});
+</script>
+
+
+  <div class="wrap footer-panel">
+    <img class="site-logo" src="pep-suppliers-approved-logo-gpt-v55.png" alt="Pep Suppliers — All-in-one peptide tool" style="max-width:340px">
+    <nav class="footer-nav">
+      <a class="footer-link" href="#top">Home</a><a class="footer-link" href="#products">Products</a><a class="footer-link" href="#about">About</a><a class="footer-link" href="#shipping">Shipping</a><a class="footer-link" href="#quality">Quality</a><a class="footer-link" href="#faq">FAQ</a><a class="footer-link" href="#contact">Contact</a>
+    </nav>
+    <p class="disclaimer">Products are intended for laboratory research use only. Not for human consumption, diagnosis, treatment, or prevention of disease.</p>
+  </div>
+</footer>
+
+<div class="scroll-tools" aria-label="Scroll controls">
+  <button class="scroll-btn" type="button" id="scrollPrev" title="Previous section" aria-label="Previous section">↑</button>
+  <button class="scroll-btn" type="button" id="scrollNext" title="Next section" aria-label="Next section">↓</button>
+  <button class="scroll-btn" type="button" id="scrollTop" title="Back to top" aria-label="Back to top">⇧</button>
+</div>
+
+<script>
+const sections = ["top","products","about","shipping","quality","contact","faq"].map(id => document.getElementById(id)).filter(Boolean);
+function currentIndex() {
+  const y = window.scrollY + 120;
+  let idx = 0;
+  sections.forEach((s,i) => { if (s.offsetTop <= y) idx = i; });
+  return idx;
+}
+function goToIndex(i) {
+  const target = sections[Math.max(0, Math.min(sections.length - 1, i))];
+  if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+document.getElementById("scrollTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+document.getElementById("scrollPrev").addEventListener("click", () => goToIndex(currentIndex() - 1));
+document.getElementById("scrollNext").addEventListener("click", () => goToIndex(currentIndex() + 1));
+document.querySelectorAll('a[href="#top"]').forEach(a => a.addEventListener("click", e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }));
+
+function calculateResearchVolume() {
+  const vialMg = parseFloat(document.getElementById("vialMg").value);
+  const diluentMl = parseFloat(document.getElementById("diluentMl").value);
+  const targetAmt = parseFloat(document.getElementById("targetAmt").value);
+  const unit = document.getElementById("targetUnit").value;
+  const conc = document.getElementById("concResult");
+  const vol = document.getElementById("volResult");
+  if (!vialMg || !diluentMl || !targetAmt || vialMg <= 0 || diluentMl <= 0 || targetAmt <= 0) {
+    conc.textContent = "Enter values";
+    vol.textContent = "—";
+    return;
+  }
+  const concentration = vialMg / diluentMl;
+  const targetMg = unit === "mcg" ? targetAmt / 1000 : targetAmt;
+  const volumeMl = targetMg / concentration;
+  conc.textContent = concentration.toFixed(3) + " mg/mL";
+  vol.textContent = volumeMl.toFixed(3) + " mL";
+}
+document.getElementById("calcBtn").addEventListener("click", calculateResearchVolume);
+document.getElementById("resetBtn").addEventListener("click", () => {
+  ["vialMg","diluentMl","targetAmt"].forEach(id => document.getElementById(id).value = "");
+  document.getElementById("targetUnit").value = "mcg";
+  document.getElementById("concResult").textContent = "—";
+  document.getElementById("volResult").textContent = "—";
+});
+</script>
+</body>
+</html>
