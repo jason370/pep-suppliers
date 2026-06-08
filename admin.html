@@ -124,6 +124,7 @@
           <th>Name</th>
           <th>Category</th>
           <th>Warehouse</th>
+          <th>Price</th>
           <th>In Stock</th>
           <th>Visible</th>
           <th>Actions</th>
@@ -249,6 +250,25 @@
       var tdWh = document.createElement('td');
       tdWh.textContent = p.warehouse || '—';
       tr.appendChild(tdWh);
+
+      var tdPrice = document.createElement('td');
+      var priceInput = document.createElement('input');
+      priceInput.type = 'text';
+      priceInput.value = p.price || '';
+      priceInput.placeholder = '$0.00';
+      priceInput.style.width = '80px';
+      priceInput.style.padding = '4px 6px';
+      priceInput.style.border = '1px solid #c5cdd6';
+      priceInput.style.borderRadius = '4px';
+      priceInput.style.font = 'inherit';
+      (function(i) {
+        priceInput.addEventListener('input', function () {
+          products[i].price = priceInput.value;
+          markDirty();
+        });
+      })(index);
+      tdPrice.appendChild(priceInput);
+      tr.appendChild(tdPrice);
 
       var tdStock = document.createElement('td');
       var stockBtn = document.createElement('button');
