@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pep Suppliers — Product Admin</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 24px; background: #f4f6f8; color: #1a1a1a; }
+    h1 { margin: 0 0 8px; font-size: 1.5rem; }
+    h2 { margin: 24px 0 12px; font-size: 1.1rem; }
+    .panel { max-width: 1100px; margin: 0 auto; background: #fff; border: 1px solid #d8dee4; border-radius: 8px; padding: 24px; }
+    .muted { color: #5c6670; font-size: 0.9rem; }
+    label { display: block; margin-bottom: 4px; font-weight: 600; font-size: 0.85rem; }
+    input, select, textarea, button { font: inherit; }
+    input[type="text"], input[type="password"], select, textarea {
+      width: 100%; padding: 8px 10px; border: 1px solid #c5cdd6; border-radius: 6px; margin-bottom: 12px;
+    }
+    button {
+      padding: 8px 14px; border: 1px solid #2a6f97; background: #2a6f97; color: #fff;
+      border-radius: 6px; cursor: pointer;
+    }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    button.secondary { background: #fff; color: #2a6f97; }
+    button.danger { background: #b42318; border-color: #b42318; }
+    button.small { padding: 4px 8px; font-size: 0.8rem; }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .row > * { flex: 1; min-width: 140px; }
+    .toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 16px 0; }
+    .status { padding: 10px 12px; border-radius: 6px; margin: 12px 0; display: none; }
+    .status.show { display: block; }
+    .status.ok { background: #e8f5e9; border: 1px solid #81c784; }
+    .status.err { background: #fdecea; border: 1px solid #e57373; }
+    .status.warn { background: #fff8e1; border: 1px solid #ffd54f; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th, td { border-bottom: 1px solid #e6ebf0; padding: 8px 6px; text-align: left; vertical-align: top; }
+    th { background: #f8fafb; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+    .badge.yes { background: #e8f5e9; color: #2e7d32; }
+    .badge.no { background: #fdecea; color: #c62828; }
+    .hidden { display: none !important; }
+    .add-form { border: 1px solid #e6ebf0; border-radius: 8px; padding: 16px; background: #fafbfc; }
+    .add-form .row > div { flex: 1; min-width: 180px; }
+    #gate { max-width: 420px; margin: 80px auto; }
+  </style>
+</head>
+<body>
+
+<div id="gate" class="panel">
+  <h1>Product Admin</h1>
+  <p class="muted">Enter the admin password to manage products.json.</p>
+  <label for="gate-password">Password</label>
+  <input type="password" id="gate-password" autocomplete="current-password">
+  <div class="toolbar">
+    <button type="button" id="gate-submit">Enter Admin</button>
+  </div>
+  <div id="gate-status" class="status err"></div>
+</div>
+
+<div id="app" class="panel hidden">
+  <h1>Product Admin</h1>
+  <p class="muted">Manage catalog data in <code>products.json</code>. Changes deploy via Netlify after GitHub commit.</p>
+  <div id="app-status" class="status"></div>
+
+  <div class="toolbar">
+    <button type="button" id="save-btn">Save Changes</button>
+    <button type="button" id="reload-btn" class="secondary">Reload from Server</button>
+    <span class="muted" id="product-count"></span>
+    <span class="muted" id="dirty-flag"></span>
+  </div>
+
+  <h2>Add Product</h2>
+  <div class="add-form">
+    <div class="row">
+      <div>
+        <label for="add-name">Name *</label>
+        <input type="text" id="add-name" required>
+      </div>
+      <div>
+        <label for="add-category">Category *</label>
+        <select id="add-category">
+          <option value="Weight Management">Weight Management</option>
+          <option value="Recovery &amp; Healing">Recovery &amp; Healing</option>
+          <option value="Hormone Support">Hormone Support</option>
+          <option value="Other Research" selected>Other Research</option>
+          <option value="Peptide Blends">Peptide Blends</option>
+        </select>
+      </div>
+      <div>
+        <label for="add-price">Price *</label>
+        <input type="text" id="add-price" placeholder="$0.00">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="add-description">Description</label>
+        <input type="text" id="add-description" value="Research Use Only">
+      </div>
+      <div>
+        <label for="add-warehouse">Warehouse *</label>
+        <select id="add-warehouse">
+          <option value="US">US</option>
+          <option value="Overseas">Overseas</option>
+          <option value="Both">Both</option>
+        </select>
+      </div>
+      <div>
+        <label for="add-vials">Vial Sizes (comma-separated)</label>
+        <input type="text" id="add-vials" placeholder="10MG, 5MG">
+      </div>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="add-instock" checked> In stock</label>
+      <label><input type="checkbox" id="add-visible" checked> Visible</label>
+      <button type="button" id="add-btn">Add Product</button>
+    </div>
+  </div>
+
+  <h2>Products</h2>
+  <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Warehouse</th>
+          <th>In Stock</th>
+          <th>Visible</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-rows"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+(function () {
+  var API = '/.netlify/functions/update-products';
+  var GITHUB_CONTENTS = 'https://api.github.com/repos/jason370/pep-suppliers/contents/products.json?ref=main';
+
+  var sessionPassword = null;
+  var products = [];
+  var currentSha = '';
+  var dirty = false;
+  var saving = false;
+
+  var gate = document.getElementById('gate');
+  var app = document.getElementById('app');
+  var gatePassword = document.getElementById('gate-password');
+  var gateSubmit = document.getElementById('gate-submit');
+  var gateStatus = document.getElementById('gate-status');
+  var appStatus = document.getElementById('app-status');
+  var saveBtn = document.getElementById('save-btn');
+  var reloadBtn = document.getElementById('reload-btn');
+  var productRows = document.getElementById('product-rows');
+  var productCount = document.getElementById('product-count');
+  var dirtyFlag = document.getElementById('dirty-flag');
+
+  function slugify(text) {
+    return String(text)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function warehouseLabel(key) {
+    if (key === 'US') return 'US Warehouse';
+    if (key === 'Overseas') return 'Overseas Warehouse';
+    return key;
+  }
+
+  function makeId(name, warehouse) {
+    var base = slugify(name);
+    return warehouse ? base + '-' + slugify(warehouse) : base;
+  }
+
+  function setStatus(el, type, message) {
+    el.className = 'status show ' + type;
+    el.textContent = message;
+  }
+
+  function clearStatus(el) {
+    el.className = 'status';
+    el.textContent = '';
+  }
+
+  function markDirty() {
+    dirty = true;
+    dirtyFlag.textContent = 'Unsaved changes';
+  }
+
+  function markClean() {
+    dirty = false;
+    dirtyFlag.textContent = '';
+  }
+
+  function showAppStatus(type, message) {
+    setStatus(appStatus, type, message);
+  }
+
+  function fetchSha() {
+    return fetch(GITHUB_CONTENTS, {
+      headers: { Accept: 'application/vnd.github+json' }
+    }).then(function (res) {
+      if (!res.ok) throw new Error('Could not fetch SHA from GitHub (' + res.status + ')');
+      return res.json();
+    }).then(function (data) {
+      currentSha = data.sha || '';
+      return currentSha;
+    });
+  }
+
+  function fetchProducts() {
+    return fetch('/products.json').then(function (res) {
+      if (!res.ok) throw new Error('Could not load products.json');
+      return res.json();
+    }).then(function (data) {
+      products = data;
+      return products;
+    });
+  }
+
+  function postUpdate(payload) {
+    return fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      return res.json().then(function (body) {
+        return { status: res.status, body: body };
+      });
+    });
+  }
+
+  function renderTable() {
+    productRows.innerHTML = '';
+    products.forEach(function (p, index) {
+      var tr = document.createElement('tr');
+
+      var tdName = document.createElement('td');
+      tdName.textContent = p.name || '(unnamed)';
+      tr.appendChild(tdName);
+
+      var tdCat = document.createElement('td');
+      tdCat.textContent = p.category || '—';
+      tr.appendChild(tdCat);
+
+      var tdWh = document.createElement('td');
+      tdWh.textContent = p.warehouse || '—';
+      tr.appendChild(tdWh);
+
+      var tdStock = document.createElement('td');
+      var stockBtn = document.createElement('button');
+      stockBtn.type = 'button';
+      stockBtn.className = 'small secondary';
+      stockBtn.textContent = p.inStock ? 'In Stock' : 'Out of Stock';
+      stockBtn.addEventListener('click', function () {
+        products[index].inStock = !products[index].inStock;
+        markDirty();
+        renderTable();
+      });
+      tdStock.appendChild(stockBtn);
+      tr.appendChild(tdStock);
+
+      var tdVis = document.createElement('td');
+      var visBtn = document.createElement('button');
+      visBtn.type = 'button';
+      visBtn.className = 'small secondary';
+      visBtn.textContent = p.visible ? 'Visible' : 'Hidden';
+      visBtn.addEventListener('click', function () {
+        products[index].visible = !products[index].visible;
+        markDirty();
+        renderTable();
+      });
+      tdVis.appendChild(visBtn);
+      tr.appendChild(tdVis);
+
+      var tdAct = document.createElement('td');
+      var removeBtn = document.createElement('button');
+      removeBtn.type = 'button';
+      removeBtn.className = 'small danger';
+      removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', function () {
+        if (!confirm('Remove "' + (p.name || 'product') + '" from products.json?')) return;
+        products.splice(index, 1);
+        markDirty();
+        renderTable();
+        updateCount();
+      });
+      tdAct.appendChild(removeBtn);
+      tr.appendChild(tdAct);
+
+      productRows.appendChild(tr);
+    });
+    updateCount();
+  }
+
+  function updateCount() {
+    productCount.textContent = products.length + ' product(s)';
+  }
+
+  function ensureUniqueId(id) {
+    var base = id;
+    var n = 2;
+    while (products.some(function (p) { return p.id === id; })) {
+      id = base + '-' + n;
+      n += 1;
+    }
+    return id;
+  }
+
+  function buildProduct(name, category, price, description, warehouse, vialSizes, inStock, visible) {
+    var id = ensureUniqueId(makeId(name, warehouse));
+    return {
+      id: id,
+      name: name,
+      category: category,
+      price: price,
+      description: description || 'Research Use Only',
+      warehouse: warehouse,
+      inStock: !!inStock,
+      visible: !!visible,
+      vialSizes: vialSizes,
+      tags: [],
+      dataAttributes: {
+        'data-category': category,
+        'data-warehouse': warehouse
+      }
+    };
+  }
+
+  function addProductFromForm() {
+    var name = document.getElementById('add-name').value.trim();
+    var category = document.getElementById('add-category').value;
+    var price = document.getElementById('add-price').value.trim();
+    var description = document.getElementById('add-description').value.trim();
+    var warehouseKey = document.getElementById('add-warehouse').value;
+    var vialRaw = document.getElementById('add-vials').value.trim();
+    var inStock = document.getElementById('add-instock').checked;
+    var visible = document.getElementById('add-visible').checked;
+
+    if (!name || !price) {
+      showAppStatus('err', 'Name and price are required.');
+      return;
+    }
+
+    var vialSizes = vialRaw
+      ? vialRaw.split(',').map(function (s) { return s.trim(); }).filter(Boolean)
+      : [];
+
+    var warehouses = [];
+    if (warehouseKey === 'Both') {
+      warehouses = ['US Warehouse', 'Overseas Warehouse'];
+    } else {
+      warehouses = [warehouseLabel(warehouseKey)];
+    }
+
+    warehouses.forEach(function (wh) {
+      products.push(buildProduct(name, category, price, description, wh, vialSizes, inStock, visible));
+    });
+
+    document.getElementById('add-name').value = '';
+    document.getElementById('add-price').value = '';
+    document.getElementById('add-vials').value = '';
+    markDirty();
+    renderTable();
+    showAppStatus('ok', warehouses.length > 1 ? 'Added US and Overseas variants.' : 'Product added locally. Save to persist.');
+  }
+
+  function saveChanges() {
+    if (saving) return;
+    if (!sessionPassword) {
+      showAppStatus('err', 'Session expired. Reload and log in again.');
+      return;
+    }
+    if (!currentSha) {
+      showAppStatus('err', 'Missing GitHub SHA. Reload from server and try again.');
+      return;
+    }
+    if (!products.length) {
+      showAppStatus('err', 'Cannot save an empty product list.');
+      return;
+    }
+
+    saving = true;
+    saveBtn.disabled = true;
+    showAppStatus('warn', 'Saving…');
+
+    postUpdate({
+      password: sessionPassword,
+      products: products,
+      sha: currentSha
+    }).then(function (result) {
+      if (result.status === 401) {
+        showAppStatus('err', 'Unauthorized — password rejected by server.');
+        return;
+      }
+      if (result.status === 409) {
+        if (result.body && result.body.sha) currentSha = result.body.sha;
+        showAppStatus('err', 'Conflict — products.json changed elsewhere. Reload and merge your edits.');
+        return;
+      }
+      if (result.status !== 200) {
+        showAppStatus('err', (result.body && result.body.error) || 'Save failed (' + result.status + ').');
+        return;
+      }
+      if (result.body && result.body.sha) currentSha = result.body.sha;
+      markClean();
+      showAppStatus('ok', 'Saved. Netlify will redeploy on commit.');
+    }).catch(function () {
+      showAppStatus('err', 'Network error while saving.');
+    }).finally(function () {
+      saving = false;
+      saveBtn.disabled = false;
+    });
+  }
+
+  function loadData() {
+    return Promise.all([fetchProducts(), fetchSha()]).then(function () {
+      renderTable();
+      markClean();
+      updateCount();
+    });
+  }
+
+  function enterAdmin() {
+    var password = gatePassword.value;
+    if (!password) {
+      setStatus(gateStatus, 'err', 'Password is required.');
+      return;
+    }
+
+    gateSubmit.disabled = true;
+    setStatus(gateStatus, 'warn', 'Verifying…');
+    sessionPassword = password;
+
+    loadData().then(function () {
+      return postUpdate({
+        password: sessionPassword,
+        products: products,
+        sha: currentSha
+      });
+    }).then(function (result) {
+      if (result.status === 401) {
+        sessionPassword = null;
+        setStatus(gateStatus, 'err', 'Incorrect password.');
+        return;
+      }
+      if (result.status === 409) {
+        if (result.body && result.body.sha) currentSha = result.body.sha;
+        setStatus(gateStatus, 'err', 'Conflict loading SHA. Reload page and try again.');
+        sessionPassword = null;
+        return;
+      }
+      if (result.status !== 200) {
+        sessionPassword = null;
+        setStatus(gateStatus, 'err', (result.body && result.body.error) || 'Verification failed (' + result.status + ').');
+        return;
+      }
+      if (result.body && result.body.sha) currentSha = result.body.sha;
+      gate.classList.add('hidden');
+      app.classList.remove('hidden');
+      clearStatus(gateStatus);
+      markClean();
+      showAppStatus('ok', 'Authenticated. ' + products.length + ' products loaded.');
+    }).catch(function (err) {
+      sessionPassword = null;
+      setStatus(gateStatus, 'err', err.message || 'Failed to load admin data.');
+    }).finally(function () {
+      gateSubmit.disabled = false;
+    });
+  }
+
+  gateSubmit.addEventListener('click', enterAdmin);
+  gatePassword.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') enterAdmin();
+  });
+
+  saveBtn.addEventListener('click', saveChanges);
+  reloadBtn.addEventListener('click', function () {
+    if (dirty && !confirm('Reload and discard unsaved changes?')) return;
+    loadData().then(function () {
+      showAppStatus('ok', 'Reloaded from server.');
+    }).catch(function (err) {
+      showAppStatus('err', err.message || 'Reload failed.');
+    });
+  });
+
+  document.getElementById('add-btn').addEventListener('click', addProductFromForm);
+
+  window.addEventListener('beforeunload', function (e) {
+    if (dirty) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
+})();
+</script>
+</body>
+</html>
