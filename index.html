@@ -6249,6 +6249,7 @@ input.invalid{
   padding:32px;max-width:640px;margin:0 auto;
   transform:translateY(100%);transition:transform .3s cubic-bezier(.32,.72,0,1);
   box-shadow:0 -20px 60px rgba(7,24,51,.18);
+  max-height:90vh;overflow-y:auto;
 }
 .product-drawer.open .drawer-panel{transform:translateY(0)}
 .drawer-close{position:absolute;top:16px;right:20px;background:none;border:0;font-size:26px;cursor:pointer;color:#6b7f94;line-height:1}
@@ -6881,11 +6882,15 @@ input.invalid{
 
     drawer.classList.add('open');
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
   }
 
   function closeDrawer() {
     drawer.classList.remove('open');
     document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
   }
 
   drawerClose.addEventListener('click', closeDrawer);
