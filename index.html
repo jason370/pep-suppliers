@@ -7073,152 +7073,79 @@ input.invalid{
 <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
 <script>
 (function() {
-  const pep-suppliers.us.auth0.com = "pep-suppliers.us.auth0.com";
-  const l2sUfOUVhy7mYnocVqt08u2J0yHpb4Kr = "l2sUfOUVhy7mYnocVqt08u2J0yHpb4Kr";
-
-  let auth0Client = null;
-
-  const shop = document.querySelector("#shop");
-  const notice = document.querySelector("#shop-locked-notice");
-  const loginBtn = document.querySelector("#auth0-login");
-  const registerBtn = document.querySelector("#auth0-register");
-  const logoutBtn = document.querySelector("#auth0-logout");
-  const status = document.querySelector("#auth0-status");
-  const profile = document.querySelector("#auth0-profile");
-  const profileName = document.querySelector("#auth0-profile-name");
-  const profileEmail = document.querySelector("#auth0-profile-email");
-
-  function lockShop(message) {
-    if (shop) shop.classList.add("locked");
-    if (notice) notice.classList.add("show");
-    if (status) {
-      status.textContent = message || "Shop Peptides is locked until you log in with an email-verified Auth0 account.";
-      status.classList.add("show");
-    }
-    var btn = document.getElementById('header-login-btn');
-    if (btn) { btn.textContent = 'Login / Register'; btn.style.background = ''; }
-  }
-
-  function unlockShop(message) {
-    if (shop) shop.classList.remove("locked");
-    if (notice) notice.classList.remove("show");
-    if (status) {
-      status.textContent = message || "Verified login confirmed. Shop Peptides is unlocked.";
-      status.classList.add("show");
-    }
-    var btn = document.getElementById('header-login-btn');
-    if (btn && window._authState && window._authState.user) {
-      var firstName = (window._authState.user.name || window._authState.user.email || 'Account').split(' ')[0].split('@')[0];
-      btn.textContent = 'Hi, ' + firstName + ' ▾';
-      btn.style.background = '#0D6D72';
-    }
-  }
-
-  function handleHeaderAuth(e) {
-    e.preventDefault();
-    if (window._authState && window._authState.isAuthenticated) {
-      document.getElementById('account-dropdown').classList.toggle('open');
-    } else {
-      if (auth0Client) auth0Client.loginWithRedirect({ authorizationParams: { redirect_uri: window.location.origin } });
-    }
-  }
-  window.handleHeaderAuth = handleHeaderAuth;
-
-  function handleLogout(e) {
-    e.preventDefault();
-    if (auth0Client) auth0Client.logout({ logoutParams: { returnTo: window.location.origin } });
-  }
-  window.handleLogout = handleLogout;
-
-  function renderProfile(user, verified) {
-    if (!profile) return;
-    profile.classList.add("show");
-    if (profileName) profileName.textContent = user && (user.name || user.nickname || "Verified account") || "Not signed in";
-    if (profileEmail) profileEmail.textContent = user && user.email ? (user.email + (verified ? " · email verified" : " · email not verified")) : "Use Login or Register above.";
-  }
+  var AUTH0_DOMAIN = 'pep-suppliers.us.auth0.com';
+  var AUTH0_CLIENT_ID = 'l2sUfOUVhy7mYnocVqt08u2J0yHpb4Kr';
+  var auth0Client = null;
 
   async function initAuth0() {
-    if (!window.createAuth0Client) {
-      lockShop("Auth0 SDK did not load. Check internet connection or deployment settings.");
-      return;
-    }
+    try {
+      auth0Client = await window.auth0.createAuth0Client({
+        domain: AUTH0_DOMAIN,
+        clientId: AUTH0_CLIENT_ID,
+        authorizationParams: { redirect_uri: window.location.origin }
+      });
 
-    auth0Client = await window.createAuth0Client({
-      domain: pep-suppliers.us.auth0.com,
-      clientId: l2sUfOUVhy7mYnocVqt08u2J0yHpb4Kr,
-      authorizationParams: {
-        redirect_uri: window.location.origin + window.location.pathname
-      },
-      cacheLocation: "localstorage"
-    });
-
-    if (window.location.search.includes("code=") && window.location.search.includes("state=")) {
-      try {
+      if (location.search.includes('code=') || location.search.includes('error=')) {
         await auth0Client.handleRedirectCallback();
-        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
-      } catch (err) {
-        console.error("Auth0 callback error", err);
-        lockShop("Login callback failed. Check Auth0 callback URLs.");
+        window.history.replaceState({}, document.title, window.location.pathname);
       }
-    }
 
-    const isAuthenticated = await auth0Client.isAuthenticated();
-    window._authState = { isAuthenticated: isAuthenticated, user: null };
+      const isAuthenticated = await auth0Client.isAuthenticated();
+      window._authState = { isAuthenticated: isAuthenticated, user: null };
 
-    if (!isAuthenticated) {
+      if (isAuthenticated) {
+        const user = await auth0Client.getUser();
+        window._authState.user = user;
+        unlockShop();
+        var btn = document.getElementById('header-login-btn');
+        if (btn && user) {
+          var firstName = (user.name || user.email || 'Account').split(' ')[0].split('@')[0];
+          btn.textContent = 'Hi, ' + firstName + ' ▾';
+          btn.style.background = '#0D6D72';
+        }
+      } else {
+        lockShop();
+      }
+    } catch(err) {
+      console.error('Auth0 init error:', err);
       lockShop();
-      return;
-    }
-
-    const user = await auth0Client.getUser();
-    if (window._authState) window._authState.user = user;
-    const verified = !!(user && user.email_verified);
-
-    renderProfile(user, verified);
-
-    if (logoutBtn) logoutBtn.style.display = "inline-flex";
-    if (loginBtn) loginBtn.style.display = "none";
-    if (registerBtn) registerBtn.style.display = "none";
-
-    if (verified) {
-      unlockShop("Verified login confirmed. Shop Peptides is unlocked.");
-    } else {
-      lockShop("You are logged in, but your email is not verified yet. Check your Auth0 verification email, then log in again.");
     }
   }
 
-  if (loginBtn) loginBtn.addEventListener("click", async () => {
-    if (!auth0Client) return;
-    await auth0Client.loginWithRedirect({
-      authorizationParams: {
-        redirect_uri: window.location.origin + window.location.pathname
-      }
-    });
-  });
+  function lockShop() {
+    var shop = document.querySelector('#shop');
+    var notice = document.querySelector('#shop-locked-notice');
+    if (shop) shop.classList.add('locked');
+    if (notice) notice.classList.add('show');
+  }
 
-  if (registerBtn) registerBtn.addEventListener("click", async () => {
-    if (!auth0Client) return;
-    await auth0Client.loginWithRedirect({
-      authorizationParams: {
-        screen_hint: "signup",
-        redirect_uri: window.location.origin + window.location.pathname
-      }
-    });
-  });
+  function unlockShop() {
+    var shop = document.querySelector('#shop');
+    var notice = document.querySelector('#shop-locked-notice');
+    if (shop) shop.classList.remove('locked');
+    if (notice) notice.classList.remove('show');
+  }
 
-  if (logoutBtn) logoutBtn.addEventListener("click", async () => {
-    if (!auth0Client) return;
-    await auth0Client.logout({
-      logoutParams: {
-        returnTo: window.location.origin + window.location.pathname
+  window.handleHeaderAuth = function(e) {
+    e.preventDefault();
+    if (window._authState && window._authState.isAuthenticated) {
+      var dd = document.getElementById('account-dropdown');
+      if (dd) dd.classList.toggle('open');
+    } else {
+      if (auth0Client) {
+        auth0Client.loginWithRedirect({ authorizationParams: { redirect_uri: window.location.origin } });
+      } else {
+        console.error('auth0Client not ready');
       }
-    });
-  });
+    }
+  };
 
-  initAuth0().catch(err => {
-    console.error("Auth0 init error", err);
-    lockShop("Auth0 could not initialize. Confirm Domain, Client ID, and allowed URLs.");
-  });
+  window.handleLogout = function(e) {
+    e.preventDefault();
+    if (auth0Client) auth0Client.logout({ logoutParams: { returnTo: window.location.origin } });
+  };
+
+  window.addEventListener('load', initAuth0);
 })();
 </script>
 
