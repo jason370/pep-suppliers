@@ -6275,8 +6275,9 @@ input.invalid{
 .product-card{cursor:pointer}
 
 /* Instagram icon */
-.ig-icon-btn{display:flex;align-items:center;color:var(--navy);padding:8px;transition:color .15s}
-.ig-icon-btn:hover{color:#E1306C}
+.ig-icon-btn{display:flex;align-items:center;padding:8px;transition:opacity .15s;color:url(#ig-gradient)}
+.ig-icon-btn svg{stroke:url(#ig-gradient)}
+.ig-icon-btn:hover{opacity:.75}
 /* Instagram icon */
 .ig-icon-btn{display:flex;align-items:center;color:var(--navy);padding:8px;transition:color .15s}
 .ig-icon-btn:hover{color:#E1306C}
@@ -7284,6 +7285,17 @@ window.cartCheckout = function() {
 </script>
 
 
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f09433"/>
+      <stop offset="25%" stop-color="#e6683c"/>
+      <stop offset="50%" stop-color="#dc2743"/>
+      <stop offset="75%" stop-color="#cc2366"/>
+      <stop offset="100%" stop-color="#bc1888"/>
+    </linearGradient>
+  </defs>
+</svg>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
