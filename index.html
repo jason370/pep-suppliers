@@ -7135,7 +7135,12 @@ input.invalid{
       if (auth0Client) {
         auth0Client.loginWithRedirect({ authorizationParams: { redirect_uri: window.location.origin } });
       } else {
-        console.error('auth0Client not ready');
+        var base = 'https://pep-suppliers.us.auth0.com/authorize';
+        var params = 'response_type=code' +
+          '&client_id=l2sUfOUVhy7mYnocVqt08u2J0yHpb4Kr' +
+          '&redirect_uri=' + encodeURIComponent(window.location.origin) +
+          '&scope=openid%20profile%20email';
+        window.location.href = base + '?' + params;
       }
     }
   };
@@ -7246,9 +7251,17 @@ window.cartCheckout = function() {
   var msg = 'Hi, I would like to place an order:\n\n' +
     items.map(function(i){ return '• ' + i.name + ' ' + i.vialSize + ' x' + i.qty + ' — ' + i.price; }).join('\n') +
     '\n\nPlease send me crypto payment details.';
-  if (window.$crisp) {
-    window.$crisp.push(['do', 'chat:open']);
-    window.$crisp.push(['do', 'message:send', ['text', msg]]);
+  if (window.Tawk_API && window.Tawk_API.maximize) {
+    window.Tawk_API.maximize();
+    setTimeout(function() {
+      if (window.Tawk_API.sendMessage) {
+        window.Tawk_API.sendMessage(msg);
+      }
+    }, 800);
+  } else {
+    window.Tawk_API = window.Tawk_API || {};
+    var _tq = window.Tawk_API._queue = window.Tawk_API._queue || [];
+    _tq.push(['maximize']);
   }
   window.cartClose();
 };
