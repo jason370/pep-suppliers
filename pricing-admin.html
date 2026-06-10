@@ -58,8 +58,14 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
 .badge-us{background:#EEF8FA;color:var(--teal)}
 .badge-cn{background:#fff3cd;color:#856404}
 .badge-oos{background:#f8d7da;color:#721c24}
+.badge-ca{background:#d4edda;color:#155724}
 
 .changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
+.markup-input{width:70px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:center;outline:none}
+.markup-input:focus{border-color:var(--teal)}
+.vial-input{width:130px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;outline:none}
+.vial-input:focus{border-color:var(--teal)}
+.vial-input.changed{border-color:#f0a500;background:#fffbe6}
 </style>
 </head>
 <body>
@@ -88,6 +94,7 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
       <option value="">All Warehouses</option>
       <option value="US Warehouse">US Warehouse</option>
       <option value="Overseas Warehouse">China Warehouse</option>
+      <option value="Canada Warehouse">Canada Warehouse</option>
     </select>
     <select id="stock-filter" onchange="filterTable()">
       <option value="">All Stock</option>
@@ -110,8 +117,10 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
           <th>#</th>
           <th>Product</th>
           <th>Warehouse</th>
-          <th>Vial Sizes</th>
+          <th>Vial Sizes (editable)</th>
           <th>Current Price</th>
+          <th>Per Vial</th>
+          <th>Markup %</th>
           <th>New Price</th>
           <th>In Stock</th>
         </tr>
@@ -185,8 +194,8 @@ function renderTable(products) {
     tr.dataset.warehouse = p.warehouse || '';
     tr.dataset.stock = p.inStock ? 'instock' : 'oos';
 
-    var warehouseLabel = p.warehouse === 'Overseas Warehouse' ? 'China' : (p.warehouse || '');
-    var badgeClass = p.warehouse === 'US Warehouse' ? 'badge-us' : (p.warehouse === 'Overseas Warehouse' ? 'badge-cn' : 'badge-us');
+    var warehouseLabel = p.warehouse === 'Overseas Warehouse' ? 'China' : (p.warehouse === 'Canada Warehouse' ? 'Canada' : (p.warehouse || ''));
+    var badgeClass = p.warehouse === 'US Warehouse' ? 'badge-us' : (p.warehouse === 'Overseas Warehouse' ? 'badge-cn' : (p.warehouse === 'Canada Warehouse' ? 'badge-ca' : 'badge-us'));
     var newPrice = changed ? changed : (p.price || '');
     var inputClass = changed ? 'price-input changed' : 'price-input';
 
@@ -194,13 +203,55 @@ function renderTable(products) {
       '<td style="color:#9aabb8;font-size:12px">' + (i+1) + '</td>' +
       '<td><strong>' + (p.name || '') + '</strong></td>' +
       '<td><span class="badge ' + badgeClass + '">' + warehouseLabel + '</span></td>' +
-      '<td style="color:#6b7f94">' + (p.vialSizes || []).join(', ') + '</td>' +
+      '<td><input class="vial-input" type="text" value="' + (p.vialSizes || []).join(', ') + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
       '<td style="color:#6b7f94">' + (p.price || '—') + '</td>' +
+      '<td style="color:#6b7f94" class="per-vial-cell" data-id="' + p.id + '">' + calcPerVial(p.price) + '</td>' +
+      '<td><input class="markup-input" type="number" min="0" max="500" placeholder="%" data-id="' + p.id + '" oninput="onMarkupChange(this)"></td>' +
       '<td><input class="' + inputClass + '" type="text" value="' + newPrice + '" data-id="' + p.id + '" data-original="' + (p.price || '') + '" oninput="onPriceChange(this)"></td>' +
       '<td><input type="checkbox" ' + (p.inStock ? 'checked' : '') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
     tbody.appendChild(tr);
   });
   filterTable();
+}
+
+function onVialChange(input) {
+  var id = input.dataset.id;
+  var p = _products.find(function(x){ return x.id === id; });
+  if (!p) return;
+  var val = input.value.trim();
+  var sizes = val ? val.split(',').map(function(s){ return s.trim(); }).filter(Boolean) : [];
+  p.vialSizes = sizes;
+  _changes['_vials_' + id] = sizes;
+  input.classList.add('changed');
+  input.closest('tr').classList.add('changed-row');
+  updateChangeCount();
+}
+
+function calcPerVial(priceStr) {
+  if (!priceStr) return '—';
+  // Handle ranges like "$20.80 – $38.80" — use first number
+  var match = (priceStr + '').match(/[\d.]+/);
+  if (!match) return '—';
+  var total = parseFloat(match[0]);
+  if (isNaN(total)) return '—';
+  return '$' + (total / 10).toFixed(2);
+}
+
+function onMarkupChange(input) {
+  var id = input.dataset.id;
+  var pct = parseFloat(input.value);
+  var p = _products.find(function(x){ return x.id === id; });
+  if (!p || isNaN(pct)) return;
+  var base = parseFloat((p.price || '').replace(/[^\d.]/g,''));
+  if (isNaN(base)) return;
+  var newVal = '$' + (base * (1 + pct/100)).toFixed(2);
+  // Find the price input in the same row and update it
+  var row = input.closest('tr');
+  var priceInput = row.querySelector('.price-input');
+  if (priceInput) {
+    priceInput.value = newVal;
+    onPriceChange(priceInput);
+  }
 }
 
 function onPriceChange(input) {
@@ -290,9 +341,11 @@ function pushChanges() {
   var updated = _products.map(function(p) {
     var newPrice = _changes[p.id];
     var stockChange = _changes['_stock_' + p.id];
+    var vialChange = _changes['_vials_' + p.id];
     var out = Object.assign({}, p);
     if (newPrice !== undefined) out.price = newPrice;
     if (stockChange !== undefined) out.inStock = stockChange;
+    if (vialChange !== undefined) out.vialSizes = vialChange;
     return out;
   });
 
