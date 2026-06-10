@@ -6973,7 +6973,7 @@ input.invalid{
     if (!productId) return;
     if (typeof window._products !== 'undefined') {
       var p = window._products.find(function(x){ return x.id === productId; });
-      if (p) openDrawer(p);
+      if (p) window.location.href = '/products/' + p.id;
     }
   });
 
