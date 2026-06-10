@@ -7339,7 +7339,14 @@ window.cartCheckout = function() {
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+Tawk_API.onLoad=function(){
+  Tawk_API.hideWidget();
+  var _hc=0,_hi=setInterval(function(){
+    if(Tawk_API&&Tawk_API.hideWidget)Tawk_API.hideWidget();
+    if(++_hc>=20)clearInterval(_hi);
+  },300);
+};
+Tawk_API.onChatMaximized=function(){ Tawk_API.hideWidget(); };
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
@@ -7350,5 +7357,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<style>body > div[id^="tawk-"],body > div[class*="tawk-"]{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}iframe[src*="tawk.to"]{display:none!important}</style>
+
 </body>
 </html>
