@@ -6324,6 +6324,16 @@ input.invalid{
 .search-bar-wrap.open{display:flex;gap:8px}
 .search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
 .search-bar-wrap input:focus{border-color:var(--teal)}
+/* Hide Tawk "Hi Jason" welcome bubble */
+#tawkchat-minified-box,#tawkchat-minified-wrapper,.tawk-min-container,.tawk-card-container,[class*="tawk-welcome"],[id*="tawk-welcome"]{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+.header-actions{display:flex;align-items:center;gap:6px;margin-left:auto}
+.hdr-icon-btn{background:none;border:none;cursor:pointer;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#14253e;transition:background .15s}
+.hdr-icon-btn:hover{background:#EEF8FA;color:var(--teal)}
+.hdr-profile-wrap{position:relative}
+.search-bar-wrap{display:none;position:absolute;top:52px;right:0;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:10px 14px;z-index:300;width:280px}
+.search-bar-wrap.open{display:flex;gap:8px}
+.search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
+.search-bar-wrap input:focus{border-color:var(--teal)}
 .header-actions{display:flex;align-items:center;gap:6px;margin-left:auto}
 .hdr-icon-btn{background:none;border:none;cursor:pointer;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#14253e;transition:background .15s}
 .hdr-icon-btn:hover{background:#EEF8FA;color:var(--teal)}
@@ -6387,14 +6397,6 @@ input.invalid{
     </nav>
     
 <div class="header-actions">
-  <!-- Telegram -->
-  <a class="hdr-icon-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
-  </a>
-  <!-- Instagram -->
-  <a class="hdr-icon-btn" href="https://instagram.com/pepsuppliers" target="_blank" rel="noopener" aria-label="Instagram" style="color:#E1306C">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-  </a>
   <!-- Search -->
   <div style="position:relative">
     <button class="hdr-icon-btn" id="hdr-search-btn" aria-label="Search" onclick="(function(){var w=document.getElementById('hdr-search-bar');w.classList.toggle('open');if(w.classList.contains('open'))w.querySelector('input').focus();})()">
@@ -6404,6 +6406,14 @@ input.invalid{
       <input type="text" placeholder="Search peptides…" id="hdr-search-input" onkeydown="if(event.key==='Enter'){var q=this.value.trim();if(q){document.getElementById('hdr-search-bar').classList.remove('open');var cards=document.querySelectorAll('.product-card');cards.forEach(function(c){var n=c.querySelector('h3');if(n&&n.textContent.toLowerCase().includes(q.toLowerCase())){c.style.display='';} else {c.style.display='none';}});}}" />
     </div>
   </div>
+  <!-- Telegram -->
+  <a class="hdr-icon-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
+  </a>
+  <!-- Instagram -->
+  <a class="hdr-icon-btn" href="https://instagram.com/pepsuppliers" target="_blank" rel="noopener" aria-label="Instagram" style="color:#E1306C">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
   <!-- Profile -->
   <div class="hdr-profile-wrap">
     <button class="hdr-icon-btn" id="header-login-btn" aria-label="Account" onclick="handleHeaderAuth(event)">
