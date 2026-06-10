@@ -172,12 +172,24 @@ button{font:inherit;cursor:pointer}
     <div id="product-content" style="display:none">
       <div class="product-grid">
         <div class="product-visual" aria-hidden="true">
-          <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="38" y="8" width="44" height="16" rx="4" fill="#6CC6C9"/>
-            <rect x="42" y="24" width="36" height="8" rx="2" fill="#0D6D72"/>
-            <path d="M32 32h56l-8 156c-.5 6-5.5 10-12 10s-11.5-4-12-10L32 32z" fill="#EEF8FA" stroke="#0D6D72" stroke-width="2"/>
-            <ellipse cx="60" cy="188" rx="20" ry="6" fill="#0D6D72" opacity=".25"/>
-            <rect x="48" y="80" width="24" height="60" rx="4" fill="#6CC6C9" opacity=".35"/>
+          <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="180" height="240">
+            <!-- cap -->
+            <rect x="36" y="6" width="48" height="16" rx="5" fill="#0D6D72"/>
+            <!-- neck -->
+            <rect x="44" y="22" width="32" height="8" rx="2" fill="#6CC6C9"/>
+            <!-- body -->
+            <rect x="26" y="30" width="68" height="128" rx="8" fill="#EEF8FA" stroke="#0D6D72" stroke-width="2"/>
+            <!-- label -->
+            <rect x="34" y="48" width="52" height="72" rx="5" fill="#fff" stroke="#b8dde0" stroke-width="1"/>
+            <rect x="40" y="58" width="40" height="3" rx="1.5" fill="#6CC6C9" opacity=".8"/>
+            <rect x="40" y="68" width="30" height="3" rx="1.5" fill="#6CC6C9" opacity=".6"/>
+            <rect x="40" y="78" width="34" height="3" rx="1.5" fill="#6CC6C9" opacity=".6"/>
+            <rect x="40" y="88" width="22" height="3" rx="1.5" fill="#6CC6C9" opacity=".4"/>
+            <rect x="40" y="100" width="28" height="3" rx="1.5" fill="#0D6D72" opacity=".3"/>
+            <!-- liquid fill -->
+            <rect x="27" y="110" width="66" height="47" rx="0 0 7 7" fill="#6CC6C9" opacity=".2"/>
+            <!-- shadow -->
+            <ellipse cx="60" cy="161" rx="30" ry="5" fill="#0D6D72" opacity=".10"/>
           </svg>
         </div>
         <div class="product-info">
@@ -430,6 +442,29 @@ window.cartCheckout = function() {
     document.getElementById('breadcrumb-name').textContent = 'Not found';
   }
 
+  // Split a price range string into per-size prices
+  function buildSizePrices(sizes, priceStr) {
+    var map = {};
+    if (!sizes || !sizes.length) return map;
+    priceStr = (priceStr || '').trim();
+    // Check if vialPrices already set on product
+    if (product && product.vialPrices) return product.vialPrices;
+    // Try to parse range "X – Y"
+    var nums = [];
+    var matches = priceStr.match(/[\d]+(?:\.[\d]+)?/g);
+    if (matches) nums = matches.map(Number);
+    if (nums.length === 0) { sizes.forEach(function(s){ map[s] = priceStr; }); return map; }
+    if (nums.length === 1 || sizes.length === 1) {
+      sizes.forEach(function(s){ map[s] = '$' + nums[0].toFixed(2); }); return map;
+    }
+    var lo = nums[0], hi = nums[nums.length-1];
+    sizes.forEach(function(s, i) {
+      var t = sizes.length === 1 ? 0 : i / (sizes.length - 1);
+      map[s] = '$' + (lo + (hi - lo) * t).toFixed(2);
+    });
+    return map;
+  }
+
   function renderVialSelector(sizes) {
     var el = document.getElementById('vial-selector');
     el.innerHTML = '';
@@ -440,6 +475,9 @@ window.cartCheckout = function() {
     }
     el.classList.remove('hidden');
     selectedSize = sizes[0];
+    var priceMap = buildSizePrices(sizes, product ? product.price : '');
+    // Set initial price
+    if (priceMap[sizes[0]]) document.getElementById('product-price').textContent = priceMap[sizes[0]];
     sizes.forEach(function(size, i) {
       var btn = document.createElement('button');
       btn.type = 'button';
@@ -449,6 +487,9 @@ window.cartCheckout = function() {
         el.querySelectorAll('.vial-option').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         selectedSize = size;
+        // Update price display
+        var p = priceMap[size];
+        if (p) document.getElementById('product-price').textContent = p;
       });
       el.appendChild(btn);
     });
