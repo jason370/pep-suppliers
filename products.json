@@ -167,7 +167,7 @@
     "id": "bpc-157-us-warehouse",
     "name": "BPC-157",
     "category": "Recovery & Healing",
-    "price": "$20.80 – $38.80",
+    "price": "$20.80 \u2013 $38.80",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -203,7 +203,7 @@
     "id": "bpc-157-tb-500-blend-us-warehouse",
     "name": "BPC-157 & TB-500 Blend",
     "category": "Peptide Blends",
-    "price": "$42.00 – $78.00",
+    "price": "$42.00 \u2013 $78.00",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
@@ -654,7 +654,7 @@
     "id": "ghrp-2-us-warehouse",
     "name": "GHRP-2",
     "category": "Hormone Support",
-    "price": "$8.00 – $11.60",
+    "price": "$8.00 \u2013 $11.60",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
@@ -673,7 +673,7 @@
     "id": "ghrp-6-overseas-warehouse",
     "name": "GHRP-6",
     "category": "Hormone Support",
-    "price": "$8.00 – $11.60",
+    "price": "$8.00 \u2013 $11.60",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1053,7 +1053,7 @@
     "id": "nad-overseas-warehouse",
     "name": "NAD+",
     "category": "Other Research",
-    "price": "$18.80 – $116.80",
+    "price": "$18.80 \u2013 $116.80",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1579,7 +1579,7 @@
     "id": "tb-500-thymosin-beta-4-us-warehouse",
     "name": "TB-500 (Thymosin Beta 4)",
     "category": "Recovery & Healing",
-    "price": "$31.20 – $56.00",
+    "price": "$31.20 \u2013 $56.00",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -1598,7 +1598,7 @@
     "id": "tesamorelin-overseas-warehouse",
     "name": "Tesamorelin",
     "category": "Hormone Support",
-    "price": "$17.20 – $31.60",
+    "price": "$17.20 \u2013 $31.60",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1708,7 +1708,7 @@
     "id": "thymosin-alpha-1-overseas-warehouse",
     "name": "Thymosin Alpha-1",
     "category": "Hormone Support",
-    "price": "$32.40 – $59.60",
+    "price": "$32.40 \u2013 $59.60",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1865,6 +1865,158 @@
     "dataAttributes": {
       "data-category": "Other Research",
       "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "hgh-191aa-overseas-warehouse",
+    "name": "HGH 191AA (Somatropin)",
+    "category": "Growth Hormone",
+    "price": "$45.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "6IU",
+      "8IU",
+      "10IU",
+      "12IU",
+      "15IU",
+      "24IU",
+      "36IU"
+    ],
+    "tags": [
+      "gh",
+      "somatropin"
+    ],
+    "dataAttributes": {
+      "data-category": "Growth Hormone",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "semaglutide-overseas-warehouse",
+    "name": "Semaglutide",
+    "category": "Weight Management",
+    "price": "$29.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "2MG",
+      "5MG",
+      "10MG",
+      "15MG",
+      "20MG",
+      "30MG"
+    ],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "tirzepatide-overseas-warehouse",
+    "name": "Tirzepatide",
+    "category": "Weight Management",
+    "price": "$45.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG",
+      "12MG",
+      "15MG",
+      "20MG",
+      "30MG",
+      "40MG",
+      "50MG",
+      "60MG"
+    ],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "retatrutide-overseas-warehouse",
+    "name": "Retatrutide",
+    "category": "Weight Management",
+    "price": "$85.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG",
+      "15MG",
+      "20MG",
+      "30MG",
+      "40MG",
+      "50MG",
+      "60MG"
+    ],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "hcg-overseas-warehouse",
+    "name": "HCG",
+    "category": "Other Research",
+    "price": "$85.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5000IU",
+      "10000IU"
+    ],
+    "tags": [
+      "other"
+    ],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "cagrilintide-overseas-warehouse",
+    "name": "Cagrilintide",
+    "category": "Weight Management",
+    "price": "$95.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG",
+      "20MG"
+    ],
+    "tags": [
+      "weight"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
     }
   }
 ]
