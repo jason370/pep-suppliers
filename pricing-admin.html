@@ -120,7 +120,8 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
       <thead>
         <tr>
           <th>#</th>
-          <th>Product Name (editable)</th>
+          <th>Current Name</th>
+          <th>New Name</th>
           <th>Warehouse</th>
           <th>Vial Sizes (editable)</th>
           <th>Current Price</th>
@@ -207,6 +208,7 @@ function renderTable(products) {
     tr.innerHTML =
       '<td style="color:#9aabb8;font-size:12px">' + (i+1) + '</td>' +
       '<td><input class="name-input" type="text" value="' + (p.name || '') + '" data-id="' + p.id + '" data-original-name="' + (p.name || '') + '" oninput="onNameChange(this)"></td>' +
+      '<td><input class="name-input" type="text" value="' + (p.name || '') + '" data-id="' + p.id + '" data-original-name="' + (p.name || '') + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
       '<td><span class="badge ' + badgeClass + '">' + warehouseLabel + '</span></td>' +
       '<td><input class="vial-input" type="text" value="' + (p.vialSizes || []).join(', ') + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
       '<td style="color:#6b7f94">' + (p.price || '—') + '</td>' +
