@@ -190,14 +190,6 @@ h = h.replace(
   </a>
 </div>`,
   `<div class="header-actions">
-  <!-- Telegram -->
-  <a class="hdr-icon-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
-  </a>
-  <!-- Instagram -->
-  <a class="hdr-icon-btn" href="https://instagram.com/pepsuppliers" target="_blank" rel="noopener" aria-label="Instagram" style="color:#E1306C">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-  </a>
   <!-- Search -->
   <div style="position:relative">
     <button class="hdr-icon-btn" id="hdr-search-btn" aria-label="Search" onclick="(function(){var w=document.getElementById('hdr-search-bar');w.classList.toggle('open');if(w.classList.contains('open'))w.querySelector('input').focus();})()">
@@ -207,6 +199,14 @@ h = h.replace(
       <input type="text" placeholder="Search peptides…" id="hdr-search-input" onkeydown="if(event.key==='Enter'){var q=this.value.trim();if(q){document.getElementById('hdr-search-bar').classList.remove('open');var cards=document.querySelectorAll('.product-card');cards.forEach(function(c){var n=c.querySelector('h3');if(n&&n.textContent.toLowerCase().includes(q.toLowerCase())){c.style.display='';} else {c.style.display='none';}});}}" />
     </div>
   </div>
+  <!-- Telegram -->
+  <a class="hdr-icon-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
+  </a>
+  <!-- Instagram -->
+  <a class="hdr-icon-btn" href="https://instagram.com/pepsuppliers" target="_blank" rel="noopener" aria-label="Instagram" style="color:#E1306C">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+  </a>
   <!-- Profile -->
   <div class="hdr-profile-wrap">
     <button class="hdr-icon-btn" id="header-login-btn" aria-label="Account" onclick="handleHeaderAuth(event)">
@@ -222,6 +222,15 @@ h = h.replace(
     <span id="cart-badge" class="cart-badge" style="display:none">0</span>
   </button>
 </div>`
+);
+
+// 5. Hide Tawk floating bubble (still opens on checkout)
+h = h.replace(
+  `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){`,
+  `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
+(function(){`
 );
 
 fs.writeFileSync('index.html', h, 'utf8');

@@ -6332,6 +6332,14 @@ input.invalid{
 .search-bar-wrap.open{display:flex;gap:8px}
 .search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
 .search-bar-wrap input:focus{border-color:var(--teal)}
+.header-actions{display:flex;align-items:center;gap:6px;margin-left:auto}
+.hdr-icon-btn{background:none;border:none;cursor:pointer;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#14253e;transition:background .15s}
+.hdr-icon-btn:hover{background:#EEF8FA;color:var(--teal)}
+.hdr-profile-wrap{position:relative}
+.search-bar-wrap{display:none;position:absolute;top:52px;right:0;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:10px 14px;z-index:300;width:280px}
+.search-bar-wrap.open{display:flex;gap:8px}
+.search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
+.search-bar-wrap input:focus{border-color:var(--teal)}
 
 </style>
 </head>
@@ -7321,6 +7329,7 @@ window.cartCheckout = function() {
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.onLoad=function(){ Tawk_API.hideWidget(); };
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
