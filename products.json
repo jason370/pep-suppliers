@@ -25,7 +25,7 @@
     "price": "$69.20",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "1MG"
@@ -61,7 +61,7 @@
     "price": "$31.20",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10MG"
@@ -97,7 +97,7 @@
     "price": "$24.80",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "50MG"
@@ -292,7 +292,7 @@
   },
   {
     "id": "cjc-1295-mod-grf-1-29-hexarelin-blend-overseas-warehouse",
-    "name": "CJC-1295 (Mod GRF 1-29) & Hexarelin Blend",
+    "name": "CJC-1295",
     "category": "Peptide Blends",
     "price": "$34.80",
     "description": "Research Use Only",
@@ -351,7 +351,7 @@
     "price": "$27.60",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "10MG"
@@ -1166,7 +1166,7 @@
     "price": "$70.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "200MG"
@@ -1546,7 +1546,7 @@
     "price": "$70.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "200MG"
@@ -1820,7 +1820,7 @@
     "price": "$70.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "200MG"
