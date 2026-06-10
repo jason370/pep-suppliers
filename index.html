@@ -6957,16 +6957,25 @@ input.invalid{
 
   function renderCard(p){
     var sizes = p.vialSizes || ['?'];
-    var vialsHTML = sizes.length===1 ? vialSVG(p.name, sizes[0]) : vialSVG(p.name, sizes[0]) + vialSVG(p.name, sizes[1]);
+    var vialsHTML = sizes.length===1
+      ? vialSVG(p.name, sizes[0])
+      : vialSVG(p.name, sizes[0]) + vialSVG(p.name, sizes[1]);
     var sizePills = sizes.map(function(s,i){ return '<span class="size-pill'+(i===0?' active':'')+'">'+s+'</span>'; }).join('');
-    var priceStr = p.price ? String(p.price).replace(/[^0-9.]/g,'') : '';
-    var priceDisplay = priceStr ? '$'+Number(priceStr).toFixed(2) : '&#8212;';
     var attrs = p.dataAttributes || {};
     var attrStr = ' class="product-card expanded-product" data-id="' + escAttr(p.id) + '"';
-    Object.keys(attrs).forEach(function(k){ attrStr += ' ' + k + '="' + escAttr(attrs[k]) + '"'; });
-    var inner = '<div class="card-vials">' + vialsHTML + '</div>' + '<div class="product-info">' + '<h3>' + escAttr(p.name) + '</h3>' + '<p class="product-sub">Research Use Only</p>' + '<div class="size-options"><span class="size-label">MG per vial</span><div class="size-pills">' + sizePills + '</div></div>' + '<div class="tier-preview"><div class="tier-box"><strong>5&#8211;8 units</strong><span>10% off</span></div><div class="tier-box"><strong>9+ units</strong><span>15% off</span></div></div>' + '<div class="product-divider"></div>' + '<p class="starting">Pep Suppliers price</p>' + '<p class="price">' + priceDisplay + '</p>' + '<p class="reference-note">60% below listed reference price</p>' + '<div class="card-actions"><button class="bookmark" type="button" aria-label="Save ' + escAttr(p.name) + '">&#9825;</button><a class="view-options" href="#contact">View options</a></div>' + '</div>';
-    return '<article' + attrStr + '>' + inner + '</article>';
-  }
+    Object.keys(attrs).forEach(function(k){
+      attrStr += ' ' + k + '="' + escAttr(attrs[k]) + '"';
+    });
+    var inner =
+      '<div class="card-vials">' + vialsHTML + '</div>' +
+      '<div class="product-info">' +
+        '<h3>' + escAttr(p.name) + '</h3>' +
+        '<p class="product-sub">Research Use Only</p>' +
+        '<div class="size-options"><span class="size-label">MG per vial</span><div class="size-pills">' + sizePills + '</div></div>' +
+        '<div class="tier-preview"><div class="tier-box"><strong>5&#8211;8 units</strong><span>10% off</span></div><div class="tier-box"><strong>9+ units</strong><span>15% off</span></div></div>' +
+        '<div class="product-divider"></div>' +
+        '<p class="starting">Pep Suppliers price</p>' +
+        '<p class="price">
 
   document.addEventListener('DOMContentLoaded', function(){
     var grid = document.getElementById('products-grid');
