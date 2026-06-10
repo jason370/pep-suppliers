@@ -76,8 +76,8 @@ button{font:inherit;cursor:pointer}
 .breadcrumb a{color:var(--teal);font-weight:650}
 .breadcrumb a:hover{text-decoration:underline}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.product-visual{background:linear-gradient(160deg,#f5f9fb,#eef6f8);border:1px solid var(--border);border-radius:20px;padding:48px;display:flex;align-items:center;justify-content:center;min-height:420px}
-.product-visual svg{width:min(220px,70%);height:auto}
+.product-visual{background:#ede9f6;border:1px solid var(--border);border-radius:20px;padding:32px 24px;display:flex;align-items:center;justify-content:center;min-height:420px}
+.product-vial-img{max-width:min(320px,78%);max-height:380px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 14px 28px rgba(7,24,51,.18))}
 .product-info h1{margin:0 0 12px;font-size:clamp(28px,4vw,38px);color:var(--navy);font-weight:950;line-height:1.15}
 .warehouse-badge{display:inline-block;background:#EEF8FA;color:var(--teal);border:1px solid var(--teal-light);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:800;margin-bottom:16px}
 .product-price{font-size:32px;font-weight:950;color:var(--navy);margin:0 0 20px}
@@ -172,7 +172,7 @@ button{font:inherit;cursor:pointer}
     <div id="product-content" style="display:none">
       <div class="product-grid">
         <div class="product-visual" aria-hidden="true">
-          <img src="/images/vial-placeholder.jpg" alt="Pep Suppliers vials" style="width:100%;max-width:420px;height:auto;border-radius:12px;object-fit:cover;">
+          <img id="product-vial-img" class="product-vial-img" src="/images/vial-placeholder.jpg" alt="Product vial">
         </div>
         <div class="product-info">
           <h1 id="product-name"></h1>
@@ -413,7 +413,7 @@ window.cartCheckout = function() {
 
 <script>
 (function() {
-  var productId = window.location.pathname.split('/').pop();
+  var productId = new URLSearchParams(window.location.search).get('id') || window.location.pathname.split('/').pop().replace(/\.html$/,'');
   var product = null;
   var selectedSize = null;
   var quantity = 1;
@@ -477,8 +477,119 @@ window.cartCheckout = function() {
     });
   }
 
+  var VIAL_IMAGES = {
+    "abp-7-us-warehouse":"/images/vials/abp-7-us-warehouse.png",
+    "ace-031-overseas-warehouse":"/images/vials/ace-031-overseas-warehouse.png",
+    "acetyl-hexapeptide-3-argireline-us-warehouse":"/images/vials/acetyl-hexapeptide-3-argireline-us-warehouse.png",
+    "adipotide-ftpp-us-warehouse":"/images/vials/adipotide-ftpp-us-warehouse.png",
+    "ahk-cu-overseas-warehouse":"/images/vials/ahk-cu-overseas-warehouse.png",
+    "aicar-us-warehouse":"/images/vials/aicar-us-warehouse.png",
+    "aod-9604-us-warehouse":"/images/vials/aod-9604-us-warehouse.png",
+    "ara-290-overseas-warehouse":"/images/vials/ara-290-overseas-warehouse.png",
+    "b7-33-us-warehouse":"/images/vials/b7-33-us-warehouse.png",
+    "bpc-157-us-warehouse":"/images/vials/bpc-157-us-warehouse.png",
+    "bpc-157-tb-500-ghk-cu-blend-overseas-warehouse":"/images/vials/bpc-157-tb-500-ghk-cu-blend-overseas-warehouse.png",
+    "bpc-157-tb-500-blend-us-warehouse":"/images/vials/bpc-157-tb-500-blend-us-warehouse.png",
+    "bronchogen-us-warehouse":"/images/vials/bronchogen-us-warehouse.png",
+    "cardiogen-overseas-warehouse":"/images/vials/cardiogen-overseas-warehouse.png",
+    "cartalax-us-warehouse":"/images/vials/cartalax-us-warehouse.png",
+    "chonluten-us-warehouse":"/images/vials/chonluten-us-warehouse.png",
+    "cjc-1295-mod-grf-1-29-hexarelin-blend-overseas-warehouse":"/images/vials/cjc-1295-mod-grf-1-29-hexarelin-blend-overseas-warehouse.png",
+    "cjc-1295-mod-grf-1-29-ipamorelin-ghrp-2-blend-us-warehouse":"/images/vials/cjc-1295-mod-grf-1-29-ipamorelin-ghrp-2-blend-us-warehouse.png",
+    "cjc-1295-ghrp-2-blend-us-warehouse":"/images/vials/cjc-1295-ghrp-2-blend-us-warehouse.png",
+    "cjc-1295-ghrp-6-blend-overseas-warehouse":"/images/vials/cjc-1295-ghrp-6-blend-overseas-warehouse.png",
+    "cjc-1295-ipamorelin-blend-us-warehouse":"/images/vials/cjc-1295-ipamorelin-blend-us-warehouse.png",
+    "cjc-1295-dac-us-warehouse":"/images/vials/cjc-1295-dac-us-warehouse.png",
+    "cjc-1295-no-dac-mod-grf-1-29-overseas-warehouse":"/images/vials/cjc-1295-no-dac-mod-grf-1-29-overseas-warehouse.png",
+    "cortagen-us-warehouse":"/images/vials/cortagen-us-warehouse.png",
+    "decapeptide-12-us-warehouse":"/images/vials/decapeptide-12-us-warehouse.png",
+    "dsip-overseas-warehouse":"/images/vials/dsip-overseas-warehouse.png",
+    "epithalon-us-warehouse":"/images/vials/epithalon-us-warehouse.png",
+    "follistatin-344-us-warehouse":"/images/vials/follistatin-344-us-warehouse.png",
+    "foxo4-dri-overseas-warehouse":"/images/vials/foxo4-dri-overseas-warehouse.png",
+    "fragment-176-191-us-warehouse":"/images/vials/fragment-176-191-us-warehouse.png",
+    "fragment-176-191-cjc-1295-ipamorelin-blend-us-warehouse":"/images/vials/fragment-176-191-cjc-1295-ipamorelin-blend-us-warehouse.png",
+    "fragment-176-191-mod-grf-1-29-ipamorelin-blend-overseas-warehouse":"/images/vials/fragment-176-191-mod-grf-1-29-ipamorelin-blend-overseas-warehouse.png",
+    "ghk-basic-us-warehouse":"/images/vials/ghk-basic-us-warehouse.png",
+    "ghk-basic-tripeptide-1-us-warehouse":"/images/vials/ghk-basic-tripeptide-1-us-warehouse.png",
+    "ghk-cu-overseas-warehouse":"/images/vials/ghk-cu-overseas-warehouse.png",
+    "ghk-cu-copper-us-warehouse":"/images/vials/ghk-cu-copper-us-warehouse.png",
+    "ghrp-2-us-warehouse":"/images/vials/ghrp-2-us-warehouse.png",
+    "ghrp-6-overseas-warehouse":"/images/vials/ghrp-6-overseas-warehouse.png",
+    "gonadorelin-gnrh-us-warehouse":"/images/vials/gonadorelin-gnrh-us-warehouse.png",
+    "hexarelin-us-warehouse":"/images/vials/hexarelin-us-warehouse.png",
+    "humanin-overseas-warehouse":"/images/vials/humanin-overseas-warehouse.png",
+    "ipamorelin-us-warehouse":"/images/vials/ipamorelin-us-warehouse.png",
+    "kisspeptin-10-us-warehouse":"/images/vials/kisspeptin-10-us-warehouse.png",
+    "kpv-overseas-warehouse":"/images/vials/kpv-overseas-warehouse.png",
+    "lipopeptide-us-warehouse":"/images/vials/lipopeptide-us-warehouse.png",
+    "livagen-us-warehouse":"/images/vials/livagen-us-warehouse.png",
+    "ll-37-overseas-warehouse":"/images/vials/ll-37-overseas-warehouse.png",
+    "matrixyl-us-warehouse":"/images/vials/matrixyl-us-warehouse.png",
+    "melanotan-1-us-warehouse":"/images/vials/melanotan-1-us-warehouse.png",
+    "melanotan-2-overseas-warehouse":"/images/vials/melanotan-2-overseas-warehouse.png",
+    "mgf-us-warehouse":"/images/vials/mgf-us-warehouse.png",
+    "mgf-igf-1-ec-us-warehouse":"/images/vials/mgf-igf-1-ec-us-warehouse.png",
+    "mod-grf-1-29-ghrp-2-blend-overseas-warehouse":"/images/vials/mod-grf-1-29-ghrp-2-blend-overseas-warehouse.png",
+    "mod-grf-1-29-ghrp-6-blend-us-warehouse":"/images/vials/mod-grf-1-29-ghrp-6-blend-us-warehouse.png",
+    "mod-grf-1-29-ipamorelin-blend-us-warehouse":"/images/vials/mod-grf-1-29-ipamorelin-blend-us-warehouse.png",
+    "mots-c-overseas-warehouse":"/images/vials/mots-c-overseas-warehouse.png",
+    "n-acetyl-selank-us-warehouse":"/images/vials/n-acetyl-selank-us-warehouse.png",
+    "n-acetyl-semax-us-warehouse":"/images/vials/n-acetyl-semax-us-warehouse.png",
+    "nad-overseas-warehouse":"/images/vials/nad-overseas-warehouse.png",
+    "nonapeptide-1-us-warehouse":"/images/vials/nonapeptide-1-us-warehouse.png",
+    "ovagen-us-warehouse":"/images/vials/ovagen-us-warehouse.png",
+    "oxytocin-overseas-warehouse":"/images/vials/oxytocin-overseas-warehouse.png",
+    "p21-us-warehouse":"/images/vials/p21-us-warehouse.png",
+    "pal-ahk-us-warehouse":"/images/vials/pal-ahk-us-warehouse.png",
+    "pal-ghk-overseas-warehouse":"/images/vials/pal-ghk-overseas-warehouse.png",
+    "palmitoyl-tetrapeptide-7-us-warehouse":"/images/vials/palmitoyl-tetrapeptide-7-us-warehouse.png",
+    "pancragen-us-warehouse":"/images/vials/pancragen-us-warehouse.png",
+    "pe-22-28-overseas-warehouse":"/images/vials/pe-22-28-overseas-warehouse.png",
+    "peg-mgf-us-warehouse":"/images/vials/peg-mgf-us-warehouse.png",
+    "pentapeptide-18-leuphasyl-us-warehouse":"/images/vials/pentapeptide-18-leuphasyl-us-warehouse.png",
+    "pinealon-overseas-warehouse":"/images/vials/pinealon-overseas-warehouse.png",
+    "pnc-27-us-warehouse":"/images/vials/pnc-27-us-warehouse.png",
+    "prostamax-us-warehouse":"/images/vials/prostamax-us-warehouse.png",
+    "pt-141-bremelanotide-overseas-warehouse":"/images/vials/pt-141-bremelanotide-overseas-warehouse.png",
+    "ptd-dbm-us-warehouse":"/images/vials/ptd-dbm-us-warehouse.png",
+    "receptor-grade-igf-1-lr3-us-warehouse":"/images/vials/receptor-grade-igf-1-lr3-us-warehouse.png",
+    "receptor-grade-igf-1-lr3-overseas-warehouse":"/images/vials/receptor-grade-igf-1-lr3-overseas-warehouse.png",
+    "selank-us-warehouse":"/images/vials/selank-us-warehouse.png",
+    "semax-us-warehouse":"/images/vials/semax-us-warehouse.png",
+    "sermorelin-overseas-warehouse":"/images/vials/sermorelin-overseas-warehouse.png",
+    "sermorelin-ghrp-2-blend-us-warehouse":"/images/vials/sermorelin-ghrp-2-blend-us-warehouse.png",
+    "sermorelin-ghrp-6-ghrp-2-blend-us-warehouse":"/images/vials/sermorelin-ghrp-6-ghrp-2-blend-us-warehouse.png",
+    "sermorelin-ghrp-6-blend-overseas-warehouse":"/images/vials/sermorelin-ghrp-6-blend-overseas-warehouse.png",
+    "sermorelin-ipamorelin-blend-us-warehouse":"/images/vials/sermorelin-ipamorelin-blend-us-warehouse.png",
+    "snap-8-us-warehouse":"/images/vials/snap-8-us-warehouse.png",
+    "syn-ake-overseas-warehouse":"/images/vials/syn-ake-overseas-warehouse.png",
+    "syn-coll-palmitoyl-tripeptide-5-us-warehouse":"/images/vials/syn-coll-palmitoyl-tripeptide-5-us-warehouse.png",
+    "tb-500-thymosin-beta-4-us-warehouse":"/images/vials/tb-500-thymosin-beta-4-us-warehouse.png",
+    "tesamorelin-overseas-warehouse":"/images/vials/tesamorelin-overseas-warehouse.png",
+    "tesamorelin-cjc-1295-mod-grf-1-29-ipamorelin-blend-us-warehouse":"/images/vials/tesamorelin-cjc-1295-mod-grf-1-29-ipamorelin-blend-us-warehouse.png",
+    "tesamorelin-ipamorelin-blend-us-warehouse":"/images/vials/tesamorelin-ipamorelin-blend-us-warehouse.png",
+    "testagen-overseas-warehouse":"/images/vials/testagen-overseas-warehouse.png",
+    "thymagen-us-warehouse":"/images/vials/thymagen-us-warehouse.png",
+    "thymalin-us-warehouse":"/images/vials/thymalin-us-warehouse.png",
+    "thymosin-alpha-1-overseas-warehouse":"/images/vials/thymosin-alpha-1-overseas-warehouse.png",
+    "thyrotropin-trh-us-warehouse":"/images/vials/thyrotropin-trh-us-warehouse.png",
+    "tripeptide-29-us-warehouse":"/images/vials/tripeptide-29-us-warehouse.png",
+    "triptorelin-overseas-warehouse":"/images/vials/triptorelin-overseas-warehouse.png",
+    "vesilut-us-warehouse":"/images/vials/vesilut-us-warehouse.png",
+    "vesugen-us-warehouse":"/images/vials/vesugen-us-warehouse.png",
+    "vialox-pentapeptide-3v-overseas-warehouse":"/images/vials/vialox-pentapeptide-3v-overseas-warehouse.png",
+    "vilon-us-warehouse":"/images/vials/vilon-us-warehouse.png",
+    "vip-us-warehouse":"/images/vials/vip-us-warehouse.png"
+  };
+
   function renderProduct(p) {
     product = p;
+    var vi = document.getElementById('product-vial-img');
+    if (vi) {
+      vi.src = VIAL_IMAGES[p.id] || '/images/vial-placeholder.jpg';
+      vi.alt = (p.name || 'Product') + ' research vial';
+    }
     document.getElementById('product-name').textContent = p.name || '';
     document.getElementById('breadcrumb-name').textContent = p.name || 'Product';
     document.title = (p.name || 'Product') + ' — Pep Suppliers';
