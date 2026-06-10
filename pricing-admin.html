@@ -66,7 +66,11 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
 .vial-input{width:130px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;outline:none}
 .vial-input:focus{border-color:var(--teal)}
 .vial-input.changed{border-color:#f0a500;background:#fffbe6}
+.name-input{width:180px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-weight:700;outline:none}
+.name-input:focus{border-color:var(--teal)}
+.name-input.changed{border-color:#f0a500;background:#fffbe6}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 
@@ -101,6 +105,7 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
       <option value="instock">In Stock</option>
       <option value="oos">Out of Stock</option>
     </select>
+    <label class="btn btn-secondary" style="cursor:pointer">📂 Upload Price Sheet<input type="file" id="xlsx-upload" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleXlsxUpload(this)"></label>
     <button class="btn btn-secondary" onclick="applyMarkup()">Apply % Markup</button>
     <button class="btn btn-secondary" onclick="resetChanges()">Reset Changes</button>
     <button class="btn btn-primary" id="push-btn" onclick="pushChanges()" disabled>
@@ -115,7 +120,7 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
       <thead>
         <tr>
           <th>#</th>
-          <th>Product</th>
+          <th>Product Name (editable)</th>
           <th>Warehouse</th>
           <th>Vial Sizes (editable)</th>
           <th>Current Price</th>
@@ -201,7 +206,7 @@ function renderTable(products) {
 
     tr.innerHTML =
       '<td style="color:#9aabb8;font-size:12px">' + (i+1) + '</td>' +
-      '<td><strong>' + (p.name || '') + '</strong></td>' +
+      '<td><input class="name-input" type="text" value="' + (p.name || '') + '" data-id="' + p.id + '" data-original-name="' + (p.name || '') + '" oninput="onNameChange(this)"></td>' +
       '<td><span class="badge ' + badgeClass + '">' + warehouseLabel + '</span></td>' +
       '<td><input class="vial-input" type="text" value="' + (p.vialSizes || []).join(', ') + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
       '<td style="color:#6b7f94">' + (p.price || '—') + '</td>' +
@@ -212,6 +217,17 @@ function renderTable(products) {
     tbody.appendChild(tr);
   });
   filterTable();
+}
+
+function onNameChange(input) {
+  var id = input.dataset.id;
+  var p = _products.find(function(x){ return x.id === id; });
+  if (!p) return;
+  p.name = input.value.trim();
+  _changes['_name_' + id] = p.name;
+  input.classList.add('changed');
+  input.closest('tr').classList.add('changed-row');
+  updateChangeCount();
 }
 
 function onVialChange(input) {
@@ -346,6 +362,8 @@ function pushChanges() {
     if (newPrice !== undefined) out.price = newPrice;
     if (stockChange !== undefined) out.inStock = stockChange;
     if (vialChange !== undefined) out.vialSizes = vialChange;
+    var nameChange = _changes['_name_' + p.id];
+    if (nameChange !== undefined) out.name = nameChange;
     return out;
   });
 
