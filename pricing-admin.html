@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing Admin | Pep Suppliers</title>
+<style>
+:root{--navy:#071833;--teal:#0D6D72;--teal-light:#6CC6C9;--border:#e2ecf0;--bg:#f7fafc}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
+#login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{background:#fff;border-radius:16px;border:1px solid var(--border);padding:48px 40px;width:360px;text-align:center;box-shadow:0 4px 24px rgba(7,24,51,.10)}
+.login-box h1{font-size:22px;margin-bottom:8px}
+.login-box p{color:#6b7f94;font-size:14px;margin-bottom:24px}
+.login-box input{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin-bottom:12px;outline:none}
+.login-box input:focus{border-color:var(--teal)}
+.login-box button{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
+.login-box button:hover{background:#0e2a52}
+.login-error{color:#c0392b;font-size:13px;margin-top:8px;display:none}
+
+#admin-screen{display:none;min-height:100vh}
+.admin-header{background:var(--navy);color:#fff;padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
+.admin-header h1{font-size:18px;font-weight:900}
+.admin-header span{font-size:13px;opacity:.7}
+
+.toolbar{display:flex;align-items:center;gap:12px;padding:20px 32px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.toolbar input[type=search]{flex:1;min-width:200px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
+.toolbar input[type=search]:focus{border-color:var(--teal)}
+.toolbar select{padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:#fff;outline:none;cursor:pointer}
+.btn{padding:9px 20px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;border:none}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:#0a5a5f}
+.btn-primary:disabled{background:#9aabb8;cursor:not-allowed}
+.btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
+.btn-secondary:hover{background:var(--bg)}
+.btn-danger{background:#c0392b;color:#fff}
+
+.status-bar{padding:10px 32px;font-size:13px;font-weight:600;display:none}
+.status-bar.success{background:#d4edda;color:#155724;display:block}
+.status-bar.error{background:#f8d7da;color:#721c24;display:block}
+.status-bar.loading{background:#d1ecf1;color:#0c5460;display:block}
+
+.table-wrap{padding:24px 32px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:14px}
+thead tr{background:var(--navy);color:#fff}
+thead th{padding:12px 14px;text-align:left;font-weight:700;white-space:nowrap}
+tbody tr:nth-child(even){background:#f7fafc}
+tbody tr:hover{background:#EEF8FA}
+tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
+.changed-row{background:#fffbe6!important}
+.changed-row td:first-child{border-left:3px solid #f0a500}
+
+.price-input{width:110px;padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:14px;font-family:inherit;text-align:right;outline:none}
+.price-input:focus{border-color:var(--teal)}
+.price-input.changed{border-color:#f0a500;background:#fffbe6}
+
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700}
+.badge-us{background:#EEF8FA;color:var(--teal)}
+.badge-cn{background:#fff3cd;color:#856404}
+.badge-oos{background:#f8d7da;color:#721c24}
+
+.changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-box">
+    <h1>Pricing Admin</h1>
+    <p>Pep Suppliers internal tool</p>
+    <input type="password" id="pw-input" placeholder="Admin password" autocomplete="current-password">
+    <button onclick="doLogin()">Sign In</button>
+    <div class="login-error" id="login-error">Incorrect password</div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="admin-screen">
+  <div class="admin-header">
+    <h1>⚡ Pricing Admin</h1>
+    <span id="product-count"></span>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search-box" placeholder="Search products..." oninput="filterTable()">
+    <select id="warehouse-filter" onchange="filterTable()">
+      <option value="">All Warehouses</option>
+      <option value="US Warehouse">US Warehouse</option>
+      <option value="Overseas Warehouse">China Warehouse</option>
+    </select>
+    <select id="stock-filter" onchange="filterTable()">
+      <option value="">All Stock</option>
+      <option value="instock">In Stock</option>
+      <option value="oos">Out of Stock</option>
+    </select>
+    <button class="btn btn-secondary" onclick="applyMarkup()">Apply % Markup</button>
+    <button class="btn btn-secondary" onclick="resetChanges()">Reset Changes</button>
+    <button class="btn btn-primary" id="push-btn" onclick="pushChanges()" disabled>
+      Push to Site <span class="changes-count" id="changes-count">0</span>
+    </button>
+  </div>
+
+  <div class="status-bar" id="status-bar"></div>
+
+  <div class="table-wrap">
+    <table id="price-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product</th>
+          <th>Warehouse</th>
+          <th>Vial Sizes</th>
+          <th>Current Price</th>
+          <th>New Price</th>
+          <th>In Stock</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+var _products = [];
+var _sha = '';
+var _password = '';
+var _changes = {};
+
+function doLogin() {
+  var pw = document.getElementById('pw-input').value.trim();
+  if (!pw) return;
+  _password = pw;
+  // Try fetching products.json to verify we can proceed, then load
+  loadProducts();
+}
+
+document.getElementById('pw-input').addEventListener('keydown', function(e){
+  if (e.key === 'Enter') doLogin();
+});
+
+function showStatus(msg, type) {
+  var bar = document.getElementById('status-bar');
+  bar.textContent = msg;
+  bar.className = 'status-bar ' + type;
+}
+function hideStatus() {
+  document.getElementById('status-bar').className = 'status-bar';
+}
+
+function loadProducts() {
+  showStatus('Loading products...', 'loading');
+  // First get the SHA from GitHub API
+  fetch('https://api.github.com/repos/jason370/pep-suppliers/contents/products.json')
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+      _sha = data.sha;
+      return fetch('/products.json?t=' + Date.now());
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(products) {
+      _products = products;
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('admin-screen').style.display = 'block';
+      document.getElementById('product-count').textContent = products.length + ' products';
+      hideStatus();
+      renderTable(products);
+    })
+    .catch(function(e) {
+      document.getElementById('login-error').style.display = 'block';
+      document.getElementById('login-error').textContent = 'Failed to load: ' + e.message;
+      hideStatus();
+    });
+}
+
+function renderTable(products) {
+  var tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+  products.forEach(function(p, i) {
+    var changed = _changes[p.id];
+    var tr = document.createElement('tr');
+    if (changed) tr.classList.add('changed-row');
+    tr.dataset.id = p.id;
+    tr.dataset.name = (p.name || '').toLowerCase();
+    tr.dataset.warehouse = p.warehouse || '';
+    tr.dataset.stock = p.inStock ? 'instock' : 'oos';
+
+    var warehouseLabel = p.warehouse === 'Overseas Warehouse' ? 'China' : (p.warehouse || '');
+    var badgeClass = p.warehouse === 'US Warehouse' ? 'badge-us' : (p.warehouse === 'Overseas Warehouse' ? 'badge-cn' : 'badge-us');
+    var newPrice = changed ? changed : (p.price || '');
+    var inputClass = changed ? 'price-input changed' : 'price-input';
+
+    tr.innerHTML =
+      '<td style="color:#9aabb8;font-size:12px">' + (i+1) + '</td>' +
+      '<td><strong>' + (p.name || '') + '</strong></td>' +
+      '<td><span class="badge ' + badgeClass + '">' + warehouseLabel + '</span></td>' +
+      '<td style="color:#6b7f94">' + (p.vialSizes || []).join(', ') + '</td>' +
+      '<td style="color:#6b7f94">' + (p.price || '—') + '</td>' +
+      '<td><input class="' + inputClass + '" type="text" value="' + newPrice + '" data-id="' + p.id + '" data-original="' + (p.price || '') + '" oninput="onPriceChange(this)"></td>' +
+      '<td><input type="checkbox" ' + (p.inStock ? 'checked' : '') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
+    tbody.appendChild(tr);
+  });
+  filterTable();
+}
+
+function onPriceChange(input) {
+  var id = input.dataset.id;
+  var original = input.dataset.original;
+  var val = input.value.trim();
+  if (val !== original) {
+    _changes[id] = val;
+    input.classList.add('changed');
+    input.closest('tr').classList.add('changed-row');
+  } else {
+    delete _changes[id];
+    input.classList.remove('changed');
+    input.closest('tr').classList.remove('changed-row');
+  }
+  updateChangeCount();
+}
+
+function onStockChange(cb) {
+  var id = cb.dataset.id;
+  var p = _products.find(function(x){ return x.id === id; });
+  if (p) {
+    p.inStock = cb.checked;
+    // Mark as change
+    _changes['_stock_' + id] = cb.checked;
+    updateChangeCount();
+  }
+}
+
+function updateChangeCount() {
+  var count = Object.keys(_changes).length;
+  var badge = document.getElementById('changes-count');
+  var btn = document.getElementById('push-btn');
+  badge.textContent = count;
+  badge.style.display = count > 0 ? 'inline' : 'none';
+  btn.disabled = count === 0;
+}
+
+function filterTable() {
+  var search = document.getElementById('search-box').value.toLowerCase();
+  var warehouse = document.getElementById('warehouse-filter').value;
+  var stock = document.getElementById('stock-filter').value;
+  var rows = document.querySelectorAll('#table-body tr');
+  rows.forEach(function(row) {
+    var nameMatch = !search || row.dataset.name.includes(search);
+    var whMatch = !warehouse || row.dataset.warehouse === warehouse;
+    var stMatch = !stock || row.dataset.stock === stock;
+    row.style.display = (nameMatch && whMatch && stMatch) ? '' : 'none';
+  });
+}
+
+function applyMarkup() {
+  var pct = prompt('Enter markup % to apply to ALL visible products\n(e.g. 50 for 50% above cost, or -10 to reduce by 10%):');
+  if (!pct) return;
+  var mult = 1 + (parseFloat(pct) / 100);
+  if (isNaN(mult)) return alert('Invalid number');
+  var inputs = document.querySelectorAll('#table-body tr:not([style*="display: none"]) .price-input');
+  inputs.forEach(function(input) {
+    var current = parseFloat((input.value || input.dataset.original).replace(/[^0-9.\-]/g,''));
+    if (isNaN(current)) return;
+    var newVal = '$' + (current * mult).toFixed(2);
+    input.value = newVal;
+    onPriceChange(input);
+  });
+}
+
+function resetChanges() {
+  if (!confirm('Reset all unsaved changes?')) return;
+  _changes = {};
+  var inputs = document.querySelectorAll('.price-input');
+  inputs.forEach(function(input) {
+    input.value = input.dataset.original;
+    input.classList.remove('changed');
+    input.closest('tr').classList.remove('changed-row');
+  });
+  updateChangeCount();
+}
+
+function pushChanges() {
+  if (Object.keys(_changes).length === 0) return;
+  if (!confirm('Push ' + Object.keys(_changes).length + ' change(s) to the live site?')) return;
+
+  showStatus('Pushing changes to site...', 'loading');
+  document.getElementById('push-btn').disabled = true;
+
+  // Apply price changes to products array
+  var updated = _products.map(function(p) {
+    var newPrice = _changes[p.id];
+    var stockChange = _changes['_stock_' + p.id];
+    var out = Object.assign({}, p);
+    if (newPrice !== undefined) out.price = newPrice;
+    if (stockChange !== undefined) out.inStock = stockChange;
+    return out;
+  });
+
+  fetch('/.netlify/functions/update-products', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ password: _password, products: updated, sha: _sha })
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(data) {
+    if (data.ok) {
+      _sha = data.sha;
+      _products = updated;
+      _changes = {};
+      updateChangeCount();
+      // Refresh display
+      renderTable(_products);
+      showStatus('\u2705 Changes pushed successfully! Site will update in ~30 seconds.', 'success');
+    } else {
+      showStatus('\u274C Error: ' + (data.error || 'Unknown error'), 'error');
+      document.getElementById('push-btn').disabled = false;
+    }
+  })
+  .catch(function(e) {
+    showStatus('\u274C Network error: ' + e.message, 'error');
+    document.getElementById('push-btn').disabled = false;
+  });
+}
+</script>
+</body>
+</html>
