@@ -9,6 +9,7 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10MG"
     ],
     "tags": [],
@@ -117,7 +118,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5MG"
+      "5MG",
+      "10MG"
     ],
     "tags": [],
     "dataAttributes": {
