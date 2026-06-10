@@ -16,9 +16,38 @@ function hashStr(s) {
   return h;
 }
 
+const CAT_DISPLAY = {
+  gh: 'GROWTH HORMONE PEPTIDES',
+  weight: 'WEIGHT MANAGEMENT',
+  healing: 'HEALING & RECOVERY',
+  nootropic: 'NOOTROPICS',
+  sexual: 'SEXUAL HEALTH',
+  other: 'RESEARCH PEPTIDE',
+};
+
+const CAT_FROM_JSON = {
+  'Hormone Support': 'gh',
+  'Weight Management': 'weight',
+  'Recovery & Healing': 'healing',
+  'Peptide Blends': 'other',
+  'Other Research': 'other',
+};
+
+function resolveCategoryKey(p) {
+  const id = (p.id || '').toLowerCase();
+  const name = (p.name || '').toLowerCase();
+  if (/selank|semax/.test(id) || /selank|semax/.test(name)) return 'nootropic';
+  if (/pt-141|bremelanotide|melanotan/.test(id) || /pt-141|bremelanotide|melanotan/.test(name)) return 'sexual';
+  return CAT_FROM_JSON[p.category] || 'other';
+}
+
+function categoryDisplay(p) {
+  return CAT_DISPLAY[resolveCategoryKey(p)] || CAT_DISPLAY.other;
+}
+
 function saleMeta(priceStr, id) {
   const n = parseFloat(String(priceStr).replace(/[^0-9.]/g, '')) || 0;
-  const orig = (n * 1.3).toFixed(2);
+  const orig = (n * 1.25).toFixed(2);
   const h = hashStr(id);
   const rating = (4.7 + (h % 30) / 100).toFixed(1);
   const reviews = 120 + (h % 280);
@@ -35,7 +64,7 @@ function escAttr(s) {
 function buildCardInner(p) {
   const { sale, orig, rating, reviews } = saleMeta(p.price, p.id);
   const src = `/images/vials/${p.id}.png`;
-  const cat = escAttr(p.category || 'Research Peptide');
+  const cat = escAttr(categoryDisplay(p));
   const name = escAttr(p.name || '');
   return (
     `<div class="card-img-wrap"><span class="sale-badge">Sale</span>` +
@@ -118,6 +147,32 @@ const EXPANDED_CSS = `
 @media(max-width:560px){.products-grid{grid-template-columns:1fr}}
 `;
 
+function readIndexFromGit() {
+  const r = spawnSync('git', ['show', 'HEAD:index.html'], { cwd: ROOT, encoding: 'utf8' });
+  if (r.status !== 0) throw new Error('git show HEAD:index.html failed: ' + (r.stderr || r.stdout));
+  return r.stdout;
+}
+
+function patchCardInnerOnly() {
+  let h = readIndexFromGit();
+  const products = JSON.parse(fs.readFileSync(path.join(ROOT, 'products.json'), 'utf8'));
+  const visible = products.filter((p) => p.visible !== false);
+  const cardMap = {};
+  visible.forEach((p) => {
+    cardMap[p.id] = buildCardInner(p);
+  });
+  const cardJson = JSON.stringify(cardMap)
+    .replace(/\//g, '\\/')
+    .replace(/\\n/g, '\\\\n');
+  const start = h.indexOf('var CARD_INNER_HTML = ');
+  const endMatch = h.slice(start).match(/\}\r?\n\r?\n  function escAttr/);
+  if (start === -1 || !endMatch) throw new Error('CARD_INNER_HTML block not found in index.html');
+  const end = start + endMatch.index + 1;
+  h = h.slice(0, start) + 'var CARD_INNER_HTML = ' + cardJson + h.slice(end);
+  fs.writeFileSync(path.join(ROOT, 'index.html'), h, 'utf8');
+  console.log('Patched CARD_INNER_HTML only —', visible.length, 'cards');
+}
+
 function patchIndexHtml() {
   let h = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
   const products = JSON.parse(fs.readFileSync(path.join(ROOT, 'products.json'), 'utf8'));
@@ -156,9 +211,9 @@ function patchIndexHtml() {
     .replace(/\\n/g, '\\\\n');
 
   const start = h.indexOf('var CARD_INNER_HTML = ');
-  const endMatch = h.slice(start).match(/\};\r?\n\r?\n  function escAttr/);
+  const endMatch = h.slice(start).match(/\}\r?\n\r?\n  function escAttr/);
   if (start === -1 || !endMatch) throw new Error('CARD_INNER_HTML block not found in index.html');
-  const end = start + endMatch.index + 2; // position after };
+  const end = start + endMatch.index + 1;
   h = h.slice(0, start) + 'var CARD_INNER_HTML = ' + cardJson + h.slice(end);
 
   fs.writeFileSync(path.join(ROOT, 'index.html'), h, 'utf8');
@@ -223,15 +278,21 @@ function patchProductHtml() {
   console.log('Patched product.html —', Object.keys(manifest).length, 'VIAL_IMAGES entries');
 }
 
-console.log('Step 1: generate vial PNGs...');
-const gen = spawnSync(process.execPath, ['scripts/generate-vial-images.mjs'], {
-  cwd: ROOT,
-  stdio: 'inherit',
-});
-if (gen.status !== 0) process.exit(gen.status || 1);
+if (process.argv.includes('--cards-only')) {
+  console.log('RC-029 cards-only: regenerate CARD_INNER_HTML from HEAD:index.html...');
+  patchCardInnerOnly();
+  console.log('RC-029 cards-only complete.');
+} else {
+  console.log('Step 1: generate vial PNGs...');
+  const gen = spawnSync(process.execPath, ['scripts/generate-vial-images.mjs'], {
+    cwd: ROOT,
+    stdio: 'inherit',
+  });
+  if (gen.status !== 0) process.exit(gen.status || 1);
 
-console.log('Step 2: patch index.html...');
-patchIndexHtml();
-console.log('Step 3: patch product.html...');
-patchProductHtml();
-console.log('RC-029 build complete.');
+  console.log('Step 2: patch index.html...');
+  patchIndexHtml();
+  console.log('Step 3: patch product.html...');
+  patchProductHtml();
+  console.log('RC-029 build complete.');
+}
