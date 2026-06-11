@@ -337,7 +337,7 @@ function renderTable(products) {
       '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<button onclick="unlockProduct(\'' + p.id + '\')" title="Click to unlock — uploads can overwrite this product\'s fields again" style="background:none;border:none;cursor:pointer;font-size:12px;padding:0 2px">🔒</button>':'') + '</td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td style="font-size:12px;font-weight:700;padding:4px 8px">' + escHtml(p.name||'') + '</td>' +
-      '<td><input class="name-input' + (_changes['_name_'+p.id]?' changed':'') + '" type="text" value="' + escAttr(_changes['_name_'+p.id]||'') + '" data-id="' + p.id + '" placeholder="Rename..." oninput="onNameChange(this)"></td>' +
+      '<td><input class="name-input' + (_changes['_name_'+p.id]?' changed':'') + '" type="text" value="' + escAttr(_changes['_name_'+p.id]||p.newName||'') + '" data-id="' + p.id + '" placeholder="Rename..." oninput="onNameChange(this)"></td>' +
       '<td>' + (p.vendor ? '<span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span>' : '<span style="color:#e74c3c;font-size:12px;font-weight:700">⚠ No vendor</span>') + '</td>' +
       '<td><span style="font-size:12px;color:#405267;font-weight:600">' + escHtml(p.category||'—') + '</span></td>' +
       '<td><input class="vial-input" type="text" value="' + escAttr((p.vialSizes||[]).join(', ')) + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
