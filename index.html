@@ -6351,6 +6351,12 @@ input.invalid{
 .search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
 .search-bar-wrap input:focus{border-color:var(--teal)}
 
+
+.sort-bar{display:flex;align-items:center;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.sort-bar label{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--navy);white-space:nowrap}
+.sort-select{border:1.5px solid var(--border);border-radius:8px;padding:7px 32px 7px 12px;font-size:13px;font-weight:600;color:var(--navy);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23174A8B'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;cursor:pointer;outline:none}
+.sort-select:focus{border-color:var(--teal)}
+.sort-count{margin-left:auto;font-size:12px;color:#6b7a8d;font-weight:600}
 </style>
 </head>
 <body>
@@ -6505,6 +6511,16 @@ input.invalid{
         </aside>
 
         <div class="catalog-main">
+          <div class="sort-bar">
+            <label for="sort-select">Sort by</label>
+            <select class="sort-select" id="sort-select">
+              <option value="az">Name A → Z</option>
+              <option value="za">Name Z → A</option>
+              <option value="lohi">Price Low → High</option>
+              <option value="hilo">Price High → Low</option>
+            </select>
+            <span class="sort-count" id="sort-count"></span>
+          </div>
           <div class="products-grid" id="products-grid"></div>
 
           <div class="trust-strip">
@@ -6967,12 +6983,32 @@ input.invalid{
   document.addEventListener('DOMContentLoaded', function(){
     var grid = document.getElementById('products-grid');
     if (!grid) return;
+
+    function parsePrice(p){
+      var raw = p.salePrice || p.price || '';
+      return parseFloat(String(raw).replace(/[^0-9.]/g,'')) || 0;
+    }
+
+    function sortAndRender(){
+      var sortVal = document.getElementById('sort-select') ? document.getElementById('sort-select').value : 'az';
+      var visible = (window._products || []).filter(function(p){ return p.visible === true; });
+      if(sortVal === 'az') visible.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
+      else if(sortVal === 'za') visible.sort(function(a,b){ return (b.name||'').localeCompare(a.name||''); });
+      else if(sortVal === 'lohi') visible.sort(function(a,b){ return parsePrice(a)-parsePrice(b); });
+      else if(sortVal === 'hilo') visible.sort(function(a,b){ return parsePrice(b)-parsePrice(a); });
+      grid.innerHTML = visible.map(renderCard).join('\n');
+      var countEl = document.getElementById('sort-count');
+      if(countEl) countEl.textContent = visible.length + ' products';
+    }
+
+    var sortSel = document.getElementById('sort-select');
+    if(sortSel) sortSel.addEventListener('change', sortAndRender);
+
     fetch('/products.json')
       .then(function(r){ return r.json(); })
       .then(function(items){
         window._products = items;
-        var visible = items.filter(function(p){ return p.visible === true; });
-        grid.innerHTML = visible.map(renderCard).join('\n');
+        sortAndRender();
       })
       .catch(function(err){ console.error('products.json load failed', err); });
   });
