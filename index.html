@@ -7021,8 +7021,23 @@ input.invalid{
       if(_activeCategory !== 'all'){
         visible = visible.filter(function(p){ return normCat(p.category) === _activeCategory; });
       }
-      if(sortVal === 'az') visible.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
-      else if(sortVal === 'za') visible.sort(function(a,b){ return (b.name||'').localeCompare(a.name||''); });
+      function mgVal(p){
+        var s = String(p.name||'');
+        var m = s.match(/(\d+(?:\.\d+)?\s*(?:mg|iu|mcg))/i);
+        if(!m && p.vialSizes && p.vialSizes[0]) s = String(p.vialSizes[0]);
+        m = s.match(/(\d+(?:\.\d+)?)/);
+        return m ? parseFloat(m[1]) : 0;
+      }
+      if(sortVal === 'az') visible.sort(function(a,b){
+        var nc = (a.name||'').localeCompare(b.name||'');
+        if(nc !== 0) return nc;
+        return mgVal(a) - mgVal(b);
+      });
+      else if(sortVal === 'za') visible.sort(function(a,b){
+        var nc = (b.name||'').localeCompare(a.name||'');
+        if(nc !== 0) return nc;
+        return mgVal(a) - mgVal(b);
+      });
       else if(sortVal === 'lohi') visible.sort(function(a,b){ return parsePrice(a)-parsePrice(b); });
       else if(sortVal === 'hilo') visible.sort(function(a,b){ return parsePrice(b)-parsePrice(a); });
       grid.innerHTML = visible.map(renderCard).join('\n');
