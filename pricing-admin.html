@@ -311,12 +311,17 @@ function onWarehouseCheck(cb) {
 
 function clearWarehouse(wh) {
   var label = wh === 'US Warehouse' ? 'US' : 'Canada';
-  if (!confirm('Remove ALL ' + label + ' warehouse assignments? Products will remain in China. This cannot be undone without pushing.')) return;
+  if (!confirm('Remove ALL ' + label + ' warehouse assignments? Products will move to China only. This cannot be undone without pushing.')) return;
   var count = 0;
   _products.forEach(function(p) {
-    var had = p.extraWarehouses && p.extraWarehouses.indexOf(wh) > -1;
-    if (had) {
-      p.extraWarehouses = (p.extraWarehouses || []).filter(function(w){ return w !== wh; });
+    // Handle both: direct warehouse field AND extraWarehouses array
+    if (p.warehouse === wh) {
+      p.warehouse = 'Overseas Warehouse';
+      _changes['_warehouse_' + p.id] = 'Overseas Warehouse';
+      count++;
+    }
+    if (p.extraWarehouses && p.extraWarehouses.indexOf(wh) > -1) {
+      p.extraWarehouses = p.extraWarehouses.filter(function(w){ return w !== wh; });
       _changes['_wh_' + p.id] = p.extraWarehouses.slice();
       count++;
     }
@@ -512,6 +517,7 @@ function pushChanges(){
     if(_changes['_vials_'+p.id]!==undefined) out.vialSizes=_changes['_vials_'+p.id];
     if(_changes['_name_'+p.id]!==undefined) out.name=_changes['_name_'+p.id];
     if(_changes['_wh_'+p.id]!==undefined) out.extraWarehouses=_changes['_wh_'+p.id];
+    if(_changes['_warehouse_'+p.id]!==undefined) out.warehouse=_changes['_warehouse_'+p.id];
     return out;
   });
   fetch('/.netlify/functions/update-products',{
@@ -525,15 +531,4 @@ function pushChanges(){
       renderTable(_products);
       showStatus('✅ Changes pushed! Site will update in ~30 seconds.','success');
     } else {
-      showStatus('❌ Error: '+(data.error||'Unknown error'),'error');
-      document.getElementById('push-btn').disabled=false;
-    }
-  })
-  .catch(function(e){
-    showStatus('❌ Network error: '+e.message,'error');
-    document.getElementById('push-btn').disabled=false;
-  });
-}
-</script>
-</body>
-</html>
+      showStatus(
