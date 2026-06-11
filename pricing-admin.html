@@ -463,10 +463,11 @@ function onMarkupChange(input){
   var id=input.dataset.id, pct=parseFloat(input.value);
   var p=_products.find(function(x){return x.id===id;});
   if(!p||isNaN(pct))return;
-  var base=parseFloat((p.price||'').replace(/[^\d.]/g,''));
-  if(isNaN(base))return;
+  var cost=parseFloat((p.price||'').replace(/[^\d.]/g,''));
+  if(isNaN(cost))return;
+  var ppv=cost/10; // price per vial
   var priceInput=input.closest('tr').querySelector('.price-input');
-  if(priceInput){priceInput.value='$'+(base*(1+pct/100)).toFixed(2); onPriceChange(priceInput);}
+  if(priceInput){priceInput.value='$'+(ppv*(1+pct/100)).toFixed(2); onPriceChange(priceInput);}
 }
 
 function onPriceChange(input){
@@ -507,13 +508,19 @@ function filterTable(){
 }
 
 function applyMarkup(){
-  var pct=prompt('Enter markup % to apply to ALL visible products\n(e.g. 50 for 50%, or -10 to reduce by 10%):');
+  var pct=prompt('Apply markup to ALL visible products.\nSale price = (cost ÷ 10) × (1 + markup%)\n\nEnter markup % (e.g. 50 for 50%):');
   if(!pct)return;
   var mult=1+(parseFloat(pct)/100);
   if(isNaN(mult))return alert('Invalid number');
-  document.querySelectorAll('#table-body tr:not([style*="display: none"]) .price-input').forEach(function(input){
-    var current=parseFloat((input.value||input.dataset.original).replace(/[^0-9.\-]/g,''));
-    if(!isNaN(current)){input.value='$'+(current*mult).toFixed(2); onPriceChange(input);}
+  document.querySelectorAll('#table-body tr:not([style*="display: none"])').forEach(function(tr){
+    var id=tr.dataset.id;
+    var p=_products.find(function(x){return x.id===id;});
+    if(!p)return;
+    var cost=parseFloat((p.price||'').replace(/[^0-9.]/g,''));
+    if(isNaN(cost))return;
+    var ppv=cost/10;
+    var priceInput=tr.querySelector('.price-input');
+    if(priceInput){priceInput.value='$'+(ppv*mult).toFixed(2); onPriceChange(priceInput);}
   });
 }
 
