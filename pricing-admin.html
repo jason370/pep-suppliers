@@ -531,4 +531,15 @@ function pushChanges(){
       renderTable(_products);
       showStatus('✅ Changes pushed! Site will update in ~30 seconds.','success');
     } else {
-      showStatus(
+      showStatus('\u274c Error: '+(data.error||'Unknown error'),'error');
+      document.getElementById('push-btn').disabled=false;
+    }
+  })
+  .catch(function(e){
+    showStatus('\u274c Network error: '+e.message,'error');
+    document.getElementById('push-btn').disabled=false;
+  });
+}
+</script>
+</body>
+</html>
