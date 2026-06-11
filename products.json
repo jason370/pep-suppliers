@@ -5077,7 +5077,8 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "AE1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "40"
   },
   {
     "id": "ar50-other",
@@ -8388,7 +8389,7 @@
       "1mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "AE1",
@@ -15018,7 +15019,7 @@
       "1mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "AE1",
