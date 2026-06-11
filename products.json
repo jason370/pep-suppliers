@@ -300,7 +300,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "AA",
@@ -332,7 +332,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "AA10",
@@ -348,7 +348,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "AA10",
@@ -364,7 +364,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "AA10",
