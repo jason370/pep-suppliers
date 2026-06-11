@@ -70,6 +70,14 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
 .wh-label input{cursor:pointer;accent-color:var(--teal)}
 .wh-label.us{color:var(--teal)}
 .wh-label.ca{color:#155724}
+.star-btn{background:none;border:none;cursor:pointer;font-size:16px;padding:2px 4px;line-height:1;opacity:.3;transition:opacity .15s}
+.star-btn:hover{opacity:.7}
+.star-btn.active{opacity:1}
+.tab-bar{display:flex;gap:0;border-bottom:2px solid var(--border);padding:0 32px;background:#fff}
+.tab-btn{padding:10px 20px;font-size:14px;font-weight:700;border:none;background:none;cursor:pointer;color:#6b7f94;border-bottom:2px solid transparent;margin-bottom:-2px}
+.tab-btn.active{color:var(--teal);border-bottom-color:var(--teal)}
+.tab-btn .tab-count{background:#e2ecf0;color:#6b7f94;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:5px}
+.tab-btn.active .tab-count{background:var(--teal);color:#fff}
 
 .changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
 .markup-input{width:65px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;text-align:center;outline:none}
@@ -102,6 +110,10 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     <span id="product-count"></span>
   </div>
 
+  <div class="tab-bar">
+    <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">All Products <span class="tab-count" id="tab-all-count">0</span></button>
+    <button class="tab-btn" id="tab-fav" onclick="switchTab('fav')">⭐ Favorites <span class="tab-count" id="tab-fav-count">0</span></button>
+  </div>
   <div class="toolbar">
     <input type="search" id="search-box" placeholder="Search products..." oninput="filterTable()">
     <select id="warehouse-filter" onchange="filterTable()">
@@ -172,6 +184,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     <table id="price-table">
       <thead>
         <tr>
+          <th></th>
           <th>#</th>
           <th style="cursor:pointer;user-select:none" onclick="sortTable('name')" title="Sort by Name">Name <span id="sort-name-ind"></span></th>
           <th style="cursor:pointer;user-select:none" onclick="sortTable('newname')" title="Sort by New Name">New Name <span id="sort-newname-ind"></span></th>
@@ -197,6 +210,9 @@ var _password = '';
 var _changes = {};
 var _sortCol = '';
 var _sortDir = 1;
+var _favs = {};
+var _activeTab = 'all';
+try { _favs = JSON.parse(localStorage.getItem('admin_favs') || '{}'); } catch(e){}
 
 function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
@@ -279,6 +295,7 @@ function renderTable(products) {
     }).join(' ');
 
     tr.innerHTML =
+      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button></td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" oninput="onNameChange(this)"></td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
@@ -299,6 +316,7 @@ function renderTable(products) {
     tbody.appendChild(tr);
   });
   filterTable();
+  updateTabCounts();
 }
 
 function escAttr(s){ return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
@@ -506,6 +524,33 @@ function updateChangeCount(){
   badge.textContent=count; badge.style.display=count>0?'inline':'none'; btn.disabled=count===0;
 }
 
+function switchTab(tab){
+  _activeTab = tab;
+  document.getElementById('tab-all').classList.toggle('active', tab==='all');
+  document.getElementById('tab-fav').classList.toggle('active', tab==='fav');
+  filterTable();
+}
+
+function toggleFav(id){
+  if(_favs[id]){ delete _favs[id]; } else { _favs[id]=true; }
+  try { localStorage.setItem('admin_favs', JSON.stringify(_favs)); } catch(e){}
+  // Update just this button
+  document.querySelectorAll('#table-body tr').forEach(function(tr){
+    if(tr.dataset.id===id){
+      var btn=tr.querySelector('.star-btn');
+      if(btn){ btn.classList.toggle('active',!!_favs[id]); btn.textContent=_favs[id]?'⭐':'☆'; }
+    }
+  });
+  updateTabCounts();
+  if(_activeTab==='fav') filterTable();
+}
+
+function updateTabCounts(){
+  var favCount=Object.keys(_favs).length;
+  document.getElementById('tab-all-count').textContent=_products.length;
+  document.getElementById('tab-fav-count').textContent=favCount;
+}
+
 function sortTable(col){
   if(_sortCol===col){_sortDir*=-1;}else{_sortCol=col;_sortDir=1;}
   ['name','newname'].forEach(function(c){
@@ -539,7 +584,8 @@ function filterTable(){
     var vendorMatch=!vendor||(vendor==='__none__'?!row.dataset.vendor:row.dataset.vendor===vendor);
     var catMatch=!category||row.dataset.category===category;
     var stMatch=!stock||row.dataset.stock===stock;
-    row.style.display=(nameMatch&&whMatch&&vendorMatch&&catMatch&&stMatch)?'':'none';
+    var favMatch=_activeTab!=='fav'||!!_favs[row.dataset.id];
+    row.style.display=(nameMatch&&whMatch&&vendorMatch&&catMatch&&stMatch&&favMatch)?'':'none';
   });
 }
 
