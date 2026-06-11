@@ -196,6 +196,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
           <th>Sale Price</th>
           <th>Warehouses</th>
           <th>In Stock</th>
+          <th></th>
         </tr>
       </thead>
       <tbody id="table-body"></tbody>
@@ -312,7 +313,8 @@ function renderTable(products) {
           '<label class="wh-label ca"><input type="checkbox" ' + (hasCA?'checked':'') + ' data-id="' + p.id + '" data-wh="Canada Warehouse" onchange="onWarehouseCheck(this)"> +CA</label>' +
         '</div>' +
       '</td>' +
-      '<td><input type="checkbox" ' + (p.inStock?'checked':'') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
+      '<td><input type="checkbox" ' + (p.inStock?'checked':'') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' +
+      '<td><button onclick="deleteProduct(\'' + p.id + '\')" style="background:none;border:none;cursor:pointer;color:#9aabb8;font-size:16px;padding:2px 6px" title="Delete product">🗑</button></td>';
     tbody.appendChild(tr);
   });
   filterTable();
@@ -578,6 +580,17 @@ function sortTable(col){
     }
     return va<vb?-_sortDir:va>vb?_sortDir:0;
   });
+  renderTable(_products);
+}
+
+function deleteProduct(id){
+  var p=_products.find(function(x){return x.id===id;});
+  if(!p)return;
+  if(!confirm('Delete "'+p.name+'"? This cannot be undone without pushing.'))return;
+  _products=_products.filter(function(x){return x.id!==id;});
+  delete _changes[id];
+  _changes['_del_'+id]=true;
+  updateChangeCount();
   renderTable(_products);
 }
 
