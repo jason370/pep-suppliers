@@ -168,6 +168,8 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     </select>
 
     <div class="toolbar-divider"></div>
+    <button class="btn btn-secondary" onclick="clearLockedFields()" title="Allow uploads to overwrite your manual edits again">🔓 Clear Edit Locks (<span id="lock-count">0</span>)</button>
+    <div class="toolbar-divider"></div>
 
     <label class="btn btn-secondary" style="cursor:pointer">📂 Upload Price Sheet<input type="file" id="xlsx-upload" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleXlsxUpload(this)"></label>
     <button class="btn btn-secondary" onclick="applyMarkup()">Apply % Markup</button>
@@ -216,6 +218,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
 <script>
 var _products = [];
 var _sha = '';
+var _lockedFields = JSON.parse(localStorage.getItem('_lockedFields')||'{}'); // {id: {name:true, vialSizes:true, ...}}
 var _password = '';
 var _changes = {};
 var _sortCol = '';
@@ -331,7 +334,7 @@ function renderTable(products) {
     }).join(' ');
 
     tr.innerHTML =
-      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button></td>' +
+      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<span title="Fields locked from upload overwrite" style="font-size:11px;cursor:default">🔒</span>':'') + '</td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" oninput="onNameChange(this)"></td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
@@ -355,6 +358,7 @@ function renderTable(products) {
   });
   filterTable();
   updateTabCounts();
+  updateLockCount();
 }
 
 function escAttr(s){ return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
@@ -477,9 +481,11 @@ function handleXlsxUpload(input) {
         });
 
         if(existing){
+          var locked=_lockedFields[existing.id]||{};
           if(existing.price!==priceFmt){_changes[existing.id]=priceFmt; existing.price=priceFmt;}
-          if(vialArr.length) existing.vialSizes=vialArr;
+          if(vialArr.length && !locked.vialSizes) existing.vialSizes=vialArr;
           if(vendor) existing.vendor=vendor;
+          if(!locked.name && name) existing.name=name;
           // Always keep in China (Overseas Warehouse) — never overwrite warehouse from upload
           existing.warehouse='Overseas Warehouse';
           existing.visible=true;
@@ -510,6 +516,9 @@ function onNameChange(input) {
   if(!p)return;
   p.name=input.value.trim();
   _changes['_name_'+id]=p.name;
+  if(!_lockedFields[id]) _lockedFields[id]={};
+  _lockedFields[id].name=true;
+  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
   input.classList.add('changed');
   input.closest('tr').classList.add('changed-row');
   updateChangeCount();
@@ -520,6 +529,9 @@ function onVialChange(input) {
   if(!p)return;
   p.vialSizes=input.value.trim()?input.value.trim().split(',').map(function(s){return s.trim();}).filter(Boolean):[];
   _changes['_vials_'+id]=p.vialSizes;
+  if(!_lockedFields[id]) _lockedFields[id]={};
+  _lockedFields[id].vialSizes=true;
+  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
   input.classList.add('changed');
   input.closest('tr').classList.add('changed-row');
   updateChangeCount();
@@ -554,6 +566,9 @@ function onPriceChange(input){
   if(val!==input.dataset.original){
     _changes['_sale_'+id]=val;
     if(p) p.salePrice=val;
+    if(!_lockedFields[id]) _lockedFields[id]={};
+    _lockedFields[id].salePrice=true;
+    localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
     input.classList.add('changed'); input.closest('tr').classList.add('changed-row');
   } else {
     delete _changes['_sale_'+id];
@@ -732,6 +747,20 @@ function applyMarkup(){
       onPriceChange(priceInput);
     }
   });
+}
+
+function clearLockedFields(){
+  var count=Object.keys(_lockedFields).length;
+  if(!confirm('Remove edit locks from '+count+' product(s)? Future uploads will overwrite your manual edits for those products.'))return;
+  _lockedFields={};
+  localStorage.removeItem('_lockedFields');
+  updateLockCount();
+  showStatus('🔓 Edit locks cleared.','success');
+}
+
+function updateLockCount(){
+  var el=document.getElementById('lock-count');
+  if(el) el.textContent=Object.keys(_lockedFields).length;
 }
 
 function resetChanges(){
