@@ -1,16 +1,48 @@
 [
   {
-    "id": "abp-7-us-warehouse",
-    "name": "ABP-7",
+    "id": "vitamin-b12-immune-hkms",
+    "name": "Vitamin B12",
+    "category": "immune",
+    "price": "$10.00",
+    "vialSizes": [
+      "2ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "B1210",
+    "extraWarehouses": []
+  },
+  {
+    "id": "vip-us-warehouse",
+    "name": "VIP",
     "category": "Other Research",
-    "price": "$12.88",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "5mg",
-      "10MG"
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "vilon-us-warehouse",
+    "name": "Vilon",
+    "category": "Other Research",
+    "price": "$10.36",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
     ],
     "tags": [],
     "dataAttributes": {
@@ -19,29 +51,111 @@
     }
   },
   {
-    "id": "ace-031-overseas-warehouse",
-    "name": "ACE-031",
+    "id": "vialox-pentapeptide-3v-overseas-warehouse",
+    "name": "Vialox (Pentapeptide-3V)",
     "category": "Other Research",
-    "price": "$63.00",
+    "price": "$24.64",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "1mg"
+      "200MG"
     ],
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
       "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "vesugen-us-warehouse",
+    "name": "Vesugen",
+    "category": "Other Research",
+    "price": "$62.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
     },
     "vendor": "HKMS"
   },
   {
-    "id": "acetyl-hexapeptide-3-argireline-us-warehouse",
-    "name": "Acetyl Hexapeptide-3 (Argireline)",
+    "id": "vesilut-us-warehouse",
+    "name": "Vesilut",
     "category": "Other Research",
-    "price": "$31.64",
+    "price": "$8.96",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "trizepatide-weight-hkms",
+    "name": "Trizepatide",
+    "category": "weight",
+    "price": "$310.00",
+    "vialSizes": [
+      "120mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "TR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "triptorelin-acetate-other-yunke",
+    "name": "Triptorelin Acetate",
+    "category": "other",
+    "price": "$78.00",
+    "vialSizes": [
+      "2mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "TRI2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "triptorelin-overseas-warehouse",
+    "name": "Triptorelin",
+    "category": "Other Research",
+    "price": "$7.56",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "2MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "tripeptide-29-us-warehouse",
+    "name": "Tripeptide-29",
+    "category": "Other Research",
+    "price": "$24.64",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -56,1003 +170,32 @@
     }
   },
   {
-    "id": "adipotide-ftpp-us-warehouse",
-    "name": "Adipotide (FTPP)",
+    "id": "tirzepatide-overseas-warehouse",
+    "name": "Tirzepatide",
     "category": "Weight Management",
-    "price": "$10.92",
+    "price": "$165.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10MG"
+      "60mg"
     ],
-    "tags": [],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
     "dataAttributes": {
       "data-category": "Weight Management",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ahk-cu-overseas-warehouse",
-    "name": "AHK-Cu",
-    "category": "Other Research",
-    "price": "$19.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "50mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "UPP"
-  },
-  {
-    "id": "aicar-us-warehouse",
-    "name": "AICAR",
-    "category": "Weight Management",
-    "price": "$28.00",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "100mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "aod-9604-us-warehouse",
-    "name": "AOD 9604",
-    "category": "Weight Management",
-    "price": "$5.74",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5MG",
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ara-290-overseas-warehouse",
-    "name": "ARA-290",
-    "category": "Recovery & Healing",
-    "price": "$12.88",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "16MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "b7-33-us-warehouse",
-    "name": "B7-33",
-    "category": "Other Research",
-    "price": "$70.00",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "bpc-157-us-warehouse",
-    "name": "BPC-157",
-    "category": "Recovery & Healing",
-    "price": "$19.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKP"
-  },
-  {
-    "id": "bpc-157-tb-500-ghk-cu-blend-overseas-warehouse",
-    "name": "BPC-157 & TB-500 & GHK-Cu Blend",
-    "category": "Peptide Blends",
-    "price": "$42.00",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "70MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "bpc-157-tb-500-blend-us-warehouse",
-    "name": "BPC-157 & TB-500 Blend",
-    "category": "Peptide Blends",
-    "price": "$14.70",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG",
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "bronchogen-us-warehouse",
-    "name": "Bronchogen",
-    "category": "Other Research",
-    "price": "$32.20",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "cardiogen-overseas-warehouse",
-    "name": "Cardiogen",
-    "category": "Other Research",
-    "price": "$34.30",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "20mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "cartalax-us-warehouse",
-    "name": "Cartalax",
-    "category": "Recovery & Healing",
-    "price": "$8.82",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "chonluten-us-warehouse",
-    "name": "Chonluten",
-    "category": "Other Research",
-    "price": "$7.14",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-mod-grf-1-29-hexarelin-blend-overseas-warehouse",
-    "name": "CJC-1295",
-    "category": "Peptide Blends",
-    "price": "$12.18",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-mod-grf-1-29-ipamorelin-ghrp-2-blend-us-warehouse",
-    "name": "CJC-1295 (Mod GRF 1-29) & Ipamorelin & GHRP-2 Blend",
-    "category": "Peptide Blends",
-    "price": "$11.34",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "9MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-ghrp-2-blend-us-warehouse",
-    "name": "CJC-1295 & GHRP-2 Blend",
-    "category": "Peptide Blends",
-    "price": "$11.76",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-ghrp-6-blend-overseas-warehouse",
-    "name": "CJC-1295 & GHRP-6 Blend",
-    "category": "Peptide Blends",
-    "price": "$9.66",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-ipamorelin-blend-us-warehouse",
-    "name": "CJC-1295 & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$11.20",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-dac-us-warehouse",
-    "name": "CJC-1295 DAC",
-    "category": "Hormone Support",
-    "price": "$7.28",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "cjc-1295-no-dac-mod-grf-1-29-overseas-warehouse",
-    "name": "CJC-1295 NO DAC (Mod GRF 1-29)",
-    "category": "Hormone Support",
-    "price": "$5.74",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "cortagen-us-warehouse",
-    "name": "Cortagen",
-    "category": "Other Research",
-    "price": "$34.30",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "decapeptide-12-us-warehouse",
-    "name": "Decapeptide-12",
-    "category": "Other Research",
-    "price": "$33.60",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "200MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "dsip-overseas-warehouse",
-    "name": "DSIP",
-    "category": "Other Research",
-    "price": "$35.00",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "15mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "epithalon-us-warehouse",
-    "name": "Epithalon",
-    "category": "Other Research",
-    "price": "$19.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKP"
-  },
-  {
-    "id": "follistatin-344-us-warehouse",
-    "name": "Follistatin-344",
-    "category": "Other Research",
-    "price": "$19.32",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "1MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "foxo4-dri-overseas-warehouse",
-    "name": "FOXO4-DRI",
-    "category": "Other Research",
-    "price": "$32.90",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "fragment-176-191-us-warehouse",
-    "name": "Fragment 176-191",
-    "category": "Weight Management",
-    "price": "$6.16",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "fragment-176-191-cjc-1295-ipamorelin-blend-us-warehouse",
-    "name": "Fragment 176-191 & CJC-1295 & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$10.22",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "12MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "fragment-176-191-mod-grf-1-29-ipamorelin-blend-overseas-warehouse",
-    "name": "Fragment 176-191 & Mod GRF 1-29 & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$10.22",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "12MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "ghk-basic-us-warehouse",
-    "name": "GHK Basic",
-    "category": "Recovery & Healing",
-    "price": "$6.86",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "50MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ghk-basic-tripeptide-1-us-warehouse",
-    "name": "GHK Basic (Tripeptide-1)",
-    "category": "Recovery & Healing",
-    "price": "$21.98",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "200MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ghk-cu-overseas-warehouse",
-    "name": "GHK-Cu",
-    "category": "Recovery & Healing",
-    "price": "$17.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "100mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "ghk-cu-copper-us-warehouse",
-    "name": "GHK-Cu (Copper)",
-    "category": "Recovery & Healing",
-    "price": "$8.12",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ghrp-2-us-warehouse",
-    "name": "GHRP-2",
-    "category": "Hormone Support",
-    "price": "$2.80",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5MG",
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ghrp-6-overseas-warehouse",
-    "name": "GHRP-6",
-    "category": "Hormone Support",
-    "price": "$2.80",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5MG",
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "gonadorelin-gnrh-us-warehouse",
-    "name": "Gonadorelin (GnRH)",
-    "category": "Hormone Support",
-    "price": "$12.60",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "hexarelin-us-warehouse",
-    "name": "Hexarelin",
-    "category": "Hormone Support",
-    "price": "$6.58",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "humanin-overseas-warehouse",
-    "name": "Humanin",
-    "category": "Other Research",
-    "price": "$94.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "ipamorelin-us-warehouse",
-    "name": "Ipamorelin",
-    "category": "Hormone Support",
-    "price": "$22.75",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKP"
-  },
-  {
-    "id": "kisspeptin-10-us-warehouse",
-    "name": "Kisspeptin-10",
-    "category": "Hormone Support",
-    "price": "$31.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "kpv-overseas-warehouse",
-    "name": "KPV",
-    "category": "Recovery & Healing",
-    "price": "$21.00",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
       "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKP"
   },
   {
-    "id": "lipopeptide-us-warehouse",
-    "name": "Lipopeptide",
-    "category": "Other Research",
-    "price": "$29.96",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "200MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "livagen-us-warehouse",
-    "name": "Livagen",
+    "id": "thyrotropin-trh-us-warehouse",
+    "name": "Thyrotropin TRH",
     "category": "Other Research",
     "price": "$10.22",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "ll-37-overseas-warehouse",
-    "name": "LL-37",
-    "category": "Recovery & Healing",
-    "price": "$12.46",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Recovery & Healing",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "matrixyl-us-warehouse",
-    "name": "Matrixyl",
-    "category": "Other Research",
-    "price": "$11.90",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "melanotan-1-us-warehouse",
-    "name": "Melanotan 1",
-    "category": "Other Research",
-    "price": "$6.02",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "melanotan-2-overseas-warehouse",
-    "name": "Melanotan 2",
-    "category": "Other Research",
-    "price": "$5.74",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "mgf-us-warehouse",
-    "name": "MGF",
-    "category": "Other Research",
-    "price": "$10.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "2 mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "mgf-igf-1-ec-us-warehouse",
-    "name": "MGF IGF-1 EC",
-    "category": "Other Research",
-    "price": "$20.30",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "mod-grf-1-29-ghrp-2-blend-overseas-warehouse",
-    "name": "Mod GRF 1-29 & GHRP-2 Blend",
-    "category": "Peptide Blends",
-    "price": "$10.22",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "mod-grf-1-29-ghrp-6-blend-us-warehouse",
-    "name": "Mod GRF 1-29 & GHRP-6 Blend",
-    "category": "Peptide Blends",
-    "price": "$10.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "mod-grf-1-29-ipamorelin-blend-us-warehouse",
-    "name": "Mod GRF 1-29 & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$11.76",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "mots-c-overseas-warehouse",
-    "name": "MOTS-C",
-    "category": "Weight Management",
-    "price": "$18.20",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "n-acetyl-selank-us-warehouse",
-    "name": "N-Acetyl Selank",
-    "category": "Other Research",
-    "price": "$9.94",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "n-acetyl-semax-us-warehouse",
-    "name": "N-Acetyl Semax",
-    "category": "Other Research",
-    "price": "$8.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1067,29 +210,182 @@
     }
   },
   {
-    "id": "nad-overseas-warehouse",
-    "name": "NAD+",
-    "category": "Other Research",
-    "price": "$36.75",
+    "id": "thymosin-alpha-1-overseas-warehouse",
+    "name": "Thymosin Alpha-1",
+    "category": "Hormone Support",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "1000mg"
+      "10 mg"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
+      "data-category": "Hormone Support",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "thymalin-us-warehouse",
+    "name": "Thymalin",
+    "category": "Hormone Support",
+    "price": "$55.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10 mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "thymagen-us-warehouse",
+    "name": "Thymagen",
+    "category": "Hormone Support",
+    "price": "$10.92",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "testagen-overseas-warehouse",
+    "name": "Testagen",
+    "category": "Hormone Support",
+    "price": "$8.82",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "tesamorelin-cjc-1295-mod-grf-1-29-ipamorelin-blend-us-warehouse",
+    "name": "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$16.38",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "12MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "tesamorelin-overseas-warehouse",
+    "name": "Tesamorelin",
+    "category": "Hormone Support",
+    "price": "$148.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
       "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKP"
   },
   {
-    "id": "nonapeptide-1-us-warehouse",
-    "name": "Nonapeptide-1",
+    "id": "tb500-thymosin-b4-acetate-healing-hkms",
+    "name": "TB500(Thymosin B4 Acetate)",
+    "category": "healing",
+    "price": "$140.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "BT2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-thymosin-beta-4-us-warehouse",
+    "name": "TB-500 (Thymosin Beta 4)",
+    "category": "Recovery & Healing",
+    "price": "$10.92",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "tb-500-healing-yunke",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$280.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "BT2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-10mg-bpc-157-10mg-ghk-50mg-kpv-10mg-healing-hkms",
+    "name": "TB 10mg+BPC-157 10mg+GHK 50mg+KPV 10mg",
+    "category": "healing",
+    "price": "$220.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "syn-coll-palmitoyl-tripeptide-5-us-warehouse",
+    "name": "Syn-Coll (Palmitoyl Tripeptide-5)",
     "category": "Other Research",
-    "price": "$29.96",
+    "price": "$24.64",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1104,28 +400,149 @@
     }
   },
   {
-    "id": "ovagen-us-warehouse",
-    "name": "Ovagen",
+    "id": "syn-ake-overseas-warehouse",
+    "name": "Syn-AKE",
     "category": "Other Research",
-    "price": "$8.68",
+    "price": "$24.64",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "20MG"
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "survotitude-anti-aging-hkms",
+    "name": "Survotitude",
+    "category": "anti-aging",
+    "price": "$257.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "SUR10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "survodutide-other-erp",
+    "name": "Survodutide",
+    "category": "other",
+    "price": "$249.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "SUR10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ss-31-other-chp",
+    "name": "SS-31",
+    "category": "other",
+    "price": "$75.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "SS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "snap-8-us-warehouse",
+    "name": "SNAP-8",
+    "category": "Other Research",
+    "price": "$35.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
       "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "sm5-cgl5-other-hkms",
+    "name": "SM5+CGL5",
+    "category": "other",
+    "price": "$157.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "slu-pp-332-weight-hkms",
+    "name": "Slu-pp-332",
+    "category": "weight",
+    "price": "$100.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "SLU5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "sermorelin-acetate-gh-hkms",
+    "name": "Sermorelin Acetate",
+    "category": "gh",
+    "price": "$110.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "SMO5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "sermorelin-ipamorelin-blend-us-warehouse",
+    "name": "Sermorelin & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$11.20",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "oxytocin-overseas-warehouse",
-    "name": "Oxytocin",
-    "category": "Other Research",
-    "price": "$7.28",
+    "id": "sermorelin-ghrp-6-blend-overseas-warehouse",
+    "name": "Sermorelin & GHRP-6 Blend",
+    "category": "Peptide Blends",
+    "price": "$12.32",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1135,105 +552,70 @@
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
+      "data-category": "Peptide Blends",
       "data-warehouse": "Overseas Warehouse"
     }
   },
   {
-    "id": "p21-us-warehouse",
-    "name": "P21",
-    "category": "Other Research",
-    "price": "$16.24",
+    "id": "sermorelin-ghrp-6-ghrp-2-blend-us-warehouse",
+    "name": "Sermorelin & GHRP-6 & GHRP-2 Blend",
+    "category": "Peptide Blends",
+    "price": "$11.90",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "5MG"
+      "9MG"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
+      "data-category": "Peptide Blends",
       "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "pal-ahk-us-warehouse",
-    "name": "Pal-AHK",
-    "category": "Other Research",
-    "price": "$24.64",
+    "id": "sermorelin-ghrp-2-blend-us-warehouse",
+    "name": "Sermorelin & GHRP-2 Blend",
+    "category": "Peptide Blends",
+    "price": "$12.32",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "200MG"
+      "10MG"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
+      "data-category": "Peptide Blends",
       "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "pal-ghk-overseas-warehouse",
-    "name": "Pal-GHK",
-    "category": "Recovery & Healing",
-    "price": "$24.64",
+    "id": "sermorelin-overseas-warehouse",
+    "name": "Sermorelin",
+    "category": "Hormone Support",
+    "price": "$135.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
-      "200MG"
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Recovery & Healing",
+      "data-category": "Hormone Support",
       "data-warehouse": "Overseas Warehouse"
-    }
+    },
+    "vendor": "HKP"
   },
   {
-    "id": "palmitoyl-tetrapeptide-7-us-warehouse",
-    "name": "Palmitoyl Tetrapeptide-7",
+    "id": "semax-us-warehouse",
+    "name": "Semax",
     "category": "Other Research",
-    "price": "$27.58",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "200MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "pancragen-us-warehouse",
-    "name": "Pancragen",
-    "category": "Other Research",
-    "price": "$8.82",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "pe-22-28-overseas-warehouse",
-    "name": "PE-22-28",
-    "category": "Other Research",
-    "price": "$25.20",
+    "price": "$90.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1244,27 +626,50 @@
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
+      "data-warehouse": "US Warehouse"
     },
     "vendor": "HKMS"
   },
   {
-    "id": "peg-mgf-us-warehouse",
-    "name": "PEG-MGF",
-    "category": "Other Research",
-    "price": "$8.82",
+    "id": "semaglutide-overseas-warehouse",
+    "name": "Semaglutide",
+    "category": "Weight Management",
+    "price": "$88.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5MG"
+      "30mg"
+    ],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "selank-us-warehouse",
+    "name": "Selank",
+    "category": "Other Research",
+    "price": "$50.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5mg"
     ],
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
       "data-warehouse": "US Warehouse"
-    }
+    },
+    "vendor": "HKMS"
   },
   {
     "id": "pentapeptide-18-leuphasyl-us-warehouse",
@@ -1287,97 +692,40 @@
     }
   },
   {
-    "id": "pinealon-overseas-warehouse",
-    "name": "Pinealon",
-    "category": "Other Research",
-    "price": "$19.25",
+    "id": "retatrutide-overseas-warehouse",
+    "name": "Retatrutide",
+    "category": "Weight Management",
+    "price": "$315.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
+    "vialSizes": [
+      "60mg"
+    ],
+    "tags": [
+      "weight",
+      "glp1"
+    ],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "reta-cagri-blend-weight-qyc",
+    "name": "Reta+Cagri Blend",
+    "category": "weight",
+    "price": "$200.00",
     "vialSizes": [
       "10mg"
     ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "pnc-27-us-warehouse",
-    "name": "PNC-27",
-    "category": "Other Research",
-    "price": "$29.75",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "5mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "prostamax-us-warehouse",
-    "name": "Prostamax",
-    "category": "Other Research",
-    "price": "$8.82",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "pt-141-bremelanotide-overseas-warehouse",
-    "name": "PT-141 (Bremelanotide)",
-    "category": "Other Research",
-    "price": "$6.02",
-    "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "ptd-dbm-us-warehouse",
-    "name": "PTD-DBM",
-    "category": "Other Research",
-    "price": "$20.65",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "1mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
+    "vendor": "QYC",
+    "vendor_cat_no": "RC10",
+    "extraWarehouses": []
   },
   {
     "id": "receptor-grade-igf-1-lr3-us-warehouse",
@@ -1416,13 +764,96 @@
     }
   },
   {
-    "id": "selank-us-warehouse",
-    "name": "Selank",
+    "id": "ra260-peptide-hkms",
+    "name": "RA260",
+    "category": "peptide",
+    "price": "$56.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "AR50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ptd-dbm-us-warehouse",
+    "name": "PTD-DBM",
     "category": "Other Research",
-    "price": "$17.50",
+    "price": "$59.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "1mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "pt-141-bremelanotide-overseas-warehouse",
+    "name": "PT-141 (Bremelanotide)",
+    "category": "Other Research",
+    "price": "$6.02",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "pt-141-sexual-yunke",
+    "name": "PT-141",
+    "category": "sexual",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "P41",
+    "extraWarehouses": []
+  },
+  {
+    "id": "prostamax-us-warehouse",
+    "name": "Prostamax",
+    "category": "Other Research",
+    "price": "$8.82",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "pnc-27-us-warehouse",
+    "name": "PNC-27",
+    "category": "Other Research",
+    "price": "$85.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "5mg"
@@ -1435,10 +866,10 @@
     "vendor": "HKMS"
   },
   {
-    "id": "semax-us-warehouse",
-    "name": "Semax",
+    "id": "pinealon-overseas-warehouse",
+    "name": "Pinealon",
     "category": "Other Research",
-    "price": "$31.50",
+    "price": "$55.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1449,109 +880,50 @@
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
+      "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKMS"
   },
   {
-    "id": "sermorelin-overseas-warehouse",
-    "name": "Sermorelin",
-    "category": "Hormone Support",
-    "price": "$47.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKP"
-  },
-  {
-    "id": "sermorelin-ghrp-2-blend-us-warehouse",
-    "name": "Sermorelin & GHRP-2 Blend",
-    "category": "Peptide Blends",
-    "price": "$12.32",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "sermorelin-ghrp-6-ghrp-2-blend-us-warehouse",
-    "name": "Sermorelin & GHRP-6 & GHRP-2 Blend",
-    "category": "Peptide Blends",
-    "price": "$11.90",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "9MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "sermorelin-ghrp-6-blend-overseas-warehouse",
-    "name": "Sermorelin & GHRP-6 Blend",
-    "category": "Peptide Blends",
-    "price": "$12.32",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "sermorelin-ipamorelin-blend-us-warehouse",
-    "name": "Sermorelin & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$11.20",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "snap-8-us-warehouse",
-    "name": "SNAP-8",
+    "id": "peg-mgf-us-warehouse",
+    "name": "PEG-MGF",
     "category": "Other Research",
-    "price": "$12.25",
+    "price": "$8.82",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "peg-mgf-peptide-hkms",
+    "name": "PEG MGF",
+    "category": "peptide",
+    "price": "$70.00",
+    "vialSizes": [
+      "2mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "FMP2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "pe-22-28-overseas-warehouse",
+    "name": "PE-22-28",
+    "category": "Other Research",
+    "price": "$72.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -1559,33 +931,33 @@
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
+      "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKMS"
   },
   {
-    "id": "syn-ake-overseas-warehouse",
-    "name": "Syn-AKE",
+    "id": "pancragen-us-warehouse",
+    "name": "Pancragen",
     "category": "Other Research",
-    "price": "$24.64",
+    "price": "$8.82",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "200MG"
+      "20MG"
     ],
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
+      "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "syn-coll-palmitoyl-tripeptide-5-us-warehouse",
-    "name": "Syn-Coll (Palmitoyl Tripeptide-5)",
+    "id": "palmitoyl-tetrapeptide-7-us-warehouse",
+    "name": "Palmitoyl Tetrapeptide-7",
     "category": "Other Research",
-    "price": "$24.64",
+    "price": "$27.58",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1600,140 +972,193 @@
     }
   },
   {
-    "id": "tb-500-thymosin-beta-4-us-warehouse",
-    "name": "TB-500 (Thymosin Beta 4)",
+    "id": "pal-ghk-overseas-warehouse",
+    "name": "Pal-GHK",
     "category": "Recovery & Healing",
-    "price": "$10.92",
+    "price": "$24.64",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
-      "5MG",
-      "10MG"
+      "200MG"
     ],
     "tags": [],
     "dataAttributes": {
       "data-category": "Recovery & Healing",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "pal-ahk-us-warehouse",
+    "name": "Pal-AHK",
+    "category": "Other Research",
+    "price": "$24.64",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
       "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "tesamorelin-overseas-warehouse",
-    "name": "Tesamorelin",
-    "category": "Hormone Support",
-    "price": "$51.80",
+    "id": "p21-p021-peptide-hkms",
+    "name": "P21(P021)",
+    "category": "peptide",
+    "price": "$300.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "p21-us-warehouse",
+    "name": "P21",
+    "category": "Other Research",
+    "price": "$16.24",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "oxytocin-acetate-other-yunke",
+    "name": "Oxytocin Acetate",
+    "category": "other",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "OT2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "oxytocin-overseas-warehouse",
+    "name": "Oxytocin",
+    "category": "Other Research",
+    "price": "$7.28",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg"
+      "10MG"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Hormone Support",
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "ovagen-us-warehouse",
+    "name": "Ovagen",
+    "category": "Other Research",
+    "price": "$8.68",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "orexin-b-neuro-hkms",
+    "name": "Orexin B",
+    "category": "neuro",
+    "price": "$234.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "orexin-a-neuro-hkms",
+    "name": "Orexin A",
+    "category": "neuro",
+    "price": "$578.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nonapeptide-1-us-warehouse",
+    "name": "Nonapeptide-1",
+    "category": "Other Research",
+    "price": "$29.96",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "nad-overseas-warehouse",
+    "name": "NAD+",
+    "category": "Other Research",
+    "price": "$105.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "1000mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
       "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKP"
   },
   {
-    "id": "tesamorelin-cjc-1295-mod-grf-1-29-ipamorelin-blend-us-warehouse",
-    "name": "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
-    "category": "Peptide Blends",
-    "price": "$16.38",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "12MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "testagen-overseas-warehouse",
-    "name": "Testagen",
-    "category": "Hormone Support",
-    "price": "$8.82",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "thymagen-us-warehouse",
-    "name": "Thymagen",
-    "category": "Hormone Support",
-    "price": "$10.92",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
-    "id": "thymalin-us-warehouse",
-    "name": "Thymalin",
-    "category": "Hormone Support",
-    "price": "$19.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "10 mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "US Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "thymosin-alpha-1-overseas-warehouse",
-    "name": "Thymosin Alpha-1",
-    "category": "Hormone Support",
-    "price": "$52.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "10 mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Hormone Support",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKMS"
-  },
-  {
-    "id": "thyrotropin-trh-us-warehouse",
-    "name": "Thyrotropin TRH",
+    "id": "n-acetyl-semax-us-warehouse",
+    "name": "N-Acetyl Semax",
     "category": "Other Research",
-    "price": "$10.22",
+    "price": "$8.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1748,16 +1173,16 @@
     }
   },
   {
-    "id": "tripeptide-29-us-warehouse",
-    "name": "Tripeptide-29",
+    "id": "n-acetyl-selank-us-warehouse",
+    "name": "N-Acetyl Selank",
     "category": "Other Research",
-    "price": "$24.64",
+    "price": "$9.94",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "200MG"
+      "10MG"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1766,34 +1191,131 @@
     }
   },
   {
-    "id": "triptorelin-overseas-warehouse",
-    "name": "Triptorelin",
-    "category": "Other Research",
-    "price": "$7.56",
+    "id": "mt-2-melanotan-2-sexual-yunke",
+    "name": "MT-2 (Melanotan 2)",
+    "category": "sexual",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "ML5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mt-2-melanotan-2-acetate-immune-hkms",
+    "name": "MT-2 (Melanotan 2 Acetate)",
+    "category": "immune",
+    "price": "$41.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "ML10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mt-1-sexual-yunke",
+    "name": "MT-1",
+    "category": "sexual",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "MT1",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mots-c-overseas-warehouse",
+    "name": "MOTS-C",
+    "category": "Weight Management",
+    "price": "$52.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2MG"
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
+      "data-category": "Weight Management",
       "data-warehouse": "Overseas Warehouse"
-    }
+    },
+    "vendor": "HKMS"
   },
   {
-    "id": "vesilut-us-warehouse",
-    "name": "Vesilut",
-    "category": "Other Research",
-    "price": "$8.96",
+    "id": "mod-grf-1-29-ipamorelin-blend-us-warehouse",
+    "name": "Mod GRF 1-29 & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$11.76",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "20MG"
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "mod-grf-1-29-ghrp-6-blend-us-warehouse",
+    "name": "Mod GRF 1-29 & GHRP-6 Blend",
+    "category": "Peptide Blends",
+    "price": "$10.50",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "mod-grf-1-29-ghrp-2-blend-overseas-warehouse",
+    "name": "Mod GRF 1-29 & GHRP-2 Blend",
+    "category": "Peptide Blends",
+    "price": "$10.22",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "mgf-igf-1-ec-us-warehouse",
+    "name": "MGF IGF-1 EC",
+    "category": "Other Research",
+    "price": "$20.30",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1802,10 +1324,93 @@
     }
   },
   {
-    "id": "vesugen-us-warehouse",
-    "name": "Vesugen",
+    "id": "mgf-us-warehouse",
+    "name": "MGF",
     "category": "Other Research",
-    "price": "$21.70",
+    "price": "$30.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "2 mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "melatonin-anti-aging-hkms",
+    "name": "Melatonin",
+    "category": "anti-aging",
+    "price": "$53.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "MTF10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "melanotan-2-overseas-warehouse",
+    "name": "Melanotan 2",
+    "category": "Other Research",
+    "price": "$5.74",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "melanotan-1-us-warehouse",
+    "name": "Melanotan 1",
+    "category": "Other Research",
+    "price": "$6.02",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "mazdutide-weight-erp",
+    "name": "Mazdutide",
+    "category": "weight",
+    "price": "$219.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "MDT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "matrixyl-us-warehouse",
+    "name": "Matrixyl",
+    "category": "Other Research",
+    "price": "$34.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1821,10 +1426,74 @@
     "vendor": "HKMS"
   },
   {
-    "id": "vialox-pentapeptide-3v-overseas-warehouse",
-    "name": "Vialox (Pentapeptide-3V)",
+    "id": "ll37-peptide-hkms",
+    "name": "LL37",
+    "category": "peptide",
+    "price": "$80.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "375",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ll-37-overseas-warehouse",
+    "name": "LL-37",
+    "category": "Recovery & Healing",
+    "price": "$12.46",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "livagen-us-warehouse",
+    "name": "Livagen",
     "category": "Other Research",
-    "price": "$24.64",
+    "price": "$10.22",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "liraglutide-weight-hkms",
+    "name": "Liraglutide",
+    "category": "weight",
+    "price": "$432.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "lipopeptide-us-warehouse",
+    "name": "Lipopeptide",
+    "category": "Other Research",
+    "price": "$29.96",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": false,
@@ -1835,35 +1504,228 @@
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    }
-  },
-  {
-    "id": "vilon-us-warehouse",
-    "name": "Vilon",
-    "category": "Other Research",
-    "price": "$10.36",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": false,
-    "visible": true,
-    "vialSizes": [
-      "20MG"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
       "data-warehouse": "US Warehouse"
     }
   },
   {
-    "id": "vip-us-warehouse",
-    "name": "VIP",
-    "category": "Other Research",
-    "price": "$52.50",
+    "id": "lemon-bottle-cosmetic-hkms",
+    "name": "Lemon Bottle",
+    "category": "cosmetic",
+    "price": "$75.00",
+    "vialSizes": [
+      "10ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "lc216-peptide-hkms",
+    "name": "LC216",
+    "category": "peptide",
+    "price": "$122.00",
+    "vialSizes": [
+      "10 mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "LC216",
+    "extraWarehouses": []
+  },
+  {
+    "id": "l-carnitine-10ml-600mg-ml-other-hkms",
+    "name": "L-carnitine 10ml*600mg/ml",
+    "category": "other",
+    "price": "$50.00",
+    "vialSizes": [
+      "10ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "LC600",
+    "extraWarehouses": []
+  },
+  {
+    "id": "kpv-overseas-warehouse",
+    "name": "KPV",
+    "category": "Recovery & Healing",
+    "price": "$60.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "klow-blend-cu50-tb10-bpc10-kpv10-healing-hkp",
+    "name": "KLOW Blend (CU50+TB10+BPC10+KPV10)",
+    "category": "healing",
+    "price": "$170.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "klow-blend-cu-tb-bpc-kpv-healing-chp",
+    "name": "KLOW Blend (CU+TB+BPC+KPV)",
+    "category": "healing",
+    "price": "$180.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "klow-blend-cu-bpc-tb-kpv-healing-jeep",
+    "name": "KLOW Blend (CU+BPC+TB+KPV)",
+    "category": "healing",
+    "price": "$200.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-upp",
+    "name": "KLOW Blend (BPC10+CU50+TB10+KPV10)",
+    "category": "healing",
+    "price": "$215.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "kisspeptin-10-us-warehouse",
+    "name": "Kisspeptin-10",
+    "category": "Hormone Support",
+    "price": "$90.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "ipamorelin-us-warehouse",
+    "name": "Ipamorelin",
+    "category": "Hormone Support",
+    "price": "$65.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "insulin-peptide-hkms",
+    "name": "Insulin",
+    "category": "peptide",
+    "price": "$210.00",
+    "vialSizes": [
+      "3ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "ISU",
+    "extraWarehouses": []
+  },
+  {
+    "id": "igf-des-peptide-hkms",
+    "name": "IGF-DES",
+    "category": "peptide",
+    "price": "$48.00",
+    "vialSizes": [
+      "2 mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "IGD",
+    "extraWarehouses": []
+  },
+  {
+    "id": "igf-1lr3-peptide-hkms",
+    "name": "IGF-1LR3",
+    "category": "peptide",
+    "price": "$182.00",
+    "vialSizes": [
+      "1mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "IG01",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hyaluronic-acid-cosmetic-hkms",
+    "name": "Hyaluronic acid",
+    "category": "cosmetic",
+    "price": "$20.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "HA5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "humanin-overseas-warehouse",
+    "name": "Humanin",
+    "category": "Other Research",
+    "price": "$270.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -1871,15 +1733,57 @@
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
+      "data-warehouse": "Overseas Warehouse"
     },
     "vendor": "HKMS"
+  },
+  {
+    "id": "hmg-other-upp",
+    "name": "HMG",
+    "category": "other",
+    "price": "$50.00",
+    "vialSizes": [
+      "75IU"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "HMG75",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hgh-fragment-176-191-weight-yunke",
+    "name": "HGH Fragment 176-191",
+    "category": "weight",
+    "price": "$180.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "FR2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hgh-191aa-somatropin-gh-hkms",
+    "name": "HGH 191AA(Somatropin)",
+    "category": "gh",
+    "price": "$65.00",
+    "vialSizes": [
+      "15iu"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "H08",
+    "extraWarehouses": []
   },
   {
     "id": "hgh-191aa-overseas-warehouse",
     "name": "HGH 191AA (Somatropin)",
     "category": "Growth Hormone",
-    "price": "$52.50",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1898,76 +1802,42 @@
     "vendor": "UPP"
   },
   {
-    "id": "semaglutide-overseas-warehouse",
-    "name": "Semaglutide",
-    "category": "Weight Management",
-    "price": "$30.80",
-    "description": "Research Use Only",
+    "id": "hexarelin-acetate-gh-hkms",
+    "name": "Hexarelin Acetate",
+    "category": "gh",
+    "price": "$75.00",
+    "vialSizes": [
+      "5mg"
+    ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "30mg"
-    ],
-    "tags": [
-      "weight",
-      "glp1"
-    ],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKP"
+    "vendor": "HKMS",
+    "vendor_cat_no": "HX2",
+    "extraWarehouses": []
   },
   {
-    "id": "tirzepatide-overseas-warehouse",
-    "name": "Tirzepatide",
-    "category": "Weight Management",
-    "price": "$57.75",
+    "id": "hexarelin-us-warehouse",
+    "name": "Hexarelin",
+    "category": "Hormone Support",
+    "price": "$6.58",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
-      "60mg"
+      "5MG"
     ],
-    "tags": [
-      "weight",
-      "glp1"
-    ],
+    "tags": [],
     "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKP"
-  },
-  {
-    "id": "retatrutide-overseas-warehouse",
-    "name": "Retatrutide",
-    "category": "Weight Management",
-    "price": "$110.25",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "60mg"
-    ],
-    "tags": [
-      "weight",
-      "glp1"
-    ],
-    "dataAttributes": {
-      "data-category": "Weight Management",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "vendor": "HKP"
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    }
   },
   {
     "id": "hcg-overseas-warehouse",
     "name": "HCG",
     "category": "Other Research",
-    "price": "$14.00",
+    "price": "$40.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1985,10 +1855,821 @@
     "vendor": "HKMS"
   },
   {
+    "id": "gonadorelin-acetate-other-yunke",
+    "name": "Gonadorelin Acetate",
+    "category": "other",
+    "price": "$35.00",
+    "vialSizes": [
+      "2mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "GND2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "gonadorelin-gnrh-us-warehouse",
+    "name": "Gonadorelin (GnRH)",
+    "category": "Hormone Support",
+    "price": "$12.60",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "glutathione-other-dp",
+    "name": "Glutathione",
+    "category": "other",
+    "price": "$70.00",
+    "vialSizes": [
+      "1500mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "GT500",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu50-tb10-bpc10-healing-hkp",
+    "name": "GLOW Blend (CU50+TB10+BPC10)",
+    "category": "healing",
+    "price": "$155.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "GLOW70",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu50-bpc10-tb10-healing-jeep",
+    "name": "GLOW Blend (CU50+BPC10+TB10)",
+    "category": "healing",
+    "price": "$180.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "GLOW70",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu35-tb10-bpc5-healing-hkp",
+    "name": "GLOW Blend (CU35+TB10+BPC5)",
+    "category": "healing",
+    "price": "$140.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "GLOW50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu30-bpc10-tb5-healing-jeep",
+    "name": "GLOW Blend (CU30+BPC10+TB5)",
+    "category": "healing",
+    "price": "$155.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "GLOW50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu-tb-bpc-healing-chp",
+    "name": "GLOW Blend (CU+TB+BPC)",
+    "category": "healing",
+    "price": "$170.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "GLOW50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-bpc10-cu50-tb10-healing-upp",
+    "name": "GLOW Blend (BPC10+CU50+TB10)",
+    "category": "healing",
+    "price": "$180.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "GLOW70",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-bpc10-cu35-tb5-healing-dp",
+    "name": "GLOW Blend (BPC10+CU35+TB5)",
+    "category": "healing",
+    "price": "$160.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "GLOW50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghrp-6-acetate-gh-hkms",
+    "name": "GHRP-6 Acetate",
+    "category": "gh",
+    "price": "$45.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "G65",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghrp-6-overseas-warehouse",
+    "name": "GHRP-6",
+    "category": "Hormone Support",
+    "price": "$2.80",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "ghrp-2-acetate-gh-hkms",
+    "name": "GHRP-2 Acetate",
+    "category": "gh",
+    "price": "$45.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "G25",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghrp-2-us-warehouse",
+    "name": "GHRP-2",
+    "category": "Hormone Support",
+    "price": "$2.80",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "ghk-cu-copper-us-warehouse",
+    "name": "GHK-Cu (Copper)",
+    "category": "Recovery & Healing",
+    "price": "$8.12",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "ghk-cu-overseas-warehouse",
+    "name": "GHK-Cu",
+    "category": "Recovery & Healing",
+    "price": "$50.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "100mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "ghk-basic-tripeptide-1-us-warehouse",
+    "name": "GHK Basic (Tripeptide-1)",
+    "category": "Recovery & Healing",
+    "price": "$21.98",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "ghk-basic-us-warehouse",
+    "name": "GHK Basic",
+    "category": "Recovery & Healing",
+    "price": "$6.86",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "50MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "fragment-176-191-mod-grf-1-29-ipamorelin-blend-overseas-warehouse",
+    "name": "Fragment 176-191 & Mod GRF 1-29 & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$10.22",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "12MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "fragment-176-191-cjc-1295-ipamorelin-blend-us-warehouse",
+    "name": "Fragment 176-191 & CJC-1295 & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$10.22",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "12MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "fragment-176-191-us-warehouse",
+    "name": "Fragment 176-191",
+    "category": "Weight Management",
+    "price": "$6.16",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "foxo4-dri-overseas-warehouse",
+    "name": "FOXO4-DRI",
+    "category": "Other Research",
+    "price": "$32.90",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "foxo4-anti-aging-hkms",
+    "name": "FOXO4",
+    "category": "anti-aging",
+    "price": "$300.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "F410",
+    "extraWarehouses": []
+  },
+  {
+    "id": "follistatin-344-us-warehouse",
+    "name": "Follistatin-344",
+    "category": "Other Research",
+    "price": "$19.32",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "1MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "follistatin-immune-hkms",
+    "name": "Follistatin",
+    "category": "immune",
+    "price": "$190.00",
+    "vialSizes": [
+      "1mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "FN1",
+    "extraWarehouses": []
+  },
+  {
+    "id": "epo-peptide-hkms",
+    "name": "EPO",
+    "category": "peptide",
+    "price": "$180.00",
+    "vialSizes": [
+      "10000IU"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "E3K",
+    "extraWarehouses": []
+  },
+  {
+    "id": "epithalon-us-warehouse",
+    "name": "Epithalon",
+    "category": "Other Research",
+    "price": "$55.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "dulaglutide-weight-hkms",
+    "name": "Dulaglutide",
+    "category": "weight",
+    "price": "$265.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "dsip-overseas-warehouse",
+    "name": "DSIP",
+    "category": "Other Research",
+    "price": "$100.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "15mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "dermorphin-peptide-hkms",
+    "name": "Dermorphin",
+    "category": "peptide",
+    "price": "$35.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "DR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "decapeptide-12-us-warehouse",
+    "name": "Decapeptide-12",
+    "category": "Other Research",
+    "price": "$33.60",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "crystagen-immune-hkms",
+    "name": "Crystagen",
+    "category": "immune",
+    "price": "$67.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cortagen-us-warehouse",
+    "name": "Cortagen",
+    "category": "Other Research",
+    "price": "$98.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "cjc-1295-without-dac-5mg-ipa-5mg-gh-hkms",
+    "name": "CJC-1295 without DAC 5mg + IPA 5mg",
+    "category": "gh",
+    "price": "$95.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CP10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-with-dac-gh-hkms",
+    "name": "CJC-1295 With DAC",
+    "category": "gh",
+    "price": "$140.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CD2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-whitout-dac-gh-hkms",
+    "name": "CJC-1295 Whitout DAC",
+    "category": "gh",
+    "price": "$140.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CND2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-w-o-dac-ipamorelin-blend-gh-hkp",
+    "name": "CJC-1295 w/o DAC + Ipamorelin Blend",
+    "category": "gh",
+    "price": "$100.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "IPA5CJC5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-w-o-dac-gh-chp",
+    "name": "CJC-1295 w/o DAC",
+    "category": "gh",
+    "price": "$145.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "CND10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-no-dac-mod-grf-1-29-overseas-warehouse",
+    "name": "CJC-1295 NO DAC (Mod GRF 1-29)",
+    "category": "Hormone Support",
+    "price": "$5.74",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-dac-us-warehouse",
+    "name": "CJC-1295 DAC",
+    "category": "Hormone Support",
+    "price": "$7.28",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "5MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Hormone Support",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-mod-grf-1-29-ipamorelin-ghrp-2-blend-us-warehouse",
+    "name": "CJC-1295 (Mod GRF 1-29) & Ipamorelin & GHRP-2 Blend",
+    "category": "Peptide Blends",
+    "price": "$11.34",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "9MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-ipamorelin-blend-us-warehouse",
+    "name": "CJC-1295 & Ipamorelin Blend",
+    "category": "Peptide Blends",
+    "price": "$11.20",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-ghrp-6-blend-overseas-warehouse",
+    "name": "CJC-1295 & GHRP-6 Blend",
+    "category": "Peptide Blends",
+    "price": "$9.66",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-ghrp-2-blend-us-warehouse",
+    "name": "CJC-1295 & GHRP-2 Blend",
+    "category": "Peptide Blends",
+    "price": "$11.76",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cjc-1295-mod-grf-1-29-hexarelin-blend-overseas-warehouse",
+    "name": "CJC-1295",
+    "category": "Peptide Blends",
+    "price": "$12.18",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "chonluten-us-warehouse",
+    "name": "Chonluten",
+    "category": "Other Research",
+    "price": "$7.14",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cerebrolysin-healing-hkms",
+    "name": "Cerebrolysin",
+    "category": "healing",
+    "price": "$50.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CBL60",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cartalax-us-warehouse",
+    "name": "Cartalax",
+    "category": "Recovery & Healing",
+    "price": "$8.82",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "cardiogen-overseas-warehouse",
+    "name": "Cardiogen",
+    "category": "Other Research",
+    "price": "$98.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "20mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "cagrilintide-5mg-semaglutide-5mg-weight-hkms",
+    "name": "Cagrilintide 5mg + Semaglutide 5mg",
+    "category": "weight",
+    "price": "$157.00",
+    "vialSizes": [
+      "10 mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "CS10",
+    "extraWarehouses": []
+  },
+  {
     "id": "cagrilintide-overseas-warehouse",
     "name": "Cagrilintide",
     "category": "Weight Management",
-    "price": "$52.50",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -2006,262 +2687,10 @@
     "vendor": "HKP"
   },
   {
-    "id": "mt-1-sexual-yunke",
-    "name": "MT-1",
-    "category": "sexual",
-    "price": "$14.35",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "MT1",
-    "extraWarehouses": []
-  },
-  {
-    "id": "mt-2-melanotan-2-sexual-yunke",
-    "name": "MT-2 (Melanotan 2)",
-    "category": "sexual",
-    "price": "$19.25",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Yunke",
-    "vendor_cat_no": "ML5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "pt-141-sexual-yunke",
-    "name": "PT-141",
-    "category": "sexual",
-    "price": "$19.25",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "P41",
-    "extraWarehouses": []
-  },
-  {
-    "id": "gonadorelin-acetate-other-yunke",
-    "name": "Gonadorelin Acetate",
-    "category": "other",
-    "price": "$10.50",
-    "vialSizes": [
-      "2mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "GND2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "triptorelin-acetate-other-yunke",
-    "name": "Triptorelin Acetate",
-    "category": "other",
-    "price": "$13.65",
-    "vialSizes": [
-      "2mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "TRI2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "oxytocin-acetate-other-yunke",
-    "name": "Oxytocin Acetate",
-    "category": "other",
-    "price": "$15.05",
-    "vialSizes": [
-      "5 mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "OT2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bpc-tb-blend-2-2mg-healing-yunke",
-    "name": "BPC+TB Blend 2+2mg",
-    "category": "healing",
-    "price": "$24.50",
-    "vialSizes": [
-      "4mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Yunke",
-    "vendor_cat_no": "BB4",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bpc-tb-blend-5-5mg-healing-yunke",
-    "name": "BPC+TB Blend 5+5mg",
-    "category": "healing",
-    "price": "$35.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "DP",
-    "vendor_cat_no": "BB10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bpc-tb-blend-10-10mg-healing-yunke",
-    "name": "BPC+TB Blend 10+10mg",
-    "category": "healing",
-    "price": "$63.00",
-    "vialSizes": [
-      "20mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "DP",
-    "vendor_cat_no": "BB20",
-    "extraWarehouses": []
-  },
-  {
-    "id": "adipotide-other-yunke",
-    "name": "Adipotide",
-    "category": "other",
-    "price": "$45.50",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "AP2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "tb-500-healing-yunke",
-    "name": "TB-500",
-    "category": "healing",
-    "price": "$28.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "BT2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "aod-9604-weight-yunke",
-    "name": "AOD-9604",
-    "category": "weight",
-    "price": "$77.70",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Yunke",
-    "vendor_cat_no": "2AD",
-    "extraWarehouses": []
-  },
-  {
-    "id": "hgh-fragment-176-191-weight-yunke",
-    "name": "HGH Fragment 176-191",
-    "category": "weight",
-    "price": "$12.25",
-    "vialSizes": [
-      "2mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "FR2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "survodutide-other-erp",
-    "name": "Survodutide",
-    "category": "other",
-    "price": "$87.15",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "ERP",
-    "vendor_cat_no": "SUR10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "mazdutide-weight-erp",
-    "name": "Mazdutide",
-    "category": "weight",
-    "price": "$70.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "MDT5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-cu30-bpc10-tb5-healing-jeep",
-    "name": "GLOW Blend (CU30+BPC10+TB5)",
-    "category": "healing",
-    "price": "$54.25",
-    "vialSizes": [
-      "50mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Jeep",
-    "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-cu50-bpc10-tb10-healing-jeep",
-    "name": "GLOW Blend (CU50+BPC10+TB10)",
-    "category": "healing",
-    "price": "$63.00",
-    "vialSizes": [
-      "70mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Jeep",
-    "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
-  },
-  {
-    "id": "klow-blend-cu-bpc-tb-kpv-healing-jeep",
-    "name": "KLOW Blend (CU+BPC+TB+KPV)",
-    "category": "healing",
-    "price": "$70.00",
-    "vialSizes": [
-      "80mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "Jeep",
-    "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
-  },
-  {
     "id": "cagri-sema-blend-weight-qyc",
     "name": "Cagri+Sema Blend",
     "category": "weight",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2272,24 +2701,113 @@
     "extraWarehouses": []
   },
   {
-    "id": "reta-cagri-blend-weight-qyc",
-    "name": "Reta+Cagri Blend",
-    "category": "weight",
-    "price": "$70.00",
+    "id": "bronchogen-us-warehouse",
+    "name": "Bronchogen",
+    "category": "Other Research",
+    "price": "$92.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "20mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "bpc-157-tb-500-blend-us-warehouse",
+    "name": "BPC-157 & TB-500 Blend",
+    "category": "Peptide Blends",
+    "price": "$14.70",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10MG",
+      "20MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "bpc-157-tb-500-ghk-cu-blend-overseas-warehouse",
+    "name": "BPC-157 & TB-500 & GHK-Cu Blend",
+    "category": "Peptide Blends",
+    "price": "$42.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "70MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Peptide Blends",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "bpc-157-us-warehouse",
+    "name": "BPC-157",
+    "category": "Recovery & Healing",
+    "price": "$55.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKP"
+  },
+  {
+    "id": "bpc-tb-blend-5-5mg-healing-yunke",
+    "name": "BPC+TB Blend 5+5mg",
+    "category": "healing",
+    "price": "$126.00",
     "vialSizes": [
       "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "QYC",
-    "vendor_cat_no": "RC10",
+    "vendor": "Yunke",
+    "vendor_cat_no": "BB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-2-2mg-healing-yunke",
+    "name": "BPC+TB Blend 2+2mg",
+    "category": "healing",
+    "price": "$70.00",
+    "vialSizes": [
+      "4mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "BB4",
     "extraWarehouses": []
   },
   {
     "id": "bpc-tb-blend-15-15mg-healing-upp",
     "name": "BPC+TB Blend 15+15mg",
     "category": "healing",
-    "price": "$80.50",
+    "price": "$230.00",
     "vialSizes": [
       "30mg"
     ],
@@ -2300,262 +2818,24 @@
     "extraWarehouses": []
   },
   {
-    "id": "hmg-other-upp",
-    "name": "HMG",
-    "category": "other",
-    "price": "$18.55",
-    "vialSizes": [
-      "75 iu"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "HMG75",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-bpc10-cu50-tb10-healing-upp",
-    "name": "GLOW Blend (BPC10+CU50+TB10)",
+    "id": "bpc-tb-blend-10-10mg-healing-yunke",
+    "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$255.00",
     "vialSizes": [
-      "70mg"
+      "20mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "DP",
-    "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
-  },
-  {
-    "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-upp",
-    "name": "KLOW Blend (BPC10+CU50+TB10+KPV10)",
-    "category": "healing",
-    "price": "$66.50",
-    "vialSizes": [
-      "80mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "DP",
-    "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-bpc10-cu35-tb5-healing-dp",
-    "name": "GLOW Blend (BPC10+CU35+TB5)",
-    "category": "healing",
-    "price": "$56.00",
-    "vialSizes": [
-      "50mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "DP",
-    "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glutathione-other-dp",
-    "name": "Glutathione",
-    "category": "other",
-    "price": "$30.80",
-    "vialSizes": [
-      "1500mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "GT500",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cjc-1295-w-o-dac-gh-chp",
-    "name": "CJC-1295 w/o DAC",
-    "category": "gh",
-    "price": "$50.75",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "CHP",
-    "vendor_cat_no": "CND10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "ss-31-other-chp",
-    "name": "SS-31",
-    "category": "other",
-    "price": "$98.00",
-    "vialSizes": [
-      "50mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "SS10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "klow-blend-cu-tb-bpc-kpv-healing-chp",
-    "name": "KLOW Blend (CU+TB+BPC+KPV)",
-    "category": "healing",
-    "price": "$63.00",
-    "vialSizes": [
-      "80mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "CHP",
-    "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-cu-tb-bpc-healing-chp",
-    "name": "GLOW Blend (CU+TB+BPC)",
-    "category": "healing",
-    "price": "$59.50",
-    "vialSizes": [
-      "70mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "CHP",
-    "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
-  },
-  {
-    "id": "aa-water-other-hkms",
-    "name": "AA Water",
-    "category": "other",
-    "price": "$5.25",
-    "vialSizes": [
-      "10ml"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "AA3",
-    "extraWarehouses": []
-  },
-  {
-    "id": "acth-1-39-peptide-hkms",
-    "name": "Acth 1-39",
-    "category": "peptide",
-    "price": "$21.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "admax-peptide-hkms",
-    "name": "Admax",
-    "category": "peptide",
-    "price": "$38.50",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "alprostadil-immune-hkms",
-    "name": "Alprostadil",
-    "category": "immune",
-    "price": "$19.60",
-    "vialSizes": [
-      "20ug"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "AS20",
-    "extraWarehouses": []
-  },
-  {
-    "id": "aod9604-weight-hkms",
-    "name": "AOD9604",
-    "category": "weight",
-    "price": "$28.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "2AD",
-    "extraWarehouses": []
-  },
-  {
-    "id": "ara-290-cibinetide-peptide-hkms",
-    "name": "ARA 290(Cibinetide)",
-    "category": "peptide",
-    "price": "$28.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "RA10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bac-water-other-hkms",
-    "name": "Bac Water",
-    "category": "other",
-    "price": "$2.80",
-    "vialSizes": [
-      "10ml"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "WA3",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bac-water-moq-50-boxes-other-hkms",
-    "name": "Bac Water (MOQ 50 boxes)",
-    "category": "other",
-    "price": "$8.40",
-    "vialSizes": [
-      "30ml"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "W30",
-    "extraWarehouses": []
-  },
-  {
-    "id": "bpc-157-healing-hkms",
-    "name": "BPC 157",
-    "category": "healing",
-    "price": "$28.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "BC2",
+    "vendor": "Yunke",
+    "vendor_cat_no": "BB20",
     "extraWarehouses": []
   },
   {
     "id": "bpc-5mg-tb-5mg-other-hkms",
     "name": "BPC 5mg + TB 5mg",
     "category": "other",
-    "price": "$31.50",
+    "price": "$90.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2566,10 +2846,24 @@
     "extraWarehouses": []
   },
   {
+    "id": "bpc-157-healing-hkms",
+    "name": "BPC 157",
+    "category": "healing",
+    "price": "$80.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "BC2",
+    "extraWarehouses": []
+  },
+  {
     "id": "bpc-10mg-tb-10mg-other-hkms",
     "name": "BPC 10mg + TB 10mg",
     "category": "other",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2583,7 +2877,7 @@
     "id": "bc10-tb10-ghk50-glow-healing-hkms",
     "name": "BC10+TB10+GHK50 (Glow)",
     "category": "healing",
-    "price": "$66.50",
+    "price": "$190.00",
     "vialSizes": [
       "70mg"
     ],
@@ -2594,82 +2888,190 @@
     "extraWarehouses": []
   },
   {
-    "id": "cagrilintide-5mg-semaglutide-5mg-weight-hkms",
-    "name": "Cagrilintide 5mg + Semaglutide 5mg",
+    "id": "bac-water-moq-50-boxes-other-hkms",
+    "name": "Bac Water (MOQ 50 boxes)",
+    "category": "other",
+    "price": "$24.00",
+    "vialSizes": [
+      "30ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "W30",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bac-water-other-hkms",
+    "name": "Bac Water",
+    "category": "other",
+    "price": "$8.00",
+    "vialSizes": [
+      "10ml"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "WA3",
+    "extraWarehouses": []
+  },
+  {
+    "id": "b7-33-us-warehouse",
+    "name": "B7-33",
+    "category": "Other Research",
+    "price": "$200.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "10mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "ara-290-overseas-warehouse",
+    "name": "ARA-290",
+    "category": "Recovery & Healing",
+    "price": "$12.88",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "16MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Recovery & Healing",
+      "data-warehouse": "Overseas Warehouse"
+    }
+  },
+  {
+    "id": "ara-290-cibinetide-peptide-hkms",
+    "name": "ARA 290(Cibinetide)",
+    "category": "peptide",
+    "price": "$80.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "RA10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "aod9604-weight-hkms",
+    "name": "AOD9604",
     "category": "weight",
-    "price": "$54.95",
-    "vialSizes": [
-      "10 mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "CS10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cerebrolysin-healing-hkms",
-    "name": "Cerebrolysin",
-    "category": "healing",
-    "price": "$17.50",
-    "vialSizes": [
-      "60mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "CBL60",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cjc-1295-whitout-dac-gh-hkms",
-    "name": "CJC-1295 Whitout DAC",
-    "category": "gh",
-    "price": "$49.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "CND2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cjc-1295-without-dac-5mg-ipa-5mg-gh-hkms",
-    "name": "CJC-1295 without DAC 5mg + IPA 5mg",
-    "category": "gh",
-    "price": "$33.25",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "CP10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cjc-1295-with-dac-gh-hkms",
-    "name": "CJC-1295 With DAC",
-    "category": "gh",
-    "price": "$49.00",
+    "price": "$80.00",
     "vialSizes": [
       "5mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "CD2",
+    "vendor_cat_no": "2AD",
     "extraWarehouses": []
   },
   {
-    "id": "crystagen-immune-hkms",
-    "name": "Crystagen",
-    "category": "immune",
-    "price": "$23.45",
+    "id": "aod-9604-weight-yunke",
+    "name": "AOD-9604",
+    "category": "weight",
+    "price": "$222.00",
     "vialSizes": [
-      "20mg"
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "2AD",
+    "extraWarehouses": []
+  },
+  {
+    "id": "aod-9604-us-warehouse",
+    "name": "AOD 9604",
+    "category": "Weight Management",
+    "price": "$5.74",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5MG",
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "alprostadil-immune-hkms",
+    "name": "Alprostadil",
+    "category": "immune",
+    "price": "$56.00",
+    "vialSizes": [
+      "20ug"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "AS20",
+    "extraWarehouses": []
+  },
+  {
+    "id": "aicar-us-warehouse",
+    "name": "AICAR",
+    "category": "Weight Management",
+    "price": "$80.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "100mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "US Warehouse"
+    },
+    "vendor": "HKMS"
+  },
+  {
+    "id": "ahk-cu-overseas-warehouse",
+    "name": "AHK-Cu",
+    "category": "Other Research",
+    "price": "$55.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "50mg"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "UPP"
+  },
+  {
+    "id": "admax-peptide-hkms",
+    "name": "Admax",
+    "category": "peptide",
+    "price": "$110.00",
+    "vialSizes": [
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -2678,26 +3080,44 @@
     "extraWarehouses": []
   },
   {
-    "id": "dermorphin-peptide-hkms",
-    "name": "Dermorphin",
-    "category": "peptide",
-    "price": "$12.25",
+    "id": "adipotide-ftpp-us-warehouse",
+    "name": "Adipotide (FTPP)",
+    "category": "Weight Management",
+    "price": "$10.92",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Weight Management",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "adipotide-other-yunke",
+    "name": "Adipotide",
+    "category": "other",
+    "price": "$212.00",
     "vialSizes": [
       "5mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "DR5",
+    "vendor": "Yunke",
+    "vendor_cat_no": "AP2",
     "extraWarehouses": []
   },
   {
-    "id": "dulaglutide-weight-hkms",
-    "name": "Dulaglutide",
-    "category": "weight",
-    "price": "$92.75",
+    "id": "acth-1-39-peptide-hkms",
+    "name": "Acth 1-39",
+    "category": "peptide",
+    "price": "$60.00",
     "vialSizes": [
-      "10mg"
+      "5mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -2706,164 +3126,80 @@
     "extraWarehouses": []
   },
   {
-    "id": "epo-peptide-hkms",
-    "name": "EPO",
-    "category": "peptide",
-    "price": "$63.00",
-    "vialSizes": [
-      "10000IU"
-    ],
+    "id": "acetyl-hexapeptide-3-argireline-us-warehouse",
+    "name": "Acetyl Hexapeptide-3 (Argireline)",
+    "category": "Other Research",
+    "price": "$31.64",
+    "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "E3K",
-    "extraWarehouses": []
+    "inStock": false,
+    "visible": true,
+    "vialSizes": [
+      "200MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
   },
   {
-    "id": "follistatin-immune-hkms",
-    "name": "Follistatin",
-    "category": "immune",
-    "price": "$66.50",
+    "id": "ace-031-overseas-warehouse",
+    "name": "ACE-031",
+    "category": "Other Research",
+    "price": "$180.00",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
     "vialSizes": [
       "1mg"
     ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "FN1",
-    "extraWarehouses": []
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "Overseas Warehouse"
+    },
+    "vendor": "HKMS"
   },
   {
-    "id": "foxo4-anti-aging-hkms",
-    "name": "FOXO4",
-    "category": "anti-aging",
-    "price": "$105.00",
+    "id": "abp-7-us-warehouse",
+    "name": "ABP-7",
+    "category": "Other Research",
+    "price": "$12.88",
+    "description": "Research Use Only",
+    "warehouse": "Overseas Warehouse",
+    "inStock": false,
+    "visible": true,
     "vialSizes": [
-      "10mg"
+      "5mg",
+      "10MG"
+    ],
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
+    "id": "aa-water-other-hkms",
+    "name": "AA Water",
+    "category": "other",
+    "price": "$15.00",
+    "vialSizes": [
+      "10ml"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "F410",
-    "extraWarehouses": []
-  },
-  {
-    "id": "ghrp-2-acetate-gh-hkms",
-    "name": "GHRP-2 Acetate",
-    "category": "gh",
-    "price": "$15.75",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "G25",
-    "extraWarehouses": []
-  },
-  {
-    "id": "ghrp-6-acetate-gh-hkms",
-    "name": "GHRP-6 Acetate",
-    "category": "gh",
-    "price": "$15.75",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "G65",
-    "extraWarehouses": []
-  },
-  {
-    "id": "hyaluronic-acid-cosmetic-hkms",
-    "name": "Hyaluronic acid",
-    "category": "cosmetic",
-    "price": "$7.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "HA5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "hexarelin-acetate-gh-hkms",
-    "name": "Hexarelin Acetate",
-    "category": "gh",
-    "price": "$26.25",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "HX2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "hgh-191aa-somatropin-gh-hkms",
-    "name": "HGH 191AA(Somatropin)",
-    "category": "gh",
-    "price": "$22.75",
-    "vialSizes": [
-      "15iu"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "H08",
-    "extraWarehouses": []
-  },
-  {
-    "id": "igf-1lr3-peptide-hkms",
-    "name": "IGF-1LR3",
-    "category": "peptide",
-    "price": "$63.70",
-    "vialSizes": [
-      "1mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "IG01",
-    "extraWarehouses": []
-  },
-  {
-    "id": "igf-des-peptide-hkms",
-    "name": "IGF-DES",
-    "category": "peptide",
-    "price": "$16.80",
-    "vialSizes": [
-      "2 mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "IGD",
-    "extraWarehouses": []
-  },
-  {
-    "id": "insulin-peptide-hkms",
-    "name": "Insulin",
-    "category": "peptide",
-    "price": "$73.50",
-    "vialSizes": [
-      "3ml"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "ISU",
+    "vendor_cat_no": "AA3",
     "extraWarehouses": []
   },
   {
     "id": "5-amino-1mq-peptide-hkms",
     "name": "5-amino-1mq",
     "category": "peptide",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "5mg"
     ],
@@ -2874,339 +3210,1529 @@
     "extraWarehouses": []
   },
   {
-    "id": "lemon-bottle-cosmetic-hkms",
-    "name": "Lemon Bottle",
-    "category": "cosmetic",
-    "price": "$26.25",
+    "id": "hgh-191aa-somatropin-gh-yunke",
+    "name": "HGH 191AA (Somatropin)",
+    "category": "gh",
+    "price": "$210.00",
     "vialSizes": [
-      "10ml"
+      "36iu"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
+    "vendor": "Yunke",
+    "vendor_cat_no": "H06",
     "extraWarehouses": []
   },
   {
-    "id": "l-carnitine-10ml-600mg-ml-other-hkms",
-    "name": "L-carnitine 10ml*600mg/ml",
+    "id": "dsip-other-yunke",
+    "name": "DSIP",
     "category": "other",
-    "price": "$17.50",
+    "price": "$105.00",
     "vialSizes": [
-      "10ml"
+      "15mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "DS2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "selank-nootropic-yunke",
+    "name": "Selank",
+    "category": "nootropic",
+    "price": "$170.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "SK5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "epithalon-other-yunke",
+    "name": "Epithalon",
+    "category": "other",
+    "price": "$35.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "ET10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-yunke",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$126.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "BC2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ace-031-other-yunke",
+    "name": "ACE-031",
+    "category": "other",
+    "price": "$95.00",
+    "vialSizes": [
+      "1mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "AE1",
+    "extraWarehouses": []
+  },
+  {
+    "id": "aicar-other-yunke",
+    "name": "AICAR",
+    "category": "other",
+    "price": "$67.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "AR50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semax-nootropic-yunke",
+    "name": "Semax",
+    "category": "nootropic",
+    "price": "$170.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "XA5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-yunke",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$160.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "SM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-yunke",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$252.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "TR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-yunke",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$450.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "RT10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "sermorelin-gh-yunke",
+    "name": "Sermorelin",
+    "category": "gh",
+    "price": "$165.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "SMO2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hcg-other-yunke",
+    "name": "HCG",
+    "category": "other",
+    "price": "$165.00",
+    "vialSizes": [
+      "10000IU"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "G5K",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tesamorelin-gh-yunke",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$250.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "TSM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ipamorelin-gh-yunke",
+    "name": "Ipamorelin",
+    "category": "gh",
+    "price": "$83.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "IP2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghk-cu-other-yunke",
+    "name": "GHK-CU",
+    "category": "other",
+    "price": "$60.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "CU",
+    "extraWarehouses": []
+  },
+  {
+    "id": "thymosin-alpha-1-healing-yunke",
+    "name": "Thymosin Alpha-1",
+    "category": "healing",
+    "price": "$95.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "TA2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mots-c-other-yunke",
+    "name": "MOTS-C",
+    "category": "other",
+    "price": "$233.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "MS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-other-yunke",
+    "name": "NAD+",
+    "category": "other",
+    "price": "$250.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "NJ3100",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cagrilintide-weight-yunke",
+    "name": "Cagrilintide",
+    "category": "weight",
+    "price": "$250.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Yunke",
+    "vendor_cat_no": "CGL5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-erp",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$109.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "SM5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-erp",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$209.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "TR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-erp",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$299.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cagrilintide-weight-erp",
+    "name": "Cagrilintide",
+    "category": "weight",
+    "price": "$245.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "CGL5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-erp",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$69.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "BC5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-erp",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$140.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "BT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-5-5mg-healing-erp",
+    "name": "BPC+TB Blend 5+5mg",
+    "category": "healing",
+    "price": "$95.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "BB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-10-10mg-healing-erp",
+    "name": "BPC+TB Blend 10+10mg",
+    "category": "healing",
+    "price": "$175.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "BB20",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tesamorelin-gh-erp",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$200.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "TSM5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ipamorelin-gh-erp",
+    "name": "Ipamorelin",
+    "category": "gh",
+    "price": "$75.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "IP5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-other-erp",
+    "name": "NAD+",
+    "category": "other",
+    "price": "$189.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "ERP",
+    "vendor_cat_no": "NJ500",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tesamorelin-gh-jeep",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$158.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "TESA5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-jeep",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$130.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "TB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghk-cu-other-jeep",
+    "name": "GHK-CU",
+    "category": "other",
+    "price": "$80.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "CU50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-jeep",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "BPC10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-jeep",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$380.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-jeep",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$450.00",
+    "vialSizes": [
+      "120mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "TR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "sermorelin-gh-jeep",
+    "name": "Sermorelin",
+    "category": "gh",
+    "price": "$150.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "SERMO5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mots-c-other-jeep",
+    "name": "MOTS-C",
+    "category": "other",
+    "price": "$200.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "MOTS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semax-nootropic-jeep",
+    "name": "Semax",
+    "category": "nootropic",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "SX10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "selank-nootropic-jeep",
+    "name": "Selank",
+    "category": "nootropic",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "Jeep",
+    "vendor_cat_no": "SK10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-qyc",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$450.00",
+    "vialSizes": [
+      "120mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "TR5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-qyc",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$450.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-qyc",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$120.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "SM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cagrilintide-weight-qyc",
+    "name": "Cagrilintide",
+    "category": "weight",
+    "price": "$160.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "CGL5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tesamorelin-gh-qyc",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$155.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "TSM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ipamorelin-gh-qyc",
+    "name": "Ipamorelin",
+    "category": "gh",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "IP2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "sermorelin-gh-qyc",
+    "name": "Sermorelin",
+    "category": "gh",
+    "price": "$95.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "SMO2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-qyc",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "BC5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-qyc",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$110.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "BT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-5-5mg-healing-qyc",
+    "name": "BPC+TB Blend 5+5mg",
+    "category": "healing",
+    "price": "$85.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "BB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-10-10mg-healing-qyc",
+    "name": "BPC+TB Blend 10+10mg",
+    "category": "healing",
+    "price": "$160.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "BB20",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-other-qyc",
+    "name": "NAD+",
+    "category": "other",
+    "price": "$110.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "QYC",
+    "vendor_cat_no": "NJ3100",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghk-cu-other-upp",
+    "name": "GHK-CU",
+    "category": "other",
+    "price": "$48.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "CU50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-upp",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$430.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-upp",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$300.00",
+    "vialSizes": [
+      "120mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "TR2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-upp",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$80.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "SM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-upp",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "BC2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-5-5mg-healing-upp",
+    "name": "BPC+TB Blend 5+5mg",
+    "category": "healing",
+    "price": "$100.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "BB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-10-10mg-healing-upp",
+    "name": "BPC+TB Blend 10+10mg",
+    "category": "healing",
+    "price": "$160.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "BB20",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-upp",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$130.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "BT2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hcg-other-upp",
+    "name": "HCG",
+    "category": "other",
+    "price": "$150.00",
+    "vialSizes": [
+      "10000IU"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "G1K",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hgh-fragment-176-191-weight-upp",
+    "name": "HGH Fragment 176-191",
+    "category": "weight",
+    "price": "$160.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "FR1",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mots-c-other-upp",
+    "name": "MOTS-C",
+    "category": "other",
+    "price": "$215.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "UPP",
+    "vendor_cat_no": "MS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-dp",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$360.00",
+    "vialSizes": [
+      "120mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "TR2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-dp",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$330.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-dp",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$110.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "SM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-bpc10-cu50-tb10-healing-dp",
+    "name": "GLOW Blend (BPC10+CU50+TB10)",
+    "category": "healing",
+    "price": "$180.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "GLOW70",
+    "extraWarehouses": []
+  },
+  {
+    "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-dp",
+    "name": "KLOW Blend (BPC10+CU50+TB10+KPV10)",
+    "category": "healing",
+    "price": "$190.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "kpv-healing-dp",
+    "name": "KPV",
+    "category": "healing",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "KPV10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "vip-other-dp",
+    "name": "VIP",
+    "category": "other",
+    "price": "$180.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "VIP10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghk-cu-other-dp",
+    "name": "GHK-CU",
+    "category": "other",
+    "price": "$50.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "CU50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-other-dp",
+    "name": "NAD+",
+    "category": "other",
+    "price": "$110.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "NJ100",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-5-5mg-healing-dp",
+    "name": "BPC+TB Blend 5+5mg",
+    "category": "healing",
+    "price": "$100.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "BB10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-tb-blend-10-10mg-healing-dp",
+    "name": "BPC+TB Blend 10+10mg",
+    "category": "healing",
+    "price": "$180.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "BB20",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-dp",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$300.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "BT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-dp",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$130.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "DP",
+    "vendor_cat_no": "BC10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-weight-chp",
+    "name": "Tirzepatide",
+    "category": "weight",
+    "price": "$195.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "T15",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-chp",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$300.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "RT10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-chp",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$110.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "TB5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "bpc-157-healing-chp",
+    "name": "BPC-157",
+    "category": "healing",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "BPC10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mots-c-other-chp",
+    "name": "MOTS-C",
+    "category": "other",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "MOTS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semax-nootropic-chp",
+    "name": "Semax",
+    "category": "nootropic",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "Semax10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tesamorelin-gh-chp",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$150.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "TESA10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ipamorelin-gh-chp",
+    "name": "Ipamorelin",
+    "category": "gh",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "IPA10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ghk-cu-other-chp",
+    "name": "GHK-CU",
+    "category": "other",
+    "price": "$65.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "GHK50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-other-chp",
+    "name": "NAD+",
+    "category": "other",
+    "price": "$145.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "CHP",
+    "vendor_cat_no": "NAD500",
+    "extraWarehouses": []
+  },
+  {
+    "id": "adipotide-weight-hkms",
+    "name": "Adipotide",
+    "category": "weight",
+    "price": "$130.00",
+    "vialSizes": [
+      "5mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "LC600",
+    "vendor_cat_no": "AP2",
     "extraWarehouses": []
   },
   {
-    "id": "lc216-peptide-hkms",
-    "name": "LC216",
-    "category": "peptide",
-    "price": "$42.70",
+    "id": "cagrilintide-weight-hkms",
+    "name": "Cagrilintide",
+    "category": "weight",
+    "price": "$190.00",
     "vialSizes": [
       "10 mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "LC216",
+    "vendor_cat_no": "CGL5",
     "extraWarehouses": []
   },
   {
-    "id": "liraglutide-weight-hkms",
-    "name": "Liraglutide",
-    "category": "weight",
-    "price": "$151.20",
-    "vialSizes": [
-      "30mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "ll37-peptide-hkms",
-    "name": "LL37",
-    "category": "peptide",
-    "price": "$28.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "375",
-    "extraWarehouses": []
-  },
-  {
-    "id": "melatonin-anti-aging-hkms",
-    "name": "Melatonin",
+    "id": "epithalon-anti-aging-hkms",
+    "name": "Epithalon",
     "category": "anti-aging",
-    "price": "$18.55",
+    "price": "$140.00",
     "vialSizes": [
-      "10mg"
+      "50mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "MTF10",
+    "vendor_cat_no": "ET10",
     "extraWarehouses": []
   },
   {
-    "id": "mt-2-melanotan-2-acetate-immune-hkms",
-    "name": "MT-2 (Melanotan 2 Acetate)",
+    "id": "glutathione-immune-hkms",
+    "name": "Glutathione",
     "category": "immune",
-    "price": "$14.35",
+    "price": "$35.00",
     "vialSizes": [
-      "10mg"
+      "600mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "ML10",
+    "vendor_cat_no": "GTT",
     "extraWarehouses": []
   },
   {
-    "id": "orexin-a-neuro-hkms",
-    "name": "Orexin A",
-    "category": "neuro",
-    "price": "$202.30",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "orexin-b-neuro-hkms",
-    "name": "Orexin B",
-    "category": "neuro",
-    "price": "$81.90",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "p21-p021-peptide-hkms",
-    "name": "P21(P021)",
-    "category": "peptide",
-    "price": "$105.00",
-    "vialSizes": [
-      "5mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "*",
-    "extraWarehouses": []
-  },
-  {
-    "id": "peg-mgf-peptide-hkms",
-    "name": "PEG MGF",
-    "category": "peptide",
-    "price": "$24.50",
+    "id": "gonadorelin-acetate-anti-aging-hkms",
+    "name": "Gonadorelin Acetate",
+    "category": "anti-aging",
+    "price": "$30.00",
     "vialSizes": [
       "2mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "FMP2",
+    "vendor_cat_no": "GND2",
     "extraWarehouses": []
   },
   {
-    "id": "ra260-peptide-hkms",
-    "name": "RA260",
-    "category": "peptide",
-    "price": "$19.60",
+    "id": "hgh-fragment-176-191-gh-hkms",
+    "name": "HGH Fragment 176-191",
+    "category": "gh",
+    "price": "$35.00",
+    "vialSizes": [
+      "2mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "FR2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "hmg-gh-hkms",
+    "name": "HMG",
+    "category": "gh",
+    "price": "$53.00",
+    "vialSizes": [
+      "75 iu"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "G75",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ipamorelin-gh-hkms",
+    "name": "Ipamorelin",
+    "category": "gh",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "IP5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "kpv-immune-hkms",
+    "name": "KPV",
+    "category": "immune",
+    "price": "$56.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "KP10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mt-1-sexual-hkms",
+    "name": "MT-1",
+    "category": "sexual",
+    "price": "$41.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "MT1",
+    "extraWarehouses": []
+  },
+  {
+    "id": "nad-anti-aging-hkms",
+    "name": "NAD+",
+    "category": "anti-aging",
+    "price": "$160.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "NJ500",
+    "extraWarehouses": []
+  },
+  {
+    "id": "oxytocin-acetate-immune-hkms",
+    "name": "Oxytocin Acetate",
+    "category": "immune",
+    "price": "$43.00",
+    "vialSizes": [
+      "5 mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "OT2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "pt-141-sexual-hkms",
+    "name": "PT-141",
+    "category": "sexual",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "P41",
+    "extraWarehouses": []
+  },
+  {
+    "id": "retatrutide-weight-hkms",
+    "name": "Retatrutide",
+    "category": "weight",
+    "price": "$240.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "RT5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "semaglutide-weight-hkms",
+    "name": "Semaglutide",
+    "category": "weight",
+    "price": "$85.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "SM5",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ss-31-anti-aging-hkms",
+    "name": "SS-31",
+    "category": "anti-aging",
+    "price": "$365.00",
     "vialSizes": [
       "50mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "AR50",
+    "vendor_cat_no": "2S10",
     "extraWarehouses": []
   },
   {
-    "id": "slu-pp-332-weight-hkms",
-    "name": "Slu-pp-332",
+    "id": "tesamorelin-gh-hkms",
+    "name": "Tesamorelin",
+    "category": "gh",
+    "price": "$350.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "TSM2",
+    "extraWarehouses": []
+  },
+  {
+    "id": "triptorelin-acetate-immune-hkms",
+    "name": "Triptorelin Acetate",
+    "category": "immune",
+    "price": "$39.00",
+    "vialSizes": [
+      "2mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKMS",
+    "vendor_cat_no": "*",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glutathione-other-hkp",
+    "name": "Glutathione",
+    "category": "other",
+    "price": "$88.00",
+    "vialSizes": [
+      "1500mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "GTT600",
+    "extraWarehouses": []
+  },
+  {
+    "id": "mazdutide-weight-hkp",
+    "name": "Mazdutide",
     "category": "weight",
-    "price": "$35.00",
+    "price": "$200.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "MDT10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "ss-31-other-hkp",
+    "name": "SS-31",
+    "category": "other",
+    "price": "$280.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "SS10",
+    "extraWarehouses": []
+  },
+  {
+    "id": "tb-500-healing-hkp",
+    "name": "TB-500",
+    "category": "healing",
+    "price": "$80.00",
     "vialSizes": [
       "5mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "SLU5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "sm5-cgl5-other-hkms",
-    "name": "SM5+CGL5",
-    "category": "other",
-    "price": "$54.95",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "CS10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "sermorelin-acetate-gh-hkms",
-    "name": "Sermorelin Acetate",
-    "category": "gh",
-    "price": "$38.50",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "SMO5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "survotitude-anti-aging-hkms",
-    "name": "Survotitude",
-    "category": "anti-aging",
-    "price": "$89.95",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "SUR10",
-    "extraWarehouses": []
-  },
-  {
-    "id": "tb500-thymosin-b4-acetate-healing-hkms",
-    "name": "TB500(Thymosin B4 Acetate)",
-    "category": "healing",
-    "price": "$49.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "BT2",
-    "extraWarehouses": []
-  },
-  {
-    "id": "tb-10mg-bpc-157-10mg-ghk-50mg-kpv-10mg-healing-hkms",
-    "name": "TB 10mg+BPC-157 10mg+GHK 50mg+KPV 10mg",
-    "category": "healing",
-    "price": "$77.00",
-    "vialSizes": [
-      "80mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
-  },
-  {
-    "id": "trizepatide-weight-hkms",
-    "name": "Trizepatide",
-    "category": "weight",
-    "price": "$108.50",
-    "vialSizes": [
-      "120mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "TR5",
-    "extraWarehouses": []
-  },
-  {
-    "id": "vitamin-b12-immune-hkms",
-    "name": "Vitamin B12",
-    "category": "immune",
-    "price": "$3.50",
-    "vialSizes": [
-      "2ml"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKMS",
-    "vendor_cat_no": "B1210",
-    "extraWarehouses": []
-  },
-  {
-    "id": "klow-blend-cu50-tb10-bpc10-kpv10-healing-hkp",
-    "name": "KLOW Blend (CU50+TB10+BPC10+KPV10)",
-    "category": "healing",
-    "price": "$59.50",
-    "vialSizes": [
-      "80mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
     "vendor": "HKP",
-    "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-cu35-tb10-bpc5-healing-hkp",
-    "name": "GLOW Blend (CU35+TB10+BPC5)",
-    "category": "healing",
-    "price": "$49.00",
-    "vialSizes": [
-      "50mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
-  },
-  {
-    "id": "glow-blend-cu50-tb10-bpc10-healing-hkp",
-    "name": "GLOW Blend (CU50+TB10+BPC10)",
-    "category": "healing",
-    "price": "$54.25",
-    "vialSizes": [
-      "70mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
-  },
-  {
-    "id": "cjc-1295-w-o-dac-ipamorelin-blend-gh-hkp",
-    "name": "CJC-1295 w/o DAC + Ipamorelin Blend",
-    "category": "gh",
-    "price": "$35.00",
-    "vialSizes": [
-      "10mg"
-    ],
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "vendor": "HKP",
-    "vendor_cat_no": "IPA5CJC5",
+    "vendor_cat_no": "TB5",
     "extraWarehouses": []
   }
 ]
