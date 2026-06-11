@@ -98,7 +98,11 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     <h1>Pricing Admin</h1>
     <p>Pep Suppliers internal tool</p>
     <input type="password" id="pw-input" placeholder="Admin password" autocomplete="current-password">
-    <button onclick="doLogin()">Sign In</button>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;justify-content:flex-start">
+    <input type="checkbox" id="remember-me" style="width:auto;margin:0;cursor:pointer">
+    <label for="remember-me" style="font-size:13px;color:#6b7f94;cursor:pointer;user-select:none">Remember me on this device</label>
+  </div>
+  <button onclick="doLogin()">Sign In</button>
     <div class="login-error" id="login-error">Incorrect password</div>
   </div>
 </div>
@@ -215,11 +219,25 @@ var _sortDir = 1;
 var _favs = {};
 var _activeTab = 'all';
 try { _favs = JSON.parse(localStorage.getItem('admin_favs') || '{}'); } catch(e){}
+var _savedPw = localStorage.getItem('admin_saved_pw');
+if (_savedPw) {
+  _password = _savedPw;
+  window.addEventListener('DOMContentLoaded', function() {
+    var cb = document.getElementById('remember-me');
+    if (cb) cb.checked = true;
+    loadProducts();
+  });
+}
 
 function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
   _password = pw;
+  if (document.getElementById('remember-me').checked) {
+    localStorage.setItem('admin_saved_pw', pw);
+  } else {
+    localStorage.removeItem('admin_saved_pw');
+  }
   loadProducts();
 }
 document.getElementById('pw-input').addEventListener('keydown', function(e){ if (e.key==='Enter') doLogin(); });
