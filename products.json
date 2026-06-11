@@ -1632,7 +1632,8 @@
       "data-category": "Weight Management",
       "data-warehouse": "US Warehouse"
     },
-    "vendor": "HKMS"
+    "vendor": "HKMS",
+    "salePrice": "$48.00"
   },
   {
     "id": "ahk-cu-overseas-warehouse",
@@ -1853,7 +1854,8 @@
     "vendor": "Yunke",
     "vendor_cat_no": "AR50",
     "extraWarehouses": [],
-    "visible": true
+    "visible": true,
+    "salePrice": "$40.20"
   },
   {
     "id": "semax-nootropic-yunke",
