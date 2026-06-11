@@ -23,17 +23,19 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .admin-header h1{font-size:18px;font-weight:900}
 .admin-header span{font-size:13px;opacity:.7}
 
-.toolbar{display:flex;align-items:center;gap:12px;padding:20px 32px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
-.toolbar input[type=search]{flex:1;min-width:200px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
+.toolbar{display:flex;align-items:center;gap:12px;padding:16px 32px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.toolbar input[type=search]{flex:1;min-width:180px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
 .toolbar input[type=search]:focus{border-color:var(--teal)}
 .toolbar select{padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:#fff;outline:none;cursor:pointer}
-.btn{padding:9px 20px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;border:none}
+.btn{padding:9px 18px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;white-space:nowrap}
 .btn-primary{background:var(--teal);color:#fff}
 .btn-primary:hover{background:#0a5a5f}
 .btn-primary:disabled{background:#9aabb8;cursor:not-allowed}
 .btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
 .btn-secondary:hover{background:var(--bg)}
-.btn-danger{background:#c0392b;color:#fff}
+.btn-danger{background:#fff;color:#c0392b;border:1px solid #f5c6cb}
+.btn-danger:hover{background:#f8d7da}
+.toolbar-divider{width:1px;height:28px;background:var(--border);margin:0 4px}
 
 .status-bar{padding:10px 32px;font-size:13px;font-weight:600;display:none}
 .status-bar.success{background:#d4edda;color:#155724;display:block}
@@ -41,34 +43,40 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .status-bar.loading{background:#d1ecf1;color:#0c5460;display:block}
 
 .table-wrap{padding:24px 32px;overflow-x:auto}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:14px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:13px}
 thead tr{background:var(--navy);color:#fff}
-thead th{padding:12px 14px;text-align:left;font-weight:700;white-space:nowrap}
+thead th{padding:11px 12px;text-align:left;font-weight:700;white-space:nowrap}
 tbody tr:nth-child(even){background:#f7fafc}
 tbody tr:hover{background:#EEF8FA}
-tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
 .changed-row{background:#fffbe6!important}
 .changed-row td:first-child{border-left:3px solid #f0a500}
 
-.price-input{width:110px;padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:14px;font-family:inherit;text-align:right;outline:none}
+.price-input{width:100px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;text-align:right;outline:none}
 .price-input:focus{border-color:var(--teal)}
 .price-input.changed{border-color:#f0a500;background:#fffbe6}
 
-.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700}
+.badge{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:700}
 .badge-us{background:#EEF8FA;color:var(--teal)}
 .badge-cn{background:#fff3cd;color:#856404}
-.badge-oos{background:#f8d7da;color:#721c24}
 .badge-ca{background:#d4edda;color:#155724}
+.badge-vendor{background:#ede9fe;color:#5b21b6}
+
+.wh-checks{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.wh-label{display:flex;align-items:center;gap:4px;font-size:12px;font-weight:600;cursor:pointer;padding:3px 8px;border-radius:10px;border:1px solid var(--border);background:#fff;user-select:none}
+.wh-label:hover{background:var(--bg)}
+.wh-label input{cursor:pointer;accent-color:var(--teal)}
+.wh-label.us{color:var(--teal)}
+.wh-label.ca{color:#155724}
 
 .changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
-.markup-input{width:70px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:center;outline:none}
+.markup-input{width:65px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;text-align:center;outline:none}
 .markup-input:focus{border-color:var(--teal)}
-.vial-input{width:130px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;outline:none}
+.vial-input{width:120px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;outline:none}
 .vial-input:focus{border-color:var(--teal)}
-.vial-input.changed{border-color:#f0a500;background:#fffbe6}
-.name-input{width:180px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-weight:700;outline:none}
+.vial-input.changed,.name-input.changed{border-color:#f0a500;background:#fffbe6}
+.name-input{width:160px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-weight:700;outline:none}
 .name-input:focus{border-color:var(--teal)}
-.name-input.changed{border-color:#f0a500;background:#fffbe6}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
@@ -96,17 +104,40 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
     <input type="search" id="search-box" placeholder="Search products..." oninput="filterTable()">
     <select id="warehouse-filter" onchange="filterTable()">
       <option value="">All Warehouses</option>
-      <option value="US Warehouse">US Warehouse</option>
-      <option value="Overseas Warehouse">China Warehouse</option>
-      <option value="Canada Warehouse">Canada Warehouse</option>
+      <option value="Overseas Warehouse">China</option>
+      <option value="US Warehouse">US</option>
+      <option value="Canada Warehouse">Canada</option>
+    </select>
+    <select id="vendor-filter" onchange="filterTable()">
+      <option value="">All Vendors</option>
+      <option value="yunke">Yunke</option>
+      <option value="erp">ERP</option>
+      <option value="jeep">Jeep</option>
+      <option value="qyc">QYC</option>
+      <option value="upp">UPP</option>
+      <option value="dp">DP</option>
+      <option value="chp">CHP</option>
+      <option value="hkms">HKMS</option>
+      <option value="hkp">HKP</option>
     </select>
     <select id="stock-filter" onchange="filterTable()">
       <option value="">All Stock</option>
       <option value="instock">In Stock</option>
       <option value="oos">Out of Stock</option>
     </select>
+
+    <div class="toolbar-divider"></div>
+
     <label class="btn btn-secondary" style="cursor:pointer">📂 Upload Price Sheet<input type="file" id="xlsx-upload" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleXlsxUpload(this)"></label>
     <button class="btn btn-secondary" onclick="applyMarkup()">Apply % Markup</button>
+
+    <div class="toolbar-divider"></div>
+
+    <button class="btn btn-danger" onclick="clearWarehouse('US Warehouse')" title="Remove all US warehouse assignments — items stay in China">🇺🇸 Clear US</button>
+    <button class="btn btn-danger" onclick="clearWarehouse('Canada Warehouse')" title="Remove all Canada warehouse assignments — items stay in China">🇨🇦 Clear Canada</button>
+
+    <div class="toolbar-divider"></div>
+
     <button class="btn btn-secondary" onclick="resetChanges()">Reset Changes</button>
     <button class="btn btn-primary" id="push-btn" onclick="pushChanges()" disabled>
       Push to Site <span class="changes-count" id="changes-count">0</span>
@@ -120,14 +151,15 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:
       <thead>
         <tr>
           <th>#</th>
-          <th>Current Name</th>
+          <th>Name</th>
           <th>New Name</th>
-          <th>Warehouse</th>
-          <th>Vial Sizes (editable)</th>
-          <th>Current Price</th>
+          <th>Vendor</th>
+          <th>Vial Sizes</th>
+          <th>Cost Price</th>
           <th>Per Vial</th>
           <th>Markup %</th>
-          <th>New Price</th>
+          <th>Sale Price</th>
+          <th>Warehouses</th>
           <th>In Stock</th>
         </tr>
       </thead>
@@ -146,26 +178,19 @@ function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
   _password = pw;
-  // Try fetching products.json to verify we can proceed, then load
   loadProducts();
 }
-
-document.getElementById('pw-input').addEventListener('keydown', function(e){
-  if (e.key === 'Enter') doLogin();
-});
+document.getElementById('pw-input').addEventListener('keydown', function(e){ if (e.key==='Enter') doLogin(); });
 
 function showStatus(msg, type) {
   var bar = document.getElementById('status-bar');
   bar.textContent = msg;
   bar.className = 'status-bar ' + type;
 }
-function hideStatus() {
-  document.getElementById('status-bar').className = 'status-bar';
-}
+function hideStatus() { document.getElementById('status-bar').className = 'status-bar'; }
 
 function loadProducts() {
   showStatus('Loading products...', 'loading');
-  // First get the SHA from GitHub API
   fetch('https://api.github.com/repos/jason370/pep-suppliers/contents/products.json')
     .then(function(r){ return r.json(); })
     .then(function(data) {
@@ -188,6 +213,18 @@ function loadProducts() {
     });
 }
 
+// Each product has a primary `warehouse` field (China by default).
+// US/Canada availability is stored in `extraWarehouses: ["US Warehouse", "Canada Warehouse"]`
+// The site renderer should show the product in all warehouses it belongs to.
+
+function getWarehouses(p) {
+  var list = [p.warehouse || 'Overseas Warehouse'];
+  if (p.extraWarehouses) {
+    p.extraWarehouses.forEach(function(w){ if (list.indexOf(w) === -1) list.push(w); });
+  }
+  return list;
+}
+
 function renderTable(products) {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
@@ -198,200 +235,303 @@ function renderTable(products) {
     tr.dataset.id = p.id;
     tr.dataset.name = (p.name || '').toLowerCase();
     tr.dataset.warehouse = p.warehouse || '';
+    tr.dataset.vendor = (p.vendor || '').toLowerCase();
     tr.dataset.stock = p.inStock ? 'instock' : 'oos';
 
-    var warehouseLabel = p.warehouse === 'Overseas Warehouse' ? 'China' : (p.warehouse === 'Canada Warehouse' ? 'Canada' : (p.warehouse || ''));
-    var badgeClass = p.warehouse === 'US Warehouse' ? 'badge-us' : (p.warehouse === 'Overseas Warehouse' ? 'badge-cn' : (p.warehouse === 'Canada Warehouse' ? 'badge-ca' : 'badge-us'));
+    var warehouses = getWarehouses(p);
+    var hasUS = warehouses.indexOf('US Warehouse') > -1;
+    var hasCA = warehouses.indexOf('Canada Warehouse') > -1;
+
     var newPrice = changed ? changed : (p.price || '');
     var inputClass = changed ? 'price-input changed' : 'price-input';
+    var vendorLabel = p.vendor || '—';
+
+    var warehouseBadges = warehouses.map(function(w) {
+      var lbl = w === 'Overseas Warehouse' ? 'China' : (w === 'US Warehouse' ? 'US' : 'Canada');
+      var cls = w === 'US Warehouse' ? 'badge-us' : (w === 'Canada Warehouse' ? 'badge-ca' : 'badge-cn');
+      return '<span class="badge ' + cls + '">' + lbl + '</span>';
+    }).join(' ');
 
     tr.innerHTML =
-      '<td style="color:#9aabb8;font-size:12px">' + (i+1) + '</td>' +
-      '<td><input class="name-input" type="text" value="' + (p.name || '') + '" data-id="' + p.id + '" data-original-name="' + (p.name || '') + '" oninput="onNameChange(this)"></td>' +
-      '<td><input class="name-input" type="text" value="' + (p.name || '') + '" data-id="' + p.id + '" data-original-name="' + (p.name || '') + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
-      '<td><span class="badge ' + badgeClass + '">' + warehouseLabel + '</span></td>' +
-      '<td><input class="vial-input" type="text" value="' + (p.vialSizes || []).join(', ') + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
-      '<td style="color:#6b7f94">' + (p.price || '—') + '</td>' +
-      '<td style="color:#6b7f94" class="per-vial-cell" data-id="' + p.id + '">' + calcPerVial(p.price) + '</td>' +
+      '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
+      '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" oninput="onNameChange(this)"></td>' +
+      '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
+      '<td><span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span></td>' +
+      '<td><input class="vial-input" type="text" value="' + escAttr((p.vialSizes||[]).join(', ')) + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
+      '<td style="color:#6b7f94">' + escHtml(p.price||'—') + '</td>' +
+      '<td style="color:#6b7f94">' + calcPerVial(p.price) + '</td>' +
       '<td><input class="markup-input" type="number" min="0" max="500" placeholder="%" data-id="' + p.id + '" oninput="onMarkupChange(this)"></td>' +
-      '<td><input class="' + inputClass + '" type="text" value="' + newPrice + '" data-id="' + p.id + '" data-original="' + (p.price || '') + '" oninput="onPriceChange(this)"></td>' +
-      '<td><input type="checkbox" ' + (p.inStock ? 'checked' : '') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
+      '<td><input class="' + inputClass + '" type="text" value="' + escAttr(newPrice) + '" data-id="' + p.id + '" data-original="' + escAttr(p.price||'') + '" oninput="onPriceChange(this)"></td>' +
+      '<td>' +
+        '<div class="wh-checks">' +
+          warehouseBadges +
+          '<label class="wh-label us"><input type="checkbox" ' + (hasUS?'checked':'') + ' data-id="' + p.id + '" data-wh="US Warehouse" onchange="onWarehouseCheck(this)"> +US</label>' +
+          '<label class="wh-label ca"><input type="checkbox" ' + (hasCA?'checked':'') + ' data-id="' + p.id + '" data-wh="Canada Warehouse" onchange="onWarehouseCheck(this)"> +CA</label>' +
+        '</div>' +
+      '</td>' +
+      '<td><input type="checkbox" ' + (p.inStock?'checked':'') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
     tbody.appendChild(tr);
   });
   filterTable();
 }
 
-function onNameChange(input) {
-  var id = input.dataset.id;
+function escAttr(s){ return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function escHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function onWarehouseCheck(cb) {
+  var id = cb.dataset.id;
+  var wh = cb.dataset.wh;
   var p = _products.find(function(x){ return x.id === id; });
   if (!p) return;
-  p.name = input.value.trim();
-  _changes['_name_' + id] = p.name;
+  p.extraWarehouses = p.extraWarehouses || [];
+  if (cb.checked) {
+    if (p.extraWarehouses.indexOf(wh) === -1) p.extraWarehouses.push(wh);
+  } else {
+    p.extraWarehouses = p.extraWarehouses.filter(function(w){ return w !== wh; });
+  }
+  _changes['_wh_' + id] = p.extraWarehouses.slice();
+  cb.closest('tr').classList.add('changed-row');
+  updateChangeCount();
+  // Refresh the badge display in the same cell
+  var whCell = cb.closest('.wh-checks');
+  var badges = whCell.querySelectorAll('.badge');
+  badges.forEach(function(b){ b.remove(); });
+  var warehouses = getWarehouses(p);
+  var frag = document.createDocumentFragment();
+  warehouses.forEach(function(w) {
+    var lbl = w==='Overseas Warehouse'?'China':(w==='US Warehouse'?'US':'Canada');
+    var cls = w==='US Warehouse'?'badge-us':(w==='Canada Warehouse'?'badge-ca':'badge-cn');
+    var span = document.createElement('span');
+    span.className = 'badge ' + cls;
+    span.textContent = lbl;
+    frag.appendChild(span);
+  });
+  whCell.insertBefore(frag, whCell.firstChild);
+}
+
+function clearWarehouse(wh) {
+  var label = wh === 'US Warehouse' ? 'US' : 'Canada';
+  if (!confirm('Remove ALL ' + label + ' warehouse assignments? Products will remain in China. This cannot be undone without pushing.')) return;
+  var count = 0;
+  _products.forEach(function(p) {
+    var had = p.extraWarehouses && p.extraWarehouses.indexOf(wh) > -1;
+    if (had) {
+      p.extraWarehouses = (p.extraWarehouses || []).filter(function(w){ return w !== wh; });
+      _changes['_wh_' + p.id] = p.extraWarehouses.slice();
+      count++;
+    }
+  });
+  if (count === 0) {
+    showStatus('No ' + label + ' warehouse assignments found.', 'success');
+  } else {
+    renderTable(_products);
+    updateChangeCount();
+    showStatus('Cleared ' + count + ' ' + label + ' assignments. Push to Site to save.', 'success');
+  }
+}
+
+function handleXlsxUpload(input) {
+  var file = input.files[0];
+  if (!file) return;
+  showStatus('Reading price sheet...', 'loading');
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var data = new Uint8Array(e.target.result);
+      var wb = XLSX.read(data, {type:'array'});
+      var sheet = null, headers = [];
+      for (var si = 0; si < wb.SheetNames.length; si++) {
+        var ws = wb.Sheets[wb.SheetNames[si]];
+        var rows = XLSX.utils.sheet_to_json(ws, {header:1, defval:''});
+        for (var r = 0; r < Math.min(rows.length, 5); r++) {
+          var hrow = rows[r].map(function(c){ return String(c).toLowerCase().trim(); });
+          if (hrow.indexOf('name') > -1 && hrow.indexOf('price') > -1) {
+            headers = hrow; sheet = rows.slice(r+1); break;
+          }
+        }
+        if (sheet) break;
+      }
+      if (!sheet) { showStatus('❌ Could not find header row with "name" and "price" columns', 'error'); input.value=''; return; }
+
+      var iName=headers.indexOf('name'), iPrice=headers.indexOf('price'),
+          iId=headers.indexOf('id'), iCat=headers.indexOf('category'),
+          iVials=headers.indexOf('vialsizes'), iVendor=-1, iCatNo=-1;
+      headers.forEach(function(h,i){
+        if (h==='source_vendor'||h==='vendor') iVendor=i;
+        if (h==='vendor_cat_no'||h==='cat no'||h==='serial number') iCatNo=i;
+      });
+
+      var matched=0, added=0, skipped=0;
+      sheet.forEach(function(row) {
+        var name=String(row[iName]||'').trim(), price=String(row[iPrice]||'').trim();
+        if (!name||!price){skipped++;return;}
+        var priceNum=parseFloat(price.replace(/[^0-9.]/g,''));
+        if(isNaN(priceNum)){skipped++;return;}
+        var priceFmt='$'+priceNum.toFixed(2);
+        var id=iId>=0?String(row[iId]||'').trim():'';
+        var vendor=iVendor>=0?String(row[iVendor]||'').trim():'';
+        var cat=iCat>=0?String(row[iCat]||'').trim():'other';
+        var vials=iVials>=0?String(row[iVials]||'').trim():'';
+        var catNo=iCatNo>=0?String(row[iCatNo]||'').trim():'';
+        var vialArr=[];
+        if(vials){try{vialArr=JSON.parse(vials);}catch(e){vialArr=vials.split(',').map(function(s){return s.trim();}).filter(Boolean);}}
+
+        var existing=null;
+        if(id) existing=_products.find(function(p){return p.id===id;});
+        if(!existing) existing=_products.find(function(p){return p.name&&p.name.toLowerCase()===name.toLowerCase();});
+
+        if(existing){
+          if(existing.price!==priceFmt){_changes[existing.id]=priceFmt; existing.price=priceFmt;}
+          if(vialArr.length) existing.vialSizes=vialArr;
+          if(vendor) existing.vendor=vendor;
+          // Always keep in China (Overseas Warehouse) — never overwrite warehouse from upload
+          existing.warehouse='Overseas Warehouse';
+          matched++;
+        } else {
+          var newId=id||(name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+(cat||'other')+'-'+(vendor||'import').toLowerCase());
+          _products.push({id:newId,name:name,category:cat,price:priceFmt,vialSizes:vialArr,
+            warehouse:'Overseas Warehouse',inStock:true,vendor:vendor,vendor_cat_no:catNo,extraWarehouses:[]});
+          _changes['_new_'+newId]=priceFmt;
+          added++;
+        }
+      });
+      document.getElementById('product-count').textContent=_products.length+' products';
+      renderTable(_products);
+      updateChangeCount();
+      showStatus('✅ '+matched+' updated, '+added+' new (all set to China). Use +US / +CA checkboxes to assign warehouses. '+
+        (skipped?skipped+' skipped.':''), 'success');
+    } catch(err){ showStatus('❌ Error: '+err.message,'error'); }
+    input.value='';
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function onNameChange(input) {
+  var id=input.dataset.id, p=_products.find(function(x){return x.id===id;});
+  if(!p)return;
+  p.name=input.value.trim();
+  _changes['_name_'+id]=p.name;
   input.classList.add('changed');
   input.closest('tr').classList.add('changed-row');
   updateChangeCount();
 }
 
 function onVialChange(input) {
-  var id = input.dataset.id;
-  var p = _products.find(function(x){ return x.id === id; });
-  if (!p) return;
-  var val = input.value.trim();
-  var sizes = val ? val.split(',').map(function(s){ return s.trim(); }).filter(Boolean) : [];
-  p.vialSizes = sizes;
-  _changes['_vials_' + id] = sizes;
+  var id=input.dataset.id, p=_products.find(function(x){return x.id===id;});
+  if(!p)return;
+  p.vialSizes=input.value.trim()?input.value.trim().split(',').map(function(s){return s.trim();}).filter(Boolean):[];
+  _changes['_vials_'+id]=p.vialSizes;
   input.classList.add('changed');
   input.closest('tr').classList.add('changed-row');
   updateChangeCount();
 }
 
-function calcPerVial(priceStr) {
-  if (!priceStr) return '—';
-  // Handle ranges like "$20.80 – $38.80" — use first number
-  var match = (priceStr + '').match(/[\d.]+/);
-  if (!match) return '—';
-  var total = parseFloat(match[0]);
-  if (isNaN(total)) return '—';
-  return '$' + (total / 10).toFixed(2);
+function calcPerVial(priceStr){
+  if(!priceStr)return'—';
+  var m=(priceStr+'').match(/[\d.]+/);
+  if(!m)return'—';
+  var t=parseFloat(m[0]);
+  return isNaN(t)?'—':'$'+(t/10).toFixed(2);
 }
 
-function onMarkupChange(input) {
-  var id = input.dataset.id;
-  var pct = parseFloat(input.value);
-  var p = _products.find(function(x){ return x.id === id; });
-  if (!p || isNaN(pct)) return;
-  var base = parseFloat((p.price || '').replace(/[^\d.]/g,''));
-  if (isNaN(base)) return;
-  var newVal = '$' + (base * (1 + pct/100)).toFixed(2);
-  // Find the price input in the same row and update it
-  var row = input.closest('tr');
-  var priceInput = row.querySelector('.price-input');
-  if (priceInput) {
-    priceInput.value = newVal;
-    onPriceChange(priceInput);
-  }
+function onMarkupChange(input){
+  var id=input.dataset.id, pct=parseFloat(input.value);
+  var p=_products.find(function(x){return x.id===id;});
+  if(!p||isNaN(pct))return;
+  var base=parseFloat((p.price||'').replace(/[^\d.]/g,''));
+  if(isNaN(base))return;
+  var priceInput=input.closest('tr').querySelector('.price-input');
+  if(priceInput){priceInput.value='$'+(base*(1+pct/100)).toFixed(2); onPriceChange(priceInput);}
 }
 
-function onPriceChange(input) {
-  var id = input.dataset.id;
-  var original = input.dataset.original;
-  var val = input.value.trim();
-  if (val !== original) {
-    _changes[id] = val;
-    input.classList.add('changed');
-    input.closest('tr').classList.add('changed-row');
+function onPriceChange(input){
+  var id=input.dataset.id, val=input.value.trim();
+  if(val!==input.dataset.original){
+    _changes[id]=val; input.classList.add('changed'); input.closest('tr').classList.add('changed-row');
   } else {
-    delete _changes[id];
-    input.classList.remove('changed');
-    input.closest('tr').classList.remove('changed-row');
+    delete _changes[id]; input.classList.remove('changed'); input.closest('tr').classList.remove('changed-row');
   }
   updateChangeCount();
 }
 
-function onStockChange(cb) {
-  var id = cb.dataset.id;
-  var p = _products.find(function(x){ return x.id === id; });
-  if (p) {
-    p.inStock = cb.checked;
-    // Mark as change
-    _changes['_stock_' + id] = cb.checked;
-    updateChangeCount();
-  }
+function onStockChange(cb){
+  var id=cb.dataset.id, p=_products.find(function(x){return x.id===id;});
+  if(p){p.inStock=cb.checked; _changes['_stock_'+id]=cb.checked; updateChangeCount();}
 }
 
-function updateChangeCount() {
-  var count = Object.keys(_changes).length;
-  var badge = document.getElementById('changes-count');
-  var btn = document.getElementById('push-btn');
-  badge.textContent = count;
-  badge.style.display = count > 0 ? 'inline' : 'none';
-  btn.disabled = count === 0;
+function updateChangeCount(){
+  var count=Object.keys(_changes).length;
+  var badge=document.getElementById('changes-count'), btn=document.getElementById('push-btn');
+  badge.textContent=count; badge.style.display=count>0?'inline':'none'; btn.disabled=count===0;
 }
 
-function filterTable() {
-  var search = document.getElementById('search-box').value.toLowerCase();
-  var warehouse = document.getElementById('warehouse-filter').value;
-  var stock = document.getElementById('stock-filter').value;
-  var rows = document.querySelectorAll('#table-body tr');
-  rows.forEach(function(row) {
-    var nameMatch = !search || row.dataset.name.includes(search);
-    var whMatch = !warehouse || row.dataset.warehouse === warehouse;
-    var stMatch = !stock || row.dataset.stock === stock;
-    row.style.display = (nameMatch && whMatch && stMatch) ? '' : 'none';
+function filterTable(){
+  var search=document.getElementById('search-box').value.toLowerCase();
+  var warehouse=document.getElementById('warehouse-filter').value;
+  var vendor=document.getElementById('vendor-filter').value;
+  var stock=document.getElementById('stock-filter').value;
+  document.querySelectorAll('#table-body tr').forEach(function(row){
+    var nameMatch=!search||row.dataset.name.includes(search);
+    var whMatch=!warehouse||row.dataset.warehouse===warehouse;
+    var vendorMatch=!vendor||row.dataset.vendor===vendor;
+    var stMatch=!stock||row.dataset.stock===stock;
+    row.style.display=(nameMatch&&whMatch&&vendorMatch&&stMatch)?'':'none';
   });
 }
 
-function applyMarkup() {
-  var pct = prompt('Enter markup % to apply to ALL visible products\n(e.g. 50 for 50% above cost, or -10 to reduce by 10%):');
-  if (!pct) return;
-  var mult = 1 + (parseFloat(pct) / 100);
-  if (isNaN(mult)) return alert('Invalid number');
-  var inputs = document.querySelectorAll('#table-body tr:not([style*="display: none"]) .price-input');
-  inputs.forEach(function(input) {
-    var current = parseFloat((input.value || input.dataset.original).replace(/[^0-9.\-]/g,''));
-    if (isNaN(current)) return;
-    var newVal = '$' + (current * mult).toFixed(2);
-    input.value = newVal;
-    onPriceChange(input);
+function applyMarkup(){
+  var pct=prompt('Enter markup % to apply to ALL visible products\n(e.g. 50 for 50%, or -10 to reduce by 10%):');
+  if(!pct)return;
+  var mult=1+(parseFloat(pct)/100);
+  if(isNaN(mult))return alert('Invalid number');
+  document.querySelectorAll('#table-body tr:not([style*="display: none"]) .price-input').forEach(function(input){
+    var current=parseFloat((input.value||input.dataset.original).replace(/[^0-9.\-]/g,''));
+    if(!isNaN(current)){input.value='$'+(current*mult).toFixed(2); onPriceChange(input);}
   });
 }
 
-function resetChanges() {
-  if (!confirm('Reset all unsaved changes?')) return;
-  _changes = {};
-  var inputs = document.querySelectorAll('.price-input');
-  inputs.forEach(function(input) {
-    input.value = input.dataset.original;
-    input.classList.remove('changed');
+function resetChanges(){
+  if(!confirm('Reset all unsaved changes?'))return;
+  _changes={};
+  document.querySelectorAll('.price-input').forEach(function(input){
+    input.value=input.dataset.original; input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
   });
   updateChangeCount();
 }
 
-function pushChanges() {
-  if (Object.keys(_changes).length === 0) return;
-  if (!confirm('Push ' + Object.keys(_changes).length + ' change(s) to the live site?')) return;
-
-  showStatus('Pushing changes to site...', 'loading');
-  document.getElementById('push-btn').disabled = true;
-
-  // Apply price changes to products array
-  var updated = _products.map(function(p) {
-    var newPrice = _changes[p.id];
-    var stockChange = _changes['_stock_' + p.id];
-    var vialChange = _changes['_vials_' + p.id];
-    var out = Object.assign({}, p);
-    if (newPrice !== undefined) out.price = newPrice;
-    if (stockChange !== undefined) out.inStock = stockChange;
-    if (vialChange !== undefined) out.vialSizes = vialChange;
-    var nameChange = _changes['_name_' + p.id];
-    if (nameChange !== undefined) out.name = nameChange;
+function pushChanges(){
+  if(Object.keys(_changes).length===0)return;
+  if(!confirm('Push '+Object.keys(_changes).length+' change(s) to the live site?'))return;
+  showStatus('Pushing changes to site...','loading');
+  document.getElementById('push-btn').disabled=true;
+  var updated=_products.map(function(p){
+    var out=Object.assign({},p);
+    if(_changes[p.id]!==undefined) out.price=_changes[p.id];
+    if(_changes['_stock_'+p.id]!==undefined) out.inStock=_changes['_stock_'+p.id];
+    if(_changes['_vials_'+p.id]!==undefined) out.vialSizes=_changes['_vials_'+p.id];
+    if(_changes['_name_'+p.id]!==undefined) out.name=_changes['_name_'+p.id];
+    if(_changes['_wh_'+p.id]!==undefined) out.extraWarehouses=_changes['_wh_'+p.id];
     return out;
   });
-
-  fetch('/.netlify/functions/update-products', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({ password: _password, products: updated, sha: _sha })
+  fetch('/.netlify/functions/update-products',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({password:_password,products:updated,sha:_sha})
   })
-  .then(function(r){ return r.json(); })
-  .then(function(data) {
-    if (data.ok) {
-      _sha = data.sha;
-      _products = updated;
-      _changes = {};
-      updateChangeCount();
-      // Refresh display
+  .then(function(r){return r.json();})
+  .then(function(data){
+    if(data.ok){
+      _sha=data.sha; _products=updated; _changes={}; updateChangeCount();
       renderTable(_products);
-      showStatus('\u2705 Changes pushed successfully! Site will update in ~30 seconds.', 'success');
+      showStatus('✅ Changes pushed! Site will update in ~30 seconds.','success');
     } else {
-      showStatus('\u274C Error: ' + (data.error || 'Unknown error'), 'error');
-      document.getElementById('push-btn').disabled = false;
+      showStatus('❌ Error: '+(data.error||'Unknown error'),'error');
+      document.getElementById('push-btn').disabled=false;
     }
   })
-  .catch(function(e) {
-    showStatus('\u274C Network error: ' + e.message, 'error');
-    document.getElementById('push-btn').disabled = false;
+  .catch(function(e){
+    showStatus('❌ Network error: '+e.message,'error');
+    document.getElementById('push-btn').disabled=false;
   });
 }
 </script>
