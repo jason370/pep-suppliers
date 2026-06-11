@@ -3,7 +3,7 @@
     "id": "vitamin-b12-immune-hkms",
     "name": "Vitamin B12",
     "category": "immune",
-    "price": "$3.50",
+    "price": "$10.00",
     "vialSizes": [
       "2ml"
     ],
@@ -17,7 +17,7 @@
     "id": "vip-us-warehouse",
     "name": "VIP",
     "category": "Other Research",
-    "price": "$52.50",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -36,7 +36,7 @@
     "id": "vesugen-us-warehouse",
     "name": "Vesugen",
     "category": "Other Research",
-    "price": "$21.70",
+    "price": "$62.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -55,7 +55,7 @@
     "id": "trizepatide-weight-hkms",
     "name": "Trizepatide",
     "category": "weight",
-    "price": "$108.50",
+    "price": "$310.00",
     "vialSizes": [
       "120mg"
     ],
@@ -69,7 +69,7 @@
     "id": "triptorelin-acetate-other-yunke",
     "name": "Triptorelin Acetate",
     "category": "other",
-    "price": "$27.30",
+    "price": "$78.00",
     "vialSizes": [
       "2mg"
     ],
@@ -83,7 +83,7 @@
     "id": "thymosin-alpha-1-overseas-warehouse",
     "name": "Thymosin Alpha-1",
     "category": "Hormone Support",
-    "price": "$52.50",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -102,7 +102,7 @@
     "id": "thymalin-us-warehouse",
     "name": "Thymalin",
     "category": "Hormone Support",
-    "price": "$19.25",
+    "price": "$55.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -121,7 +121,7 @@
     "id": "tb500-thymosin-b4-acetate-healing-hkms",
     "name": "TB500(Thymosin B4 Acetate)",
     "category": "healing",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "10mg"
     ],
@@ -135,7 +135,7 @@
     "id": "tb-500-healing-yunke",
     "name": "TB-500",
     "category": "healing",
-    "price": "$98.00",
+    "price": "$280.00",
     "vialSizes": [
       "20mg"
     ],
@@ -149,7 +149,7 @@
     "id": "tb-10mg-bpc-157-10mg-ghk-50mg-kpv-10mg-healing-hkms",
     "name": "TB 10mg+BPC-157 10mg+GHK 50mg+KPV 10mg",
     "category": "healing",
-    "price": "$77.00",
+    "price": "$220.00",
     "vialSizes": [
       "80mg"
     ],
@@ -163,7 +163,7 @@
     "id": "survotitude-anti-aging-hkms",
     "name": "Survotitude",
     "category": "anti-aging",
-    "price": "$89.95",
+    "price": "$257.00",
     "vialSizes": [
       "10mg"
     ],
@@ -177,7 +177,7 @@
     "id": "survodutide-other-erp",
     "name": "Survodutide",
     "category": "other",
-    "price": "$87.15",
+    "price": "$249.00",
     "vialSizes": [
       "10mg"
     ],
@@ -191,7 +191,7 @@
     "id": "ss-31-other-chp",
     "name": "SS-31",
     "category": "other",
-    "price": "$26.25",
+    "price": "$75.00",
     "vialSizes": [
       "10mg"
     ],
@@ -205,7 +205,7 @@
     "id": "snap-8-us-warehouse",
     "name": "SNAP-8",
     "category": "Other Research",
-    "price": "$12.25",
+    "price": "$35.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -224,7 +224,7 @@
     "id": "sm5-cgl5-other-hkms",
     "name": "SM5+CGL5",
     "category": "other",
-    "price": "$54.95",
+    "price": "$157.00",
     "vialSizes": [
       "10mg"
     ],
@@ -238,7 +238,7 @@
     "id": "slu-pp-332-weight-hkms",
     "name": "Slu-pp-332",
     "category": "weight",
-    "price": "$35.00",
+    "price": "$100.00",
     "vialSizes": [
       "5mg"
     ],
@@ -252,7 +252,7 @@
     "id": "sermorelin-acetate-gh-hkms",
     "name": "Sermorelin Acetate",
     "category": "gh",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "10mg"
     ],
@@ -266,7 +266,7 @@
     "id": "semax-us-warehouse",
     "name": "Semax",
     "category": "Other Research",
-    "price": "$31.50",
+    "price": "$90.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -285,7 +285,7 @@
     "id": "selank-us-warehouse",
     "name": "Selank",
     "category": "Other Research",
-    "price": "$17.50",
+    "price": "$50.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -304,7 +304,7 @@
     "id": "reta-cagri-blend-weight-qyc",
     "name": "Reta+Cagri Blend",
     "category": "weight",
-    "price": "$70.00",
+    "price": "$200.00",
     "vialSizes": [
       "10mg"
     ],
@@ -318,7 +318,7 @@
     "id": "ra260-peptide-hkms",
     "name": "RA260",
     "category": "peptide",
-    "price": "$19.60",
+    "price": "$56.00",
     "vialSizes": [
       "50mg"
     ],
@@ -332,7 +332,7 @@
     "id": "ptd-dbm-us-warehouse",
     "name": "PTD-DBM",
     "category": "Other Research",
-    "price": "$20.65",
+    "price": "$59.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -351,7 +351,7 @@
     "id": "pt-141-sexual-yunke",
     "name": "PT-141",
     "category": "sexual",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "10mg"
     ],
@@ -365,7 +365,7 @@
     "id": "pnc-27-us-warehouse",
     "name": "PNC-27",
     "category": "Other Research",
-    "price": "$29.75",
+    "price": "$85.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -384,7 +384,7 @@
     "id": "pinealon-overseas-warehouse",
     "name": "Pinealon",
     "category": "Other Research",
-    "price": "$19.25",
+    "price": "$55.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -403,7 +403,7 @@
     "id": "peg-mgf-peptide-hkms",
     "name": "PEG MGF",
     "category": "peptide",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "2mg"
     ],
@@ -417,7 +417,7 @@
     "id": "pe-22-28-overseas-warehouse",
     "name": "PE-22-28",
     "category": "Other Research",
-    "price": "$25.20",
+    "price": "$72.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -436,7 +436,7 @@
     "id": "p21-p021-peptide-hkms",
     "name": "P21(P021)",
     "category": "peptide",
-    "price": "$105.00",
+    "price": "$300.00",
     "vialSizes": [
       "5mg"
     ],
@@ -450,7 +450,7 @@
     "id": "oxytocin-acetate-other-yunke",
     "name": "Oxytocin Acetate",
     "category": "other",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "10mg"
     ],
@@ -464,7 +464,7 @@
     "id": "orexin-b-neuro-hkms",
     "name": "Orexin B",
     "category": "neuro",
-    "price": "$81.90",
+    "price": "$234.00",
     "vialSizes": [
       "10mg"
     ],
@@ -478,7 +478,7 @@
     "id": "orexin-a-neuro-hkms",
     "name": "Orexin A",
     "category": "neuro",
-    "price": "$202.30",
+    "price": "$578.00",
     "vialSizes": [
       "10mg"
     ],
@@ -492,7 +492,7 @@
     "id": "mt-2-melanotan-2-sexual-yunke",
     "name": "MT-2 (Melanotan 2)",
     "category": "sexual",
-    "price": "$19.25",
+    "price": "$55.00",
     "vialSizes": [
       "10mg"
     ],
@@ -506,7 +506,7 @@
     "id": "mt-2-melanotan-2-acetate-immune-hkms",
     "name": "MT-2 (Melanotan 2 Acetate)",
     "category": "immune",
-    "price": "$14.35",
+    "price": "$41.00",
     "vialSizes": [
       "10mg"
     ],
@@ -520,7 +520,7 @@
     "id": "mt-1-sexual-yunke",
     "name": "MT-1",
     "category": "sexual",
-    "price": "$19.25",
+    "price": "$55.00",
     "vialSizes": [
       "10mg"
     ],
@@ -534,7 +534,7 @@
     "id": "mots-c-overseas-warehouse",
     "name": "MOTS-C",
     "category": "Weight Management",
-    "price": "$18.20",
+    "price": "$52.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -553,7 +553,7 @@
     "id": "mgf-us-warehouse",
     "name": "MGF",
     "category": "Other Research",
-    "price": "$10.50",
+    "price": "$30.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -572,7 +572,7 @@
     "id": "melatonin-anti-aging-hkms",
     "name": "Melatonin",
     "category": "anti-aging",
-    "price": "$18.55",
+    "price": "$53.00",
     "vialSizes": [
       "10mg"
     ],
@@ -586,7 +586,7 @@
     "id": "mazdutide-weight-erp",
     "name": "Mazdutide",
     "category": "weight",
-    "price": "$76.65",
+    "price": "$219.00",
     "vialSizes": [
       "10mg"
     ],
@@ -600,7 +600,7 @@
     "id": "matrixyl-us-warehouse",
     "name": "Matrixyl",
     "category": "Other Research",
-    "price": "$11.90",
+    "price": "$34.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -619,7 +619,7 @@
     "id": "ll37-peptide-hkms",
     "name": "LL37",
     "category": "peptide",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "5mg"
     ],
@@ -633,7 +633,7 @@
     "id": "liraglutide-weight-hkms",
     "name": "Liraglutide",
     "category": "weight",
-    "price": "$151.20",
+    "price": "$432.00",
     "vialSizes": [
       "30mg"
     ],
@@ -647,7 +647,7 @@
     "id": "lemon-bottle-cosmetic-hkms",
     "name": "Lemon Bottle",
     "category": "cosmetic",
-    "price": "$26.25",
+    "price": "$75.00",
     "vialSizes": [
       "10ml"
     ],
@@ -661,7 +661,7 @@
     "id": "lc216-peptide-hkms",
     "name": "LC216",
     "category": "peptide",
-    "price": "$42.70",
+    "price": "$122.00",
     "vialSizes": [
       "10 mg"
     ],
@@ -675,7 +675,7 @@
     "id": "l-carnitine-10ml-600mg-ml-other-hkms",
     "name": "L-carnitine 10ml*600mg/ml",
     "category": "other",
-    "price": "$17.50",
+    "price": "$50.00",
     "vialSizes": [
       "10ml"
     ],
@@ -689,7 +689,7 @@
     "id": "klow-blend-cu-tb-bpc-kpv-healing-chp",
     "name": "KLOW Blend (CU+TB+BPC+KPV)",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "80mg"
     ],
@@ -703,7 +703,7 @@
     "id": "klow-blend-cu-bpc-tb-kpv-healing-jeep",
     "name": "KLOW Blend (CU+BPC+TB+KPV)",
     "category": "healing",
-    "price": "$70.00",
+    "price": "$200.00",
     "vialSizes": [
       "80mg"
     ],
@@ -717,7 +717,7 @@
     "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-upp",
     "name": "KLOW Blend (BPC10+CU50+TB10+KPV10)",
     "category": "healing",
-    "price": "$75.25",
+    "price": "$215.00",
     "vialSizes": [
       "80mg"
     ],
@@ -731,7 +731,7 @@
     "id": "kisspeptin-10-us-warehouse",
     "name": "Kisspeptin-10",
     "category": "Hormone Support",
-    "price": "$31.50",
+    "price": "$90.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -750,7 +750,7 @@
     "id": "insulin-peptide-hkms",
     "name": "Insulin",
     "category": "peptide",
-    "price": "$73.50",
+    "price": "$210.00",
     "vialSizes": [
       "3ml"
     ],
@@ -764,7 +764,7 @@
     "id": "igf-des-peptide-hkms",
     "name": "IGF-DES",
     "category": "peptide",
-    "price": "$16.80",
+    "price": "$48.00",
     "vialSizes": [
       "2 mg"
     ],
@@ -778,7 +778,7 @@
     "id": "igf-1lr3-peptide-hkms",
     "name": "IGF-1LR3",
     "category": "peptide",
-    "price": "$63.70",
+    "price": "$182.00",
     "vialSizes": [
       "1mg"
     ],
@@ -792,7 +792,7 @@
     "id": "hyaluronic-acid-cosmetic-hkms",
     "name": "Hyaluronic acid",
     "category": "cosmetic",
-    "price": "$7.00",
+    "price": "$20.00",
     "vialSizes": [
       "5mg"
     ],
@@ -806,7 +806,7 @@
     "id": "humanin-overseas-warehouse",
     "name": "Humanin",
     "category": "Other Research",
-    "price": "$94.50",
+    "price": "$270.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -825,7 +825,7 @@
     "id": "hmg-other-upp",
     "name": "HMG",
     "category": "other",
-    "price": "$17.50",
+    "price": "$50.00",
     "vialSizes": [
       "75IU"
     ],
@@ -839,7 +839,7 @@
     "id": "hgh-fragment-176-191-weight-yunke",
     "name": "HGH Fragment 176-191",
     "category": "weight",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "10mg"
     ],
@@ -853,7 +853,7 @@
     "id": "hgh-191aa-somatropin-gh-hkms",
     "name": "HGH 191AA(Somatropin)",
     "category": "gh",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "15iu"
     ],
@@ -867,7 +867,7 @@
     "id": "hgh-191aa-overseas-warehouse",
     "name": "HGH 191AA (Somatropin)",
     "category": "Growth Hormone",
-    "price": "$52.50",
+    "price": "$150.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -889,7 +889,7 @@
     "id": "hexarelin-acetate-gh-hkms",
     "name": "Hexarelin Acetate",
     "category": "gh",
-    "price": "$26.25",
+    "price": "$75.00",
     "vialSizes": [
       "5mg"
     ],
@@ -903,7 +903,7 @@
     "id": "hcg-overseas-warehouse",
     "name": "HCG",
     "category": "Other Research",
-    "price": "$14.00",
+    "price": "$40.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -924,7 +924,7 @@
     "id": "gonadorelin-acetate-other-yunke",
     "name": "Gonadorelin Acetate",
     "category": "other",
-    "price": "$12.25",
+    "price": "$35.00",
     "vialSizes": [
       "2mg"
     ],
@@ -938,7 +938,7 @@
     "id": "glutathione-other-dp",
     "name": "Glutathione",
     "category": "other",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "1500mg"
     ],
@@ -952,7 +952,7 @@
     "id": "glow-blend-cu50-bpc10-tb10-healing-jeep",
     "name": "GLOW Blend (CU50+BPC10+TB10)",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "70mg"
     ],
@@ -966,7 +966,7 @@
     "id": "glow-blend-cu30-bpc10-tb5-healing-jeep",
     "name": "GLOW Blend (CU30+BPC10+TB5)",
     "category": "healing",
-    "price": "$54.25",
+    "price": "$155.00",
     "vialSizes": [
       "50mg"
     ],
@@ -980,7 +980,7 @@
     "id": "glow-blend-cu-tb-bpc-healing-chp",
     "name": "GLOW Blend (CU+TB+BPC)",
     "category": "healing",
-    "price": "$59.50",
+    "price": "$170.00",
     "vialSizes": [
       "70mg"
     ],
@@ -994,7 +994,7 @@
     "id": "glow-blend-bpc10-cu50-tb10-healing-upp",
     "name": "GLOW Blend (BPC10+CU50+TB10)",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "70mg"
     ],
@@ -1008,7 +1008,7 @@
     "id": "glow-blend-bpc10-cu35-tb5-healing-dp",
     "name": "GLOW Blend (BPC10+CU35+TB5)",
     "category": "healing",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "50mg"
     ],
@@ -1022,7 +1022,7 @@
     "id": "ghrp-6-acetate-gh-hkms",
     "name": "GHRP-6 Acetate",
     "category": "gh",
-    "price": "$15.75",
+    "price": "$45.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1036,7 +1036,7 @@
     "id": "ghrp-2-acetate-gh-hkms",
     "name": "GHRP-2 Acetate",
     "category": "gh",
-    "price": "$15.75",
+    "price": "$45.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1050,7 +1050,7 @@
     "id": "ghk-cu-overseas-warehouse",
     "name": "GHK-Cu",
     "category": "Recovery & Healing",
-    "price": "$17.50",
+    "price": "$50.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1069,7 +1069,7 @@
     "id": "foxo4-anti-aging-hkms",
     "name": "FOXO4",
     "category": "anti-aging",
-    "price": "$105.00",
+    "price": "$300.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1083,7 +1083,7 @@
     "id": "follistatin-immune-hkms",
     "name": "Follistatin",
     "category": "immune",
-    "price": "$66.50",
+    "price": "$190.00",
     "vialSizes": [
       "1mg"
     ],
@@ -1097,7 +1097,7 @@
     "id": "epo-peptide-hkms",
     "name": "EPO",
     "category": "peptide",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "10000IU"
     ],
@@ -1111,7 +1111,7 @@
     "id": "dulaglutide-weight-hkms",
     "name": "Dulaglutide",
     "category": "weight",
-    "price": "$92.75",
+    "price": "$265.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1125,7 +1125,7 @@
     "id": "dsip-overseas-warehouse",
     "name": "DSIP",
     "category": "Other Research",
-    "price": "$35.00",
+    "price": "$100.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1144,7 +1144,7 @@
     "id": "dermorphin-peptide-hkms",
     "name": "Dermorphin",
     "category": "peptide",
-    "price": "$12.25",
+    "price": "$35.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1158,7 +1158,7 @@
     "id": "crystagen-immune-hkms",
     "name": "Crystagen",
     "category": "immune",
-    "price": "$23.45",
+    "price": "$67.00",
     "vialSizes": [
       "20mg"
     ],
@@ -1172,7 +1172,7 @@
     "id": "cortagen-us-warehouse",
     "name": "Cortagen",
     "category": "Other Research",
-    "price": "$34.30",
+    "price": "$98.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1191,7 +1191,7 @@
     "id": "cjc-1295-without-dac-5mg-ipa-5mg-gh-hkms",
     "name": "CJC-1295 without DAC 5mg + IPA 5mg",
     "category": "gh",
-    "price": "$33.25",
+    "price": "$95.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1205,7 +1205,7 @@
     "id": "cjc-1295-with-dac-gh-hkms",
     "name": "CJC-1295 With DAC",
     "category": "gh",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1219,7 +1219,7 @@
     "id": "cjc-1295-whitout-dac-gh-hkms",
     "name": "CJC-1295 Whitout DAC",
     "category": "gh",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1233,7 +1233,7 @@
     "id": "cjc-1295-w-o-dac-gh-chp",
     "name": "CJC-1295 w/o DAC",
     "category": "gh",
-    "price": "$50.75",
+    "price": "$145.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1247,7 +1247,7 @@
     "id": "cerebrolysin-healing-hkms",
     "name": "Cerebrolysin",
     "category": "healing",
-    "price": "$17.50",
+    "price": "$50.00",
     "vialSizes": [
       "60mg"
     ],
@@ -1261,7 +1261,7 @@
     "id": "cardiogen-overseas-warehouse",
     "name": "Cardiogen",
     "category": "Other Research",
-    "price": "$34.30",
+    "price": "$98.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1280,7 +1280,7 @@
     "id": "cagrilintide-5mg-semaglutide-5mg-weight-hkms",
     "name": "Cagrilintide 5mg + Semaglutide 5mg",
     "category": "weight",
-    "price": "$54.95",
+    "price": "$157.00",
     "vialSizes": [
       "10 mg"
     ],
@@ -1294,7 +1294,7 @@
     "id": "cagri-sema-blend-weight-qyc",
     "name": "Cagri+Sema Blend",
     "category": "weight",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1308,7 +1308,7 @@
     "id": "bronchogen-us-warehouse",
     "name": "Bronchogen",
     "category": "Other Research",
-    "price": "$32.20",
+    "price": "$92.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1327,7 +1327,7 @@
     "id": "bpc-tb-blend-5-5mg-healing-yunke",
     "name": "BPC+TB Blend 5+5mg",
     "category": "healing",
-    "price": "$44.10",
+    "price": "$126.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1341,7 +1341,7 @@
     "id": "bpc-tb-blend-2-2mg-healing-yunke",
     "name": "BPC+TB Blend 2+2mg",
     "category": "healing",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "4mg"
     ],
@@ -1355,7 +1355,7 @@
     "id": "bpc-tb-blend-15-15mg-healing-upp",
     "name": "BPC+TB Blend 15+15mg",
     "category": "healing",
-    "price": "$80.50",
+    "price": "$230.00",
     "vialSizes": [
       "30mg"
     ],
@@ -1369,7 +1369,7 @@
     "id": "bpc-tb-blend-10-10mg-healing-yunke",
     "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$89.25",
+    "price": "$255.00",
     "vialSizes": [
       "20mg"
     ],
@@ -1383,7 +1383,7 @@
     "id": "bpc-5mg-tb-5mg-other-hkms",
     "name": "BPC 5mg + TB 5mg",
     "category": "other",
-    "price": "$31.50",
+    "price": "$90.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1397,7 +1397,7 @@
     "id": "bpc-157-healing-hkms",
     "name": "BPC 157",
     "category": "healing",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1411,7 +1411,7 @@
     "id": "bpc-10mg-tb-10mg-other-hkms",
     "name": "BPC 10mg + TB 10mg",
     "category": "other",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "20mg"
     ],
@@ -1425,7 +1425,7 @@
     "id": "bc10-tb10-ghk50-glow-healing-hkms",
     "name": "BC10+TB10+GHK50 (Glow)",
     "category": "healing",
-    "price": "$66.50",
+    "price": "$190.00",
     "vialSizes": [
       "70mg"
     ],
@@ -1439,7 +1439,7 @@
     "id": "bac-water-moq-50-boxes-other-hkms",
     "name": "Bac Water (MOQ 50 boxes)",
     "category": "other",
-    "price": "$8.40",
+    "price": "$24.00",
     "vialSizes": [
       "30ml"
     ],
@@ -1453,7 +1453,7 @@
     "id": "bac-water-other-hkms",
     "name": "Bac Water",
     "category": "other",
-    "price": "$2.80",
+    "price": "$8.00",
     "vialSizes": [
       "10ml"
     ],
@@ -1467,7 +1467,7 @@
     "id": "b7-33-us-warehouse",
     "name": "B7-33",
     "category": "Other Research",
-    "price": "$70.00",
+    "price": "$200.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1486,7 +1486,7 @@
     "id": "ara-290-cibinetide-peptide-hkms",
     "name": "ARA 290(Cibinetide)",
     "category": "peptide",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1500,7 +1500,7 @@
     "id": "aod9604-weight-hkms",
     "name": "AOD9604",
     "category": "weight",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1514,7 +1514,7 @@
     "id": "aod-9604-weight-yunke",
     "name": "AOD-9604",
     "category": "weight",
-    "price": "$77.70",
+    "price": "$222.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1528,7 +1528,7 @@
     "id": "alprostadil-immune-hkms",
     "name": "Alprostadil",
     "category": "immune",
-    "price": "$19.60",
+    "price": "$56.00",
     "vialSizes": [
       "20ug"
     ],
@@ -1542,7 +1542,7 @@
     "id": "aicar-us-warehouse",
     "name": "AICAR",
     "category": "Weight Management",
-    "price": "$28.00",
+    "price": "$80.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1561,7 +1561,7 @@
     "id": "ahk-cu-overseas-warehouse",
     "name": "AHK-Cu",
     "category": "Other Research",
-    "price": "$19.25",
+    "price": "$55.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1580,7 +1580,7 @@
     "id": "admax-peptide-hkms",
     "name": "Admax",
     "category": "peptide",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1594,7 +1594,7 @@
     "id": "adipotide-other-yunke",
     "name": "Adipotide",
     "category": "other",
-    "price": "$74.20",
+    "price": "$212.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1608,7 +1608,7 @@
     "id": "acth-1-39-peptide-hkms",
     "name": "Acth 1-39",
     "category": "peptide",
-    "price": "$21.00",
+    "price": "$60.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1622,7 +1622,7 @@
     "id": "ace-031-overseas-warehouse",
     "name": "ACE-031",
     "category": "Other Research",
-    "price": "$63.00",
+    "price": "$180.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
     "inStock": true,
@@ -1641,7 +1641,7 @@
     "id": "aa-water-other-hkms",
     "name": "AA Water",
     "category": "other",
-    "price": "$5.25",
+    "price": "$15.00",
     "vialSizes": [
       "10ml"
     ],
@@ -1655,7 +1655,7 @@
     "id": "5-amino-1mq-peptide-hkms",
     "name": "5-amino-1mq",
     "category": "peptide",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1669,7 +1669,7 @@
     "id": "hgh-191aa-somatropin-gh-yunke",
     "name": "HGH 191AA (Somatropin)",
     "category": "gh",
-    "price": "$73.50",
+    "price": "$210.00",
     "vialSizes": [
       "36iu"
     ],
@@ -1683,7 +1683,7 @@
     "id": "dsip-other-yunke",
     "name": "DSIP",
     "category": "other",
-    "price": "$36.75",
+    "price": "$105.00",
     "vialSizes": [
       "15mg"
     ],
@@ -1697,7 +1697,7 @@
     "id": "selank-nootropic-yunke",
     "name": "Selank",
     "category": "nootropic",
-    "price": "$59.50",
+    "price": "$170.00",
     "vialSizes": [
       "30mg"
     ],
@@ -1711,7 +1711,7 @@
     "id": "epithalon-other-yunke",
     "name": "Epithalon",
     "category": "other",
-    "price": "$12.25",
+    "price": "$35.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1725,7 +1725,7 @@
     "id": "bpc-157-healing-yunke",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$44.10",
+    "price": "$126.00",
     "vialSizes": [
       "20mg"
     ],
@@ -1739,7 +1739,7 @@
     "id": "ace-031-other-yunke",
     "name": "ACE-031",
     "category": "other",
-    "price": "$33.25",
+    "price": "$95.00",
     "vialSizes": [
       "1mg"
     ],
@@ -1753,7 +1753,7 @@
     "id": "aicar-other-yunke",
     "name": "AICAR",
     "category": "other",
-    "price": "$23.45",
+    "price": "$67.00",
     "vialSizes": [
       "50mg"
     ],
@@ -1767,7 +1767,7 @@
     "id": "semax-nootropic-yunke",
     "name": "Semax",
     "category": "nootropic",
-    "price": "$59.50",
+    "price": "$170.00",
     "vialSizes": [
       "30mg"
     ],
@@ -1781,7 +1781,7 @@
     "id": "semaglutide-weight-yunke",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "30mg"
     ],
@@ -1795,7 +1795,7 @@
     "id": "tirzepatide-weight-yunke",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$88.20",
+    "price": "$252.00",
     "vialSizes": [
       "60mg"
     ],
@@ -1809,7 +1809,7 @@
     "id": "retatrutide-weight-yunke",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$157.50",
+    "price": "$450.00",
     "vialSizes": [
       "60mg"
     ],
@@ -1823,7 +1823,7 @@
     "id": "sermorelin-gh-yunke",
     "name": "Sermorelin",
     "category": "gh",
-    "price": "$57.75",
+    "price": "$165.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1837,7 +1837,7 @@
     "id": "hcg-other-yunke",
     "name": "HCG",
     "category": "other",
-    "price": "$57.75",
+    "price": "$165.00",
     "vialSizes": [
       "10000IU"
     ],
@@ -1851,7 +1851,7 @@
     "id": "tesamorelin-gh-yunke",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$87.50",
+    "price": "$250.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1865,7 +1865,7 @@
     "id": "ipamorelin-gh-yunke",
     "name": "Ipamorelin",
     "category": "gh",
-    "price": "$29.05",
+    "price": "$83.00",
     "vialSizes": [
       "10mg"
     ],
@@ -1879,7 +1879,7 @@
     "id": "ghk-cu-other-yunke",
     "name": "GHK-CU",
     "category": "other",
-    "price": "$21.00",
+    "price": "$60.00",
     "vialSizes": [
       "100mg"
     ],
@@ -1893,7 +1893,7 @@
     "id": "thymosin-alpha-1-healing-yunke",
     "name": "Thymosin Alpha-1",
     "category": "healing",
-    "price": "$33.25",
+    "price": "$95.00",
     "vialSizes": [
       "5mg"
     ],
@@ -1907,7 +1907,7 @@
     "id": "mots-c-other-yunke",
     "name": "MOTS-C",
     "category": "other",
-    "price": "$81.55",
+    "price": "$233.00",
     "vialSizes": [
       "40mg"
     ],
@@ -1921,7 +1921,7 @@
     "id": "nad-other-yunke",
     "name": "NAD+",
     "category": "other",
-    "price": "$87.50",
+    "price": "$250.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -1935,7 +1935,7 @@
     "id": "cagrilintide-weight-yunke",
     "name": "Cagrilintide",
     "category": "weight",
-    "price": "$87.50",
+    "price": "$250.00",
     "vialSizes": [
       "20mg"
     ],
@@ -1949,7 +1949,7 @@
     "id": "semaglutide-weight-erp",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$38.15",
+    "price": "$109.00",
     "vialSizes": [
       "30mg"
     ],
@@ -1963,7 +1963,7 @@
     "id": "tirzepatide-weight-erp",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$73.15",
+    "price": "$209.00",
     "vialSizes": [
       "60mg"
     ],
@@ -1977,7 +1977,7 @@
     "id": "retatrutide-weight-erp",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$104.65",
+    "price": "$299.00",
     "vialSizes": [
       "60mg"
     ],
@@ -1991,7 +1991,7 @@
     "id": "cagrilintide-weight-erp",
     "name": "Cagrilintide",
     "category": "weight",
-    "price": "$85.75",
+    "price": "$245.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2005,7 +2005,7 @@
     "id": "bpc-157-healing-erp",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$24.15",
+    "price": "$69.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2019,7 +2019,7 @@
     "id": "tb-500-healing-erp",
     "name": "TB-500",
     "category": "healing",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2033,7 +2033,7 @@
     "id": "bpc-tb-blend-5-5mg-healing-erp",
     "name": "BPC+TB Blend 5+5mg",
     "category": "healing",
-    "price": "$33.25",
+    "price": "$95.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2047,7 +2047,7 @@
     "id": "bpc-tb-blend-10-10mg-healing-erp",
     "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$61.25",
+    "price": "$175.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2061,7 +2061,7 @@
     "id": "tesamorelin-gh-erp",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$70.00",
+    "price": "$200.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2075,7 +2075,7 @@
     "id": "ipamorelin-gh-erp",
     "name": "Ipamorelin",
     "category": "gh",
-    "price": "$26.25",
+    "price": "$75.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2089,7 +2089,7 @@
     "id": "nad-other-erp",
     "name": "NAD+",
     "category": "other",
-    "price": "$66.15",
+    "price": "$189.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -2103,7 +2103,7 @@
     "id": "tesamorelin-gh-jeep",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$55.30",
+    "price": "$158.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2117,7 +2117,7 @@
     "id": "tb-500-healing-jeep",
     "name": "TB-500",
     "category": "healing",
-    "price": "$45.50",
+    "price": "$130.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2131,7 +2131,7 @@
     "id": "ghk-cu-other-jeep",
     "name": "GHK-CU",
     "category": "other",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "100mg"
     ],
@@ -2145,7 +2145,7 @@
     "id": "bpc-157-healing-jeep",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$21.00",
+    "price": "$60.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2159,7 +2159,7 @@
     "id": "retatrutide-weight-jeep",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$133.00",
+    "price": "$380.00",
     "vialSizes": [
       "60mg"
     ],
@@ -2173,7 +2173,7 @@
     "id": "tirzepatide-weight-jeep",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$157.50",
+    "price": "$450.00",
     "vialSizes": [
       "120mg"
     ],
@@ -2187,7 +2187,7 @@
     "id": "sermorelin-gh-jeep",
     "name": "Sermorelin",
     "category": "gh",
-    "price": "$52.50",
+    "price": "$150.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2201,7 +2201,7 @@
     "id": "mots-c-other-jeep",
     "name": "MOTS-C",
     "category": "other",
-    "price": "$70.00",
+    "price": "$200.00",
     "vialSizes": [
       "40mg"
     ],
@@ -2215,7 +2215,7 @@
     "id": "semax-nootropic-jeep",
     "name": "Semax",
     "category": "nootropic",
-    "price": "$19.25",
+    "price": "$55.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2229,7 +2229,7 @@
     "id": "selank-nootropic-jeep",
     "name": "Selank",
     "category": "nootropic",
-    "price": "$19.25",
+    "price": "$55.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2243,7 +2243,7 @@
     "id": "tirzepatide-weight-qyc",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$157.50",
+    "price": "$450.00",
     "vialSizes": [
       "120mg"
     ],
@@ -2257,7 +2257,7 @@
     "id": "retatrutide-weight-qyc",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$157.50",
+    "price": "$450.00",
     "vialSizes": [
       "60mg"
     ],
@@ -2271,7 +2271,7 @@
     "id": "semaglutide-weight-qyc",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$42.00",
+    "price": "$120.00",
     "vialSizes": [
       "30mg"
     ],
@@ -2285,7 +2285,7 @@
     "id": "cagrilintide-weight-qyc",
     "name": "Cagrilintide",
     "category": "weight",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2299,7 +2299,7 @@
     "id": "tesamorelin-gh-qyc",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$54.25",
+    "price": "$155.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2313,7 +2313,7 @@
     "id": "ipamorelin-gh-qyc",
     "name": "Ipamorelin",
     "category": "gh",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2327,7 +2327,7 @@
     "id": "sermorelin-gh-qyc",
     "name": "Sermorelin",
     "category": "gh",
-    "price": "$33.25",
+    "price": "$95.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2341,7 +2341,7 @@
     "id": "bpc-157-healing-qyc",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2355,7 +2355,7 @@
     "id": "tb-500-healing-qyc",
     "name": "TB-500",
     "category": "healing",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2369,7 +2369,7 @@
     "id": "bpc-tb-blend-5-5mg-healing-qyc",
     "name": "BPC+TB Blend 5+5mg",
     "category": "healing",
-    "price": "$29.75",
+    "price": "$85.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2383,7 +2383,7 @@
     "id": "bpc-tb-blend-10-10mg-healing-qyc",
     "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2397,7 +2397,7 @@
     "id": "nad-other-qyc",
     "name": "NAD+",
     "category": "other",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -2411,7 +2411,7 @@
     "id": "ghk-cu-other-upp",
     "name": "GHK-CU",
     "category": "other",
-    "price": "$16.80",
+    "price": "$48.00",
     "vialSizes": [
       "100mg"
     ],
@@ -2425,7 +2425,7 @@
     "id": "retatrutide-weight-upp",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$150.50",
+    "price": "$430.00",
     "vialSizes": [
       "100mg"
     ],
@@ -2439,7 +2439,7 @@
     "id": "tirzepatide-weight-upp",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$105.00",
+    "price": "$300.00",
     "vialSizes": [
       "120mg"
     ],
@@ -2453,7 +2453,7 @@
     "id": "semaglutide-weight-upp",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$28.00",
+    "price": "$80.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2467,7 +2467,7 @@
     "id": "bpc-157-healing-upp",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2481,7 +2481,7 @@
     "id": "bpc-tb-blend-5-5mg-healing-upp",
     "name": "BPC+TB Blend 5+5mg",
     "category": "healing",
-    "price": "$35.00",
+    "price": "$100.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2495,7 +2495,7 @@
     "id": "bpc-tb-blend-10-10mg-healing-upp",
     "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2509,7 +2509,7 @@
     "id": "tb-500-healing-upp",
     "name": "TB-500",
     "category": "healing",
-    "price": "$45.50",
+    "price": "$130.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2523,7 +2523,7 @@
     "id": "hcg-other-upp",
     "name": "HCG",
     "category": "other",
-    "price": "$52.50",
+    "price": "$150.00",
     "vialSizes": [
       "10000IU"
     ],
@@ -2537,7 +2537,7 @@
     "id": "hgh-fragment-176-191-weight-upp",
     "name": "HGH Fragment 176-191",
     "category": "weight",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2551,7 +2551,7 @@
     "id": "mots-c-other-upp",
     "name": "MOTS-C",
     "category": "other",
-    "price": "$75.25",
+    "price": "$215.00",
     "vialSizes": [
       "40mg"
     ],
@@ -2565,7 +2565,7 @@
     "id": "tirzepatide-weight-dp",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$126.00",
+    "price": "$360.00",
     "vialSizes": [
       "120mg"
     ],
@@ -2579,7 +2579,7 @@
     "id": "retatrutide-weight-dp",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$115.50",
+    "price": "$330.00",
     "vialSizes": [
       "60mg"
     ],
@@ -2593,7 +2593,7 @@
     "id": "semaglutide-weight-dp",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "30mg"
     ],
@@ -2607,7 +2607,7 @@
     "id": "glow-blend-bpc10-cu50-tb10-healing-dp",
     "name": "GLOW Blend (BPC10+CU50+TB10)",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "70mg"
     ],
@@ -2621,7 +2621,7 @@
     "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-dp",
     "name": "KLOW Blend (BPC10+CU50+TB10+KPV10)",
     "category": "healing",
-    "price": "$66.50",
+    "price": "$190.00",
     "vialSizes": [
       "80mg"
     ],
@@ -2635,7 +2635,7 @@
     "id": "kpv-healing-dp",
     "name": "KPV",
     "category": "healing",
-    "price": "$21.00",
+    "price": "$60.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2649,7 +2649,7 @@
     "id": "vip-other-dp",
     "name": "VIP",
     "category": "other",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2663,7 +2663,7 @@
     "id": "ghk-cu-other-dp",
     "name": "GHK-CU",
     "category": "other",
-    "price": "$17.50",
+    "price": "$50.00",
     "vialSizes": [
       "100mg"
     ],
@@ -2677,7 +2677,7 @@
     "id": "nad-other-dp",
     "name": "NAD+",
     "category": "other",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -2691,7 +2691,7 @@
     "id": "bpc-tb-blend-5-5mg-healing-dp",
     "name": "BPC+TB Blend 5+5mg",
     "category": "healing",
-    "price": "$35.00",
+    "price": "$100.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2705,7 +2705,7 @@
     "id": "bpc-tb-blend-10-10mg-healing-dp",
     "name": "BPC+TB Blend 10+10mg",
     "category": "healing",
-    "price": "$63.00",
+    "price": "$180.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2719,7 +2719,7 @@
     "id": "tb-500-healing-dp",
     "name": "TB-500",
     "category": "healing",
-    "price": "$105.00",
+    "price": "$300.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2733,7 +2733,7 @@
     "id": "bpc-157-healing-dp",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$45.50",
+    "price": "$130.00",
     "vialSizes": [
       "20mg"
     ],
@@ -2747,7 +2747,7 @@
     "id": "tirzepatide-weight-chp",
     "name": "Tirzepatide",
     "category": "weight",
-    "price": "$68.25",
+    "price": "$195.00",
     "vialSizes": [
       "60mg"
     ],
@@ -2761,7 +2761,7 @@
     "id": "retatrutide-weight-chp",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$105.00",
+    "price": "$300.00",
     "vialSizes": [
       "50mg"
     ],
@@ -2775,7 +2775,7 @@
     "id": "tb-500-healing-chp",
     "name": "TB-500",
     "category": "healing",
-    "price": "$38.50",
+    "price": "$110.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2789,7 +2789,7 @@
     "id": "bpc-157-healing-chp",
     "name": "BPC-157",
     "category": "healing",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2803,7 +2803,7 @@
     "id": "mots-c-other-chp",
     "name": "MOTS-C",
     "category": "other",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2817,7 +2817,7 @@
     "id": "semax-nootropic-chp",
     "name": "Semax",
     "category": "nootropic",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2831,7 +2831,7 @@
     "id": "tesamorelin-gh-chp",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$52.50",
+    "price": "$150.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2845,7 +2845,7 @@
     "id": "ipamorelin-gh-chp",
     "name": "Ipamorelin",
     "category": "gh",
-    "price": "$24.50",
+    "price": "$70.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2859,7 +2859,7 @@
     "id": "ghk-cu-other-chp",
     "name": "GHK-CU",
     "category": "other",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "100mg"
     ],
@@ -2873,7 +2873,7 @@
     "id": "nad-other-chp",
     "name": "NAD+",
     "category": "other",
-    "price": "$50.75",
+    "price": "$145.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -2887,7 +2887,7 @@
     "id": "adipotide-weight-hkms",
     "name": "Adipotide",
     "category": "weight",
-    "price": "$45.50",
+    "price": "$130.00",
     "vialSizes": [
       "5mg"
     ],
@@ -2901,7 +2901,7 @@
     "id": "cagrilintide-weight-hkms",
     "name": "Cagrilintide",
     "category": "weight",
-    "price": "$66.50",
+    "price": "$190.00",
     "vialSizes": [
       "10 mg"
     ],
@@ -2915,7 +2915,7 @@
     "id": "epithalon-anti-aging-hkms",
     "name": "Epithalon",
     "category": "anti-aging",
-    "price": "$49.00",
+    "price": "$140.00",
     "vialSizes": [
       "50mg"
     ],
@@ -2929,7 +2929,7 @@
     "id": "glutathione-immune-hkms",
     "name": "Glutathione",
     "category": "immune",
-    "price": "$12.25",
+    "price": "$35.00",
     "vialSizes": [
       "600mg"
     ],
@@ -2943,7 +2943,7 @@
     "id": "gonadorelin-acetate-anti-aging-hkms",
     "name": "Gonadorelin Acetate",
     "category": "anti-aging",
-    "price": "$10.50",
+    "price": "$30.00",
     "vialSizes": [
       "2mg"
     ],
@@ -2957,7 +2957,7 @@
     "id": "hgh-fragment-176-191-gh-hkms",
     "name": "HGH Fragment 176-191",
     "category": "gh",
-    "price": "$12.25",
+    "price": "$35.00",
     "vialSizes": [
       "2mg"
     ],
@@ -2971,7 +2971,7 @@
     "id": "hmg-gh-hkms",
     "name": "HMG",
     "category": "gh",
-    "price": "$18.55",
+    "price": "$53.00",
     "vialSizes": [
       "75 iu"
     ],
@@ -2985,7 +2985,7 @@
     "id": "ipamorelin-gh-hkms",
     "name": "Ipamorelin",
     "category": "gh",
-    "price": "$22.75",
+    "price": "$65.00",
     "vialSizes": [
       "10mg"
     ],
@@ -2999,7 +2999,7 @@
     "id": "kpv-immune-hkms",
     "name": "KPV",
     "category": "immune",
-    "price": "$19.60",
+    "price": "$56.00",
     "vialSizes": [
       "10mg"
     ],
@@ -3013,7 +3013,7 @@
     "id": "mt-1-sexual-hkms",
     "name": "MT-1",
     "category": "sexual",
-    "price": "$14.35",
+    "price": "$41.00",
     "vialSizes": [
       "10mg"
     ],
@@ -3027,7 +3027,7 @@
     "id": "nad-anti-aging-hkms",
     "name": "NAD+",
     "category": "anti-aging",
-    "price": "$56.00",
+    "price": "$160.00",
     "vialSizes": [
       "1000mg"
     ],
@@ -3041,7 +3041,7 @@
     "id": "oxytocin-acetate-immune-hkms",
     "name": "Oxytocin Acetate",
     "category": "immune",
-    "price": "$15.05",
+    "price": "$43.00",
     "vialSizes": [
       "5 mg"
     ],
@@ -3055,7 +3055,7 @@
     "id": "pt-141-sexual-hkms",
     "name": "PT-141",
     "category": "sexual",
-    "price": "$19.25",
+    "price": "$55.00",
     "vialSizes": [
       "10mg"
     ],
@@ -3069,7 +3069,7 @@
     "id": "retatrutide-weight-hkms",
     "name": "Retatrutide",
     "category": "weight",
-    "price": "$84.00",
+    "price": "$240.00",
     "vialSizes": [
       "30mg"
     ],
@@ -3083,7 +3083,7 @@
     "id": "semaglutide-weight-hkms",
     "name": "Semaglutide",
     "category": "weight",
-    "price": "$29.75",
+    "price": "$85.00",
     "vialSizes": [
       "20mg"
     ],
@@ -3097,7 +3097,7 @@
     "id": "ss-31-anti-aging-hkms",
     "name": "SS-31",
     "category": "anti-aging",
-    "price": "$127.75",
+    "price": "$365.00",
     "vialSizes": [
       "50mg"
     ],
@@ -3111,7 +3111,7 @@
     "id": "tesamorelin-gh-hkms",
     "name": "Tesamorelin",
     "category": "gh",
-    "price": "$122.50",
+    "price": "$350.00",
     "vialSizes": [
       "20mg"
     ],
@@ -3125,7 +3125,7 @@
     "id": "triptorelin-acetate-immune-hkms",
     "name": "Triptorelin Acetate",
     "category": "immune",
-    "price": "$13.65",
+    "price": "$39.00",
     "vialSizes": [
       "2mg"
     ],
@@ -3139,13 +3139,13 @@
     "id": "tirzepatide-10mg-hkp",
     "name": "Tirzepatide",
     "category": "peptide",
-    "price": "$55.00",
+    "price": "$165.00",
     "vialSizes": [
-      "10mg"
+      "60mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "T10",
     "source_vendor": "hkp"
   },
@@ -3237,13 +3237,13 @@
     "id": "semaglutide-5mg-hkp",
     "name": "Semaglutide",
     "category": "peptide",
-    "price": "$35.00",
+    "price": "$88.00",
     "vialSizes": [
-      "5mg"
+      "30mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "SM5",
     "source_vendor": "hkp"
   },
@@ -3307,13 +3307,13 @@
     "id": "retatrutide-5mg-hkp",
     "name": "Retatrutide",
     "category": "peptide",
-    "price": "$50.00",
+    "price": "$315.00",
     "vialSizes": [
-      "5mg"
+      "60mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "R5",
     "source_vendor": "hkp"
   },
@@ -3419,13 +3419,13 @@
     "id": "nad--500mg-hkp",
     "name": "NAD+",
     "category": "peptide",
-    "price": "$58.00",
+    "price": "$105.00",
     "vialSizes": [
-      "500mg"
+      "1000mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "NJ500",
     "source_vendor": "hkp"
   },
@@ -3517,13 +3517,13 @@
     "id": "sermorelin-5mg-hkp",
     "name": "Sermorelin",
     "category": "peptide",
-    "price": "$75.00",
+    "price": "$135.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "SMO5",
     "source_vendor": "hkp"
   },
@@ -3545,13 +3545,13 @@
     "id": "cagrilintide-5mg-hkp",
     "name": "Cagrilintide",
     "category": "peptide",
-    "price": "$90.00",
+    "price": "$150.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "Cagri5",
     "source_vendor": "hkp"
   },
@@ -3573,13 +3573,13 @@
     "id": "tesamorelin-5mg-hkp",
     "name": "Tesamorelin",
     "category": "peptide",
-    "price": "$100.00",
+    "price": "$148.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "Tesa5",
     "source_vendor": "hkp"
   },
@@ -3615,13 +3615,13 @@
     "id": "ipamorelin-5mg-hkp",
     "name": "Ipamorelin",
     "category": "peptide",
-    "price": "$45.00",
+    "price": "$65.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "IP5",
     "source_vendor": "hkp"
   },
@@ -3643,13 +3643,13 @@
     "id": "epithalon-5mg-hkp",
     "name": "Epithalon",
     "category": "peptide",
-    "price": "$40.00",
+    "price": "$55.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "ET5",
     "source_vendor": "hkp"
   },
@@ -3671,13 +3671,13 @@
     "id": "glutathione-600mg-hkp",
     "name": "Glutathione",
     "category": "peptide",
-    "price": "$40.00",
+    "price": "$88.00",
     "vialSizes": [
-      "600mg"
+      "1500mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "GTT600",
     "source_vendor": "hkp"
   },
@@ -3705,7 +3705,7 @@
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "MDT10",
     "source_vendor": "hkp"
   },
@@ -3713,13 +3713,13 @@
     "id": "ss-31-10mg-hkp",
     "name": "SS-31",
     "category": "peptide",
-    "price": "$77.00",
+    "price": "$280.00",
     "vialSizes": [
-      "10mg"
+      "50mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "2S10",
     "source_vendor": "hkp"
   },
@@ -3747,7 +3747,7 @@
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "KPV10",
     "source_vendor": "hkp"
   },
@@ -3755,13 +3755,13 @@
     "id": "bpc-157-5mg-hkp",
     "name": "BPC-157",
     "category": "peptide",
-    "price": "$40.00",
+    "price": "$55.00",
     "vialSizes": [
-      "5mg"
+      "10mg"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "BPC5",
     "source_vendor": "hkp"
   },
@@ -3803,7 +3803,7 @@
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
-    "vendor": "hkp",
+    "vendor": "HKP",
     "vendor_cat_no": "TB5",
     "source_vendor": "hkp"
   },
@@ -4254,5 +4254,61 @@
     "vendor": "hkp",
     "vendor_cat_no": "5 amino",
     "source_vendor": "hkp"
+  },
+  {
+    "id": "klow-blend-cu50-tb10-bpc10-kpv10-healing-hkp",
+    "name": "KLOW Blend (CU50+TB10+BPC10+KPV10)",
+    "category": "healing",
+    "price": "$170.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "KLOW80",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu35-tb10-bpc5-healing-hkp",
+    "name": "GLOW Blend (CU35+TB10+BPC5)",
+    "category": "healing",
+    "price": "$140.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "GLOW50",
+    "extraWarehouses": []
+  },
+  {
+    "id": "glow-blend-cu50-tb10-bpc10-healing-hkp",
+    "name": "GLOW Blend (CU50+TB10+BPC10)",
+    "category": "healing",
+    "price": "$155.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "GLOW70",
+    "extraWarehouses": []
+  },
+  {
+    "id": "cjc-1295-w-o-dac-ipamorelin-blend-gh-hkp",
+    "name": "CJC-1295 w/o DAC + Ipamorelin Blend",
+    "category": "gh",
+    "price": "$100.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "HKP",
+    "vendor_cat_no": "IPA5CJC5",
+    "extraWarehouses": []
   }
 ]
