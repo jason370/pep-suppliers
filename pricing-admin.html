@@ -269,7 +269,7 @@ function renderTable(products) {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
   products.forEach(function(p, i) {
-    var changed = _changes[p.id];
+    var changed = _changes['_sale_'+p.id];
     var tr = document.createElement('tr');
     if (changed) tr.classList.add('changed-row');
     if (!p.vendor) tr.classList.add('no-vendor-row');
@@ -284,8 +284,8 @@ function renderTable(products) {
     var hasUS = warehouses.indexOf('US Warehouse') > -1;
     var hasCA = warehouses.indexOf('Canada Warehouse') > -1;
 
-    var newPrice = changed ? changed : (p.price || '');
-    var inputClass = changed ? 'price-input changed' : 'price-input';
+    var salePrice = _changes['_sale_'+p.id] !== undefined ? _changes['_sale_'+p.id] : (p.salePrice || '');
+    var inputClass = _changes['_sale_'+p.id] ? 'price-input changed' : 'price-input';
     var vendorLabel = p.vendor || '—';
 
     var warehouseBadges = warehouses.map(function(w) {
@@ -304,7 +304,7 @@ function renderTable(products) {
       '<td style="color:#6b7f94">' + escHtml(p.price||'—') + '</td>' +
       '<td style="color:#6b7f94">' + calcPerVial(p.price) + '</td>' +
       '<td><input class="markup-input" type="number" min="0" max="500" placeholder="%" data-id="' + p.id + '" oninput="onMarkupChange(this)"></td>' +
-      '<td><input class="' + inputClass + '" type="text" value="' + escAttr(newPrice) + '" data-id="' + p.id + '" data-original="' + escAttr(p.price||'') + '" oninput="onPriceChange(this)"></td>' +
+      '<td><input class="' + inputClass + '" type="text" value="' + escAttr(salePrice) + '" data-id="' + p.id + '" data-original="' + escAttr(p.salePrice||'') + '" oninput="onPriceChange(this)"></td>' +
       '<td>' +
         '<div class="wh-checks">' +
           warehouseBadges +
@@ -500,15 +500,24 @@ function onMarkupChange(input){
   if(isNaN(cost))return;
   var ppv=cost/10; // price per vial
   var priceInput=input.closest('tr').querySelector('.price-input');
-  if(priceInput){priceInput.value='$'+(ppv*(1+pct/100)).toFixed(2); onPriceChange(priceInput);}
+  if(priceInput){
+    priceInput.value='$'+(ppv*(1+pct/100)).toFixed(2);
+    priceInput.dataset.original=p.salePrice||'';
+    onPriceChange(priceInput);
+  }
 }
 
 function onPriceChange(input){
   var id=input.dataset.id, val=input.value.trim();
+  var p=_products.find(function(x){return x.id===id;});
   if(val!==input.dataset.original){
-    _changes[id]=val; input.classList.add('changed'); input.closest('tr').classList.add('changed-row');
+    _changes['_sale_'+id]=val;
+    if(p) p.salePrice=val;
+    input.classList.add('changed'); input.closest('tr').classList.add('changed-row');
   } else {
-    delete _changes[id]; input.classList.remove('changed'); input.closest('tr').classList.remove('changed-row');
+    delete _changes['_sale_'+id];
+    if(p) p.salePrice=input.dataset.original;
+    input.classList.remove('changed'); input.closest('tr').classList.remove('changed-row');
   }
   updateChangeCount();
 }
@@ -602,7 +611,11 @@ function applyMarkup(){
     if(isNaN(cost))return;
     var ppv=cost/10;
     var priceInput=tr.querySelector('.price-input');
-    if(priceInput){priceInput.value='$'+(ppv*mult).toFixed(2); onPriceChange(priceInput);}
+    if(priceInput){
+      priceInput.value='$'+(ppv*mult).toFixed(2);
+      priceInput.dataset.original=p.salePrice||''; // compare against salePrice not cost
+      onPriceChange(priceInput);
+    }
   });
 }
 
@@ -623,7 +636,7 @@ function pushChanges(){
   document.getElementById('push-btn').disabled=true;
   var updated=_products.map(function(p){
     var out=Object.assign({},p);
-    if(_changes[p.id]!==undefined) out.price=_changes[p.id];
+    if(_changes['_sale_'+p.id]!==undefined) out.salePrice=_changes['_sale_'+p.id];
     if(_changes['_stock_'+p.id]!==undefined) out.inStock=_changes['_stock_'+p.id];
     if(_changes['_vials_'+p.id]!==undefined) out.vialSizes=_changes['_vials_'+p.id];
     if(_changes['_name_'+p.id]!==undefined) out.name=_changes['_name_'+p.id];
