@@ -7294,11 +7294,12 @@
       "50mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "ACU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$31.00"
   },
   {
     "id": "adamax10-other",
@@ -10224,7 +10225,8 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "ACU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$30.00"
   },
   {
     "id": "adamax10-other-kr",
@@ -14450,11 +14452,12 @@
       "50mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "AU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$30.00"
   },
   {
     "id": "ahkcu100-other-wbs",
