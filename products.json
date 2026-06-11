@@ -9392,8 +9392,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "cjcipa-gh-hkp",
-    "name": "CJCIPA",
+    "id": "cp10-gh-hkp",
+    "name": "CP10",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -9403,8 +9403,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "CJCIPA",
-    "newName": "CJC-1295 + Ipamorelin 10mg x10 vials",
+    "vendor_cat_no": "CP10",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11008,8 +11008,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "tesa5ipa5-gh-hhb",
-    "name": "Tesa5+IPA5",
+    "id": "ti10-gh-hhb",
+    "name": "TI10",
     "category": "gh",
     "price": "$115.00",
     "vialSizes": [
@@ -11019,8 +11019,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Tesa5+IPA5",
-    "newName": "Tesamorelin + Ipamorelin 10mg x10 vials",
+    "vendor_cat_no": "TI10",
+    "newName": "Tesamorelin 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
