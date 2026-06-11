@@ -380,7 +380,7 @@
       "3ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "AA03",
@@ -417,7 +417,7 @@
     "vendor": "AAG",
     "vendor_cat_no": "AA3",
     "extraWarehouses": [],
-    "salePrice": "$3.00"
+    "salePrice": "$5.00"
   },
   {
     "id": "acth-1-39-peptide-hkms",
