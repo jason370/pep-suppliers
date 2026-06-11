@@ -1705,7 +1705,7 @@
     "price": "$180.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vialSizes": [
       "1mg"
@@ -1836,7 +1836,8 @@
     "vendor": "Yunke",
     "vendor_cat_no": "AE1",
     "extraWarehouses": [],
-    "visible": true
+    "visible": true,
+    "salePrice": "40"
   },
   {
     "id": "aicar-other-yunke",
