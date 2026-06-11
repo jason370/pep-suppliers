@@ -477,6 +477,8 @@ function handleXlsxUpload(input) {
       });
       document.getElementById('product-count').textContent=_products.length+' products';
       renderTable(_products);
+      // Force push button to enable after any upload
+      if(matched > 0 && Object.keys(_changes).length === 0){ _changes['_upload_refresh']=Date.now(); }
       updateChangeCount();
       showStatus('✅ '+matched+' updated, '+added+' new (all set to China). Use +US / +CA checkboxes to assign warehouses. '+
         (skipped?skipped+' skipped.':''), 'success');
