@@ -336,8 +336,8 @@ function renderTable(products) {
     tr.innerHTML =
       '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<span title="Fields locked from upload overwrite" style="font-size:11px;cursor:default">🔒</span>':'') + '</td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
-      '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" oninput="onNameChange(this)"></td>' +
-      '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
+      '<td style="font-size:12px;font-weight:700;padding:4px 8px">' + escHtml(p.name||'') + '</td>' +
+      '<td><input class="name-input' + (_changes['_name_'+p.id]?' changed':'') + '" type="text" value="' + escAttr(_changes['_name_'+p.id]||'') + '" data-id="' + p.id + '" placeholder="Rename..." oninput="onNameChange(this)"></td>' +
       '<td>' + (p.vendor ? '<span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span>' : '<span style="color:#e74c3c;font-size:12px;font-weight:700">⚠ No vendor</span>') + '</td>' +
       '<td><span style="font-size:12px;color:#405267;font-weight:600">' + escHtml(p.category||'—') + '</span></td>' +
       '<td><input class="vial-input" type="text" value="' + escAttr((p.vialSizes||[]).join(', ')) + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
@@ -514,13 +514,19 @@ function handleXlsxUpload(input) {
 function onNameChange(input) {
   var id=input.dataset.id, p=_products.find(function(x){return x.id===id;});
   if(!p)return;
-  p.name=input.value.trim();
-  _changes['_name_'+id]=p.name;
-  if(!_lockedFields[id]) _lockedFields[id]={};
-  _lockedFields[id].name=true;
-  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
-  input.classList.add('changed');
-  input.closest('tr').classList.add('changed-row');
+  var val=input.value.trim();
+  if(val){
+    _changes['_name_'+id]=val;
+    if(!_lockedFields[id]) _lockedFields[id]={};
+    _lockedFields[id].name=true;
+    localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
+    input.classList.add('changed');
+    input.closest('tr').classList.add('changed-row');
+  } else {
+    delete _changes['_name_'+id];
+    input.classList.remove('changed');
+    input.closest('tr').classList.remove('changed-row');
+  }
   updateChangeCount();
 }
 
