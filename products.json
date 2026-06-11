@@ -10240,8 +10240,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "mots5-other-hhb",
-    "name": "MOTS-5",
+    "id": "ms5-other-hhb",
+    "name": "MS5",
     "category": "other",
     "price": "$40.00",
     "vialSizes": [
@@ -10251,7 +10251,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "MOTS-5",
+    "vendor_cat_no": "MS5",
     "newName": "MOTS-C 5mg x10 vials",
     "extraWarehouses": []
   },
