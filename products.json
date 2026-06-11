@@ -957,14 +957,14 @@
   },
   {
     "id": "10ad-weight",
-    "name": "AOD-9604 10mg",
+    "name": "AOD10",
     "category": "weight",
     "price": "$222.00",
     "vialSizes": [
       "10mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "10AD",
