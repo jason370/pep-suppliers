@@ -51,6 +51,8 @@ tbody tr:hover{background:#EEF8FA}
 tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
 .changed-row{background:#fffbe6!important}
 .changed-row td:first-child{border-left:3px solid #f0a500}
+.no-vendor-row{background:#fff0f0!important}
+.no-vendor-row td:first-child{border-left:3px solid #e74c3c}
 
 .price-input{width:100px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;text-align:right;outline:none}
 .price-input:focus{border-color:var(--teal)}
@@ -253,6 +255,7 @@ function renderTable(products) {
     var changed = _changes[p.id];
     var tr = document.createElement('tr');
     if (changed) tr.classList.add('changed-row');
+    if (!p.vendor) tr.classList.add('no-vendor-row');
     tr.dataset.id = p.id;
     tr.dataset.name = (p.name || '').toLowerCase();
     tr.dataset.warehouse = p.warehouse || '';
@@ -278,7 +281,7 @@ function renderTable(products) {
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" oninput="onNameChange(this)"></td>' +
       '<td><input class="name-input" type="text" value="' + escAttr(p.name||'') + '" data-id="' + p.id + '" placeholder="New name..." oninput="onNameChange(this)"></td>' +
-      '<td><span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span></td>' +
+      '<td>' + (p.vendor ? '<span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span>' : '<span style="color:#e74c3c;font-size:12px;font-weight:700">⚠ No vendor</span>') + '</td>' +
       '<td><input class="vial-input" type="text" value="' + escAttr((p.vialSizes||[]).join(', ')) + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
       '<td style="color:#6b7f94">' + escHtml(p.price||'—') + '</td>' +
       '<td style="color:#6b7f94">' + calcPerVial(p.price) + '</td>' +
