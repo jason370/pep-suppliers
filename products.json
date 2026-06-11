@@ -444,7 +444,7 @@
       "10mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "ADA10",
@@ -476,7 +476,7 @@
       "10mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "ADA10",
