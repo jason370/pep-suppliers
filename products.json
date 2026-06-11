@@ -1120,8 +1120,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-weight-yunke",
-    "name": "2AD",
+    "id": "aod2-weight-yunke",
+    "name": "AOD2",
     "category": "weight",
     "price": "$57.00",
     "vialSizes": [
@@ -1131,13 +1131,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "Yunke",
-    "vendor_cat_no": "2AD",
-    "newName": "AOD9604 2mg x10 vials",
+    "vendor_cat_no": "AOD2",
+    "newName": "AOD-9604 2mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "5ad-weight-yunke",
-    "name": "5AD",
+    "id": "aod5-weight-yunke",
+    "name": "AOD5",
     "category": "weight",
     "price": "$110.00",
     "vialSizes": [
@@ -1147,13 +1147,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "Yunke",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-weight-yunke",
-    "name": "10AD",
+    "id": "aod10-weight-yunke",
+    "name": "AOD10",
     "category": "weight",
     "price": "$222.00",
     "vialSizes": [
@@ -1163,8 +1163,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "Yunke",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -4208,8 +4208,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-upp",
-    "name": "2AD",
+    "id": "aod2-other-upp",
+    "name": "AOD2",
     "category": "other",
     "price": "$50.00",
     "vialSizes": [
@@ -4219,13 +4219,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "2AD",
-    "newName": "AOD9604 2mg x10 vials",
+    "vendor_cat_no": "AOD2",
+    "newName": "AOD-9604 2mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-upp",
-    "name": "5AD",
+    "id": "aod5-other-upp",
+    "name": "AOD5",
     "category": "other",
     "price": "$100.00",
     "vialSizes": [
@@ -4235,13 +4235,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-upp",
-    "name": "10AD",
+    "id": "aod10-other-upp",
+    "name": "AOD10",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -4251,8 +4251,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6576,8 +6576,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-hkms",
-    "name": "2AD",
+    "id": "aod2-other-hkms",
+    "name": "AOD2",
     "category": "other",
     "price": "$41.00",
     "vialSizes": [
@@ -6587,13 +6587,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "2AD",
-    "newName": "AOD9604 2mg x10 vials",
+    "vendor_cat_no": "AOD2",
+    "newName": "AOD-9604 2mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-hkms",
-    "name": "5AD",
+    "id": "aod5-other-hkms",
+    "name": "AOD5",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -6603,8 +6603,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10736,8 +10736,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-hhb",
-    "name": "5AD",
+    "id": "aod5-other-hhb",
+    "name": "AOD5",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -10747,13 +10747,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-hhb",
-    "name": "10AD",
+    "id": "aod10-other-hhb",
+    "name": "AOD10",
     "category": "other",
     "price": "$150.00",
     "vialSizes": [
@@ -10763,8 +10763,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10896,8 +10896,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "cjc10ipa10-gh-hhb",
-    "name": "CJC10+IPA10",
+    "id": "cp20-gh-hhb",
+    "name": "CP20",
     "category": "gh",
     "price": "$170.00",
     "vialSizes": [
@@ -10907,13 +10907,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CJC10+IPA10",
-    "newName": "CJC-1295 No DAC + Ipamorelin 20mg x10 vials",
+    "vendor_cat_no": "CP20",
+    "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cjc5ipa5-gh-hhb",
-    "name": "CJC5+IPA5",
+    "id": "cp10-gh-hhb",
+    "name": "CP10",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -10923,8 +10923,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CJC5+IPA5",
-    "newName": "CJC-1295 No DAC + Ipamorelin 10mg x10 vials",
+    "vendor_cat_no": "CP10",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11104,8 +11104,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-kr",
-    "name": "5AD",
+    "id": "aod5-other-kr",
+    "name": "AOD5",
     "category": "other",
     "price": "$95.00",
     "vialSizes": [
@@ -11115,13 +11115,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-kr",
-    "name": "10AD",
+    "id": "aod10-other-kr",
+    "name": "AOD10",
     "category": "other",
     "price": "$165.00",
     "vialSizes": [
@@ -11131,8 +11131,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13488,8 +13488,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-depu",
-    "name": "5AD",
+    "id": "aod5-other-depu",
+    "name": "AOD5",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -13499,13 +13499,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "DEPU",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-depu",
-    "name": "10AD",
+    "id": "aod10-other-depu",
+    "name": "AOD10",
     "category": "other",
     "price": "$150.00",
     "vialSizes": [
@@ -13515,8 +13515,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DEPU",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15056,8 +15056,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-ssy",
-    "name": "5AD",
+    "id": "aod5-other-ssy",
+    "name": "AOD5",
     "category": "other",
     "price": "$105.00",
     "vialSizes": [
@@ -15067,8 +15067,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "SSY",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16592,8 +16592,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-wbs",
-    "name": "5AD",
+    "id": "aod5-other-wbs",
+    "name": "AOD5",
     "category": "other",
     "price": "$100.00",
     "vialSizes": [
@@ -16603,13 +16603,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-wbs",
-    "name": "10AD",
+    "id": "aod10-other-wbs",
+    "name": "AOD10",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -16619,8 +16619,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18352,8 +18352,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-aag",
-    "name": "2AD",
+    "id": "aod2-other-aag",
+    "name": "AOD2",
     "category": "other",
     "price": "$72.00",
     "vialSizes": [
@@ -18363,13 +18363,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "2AD",
-    "newName": "AOD9604 2mg x10 vials",
+    "vendor_cat_no": "AOD2",
+    "newName": "AOD-9604 2mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-aag",
-    "name": "5AD",
+    "id": "aod5-other-aag",
+    "name": "AOD5",
     "category": "other",
     "price": "$105.00",
     "vialSizes": [
@@ -18379,13 +18379,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-aag",
-    "name": "10AD",
+    "id": "aod10-other-aag",
+    "name": "AOD10",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -18395,8 +18395,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "10AD",
-    "newName": "AOD9604 10mg x10 vials",
+    "vendor_cat_no": "AOD10",
+    "newName": "AOD-9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20544,8 +20544,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-jkl",
-    "name": "5AD",
+    "id": "aod5-other-jkl",
+    "name": "AOD5",
     "category": "other",
     "price": "$98.00",
     "vialSizes": [
@@ -20555,8 +20555,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "5AD",
-    "newName": "AOD9604 5mg x10 vials",
+    "vendor_cat_no": "AOD5",
+    "newName": "AOD-9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
