@@ -170,8 +170,8 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
       <thead>
         <tr>
           <th>#</th>
-          <th>Name</th>
-          <th>New Name</th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('name')" title="Sort by Name">Name <span id="sort-name-ind"></span></th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('newname')" title="Sort by New Name">New Name <span id="sort-newname-ind"></span></th>
           <th>Vendor</th>
           <th>Vial Sizes</th>
           <th>Cost Price</th>
@@ -192,6 +192,8 @@ var _products = [];
 var _sha = '';
 var _password = '';
 var _changes = {};
+var _sortCol = '';
+var _sortDir = 1;
 
 function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
@@ -489,6 +491,27 @@ function updateChangeCount(){
   var count=Object.keys(_changes).length;
   var badge=document.getElementById('changes-count'), btn=document.getElementById('push-btn');
   badge.textContent=count; badge.style.display=count>0?'inline':'none'; btn.disabled=count===0;
+}
+
+function sortTable(col){
+  if(_sortCol===col){_sortDir*=-1;}else{_sortCol=col;_sortDir=1;}
+  ['name','newname'].forEach(function(c){
+    var el=document.getElementById('sort-'+c+'-ind');
+    if(el) el.textContent='';
+  });
+  var ind=document.getElementById('sort-'+col+'-ind');
+  if(ind) ind.textContent=_sortDir===1?' ▲':' ▼';
+  _products.sort(function(a,b){
+    var va='', vb='';
+    if(col==='name'){
+      va=(a.name||'').toLowerCase(); vb=(b.name||'').toLowerCase();
+    } else {
+      va=(_changes['_name_'+a.id]||a.name||'').toLowerCase();
+      vb=(_changes['_name_'+b.id]||b.name||'').toLowerCase();
+    }
+    return va<vb?-_sortDir:va>vb?_sortDir:0;
+  });
+  renderTable(_products);
 }
 
 function filterTable(){
