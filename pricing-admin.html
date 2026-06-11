@@ -699,7 +699,13 @@ function pushChanges(){
       renderTable(_products);
       showStatus('✅ Changes pushed! Site will update in ~30 seconds.','success');
     } else {
-      showStatus('\u274c Error: '+(data.error||'Unknown error'),'error');
+      if(data.error&&data.error.indexOf('Conflict')>-1){
+        fetch('https://api.github.com/repos/jason370/pep-suppliers/contents/products.json')
+          .then(function(r){return r.json();})
+          .then(function(d){_sha=d.sha;showStatus('SHA refreshed — please push again.','error');});
+      } else {
+        showStatus('\u274c Error: '+(data.error||'Unknown error'),'error');
+      }
       document.getElementById('push-btn').disabled=false;
     }
   })
