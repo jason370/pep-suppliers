@@ -120,6 +120,25 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
       <option value="hkms">HKMS</option>
       <option value="hkp">HKP</option>
     </select>
+    <select id="category-filter" onchange="filterTable()">
+      <option value="">All Categories</option>
+      <option value="peptide">Peptide</option>
+      <option value="gh">GH</option>
+      <option value="Growth Hormone">Growth Hormone</option>
+      <option value="Hormone Support">Hormone Support</option>
+      <option value="weight">Weight</option>
+      <option value="Weight Management">Weight Management</option>
+      <option value="healing">Healing</option>
+      <option value="Recovery &amp; Healing">Recovery &amp; Healing</option>
+      <option value="neuro">Neuro</option>
+      <option value="sexual">Sexual</option>
+      <option value="immune">Immune</option>
+      <option value="anti-aging">Anti-Aging</option>
+      <option value="cosmetic">Cosmetic</option>
+      <option value="Peptide Blends">Peptide Blends</option>
+      <option value="Other Research">Other Research</option>
+      <option value="other">Other</option>
+    </select>
     <select id="stock-filter" onchange="filterTable()">
       <option value="">All Stock</option>
       <option value="instock">In Stock</option>
@@ -236,6 +255,7 @@ function renderTable(products) {
     tr.dataset.name = (p.name || '').toLowerCase();
     tr.dataset.warehouse = p.warehouse || '';
     tr.dataset.vendor = (p.vendor || '').toLowerCase();
+    tr.dataset.category = (p.category || '').toLowerCase();
     tr.dataset.stock = p.inStock ? 'instock' : 'oos';
 
     var warehouses = getWarehouses(p);
@@ -474,13 +494,15 @@ function filterTable(){
   var search=document.getElementById('search-box').value.toLowerCase();
   var warehouse=document.getElementById('warehouse-filter').value;
   var vendor=document.getElementById('vendor-filter').value;
+  var category=document.getElementById('category-filter').value.toLowerCase();
   var stock=document.getElementById('stock-filter').value;
   document.querySelectorAll('#table-body tr').forEach(function(row){
     var nameMatch=!search||row.dataset.name.includes(search);
     var whMatch=!warehouse||row.dataset.warehouse===warehouse;
     var vendorMatch=!vendor||row.dataset.vendor===vendor;
+    var catMatch=!category||row.dataset.category===category;
     var stMatch=!stock||row.dataset.stock===stock;
-    row.style.display=(nameMatch&&whMatch&&vendorMatch&&stMatch)?'':'none';
+    row.style.display=(nameMatch&&whMatch&&vendorMatch&&catMatch&&stMatch)?'':'none';
   });
 }
 
