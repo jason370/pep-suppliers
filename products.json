@@ -1656,25 +1656,6 @@
     }
   },
   {
-    "id": "tesamorelin-ipamorelin-blend-us-warehouse",
-    "name": "Tesamorelin",
-    "category": "Peptide Blends",
-    "price": "$12.60",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5mn",
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Peptide Blends",
-      "data-warehouse": "US Warehouse"
-    }
-  },
-  {
     "id": "testagen-overseas-warehouse",
     "name": "Testagen",
     "category": "Hormone Support",
