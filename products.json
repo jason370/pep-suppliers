@@ -1793,14 +1793,14 @@
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-yunke",
-    "name": "BPC+TB Blend 10+10mg",
+    "name": "BB20",
     "category": "healing",
     "price": "$255.00",
     "vialSizes": [
       "20mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "vendor": "Yunke",
     "vendor_cat_no": "BB20",
     "extraWarehouses": [],
@@ -1809,14 +1809,14 @@
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-erp",
-    "name": "BPC+TB Blend 10+10mg",
+    "name": "BB20",
     "category": "healing",
     "price": "$175.00",
     "vialSizes": [
       "20mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "vendor": "ERP",
     "vendor_cat_no": "BB20",
     "extraWarehouses": [],
@@ -1825,7 +1825,7 @@
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-qyc",
-    "name": "BPC+TB Blend 10+10mg",
+    "name": "BB20",
     "category": "healing",
     "price": "$160.00",
     "vialSizes": [
@@ -1841,7 +1841,7 @@
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-upp",
-    "name": "BPC+TB Blend 10+10mg",
+    "name": "BB20",
     "category": "healing",
     "price": "$160.00",
     "vialSizes": [
@@ -1857,14 +1857,14 @@
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-dp",
-    "name": "BPC+TB Blend 10+10mg",
+    "name": "BB20",
     "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "20mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "vendor": "DP",
     "vendor_cat_no": "BB20",
     "extraWarehouses": [],
