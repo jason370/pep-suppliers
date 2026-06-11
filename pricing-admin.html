@@ -470,12 +470,17 @@ function handleXlsxUpload(input) {
         var existing=null;
         // 1. Match by id (most reliable)
         if(id) existing=_products.find(function(p){return p.id===id;});
-        // 2. Match by name + vendor (both must agree)
+        // 2. Match by vendor_cat_no + source_vendor (stable cross-upload key)
+        if(!existing&&catNo&&vendor) existing=_products.find(function(p){
+          return p.vendor_cat_no&&p.vendor_cat_no.toLowerCase()===catNo.toLowerCase()&&
+                 p.vendor&&p.vendor.toLowerCase()===vendor.toLowerCase();
+        });
+        // 3. Match by name + vendor (both must agree)
         if(!existing&&vendor) existing=_products.find(function(p){
           return p.name&&p.name.toLowerCase()===name.toLowerCase()&&
                  p.vendor&&p.vendor.toLowerCase()===vendor.toLowerCase();
         });
-        // 3. Name-only match — only if upload row has NO vendor (avoid cross-vendor collisions)
+        // 4. Name-only match — only if upload row has NO vendor (avoid cross-vendor collisions)
         if(!existing&&!vendor) existing=_products.find(function(p){
           return p.name&&p.name.toLowerCase()===name.toLowerCase();
         });
@@ -485,6 +490,7 @@ function handleXlsxUpload(input) {
           if(existing.price!==priceFmt){_changes[existing.id]=priceFmt; existing.price=priceFmt;}
           if(vialArr.length && !locked.vialSizes) existing.vialSizes=vialArr;
           if(vendor) existing.vendor=vendor;
+          if(catNo) existing.vendor_cat_no=catNo;
           if(!locked.name && name) existing.name=name;
           // Always keep in China (Overseas Warehouse) — never overwrite warehouse from upload
           existing.warehouse='Overseas Warehouse';
