@@ -229,6 +229,7 @@ section{scroll-margin-top:88px}
   color:#34465a;
 }
 .wh-toggle.active{background:#E8F6F7;border-color:#9fd8df;color:var(--teal)}
+.catalog-main{min-width:0;width:100%}
 .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:21px}
 .product-card{
   border:1px solid var(--border);
@@ -6984,14 +6985,42 @@ input.invalid{
     var grid = document.getElementById('products-grid');
     if (!grid) return;
 
+    var _activeCategory = 'all';
+
     function parsePrice(p){
       var raw = p.salePrice || p.price || '';
       return parseFloat(String(raw).replace(/[^0-9.]/g,'')) || 0;
     }
 
+    // category normalizer — maps whatever is in products.json to our 5 buckets
+    function normCat(c){
+      var s = String(c||'').toLowerCase();
+      if(s==='weight' || s==='weight management' || s==='glp-1') return 'weight';
+      if(s==='gh' || s==='growth hormone' || s==='hormone support' || s==='hormone') return 'gh';
+      if(s==='healing' || s==='recovery' || s==='recovery & healing' || s==='recovery &amp; healing') return 'healing';
+      return 'other';
+    }
+
+    function updateCounts(items){
+      var visible = items.filter(function(p){ return p.visible === true; });
+      var counts = {all:0, weight:0, gh:0, healing:0, other:0};
+      visible.forEach(function(p){
+        counts.all++;
+        var cat = normCat(p.category);
+        counts[cat] = (counts[cat]||0) + 1;
+      });
+      Object.keys(counts).forEach(function(k){
+        var el = document.getElementById('count-'+k);
+        if(el) el.textContent = counts[k];
+      });
+    }
+
     function sortAndRender(){
       var sortVal = document.getElementById('sort-select') ? document.getElementById('sort-select').value : 'az';
       var visible = (window._products || []).filter(function(p){ return p.visible === true; });
+      if(_activeCategory !== 'all'){
+        visible = visible.filter(function(p){ return normCat(p.category) === _activeCategory; });
+      }
       if(sortVal === 'az') visible.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
       else if(sortVal === 'za') visible.sort(function(a,b){ return (b.name||'').localeCompare(a.name||''); });
       else if(sortVal === 'lohi') visible.sort(function(a,b){ return parsePrice(a)-parsePrice(b); });
@@ -7004,10 +7033,24 @@ input.invalid{
     var sortSel = document.getElementById('sort-select');
     if(sortSel) sortSel.addEventListener('change', sortAndRender);
 
+    // Category filter clicks
+    var filterList = document.getElementById('filter-list');
+    if(filterList){
+      filterList.addEventListener('click', function(e){
+        var row = e.target.closest('.filter-row');
+        if(!row) return;
+        filterList.querySelectorAll('.filter-row').forEach(function(r){ r.classList.remove('active'); });
+        row.classList.add('active');
+        _activeCategory = row.getAttribute('data-cat') || 'all';
+        sortAndRender();
+      });
+    }
+
     fetch('/products.json')
       .then(function(r){ return r.json(); })
       .then(function(items){
         window._products = items;
+        updateCounts(items);
         sortAndRender();
       })
       .catch(function(err){ console.error('products.json load failed', err); });
