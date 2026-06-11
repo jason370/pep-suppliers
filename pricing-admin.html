@@ -334,7 +334,7 @@ function renderTable(products) {
     }).join(' ');
 
     tr.innerHTML =
-      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<span title="Fields locked from upload overwrite" style="font-size:11px;cursor:default">🔒</span>':'') + '</td>' +
+      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<button onclick="unlockProduct(\'' + p.id + '\')" title="Click to unlock — uploads can overwrite this product\'s fields again" style="background:none;border:none;cursor:pointer;font-size:12px;padding:0 2px">🔒</button>':'') + '</td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td style="font-size:12px;font-weight:700;padding:4px 8px">' + escHtml(p.name||'') + '</td>' +
       '<td><input class="name-input' + (_changes['_name_'+p.id]?' changed':'') + '" type="text" value="' + escAttr(_changes['_name_'+p.id]||'') + '" data-id="' + p.id + '" placeholder="Rename..." oninput="onNameChange(this)"></td>' +
@@ -753,6 +753,15 @@ function applyMarkup(){
       onPriceChange(priceInput);
     }
   });
+}
+
+function unlockProduct(id){
+  if(!_lockedFields[id]) return;
+  delete _lockedFields[id];
+  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
+  updateLockCount();
+  renderTable(_products);
+  showStatus('🔓 Unlocked — uploads can now overwrite this product.', 'success');
 }
 
 function clearLockedFields(){
