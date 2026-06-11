@@ -193,18 +193,18 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
       <thead>
         <tr>
           <th></th>
-          <th>#</th>
+          <th onclick="sortTable('index')" style="cursor:pointer;user-select:none" title="Sort by #"># <span id="sort-index-ind"></span></th>
           <th style="cursor:pointer;user-select:none" onclick="sortTable('name')" title="Sort by Name">Name <span id="sort-name-ind"></span></th>
           <th style="cursor:pointer;user-select:none" onclick="sortTable('newname')" title="Sort by New Name">New Name <span id="sort-newname-ind"></span></th>
-          <th>Vendor</th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('vendor')" title="Sort by Vendor">Vendor <span id="sort-vendor-ind"></span></th>
           <th style="cursor:pointer;user-select:none" onclick="sortTable('category')" title="Sort by Category">Category <span id="sort-category-ind"></span></th>
-          <th>Vial Sizes</th>
-          <th>Cost Price</th>
-          <th>Per Vial</th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('vialsizes')" title="Sort by Vial Sizes">Vial Sizes <span id="sort-vialsizes-ind"></span></th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('cost')" title="Sort by Cost Price">Cost Price <span id="sort-cost-ind"></span></th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('pervial')" title="Sort by Per Vial">Per Vial <span id="sort-pervial-ind"></span></th>
           <th>Markup %</th>
-          <th>Sale Price</th>
-          <th>Warehouses</th>
-          <th>In Stock</th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('saleprice')" title="Sort by Sale Price">Sale Price <span id="sort-saleprice-ind"></span></th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('warehouse')" title="Sort by Warehouse">Warehouses <span id="sort-warehouse-ind"></span></th>
+          <th style="cursor:pointer;user-select:none" onclick="sortTable('stock')" title="Sort by Stock">In Stock <span id="sort-stock-ind"></span></th>
           <th><input type="checkbox" id="select-all-cb" onchange="toggleSelectAll(this)" title="Select all visible" style="width:15px;height:15px;cursor:pointer;accent-color:#c0392b"></th>
         </tr>
       </thead>
@@ -603,21 +603,53 @@ function updateTabCounts(){
 
 function sortTable(col){
   if(_sortCol===col){_sortDir*=-1;}else{_sortCol=col;_sortDir=1;}
-  ['name','newname'].forEach(function(c){
+  // Clear all indicators
+  ['index','name','newname','vendor','category','vialsizes','cost','pervial','saleprice','warehouse','stock'].forEach(function(c){
     var el=document.getElementById('sort-'+c+'-ind');
     if(el) el.textContent='';
   });
   var ind=document.getElementById('sort-'+col+'-ind');
   if(ind) ind.textContent=_sortDir===1?' ▲':' ▼';
+
+  function numVal(str){ var m=String(str||'').replace(/[^0-9.]/g,''); return m?parseFloat(m):0; }
+
   _products.sort(function(a,b){
-    var va='', vb='';
+    var va, vb, d=_sortDir;
     if(col==='name'){
       va=(a.name||'').toLowerCase(); vb=(b.name||'').toLowerCase();
-    } else {
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='newname'){
       va=(_changes['_name_'+a.id]||a.name||'').toLowerCase();
       vb=(_changes['_name_'+b.id]||b.name||'').toLowerCase();
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='vendor'){
+      va=(a.vendor||'').toLowerCase(); vb=(b.vendor||'').toLowerCase();
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='category'){
+      va=(a.category||'').toLowerCase(); vb=(b.category||'').toLowerCase();
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='vialsizes'){
+      va=(a.vialSizes||[]).join(',').toLowerCase(); vb=(b.vialSizes||[]).join(',').toLowerCase();
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='cost'){
+      return (numVal(a.price)-numVal(b.price))*d;
+    } else if(col==='pervial'){
+      return (numVal(a.price)/10 - numVal(b.price)/10)*d;
+    } else if(col==='saleprice'){
+      va=_changes['_sale_'+a.id]!==undefined?_changes['_sale_'+a.id]:(a.salePrice||'');
+      vb=_changes['_sale_'+b.id]!==undefined?_changes['_sale_'+b.id]:(b.salePrice||'');
+      return (numVal(va)-numVal(vb))*d;
+    } else if(col==='warehouse'){
+      va=getWarehouses(a).join(','); vb=getWarehouses(b).join(',');
+      return va<vb?-d:va>vb?d:0;
+    } else if(col==='stock'){
+      va=a.inStock?1:0; vb=b.inStock?1:0;
+      return (va-vb)*d;
+    } else if(col==='index'){
+      // reset to original order — just re-render
+      return 0;
     }
-    return va<vb?-_sortDir:va>vb?_sortDir:0;
+    return 0;
   });
   renderTable(_products);
 }
