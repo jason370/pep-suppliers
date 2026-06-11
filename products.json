@@ -8329,11 +8329,12 @@
       "100mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "AU100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$46.20"
   },
   {
     "id": "tesamorelin5mgipamor10-gh",
@@ -14468,7 +14469,8 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "AU100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$45.00"
   },
   {
     "id": "glow70-other-wbs",
@@ -16114,11 +16116,12 @@
       "100mg"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "AHKCU",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$40.80"
   },
   {
     "id": "kpv10-other-aag",
