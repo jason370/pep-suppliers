@@ -1496,7 +1496,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BAC-10",
@@ -1544,7 +1544,7 @@
       "10ml"
     ],
     "warehouse": "Overseas Warehouse",
-    "inStock": true,
+    "inStock": false,
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BAC10",
