@@ -1730,7 +1730,8 @@
     "vendor": "HKMS",
     "vendor_cat_no": "AA3",
     "extraWarehouses": [],
-    "visible": true
+    "visible": true,
+    "salePrice": "12"
   },
   {
     "id": "5-amino-1mq-peptide-hkms",
