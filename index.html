@@ -7002,7 +7002,7 @@ input.invalid{
     }
 
     function updateCounts(items){
-      var visible = items.filter(function(p){ return p.visible === true; });
+      var visible = items.filter(function(p){ return p.visible === true && p.inStock !== false; });
       var counts = {all:0, weight:0, gh:0, healing:0, other:0};
       visible.forEach(function(p){
         counts.all++;
