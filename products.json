@@ -1693,7 +1693,7 @@
     "vendor_cat_no": "BBG70",
     "extraWarehouses": [],
     "visible": true,
-    "salePrice": "$114.00"
+    "salePrice": "$85.50"
   },
   {
     "id": "botulinumtoxin100-other",
@@ -1777,7 +1777,7 @@
   },
   {
     "id": "bpc-5mg-tb-5mg-other-hkms",
-    "name": "BPC 5mg + TB 5mg",
+    "name": "BPC10",
     "category": "other",
     "price": "$90.00",
     "vialSizes": [
