@@ -1636,7 +1636,7 @@
   },
   {
     "id": "ahk-cu-overseas-warehouse",
-    "name": "AHK-Cu",
+    "name": "AHK-Cu 50mg",
     "category": "Other Research",
     "price": "$55.00",
     "description": "Research Use Only",
@@ -1651,7 +1651,8 @@
       "data-category": "Other Research",
       "data-warehouse": "Overseas Warehouse"
     },
-    "vendor": "UPP"
+    "vendor": "UPP",
+    "salePrice": "$38.50"
   },
   {
     "id": "admax-peptide-hkms",
