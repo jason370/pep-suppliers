@@ -383,27 +383,46 @@ window.cartRender = function() {
 window.cartCheckout = function() {
   var items = window._cart;
   if (items.length === 0) return;
+  var total = items.reduce(function(s,i){
+    var p = parseFloat((i.price||'').replace(/[^0-9.]/g,'')) || 0;
+    return s + p * i.qty;
+  }, 0);
   var msg = 'Hi, I would like to place an order:\n\n' +
-    items.map(function(i){ return '• ' + i.name + ' ' + i.vialSize + ' x' + i.qty + ' — ' + i.price; }).join('\n') +
-    '\n\nPlease send me crypto payment details.';
-  // Set Tawk visitor attributes so cart shows in your dashboard
-  var cartSummary = items.map(function(i){ return i.name + ' ' + i.vialSize + ' x' + i.qty; }).join(', ');
-  var doOpen = function() {
-    if (window.Tawk_API && window.Tawk_API.setAttributes) {
-      window.Tawk_API.setAttributes({ 'cart': cartSummary, 'order': msg }, function(err){});
-    }
+    items.map(function(i){ return '• ' + i.name + ' (' + i.vialSize + ') x' + i.qty + ' @ ' + i.price; }).join('\n') +
+    '\n\nOrder Total: $' + total.toFixed(2) +
+    '\n\nPlease send me payment details.';
+
+  var doCheckout = function() {
+    // Close cart first, show tawk
+    window.cartClose();
+    // Maximize tawk chat
     if (window.Tawk_API && window.Tawk_API.maximize) {
       window.Tawk_API.maximize();
     }
+    // Send cart as opening message
+    setTimeout(function() {
+      if (window.Tawk_API && window.Tawk_API.sendMessage) {
+        window.Tawk_API.sendMessage(msg);
+      } else {
+        // Fallback: pre-fill the tawk textarea
+        var iframe = document.querySelector('iframe[src*="tawk"]');
+        if (iframe) {
+          try {
+            var ta = iframe.contentDocument.querySelector('textarea');
+            if (ta) { ta.value = msg; ta.dispatchEvent(new Event('input', {bubbles:true})); }
+          } catch(e) {}
+        }
+      }
+    }, 600);
   };
-  if (window.Tawk_API && window.Tawk_API.maximize) {
-    doOpen();
+
+  if (window.Tawk_API && window.Tawk_API.getStatus) {
+    doCheckout();
   } else {
     window.Tawk_API = window.Tawk_API || {};
-    var _origLoad = window.Tawk_API.onLoad;
-    window.Tawk_API.onLoad = function() { if (_origLoad) _origLoad(); doOpen(); };
+    var _orig = window.Tawk_API.onLoad;
+    window.Tawk_API.onLoad = function(){ if(_orig) _orig(); doCheckout(); };
   }
-  window.cartClose();
 };
 </script>
 
