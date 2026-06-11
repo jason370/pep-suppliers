@@ -112,6 +112,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     </select>
     <select id="vendor-filter" onchange="filterTable()">
       <option value="">All Vendors</option>
+      <option value="__none__">⚠ No Vendor</option>
       <option value="yunke">Yunke</option>
       <option value="erp">ERP</option>
       <option value="jeep">Jeep</option>
@@ -407,8 +408,17 @@ function handleXlsxUpload(input) {
         if(vials){try{vialArr=JSON.parse(vials);}catch(e){vialArr=vials.split(',').map(function(s){return s.trim();}).filter(Boolean);}}
 
         var existing=null;
+        // 1. Match by id (most reliable)
         if(id) existing=_products.find(function(p){return p.id===id;});
-        if(!existing) existing=_products.find(function(p){return p.name&&p.name.toLowerCase()===name.toLowerCase();});
+        // 2. Match by name + vendor (both must agree)
+        if(!existing&&vendor) existing=_products.find(function(p){
+          return p.name&&p.name.toLowerCase()===name.toLowerCase()&&
+                 p.vendor&&p.vendor.toLowerCase()===vendor.toLowerCase();
+        });
+        // 3. Name-only match — only if upload row has NO vendor (avoid cross-vendor collisions)
+        if(!existing&&!vendor) existing=_products.find(function(p){
+          return p.name&&p.name.toLowerCase()===name.toLowerCase();
+        });
 
         if(existing){
           if(existing.price!==priceFmt){_changes[existing.id]=priceFmt; existing.price=priceFmt;}
@@ -526,7 +536,7 @@ function filterTable(){
   document.querySelectorAll('#table-body tr').forEach(function(row){
     var nameMatch=!search||row.dataset.name.includes(search);
     var whMatch=!warehouse||row.dataset.warehouse===warehouse;
-    var vendorMatch=!vendor||row.dataset.vendor===vendor;
+    var vendorMatch=!vendor||(vendor==='__none__'?!row.dataset.vendor:row.dataset.vendor===vendor);
     var catMatch=!category||row.dataset.category===category;
     var stMatch=!stock||row.dataset.stock===stock;
     row.style.display=(nameMatch&&whMatch&&vendorMatch&&catMatch&&stMatch)?'':'none';
