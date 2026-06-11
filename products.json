@@ -11,7 +11,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "B1210",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "vip-us-warehouse",
@@ -63,7 +64,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "triptorelin-acetate-other-yunke",
@@ -77,7 +79,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "TRI2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "thymosin-alpha-1-overseas-warehouse",
@@ -129,7 +132,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BT2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-yunke",
@@ -143,7 +147,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BT2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-10mg-bpc-157-10mg-ghk-50mg-kpv-10mg-healing-hkms",
@@ -157,7 +162,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "survotitude-anti-aging-hkms",
@@ -171,7 +177,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SUR10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "survodutide-other-erp",
@@ -185,7 +192,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "SUR10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ss-31-other-chp",
@@ -199,7 +207,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "SS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "snap-8-us-warehouse",
@@ -232,7 +241,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "slu-pp-332-weight-hkms",
@@ -246,7 +256,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SLU5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "sermorelin-acetate-gh-hkms",
@@ -260,7 +271,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SMO5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semax-us-warehouse",
@@ -312,7 +324,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "RC10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ra260-peptide-hkms",
@@ -326,7 +339,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AR50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ptd-dbm-us-warehouse",
@@ -359,7 +373,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "P41",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "pnc-27-us-warehouse",
@@ -411,7 +426,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "FMP2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "pe-22-28-overseas-warehouse",
@@ -444,7 +460,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "oxytocin-acetate-other-yunke",
@@ -458,7 +475,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "OT2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "orexin-b-neuro-hkms",
@@ -472,7 +490,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "orexin-a-neuro-hkms",
@@ -486,7 +505,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mt-2-melanotan-2-sexual-yunke",
@@ -500,7 +520,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "ML5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mt-2-melanotan-2-acetate-immune-hkms",
@@ -514,7 +535,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "ML10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mt-1-sexual-yunke",
@@ -528,7 +550,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "MT1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mots-c-overseas-warehouse",
@@ -580,7 +603,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "MTF10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mazdutide-weight-erp",
@@ -594,7 +618,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "MDT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "matrixyl-us-warehouse",
@@ -627,7 +652,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "375",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "liraglutide-weight-hkms",
@@ -641,7 +667,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "lemon-bottle-cosmetic-hkms",
@@ -655,7 +682,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "lc216-peptide-hkms",
@@ -669,7 +697,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "LC216",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "l-carnitine-10ml-600mg-ml-other-hkms",
@@ -683,7 +712,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "LC600",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "klow-blend-cu-tb-bpc-kpv-healing-chp",
@@ -697,7 +727,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "klow-blend-cu-bpc-tb-kpv-healing-jeep",
@@ -711,7 +742,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-upp",
@@ -725,7 +757,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "kisspeptin-10-us-warehouse",
@@ -758,7 +791,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "ISU",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "igf-des-peptide-hkms",
@@ -772,7 +806,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "IGD",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "igf-1lr3-peptide-hkms",
@@ -786,7 +821,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "IG01",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hyaluronic-acid-cosmetic-hkms",
@@ -800,7 +836,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "HA5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "humanin-overseas-warehouse",
@@ -833,7 +870,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "HMG75",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-fragment-176-191-weight-yunke",
@@ -847,7 +885,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "FR2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-191aa-somatropin-gh-hkms",
@@ -861,7 +900,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "H08",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-191aa-overseas-warehouse",
@@ -897,7 +937,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "HX2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hcg-overseas-warehouse",
@@ -932,7 +973,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "GND2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glutathione-other-dp",
@@ -946,7 +988,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "GT500",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-cu50-bpc10-tb10-healing-jeep",
@@ -960,7 +1003,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-cu30-bpc10-tb5-healing-jeep",
@@ -974,7 +1018,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-cu-tb-bpc-healing-chp",
@@ -988,7 +1033,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-bpc10-cu50-tb10-healing-upp",
@@ -1002,7 +1048,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-bpc10-cu35-tb5-healing-dp",
@@ -1016,7 +1063,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghrp-6-acetate-gh-hkms",
@@ -1030,7 +1078,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G65",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghrp-2-acetate-gh-hkms",
@@ -1044,7 +1093,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G25",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-overseas-warehouse",
@@ -1077,7 +1127,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "F410",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "follistatin-immune-hkms",
@@ -1091,7 +1142,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "FN1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "epo-peptide-hkms",
@@ -1105,7 +1157,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "E3K",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "dulaglutide-weight-hkms",
@@ -1119,7 +1172,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "dsip-overseas-warehouse",
@@ -1152,7 +1206,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "DR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "crystagen-immune-hkms",
@@ -1166,7 +1221,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cortagen-us-warehouse",
@@ -1199,7 +1255,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CP10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cjc-1295-with-dac-gh-hkms",
@@ -1213,7 +1270,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CD2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cjc-1295-whitout-dac-gh-hkms",
@@ -1227,7 +1285,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CND2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cjc-1295-w-o-dac-gh-chp",
@@ -1241,7 +1300,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "CND10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cerebrolysin-healing-hkms",
@@ -1255,7 +1315,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CBL60",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cardiogen-overseas-warehouse",
@@ -1288,7 +1349,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cagri-sema-blend-weight-qyc",
@@ -1302,7 +1364,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "CS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bronchogen-us-warehouse",
@@ -1335,7 +1398,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-2-2mg-healing-yunke",
@@ -1349,7 +1413,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB4",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-15-15mg-healing-upp",
@@ -1363,7 +1428,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "BB30",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-yunke",
@@ -1377,7 +1443,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-5mg-tb-5mg-other-hkms",
@@ -1391,7 +1458,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-hkms",
@@ -1405,7 +1473,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BC2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-10mg-tb-10mg-other-hkms",
@@ -1419,7 +1488,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bc10-tb10-ghk50-glow-healing-hkms",
@@ -1433,7 +1503,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BBG70",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bac-water-moq-50-boxes-other-hkms",
@@ -1447,7 +1518,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "W30",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bac-water-other-hkms",
@@ -1461,7 +1533,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "WA3",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "b7-33-us-warehouse",
@@ -1494,7 +1567,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "RA10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "aod9604-weight-hkms",
@@ -1508,7 +1582,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "2AD",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "aod-9604-weight-yunke",
@@ -1522,7 +1597,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "2AD",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "alprostadil-immune-hkms",
@@ -1536,7 +1612,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AS20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "aicar-us-warehouse",
@@ -1588,7 +1665,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "adipotide-other-yunke",
@@ -1602,7 +1680,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "AP2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "acth-1-39-peptide-hkms",
@@ -1616,7 +1695,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ace-031-overseas-warehouse",
@@ -1649,7 +1729,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AA3",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "5-amino-1mq-peptide-hkms",
@@ -1663,7 +1744,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "5AM",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-191aa-somatropin-gh-yunke",
@@ -1677,7 +1759,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "H06",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "dsip-other-yunke",
@@ -1691,7 +1774,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "DS2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "selank-nootropic-yunke",
@@ -1705,7 +1789,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "SK5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "epithalon-other-yunke",
@@ -1719,7 +1804,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "ET10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-yunke",
@@ -1733,7 +1819,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BC2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ace-031-other-yunke",
@@ -1747,7 +1834,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "AE1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "aicar-other-yunke",
@@ -1761,7 +1849,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "AR50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semax-nootropic-yunke",
@@ -1775,7 +1864,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "XA5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-yunke",
@@ -1789,7 +1879,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "SM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-yunke",
@@ -1803,7 +1894,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "TR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-yunke",
@@ -1817,7 +1909,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "RT10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "sermorelin-gh-yunke",
@@ -1831,7 +1924,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "SMO2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hcg-other-yunke",
@@ -1845,7 +1939,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "G5K",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-yunke",
@@ -1859,7 +1954,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "TSM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ipamorelin-gh-yunke",
@@ -1873,7 +1969,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "IP2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-other-yunke",
@@ -1887,7 +1984,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "CU",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "thymosin-alpha-1-healing-yunke",
@@ -1901,7 +1999,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "TA2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mots-c-other-yunke",
@@ -1915,7 +2014,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "MS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-other-yunke",
@@ -1929,7 +2029,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "NJ3100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cagrilintide-weight-yunke",
@@ -1943,7 +2044,8 @@
     "inStock": true,
     "vendor": "Yunke",
     "vendor_cat_no": "CGL5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-erp",
@@ -1957,7 +2059,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "SM5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-erp",
@@ -1971,7 +2074,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "TR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-erp",
@@ -1985,7 +2089,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cagrilintide-weight-erp",
@@ -1999,7 +2104,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "CGL5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-erp",
@@ -2013,7 +2119,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "BC5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-erp",
@@ -2027,7 +2134,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "BT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-5-5mg-healing-erp",
@@ -2041,7 +2149,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-erp",
@@ -2055,7 +2164,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-erp",
@@ -2069,7 +2179,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "TSM5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ipamorelin-gh-erp",
@@ -2083,7 +2194,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "IP5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-other-erp",
@@ -2097,7 +2209,8 @@
     "inStock": true,
     "vendor": "ERP",
     "vendor_cat_no": "NJ500",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-jeep",
@@ -2111,7 +2224,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "TESA5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-jeep",
@@ -2125,7 +2239,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "TB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-other-jeep",
@@ -2139,7 +2254,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "CU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-jeep",
@@ -2153,7 +2269,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "BPC10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-jeep",
@@ -2167,7 +2284,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-jeep",
@@ -2181,7 +2299,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "TR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "sermorelin-gh-jeep",
@@ -2195,7 +2314,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "SERMO5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mots-c-other-jeep",
@@ -2209,7 +2329,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "MOTS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semax-nootropic-jeep",
@@ -2223,7 +2344,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "SX10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "selank-nootropic-jeep",
@@ -2237,7 +2359,8 @@
     "inStock": true,
     "vendor": "Jeep",
     "vendor_cat_no": "SK10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-qyc",
@@ -2251,7 +2374,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "TR5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-qyc",
@@ -2265,7 +2389,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-qyc",
@@ -2279,7 +2404,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "SM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cagrilintide-weight-qyc",
@@ -2293,7 +2419,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "CGL5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-qyc",
@@ -2307,7 +2434,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "TSM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ipamorelin-gh-qyc",
@@ -2321,7 +2449,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "IP2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "sermorelin-gh-qyc",
@@ -2335,7 +2464,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "SMO2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-qyc",
@@ -2349,7 +2479,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "BC5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-qyc",
@@ -2363,7 +2494,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "BT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-5-5mg-healing-qyc",
@@ -2377,7 +2509,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-qyc",
@@ -2391,7 +2524,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-other-qyc",
@@ -2405,7 +2539,8 @@
     "inStock": true,
     "vendor": "QYC",
     "vendor_cat_no": "NJ3100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-other-upp",
@@ -2419,7 +2554,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "CU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-upp",
@@ -2433,7 +2569,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-upp",
@@ -2447,7 +2584,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "TR2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-upp",
@@ -2461,7 +2599,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "SM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-upp",
@@ -2475,7 +2614,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "BC2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-5-5mg-healing-upp",
@@ -2489,7 +2629,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-upp",
@@ -2503,7 +2644,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-upp",
@@ -2517,7 +2659,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "BT2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hcg-other-upp",
@@ -2531,7 +2674,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "G1K",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-fragment-176-191-weight-upp",
@@ -2545,7 +2689,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "FR1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mots-c-other-upp",
@@ -2559,7 +2704,8 @@
     "inStock": true,
     "vendor": "UPP",
     "vendor_cat_no": "MS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-dp",
@@ -2573,7 +2719,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "TR2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-dp",
@@ -2587,7 +2734,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-dp",
@@ -2601,7 +2749,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "SM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-bpc10-cu50-tb10-healing-dp",
@@ -2615,7 +2764,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "klow-blend-bpc10-cu50-tb10-kpv10-healing-dp",
@@ -2629,7 +2779,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "kpv-healing-dp",
@@ -2643,7 +2794,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "KPV10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "vip-other-dp",
@@ -2657,7 +2809,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "VIP10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-other-dp",
@@ -2671,7 +2824,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "CU50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-other-dp",
@@ -2685,7 +2839,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "NJ100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-5-5mg-healing-dp",
@@ -2699,7 +2854,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "BB10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-tb-blend-10-10mg-healing-dp",
@@ -2713,7 +2869,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "BB20",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-dp",
@@ -2727,7 +2884,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "BT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-dp",
@@ -2741,7 +2899,8 @@
     "inStock": true,
     "vendor": "DP",
     "vendor_cat_no": "BC10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-weight-chp",
@@ -2755,7 +2914,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "T15",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-chp",
@@ -2769,7 +2929,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "RT10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tb-500-healing-chp",
@@ -2783,7 +2944,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "TB5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "bpc-157-healing-chp",
@@ -2797,7 +2959,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "BPC10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mots-c-other-chp",
@@ -2811,7 +2974,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "MOTS10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semax-nootropic-chp",
@@ -2825,7 +2989,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "Semax10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-chp",
@@ -2839,7 +3004,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "TESA10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ipamorelin-gh-chp",
@@ -2853,7 +3019,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "IPA10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ghk-cu-other-chp",
@@ -2867,7 +3034,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "GHK50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-other-chp",
@@ -2881,7 +3049,8 @@
     "inStock": true,
     "vendor": "CHP",
     "vendor_cat_no": "NAD500",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "adipotide-weight-hkms",
@@ -2895,7 +3064,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AP2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cagrilintide-weight-hkms",
@@ -2909,7 +3079,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CGL5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "epithalon-anti-aging-hkms",
@@ -2923,7 +3094,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "ET10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glutathione-immune-hkms",
@@ -2937,7 +3109,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "GTT",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "gonadorelin-acetate-anti-aging-hkms",
@@ -2951,7 +3124,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "GND2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hgh-fragment-176-191-gh-hkms",
@@ -2965,7 +3139,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "FR2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "hmg-gh-hkms",
@@ -2979,7 +3154,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G75",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ipamorelin-gh-hkms",
@@ -2993,7 +3169,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "IP5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "kpv-immune-hkms",
@@ -3007,7 +3184,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "KP10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "mt-1-sexual-hkms",
@@ -3021,7 +3199,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "MT1",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "nad-anti-aging-hkms",
@@ -3035,7 +3214,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "NJ500",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "oxytocin-acetate-immune-hkms",
@@ -3049,7 +3229,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "OT2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "pt-141-sexual-hkms",
@@ -3063,7 +3244,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "P41",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "retatrutide-weight-hkms",
@@ -3077,7 +3259,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "RT5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "semaglutide-weight-hkms",
@@ -3091,7 +3274,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SM5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "ss-31-anti-aging-hkms",
@@ -3105,7 +3289,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "2S10",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tesamorelin-gh-hkms",
@@ -3119,7 +3304,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TSM2",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "triptorelin-acetate-immune-hkms",
@@ -3133,7 +3319,8 @@
     "inStock": true,
     "vendor": "HKMS",
     "vendor_cat_no": "*",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "tirzepatide-10mg-hkp",
@@ -3147,7 +3334,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "T10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-15mg-hkp",
@@ -3161,7 +3349,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T15",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-20mg-hkp",
@@ -3175,7 +3364,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-30mg-hkp",
@@ -3189,7 +3379,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T30",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-40mg-hkp",
@@ -3203,7 +3394,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T40",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-50mg-hkp",
@@ -3217,7 +3409,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T50",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tirzepatide-60mg-hkp",
@@ -3231,7 +3424,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "T60",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semaglutide-5mg-hkp",
@@ -3245,7 +3439,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "SM5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semaglutide-10mg-hkp",
@@ -3259,7 +3454,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SM10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semaglutide-15mg-hkp",
@@ -3273,7 +3469,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SM15",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semaglutide-20mg-hkp",
@@ -3287,7 +3484,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SM20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semaglutide-30mg-hkp",
@@ -3301,7 +3499,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SM30",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-5mg-hkp",
@@ -3315,7 +3514,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "R5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-10mg-hkp",
@@ -3329,7 +3529,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-15mg-hkp",
@@ -3343,7 +3544,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R15",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-20mg-hkp",
@@ -3357,7 +3559,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-30mg-hkp",
@@ -3371,7 +3574,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R30",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-40mg-hkp",
@@ -3385,7 +3589,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R40",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-50mg-hkp",
@@ -3399,7 +3604,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R50",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "retatrutide-60mg-hkp",
@@ -3413,7 +3619,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "R60",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "nad--500mg-hkp",
@@ -3427,7 +3634,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "NJ500",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "nad--1000mg-hkp",
@@ -3441,7 +3649,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "NJ1000",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cu-50mg-tb-10mg-bpc-10mg-kpv-10mg-80mg-hkp",
@@ -3455,7 +3664,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "KLOW80",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ghk-cu-35mg-tb-500-10mg-bpc-157-5mg-50mg-hkp",
@@ -3469,7 +3679,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "GLOW50",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cu-50mg-tb-10mg-bpc-10mg-70mg-hkp",
@@ -3483,7 +3694,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "GLOW70",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cjc-1295-whitout-dac-5mg-ipa-5mg-10mg-hkp",
@@ -3497,7 +3709,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "IPA5+CJC5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cjc-1295-whitout-dac-10mg-ipa-10mg-20mg-hkp",
@@ -3511,7 +3724,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "IPA10+CJC10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "sermorelin-5mg-hkp",
@@ -3525,7 +3739,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "SMO5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "sermorelin-10mg-hkp",
@@ -3539,7 +3754,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SMO10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cagrilintide-5mg-hkp",
@@ -3553,7 +3769,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "Cagri5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cagrilintide-10mg-hkp",
@@ -3567,7 +3784,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "Cagri10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tesamorelin-5mg-hkp",
@@ -3581,7 +3799,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "Tesa5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tesamorelin-10mg-hkp",
@@ -3595,7 +3814,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "Tesa10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tesamorelin-20mg-hkp",
@@ -3609,7 +3829,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "Tesa20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ipamorelin-5mg-hkp",
@@ -3623,7 +3844,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "IP5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ipamorelin-10mg-hkp",
@@ -3637,7 +3859,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "IP10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "epithalon-5mg-hkp",
@@ -3651,7 +3874,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "ET5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "epithalon-10mg-hkp",
@@ -3665,7 +3889,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "ET10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "glutathione-600mg-hkp",
@@ -3679,7 +3904,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "GTT600",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "glutathione-1500mg-hkp",
@@ -3693,7 +3919,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "GTT1500",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "mazdutide-10mg-hkp",
@@ -3707,7 +3934,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "MDT10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ss-31-10mg-hkp",
@@ -3721,7 +3949,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "2S10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ss-31-50mg-hkp",
@@ -3735,7 +3964,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "2S50",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "kpv-10mg-hkp",
@@ -3749,7 +3979,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "KPV10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bpc-157-5mg-hkp",
@@ -3763,7 +3994,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "BPC5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bpc-157-10mg-hkp",
@@ -3777,7 +4009,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BPC10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bpc-157-20mg-hkp",
@@ -3791,7 +4024,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BPC20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tb-500-5mg-hkp",
@@ -3805,7 +4039,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "TB5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "tb-500-10mg-hkp",
@@ -3819,7 +4054,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "TB10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bpc5mg-tb5mg-10mg-hkp",
@@ -3833,7 +4069,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BB10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bpc10mg-tb10mg-20mg-hkp",
@@ -3847,7 +4084,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BB20",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ghk-cu-50mg-hkp",
@@ -3861,7 +4099,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "CU50",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ghk-cu-100mg-hkp",
@@ -3875,7 +4114,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "CU100",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "mots-c-5mg-hkp",
@@ -3889,7 +4129,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "MS5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "mots-c-10mg-hkp",
@@ -3903,7 +4144,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "MS10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "mots-c-40mg-hkp",
@@ -3917,7 +4159,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "MS40",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semax-5mg-hkp",
@@ -3931,7 +4174,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "XA5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "semax-10mg-hkp",
@@ -3945,7 +4189,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "XA10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "selank-5mg-hkp",
@@ -3959,7 +4204,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SK5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "selank-10mg-hkp",
@@ -3973,7 +4219,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "SK10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "ara-290-10mg-hkp",
@@ -3987,7 +4234,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "RA10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "aod-9604-5mg-hkp",
@@ -4001,7 +4249,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "5AD",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "aod-9604-10mg-hkp",
@@ -4015,7 +4264,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "5AD10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "oxytocin-5mg-hkp",
@@ -4029,7 +4279,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "OT5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "oxytocin-10mg-hkp",
@@ -4043,7 +4294,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "OT10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "dsip-5mg-hkp",
@@ -4057,7 +4309,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "DS5",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "dsip-10mg-hkp",
@@ -4071,7 +4324,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "DS10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "pt-141-10mg-hkp",
@@ -4085,7 +4339,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "P14",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "kisspeptin-10-10mg-hkp",
@@ -4099,7 +4354,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "KS10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cjc-1259-no-dac-10mg-hkp",
@@ -4113,7 +4369,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "CND10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "cjc-1295-with-dac-5mg-hkp",
@@ -4127,7 +4384,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "CD10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bac-water-3mg-hkp",
@@ -4141,7 +4399,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BAC3",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "bac-water-10mg-hkp",
@@ -4155,7 +4414,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "BA10",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "melanotan-1-10mg-hkp",
@@ -4169,7 +4429,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "MT-1",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "melanotan-2-10mg-hkp",
@@ -4183,7 +4444,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "MT-2",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "snap8-10mg-hkp",
@@ -4197,7 +4459,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "snap8",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "igf-01-lr3-0.1mg-hkp",
@@ -4211,7 +4474,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "IGF-1 LR3",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "igf-1-lr3-1mg-hkp",
@@ -4225,7 +4489,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "IGF-1 LR3",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "thymosin-alpha-1-10mg-hkp",
@@ -4239,7 +4504,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "Alpha-1",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "5-amino-1mq-50mg-hkp",
@@ -4253,7 +4519,8 @@
     "inStock": true,
     "vendor": "hkp",
     "vendor_cat_no": "5 amino",
-    "source_vendor": "hkp"
+    "source_vendor": "hkp",
+    "visible": true
   },
   {
     "id": "klow-blend-cu50-tb10-bpc10-kpv10-healing-hkp",
@@ -4267,7 +4534,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "KLOW80",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-cu35-tb10-bpc5-healing-hkp",
@@ -4281,7 +4549,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "GLOW50",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "glow-blend-cu50-tb10-bpc10-healing-hkp",
@@ -4295,7 +4564,8 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "GLOW70",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   },
   {
     "id": "cjc-1295-w-o-dac-ipamorelin-blend-gh-hkp",
@@ -4309,6 +4579,7 @@
     "inStock": true,
     "vendor": "HKP",
     "vendor_cat_no": "IPA5CJC5",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "visible": true
   }
 ]
