@@ -4734,5 +4734,1125 @@
     "vendor": "HKP",
     "vendor_cat_no": "TB5",
     "extraWarehouses": []
+  },
+  {
+    "id": "tirzepatide-10mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-15mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "15mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T15",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-20mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$65.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-30mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$88.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T30",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-40mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$120.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T40",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-50mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$138.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T50",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tirzepatide-60mg-hkp2",
+    "name": "Tirzepatide",
+    "category": "peptide",
+    "price": "$165.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "T60",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semaglutide-5mg-hkp2",
+    "name": "Semaglutide",
+    "category": "peptide",
+    "price": "$35.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SM5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semaglutide-10mg-hkp2",
+    "name": "Semaglutide",
+    "category": "peptide",
+    "price": "$47.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SM10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semaglutide-15mg-hkp2",
+    "name": "Semaglutide",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "15mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SM15",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semaglutide-20mg-hkp2",
+    "name": "Semaglutide",
+    "category": "peptide",
+    "price": "$70.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SM20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semaglutide-30mg-hkp2",
+    "name": "Semaglutide",
+    "category": "peptide",
+    "price": "$88.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SM30",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-5mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$50.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-10mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$88.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-15mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$120.00",
+    "vialSizes": [
+      "15mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R15",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-20mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$145.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-30mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$195.00",
+    "vialSizes": [
+      "30mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R30",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-40mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$228.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R40",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-50mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$250.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R50",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "retatrutide-60mg-hkp2",
+    "name": "Retatrutide",
+    "category": "peptide",
+    "price": "$315.00",
+    "vialSizes": [
+      "60mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "R60",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "nad--500mg-hkp2",
+    "name": "NAD+",
+    "category": "peptide",
+    "price": "$58.00",
+    "vialSizes": [
+      "500mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "NJ500",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "nad--1000mg-hkp2",
+    "name": "NAD+",
+    "category": "peptide",
+    "price": "$105.00",
+    "vialSizes": [
+      "1000mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "NJ1000",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cu-50mg-tb-10mg-bpc-10mg-kpv-10mg-80mg-hkp2",
+    "name": "CU 50mg+TB 10mg+BPC 10mg+KPV 10mg",
+    "category": "peptide",
+    "price": "$170.00",
+    "vialSizes": [
+      "80mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "KLOW80",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ghk-cu-35mg-tb-500-10mg-bpc-157-5mg-50mg-hkp2",
+    "name": "GHK-CU 35mg+TB-500 10mg+BPC-157 5mg",
+    "category": "peptide",
+    "price": "$140.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "GLOW50",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cu-50mg-tb-10mg-bpc-10mg-70mg-hkp2",
+    "name": "CU 50mg+TB 10mg+BPC 10mg",
+    "category": "peptide",
+    "price": "$155.00",
+    "vialSizes": [
+      "70mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "GLOW70",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cjc-1295-whitout-dac-5mg-ipa-5mg-10mg-hkp2",
+    "name": "CJC-1295 Whitout DAC 5mg+IPA 5mg",
+    "category": "peptide",
+    "price": "$100.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IPA5+CJC5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cjc-1295-whitout-dac-10mg-ipa-10mg-20mg-hkp2",
+    "name": "CJC-1295 Whitout DAC 10mg+IPA 10mg",
+    "category": "peptide",
+    "price": "$170.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IPA10+CJC10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "sermorelin-5mg-hkp2",
+    "name": "Sermorelin",
+    "category": "peptide",
+    "price": "$75.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SMO5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "sermorelin-10mg-hkp2",
+    "name": "Sermorelin",
+    "category": "peptide",
+    "price": "$135.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SMO10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cagrilintide-5mg-hkp2",
+    "name": "Cagrilintide",
+    "category": "peptide",
+    "price": "$90.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Cagri5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cagrilintide-10mg-hkp2",
+    "name": "Cagrilintide",
+    "category": "peptide",
+    "price": "$150.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Cagri10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tesamorelin-5mg-hkp2",
+    "name": "Tesamorelin",
+    "category": "peptide",
+    "price": "$100.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Tesa5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tesamorelin-10mg-hkp2",
+    "name": "Tesamorelin",
+    "category": "peptide",
+    "price": "$148.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Tesa10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tesamorelin-20mg-hkp2",
+    "name": "Tesamorelin",
+    "category": "peptide",
+    "price": "$240.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Tesa20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ipamorelin-5mg-hkp2",
+    "name": "Ipamorelin",
+    "category": "peptide",
+    "price": "$45.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IP5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ipamorelin-10mg-hkp2",
+    "name": "Ipamorelin",
+    "category": "peptide",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IP10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "epithalon-5mg-hkp2",
+    "name": "Epithalon",
+    "category": "peptide",
+    "price": "$40.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "ET5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "epithalon-10mg-hkp2",
+    "name": "Epithalon",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "ET10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "glutathione-600mg-hkp2",
+    "name": "Glutathione",
+    "category": "peptide",
+    "price": "$40.00",
+    "vialSizes": [
+      "600mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "GTT600",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "glutathione-1500mg-hkp2",
+    "name": "Glutathione",
+    "category": "peptide",
+    "price": "$88.00",
+    "vialSizes": [
+      "1500mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "GTT1500",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "mazdutide-10mg-hkp2",
+    "name": "Mazdutide",
+    "category": "peptide",
+    "price": "$200.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MDT10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ss-31-10mg-hkp2",
+    "name": "SS-31",
+    "category": "peptide",
+    "price": "$77.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "2S10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ss-31-50mg-hkp2",
+    "name": "SS-31",
+    "category": "peptide",
+    "price": "$280.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "2S50",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "kpv-10mg-hkp2",
+    "name": "KPV",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "KPV10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bpc-157-5mg-hkp2",
+    "name": "BPC-157",
+    "category": "peptide",
+    "price": "$40.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BPC5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bpc-157-10mg-hkp2",
+    "name": "BPC-157",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BPC10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bpc-157-20mg-hkp2",
+    "name": "BPC-157",
+    "category": "peptide",
+    "price": "$100.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BPC20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tb-500-5mg-hkp2",
+    "name": "TB-500",
+    "category": "peptide",
+    "price": "$80.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "TB5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "tb-500-10mg-hkp2",
+    "name": "TB-500",
+    "category": "peptide",
+    "price": "$115.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "TB10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bpc5mg-tb5mg-10mg-hkp2",
+    "name": "BPC5mg+TB5mg",
+    "category": "peptide",
+    "price": "$95.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BB10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bpc10mg-tb10mg-20mg-hkp2",
+    "name": "BPC10mg+TB10mg",
+    "category": "peptide",
+    "price": "$145.00",
+    "vialSizes": [
+      "20mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BB20",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ghk-cu-50mg-hkp2",
+    "name": "GHK-CU",
+    "category": "peptide",
+    "price": "$40.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "CU50",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ghk-cu-100mg-hkp2",
+    "name": "GHK-CU",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "100mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "CU100",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "mots-c-5mg-hkp2",
+    "name": "MOTS-C",
+    "category": "peptide",
+    "price": "$40.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MS5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "mots-c-10mg-hkp2",
+    "name": "MOTS-C",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MS10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "mots-c-40mg-hkp2",
+    "name": "MOTS-C",
+    "category": "peptide",
+    "price": "$180.00",
+    "vialSizes": [
+      "40mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MS40",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semax-5mg-hkp2",
+    "name": "Semax",
+    "category": "peptide",
+    "price": "$45.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "XA5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "semax-10mg-hkp2",
+    "name": "Semax",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "XA10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "selank-5mg-hkp2",
+    "name": "Selank",
+    "category": "peptide",
+    "price": "$45.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SK5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "selank-10mg-hkp2",
+    "name": "Selank",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "SK10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "ara-290-10mg-hkp2",
+    "name": "Ara-290",
+    "category": "peptide",
+    "price": "$70.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "RA10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "aod-9604-5mg-hkp2",
+    "name": "AOD-9604",
+    "category": "peptide",
+    "price": "$90.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "5AD",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "aod-9604-10mg-hkp2",
+    "name": "AOD-9604",
+    "category": "peptide",
+    "price": "$150.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "5AD10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "oxytocin-5mg-hkp2",
+    "name": "Oxytocin",
+    "category": "peptide",
+    "price": "$45.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "OT5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "oxytocin-10mg-hkp2",
+    "name": "Oxytocin",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "OT10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "dsip-5mg-hkp2",
+    "name": "DSIP",
+    "category": "peptide",
+    "price": "$47.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "DS5",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "dsip-10mg-hkp2",
+    "name": "DSIP",
+    "category": "peptide",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "DS10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "pt-141-10mg-hkp2",
+    "name": "PT-141",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "P14",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "kisspeptin-10-10mg-hkp2",
+    "name": "KissPeptin-10",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "KS10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cjc-1259-no-dac-10mg-hkp2",
+    "name": "CJC-1259 NO dac",
+    "category": "peptide",
+    "price": "$158.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "CND10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "cjc-1295-with-dac-5mg-hkp2",
+    "name": "CJC-1295 With dac",
+    "category": "peptide",
+    "price": "$140.00",
+    "vialSizes": [
+      "5mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "CD10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bac-water-3mg-hkp2",
+    "name": "BAC water",
+    "category": "peptide",
+    "price": "$8.00",
+    "vialSizes": [
+      "3mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BAC3",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "bac-water-10mg-hkp2",
+    "name": "BAC water",
+    "category": "peptide",
+    "price": "$15.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "BA10",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "melanotan-1-10mg-hkp2",
+    "name": "Melanotan 1",
+    "category": "peptide",
+    "price": "$55.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MT-1",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "melanotan-2-10mg-hkp2",
+    "name": "Melanotan 2",
+    "category": "peptide",
+    "price": "$65.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "MT-2",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "snap8-10mg-hkp2",
+    "name": "Snap8",
+    "category": "peptide",
+    "price": "$60.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "snap8",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "igf-01-lr3-0.1mg-hkp2",
+    "name": "IGF-0.1 LR3",
+    "category": "peptide",
+    "price": "$100.00",
+    "vialSizes": [
+      "0.1mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IGF-1 LR3",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "igf-1-lr3-1mg-hkp2",
+    "name": "IGF-1 LR3",
+    "category": "peptide",
+    "price": "$200.00",
+    "vialSizes": [
+      "1mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "IGF-1 LR3",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "thymosin-alpha-1-10mg-hkp2",
+    "name": "Thymosin Alpha-1",
+    "category": "peptide",
+    "price": "$155.00",
+    "vialSizes": [
+      "10mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "Alpha-1",
+    "source_vendor": "hkp2"
+  },
+  {
+    "id": "5-amino-1mq-50mg-hkp2",
+    "name": "5-amino-1mq",
+    "category": "peptide",
+    "price": "$120.00",
+    "vialSizes": [
+      "50mg"
+    ],
+    "warehouse": "Overseas Warehouse",
+    "inStock": true,
+    "vendor": "hkp2",
+    "vendor_cat_no": "5 amino",
+    "source_vendor": "hkp2"
   }
 ]
