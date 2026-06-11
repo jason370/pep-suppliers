@@ -43,8 +43,11 @@ button{font:inherit;cursor:pointer}
 .ig-icon-btn:hover{color:#E1306C}
 .cart-icon-btn{position:relative;background:none;border:0;cursor:pointer;color:var(--navy);padding:8px;display:flex;align-items:center}
 .cart-badge{position:absolute;top:0;right:0;background:#6CC6C9;color:#071833;font-size:11px;font-weight:900;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.cart-sidebar{position:fixed;inset:0;z-index:600;pointer-events:none}
+.cart-sidebar{position:fixed;inset:0;z-index:2147483647;pointer-events:none}
 .cart-sidebar.open{pointer-events:auto}
+body.cart-open #tawk-bubble-container,
+body.cart-open iframe[title*="chat"],
+body.cart-open iframe[src*="tawk"]{display:none!important}
 .cart-backdrop{position:absolute;inset:0;background:rgba(7,24,51,.55);opacity:0;transition:opacity .25s ease}
 .cart-sidebar.open .cart-backdrop{opacity:1}
 .cart-panel{position:absolute;top:0;right:0;bottom:0;width:min(420px,100vw);background:#fff;transform:translateX(100%);transition:transform .3s cubic-bezier(.32,.72,0,1);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(7,24,51,.18)}
@@ -333,6 +336,7 @@ window.cartUpdateQty = function(id, qty) {
 };
 
 window.cartOpen = function() {
+  document.body.classList.add('cart-open');
   document.getElementById('cart-sidebar').classList.add('open');
   document.body.style.overflow = 'hidden';
   document.body.style.position = 'fixed';
@@ -340,6 +344,7 @@ window.cartOpen = function() {
 };
 
 window.cartClose = function() {
+  document.body.classList.remove('cart-open');
   document.getElementById('cart-sidebar').classList.remove('open');
   document.body.style.overflow = '';
   document.body.style.position = '';
