@@ -476,7 +476,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB4",
-    "newName": "BPC+TB Blend 2+2mg 4mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 4mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -492,12 +492,12 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB10",
-    "newName": "BPC+TB Blend 5+5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-healing-yunke",
-    "name": "BB20",
+    "id": "bb10-healing-yunke",
+    "name": "BB10",
     "category": "healing",
     "price": "$255.00",
     "vialSizes": [
@@ -507,8 +507,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "Yunke",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC+TB Blend 10+10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -1964,12 +1964,12 @@
     "visible": true,
     "vendor": "ERP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC+TB Blend 5+5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-healing-erp",
-    "name": "BB20",
+    "id": "bb10-healing-erp",
+    "name": "BB10",
     "category": "healing",
     "price": "$175.00",
     "vialSizes": [
@@ -1979,8 +1979,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "ERP",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC+TB Blend 10+10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -2124,12 +2124,12 @@
     "visible": true,
     "vendor": "Jeep",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW Blend (CU30+BPC10+TB5) 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "glow70-healing-jeep",
-    "name": "GLOW70",
+    "id": "glow50-healing-jeep",
+    "name": "GLOW50",
     "category": "healing",
     "price": "$180.00",
     "vialSizes": [
@@ -2139,8 +2139,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "Jeep",
-    "vendor_cat_no": "GLOW70",
-    "newName": "GLOW Blend (CU50+BPC10+TB10) 70mg x10 vials",
+    "vendor_cat_no": "GLOW50",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -2204,7 +2204,7 @@
     "visible": true,
     "vendor": "Jeep",
     "vendor_cat_no": "KLOW80",
-    "newName": "KLOW Blend (CU+BPC+TB+KPV) 80mg x10 vials",
+    "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3196,12 +3196,12 @@
     "visible": true,
     "vendor": "QYC",
     "vendor_cat_no": "BB10",
-    "newName": "BPC+TB Blend 5+5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-healing-qyc",
-    "name": "BB20",
+    "id": "bb10-healing-qyc",
+    "name": "BB10",
     "category": "healing",
     "price": "$160.00",
     "vialSizes": [
@@ -3211,8 +3211,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "QYC",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC+TB Blend 10+10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3276,7 +3276,7 @@
     "visible": true,
     "vendor": "QYC",
     "vendor_cat_no": "CS10",
-    "newName": "Cagri+Sema Blend 10mg x10 vials",
+    "newName": "Cagrilintide + Semaglutide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3292,7 +3292,7 @@
     "visible": true,
     "vendor": "QYC",
     "vendor_cat_no": "RC10",
-    "newName": "Reta+Cagri Blend 10mg x10 vials",
+    "newName": "Retatrutide + Cagrilintide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3836,12 +3836,12 @@
     "visible": true,
     "vendor": "UPP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-upp",
-    "name": "BB20",
+    "id": "bb10-other-upp",
+    "name": "BB10",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -3851,8 +3851,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3936,8 +3936,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-upp",
-    "name": "BBG70",
+    "id": "glow-other-upp",
+    "name": "GLOW",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -3947,13 +3947,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kl80-other-upp",
-    "name": "KL80",
+    "id": "klow80-other-upp",
+    "name": "KLOW80",
     "category": "other",
     "price": "$215.00",
     "vialSizes": [
@@ -3963,7 +3963,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "KL80",
+    "vendor_cat_no": "KLOW80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
@@ -5676,12 +5676,12 @@
     "visible": true,
     "vendor": "DP",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW Blend (BPC10+CU35+TB5) 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "glow70-healing-dp",
-    "name": "GLOW70",
+    "id": "glow50-healing-dp",
+    "name": "GLOW50",
     "category": "healing",
     "price": "$180.00",
     "vialSizes": [
@@ -5691,8 +5691,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DP",
-    "vendor_cat_no": "GLOW70",
-    "newName": "GLOW Blend (BPC10+CU50+TB10) 70mg x10 vials",
+    "vendor_cat_no": "GLOW50",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -5708,7 +5708,7 @@
     "visible": true,
     "vendor": "DP",
     "vendor_cat_no": "KLOW80",
-    "newName": "KLOW Blend (BPC10+CU50+TB10+KPV10) 80mg x10 vials",
+    "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -5868,12 +5868,12 @@
     "visible": true,
     "vendor": "DP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC+TB Blend 5+5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-healing-dp",
-    "name": "BB20",
+    "id": "bb10-healing-dp",
+    "name": "BB10",
     "category": "healing",
     "price": "$180.00",
     "vialSizes": [
@@ -5883,8 +5883,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DP",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC+TB Blend 10+10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6332,7 +6332,7 @@
     "visible": true,
     "vendor": "CHP",
     "vendor_cat_no": "KLOW80",
-    "newName": "KLOW Blend (CU+TB+BPC+KPV) 80mg x10 vials",
+    "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6348,7 +6348,7 @@
     "visible": true,
     "vendor": "CHP",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW Blend (CU+TB+BPC) 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6364,7 +6364,7 @@
     "visible": true,
     "vendor": "CHP",
     "vendor_cat_no": "GLOW70",
-    "newName": "GLOW Blend (CU+TB+BPC) 70mg x10 vials",
+    "newName": "GLOW Blend 70mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6764,12 +6764,12 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BB10",
-    "newName": "BPC 5mg + TB 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-hkms",
-    "name": "BB20",
+    "id": "bb10-other-hkms",
+    "name": "BB10",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -6779,13 +6779,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC 10mg + TB 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-hkms",
-    "name": "BBG70",
+    "id": "glow-other-hkms",
+    "name": "GLOW",
     "category": "other",
     "price": "$190.00",
     "vialSizes": [
@@ -6795,7 +6795,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "BC10+TB10+GHK50 (Glow) 70mg x10 vials",
     "extraWarehouses": []
   },
@@ -6860,7 +6860,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CS10",
-    "newName": "Cagrilintide 5mg + Semaglutide 5mg 10 mg*10 vials",
+    "newName": "Cagrilintide + Semaglutide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8588,7 +8588,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "KLOW80",
-    "newName": "TB 10mg+BPC-157 10mg+GHK 50mg+KPV 10mg 80mg x10 vials",
+    "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -9356,7 +9356,7 @@
     "visible": true,
     "vendor": "HKP",
     "vendor_cat_no": "KLOW80",
-    "newName": "KLOW Blend (CU50+TB10+BPC10+KPV10) 80mg x10 vials",
+    "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -9372,12 +9372,12 @@
     "visible": true,
     "vendor": "HKP",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW Blend (CU35+TB10+BPC5) 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "glow70-healing-hkp",
-    "name": "GLOW70",
+    "id": "glow50-healing-hkp",
+    "name": "GLOW50",
     "category": "healing",
     "price": "$155.00",
     "vialSizes": [
@@ -9387,13 +9387,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "GLOW70",
-    "newName": "GLOW Blend (CU50+TB10+BPC10) 70mg x10 vials",
+    "vendor_cat_no": "GLOW50",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ipa5cjc5-gh-hkp",
-    "name": "IPA5CJC5",
+    "id": "cjcipa-gh-hkp",
+    "name": "CJCIPA",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -9403,8 +9403,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "IPA5CJC5",
-    "newName": "CJC-1295 w/o DAC + Ipamorelin Blend 10mg x10 vials",
+    "vendor_cat_no": "CJCIPA",
+    "newName": "CJC-1295 + Ipamorelin Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10172,12 +10172,12 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-hhb",
-    "name": "BBG70",
+    "id": "glow-other-hhb",
+    "name": "GLOW",
     "category": "other",
     "price": "$150.00",
     "vialSizes": [
@@ -10187,13 +10187,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kl80-other-hhb",
-    "name": "KL80",
+    "id": "klow80-other-hhb",
+    "name": "KLOW80",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -10203,7 +10203,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "KL80",
+    "vendor_cat_no": "KLOW80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
@@ -11244,12 +11244,12 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-kr",
-    "name": "BB20",
+    "id": "bb10-other-kr",
+    "name": "BB10",
     "category": "other",
     "price": "$200.00",
     "vialSizes": [
@@ -11259,8 +11259,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11744,8 +11744,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow-other-kr",
-    "name": "KLOW",
+    "id": "klow80-other-kr",
+    "name": "KLOW80",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -11755,7 +11755,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "KLOW",
+    "vendor_cat_no": "KLOW80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
@@ -12940,7 +12940,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "CS10",
-    "newName": "Cagrilintide 5mg+Semaglutide 5mg 10mg x10 vials",
+    "newName": "Cagrilintide + Semaglutide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13116,7 +13116,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "GLOW50",
-    "newName": "GLOW 50mg x10 vials",
+    "newName": "GLOW Blend 50mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13132,7 +13132,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "GLOW70",
-    "newName": "GLOW 70mg x10 vials",
+    "newName": "GLOW Blend 70mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13308,12 +13308,12 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-depu",
-    "name": "BB20",
+    "id": "bb10-other-depu",
+    "name": "BB10",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -13323,8 +13323,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DEPU",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14540,12 +14540,12 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-ssy",
-    "name": "BB20",
+    "id": "bb10-other-ssy",
+    "name": "BB10",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -14555,8 +14555,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "SSY",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14768,8 +14768,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-ssy",
-    "name": "BBG70",
+    "id": "glow-other-ssy",
+    "name": "GLOW",
     "category": "other",
     "price": "$195.00",
     "vialSizes": [
@@ -14779,7 +14779,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "SSY",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
@@ -14908,7 +14908,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "CS10",
-    "newName": "Cagrilintide 5mg+Semaglutide 5mg 10mg x10 vials",
+    "newName": "Cagrilintide + Semaglutide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15756,12 +15756,12 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-wbs",
-    "name": "BB20",
+    "id": "bb10-other-wbs",
+    "name": "BB10",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -15771,8 +15771,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15952,8 +15952,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-wbs",
-    "name": "BBG70",
+    "id": "glow-other-wbs",
+    "name": "GLOW",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -15963,13 +15963,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kl80-other-wbs",
-    "name": "KL80",
+    "id": "klow80-other-wbs",
+    "name": "KLOW80",
     "category": "other",
     "price": "$190.00",
     "vialSizes": [
@@ -15979,7 +15979,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "KL80",
+    "vendor_cat_no": "KLOW80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
@@ -17916,7 +17916,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "CS10",
-    "newName": "Cagrilintide 5mg+Semaglutide 5mg 10mg x10 vials",
+    "newName": "Cagrilintide + Semaglutide Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17936,8 +17936,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-aag",
-    "name": "BBG70",
+    "id": "glow-other-aag",
+    "name": "GLOW",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -17947,7 +17947,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
@@ -18076,12 +18076,12 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-aag",
-    "name": "BB20",
+    "id": "bb10-other-aag",
+    "name": "BB10",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -18091,8 +18091,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -19804,12 +19804,12 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BB10",
-    "newName": "BPC157 5mg+TB500 5mg 10mg x10 vials",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-jkl",
-    "name": "BB20",
+    "id": "bb10-other-jkl",
+    "name": "BB10",
     "category": "other",
     "price": "$178.00",
     "vialSizes": [
@@ -19819,8 +19819,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "BB20",
-    "newName": "BPC157 10mg+TB500 10mg 20mg x10 vials",
+    "vendor_cat_no": "BB10",
+    "newName": "BPC-157 + TB-500 Blend 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20464,8 +20464,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "kl80-other-jkl",
-    "name": "KL80",
+    "id": "klow80-other-jkl",
+    "name": "KLOW80",
     "category": "other",
     "price": "$198.00",
     "vialSizes": [
@@ -20475,13 +20475,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "KL80",
+    "vendor_cat_no": "KLOW80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bbg70-other-jkl",
-    "name": "BBG70",
+    "id": "glow-other-jkl",
+    "name": "GLOW",
     "category": "other",
     "price": "$188.00",
     "vialSizes": [
@@ -20491,7 +20491,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "BBG70",
+    "vendor_cat_no": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
