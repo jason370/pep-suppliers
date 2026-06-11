@@ -10480,8 +10480,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "epi5-other-hhb",
-    "name": "EPI-5",
+    "id": "et5-other-hhb",
+    "name": "ET5",
     "category": "other",
     "price": "$40.00",
     "vialSizes": [
@@ -10491,7 +10491,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "EPI-5",
+    "vendor_cat_no": "ET5",
     "newName": "Epithalon 5mg x10 vials",
     "extraWarehouses": []
   },
@@ -11312,8 +11312,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "wa03-other-kr",
-    "name": "WA03",
+    "id": "wa3-other-kr",
+    "name": "WA3",
     "category": "other",
     "price": "$10.00",
     "vialSizes": [
@@ -11323,7 +11323,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "WA03",
+    "vendor_cat_no": "WA3",
     "newName": "Sterile Water 3ml x10 vials",
     "extraWarehouses": []
   },
@@ -11632,8 +11632,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "hcg2000-other-kr",
-    "name": "HCG2000",
+    "id": "g2k-other-kr",
+    "name": "G2K",
     "category": "other",
     "price": "$35.00",
     "vialSizes": [
@@ -11643,7 +11643,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "HCG2000",
+    "vendor_cat_no": "G2K",
     "newName": "HCG 2000iu x10 vials",
     "extraWarehouses": []
   },
@@ -17376,8 +17376,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "wa03-other-wbs",
-    "name": "WA03",
+    "id": "wa3-other-wbs",
+    "name": "WA3",
     "category": "other",
     "price": "$10.00",
     "vialSizes": [
@@ -17387,7 +17387,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "WA03",
+    "vendor_cat_no": "WA3",
     "newName": "Sterile Water 3ml x10 vials",
     "extraWarehouses": []
   },
@@ -20080,8 +20080,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "wa03-other-jkl",
-    "name": "WA03",
+    "id": "wa3-other-jkl",
+    "name": "WA3",
     "category": "other",
     "price": "$12.00",
     "vialSizes": [
@@ -20091,7 +20091,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "WA03",
+    "vendor_cat_no": "WA3",
     "newName": "Sterile Water 3ml x10 vials",
     "extraWarehouses": []
   },
