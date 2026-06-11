@@ -447,11 +447,12 @@ function handleXlsxUpload(input) {
           if(vendor) existing.vendor=vendor;
           // Always keep in China (Overseas Warehouse) — never overwrite warehouse from upload
           existing.warehouse='Overseas Warehouse';
+          existing.visible=true;
           matched++;
         } else {
           var newId=id||(name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+(cat||'other')+'-'+(vendor||'import').toLowerCase());
           _products.push({id:newId,name:name,category:cat,price:priceFmt,vialSizes:vialArr,
-            warehouse:'Overseas Warehouse',inStock:true,vendor:vendor,vendor_cat_no:catNo,extraWarehouses:[]});
+            warehouse:'Overseas Warehouse',inStock:true,visible:true,vendor:vendor,vendor_cat_no:catNo,extraWarehouses:[]});
           _changes['_new_'+newId]=priceFmt;
           added++;
         }
