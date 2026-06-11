@@ -7286,7 +7286,8 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "AR100",
-    "extraWarehouses": []
+    "extraWarehouses": [],
+    "salePrice": "$55.80"
   },
   {
     "id": "ahkcu50-other",
