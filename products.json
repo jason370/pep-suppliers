@@ -5968,8 +5968,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "t15-weight-chp",
-    "name": "T15",
+    "id": "tr15-weight-chp",
+    "name": "TR15",
     "category": "weight",
     "price": "$75.00",
     "vialSizes": [
@@ -5979,13 +5979,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "T15",
+    "vendor_cat_no": "TR15",
     "newName": "Tirzepatide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t30-weight-chp",
-    "name": "T30",
+    "id": "tr30-weight-chp",
+    "name": "TR30",
     "category": "weight",
     "price": "$100.00",
     "vialSizes": [
@@ -5995,13 +5995,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "T30",
+    "vendor_cat_no": "TR30",
     "newName": "Tirzepatide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t40-weight-chp",
-    "name": "T40",
+    "id": "tr40-weight-chp",
+    "name": "TR40",
     "category": "weight",
     "price": "$120.00",
     "vialSizes": [
@@ -6011,13 +6011,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "T40",
+    "vendor_cat_no": "TR40",
     "newName": "Tirzepatide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t50-weight-chp",
-    "name": "T50",
+    "id": "tr50-weight-chp",
+    "name": "TR50",
     "category": "weight",
     "price": "$150.00",
     "vialSizes": [
@@ -6027,13 +6027,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "T50",
+    "vendor_cat_no": "TR50",
     "newName": "Tirzepatide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t60-weight-chp",
-    "name": "T60",
+    "id": "tr60-weight-chp",
+    "name": "TR60",
     "category": "weight",
     "price": "$195.00",
     "vialSizes": [
@@ -6043,7 +6043,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "T60",
+    "vendor_cat_no": "TR60",
     "newName": "Tirzepatide 60mg x10 vials",
     "extraWarehouses": []
   },
@@ -6144,8 +6144,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "tb5-healing-chp",
-    "name": "TB5",
+    "id": "bt5-healing-chp",
+    "name": "BT5",
     "category": "healing",
     "price": "$75.00",
     "vialSizes": [
@@ -6155,13 +6155,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "TB5",
+    "vendor_cat_no": "BT5",
     "newName": "TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tb10-healing-chp",
-    "name": "TB10",
+    "id": "bt10-healing-chp",
+    "name": "BT10",
     "category": "healing",
     "price": "$110.00",
     "vialSizes": [
@@ -6171,13 +6171,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "TB10",
+    "vendor_cat_no": "BT10",
     "newName": "TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bpc10-healing-chp",
-    "name": "BPC10",
+    "id": "bc10-healing-chp",
+    "name": "BC10",
     "category": "healing",
     "price": "$65.00",
     "vialSizes": [
@@ -6187,13 +6187,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "BPC10",
+    "vendor_cat_no": "BC10",
     "newName": "BPC-157 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "mots10-other-chp",
-    "name": "MOTS10",
+    "id": "ms10-other-chp",
+    "name": "MS10",
     "category": "other",
     "price": "$65.00",
     "vialSizes": [
@@ -6203,13 +6203,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "MOTS10",
+    "vendor_cat_no": "MS10",
     "newName": "MOTS-C 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "semax10-nootropic-chp",
-    "name": "SEMAX10",
+    "id": "xa10-nootropic-chp",
+    "name": "XA10",
     "category": "nootropic",
     "price": "$65.00",
     "vialSizes": [
@@ -6219,7 +6219,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "SEMAX10",
+    "vendor_cat_no": "XA10",
     "newName": "Semax 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -6240,8 +6240,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ss10-other-chp",
-    "name": "SS10",
+    "id": "2s10-other-chp",
+    "name": "2S10",
     "category": "other",
     "price": "$75.00",
     "vialSizes": [
@@ -6251,13 +6251,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "SS10",
+    "vendor_cat_no": "2S10",
     "newName": "SS-31 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa10-gh-chp",
-    "name": "TESA10",
+    "id": "tsm10-gh-chp",
+    "name": "TSM10",
     "category": "gh",
     "price": "$150.00",
     "vialSizes": [
@@ -6267,13 +6267,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "TESA10",
+    "vendor_cat_no": "TSM10",
     "newName": "Tesamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ipa10-gh-chp",
-    "name": "IPA10",
+    "id": "ip10-gh-chp",
+    "name": "IP10",
     "category": "gh",
     "price": "$70.00",
     "vialSizes": [
@@ -6283,13 +6283,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "IPA10",
+    "vendor_cat_no": "IP10",
     "newName": "Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ghk50-other-chp",
-    "name": "GHK50",
+    "id": "cu50-other-chp",
+    "name": "CU50",
     "category": "other",
     "price": "$45.00",
     "vialSizes": [
@@ -6299,13 +6299,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "GHK50",
+    "vendor_cat_no": "CU50",
     "newName": "GHK-CU 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ghk100-other-chp",
-    "name": "GHK100",
+    "id": "cu100-other-chp",
+    "name": "CU100",
     "category": "other",
     "price": "$65.00",
     "vialSizes": [
@@ -6315,7 +6315,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "GHK100",
+    "vendor_cat_no": "CU100",
     "newName": "GHK-CU 100mg x10 vials",
     "extraWarehouses": []
   },
@@ -6368,8 +6368,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "nad500-other-chp",
-    "name": "NAD500",
+    "id": "nj500-other-chp",
+    "name": "NJ500",
     "category": "other",
     "price": "$68.00",
     "vialSizes": [
@@ -6379,13 +6379,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "NAD500",
+    "vendor_cat_no": "NJ500",
     "newName": "NAD+ 500mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "nad1000-other-chp",
-    "name": "NAD1000",
+    "id": "nj1000-other-chp",
+    "name": "NJ1000",
     "category": "other",
     "price": "$145.00",
     "vialSizes": [
@@ -6395,7 +6395,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "CHP",
-    "vendor_cat_no": "NAD1000",
+    "vendor_cat_no": "NJ1000",
     "newName": "NAD+ 1000mg x10 vials",
     "extraWarehouses": []
   },
@@ -8992,8 +8992,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "t10-weight-hkp",
-    "name": "T10",
+    "id": "tr10-weight-hkp",
+    "name": "TR10",
     "category": "weight",
     "price": "$55.00",
     "vialSizes": [
@@ -9003,13 +9003,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T10",
+    "vendor_cat_no": "TR10",
     "newName": "Tirzepatide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t15-weight-hkp",
-    "name": "T15",
+    "id": "tr15-weight-hkp",
+    "name": "TR15",
     "category": "weight",
     "price": "$60.00",
     "vialSizes": [
@@ -9019,13 +9019,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T15",
+    "vendor_cat_no": "TR15",
     "newName": "Tirzepatide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t20-weight-hkp",
-    "name": "T20",
+    "id": "tr20-weight-hkp",
+    "name": "TR20",
     "category": "weight",
     "price": "$65.00",
     "vialSizes": [
@@ -9035,13 +9035,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T20",
+    "vendor_cat_no": "TR20",
     "newName": "Tirzepatide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t30-weight-hkp",
-    "name": "T30",
+    "id": "tr30-weight-hkp",
+    "name": "TR30",
     "category": "weight",
     "price": "$88.00",
     "vialSizes": [
@@ -9051,13 +9051,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T30",
+    "vendor_cat_no": "TR30",
     "newName": "Tirzepatide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t40-weight-hkp",
-    "name": "T40",
+    "id": "tr40-weight-hkp",
+    "name": "TR40",
     "category": "weight",
     "price": "$120.00",
     "vialSizes": [
@@ -9067,13 +9067,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T40",
+    "vendor_cat_no": "TR40",
     "newName": "Tirzepatide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t50-weight-hkp",
-    "name": "T50",
+    "id": "tr50-weight-hkp",
+    "name": "TR50",
     "category": "weight",
     "price": "$138.00",
     "vialSizes": [
@@ -9083,13 +9083,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T50",
+    "vendor_cat_no": "TR50",
     "newName": "Tirzepatide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "t60-weight-hkp",
-    "name": "T60",
+    "id": "tr60-weight-hkp",
+    "name": "TR60",
     "category": "weight",
     "price": "$165.00",
     "vialSizes": [
@@ -9099,7 +9099,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "T60",
+    "vendor_cat_no": "TR60",
     "newName": "Tirzepatide 60mg x10 vials",
     "extraWarehouses": []
   },
@@ -9184,8 +9184,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "r5-weight-hkp",
-    "name": "R5",
+    "id": "rt5-weight-hkp",
+    "name": "RT5",
     "category": "weight",
     "price": "$50.00",
     "vialSizes": [
@@ -9195,13 +9195,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R5",
+    "vendor_cat_no": "RT5",
     "newName": "Retatrutide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r10-weight-hkp",
-    "name": "R10",
+    "id": "rt10-weight-hkp",
+    "name": "RT10",
     "category": "weight",
     "price": "$88.00",
     "vialSizes": [
@@ -9211,13 +9211,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R10",
+    "vendor_cat_no": "RT10",
     "newName": "Retatrutide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r15-weight-hkp",
-    "name": "R15",
+    "id": "rt15-weight-hkp",
+    "name": "RT15",
     "category": "weight",
     "price": "$125.00",
     "vialSizes": [
@@ -9227,13 +9227,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R15",
+    "vendor_cat_no": "RT15",
     "newName": "Retatrutide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r20-weight-hkp",
-    "name": "R20",
+    "id": "rt20-weight-hkp",
+    "name": "RT20",
     "category": "weight",
     "price": "$145.00",
     "vialSizes": [
@@ -9243,13 +9243,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R20",
+    "vendor_cat_no": "RT20",
     "newName": "Retatrutide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r30-weight-hkp",
-    "name": "R30",
+    "id": "rt30-weight-hkp",
+    "name": "RT30",
     "category": "weight",
     "price": "$195.00",
     "vialSizes": [
@@ -9259,13 +9259,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R30",
+    "vendor_cat_no": "RT30",
     "newName": "Retatrutide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r40-weight-hkp",
-    "name": "R40",
+    "id": "rt40-weight-hkp",
+    "name": "RT40",
     "category": "weight",
     "price": "$228.00",
     "vialSizes": [
@@ -9275,13 +9275,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R40",
+    "vendor_cat_no": "RT40",
     "newName": "Retatrutide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r50-weight-hkp",
-    "name": "R50",
+    "id": "rt50-weight-hkp",
+    "name": "RT50",
     "category": "weight",
     "price": "$250.00",
     "vialSizes": [
@@ -9291,13 +9291,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R50",
+    "vendor_cat_no": "RT50",
     "newName": "Retatrutide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "r60-weight-hkp",
-    "name": "R60",
+    "id": "rt60-weight-hkp",
+    "name": "RT60",
     "category": "weight",
     "price": "$315.00",
     "vialSizes": [
@@ -9307,7 +9307,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "R60",
+    "vendor_cat_no": "RT60",
     "newName": "Retatrutide 60mg x10 vials",
     "extraWarehouses": []
   },
@@ -9440,8 +9440,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "cagri5-weight-hkp",
-    "name": "CAGRI5",
+    "id": "cgl5-weight-hkp",
+    "name": "CGL5",
     "category": "weight",
     "price": "$90.00",
     "vialSizes": [
@@ -9451,13 +9451,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "CAGRI5",
+    "vendor_cat_no": "CGL5",
     "newName": "Cagrilintide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cagri10-weight-hkp",
-    "name": "CAGRI10",
+    "id": "cgl10-weight-hkp",
+    "name": "CGL10",
     "category": "weight",
     "price": "$150.00",
     "vialSizes": [
@@ -9467,13 +9467,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "CAGRI10",
+    "vendor_cat_no": "CGL10",
     "newName": "Cagrilintide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa5-gh-hkp",
-    "name": "TESA5",
+    "id": "tsm5-gh-hkp",
+    "name": "TSM5",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -9483,13 +9483,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "TESA5",
+    "vendor_cat_no": "TSM5",
     "newName": "Tesamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa10-gh-hkp",
-    "name": "TESA10",
+    "id": "tsm10-gh-hkp",
+    "name": "TSM10",
     "category": "gh",
     "price": "$148.00",
     "vialSizes": [
@@ -9499,7 +9499,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "TESA10",
+    "vendor_cat_no": "TSM10",
     "newName": "Tesamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -9616,8 +9616,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ss10-other-hkp",
-    "name": "SS10",
+    "id": "2s10-other-hkp",
+    "name": "2S10",
     "category": "other",
     "price": "$77.00",
     "vialSizes": [
@@ -9627,13 +9627,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "SS10",
+    "vendor_cat_no": "2S10",
     "newName": "SS-31 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ss50-other-hkp",
-    "name": "SS50",
+    "id": "2s50-other-hkp",
+    "name": "2S50",
     "category": "other",
     "price": "$280.00",
     "vialSizes": [
@@ -9643,13 +9643,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "SS50",
+    "vendor_cat_no": "2S50",
     "newName": "SS-31 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kpv10-healing-hkp",
-    "name": "KPV10",
+    "id": "kp10-healing-hkp",
+    "name": "KP10",
     "category": "healing",
     "price": "$60.00",
     "vialSizes": [
@@ -9659,7 +9659,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "KPV10",
+    "vendor_cat_no": "KP10",
     "newName": "KPV 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -9696,8 +9696,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "tb5-healing-hkp",
-    "name": "TB5",
+    "id": "bt5-healing-hkp",
+    "name": "BT5",
     "category": "healing",
     "price": "$80.00",
     "vialSizes": [
@@ -9707,13 +9707,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKP",
-    "vendor_cat_no": "TB5",
+    "vendor_cat_no": "BT5",
     "newName": "TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr10-weight-hhb",
-    "name": "TR-10",
+    "name": "TR10",
     "category": "weight",
     "price": "$55.00",
     "vialSizes": [
@@ -9723,13 +9723,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-10",
+    "vendor_cat_no": "TR10",
     "newName": "Tirzepatide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr15-weight-hhb",
-    "name": "TR-15",
+    "name": "TR15",
     "category": "weight",
     "price": "$60.00",
     "vialSizes": [
@@ -9739,13 +9739,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-15",
+    "vendor_cat_no": "TR15",
     "newName": "Tirzepatide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr20-weight-hhb",
-    "name": "TR-20",
+    "name": "TR20",
     "category": "weight",
     "price": "$70.00",
     "vialSizes": [
@@ -9755,13 +9755,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-20",
+    "vendor_cat_no": "TR20",
     "newName": "Tirzepatide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr30-weight-hhb",
-    "name": "TR-30",
+    "name": "TR30",
     "category": "weight",
     "price": "$85.00",
     "vialSizes": [
@@ -9771,13 +9771,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-30",
+    "vendor_cat_no": "TR30",
     "newName": "Tirzepatide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr40-weight-hhb",
-    "name": "TR-40",
+    "name": "TR40",
     "category": "weight",
     "price": "$120.00",
     "vialSizes": [
@@ -9787,13 +9787,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-40",
+    "vendor_cat_no": "TR40",
     "newName": "Tirzepatide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr50-weight-hhb",
-    "name": "TR-50",
+    "name": "TR50",
     "category": "weight",
     "price": "$140.00",
     "vialSizes": [
@@ -9803,13 +9803,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-50",
+    "vendor_cat_no": "TR50",
     "newName": "Tirzepatide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "tr60-weight-hhb",
-    "name": "TR-60",
+    "name": "TR60",
     "category": "weight",
     "price": "$160.00",
     "vialSizes": [
@@ -9819,13 +9819,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TR-60",
+    "vendor_cat_no": "TR60",
     "newName": "Tirzepatide 60mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt5-weight-hhb",
-    "name": "RT-5",
+    "name": "RT5",
     "category": "weight",
     "price": "$50.00",
     "vialSizes": [
@@ -9835,13 +9835,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-5",
+    "vendor_cat_no": "RT5",
     "newName": "Retatrutide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt10-weight-hhb",
-    "name": "RT-10",
+    "name": "RT10",
     "category": "weight",
     "price": "$90.00",
     "vialSizes": [
@@ -9851,13 +9851,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-10",
+    "vendor_cat_no": "RT10",
     "newName": "Retatrutide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt15-weight-hhb",
-    "name": "RT-15",
+    "name": "RT15",
     "category": "weight",
     "price": "$120.00",
     "vialSizes": [
@@ -9867,13 +9867,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-15",
+    "vendor_cat_no": "RT15",
     "newName": "Retatrutide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt20-weight-hhb",
-    "name": "RT-20",
+    "name": "RT20",
     "category": "weight",
     "price": "$145.00",
     "vialSizes": [
@@ -9883,13 +9883,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-20",
+    "vendor_cat_no": "RT20",
     "newName": "Retatrutide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt30-weight-hhb",
-    "name": "RT-30",
+    "name": "RT30",
     "category": "weight",
     "price": "$200.00",
     "vialSizes": [
@@ -9899,13 +9899,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-30",
+    "vendor_cat_no": "RT30",
     "newName": "Retatrutide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt40-weight-hhb",
-    "name": "RT-40",
+    "name": "RT40",
     "category": "weight",
     "price": "$230.00",
     "vialSizes": [
@@ -9915,13 +9915,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-40",
+    "vendor_cat_no": "RT40",
     "newName": "Retatrutide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt50-weight-hhb",
-    "name": "RT-50",
+    "name": "RT50",
     "category": "weight",
     "price": "$250.00",
     "vialSizes": [
@@ -9931,13 +9931,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-50",
+    "vendor_cat_no": "RT50",
     "newName": "Retatrutide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "rt60-weight-hhb",
-    "name": "RT-60",
+    "name": "RT60",
     "category": "weight",
     "price": "$320.00",
     "vialSizes": [
@@ -9947,13 +9947,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "RT-60",
+    "vendor_cat_no": "RT60",
     "newName": "Retatrutide 60mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "sm5-weight-hhb",
-    "name": "SM-5",
+    "name": "SM5",
     "category": "weight",
     "price": "$35.00",
     "vialSizes": [
@@ -9963,13 +9963,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SM-5",
+    "vendor_cat_no": "SM5",
     "newName": "Semaglutide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "sm10-weight-hhb",
-    "name": "SM-10",
+    "name": "SM10",
     "category": "weight",
     "price": "$45.00",
     "vialSizes": [
@@ -9979,13 +9979,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SM-10",
+    "vendor_cat_no": "SM10",
     "newName": "Semaglutide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "sm15-weight-hhb",
-    "name": "SM-15",
+    "name": "SM15",
     "category": "weight",
     "price": "$55.00",
     "vialSizes": [
@@ -9995,13 +9995,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SM-15",
+    "vendor_cat_no": "SM15",
     "newName": "Semaglutide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "sm20-weight-hhb",
-    "name": "SM-20",
+    "name": "SM20",
     "category": "weight",
     "price": "$65.00",
     "vialSizes": [
@@ -10011,13 +10011,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SM-20",
+    "vendor_cat_no": "SM20",
     "newName": "Semaglutide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "sm30-weight-hhb",
-    "name": "SM-30",
+    "name": "SM30",
     "category": "weight",
     "price": "$85.00",
     "vialSizes": [
@@ -10027,13 +10027,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SM-30",
+    "vendor_cat_no": "SM30",
     "newName": "Semaglutide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bpc5-other-hhb",
-    "name": "BPC-5",
+    "id": "bc5-other-hhb",
+    "name": "BC5",
     "category": "other",
     "price": "$40.00",
     "vialSizes": [
@@ -10043,13 +10043,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BPC-5",
+    "vendor_cat_no": "BC5",
     "newName": "BPC-157 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bpc10-other-hhb",
-    "name": "BPC-10",
+    "id": "bc10-other-hhb",
+    "name": "BC10",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -10059,13 +10059,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BPC-10",
+    "vendor_cat_no": "BC10",
     "newName": "BPC-157 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bpc20-other-hhb",
-    "name": "BPC-20",
+    "id": "bc20-other-hhb",
+    "name": "BC20",
     "category": "other",
     "price": "$100.00",
     "vialSizes": [
@@ -10075,13 +10075,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BPC-20",
+    "vendor_cat_no": "BC20",
     "newName": "BPC-157 20mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tb5-other-hhb",
-    "name": "TB-5",
+    "id": "bt5-other-hhb",
+    "name": "BT5",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -10091,13 +10091,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TB-5",
+    "vendor_cat_no": "BT5",
     "newName": "TB500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tb10-other-hhb",
-    "name": "TB-10",
+    "id": "bt10-other-hhb",
+    "name": "BT10",
     "category": "other",
     "price": "$110.00",
     "vialSizes": [
@@ -10107,7 +10107,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TB-10",
+    "vendor_cat_no": "BT10",
     "newName": "TB500 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -10161,7 +10161,7 @@
   },
   {
     "id": "glow50-other-hhb",
-    "name": "GLOW-50",
+    "name": "GLOW50",
     "category": "other",
     "price": "$140.00",
     "vialSizes": [
@@ -10171,13 +10171,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "GLOW-50",
+    "vendor_cat_no": "GLOW50",
     "newName": "GLOW 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "glow70-other-hhb",
-    "name": "GLOW-70",
+    "id": "bbg70-other-hhb",
+    "name": "BBG70",
     "category": "other",
     "price": "$150.00",
     "vialSizes": [
@@ -10187,13 +10187,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "GLOW-70",
+    "vendor_cat_no": "BBG70",
     "newName": "GLOW 70mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-hhb",
-    "name": "KLOW-80",
+    "id": "kl80-other-hhb",
+    "name": "KL80",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -10203,13 +10203,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "KLOW-80",
+    "vendor_cat_no": "KL80",
     "newName": "KLOW 80mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "dsip5-other-hhb",
-    "name": "DSIP-5",
+    "id": "ds5-other-hhb",
+    "name": "DS5",
     "category": "other",
     "price": "$45.00",
     "vialSizes": [
@@ -10219,13 +10219,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "DSIP-5",
+    "vendor_cat_no": "DS5",
     "newName": "DSIP 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "dsip10-other-hhb",
-    "name": "DSIP-10",
+    "id": "ds10-other-hhb",
+    "name": "DS10",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10235,7 +10235,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "DSIP-10",
+    "vendor_cat_no": "DS10",
     "newName": "DSIP 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -10256,8 +10256,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "mots10-other-hhb",
-    "name": "MOTS-10",
+    "id": "ms10-other-hhb",
+    "name": "MS10",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10267,13 +10267,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "MOTS-10",
+    "vendor_cat_no": "MS10",
     "newName": "MOTS-C 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "mots40-other-hhb",
-    "name": "MOTS-40",
+    "id": "ms40-other-hhb",
+    "name": "MS40",
     "category": "other",
     "price": "$200.00",
     "vialSizes": [
@@ -10283,13 +10283,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "MOTS-40",
+    "vendor_cat_no": "MS40",
     "newName": "MOTS-C 40mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cag5-weight-hhb",
-    "name": "CAG-5",
+    "id": "cgl5-weight-hhb",
+    "name": "CGL5",
     "category": "weight",
     "price": "$80.00",
     "vialSizes": [
@@ -10299,13 +10299,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CAG-5",
+    "vendor_cat_no": "CGL5",
     "newName": "Cagrilintide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cag10-weight-hhb",
-    "name": "CAG-10",
+    "id": "cgl10-weight-hhb",
+    "name": "CGL10",
     "category": "weight",
     "price": "$140.00",
     "vialSizes": [
@@ -10315,13 +10315,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CAG-10",
+    "vendor_cat_no": "CGL10",
     "newName": "Cagrilintide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cjc10-gh-hhb",
-    "name": "CJC-10",
+    "id": "cnd10-gh-hhb",
+    "name": "CND10",
     "category": "gh",
     "price": "$160.00",
     "vialSizes": [
@@ -10331,13 +10331,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CJC-10",
+    "vendor_cat_no": "CND10",
     "newName": "CJC-1295 No DAC 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "cjcdac5-gh-hhb",
-    "name": "CJC+DAC-5",
+    "id": "cd5-gh-hhb",
+    "name": "CD5",
     "category": "gh",
     "price": "$140.00",
     "vialSizes": [
@@ -10347,13 +10347,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "CJC+DAC-5",
+    "vendor_cat_no": "CD5",
     "newName": "CJC-1295 With DAC 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "mt110-other-hhb",
-    "name": "MT1-10",
+    "id": "mt1-other-hhb",
+    "name": "MT1",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -10363,13 +10363,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "MT1-10",
+    "vendor_cat_no": "MT1",
     "newName": "Melanotan 1 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "mt210-other-hhb",
-    "name": "MT2-10",
+    "id": "ml10-other-hhb",
+    "name": "ML10",
     "category": "other",
     "price": "$65.00",
     "vialSizes": [
@@ -10379,13 +10379,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "MT2-10",
+    "vendor_cat_no": "ML10",
     "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "selank5-other-hhb",
-    "name": "Selank-5",
+    "id": "sk5-other-hhb",
+    "name": "SK5",
     "category": "other",
     "price": "$40.00",
     "vialSizes": [
@@ -10395,13 +10395,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Selank-5",
+    "vendor_cat_no": "SK5",
     "newName": "Selank 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "selank10-other-hhb",
-    "name": "Selank-10",
+    "id": "sk10-other-hhb",
+    "name": "SK10",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -10411,13 +10411,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Selank-10",
+    "vendor_cat_no": "SK10",
     "newName": "Selank 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "semax5-other-hhb",
-    "name": "Semax-5",
+    "id": "xa5-other-hhb",
+    "name": "XA5",
     "category": "other",
     "price": "$45.00",
     "vialSizes": [
@@ -10427,13 +10427,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Semax-5",
+    "vendor_cat_no": "XA5",
     "newName": "Semax 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "semax10-other-hhb",
-    "name": "Semax-10",
+    "id": "xa10-other-hhb",
+    "name": "XA10",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10443,13 +10443,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Semax-10",
+    "vendor_cat_no": "XA10",
     "newName": "Semax 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ipa5-gh-hhb",
-    "name": "IPA-5",
+    "id": "ip5-gh-hhb",
+    "name": "IP5",
     "category": "gh",
     "price": "$40.00",
     "vialSizes": [
@@ -10459,13 +10459,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "IPA-5",
+    "vendor_cat_no": "IP5",
     "newName": "Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ipa10-gh-hhb",
-    "name": "IPA-10",
+    "id": "ip10-gh-hhb",
+    "name": "IP10",
     "category": "gh",
     "price": "$60.00",
     "vialSizes": [
@@ -10475,7 +10475,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "IPA-10",
+    "vendor_cat_no": "IP10",
     "newName": "Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -10496,8 +10496,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "epi10-other-hhb",
-    "name": "EPI-10",
+    "id": "et10-other-hhb",
+    "name": "ET10",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10507,13 +10507,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "EPI-10",
+    "vendor_cat_no": "ET10",
     "newName": "Epithalon 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "epi50-other-hhb",
-    "name": "EPI-50",
+    "id": "et50-other-hhb",
+    "name": "ET50",
     "category": "other",
     "price": "$135.00",
     "vialSizes": [
@@ -10523,13 +10523,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "EPI-50",
+    "vendor_cat_no": "ET50",
     "newName": "Epithalon 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa5-gh-hhb",
-    "name": "Tesa-5",
+    "id": "tsm5-gh-hhb",
+    "name": "TSM5",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -10539,13 +10539,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Tesa-5",
+    "vendor_cat_no": "TSM5",
     "newName": "Tesamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa10-gh-hhb",
-    "name": "Tesa-10",
+    "id": "tsm10-gh-hhb",
+    "name": "TSM10",
     "category": "gh",
     "price": "$150.00",
     "vialSizes": [
@@ -10555,13 +10555,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Tesa-10",
+    "vendor_cat_no": "TSM10",
     "newName": "Tesamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tesa20-gh-hhb",
-    "name": "Tesa-20",
+    "id": "tsm20-gh-hhb",
+    "name": "TSM20",
     "category": "gh",
     "price": "$240.00",
     "vialSizes": [
@@ -10571,13 +10571,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Tesa-20",
+    "vendor_cat_no": "TSM20",
     "newName": "Tesamorelin 20mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "serm5-gh-hhb",
-    "name": "Serm-5",
+    "id": "smo5-gh-hhb",
+    "name": "SMO5",
     "category": "gh",
     "price": "$75.00",
     "vialSizes": [
@@ -10587,13 +10587,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Serm-5",
+    "vendor_cat_no": "SMO5",
     "newName": "Sermorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "serm10-gh-hhb",
-    "name": "Serm-10",
+    "id": "smo10-gh-hhb",
+    "name": "SMO10",
     "category": "gh",
     "price": "$140.00",
     "vialSizes": [
@@ -10603,13 +10603,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Serm-10",
+    "vendor_cat_no": "SMO10",
     "newName": "Sermorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "nad500-other-hhb",
-    "name": "NAD+500",
+    "id": "nj500-other-hhb",
+    "name": "NJ500",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10619,13 +10619,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "NAD+500",
+    "vendor_cat_no": "NJ500",
     "newName": "NAD+ 500mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "nad1000-other-hhb",
-    "name": "NAD+1000",
+    "id": "nj1000-other-hhb",
+    "name": "NJ1000",
     "category": "other",
     "price": "$100.00",
     "vialSizes": [
@@ -10635,13 +10635,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "NAD+1000",
+    "vendor_cat_no": "NJ1000",
     "newName": "NAD+ 1000mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kpv10-other-hhb",
-    "name": "KPV-10",
+    "id": "kp10-other-hhb",
+    "name": "KP10",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -10651,13 +10651,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "KPV-10",
+    "vendor_cat_no": "KP10",
     "newName": "KPV 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "gluta600-other-hhb",
-    "name": "Gluta-600",
+    "id": "gtt600-other-hhb",
+    "name": "GTT600",
     "category": "other",
     "price": "$35.00",
     "vialSizes": [
@@ -10667,13 +10667,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Gluta-600",
+    "vendor_cat_no": "GTT600",
     "newName": "Glutathione 600mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "gluta1500-other-hhb",
-    "name": "Gluta-1500",
+    "id": "gtt1500-other-hhb",
+    "name": "GTT1500",
     "category": "other",
     "price": "$90.00",
     "vialSizes": [
@@ -10683,13 +10683,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Gluta-1500",
+    "vendor_cat_no": "GTT1500",
     "newName": "Glutathione 1500mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ss3110-other-hhb",
-    "name": "SS31-10",
+    "id": "2s10-other-hhb",
+    "name": "2S10",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -10699,13 +10699,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SS31-10",
+    "vendor_cat_no": "2S10",
     "newName": "SS-31 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ss3150-other-hhb",
-    "name": "SS31-50",
+    "id": "2s50-other-hhb",
+    "name": "2S50",
     "category": "other",
     "price": "$300.00",
     "vialSizes": [
@@ -10715,13 +10715,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "SS31-50",
+    "vendor_cat_no": "2S50",
     "newName": "SS-31 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ara10-other-hhb",
-    "name": "ARA-10",
+    "id": "ra10-other-hhb",
+    "name": "RA10",
     "category": "other",
     "price": "$70.00",
     "vialSizes": [
@@ -10731,13 +10731,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "ARA-10",
+    "vendor_cat_no": "RA10",
     "newName": "ARA-290 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "aod5-other-hhb",
-    "name": "AOD-5",
+    "id": "5ad-other-hhb",
+    "name": "5AD",
     "category": "other",
     "price": "$80.00",
     "vialSizes": [
@@ -10747,13 +10747,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "AOD-5",
+    "vendor_cat_no": "5AD",
     "newName": "AOD9604 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "aod10-other-hhb",
-    "name": "AOD-10",
+    "id": "10ad-other-hhb",
+    "name": "10AD",
     "category": "other",
     "price": "$150.00",
     "vialSizes": [
@@ -10763,13 +10763,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "AOD-10",
+    "vendor_cat_no": "10AD",
     "newName": "AOD9604 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "oxy5-other-hhb",
-    "name": "OXY-5",
+    "id": "ot5-other-hhb",
+    "name": "OT5",
     "category": "other",
     "price": "$45.00",
     "vialSizes": [
@@ -10779,13 +10779,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "OXY-5",
+    "vendor_cat_no": "OT5",
     "newName": "Oxytocin Acetate 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "oxy10-other-hhb",
-    "name": "OXY-10",
+    "id": "ot10-other-hhb",
+    "name": "OT10",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10795,13 +10795,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "OXY-10",
+    "vendor_cat_no": "OT10",
     "newName": "Oxytocin Acetate 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ta15-other-hhb",
-    "name": "TA1-5",
+    "id": "ta5-other-hhb",
+    "name": "TA5",
     "category": "other",
     "price": "$85.00",
     "vialSizes": [
@@ -10811,13 +10811,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TA1-5",
+    "vendor_cat_no": "TA5",
     "newName": "Thymosin Alpha-1 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ta110-other-hhb",
-    "name": "TA1-10",
+    "id": "ta10-other-hhb",
+    "name": "TA10",
     "category": "other",
     "price": "$155.00",
     "vialSizes": [
@@ -10827,13 +10827,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "TA1-10",
+    "vendor_cat_no": "TA10",
     "newName": "Thymosin Alpha-1 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "kiss10-other-hhb",
-    "name": "Kiss-10",
+    "id": "ks10-other-hhb",
+    "name": "KS10",
     "category": "other",
     "price": "$50.00",
     "vialSizes": [
@@ -10843,13 +10843,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Kiss-10",
+    "vendor_cat_no": "KS10",
     "newName": "KissPeptin-10 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ghk50-other-hhb",
-    "name": "GHK-50",
+    "id": "cu50-other-hhb",
+    "name": "CU50",
     "category": "other",
     "price": "$40.00",
     "vialSizes": [
@@ -10859,13 +10859,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "GHK-50",
+    "vendor_cat_no": "CU50",
     "newName": "GHK-CU 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ghk100-other-hhb",
-    "name": "GHK-100",
+    "id": "cu100-other-hhb",
+    "name": "CU100",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -10875,13 +10875,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "GHK-100",
+    "vendor_cat_no": "CU100",
     "newName": "GHK-CU 100mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "pt14110-other-hhb",
-    "name": "PT141-10",
+    "id": "p41-other-hhb",
+    "name": "P41",
     "category": "other",
     "price": "$60.00",
     "vialSizes": [
@@ -10891,7 +10891,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "PT141-10",
+    "vendor_cat_no": "P41",
     "newName": "PT141 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -10928,8 +10928,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "igflr301-gh-hhb",
-    "name": "IGF-LR3-0.1",
+    "id": "ig01-gh-hhb",
+    "name": "IG01",
     "category": "gh",
     "price": "$100.00",
     "vialSizes": [
@@ -10939,13 +10939,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "IGF-LR3-0.1",
+    "vendor_cat_no": "IG01",
     "newName": "IGF-1 LR3 0.1mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "igflr31-gh-hhb",
-    "name": "IGF-LR3-1",
+    "id": "ig1-gh-hhb",
+    "name": "IG1",
     "category": "gh",
     "price": "$200.00",
     "vialSizes": [
@@ -10955,13 +10955,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "IGF-LR3-1",
+    "vendor_cat_no": "IG1",
     "newName": "IGF-1 LR3 1mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "snap810-other-hhb",
-    "name": "Snap8-10",
+    "id": "np810-other-hhb",
+    "name": "NP810",
     "category": "other",
     "price": "$65.00",
     "vialSizes": [
@@ -10971,13 +10971,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "Snap8-10",
+    "vendor_cat_no": "NP810",
     "newName": "Snap-8 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "5a1mq50-other-hhb",
-    "name": "5A1MQ-50",
+    "id": "50am-other-hhb",
+    "name": "50AM",
     "category": "other",
     "price": "$120.00",
     "vialSizes": [
@@ -10987,7 +10987,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "5A1MQ-50",
+    "vendor_cat_no": "50AM",
     "newName": "5-Amino-1MQ 50mg x10 vials",
     "extraWarehouses": []
   },
@@ -11025,7 +11025,7 @@
   },
   {
     "id": "bac3-other-hhb",
-    "name": "BAC-3",
+    "name": "BAC3",
     "category": "other",
     "price": "$8.00",
     "vialSizes": [
@@ -11035,13 +11035,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BAC-3",
+    "vendor_cat_no": "BAC3",
     "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
     "id": "bac10-other-hhb",
-    "name": "BAC-10",
+    "name": "BAC10",
     "category": "other",
     "price": "$15.00",
     "vialSizes": [
@@ -11051,7 +11051,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BAC-10",
+    "vendor_cat_no": "BAC10",
     "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
