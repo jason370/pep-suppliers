@@ -323,8 +323,8 @@ function renderTable() {
         '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
         (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
-        '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
-        '<td class="cost-cell">' + (s.costPerVial !== null ? '$' + s.costPerVial.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.cost != null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.costPerVial != null ? '$' + s.costPerVial.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
           'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-costpervial="' + (s.costPerVial||'') + '" data-original="' + escAttr(origPrice) + '" ' +
           'oninput="onPriceChange(this)"></td>' +
