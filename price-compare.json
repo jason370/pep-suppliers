@@ -2348,9 +2348,6 @@
         "vendor": "WBS",
         "price": "$105.00"
       }
-    ],
-    "site_names": [
-      "CJC-1295 & Ipamorelin Blend"
     ]
   },
   {
@@ -3228,8 +3225,6 @@
       }
     ],
     "site_names": [
-      "GHK Basic",
-      "GHK Basic (Tripeptide-1)",
       "GHK-Cu (Copper)",
       "GHK-Cu"
     ]
@@ -3312,8 +3307,6 @@
       }
     ],
     "site_names": [
-      "GHK Basic",
-      "GHK Basic (Tripeptide-1)",
       "GHK-Cu (Copper)",
       "GHK-Cu"
     ]
@@ -5967,7 +5960,6 @@
       }
     ],
     "site_names": [
-      "MGF IGF-1 EC",
       "MGF"
     ]
   },
@@ -7857,7 +7849,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Selank",
       "Selank"
     ]
   },
@@ -7890,7 +7881,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Selank",
       "Selank"
     ]
   },
@@ -7960,7 +7950,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Selank",
       "Selank"
     ]
   },
@@ -8462,7 +8451,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Semax",
       "Semax"
     ]
   },
@@ -8486,7 +8474,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Semax",
       "Semax"
     ]
   },
@@ -8519,7 +8506,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Semax",
       "Semax"
     ]
   },
@@ -8589,7 +8575,6 @@
       }
     ],
     "site_names": [
-      "N-Acetyl Semax",
       "Semax"
     ]
   },
@@ -9570,6 +9555,7 @@
       }
     ],
     "site_names": [
+      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9623,6 +9609,7 @@
       }
     ],
     "site_names": [
+      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9672,6 +9659,7 @@
       }
     ],
     "site_names": [
+      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9757,6 +9745,7 @@
       }
     ],
     "site_names": [
+      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9778,9 +9767,6 @@
         "vendor": "UPP",
         "price": "$250.00"
       }
-    ],
-    "site_names": [
-      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend"
     ]
   },
   {
@@ -9810,9 +9796,6 @@
         "vendor": "WBS",
         "price": "$150.00"
       }
-    ],
-    "site_names": [
-      "Tesamorelin & Ipamorelin Blend"
     ]
   },
   {
