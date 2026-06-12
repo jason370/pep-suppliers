@@ -2134,11 +2134,7 @@
       }
     ],
     "site_names": [
-      "CJC-1295 NO DAC (Mod GRF 1-29)",
-      "CJC-1295 & GHRP-2 Blend",
-      "CJC-1295 & GHRP-6 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Ipamorelin & GHRP-2 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Hexarelin Blend"
+      "CJC-1295 NO DAC (Mod GRF 1-29)"
     ]
   },
   {
@@ -2183,11 +2179,7 @@
       }
     ],
     "site_names": [
-      "CJC-1295 NO DAC (Mod GRF 1-29)",
-      "CJC-1295 & GHRP-2 Blend",
-      "CJC-1295 & GHRP-6 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Ipamorelin & GHRP-2 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Hexarelin Blend"
+      "CJC-1295 NO DAC (Mod GRF 1-29)"
     ]
   },
   {
@@ -2248,11 +2240,7 @@
       }
     ],
     "site_names": [
-      "CJC-1295 NO DAC (Mod GRF 1-29)",
-      "CJC-1295 & GHRP-2 Blend",
-      "CJC-1295 & GHRP-6 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Ipamorelin & GHRP-2 Blend",
-      "CJC-1295 (Mod GRF 1-29) & Hexarelin Blend"
+      "CJC-1295 NO DAC (Mod GRF 1-29)"
     ]
   },
   {
@@ -2360,6 +2348,9 @@
         "vendor": "WBS",
         "price": "$105.00"
       }
+    ],
+    "site_names": [
+      "CJC-1295 & Ipamorelin Blend"
     ]
   },
   {
@@ -4460,9 +4451,7 @@
       }
     ],
     "site_names": [
-      "Fragment 176-191",
-      "Fragment 176-191 & CJC-1295 & Ipamorelin Blend",
-      "Fragment 176-191 & Mod GRF 1-29 & Ipamorelin Blend"
+      "Fragment 176-191"
     ]
   },
   {
@@ -4494,9 +4483,7 @@
       }
     ],
     "site_names": [
-      "Fragment 176-191",
-      "Fragment 176-191 & CJC-1295 & Ipamorelin Blend",
-      "Fragment 176-191 & Mod GRF 1-29 & Ipamorelin Blend"
+      "Fragment 176-191"
     ]
   },
   {
@@ -4537,9 +4524,7 @@
       }
     ],
     "site_names": [
-      "Fragment 176-191",
-      "Fragment 176-191 & CJC-1295 & Ipamorelin Blend",
-      "Fragment 176-191 & Mod GRF 1-29 & Ipamorelin Blend"
+      "Fragment 176-191"
     ]
   },
   {
@@ -8686,10 +8671,6 @@
       }
     ],
     "site_names": [
-      "Sermorelin & Ipamorelin Blend",
-      "Sermorelin & GHRP-2 Blend",
-      "Sermorelin & GHRP-6 Blend",
-      "Sermorelin & GHRP-6 & GHRP-2 Blend",
       "Sermorelin"
     ]
   },
@@ -8722,10 +8703,6 @@
       }
     ],
     "site_names": [
-      "Sermorelin & Ipamorelin Blend",
-      "Sermorelin & GHRP-2 Blend",
-      "Sermorelin & GHRP-6 Blend",
-      "Sermorelin & GHRP-6 & GHRP-2 Blend",
       "Sermorelin"
     ]
   },
@@ -8807,10 +8784,6 @@
       }
     ],
     "site_names": [
-      "Sermorelin & Ipamorelin Blend",
-      "Sermorelin & GHRP-2 Blend",
-      "Sermorelin & GHRP-6 Blend",
-      "Sermorelin & GHRP-6 & GHRP-2 Blend",
       "Sermorelin"
     ]
   },
@@ -9597,8 +9570,6 @@
       }
     ],
     "site_names": [
-      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
-      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9652,8 +9623,6 @@
       }
     ],
     "site_names": [
-      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
-      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9703,8 +9672,6 @@
       }
     ],
     "site_names": [
-      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
-      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9790,8 +9757,6 @@
       }
     ],
     "site_names": [
-      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend",
-      "Tesamorelin & Ipamorelin Blend",
       "Tesamorelin"
     ]
   },
@@ -9813,6 +9778,9 @@
         "vendor": "UPP",
         "price": "$250.00"
       }
+    ],
+    "site_names": [
+      "Tesamorelin & CJC-1295 (Mod GRF 1-29) & Ipamorelin Blend"
     ]
   },
   {
@@ -9842,6 +9810,9 @@
         "vendor": "WBS",
         "price": "$150.00"
       }
+    ],
+    "site_names": [
+      "Tesamorelin & Ipamorelin Blend"
     ]
   },
   {
