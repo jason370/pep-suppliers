@@ -1376,9 +1376,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-yunke",
+    "id": "ms10-gh-yunke",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$57.00",
     "vialSizes": [
       "10mg"
@@ -1392,9 +1392,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-yunke",
+    "id": "ms40-gh-yunke",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$233.00",
     "vialSizes": [
       "40mg"
@@ -2512,9 +2512,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-jeep",
+    "id": "ms10-gh-jeep",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$75.00",
     "vialSizes": [
       "10mg"
@@ -2528,9 +2528,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-jeep",
+    "id": "ms40-gh-jeep",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$200.00",
     "vialSizes": [
       "40mg"
@@ -3968,9 +3968,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-upp",
+    "id": "ms10-gh-upp",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -3984,9 +3984,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms20-other-upp",
+    "id": "ms20-gh-upp",
     "name": "MS20",
-    "category": "other",
+    "category": "gh",
     "price": "$130.00",
     "vialSizes": [
       "20mg"
@@ -4000,9 +4000,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-upp",
+    "id": "ms40-gh-upp",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$215.00",
     "vialSizes": [
       "40mg"
@@ -4348,7 +4348,7 @@
     "visible": true,
     "vendor": "UPP",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6192,9 +6192,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-chp",
+    "id": "ms10-gh-chp",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -6956,7 +6956,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10240,9 +10240,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms5-other-hhb",
+    "id": "ms5-gh-hhb",
     "name": "MS5",
-    "category": "other",
+    "category": "gh",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -10256,9 +10256,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-hhb",
+    "id": "ms10-gh-hhb",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -10272,9 +10272,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-hhb",
+    "id": "ms40-gh-hhb",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$200.00",
     "vialSizes": [
       "40mg"
@@ -10908,7 +10908,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "CP20",
-    "newName": "CJC-1295 No DAC 20mg x10 vials",
+    "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10924,7 +10924,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11436,7 +11436,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11824,9 +11824,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-kr",
+    "id": "ms10-gh-kr",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -11840,9 +11840,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms20-other-kr",
+    "id": "ms20-gh-kr",
     "name": "MS20",
-    "category": "other",
+    "category": "gh",
     "price": "$125.00",
     "vialSizes": [
       "20mg"
@@ -11856,9 +11856,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-kr",
+    "id": "ms40-gh-kr",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$220.00",
     "vialSizes": [
       "40mg"
@@ -12812,7 +12812,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "H10",
-    "newName": "HGH 10iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12828,7 +12828,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "H15",
-    "newName": "HGH 15iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 15iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12844,7 +12844,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "H24",
-    "newName": "HGH 24iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12860,7 +12860,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "H36",
-    "newName": "HGH 36iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13564,7 +13564,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13580,7 +13580,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "CP20",
-    "newName": "CJC-1295 No DAC 20mg x10 vials",
+    "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13616,9 +13616,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-depu",
+    "id": "ms10-gh-depu",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -13632,9 +13632,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-depu",
+    "id": "ms40-gh-depu",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$185.00",
     "vialSizes": [
       "40mg"
@@ -14796,7 +14796,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14812,7 +14812,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "H10",
-    "newName": "HGH 191AA 10iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14828,7 +14828,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "H15",
-    "newName": "HGH 191AA 15iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 15iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14844,7 +14844,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "H24",
-    "newName": "HGH 191AA 24iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14860,7 +14860,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "H36",
-    "newName": "HGH 191AA 36iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15328,9 +15328,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-ssy",
+    "id": "ms10-gh-ssy",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -15820,7 +15820,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "H10",
-    "newName": "HGH 10iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15836,7 +15836,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "H24",
-    "newName": "HGH 24iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15852,7 +15852,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "H36",
-    "newName": "HGH 36iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16332,7 +16332,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16348,7 +16348,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "CP20",
-    "newName": "CJC-1295 No DAC 20mg x10 vials",
+    "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16496,9 +16496,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-wbs",
+    "id": "ms10-gh-wbs",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -16512,9 +16512,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms20-other-wbs",
+    "id": "ms20-gh-wbs",
     "name": "MS20",
-    "category": "other",
+    "category": "gh",
     "price": "$110.00",
     "vialSizes": [
       "20mg"
@@ -16528,9 +16528,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-wbs",
+    "id": "ms40-gh-wbs",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$175.00",
     "vialSizes": [
       "40mg"
@@ -17804,7 +17804,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "H10",
-    "newName": "HGH 10iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17820,7 +17820,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "H12",
-    "newName": "HGH 12iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 12iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17836,7 +17836,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "H15",
-    "newName": "HGH 15iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 15iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17852,7 +17852,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "H24",
-    "newName": "HGH 24iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17868,7 +17868,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "H36",
-    "newName": "HGH 36iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18668,7 +18668,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18752,9 +18752,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-aag",
+    "id": "ms10-gh-aag",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -18768,9 +18768,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-aag",
+    "id": "ms40-gh-aag",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$185.00",
     "vialSizes": [
       "40mg"
@@ -20112,9 +20112,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms10-other-jkl",
+    "id": "ms10-gh-jkl",
     "name": "MS10",
-    "category": "other",
+    "category": "gh",
     "price": "$58.00",
     "vialSizes": [
       "10mg"
@@ -20128,9 +20128,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ms40-other-jkl",
+    "id": "ms40-gh-jkl",
     "name": "MS40",
-    "category": "other",
+    "category": "gh",
     "price": "$173.00",
     "vialSizes": [
       "40mg"
@@ -20188,7 +20188,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "H10",
-    "newName": "HGH 191AA 10iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20204,7 +20204,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "H24",
-    "newName": "HGH 191AA 24iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20220,7 +20220,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "H36",
-    "newName": "HGH 191AA 36iu x10 vials",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20876,7 +20876,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "CP10",
-    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
