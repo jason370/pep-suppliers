@@ -130,9 +130,9 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
     <table>
       <thead>
         <tr>
-          <th>Cat No</th>
           <th>Product</th>
           <th>Size</th>
+          <th>Cat No</th>
           <th>Category</th>
           <th>Vendor</th>
           <th>Cost</th>
@@ -307,9 +307,9 @@ function renderTable() {
       tr.dataset.productid = p.id;
 
       tr.innerHTML =
-        '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
         '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '<span style="color:#9aabb8">↳</span>') + '</td>' +
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
+        '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
         (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
