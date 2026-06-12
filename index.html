@@ -6905,15 +6905,24 @@ input.invalid{
   }
 
   function renderCard(p){
-    var inner = CARD_INNER_HTML[p.id];
-    if (!inner) return '';
-    var attrs = p.dataAttributes || {};
-    var attrStr = ' class="product-card expanded-product" data-id="' + escAttr(p.id) + '"';
-    Object.keys(attrs).forEach(function(k){
-      attrStr += ' ' + k + '="' + escAttr(attrs[k]) + '"';
-    });
-    return '<article' + attrStr + '>' + inner + '</article>';
+    var price = p.price || 'Contact for price';
+    var cat = p.category || '';
+    var sizes = (p.vialSizes || []).map(function(s){
+      return '<span class="vial-size-tag">' + escHtml(s) + '</span>';
+    }).join('');
+    var imgSrc = 'images/vials/' + p.id + '.png';
+    var inner = '<div class="product-image-wrap">' +
+      '<img class="product-vial" src="' + imgSrc + '" onerror="this.src='images/vials/bpc157-5mg.png'" alt="' + escAttr(p.name) + '" loading="lazy">' +
+      '</div>' +
+      '<div class="product-info">' +
+      '<p class="product-category">' + escHtml(cat) + '</p>' +
+      '<h3 class="product-name">' + escHtml(p.name) + '</h3>' +
+      '<div class="product-sizes">' + sizes + '</div>' +
+      '<p class="product-price">' + escHtml(price) + '</p>' +
+      '</div>';
+    return '<article class="product-card expanded-product" data-id="' + escAttr(p.id) + '">' + inner + '</article>';
   }
+  function escHtml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   document.addEventListener('DOMContentLoaded', function(){
     var grid = document.getElementById('products-grid');
@@ -7467,15 +7476,24 @@ s0.parentNode.insertBefore(s1,s0);
   }
 
   function renderCard(p){
-    var inner = CARD_INNER_HTML[p.id];
-    if (!inner) return '';
-    var attrs = p.dataAttributes || {};
-    var attrStr = ' class="product-card expanded-product" data-id="' + escAttr(p.id) + '"';
-    Object.keys(attrs).forEach(function(k){
-      attrStr += ' ' + k + '="' + escAttr(attrs[k]) + '"';
-    });
-    return '<article' + attrStr + '>' + inner + '</article>';
+    var price = p.price || 'Contact for price';
+    var cat = p.category || '';
+    var sizes = (p.vialSizes || []).map(function(s){
+      return '<span class="vial-size-tag">' + escHtml(s) + '</span>';
+    }).join('');
+    var imgSrc = 'images/vials/' + p.id + '.png';
+    var inner = '<div class="product-image-wrap">' +
+      '<img class="product-vial" src="' + imgSrc + '" onerror="this.src='images/vials/bpc157-5mg.png'" alt="' + escAttr(p.name) + '" loading="lazy">' +
+      '</div>' +
+      '<div class="product-info">' +
+      '<p class="product-category">' + escHtml(cat) + '</p>' +
+      '<h3 class="product-name">' + escHtml(p.name) + '</h3>' +
+      '<div class="product-sizes">' + sizes + '</div>' +
+      '<p class="product-price">' + escHtml(price) + '</p>' +
+      '</div>';
+    return '<article class="product-card expanded-product" data-id="' + escAttr(p.id) + '">' + inner + '</article>';
   }
+  function escHtml(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
   document.addEventListener('DOMContentLoaded', function(){
     var grid = document.getElementById('products-grid');
