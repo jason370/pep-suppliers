@@ -378,13 +378,15 @@ function pushToGitHub() {
   });
 }
 
-// Auto-login if password saved
+// Auto-login if password AND token are both saved
 (function(){
-  var saved = localStorage.getItem('pep_admin_pw');
-  if (saved) {
-    document.getElementById('pw-input').value = saved;
+  var savedPw = localStorage.getItem('pep_admin_pw');
+  var savedToken = localStorage.getItem('pep_gh_token');
+  if (savedPw && savedToken) {
+    document.getElementById('pw-input').value = savedPw;
     document.getElementById('remember-me').checked = true;
-    doLogin();
+    GITHUB_TOKEN = savedToken;
+    loadData();  // skip doLogin() entirely — no prompt
   }
 })();
 </script>
