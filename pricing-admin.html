@@ -326,7 +326,7 @@ function renderTable() {
         '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.costPerVial !== null ? '$' + s.costPerVial.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
-          'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-original="' + escAttr(origPrice) + '" ' +
+          'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-costpervial="' + (s.costPerVial||'') + '" data-original="' + escAttr(origPrice) + '" ' +
           'oninput="onPriceChange(this)"></td>' +
         (isFirstSize ?
           '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' :
