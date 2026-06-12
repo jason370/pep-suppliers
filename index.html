@@ -6481,13 +6481,13 @@ input.invalid{
         <aside class="filters" aria-label="Catalog filters">
           <div class="filter-group">
             <p class="filter-title">Categories</p>
-            <div class="filter-row active"><span class="filter-label">All Peptides</span><span class="filter-count" id="fc-all">86</span></div>
-            <div class="filter-row"><span class="filter-label">Weight Management</span><span class="filter-count" id="fc-weight">10</span></div>
-            <div class="filter-row"><span class="filter-label">Recovery & Healing</span><span class="filter-count">11</span></div>
-            <div class="filter-row"><span class="filter-label">Hormone Support</span><span class="filter-count" id="fc-hormone">17</span></div>
-            <div class="filter-row"><span class="filter-label">Other Research</span><span class="filter-count" id="fc-other">45</span></div>
-            <div class="filter-row"><span class="filter-label">Peptide Blends</span><span class="filter-count" id="fc-blends">9</span></div>
-            <div class="filter-row"><span class="filter-label">Research Kits</span><span class="filter-count" id="fc-kits">0</span></div>
+            <div class="filter-row active"><span class="filter-label">All Peptides</span><span class="filter-count">103</span></div>
+            <div class="filter-row"><span class="filter-label">Weight Management</span><span class="filter-count" id="fc-weight">5</span></div>
+            <div class="filter-row"><span class="filter-label">Recovery & Healing</span><span class="filter-count" id="fc-recovery">5</span></div>
+            <div class="filter-row"><span class="filter-label">Hormone Support</span><span class="filter-count" id="fc-hormone">14</span></div>
+            <div class="filter-row"><span class="filter-label">Other Research</span><span class="filter-count" id="fc-other">55</span></div>
+            <div class="filter-row"><span class="filter-label">Peptide Blends</span><span class="filter-count" id="fc-blends">18</span></div>
+            <div class="filter-row"><span class="filter-label">Research Kits</span><span class="filter-count" id="fc-kits">10</span></div>
             <div class="filter-row"><span class="filter-label">Build Your Kit</span><span class="filter-count">Custom</span></div>
           </div>
           <div class="filter-group">
@@ -6979,13 +6979,8 @@ input.invalid{
         e.stopPropagation();
         vialsEl.querySelectorAll('.drawer-vial-btn').forEach(function(b){ b.classList.remove('active'); });
         btn.classList.add('active');
-        var priceEl = document.getElementById('drawer-price');
         var p = product.prices && product.prices[size];
-        if (p) {
-          priceEl.textContent = p;
-        } else if (product.price) {
-          priceEl.textContent = product.price;
-        }
+        if (p) document.getElementById('drawer-price').textContent = p;
       });
       vialsEl.appendChild(btn);
     });
@@ -7546,13 +7541,8 @@ s0.parentNode.insertBefore(s1,s0);
         e.stopPropagation();
         vialsEl.querySelectorAll('.drawer-vial-btn').forEach(function(b){ b.classList.remove('active'); });
         btn.classList.add('active');
-        var priceEl = document.getElementById('drawer-price');
         var p = product.prices && product.prices[size];
-        if (p) {
-          priceEl.textContent = p;
-        } else if (product.price) {
-          priceEl.textContent = product.price;
-        }
+        if (p) document.getElementById('drawer-price').textContent = p;
       });
       vialsEl.appendChild(btn);
     });
