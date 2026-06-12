@@ -4576,9 +4576,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-upp",
+    "id": "ty10-healing-upp",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "10mg"
@@ -8656,9 +8656,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-hkms",
+    "id": "ty10-healing-hkms",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -8736,9 +8736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "tr5-other-hkms",
+    "id": "tr5-weight-hkms",
     "name": "TR5",
-    "category": "other",
+    "category": "weight",
     "price": "$45.00",
     "vialSizes": [
       "5mg"
@@ -8748,13 +8748,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR5",
-    "newName": "Trizepatide 5mg x10 vials",
+    "newName": "Tirzepatide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr10-other-hkms",
+    "id": "tr10-weight-hkms",
     "name": "TR10",
-    "category": "other",
+    "category": "weight",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -8764,13 +8764,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR10",
-    "newName": "Trizepatide 10mg x10 vials",
+    "newName": "Tirzepatide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr15-other-hkms",
+    "id": "tr15-weight-hkms",
     "name": "TR15",
-    "category": "other",
+    "category": "weight",
     "price": "$82.00",
     "vialSizes": [
       "15mg"
@@ -8780,13 +8780,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR15",
-    "newName": "Trizepatide 15mg x10 vials",
+    "newName": "Tirzepatide 15mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr20-other-hkms",
+    "id": "tr20-weight-hkms",
     "name": "TR20",
-    "category": "other",
+    "category": "weight",
     "price": "$94.00",
     "vialSizes": [
       "20mg"
@@ -8796,13 +8796,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR20",
-    "newName": "Trizepatide 20mg x10 vials",
+    "newName": "Tirzepatide 20mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr30-other-hkms",
+    "id": "tr30-weight-hkms",
     "name": "TR30",
-    "category": "other",
+    "category": "weight",
     "price": "$110.00",
     "vialSizes": [
       "30mg"
@@ -8812,13 +8812,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR30",
-    "newName": "Trizepatide 30mg x10 vials",
+    "newName": "Tirzepatide 30mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr40-other-hkms",
+    "id": "tr40-weight-hkms",
     "name": "TR40",
-    "category": "other",
+    "category": "weight",
     "price": "$140.00",
     "vialSizes": [
       "40mg"
@@ -8828,13 +8828,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR40",
-    "newName": "Trizepatide 40mg x10 vials",
+    "newName": "Tirzepatide 40mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr50-other-hkms",
+    "id": "tr50-weight-hkms",
     "name": "TR50",
-    "category": "other",
+    "category": "weight",
     "price": "$165.00",
     "vialSizes": [
       "50mg"
@@ -8844,13 +8844,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR50",
-    "newName": "Trizepatide 50mg x10 vials",
+    "newName": "Tirzepatide 50mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr60-other-hkms",
+    "id": "tr60-weight-hkms",
     "name": "TR60",
-    "category": "other",
+    "category": "weight",
     "price": "$180.00",
     "vialSizes": [
       "60mg"
@@ -8860,13 +8860,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR60",
-    "newName": "Trizepatide 60mg x10 vials",
+    "newName": "Tirzepatide 60mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr70-other-hkms",
+    "id": "tr70-weight-hkms",
     "name": "TR70",
-    "category": "other",
+    "category": "weight",
     "price": "$210.00",
     "vialSizes": [
       "70mg"
@@ -8876,13 +8876,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR70",
-    "newName": "Trizepatide 70mg x10 vials",
+    "newName": "Tirzepatide 70mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr80-other-hkms",
+    "id": "tr80-weight-hkms",
     "name": "TR80",
-    "category": "other",
+    "category": "weight",
     "price": "$230.00",
     "vialSizes": [
       "80mg"
@@ -8892,13 +8892,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR80",
-    "newName": "Trizepatide 80mg x10 vials",
+    "newName": "Tirzepatide 80mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr90-other-hkms",
+    "id": "tr90-weight-hkms",
     "name": "TR90",
-    "category": "other",
+    "category": "weight",
     "price": "$260.00",
     "vialSizes": [
       "90mg"
@@ -8908,13 +8908,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR90",
-    "newName": "Trizepatide 90mg x10 vials",
+    "newName": "Tirzepatide 90mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr100-other-hkms",
+    "id": "tr100-weight-hkms",
     "name": "TR100",
-    "category": "other",
+    "category": "weight",
     "price": "$290.00",
     "vialSizes": [
       "100mg"
@@ -8924,13 +8924,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "TR100",
-    "newName": "Trizepatide 100mg x10 vials",
+    "newName": "Tirzepatide 100mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "tr110-other-hkms",
-    "name": "TR110",
-    "category": "other",
+    "id": "tr120-weight-hkms",
+    "name": "TR120",
+    "category": "weight",
     "price": "$310.00",
     "vialSizes": [
       "120mg"
@@ -8939,8 +8939,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "TR110",
-    "newName": "Trizepatide 120mg x10 vials",
+    "vendor_cat_no": "TR120",
+    "newName": "Tirzepatide 120mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10992,8 +10992,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "vip10-other-hhb",
-    "name": "VIP10",
+    "id": "vp10-other-hhb",
+    "name": "VP10",
     "category": "other",
     "price": "$110.00",
     "vialSizes": [
@@ -11003,8 +11003,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "VIP10",
-    "newName": "Vasoactive Intestinal Peptide (VIP) 10mg x10 vials",
+    "vendor_cat_no": "VP10",
+    "newName": "VIP 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12480,9 +12480,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-kr",
+    "id": "ty10-healing-kr",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$62.00",
     "vialSizes": [
       "10mg"
@@ -13168,8 +13168,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "vip10-other-depu",
-    "name": "VIP10",
+    "id": "vp10-other-depu",
+    "name": "VP10",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -13179,8 +13179,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DEPU",
-    "vendor_cat_no": "VIP10",
-    "newName": "Vasoactive Intestinal Peptide (VIP) 10mg x10 vials",
+    "vendor_cat_no": "VP10",
+    "newName": "VIP 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13792,9 +13792,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-depu",
+    "id": "ty10-healing-depu",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -16256,9 +16256,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-wbs",
+    "id": "ty10-healing-wbs",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -19344,9 +19344,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-aag",
+    "id": "ty10-healing-aag",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$57.00",
     "vialSizes": [
       "10mg"
@@ -21344,9 +21344,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ty10-other-jkl",
+    "id": "ty10-healing-jkl",
     "name": "TY10",
-    "category": "other",
+    "category": "healing",
     "price": "$72.00",
     "vialSizes": [
       "10mg"
