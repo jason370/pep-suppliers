@@ -492,12 +492,12 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-healing-yunke",
-    "name": "BB10",
+    "id": "bb20-healing-yunke",
+    "name": "BB20",
     "category": "healing",
     "price": "$255.00",
     "vialSizes": [
@@ -507,8 +507,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "Yunke",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -1964,12 +1964,12 @@
     "visible": true,
     "vendor": "ERP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-healing-erp",
-    "name": "BB10",
+    "id": "bb20-healing-erp",
+    "name": "BB20",
     "category": "healing",
     "price": "$175.00",
     "vialSizes": [
@@ -1979,8 +1979,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "ERP",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3196,12 +3196,12 @@
     "visible": true,
     "vendor": "QYC",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-healing-qyc",
-    "name": "BB10",
+    "id": "bb20-healing-qyc",
+    "name": "BB20",
     "category": "healing",
     "price": "$160.00",
     "vialSizes": [
@@ -3211,8 +3211,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "QYC",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -3836,12 +3836,12 @@
     "visible": true,
     "vendor": "UPP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-upp",
-    "name": "BB10",
+    "id": "bb20-other-upp",
+    "name": "BB20",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -3851,8 +3851,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -5868,12 +5868,12 @@
     "visible": true,
     "vendor": "DP",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-healing-dp",
-    "name": "BB10",
+    "id": "bb20-healing-dp",
+    "name": "BB20",
     "category": "healing",
     "price": "$180.00",
     "vialSizes": [
@@ -5883,8 +5883,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DP",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6764,12 +6764,12 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-hkms",
-    "name": "BB10",
+    "id": "bb20-other-hkms",
+    "name": "BB20",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -6779,8 +6779,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8524,7 +8524,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SUR10",
-    "newName": "Survotitude 10mg x10 vials",
+    "newName": "Survodutide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10124,12 +10124,12 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-hhb",
-    "name": "BB10",
+    "id": "bb20-other-hhb",
+    "name": "BB20",
     "category": "other",
     "price": "$140.00",
     "vialSizes": [
@@ -10139,8 +10139,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HHB",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11244,12 +11244,12 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-kr",
-    "name": "BB10",
+    "id": "bb20-other-kr",
+    "name": "BB20",
     "category": "other",
     "price": "$200.00",
     "vialSizes": [
@@ -11259,8 +11259,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "KR",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13308,12 +13308,12 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-depu",
-    "name": "BB10",
+    "id": "bb20-other-depu",
+    "name": "BB20",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -13323,8 +13323,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "DEPU",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -14540,12 +14540,12 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-ssy",
-    "name": "BB10",
+    "id": "bb20-other-ssy",
+    "name": "BB20",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -14555,8 +14555,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "SSY",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15756,12 +15756,12 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-wbs",
-    "name": "BB10",
+    "id": "bb20-other-wbs",
+    "name": "BB20",
     "category": "other",
     "price": "$180.00",
     "vialSizes": [
@@ -15771,8 +15771,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18076,12 +18076,12 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-aag",
-    "name": "BB10",
+    "id": "bb20-other-aag",
+    "name": "BB20",
     "category": "other",
     "price": "$170.00",
     "vialSizes": [
@@ -18091,8 +18091,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -19804,12 +19804,12 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 10mg x10 vials",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-jkl",
-    "name": "BB10",
+    "id": "bb20-other-jkl",
+    "name": "BB20",
     "category": "other",
     "price": "$178.00",
     "vialSizes": [
@@ -19819,8 +19819,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
-    "vendor_cat_no": "BB10",
-    "newName": "BPC-157 + TB-500 20mg x10 vials",
+    "vendor_cat_no": "BB20",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "extraWarehouses": []
   },
   {
