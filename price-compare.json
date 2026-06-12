@@ -4,7 +4,7 @@
     "name": "5-Amino-1MQ",
     "newName": "5-Amino-1MQ 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -50,7 +50,7 @@
     "name": "5-Amino-1MQ",
     "newName": "5-Amino-1MQ 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -104,7 +104,7 @@
     "name": "5-Amino-1MQ",
     "newName": "5-Amino-1MQ 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -154,7 +154,7 @@
     "name": "ACE-031",
     "newName": "ACE-031 1mg x10 vials",
     "spec": "1mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -196,7 +196,7 @@
     "name": "Acetic Acid Water",
     "newName": "Acetic Acid Water 10ml x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -246,7 +246,7 @@
     "name": "Acetic Acid Water",
     "newName": "Acetic Acid Water 3ml x10 vials",
     "spec": "3ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -292,7 +292,7 @@
     "name": "Acth 1-39",
     "newName": "ACTH 1-39 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -312,7 +312,7 @@
     "name": "Adamax",
     "newName": "Adamax 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -354,7 +354,7 @@
     "name": "Adamax",
     "newName": "Adamax 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -392,7 +392,7 @@
     "name": "Adipotide",
     "newName": "Adipotide 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -434,7 +434,7 @@
     "name": "Adipotide",
     "newName": "Adipotide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -488,7 +488,7 @@
     "name": "AHK-CU",
     "newName": "AHK-CU 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -526,7 +526,7 @@
     "name": "AHK-CU",
     "newName": "AHK-CU 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -568,7 +568,7 @@
     "name": "AICAR",
     "newName": "AICAR 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -597,7 +597,7 @@
     "name": "AICAR",
     "newName": "AICAR 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -635,7 +635,7 @@
     "name": "Alprostadil",
     "newName": "Alprostadil 20mg x10 vials",
     "spec": "20ug*5vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -655,7 +655,7 @@
     "name": "AOD-9604",
     "newName": "AOD-9604 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -709,7 +709,7 @@
     "name": "AOD-9604",
     "newName": "AOD-9604 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -751,7 +751,7 @@
     "name": "AOD-9604",
     "newName": "AOD-9604 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -817,7 +817,7 @@
     "name": "ARA-290",
     "newName": "ARA 290(Cibinetide) 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -871,7 +871,7 @@
     "name": "B12",
     "newName": "B12 10mg x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -900,7 +900,7 @@
     "name": "B12",
     "newName": "B12 2mg x10 vials",
     "spec": "2ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -920,7 +920,7 @@
     "name": "B7-33",
     "newName": "B7-33 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -940,7 +940,7 @@
     "name": "B7-33",
     "newName": "B7-33 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -960,7 +960,7 @@
     "name": "BAC Water",
     "newName": "BAC Water 10ml x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1014,7 +1014,7 @@
     "name": "BAC Water",
     "newName": "BAC Water 3ml x10 vials",
     "spec": "3ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1068,7 +1068,7 @@
     "name": "Bac Water (MOQ 50 boxes)",
     "newName": "Bac Water (MOQ 50 boxes) 30ml x1 vials",
     "spec": "30ml*1vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1088,7 +1088,7 @@
     "name": "Botulinum Toxin",
     "newName": "Botulinum Toxin 100iu x10 vials",
     "spec": "100IU*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1117,7 +1117,7 @@
     "name": "Botulinum Toxin",
     "newName": "Botulinum Toxin 100iu x1 vials",
     "spec": "100IU*1vial",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1137,7 +1137,7 @@
     "name": "BPC-157",
     "newName": "BPC-157 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -1227,7 +1227,7 @@
     "name": "BPC-157",
     "newName": "BPC-157 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -1269,7 +1269,7 @@
     "name": "BPC-157",
     "newName": "BPC-157 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -1311,7 +1311,7 @@
     "name": "BPC-157",
     "newName": "BPC-157 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -1385,7 +1385,7 @@
     "name": "BPC-157 + TB-500",
     "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -1463,7 +1463,7 @@
     "name": "BPC-157 + TB-500",
     "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -1541,7 +1541,7 @@
     "name": "BPC-157 + TB-500",
     "newName": "BPC157 15mg+TB500 15mg 30mg x10 vials",
     "spec": "30mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -1570,7 +1570,7 @@
     "name": "BPC-157 + TB-500",
     "newName": "BPC-157 + TB-500 4mg x10 vials",
     "spec": "4mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -1590,7 +1590,7 @@
     "name": "Bronchogen",
     "newName": "Bronchogen 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1610,7 +1610,7 @@
     "name": "Cagrilintide",
     "newName": "Cagrilintide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -1688,7 +1688,7 @@
     "name": "Cagrilintide",
     "newName": "Cagrilintide 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -1730,7 +1730,7 @@
     "name": "Cagrilintide",
     "newName": "Cagrilintide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -1808,7 +1808,7 @@
     "name": "Cagrilintide + Semaglutide",
     "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -1854,7 +1854,7 @@
     "name": "Cardiogen",
     "newName": "Cardiogen 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1896,7 +1896,7 @@
     "name": "Cartalax",
     "newName": "Cartalax 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1925,7 +1925,7 @@
     "name": "Cerebrolysin",
     "newName": "Cerebrolysin 60mg x10 vials",
     "spec": "60mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -1963,7 +1963,7 @@
     "name": "Cerebrolysin",
     "newName": "Cerebrolysin 60mg x10 vials",
     "spec": "60mg*6vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2001,7 +2001,7 @@
     "name": "CJC-1295 No DAC",
     "newName": "CJC-1295 No DAC 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2067,7 +2067,7 @@
     "name": "CJC-1295 No DAC",
     "newName": "CJC-1295 No DAC 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2109,7 +2109,7 @@
     "name": "CJC-1295 No DAC",
     "newName": "CJC-1295 No DAC 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2167,7 +2167,7 @@
     "name": "CJC-1295 No DAC 10mg+Ipamorelin 10mg",
     "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "gh",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -2205,7 +2205,7 @@
     "name": "CJC-1295 No DAC 5mg+Ipamorelin 5mg",
     "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -2271,7 +2271,7 @@
     "name": "CJC-1295 With DAC",
     "newName": "CJC-1295 With DAC 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2313,7 +2313,7 @@
     "name": "CJC-1295 With DAC",
     "newName": "CJC-1295 With DAC 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2371,7 +2371,7 @@
     "name": "Cortagen",
     "newName": "Cortagen 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2413,7 +2413,7 @@
     "name": "Crystagen",
     "newName": "Crystagen 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2433,7 +2433,7 @@
     "name": "Dermorphin",
     "newName": "Dermorphin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2453,7 +2453,7 @@
     "name": "Dermorphin",
     "newName": "Dermorphin 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2482,7 +2482,7 @@
     "name": "Dihexa",
     "newName": "Dihexa 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2502,7 +2502,7 @@
     "name": "DSIP",
     "newName": "DSIP 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2560,7 +2560,7 @@
     "name": "DSIP",
     "newName": "DSIP 12mg x10 vials",
     "spec": "12mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2580,7 +2580,7 @@
     "name": "DSIP",
     "newName": "DSIP 15mg x10 vials",
     "spec": "15mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2622,7 +2622,7 @@
     "name": "DSIP",
     "newName": "DSIP 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2660,7 +2660,7 @@
     "name": "DSIP",
     "newName": "DSIP 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2726,7 +2726,7 @@
     "name": "Dulaglutide",
     "newName": "Dulaglutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -2746,7 +2746,7 @@
     "name": "Dulaglutide",
     "newName": "Dulaglutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -2766,7 +2766,7 @@
     "name": "Epithalon",
     "newName": "Epithalon 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2832,7 +2832,7 @@
     "name": "Epithalon",
     "newName": "Epithalon 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2894,7 +2894,7 @@
     "name": "Epithalon",
     "newName": "Epithalon 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2923,7 +2923,7 @@
     "name": "EPO",
     "newName": "EPO 10000IU x10 vials",
     "spec": "10000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2943,7 +2943,7 @@
     "name": "EPO",
     "newName": "EPO 3000IU x10 vials",
     "spec": "3000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -2963,7 +2963,7 @@
     "name": "Follistatin",
     "newName": "Follistatin 1mg x10 vials",
     "spec": "1mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -2983,7 +2983,7 @@
     "name": "FOXO4-DRI",
     "newName": "FOXO4-DRI 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3029,7 +3029,7 @@
     "name": "GHK-CU",
     "newName": "GHK-CU 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3107,7 +3107,7 @@
     "name": "GHK-CU",
     "newName": "GHK-CU 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3185,7 +3185,7 @@
     "name": "GHRP-2",
     "newName": "GHRP-2 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3235,7 +3235,7 @@
     "name": "GHRP-2",
     "newName": "GHRP-2 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3285,7 +3285,7 @@
     "name": "GHRP-6",
     "newName": "GHRP-6 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3339,7 +3339,7 @@
     "name": "GHRP-6",
     "newName": "GHRP-6 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3389,7 +3389,7 @@
     "name": "GLOW",
     "newName": "GLOW 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -3439,7 +3439,7 @@
     "name": "GLOW",
     "newName": "GLOW 70mg x10 vials",
     "spec": "70mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -3517,7 +3517,7 @@
     "name": "Glutathione",
     "newName": "Glutathione 1500mg x10 vials",
     "spec": "1500mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3583,7 +3583,7 @@
     "name": "Glutathione",
     "newName": "Glutathione 400mg x10 vials",
     "spec": "400mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3603,7 +3603,7 @@
     "name": "Glutathione",
     "newName": "Glutathione 500mg x10 vials",
     "spec": "500mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3632,7 +3632,7 @@
     "name": "Glutathione",
     "newName": "Glutathione 600mg x10 vials",
     "spec": "600mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3694,7 +3694,7 @@
     "name": "Gonadorelin Acetate",
     "newName": "Gonadorelin Acetate 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -3732,7 +3732,7 @@
     "name": "HCG",
     "newName": "HCG 10000iu x10 vials",
     "spec": "10000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3786,7 +3786,7 @@
     "name": "HCG",
     "newName": "HCG 20000iu x10 vials",
     "spec": "20000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3806,7 +3806,7 @@
     "name": "HCG",
     "newName": "HCG 2000iu x10 vials",
     "spec": "2000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3826,7 +3826,7 @@
     "name": "HCG",
     "newName": "HCG 5000iu x10 vials",
     "spec": "5000IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3884,7 +3884,7 @@
     "name": "Hexarelin Acetate",
     "newName": "Hexarelin Acetate 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3922,7 +3922,7 @@
     "name": "Hexarelin Acetate",
     "newName": "Hexarelin Acetate 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -3972,7 +3972,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
     "spec": "10IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4026,7 +4026,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 12iu x10 vials",
     "spec": "12IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4064,7 +4064,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 15iu x10 vials",
     "spec": "15IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4110,7 +4110,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
     "spec": "24IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4160,7 +4160,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
     "spec": "36IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4210,7 +4210,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 6iu x10 vials",
     "spec": "6IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4230,7 +4230,7 @@
     "name": "HGH 191AA (Somatropin)",
     "newName": "HGH 191AA (Somatropin) 8iu x10 vials",
     "spec": "8IU*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4259,7 +4259,7 @@
     "name": "HGH Fragment 176-191",
     "newName": "HGH Fragment 176-191 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -4297,7 +4297,7 @@
     "name": "HGH Fragment 176-191",
     "newName": "HGH Fragment 176-191 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -4326,7 +4326,7 @@
     "name": "HGH Fragment 176-191",
     "newName": "HGH Fragment 176-191 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -4364,7 +4364,7 @@
     "name": "HMG",
     "newName": "HMG 75iu x10 vials",
     "spec": "75IU*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -4402,7 +4402,7 @@
     "name": "Humanin",
     "newName": "Humanin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4448,7 +4448,7 @@
     "name": "Hyaluronic acid",
     "newName": "Hyaluronic acid 5mg x10 vials",
     "spec": "5mg/piece",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -4468,7 +4468,7 @@
     "name": "IGF-1 LR3",
     "newName": "IGF-1 LR3 100mcg x10 vials",
     "spec": "100mcg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4522,7 +4522,7 @@
     "name": "IGF-1 LR3",
     "newName": "IGF-1 LR3 1mg x10 vials",
     "spec": "1mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4580,7 +4580,7 @@
     "name": "IGF-DES",
     "newName": "IGF-DES 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4600,7 +4600,7 @@
     "name": "Insulin",
     "newName": "Insulin 3ml x10 vials",
     "spec": "3ml/1vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -4620,7 +4620,7 @@
     "name": "Ipamorelin",
     "newName": "Ipamorelin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4702,7 +4702,7 @@
     "name": "Ipamorelin",
     "newName": "Ipamorelin 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4744,7 +4744,7 @@
     "name": "Ipamorelin",
     "newName": "Ipamorelin 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -4822,7 +4822,7 @@
     "name": "KissPeptin-10",
     "newName": "KissPeptin-10 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -4880,7 +4880,7 @@
     "name": "KissPeptin-10",
     "newName": "KissPeptin-10 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -4934,7 +4934,7 @@
     "name": "KLOW",
     "newName": "KLOW 80mg x10 vials",
     "spec": "80mg*10vials",
-    "category": "healing",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -5012,7 +5012,7 @@
     "name": "KPV",
     "newName": "KPV 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5082,7 +5082,7 @@
     "name": "KPV",
     "newName": "KPV 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5111,7 +5111,7 @@
     "name": "L-Carnitine",
     "newName": "L-Carnitine 10mg x10 vials",
     "spec": "10ml*600mg/ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5131,7 +5131,7 @@
     "name": "L-Carnitine",
     "newName": "L-Carnitine 1200mg x10 vials",
     "spec": "1200mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5160,7 +5160,7 @@
     "name": "L-Carnitine",
     "newName": "L-Carnitine 2000mg x10 vials",
     "spec": "2000mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5189,7 +5189,7 @@
     "name": "L-Carnitine",
     "newName": "L-Carnitine 5000mg x10 vials",
     "spec": "5000mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5218,7 +5218,7 @@
     "name": "L-Carnitine",
     "newName": "L-Carnitine 10mg x10 vials",
     "spec": "600mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5238,7 +5238,7 @@
     "name": "LC216",
     "newName": "LC216 10mg x10 vials",
     "spec": "10mg/ml/vial*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5258,7 +5258,7 @@
     "name": "Lemon Bottle",
     "newName": "Lemon Bottle 10iu x10 vials",
     "spec": "10IU*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5278,7 +5278,7 @@
     "name": "Lemon Bottle",
     "newName": "Lemon Bottle 10mg x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5320,7 +5320,7 @@
     "name": "Lemon Bottle",
     "newName": "Lemon Bottle 10ml x10 vials",
     "spec": "10ml*5vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5340,7 +5340,7 @@
     "name": "Liraglutide",
     "newName": "Liraglutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -5360,7 +5360,7 @@
     "name": "Liraglutide",
     "newName": "Liraglutide 30mg x10 vials",
     "spec": "30mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -5380,7 +5380,7 @@
     "name": "Liraglutide",
     "newName": "Liraglutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -5400,7 +5400,7 @@
     "name": "LL37",
     "newName": "LL37 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5450,7 +5450,7 @@
     "name": "Matrixyl",
     "newName": "Matrixyl 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5470,7 +5470,7 @@
     "name": "Mazdutide",
     "newName": "Mazdutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -5524,7 +5524,7 @@
     "name": "Mazdutide",
     "newName": "Mazdutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -5692,7 +5692,7 @@
     "name": "Melatonin",
     "newName": "Melatonin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5730,7 +5730,7 @@
     "name": "MGF",
     "newName": "MGF 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -5759,7 +5759,7 @@
     "name": "MOTS-C",
     "newName": "MOTS-C 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -5833,7 +5833,7 @@
     "name": "MOTS-C",
     "newName": "MOTS-C 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -5871,7 +5871,7 @@
     "name": "MOTS-C",
     "newName": "MOTS-C 40mg x10 vials",
     "spec": "40mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -5933,7 +5933,7 @@
     "name": "MOTS-C",
     "newName": "MOTS-C 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -5953,7 +5953,7 @@
     "name": "NAD+",
     "newName": "NAD+ 1000mg x10 vials",
     "spec": "1000mg*10vials",
-    "category": "other",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -6031,7 +6031,7 @@
     "name": "NAD+",
     "newName": "NAD+ 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "other",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -6081,7 +6081,7 @@
     "name": "NAD+",
     "newName": "NAD+ 500mg x10 vials",
     "spec": "500mg*10vials",
-    "category": "other",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -6163,7 +6163,7 @@
     "name": "Orexin A",
     "newName": "Orexin A 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6183,7 +6183,7 @@
     "name": "Orexin B",
     "newName": "Orexin B 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6203,7 +6203,7 @@
     "name": "Orexin B",
     "newName": "Orexin B 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6223,7 +6223,7 @@
     "name": "Oxytocin Acetate",
     "newName": "Oxytocin Acetate 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "sexual",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -6277,7 +6277,7 @@
     "name": "Oxytocin Acetate",
     "newName": "Oxytocin Acetate 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "sexual",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -6319,7 +6319,7 @@
     "name": "Oxytocin Acetate",
     "newName": "Oxytocin Acetate 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "sexual",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -6381,7 +6381,7 @@
     "name": "P21 (P021)",
     "newName": "P21 (P021) 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6423,7 +6423,7 @@
     "name": "PE-22-28",
     "newName": "PE-22-28 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6469,7 +6469,7 @@
     "name": "PE-22-28",
     "newName": "PE-22-28 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6507,7 +6507,7 @@
     "name": "PEG MGF",
     "newName": "PEG MGF 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6549,7 +6549,7 @@
     "name": "Phosphate Buffered Saline",
     "newName": "Sterile Water 10ml x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6569,7 +6569,7 @@
     "name": "Phosphate Buffered Saline",
     "newName": "Sterile Water 3ml x10 vials",
     "spec": "3ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6589,7 +6589,7 @@
     "name": "Pinealon",
     "newName": "Pinealon 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6639,7 +6639,7 @@
     "name": "Pinealon",
     "newName": "Pinealon 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6659,7 +6659,7 @@
     "name": "Pinealon",
     "newName": "Pinealon 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6688,7 +6688,7 @@
     "name": "PNC-27",
     "newName": "PNC-27 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6774,7 +6774,7 @@
     "name": "PTD-DBM",
     "newName": "PTD-DBM 1mg x10 vials",
     "spec": "1mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6794,7 +6794,7 @@
     "name": "RA260",
     "newName": "RA260 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -6814,7 +6814,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -6843,7 +6843,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -6933,7 +6933,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 15mg x10 vials",
     "spec": "15mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7023,7 +7023,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7113,7 +7113,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 30mg x10 vials",
     "spec": "30mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7203,7 +7203,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 40mg x10 vials",
     "spec": "40mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7269,7 +7269,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7339,7 +7339,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7417,7 +7417,7 @@
     "name": "Retatrutide",
     "newName": "Retatrutide 60mg x10 vials",
     "spec": "60mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7499,7 +7499,7 @@
     "name": "Retatrutide + Cagrilintide",
     "newName": "Retatrutide + Cagrilintide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -7680,7 +7680,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7758,7 +7758,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 15mg x10 vials",
     "spec": "15mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7824,7 +7824,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7902,7 +7902,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -7944,7 +7944,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 30mg x10 vials",
     "spec": "30mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8014,7 +8014,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8034,7 +8034,7 @@
     "name": "Semaglutide",
     "newName": "Semaglutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8293,7 +8293,7 @@
     "name": "Sermorelin",
     "newName": "Sermorelin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -8371,7 +8371,7 @@
     "name": "Sermorelin",
     "newName": "Sermorelin 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -8400,7 +8400,7 @@
     "name": "Sermorelin",
     "newName": "Sermorelin 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -8478,7 +8478,7 @@
     "name": "SLU-PP-322",
     "newName": "SLU-PP-322 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8528,7 +8528,7 @@
     "name": "SM5+CGL5",
     "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -8548,7 +8548,7 @@
     "name": "Snap-8",
     "newName": "Snap-8 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8598,7 +8598,7 @@
     "name": "SS-31",
     "newName": "SS-31 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8668,7 +8668,7 @@
     "name": "SS-31",
     "newName": "SS-31 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8734,7 +8734,7 @@
     "name": "Sterile Water",
     "newName": "Sterile Water 10ml x10 vials",
     "spec": "10ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8772,7 +8772,7 @@
     "name": "Sterile Water",
     "newName": "Sterile Water 3ml x10 vials",
     "spec": "3ml*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -8810,7 +8810,7 @@
     "name": "Survodutide",
     "newName": "Survodutide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8864,7 +8864,7 @@
     "name": "Survodutide",
     "newName": "Survodutide 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8884,7 +8884,7 @@
     "name": "Survodutide",
     "newName": "Survodutide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -8904,7 +8904,7 @@
     "name": "TB-500",
     "newName": "TB500 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -8990,7 +8990,7 @@
     "name": "TB-500",
     "newName": "TB-500 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9028,7 +9028,7 @@
     "name": "TB-500",
     "newName": "TB500 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9074,7 +9074,7 @@
     "name": "TB-500",
     "newName": "TB500 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9160,7 +9160,7 @@
     "name": "Tesamorelin",
     "newName": "Tesamorelin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -9246,7 +9246,7 @@
     "name": "Tesamorelin",
     "newName": "Tesamorelin 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -9296,7 +9296,7 @@
     "name": "Tesamorelin",
     "newName": "Tesamorelin 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -9342,7 +9342,7 @@
     "name": "Tesamorelin",
     "newName": "Tesamorelin 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "gh",
+    "category": "Hormone Support",
     "vendors": [
       {
         "rank": 1,
@@ -9424,7 +9424,7 @@
     "name": "Tesamorelin 10mg+Ipamorelin 5mg",
     "newName": "Tesamorelin 10mg+Ipamorelin 5mg x10 vials",
     "spec": "15mg*10vials",
-    "category": "gh",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -9444,7 +9444,7 @@
     "name": "Tesamorelin 5mg+Ipamorelin 5mg",
     "newName": "Tesamorelin 5mg+Ipamorelin 5mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "gh",
+    "category": "Peptide Blends",
     "vendors": [
       {
         "rank": 1,
@@ -9473,7 +9473,7 @@
     "name": "Thymalin",
     "newName": "Thymalin 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9527,7 +9527,7 @@
     "name": "Thymosin Alpha-1",
     "newName": "Thymosin Alpha-1 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9585,7 +9585,7 @@
     "name": "Thymosin Alpha-1",
     "newName": "Thymosin Alpha-1 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9614,7 +9614,7 @@
     "name": "Thymosin Alpha-1",
     "newName": "Thymosin Alpha-1 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "vendors": [
       {
         "rank": 1,
@@ -9676,7 +9676,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 100mg x10 vials",
     "spec": "100mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -9718,7 +9718,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -9804,7 +9804,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 120mg x10 vials",
     "spec": "120mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -9858,7 +9858,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 12mg x10 vials",
     "spec": "12mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -9878,7 +9878,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 15mg x10 vials",
     "spec": "15mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -9968,7 +9968,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10054,7 +10054,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10083,7 +10083,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 30mg x10 vials",
     "spec": "30mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10173,7 +10173,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 40mg x10 vials",
     "spec": "40mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10259,7 +10259,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 45mg x10 vials",
     "spec": "45mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10279,7 +10279,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 50mg x10 vials",
     "spec": "50mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10353,7 +10353,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10423,7 +10423,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 60mg x10 vials",
     "spec": "60mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10513,7 +10513,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 70mg x10 vials",
     "spec": "70mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10533,7 +10533,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 80mg x10 vials",
     "spec": "80mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10562,7 +10562,7 @@
     "name": "Tirzepatide",
     "newName": "Tirzepatide 90mg x10 vials",
     "spec": "90mg*10vials",
-    "category": "weight",
+    "category": "Weight Management",
     "vendors": [
       {
         "rank": 1,
@@ -10582,7 +10582,7 @@
     "name": "Triptorelin Acetate",
     "newName": "Triptorelin Acetate 2mg x10 vials",
     "spec": "2mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -10611,7 +10611,7 @@
     "name": "Vesugen",
     "newName": "Vesugen 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -10631,7 +10631,7 @@
     "name": "Vesugen",
     "newName": "Vesugen 20mg x10 vials",
     "spec": "20mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -10660,7 +10660,7 @@
     "name": "VIP",
     "newName": "VIP 10mg x10 vials",
     "spec": "10mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
@@ -10718,7 +10718,7 @@
     "name": "VIP",
     "newName": "VIP 5mg x10 vials",
     "spec": "5mg*10vials",
-    "category": "other",
+    "category": "Other Research",
     "vendors": [
       {
         "rank": 1,
