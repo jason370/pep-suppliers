@@ -9,9 +9,9 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "50mg",
-      "5mg"
+      "50mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -65,8 +65,8 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -103,8 +103,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "100mg",
-      "50mg"
+      "50mg",
+      "100mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -122,8 +122,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "100mg",
-      "50mg"
+      "50mg",
+      "100mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -141,9 +141,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -179,8 +179,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "2mg"
+      "2mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -198,10 +198,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "20mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg",
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -219,10 +219,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "4mg",
       "10mg",
       "20mg",
-      "30mg",
-      "4mg"
+      "30mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -258,9 +258,9 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "20mg",
-      "5mg"
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -332,9 +332,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -443,8 +443,8 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -480,11 +480,11 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "2mg",
+      "5mg",
       "10mg",
       "12mg",
-      "15mg",
-      "2mg",
-      "5mg"
+      "15mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -502,8 +502,8 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -521,9 +521,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "50mg",
-      "5mg"
+      "50mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -577,8 +577,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "100mg",
-      "50mg"
+      "50mg",
+      "100mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -596,8 +596,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -615,8 +615,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -690,13 +690,13 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
+      "6IU",
+      "8IU",
       "10IU",
       "12IU",
       "15IU",
       "24IU",
-      "36IU",
-      "6IU",
-      "8IU"
+      "36IU"
     ],
     "tags": [],
     "dataAttributes": {
@@ -714,9 +714,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -752,8 +752,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "100mcg",
-      "1mg"
+      "1mg",
+      "100mcg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -789,9 +789,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -809,8 +809,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -846,8 +846,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -903,9 +903,9 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "30mg",
-      "5mg"
+      "30mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -959,8 +959,8 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -996,8 +996,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1033,10 +1033,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
       "20mg",
-      "40mg",
-      "5mg"
+      "40mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1054,9 +1054,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "1000mg",
       "100mg",
-      "500mg"
+      "500mg",
+      "1000mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1092,8 +1092,8 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1111,9 +1111,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1149,8 +1149,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1186,9 +1186,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "20mg",
-      "5mg"
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1278,15 +1278,15 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "100mg",
+      "5mg",
       "10mg",
       "15mg",
       "20mg",
       "30mg",
       "40mg",
       "50mg",
-      "5mg",
-      "60mg"
+      "60mg",
+      "100mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1322,9 +1322,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
-      "30mg",
-      "5mg"
+      "30mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1342,13 +1342,13 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
+      "2mg",
+      "5mg",
       "10mg",
       "15mg",
       "20mg",
-      "2mg",
       "30mg",
-      "50mg",
-      "5mg"
+      "50mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1366,10 +1366,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
+      "5mg",
       "10mg",
       "11mg",
-      "30mg",
-      "5mg"
+      "30mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1387,9 +1387,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1480,9 +1480,9 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1500,10 +1500,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "20mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg",
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1521,10 +1521,10 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "20mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg",
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1596,9 +1596,9 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "2mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1616,22 +1616,22 @@
     "inStock": false,
     "visible": true,
     "vialSizes": [
-      "100mg",
+      "2mg",
+      "5mg",
       "10mg",
-      "120mg",
       "12mg",
       "15mg",
       "20mg",
-      "2mg",
       "30mg",
       "40mg",
       "45mg",
       "50mg",
-      "5mg",
       "60mg",
       "70mg",
       "80mg",
-      "90mg"
+      "90mg",
+      "100mg",
+      "120mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1686,8 +1686,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
-      "5mg"
+      "5mg",
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
