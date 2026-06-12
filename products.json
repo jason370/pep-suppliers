@@ -2,11 +2,9 @@
   {
     "id": 1,
     "name": "10AM",
-    "category": "other",
+    "category": "Other Research",
     "price": "$45.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -18,11 +16,9 @@
   {
     "id": 2,
     "name": "50AM",
-    "category": "other",
+    "category": "Other Research",
     "price": "$80.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -34,11 +30,9 @@
   {
     "id": 3,
     "name": "5AM",
-    "category": "other",
+    "category": "Other Research",
     "price": "$39.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -50,11 +44,9 @@
   {
     "id": 4,
     "name": "AE1",
-    "category": "other",
+    "category": "Other Research",
     "price": "$80.00",
-    "vialSizes": [
-      1
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -66,11 +58,9 @@
   {
     "id": 5,
     "name": "AA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$10.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -82,11 +72,9 @@
   {
     "id": 6,
     "name": "AA3",
-    "category": "other",
+    "category": "Other Research",
     "price": "$5.00",
-    "vialSizes": [
-      3
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -98,11 +86,9 @@
   {
     "id": 7,
     "name": "A15",
-    "category": "other",
+    "category": "Other Research",
     "price": "$60.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -114,11 +100,9 @@
   {
     "id": 8,
     "name": "ADA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$110.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -130,11 +114,9 @@
   {
     "id": 9,
     "name": "ADA5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$77.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -146,11 +128,9 @@
   {
     "id": 10,
     "name": "AP2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$65.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -162,11 +142,9 @@
   {
     "id": 11,
     "name": "AP5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$130.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -178,11 +156,9 @@
   {
     "id": 12,
     "name": "AU100",
-    "category": "other",
+    "category": "Other Research",
     "price": "$68.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -194,11 +170,9 @@
   {
     "id": 13,
     "name": "AU50",
-    "category": "other",
+    "category": "Other Research",
     "price": "$40.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -210,11 +184,9 @@
   {
     "id": 14,
     "name": "AR100",
-    "category": "other",
+    "category": "Other Research",
     "price": "$80.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -226,11 +198,9 @@
   {
     "id": 15,
     "name": "AR50",
-    "category": "other",
+    "category": "Other Research",
     "price": "$46.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -242,11 +212,9 @@
   {
     "id": 16,
     "name": "AS20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$56.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -258,11 +226,9 @@
   {
     "id": 17,
     "name": "10AD",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$150.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -274,11 +240,9 @@
   {
     "id": 18,
     "name": "2AD",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$41.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -290,11 +254,9 @@
   {
     "id": 19,
     "name": "5AD",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$80.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -306,11 +268,9 @@
   {
     "id": 20,
     "name": "RA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$60.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -322,11 +282,9 @@
   {
     "id": 21,
     "name": "B1210",
-    "category": "other",
+    "category": "Other Research",
     "price": "$34.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -338,11 +296,9 @@
   {
     "id": 22,
     "name": "B122",
-    "category": "other",
+    "category": "Other Research",
     "price": "$10.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -354,11 +310,9 @@
   {
     "id": 23,
     "name": "B733-10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$200.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -370,11 +324,9 @@
   {
     "id": 24,
     "name": "B733-2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$55.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -386,11 +338,9 @@
   {
     "id": 25,
     "name": "BAC10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$8.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -402,11 +352,9 @@
   {
     "id": 26,
     "name": "BAC3",
-    "category": "other",
+    "category": "Other Research",
     "price": "$5.00",
-    "vialSizes": [
-      3
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -418,11 +366,9 @@
   {
     "id": 27,
     "name": "W30",
-    "category": "other",
+    "category": "Other Research",
     "price": "$24.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -434,11 +380,9 @@
   {
     "id": 28,
     "name": "XT100",
-    "category": "other",
+    "category": "Other Research",
     "price": "$153.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -450,11 +394,9 @@
   {
     "id": 29,
     "name": "XT1001",
-    "category": "other",
+    "category": "Other Research",
     "price": "$135.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -466,11 +408,9 @@
   {
     "id": 30,
     "name": "BC10",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$55.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -482,11 +422,9 @@
   {
     "id": 31,
     "name": "BC20",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$100.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -498,11 +436,9 @@
   {
     "id": 32,
     "name": "BC2",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$21.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -514,11 +450,9 @@
   {
     "id": 33,
     "name": "BC5",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$36.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -530,11 +464,9 @@
   {
     "id": 34,
     "name": "BB10",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$85.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -546,11 +478,9 @@
   {
     "id": 35,
     "name": "BB20",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$140.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -562,11 +492,9 @@
   {
     "id": 36,
     "name": "BB30",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$230.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -578,11 +506,9 @@
   {
     "id": 37,
     "name": "BB4",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$70.00",
-    "vialSizes": [
-      4
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -594,11 +520,9 @@
   {
     "id": 38,
     "name": "B20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$92.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -610,11 +534,9 @@
   {
     "id": 39,
     "name": "CGL10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$139.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -626,11 +548,9 @@
   {
     "id": 40,
     "name": "CGL20",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$245.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -642,11 +562,9 @@
   {
     "id": 41,
     "name": "CGL5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$80.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -658,11 +576,9 @@
   {
     "id": 42,
     "name": "CS10",
-    "category": "weight",
+    "category": "Peptide Blends",
     "price": "$140.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -674,11 +590,9 @@
   {
     "id": 43,
     "name": "CAD20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$98.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -690,11 +604,9 @@
   {
     "id": 44,
     "name": "Cart20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$93.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -706,11 +618,9 @@
   {
     "id": 45,
     "name": "CBL60",
-    "category": "other",
+    "category": "Other Research",
     "price": "$65.00",
-    "vialSizes": [
-      60
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -722,27 +632,23 @@
   {
     "id": 46,
     "name": "CBL60",
-    "category": "other",
+    "category": "Other Research",
     "price": "$29.00",
-    "vialSizes": [
-      60
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "CBL60",
-    "newName": "Cerebrolysin 60mg x6 vials",
+    "newName": "Cerebrolysin 60mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": 47,
     "name": "CND10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$135.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -754,11 +660,9 @@
   {
     "id": 48,
     "name": "CND2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$30.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -770,11 +674,9 @@
   {
     "id": 49,
     "name": "CND5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$70.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -786,11 +688,9 @@
   {
     "id": 50,
     "name": "CP20",
-    "category": "gh",
+    "category": "Peptide Blends",
     "price": "$170.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -802,11 +702,9 @@
   {
     "id": 51,
     "name": "CP10",
-    "category": "gh",
+    "category": "Peptide Blends",
     "price": "$93.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -818,11 +716,9 @@
   {
     "id": 52,
     "name": "CD2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$60.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -834,11 +730,9 @@
   {
     "id": 53,
     "name": "CD5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$140.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -850,11 +744,9 @@
   {
     "id": 54,
     "name": "COR20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$98.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -866,11 +758,9 @@
   {
     "id": 55,
     "name": "C20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$67.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -882,11 +772,9 @@
   {
     "id": 56,
     "name": "DR10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$85.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -898,11 +786,9 @@
   {
     "id": 57,
     "name": "DR5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$35.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -914,11 +800,9 @@
   {
     "id": 58,
     "name": "DIHEXA",
-    "category": "other",
+    "category": "Other Research",
     "price": "$130.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -930,11 +814,9 @@
   {
     "id": 59,
     "name": "DS10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$60.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -946,11 +828,9 @@
   {
     "id": 60,
     "name": "DS12",
-    "category": "other",
+    "category": "Other Research",
     "price": "$100.00",
-    "vialSizes": [
-      12
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -962,11 +842,9 @@
   {
     "id": 61,
     "name": "DS15",
-    "category": "other",
+    "category": "Other Research",
     "price": "$85.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -978,11 +856,9 @@
   {
     "id": 62,
     "name": "DS2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$20.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -994,11 +870,9 @@
   {
     "id": 63,
     "name": "DS5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$36.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1010,11 +884,9 @@
   {
     "id": 64,
     "name": "D10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$265.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1026,11 +898,9 @@
   {
     "id": 65,
     "name": "D5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$149.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1042,11 +912,9 @@
   {
     "id": 66,
     "name": "ET10",
-    "category": "other",
+    "category": "Hormone Support",
     "price": "$35.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1058,11 +926,9 @@
   {
     "id": 67,
     "name": "ET50",
-    "category": "other",
+    "category": "Hormone Support",
     "price": "$135.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1074,11 +940,9 @@
   {
     "id": 68,
     "name": "ET5",
-    "category": "other",
+    "category": "Hormone Support",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1090,11 +954,9 @@
   {
     "id": 69,
     "name": "E10K",
-    "category": "other",
+    "category": "Hormone Support",
     "price": "$180.00",
-    "vialSizes": [
-      10000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1106,11 +968,9 @@
   {
     "id": 70,
     "name": "E3K",
-    "category": "other",
+    "category": "Hormone Support",
     "price": "$60.00",
-    "vialSizes": [
-      3000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1122,11 +982,9 @@
   {
     "id": 71,
     "name": "FN1",
-    "category": "other",
+    "category": "Other Research",
     "price": "$190.00",
-    "vialSizes": [
-      1
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1138,11 +996,9 @@
   {
     "id": 72,
     "name": "F410",
-    "category": "other",
+    "category": "Other Research",
     "price": "$260.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1154,11 +1010,9 @@
   {
     "id": 73,
     "name": "CU100",
-    "category": "other",
+    "category": "Other Research",
     "price": "$45.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1170,11 +1024,9 @@
   {
     "id": 74,
     "name": "CU50",
-    "category": "other",
+    "category": "Other Research",
     "price": "$25.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1186,11 +1038,9 @@
   {
     "id": 75,
     "name": "G210",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$45.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1202,11 +1052,9 @@
   {
     "id": 76,
     "name": "G25",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$25.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1218,11 +1066,9 @@
   {
     "id": 77,
     "name": "G610",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$45.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1234,11 +1080,9 @@
   {
     "id": 78,
     "name": "G65",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$25.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1250,11 +1094,9 @@
   {
     "id": 79,
     "name": "GLOW50",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$135.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1266,11 +1108,9 @@
   {
     "id": 80,
     "name": "GLOW",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$150.00",
-    "vialSizes": [
-      70
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1282,11 +1122,9 @@
   {
     "id": 81,
     "name": "GTT1500",
-    "category": "other",
+    "category": "Other Research",
     "price": "$63.00",
-    "vialSizes": [
-      1500
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1298,11 +1136,9 @@
   {
     "id": 82,
     "name": "GTT400",
-    "category": "other",
+    "category": "Other Research",
     "price": "$48.00",
-    "vialSizes": [
-      400
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1314,11 +1150,9 @@
   {
     "id": 83,
     "name": "GT500",
-    "category": "other",
+    "category": "Other Research",
     "price": "$35.00",
-    "vialSizes": [
-      500
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1330,11 +1164,9 @@
   {
     "id": 84,
     "name": "GTT600",
-    "category": "other",
+    "category": "Other Research",
     "price": "$35.00",
-    "vialSizes": [
-      600
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1346,11 +1178,9 @@
   {
     "id": 85,
     "name": "GND2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$30.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1362,11 +1192,9 @@
   {
     "id": 86,
     "name": "G10K",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$130.00",
-    "vialSizes": [
-      10000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1378,11 +1206,9 @@
   {
     "id": 87,
     "name": "G20K",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$40.00",
-    "vialSizes": [
-      20000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1394,11 +1220,9 @@
   {
     "id": 88,
     "name": "G2K",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$35.00",
-    "vialSizes": [
-      2000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1410,11 +1234,9 @@
   {
     "id": 89,
     "name": "G5K",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$68.00",
-    "vialSizes": [
-      5000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1426,11 +1248,9 @@
   {
     "id": 90,
     "name": "HX2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$35.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1442,11 +1262,9 @@
   {
     "id": 91,
     "name": "HX5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$50.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1458,11 +1276,9 @@
   {
     "id": 92,
     "name": "H10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$47.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1474,11 +1290,9 @@
   {
     "id": 93,
     "name": "H12",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$54.00",
-    "vialSizes": [
-      12
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1490,11 +1304,9 @@
   {
     "id": 94,
     "name": "H15",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$65.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1506,11 +1318,9 @@
   {
     "id": 95,
     "name": "H24",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$108.00",
-    "vialSizes": [
-      24
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1522,11 +1332,9 @@
   {
     "id": 96,
     "name": "H36",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$150.00",
-    "vialSizes": [
-      36
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1538,11 +1346,9 @@
   {
     "id": 97,
     "name": "H06",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$45.00",
-    "vialSizes": [
-      6
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1554,11 +1360,9 @@
   {
     "id": 98,
     "name": "H08",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$41.00",
-    "vialSizes": [
-      8
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1570,11 +1374,9 @@
   {
     "id": 99,
     "name": "FR10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$158.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1586,11 +1388,9 @@
   {
     "id": 100,
     "name": "FR2",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$35.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1602,11 +1402,9 @@
   {
     "id": 101,
     "name": "FR5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$80.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1618,11 +1416,9 @@
   {
     "id": 102,
     "name": "G75",
-    "category": "other",
+    "category": "Other Research",
     "price": "$53.00",
-    "vialSizes": [
-      75
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1634,11 +1430,9 @@
   {
     "id": 103,
     "name": "HU10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$220.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1650,11 +1444,9 @@
   {
     "id": 104,
     "name": "HA5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$20.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1666,11 +1458,9 @@
   {
     "id": 105,
     "name": "IG01",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$37.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1682,11 +1472,9 @@
   {
     "id": 106,
     "name": "IG1",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$182.00",
-    "vialSizes": [
-      1
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1698,11 +1486,9 @@
   {
     "id": 107,
     "name": "IGD",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$48.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1714,11 +1500,9 @@
   {
     "id": 108,
     "name": "ISU",
-    "category": "other",
+    "category": "Other Research",
     "price": "$210.00",
-    "vialSizes": [
-      3
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1730,11 +1514,9 @@
   {
     "id": 109,
     "name": "IP10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$60.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1746,11 +1528,9 @@
   {
     "id": 110,
     "name": "IP2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$25.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1762,11 +1542,9 @@
   {
     "id": 111,
     "name": "IP5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$33.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1778,11 +1556,9 @@
   {
     "id": 112,
     "name": "KS10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$50.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1794,11 +1570,9 @@
   {
     "id": 113,
     "name": "KS5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$45.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1810,11 +1584,9 @@
   {
     "id": 114,
     "name": "KLOW80",
-    "category": "healing",
+    "category": "Peptide Blends",
     "price": "$170.00",
-    "vialSizes": [
-      80
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1826,11 +1598,9 @@
   {
     "id": 115,
     "name": "KP10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$54.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1842,11 +1612,9 @@
   {
     "id": 116,
     "name": "KP5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1858,11 +1626,9 @@
   {
     "id": 117,
     "name": "LC600",
-    "category": "other",
+    "category": "Other Research",
     "price": "$50.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1874,11 +1640,9 @@
   {
     "id": 118,
     "name": "LC1200",
-    "category": "other",
+    "category": "Other Research",
     "price": "$90.00",
-    "vialSizes": [
-      1200
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1890,11 +1654,9 @@
   {
     "id": 119,
     "name": "LC2000",
-    "category": "other",
+    "category": "Other Research",
     "price": "$120.00",
-    "vialSizes": [
-      2000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1906,11 +1668,9 @@
   {
     "id": 120,
     "name": "LC5000",
-    "category": "other",
+    "category": "Other Research",
     "price": "$150.00",
-    "vialSizes": [
-      5000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1922,27 +1682,23 @@
   {
     "id": 121,
     "name": "LC600",
-    "category": "other",
+    "category": "Other Research",
     "price": "$75.00",
-    "vialSizes": [
-      600
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "LC600",
-    "newName": "L-Carnitine 600mg x10 vials",
+    "newName": "L-Carnitine 10mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": 122,
     "name": "LC216",
-    "category": "other",
+    "category": "Other Research",
     "price": "$122.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1954,11 +1710,9 @@
   {
     "id": 123,
     "name": "LBIU",
-    "category": "other",
+    "category": "Other Research",
     "price": "$55.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1970,11 +1724,9 @@
   {
     "id": 124,
     "name": "LB",
-    "category": "other",
+    "category": "Other Research",
     "price": "$45.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -1986,11 +1738,9 @@
   {
     "id": 125,
     "name": "LB5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$75.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2002,11 +1752,9 @@
   {
     "id": 126,
     "name": "L10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$144.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2018,11 +1766,9 @@
   {
     "id": 127,
     "name": "L30",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$432.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2034,11 +1780,9 @@
   {
     "id": 128,
     "name": "L5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$81.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2050,11 +1794,9 @@
   {
     "id": 129,
     "name": "LL37",
-    "category": "other",
+    "category": "Other Research",
     "price": "$80.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2066,11 +1808,9 @@
   {
     "id": 130,
     "name": "M10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$34.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2082,11 +1822,9 @@
   {
     "id": 131,
     "name": "MDT10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$195.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2098,11 +1836,9 @@
   {
     "id": 132,
     "name": "MDT5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$119.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2116,9 +1852,7 @@
     "name": "MT1",
     "category": "sexual",
     "price": "$41.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2132,9 +1866,7 @@
     "name": "ML10",
     "category": "sexual",
     "price": "$41.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2148,9 +1880,7 @@
     "name": "ML5",
     "category": "sexual",
     "price": "$34.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2162,11 +1892,9 @@
   {
     "id": 136,
     "name": "MT10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$53.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2178,11 +1906,9 @@
   {
     "id": 137,
     "name": "FM2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$30.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2194,11 +1920,9 @@
   {
     "id": 138,
     "name": "MS10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$52.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2210,11 +1934,9 @@
   {
     "id": 139,
     "name": "MS20",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$110.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2226,11 +1948,9 @@
   {
     "id": 140,
     "name": "MS40",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$173.00",
-    "vialSizes": [
-      40
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2242,11 +1962,9 @@
   {
     "id": 141,
     "name": "MS5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2258,11 +1976,9 @@
   {
     "id": 142,
     "name": "NJ1000",
-    "category": "other",
+    "category": "Peptide Blends",
     "price": "$75.00",
-    "vialSizes": [
-      1000
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2274,11 +1990,9 @@
   {
     "id": 143,
     "name": "NJ100",
-    "category": "other",
+    "category": "Peptide Blends",
     "price": "$40.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2290,11 +2004,9 @@
   {
     "id": 144,
     "name": "NJ500",
-    "category": "other",
+    "category": "Peptide Blends",
     "price": "$50.00",
-    "vialSizes": [
-      500
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2306,11 +2018,9 @@
   {
     "id": 145,
     "name": "OA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$578.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2322,11 +2032,9 @@
   {
     "id": 146,
     "name": "OB10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$234.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2338,11 +2046,9 @@
   {
     "id": 147,
     "name": "OB5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$116.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2354,11 +2060,9 @@
   {
     "id": 148,
     "name": "OT10",
-    "category": "other",
+    "category": "Recovery & Healing",
     "price": "$60.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2370,11 +2074,9 @@
   {
     "id": 149,
     "name": "OT2",
-    "category": "other",
+    "category": "Recovery & Healing",
     "price": "$25.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2386,11 +2088,9 @@
   {
     "id": 150,
     "name": "OT5",
-    "category": "other",
+    "category": "Recovery & Healing",
     "price": "$37.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2402,11 +2102,9 @@
   {
     "id": 151,
     "name": "P21",
-    "category": "other",
+    "category": "Other Research",
     "price": "$285.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2418,11 +2116,9 @@
   {
     "id": 152,
     "name": "PE10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$72.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2434,11 +2130,9 @@
   {
     "id": 153,
     "name": "PE5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$35.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2450,11 +2144,9 @@
   {
     "id": 154,
     "name": "FMP2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$70.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2466,43 +2158,37 @@
   {
     "id": 155,
     "name": "WA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$10.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "WA10",
-    "newName": "Phosphate Buffered Saline 10ml x10 vials",
+    "newName": "Sterile Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
     "id": 156,
     "name": "WA3",
-    "category": "other",
+    "category": "Other Research",
     "price": "$5.00",
-    "vialSizes": [
-      3
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "WA3",
-    "newName": "Phosphate Buffered Saline 3ml x10 vials",
+    "newName": "Sterile Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
     "id": 157,
     "name": "PIN10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$55.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2514,11 +2200,9 @@
   {
     "id": 158,
     "name": "PI20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$100.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2530,11 +2214,9 @@
   {
     "id": 159,
     "name": "PI5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$34.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2546,11 +2228,9 @@
   {
     "id": 160,
     "name": "P25",
-    "category": "other",
+    "category": "Other Research",
     "price": "$85.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2564,9 +2244,7 @@
     "name": "P41",
     "category": "sexual",
     "price": "$55.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2578,11 +2256,9 @@
   {
     "id": 162,
     "name": "PD1",
-    "category": "other",
+    "category": "Other Research",
     "price": "$59.00",
-    "vialSizes": [
-      1
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2594,11 +2270,9 @@
   {
     "id": 163,
     "name": "RA50",
-    "category": "other",
+    "category": "Other Research",
     "price": "$56.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2610,11 +2284,9 @@
   {
     "id": 164,
     "name": "RT100",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$325.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2626,11 +2298,9 @@
   {
     "id": 165,
     "name": "RT10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$80.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2642,11 +2312,9 @@
   {
     "id": 166,
     "name": "RT15",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$105.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2658,11 +2326,9 @@
   {
     "id": 167,
     "name": "RT20",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$130.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2674,11 +2340,9 @@
   {
     "id": 168,
     "name": "RT30",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$170.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2690,11 +2354,9 @@
   {
     "id": 169,
     "name": "RT40",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$210.00",
-    "vialSizes": [
-      40
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2706,11 +2368,9 @@
   {
     "id": 170,
     "name": "RT50",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$250.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2722,11 +2382,9 @@
   {
     "id": 171,
     "name": "RT5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$50.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2738,11 +2396,9 @@
   {
     "id": 172,
     "name": "RT60",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$290.00",
-    "vialSizes": [
-      60
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2754,11 +2410,9 @@
   {
     "id": 173,
     "name": "RC10",
-    "category": "weight",
+    "category": "Peptide Blends",
     "price": "$200.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2772,9 +2426,7 @@
     "name": "SK10",
     "category": "nootropic",
     "price": "$50.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2788,9 +2440,7 @@
     "name": "SK30",
     "category": "nootropic",
     "price": "$160.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2804,9 +2454,7 @@
     "name": "SK5",
     "category": "nootropic",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2818,11 +2466,9 @@
   {
     "id": 177,
     "name": "SM10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$45.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2834,11 +2480,9 @@
   {
     "id": 178,
     "name": "SM15",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$55.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2850,11 +2494,9 @@
   {
     "id": 179,
     "name": "SM20",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$65.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2866,11 +2508,9 @@
   {
     "id": 180,
     "name": "SM2",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$29.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2882,11 +2522,9 @@
   {
     "id": 181,
     "name": "SM30",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$85.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2898,11 +2536,9 @@
   {
     "id": 182,
     "name": "SM50",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$180.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2914,11 +2550,9 @@
   {
     "id": 183,
     "name": "SM5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$35.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2932,9 +2566,7 @@
     "name": "XA10",
     "category": "nootropic",
     "price": "$50.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2948,9 +2580,7 @@
     "name": "XA11",
     "category": "nootropic",
     "price": "$71.00",
-    "vialSizes": [
-      11
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2964,9 +2594,7 @@
     "name": "XA30",
     "category": "nootropic",
     "price": "$140.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2980,9 +2608,7 @@
     "name": "XA5",
     "category": "nootropic",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -2994,11 +2620,9 @@
   {
     "id": 188,
     "name": "SMO10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$95.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3010,11 +2634,9 @@
   {
     "id": 189,
     "name": "SMO2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$40.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3026,11 +2648,9 @@
   {
     "id": 190,
     "name": "SMO5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$55.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3042,11 +2662,9 @@
   {
     "id": 191,
     "name": "SLU5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$70.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3058,27 +2676,23 @@
   {
     "id": 192,
     "name": "CS10",
-    "category": "other",
+    "category": "Peptide Blends",
     "price": "$157.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "CS10",
-    "newName": "SM5+CGL5 10mg x10 vials",
+    "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
     "extraWarehouses": []
   },
   {
     "id": 193,
     "name": "NP810",
-    "category": "other",
+    "category": "Other Research",
     "price": "$35.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3090,11 +2704,9 @@
   {
     "id": 194,
     "name": "2S10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$75.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3106,11 +2718,9 @@
   {
     "id": 195,
     "name": "2S50",
-    "category": "other",
+    "category": "Other Research",
     "price": "$280.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3122,11 +2732,9 @@
   {
     "id": 196,
     "name": "WA10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$11.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3138,11 +2746,9 @@
   {
     "id": 197,
     "name": "WA3",
-    "category": "other",
+    "category": "Other Research",
     "price": "$10.00",
-    "vialSizes": [
-      3
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3154,11 +2760,9 @@
   {
     "id": 198,
     "name": "SUR10",
-    "category": "other",
+    "category": "Weight Management",
     "price": "$200.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3170,11 +2774,9 @@
   {
     "id": 199,
     "name": "SUR2",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$100.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3186,11 +2788,9 @@
   {
     "id": 200,
     "name": "SUR5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$180.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3202,11 +2802,9 @@
   {
     "id": 201,
     "name": "BT10",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$110.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3218,11 +2816,9 @@
   {
     "id": 202,
     "name": "BT20",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$280.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3234,11 +2830,9 @@
   {
     "id": 203,
     "name": "BT2",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$35.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3250,11 +2844,9 @@
   {
     "id": 204,
     "name": "BT5",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$60.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3266,11 +2858,9 @@
   {
     "id": 205,
     "name": "TSM10",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$148.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3282,11 +2872,9 @@
   {
     "id": 206,
     "name": "TSM20",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$240.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3298,11 +2886,9 @@
   {
     "id": 207,
     "name": "TSM2",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$42.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3314,11 +2900,9 @@
   {
     "id": 208,
     "name": "TSM5",
-    "category": "gh",
+    "category": "Hormone Support",
     "price": "$88.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3330,11 +2914,9 @@
   {
     "id": 209,
     "name": "TI15",
-    "category": "gh",
+    "category": "Peptide Blends",
     "price": "$250.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3346,11 +2928,9 @@
   {
     "id": 210,
     "name": "TI10",
-    "category": "gh",
+    "category": "Peptide Blends",
     "price": "$115.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3362,11 +2942,9 @@
   {
     "id": 211,
     "name": "TY10",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$55.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3378,11 +2956,9 @@
   {
     "id": 212,
     "name": "TA10",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$140.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3394,11 +2970,9 @@
   {
     "id": 213,
     "name": "TA2",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$48.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3410,11 +2984,9 @@
   {
     "id": 214,
     "name": "TA5",
-    "category": "healing",
+    "category": "Recovery & Healing",
     "price": "$75.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3426,11 +2998,9 @@
   {
     "id": 215,
     "name": "TR100",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$240.00",
-    "vialSizes": [
-      100
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3442,11 +3012,9 @@
   {
     "id": 216,
     "name": "TR10",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$50.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3458,11 +3026,9 @@
   {
     "id": 217,
     "name": "TR120",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$300.00",
-    "vialSizes": [
-      120
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3474,11 +3040,9 @@
   {
     "id": 218,
     "name": "TR12",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$70.00",
-    "vialSizes": [
-      12
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3490,11 +3054,9 @@
   {
     "id": 219,
     "name": "TR15",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$60.00",
-    "vialSizes": [
-      15
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3506,11 +3068,9 @@
   {
     "id": 220,
     "name": "TR20",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$65.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3522,11 +3082,9 @@
   {
     "id": 221,
     "name": "TR2",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$35.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3538,11 +3096,9 @@
   {
     "id": 222,
     "name": "TR30",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$85.00",
-    "vialSizes": [
-      30
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3554,11 +3110,9 @@
   {
     "id": 223,
     "name": "TR40",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$115.00",
-    "vialSizes": [
-      40
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3570,11 +3124,9 @@
   {
     "id": 224,
     "name": "TR45",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$165.00",
-    "vialSizes": [
-      45
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3586,11 +3138,9 @@
   {
     "id": 225,
     "name": "TR50",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$138.00",
-    "vialSizes": [
-      50
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3602,11 +3152,9 @@
   {
     "id": 226,
     "name": "TR5",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$40.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3618,11 +3166,9 @@
   {
     "id": 227,
     "name": "TR60",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$160.00",
-    "vialSizes": [
-      60
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3634,11 +3180,9 @@
   {
     "id": 228,
     "name": "TR70",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$210.00",
-    "vialSizes": [
-      70
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3650,11 +3194,9 @@
   {
     "id": 229,
     "name": "TR80",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$230.00",
-    "vialSizes": [
-      80
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3666,11 +3208,9 @@
   {
     "id": 230,
     "name": "TR90",
-    "category": "weight",
+    "category": "Weight Management",
     "price": "$260.00",
-    "vialSizes": [
-      90
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3682,11 +3222,9 @@
   {
     "id": 231,
     "name": "TRI2",
-    "category": "other",
+    "category": "Other Research",
     "price": "$39.00",
-    "vialSizes": [
-      2
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3698,11 +3236,9 @@
   {
     "id": 232,
     "name": "VE10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$62.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3714,11 +3250,9 @@
   {
     "id": 233,
     "name": "VE20",
-    "category": "other",
+    "category": "Other Research",
     "price": "$103.00",
-    "vialSizes": [
-      20
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3730,11 +3264,9 @@
   {
     "id": 234,
     "name": "VP10",
-    "category": "other",
+    "category": "Other Research",
     "price": "$110.00",
-    "vialSizes": [
-      10
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
@@ -3746,11 +3278,9 @@
   {
     "id": 235,
     "name": "VP5",
-    "category": "other",
+    "category": "Other Research",
     "price": "$75.00",
-    "vialSizes": [
-      5
-    ],
+    "vialSizes": [],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
