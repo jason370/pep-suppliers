@@ -6482,12 +6482,12 @@ input.invalid{
           <div class="filter-group">
             <p class="filter-title">Categories</p>
             <div class="filter-row active"><span class="filter-label">All Peptides</span><span class="filter-count">103</span></div>
-            <div class="filter-row"><span class="filter-label">Weight Management</span><span class="filter-count">5</span></div>
+            <div class="filter-row"><span class="filter-label">Weight Management</span><span class="filter-count" id="fc-weight">5</span></div>
             <div class="filter-row"><span class="filter-label">Recovery & Healing</span><span class="filter-count">11</span></div>
-            <div class="filter-row"><span class="filter-label">Hormone Support</span><span class="filter-count">14</span></div>
-            <div class="filter-row"><span class="filter-label">Other Research</span><span class="filter-count">55</span></div>
-            <div class="filter-row"><span class="filter-label">Peptide Blends</span><span class="filter-count">18</span></div>
-            <div class="filter-row"><span class="filter-label">Research Kits</span><span class="filter-count">10</span></div>
+            <div class="filter-row"><span class="filter-label">Hormone Support</span><span class="filter-count" id="fc-hormone">14</span></div>
+            <div class="filter-row"><span class="filter-label">Other Research</span><span class="filter-count" id="fc-other">55</span></div>
+            <div class="filter-row"><span class="filter-label">Peptide Blends</span><span class="filter-count" id="fc-blends">18</span></div>
+            <div class="filter-row"><span class="filter-label">Research Kits</span><span class="filter-count" id="fc-kits">10</span></div>
             <div class="filter-row"><span class="filter-label">Build Your Kit</span><span class="filter-count">Custom</span></div>
           </div>
           <div class="filter-group">
@@ -6924,6 +6924,11 @@ input.invalid{
         window._products = items;
         var visible = items.filter(function(p){ return p.visible === true; });
         grid.innerHTML = visible.map(renderCard).join('\n');
+        // Update category counts from live data
+        var catMap = {'Weight Management':'fc-weight','Recovery & Healing':'fc-recovery','Hormone Support':'fc-hormone','Other Research':'fc-other','Peptide Blends':'fc-blends','Research Kits':'fc-kits'};
+        var all = visible.filter(function(p){ return p.warehouse === 'Overseas Warehouse'; });
+        var el = document.getElementById('fc-all'); if(el) el.textContent = all.length;
+        Object.keys(catMap).forEach(function(cat){ var c = all.filter(function(p){ return p.category === cat; }).length; var e = document.getElementById(catMap[cat]); if(e && c) e.textContent = c; });
       })
       .catch(function(err){ console.error('products.json load failed', err); });
   });
@@ -6974,6 +6979,8 @@ input.invalid{
         e.stopPropagation();
         vialsEl.querySelectorAll('.drawer-vial-btn').forEach(function(b){ b.classList.remove('active'); });
         btn.classList.add('active');
+        var p = product.prices && product.prices[size];
+        if (p) document.getElementById('drawer-price').textContent = p;
       });
       vialsEl.appendChild(btn);
     });
@@ -7479,6 +7486,11 @@ s0.parentNode.insertBefore(s1,s0);
         window._products = items;
         var visible = items.filter(function(p){ return p.visible === true; });
         grid.innerHTML = visible.map(renderCard).join('\n');
+        // Update category counts from live data
+        var catMap = {'Weight Management':'fc-weight','Recovery & Healing':'fc-recovery','Hormone Support':'fc-hormone','Other Research':'fc-other','Peptide Blends':'fc-blends','Research Kits':'fc-kits'};
+        var all = visible.filter(function(p){ return p.warehouse === 'Overseas Warehouse'; });
+        var el = document.getElementById('fc-all'); if(el) el.textContent = all.length;
+        Object.keys(catMap).forEach(function(cat){ var c = all.filter(function(p){ return p.category === cat; }).length; var e = document.getElementById(catMap[cat]); if(e && c) e.textContent = c; });
       })
       .catch(function(err){ console.error('products.json load failed', err); });
   });
@@ -7529,6 +7541,8 @@ s0.parentNode.insertBefore(s1,s0);
         e.stopPropagation();
         vialsEl.querySelectorAll('.drawer-vial-btn').forEach(function(b){ b.classList.remove('active'); });
         btn.classList.add('active');
+        var p = product.prices && product.prices[size];
+        if (p) document.getElementById('drawer-price').textContent = p;
       });
       vialsEl.appendChild(btn);
     });
