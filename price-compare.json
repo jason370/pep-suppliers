@@ -1,0 +1,10758 @@
+[
+  {
+    "cat_no": "10AM",
+    "name": "5-Amino-1MQ",
+    "newName": "5-Amino-1MQ 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$56.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$56.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "50AM",
+    "name": "5-Amino-1MQ",
+    "newName": "5-Amino-1MQ 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$85.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$135.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "5AM",
+    "name": "5-Amino-1MQ",
+    "newName": "5-Amino-1MQ 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$39.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$39.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AE1",
+    "name": "ACE-031",
+    "newName": "ACE-031 1mg x10 vials",
+    "spec": "1mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$95.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AA10",
+    "name": "Acetic Acid Water",
+    "newName": "Acetic Acid Water 10ml x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$10.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$14.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$15.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$14.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$15.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$20.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$20.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$22.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AA3",
+    "name": "Acetic Acid Water",
+    "newName": "Acetic Acid Water 3ml x10 vials",
+    "spec": "3ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$5.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$10.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$10.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$5.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$12.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$15.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "A15",
+    "name": "Acth 1-39",
+    "newName": "ACTH 1-39 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$60.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ADA10",
+    "name": "Adamax",
+    "newName": "Adamax 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$110.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$120.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$178.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$178.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ADA5",
+    "name": "Adamax",
+    "newName": "Adamax 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$77.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$98.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$99.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$98.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$99.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AP2",
+    "name": "Adipotide",
+    "newName": "Adipotide 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$98.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AP5",
+    "name": "Adipotide",
+    "newName": "Adipotide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$130.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$135.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$150.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$158.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$212.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AU100",
+    "name": "AHK-CU",
+    "newName": "AHK-CU 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$68.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$77.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$68.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AU50",
+    "name": "AHK-CU",
+    "newName": "AHK-CU 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$62.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AR100",
+    "name": "AICAR",
+    "newName": "AICAR 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$93.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$93.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AR50",
+    "name": "AICAR",
+    "newName": "AICAR 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$46.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$62.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$67.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$46.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$62.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$67.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "AS20",
+    "name": "Alprostadil",
+    "newName": "Alprostadil 20mg x10 vials",
+    "spec": "20ug*5vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$56.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$56.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "10AD",
+    "name": "AOD-9604",
+    "newName": "AOD-9604 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$150.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$160.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$165.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$222.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "2AD",
+    "name": "AOD-9604",
+    "newName": "AOD-9604 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$57.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$57.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$72.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "5AD",
+    "name": "AOD-9604",
+    "newName": "AOD-9604 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$80.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$98.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$110.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RA10",
+    "name": "ARA-290",
+    "newName": "ARA 290(Cibinetide) 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$78.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "B1210",
+    "name": "B12",
+    "newName": "B12 10mg x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$34.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$36.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$34.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$36.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "B122",
+    "name": "B12",
+    "newName": "B12 2mg x10 vials",
+    "spec": "2ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$10.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$10.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "B733-10",
+    "name": "B7-33",
+    "newName": "B7-33 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$200.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$200.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "B733-2",
+    "name": "B7-33",
+    "newName": "B7-33 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BAC10",
+    "name": "BAC Water",
+    "newName": "BAC Water 10ml x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$8.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$10.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$11.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$8.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$11.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$15.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$18.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$20.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$20.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BAC3",
+    "name": "BAC Water",
+    "newName": "BAC Water 3ml x10 vials",
+    "spec": "3ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$5.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$5.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$8.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$5.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$5.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$8.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$8.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$15.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "W30",
+    "name": "Bac Water (MOQ 50 boxes)",
+    "newName": "Bac Water (MOQ 50 boxes) 30ml x1 vials",
+    "spec": "30ml*1vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$24.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$24.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XT100",
+    "name": "Botulinum Toxin",
+    "newName": "Botulinum Toxin 100iu x10 vials",
+    "spec": "100IU*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$153.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$155.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$153.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$155.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XT1001",
+    "name": "Botulinum Toxin",
+    "newName": "Botulinum Toxin 100iu x1 vials",
+    "spec": "100IU*1vial",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$135.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$135.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BC10",
+    "name": "BPC-157",
+    "newName": "BPC-157 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$59.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$59.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$66.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$69.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$84.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BC20",
+    "name": "BPC-157",
+    "newName": "BPC-157 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$126.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DP",
+        "price": "$130.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$126.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$130.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BC2",
+    "name": "BPC-157",
+    "newName": "BPC-157 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$21.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$27.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$28.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$21.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$27.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$28.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$35.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BC5",
+    "name": "BPC-157",
+    "newName": "BPC-157 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$36.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "ERP",
+        "price": "$39.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$36.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$39.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$54.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BB10",
+    "name": "BPC-157 + TB-500",
+    "newName": "BPC-157 5mg + TB-500 5mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$85.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$90.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "ERP",
+        "price": "$95.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$102.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$126.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BB20",
+    "name": "BPC-157 + TB-500",
+    "newName": "BPC-157 10mg + TB-500 10mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "QYC",
+        "price": "$160.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$160.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$178.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$255.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BB30",
+    "name": "BPC-157 + TB-500",
+    "newName": "BPC157 15mg+TB500 15mg 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$230.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$270.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$230.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$270.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BB4",
+    "name": "BPC-157 + TB-500",
+    "newName": "BPC-157 + TB-500 4mg x10 vials",
+    "spec": "4mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "B20",
+    "name": "Bronchogen",
+    "newName": "Bronchogen 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$92.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$92.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CGL10",
+    "name": "Cagrilintide",
+    "newName": "Cagrilintide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "ERP",
+        "price": "$139.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "ERP",
+        "price": "$139.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$142.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$237.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CGL20",
+    "name": "Cagrilintide",
+    "newName": "Cagrilintide 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "ERP",
+        "price": "$245.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$245.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$247.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "ERP",
+        "price": "$245.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$245.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$247.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$250.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CGL5",
+    "name": "Cagrilintide",
+    "newName": "Cagrilintide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$88.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "ERP",
+        "price": "$89.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$89.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$136.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CS10",
+    "name": "Cagrilintide + Semaglutide",
+    "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$140.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$157.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$157.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$190.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CAD20",
+    "name": "Cardiogen",
+    "newName": "Cardiogen 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$98.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$105.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$98.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$107.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "Cart20",
+    "name": "Cartalax",
+    "newName": "Cartalax 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$93.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$93.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$140.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CBL60",
+    "name": "Cerebrolysin",
+    "newName": "Cerebrolysin 60mg x10 vials",
+    "spec": "60mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$88.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$120.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$120.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CBL60",
+    "name": "Cerebrolysin",
+    "newName": "Cerebrolysin 60mg x10 vials",
+    "spec": "60mg*6vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$29.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$29.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CND10",
+    "name": "CJC-1295 No DAC",
+    "newName": "CJC-1295 No DAC 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$135.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$138.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$138.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$142.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$160.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CND2",
+    "name": "CJC-1295 No DAC",
+    "newName": "CJC-1295 No DAC 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$30.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$35.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$43.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CND5",
+    "name": "CJC-1295 No DAC",
+    "newName": "CJC-1295 No DAC 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$85.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CP20",
+    "name": "CJC-1295 No DAC 10mg+Ipamorelin 10mg",
+    "newName": "CJC-1295 No DAC 10mg + Ipamorelin 10mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$170.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$190.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$190.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CP10",
+    "name": "CJC-1295 No DAC 5mg+Ipamorelin 5mg",
+    "newName": "CJC-1295 No DAC 5mg + Ipamorelin 5mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$93.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$95.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$95.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$93.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$103.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$105.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CD2",
+    "name": "CJC-1295 With DAC",
+    "newName": "CJC-1295 With DAC 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$85.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CD5",
+    "name": "CJC-1295 With DAC",
+    "newName": "CJC-1295 With DAC 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$140.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$152.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$160.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "COR20",
+    "name": "Cortagen",
+    "newName": "Cortagen 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$98.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$105.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$98.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$107.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "C20",
+    "name": "Crystagen",
+    "newName": "Crystagen 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$67.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$67.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DR10",
+    "name": "Dermorphin",
+    "newName": "Dermorphin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$85.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$85.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DR5",
+    "name": "Dermorphin",
+    "newName": "Dermorphin 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DIHEXA",
+    "name": "Dihexa",
+    "newName": "Dihexa 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$130.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$130.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DS10",
+    "name": "DSIP",
+    "newName": "DSIP 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DS12",
+    "name": "DSIP",
+    "newName": "DSIP 12mg x10 vials",
+    "spec": "12mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$100.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DS15",
+    "name": "DSIP",
+    "newName": "DSIP 15mg x10 vials",
+    "spec": "15mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$85.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$85.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$100.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$105.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DS2",
+    "name": "DSIP",
+    "newName": "DSIP 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$20.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$29.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$20.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$29.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "DS5",
+    "name": "DSIP",
+    "newName": "DSIP 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$36.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$43.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$36.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$43.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$58.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "D10",
+    "name": "Dulaglutide",
+    "newName": "Dulaglutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$265.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$265.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "D5",
+    "name": "Dulaglutide",
+    "newName": "Dulaglutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$149.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$149.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ET10",
+    "name": "Epithalon",
+    "newName": "Epithalon 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$36.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$36.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$47.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$48.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ET50",
+    "name": "Epithalon",
+    "newName": "Epithalon 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$135.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$147.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$152.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$155.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ET5",
+    "name": "Epithalon",
+    "newName": "Epithalon 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "E10K",
+    "name": "EPO",
+    "newName": "EPO 10000IU x10 vials",
+    "spec": "10000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$180.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "E3K",
+    "name": "EPO",
+    "newName": "EPO 3000IU x10 vials",
+    "spec": "3000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$60.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FN1",
+    "name": "Follistatin",
+    "newName": "Follistatin 1mg x10 vials",
+    "spec": "1mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$190.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$190.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "F410",
+    "name": "FOXO4-DRI",
+    "newName": "FOXO4-DRI 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$260.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$300.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$368.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$260.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$368.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$370.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$400.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CU100",
+    "name": "GHK-CU",
+    "newName": "GHK-CU 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$48.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$62.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CU50",
+    "name": "GHK-CU",
+    "newName": "GHK-CU 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$30.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$30.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$50.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G210",
+    "name": "GHRP-2",
+    "newName": "GHRP-2 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$57.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G25",
+    "name": "GHRP-2",
+    "newName": "GHRP-2 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G610",
+    "name": "GHRP-6",
+    "newName": "GHRP-6 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$57.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$94.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$94.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G65",
+    "name": "GHRP-6",
+    "newName": "GHRP-6 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GLOW50",
+    "name": "GLOW",
+    "newName": "GLOW 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "CHP",
+        "price": "$135.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$140.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$140.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "CHP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$155.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$160.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GLOW",
+    "name": "GLOW",
+    "newName": "GLOW 70mg x10 vials",
+    "spec": "70mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$150.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$155.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$160.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$155.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$188.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$195.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GTT1500",
+    "name": "Glutathione",
+    "newName": "Glutathione 1500mg x10 vials",
+    "spec": "1500mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$63.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DP",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$63.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GTT400",
+    "name": "Glutathione",
+    "newName": "Glutathione 400mg x10 vials",
+    "spec": "400mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$48.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$48.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GT500",
+    "name": "Glutathione",
+    "newName": "Glutathione 500mg x10 vials",
+    "spec": "500mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DP",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$35.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$35.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GTT600",
+    "name": "Glutathione",
+    "newName": "Glutathione 600mg x10 vials",
+    "spec": "600mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$35.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$38.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$38.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "GND2",
+    "name": "Gonadorelin Acetate",
+    "newName": "Gonadorelin Acetate 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$35.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G10K",
+    "name": "HCG",
+    "newName": "HCG 10000iu x10 vials",
+    "spec": "10000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$130.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$132.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$135.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$132.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$165.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G20K",
+    "name": "HCG",
+    "newName": "HCG 20000iu x10 vials",
+    "spec": "20000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G2K",
+    "name": "HCG",
+    "newName": "HCG 2000iu x10 vials",
+    "spec": "2000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$35.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$35.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G5K",
+    "name": "HCG",
+    "newName": "HCG 5000iu x10 vials",
+    "spec": "5000IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$68.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$76.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$68.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$76.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "HX2",
+    "name": "Hexarelin Acetate",
+    "newName": "Hexarelin Acetate 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "HX5",
+    "name": "Hexarelin Acetate",
+    "newName": "Hexarelin Acetate 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$112.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H10",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 10iu x10 vials",
+    "spec": "10IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$47.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$47.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$62.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$64.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H12",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 12iu x10 vials",
+    "spec": "12IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$54.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$58.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$73.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$54.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$58.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$73.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H15",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 15iu x10 vials",
+    "spec": "15IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$80.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$108.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H24",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 24iu x10 vials",
+    "spec": "24IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$108.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$110.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$108.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$160.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H36",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 36iu x10 vials",
+    "spec": "36IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$150.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$158.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$160.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$158.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$206.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$210.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H06",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 6iu x10 vials",
+    "spec": "6IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$45.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "H08",
+    "name": "HGH 191AA (Somatropin)",
+    "newName": "HGH 191AA (Somatropin) 8iu x10 vials",
+    "spec": "8IU*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FR10",
+    "name": "HGH Fragment 176-191",
+    "newName": "HGH Fragment 176-191 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$158.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$180.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$158.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FR2",
+    "name": "HGH Fragment 176-191",
+    "newName": "HGH Fragment 176-191 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FR5",
+    "name": "HGH Fragment 176-191",
+    "newName": "HGH Fragment 176-191 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$110.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$110.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "G75",
+    "name": "HMG",
+    "newName": "HMG 75iu x10 vials",
+    "spec": "75IU*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$53.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "SSY",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$53.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$60.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "HU10",
+    "name": "Humanin",
+    "newName": "Humanin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$220.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$220.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$222.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$222.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$270.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$300.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "HA5",
+    "name": "Hyaluronic acid",
+    "newName": "Hyaluronic acid 5mg x10 vials",
+    "spec": "5mg/piece",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$20.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$20.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IG01",
+    "name": "IGF-1 LR3",
+    "newName": "IGF-1 LR3 100mcg x10 vials",
+    "spec": "100mcg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$37.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$37.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IG1",
+    "name": "IGF-1 LR3",
+    "newName": "IGF-1 LR3 1mg x10 vials",
+    "spec": "1mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$182.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "SSY",
+        "price": "$188.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$188.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$182.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$188.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$188.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$218.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$260.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IGD",
+    "name": "IGF-DES",
+    "newName": "IGF-DES 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$48.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$48.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ISU",
+    "name": "Insulin",
+    "newName": "Insulin 3ml x10 vials",
+    "spec": "3ml/1vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$210.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$210.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IP10",
+    "name": "Ipamorelin",
+    "newName": "Ipamorelin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$64.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$64.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$83.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IP2",
+    "name": "Ipamorelin",
+    "newName": "Ipamorelin 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$25.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$30.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$30.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "IP5",
+    "name": "Ipamorelin",
+    "newName": "Ipamorelin 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$33.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$35.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "KR",
+        "price": "$37.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$33.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$37.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "KS10",
+    "name": "KissPeptin-10",
+    "newName": "KissPeptin-10 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$80.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$98.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "KS5",
+    "name": "KissPeptin-10",
+    "newName": "KissPeptin-10 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$67.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "KLOW80",
+    "name": "KLOW",
+    "newName": "KLOW 80mg x10 vials",
+    "spec": "80mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$170.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$170.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "CHP",
+        "price": "$180.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$198.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$215.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$220.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "KP10",
+    "name": "KPV",
+    "newName": "KPV 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$54.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$56.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$54.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$56.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$68.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "KP5",
+    "name": "KPV",
+    "newName": "KPV 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC600",
+    "name": "L-Carnitine",
+    "newName": "L-Carnitine 10mg x10 vials",
+    "spec": "10ml*600mg/ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$50.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC1200",
+    "name": "L-Carnitine",
+    "newName": "L-Carnitine 1200mg x10 vials",
+    "spec": "1200mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$90.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$92.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$92.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC2000",
+    "name": "L-Carnitine",
+    "newName": "L-Carnitine 2000mg x10 vials",
+    "spec": "2000mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$120.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$122.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$122.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC5000",
+    "name": "L-Carnitine",
+    "newName": "L-Carnitine 5000mg x10 vials",
+    "spec": "5000mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$150.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$152.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$152.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC600",
+    "name": "L-Carnitine",
+    "newName": "L-Carnitine 10mg x10 vials",
+    "spec": "600mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$75.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LC216",
+    "name": "LC216",
+    "newName": "LC216 10mg x10 vials",
+    "spec": "10mg/ml/vial*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$122.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$122.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LBIU",
+    "name": "Lemon Bottle",
+    "newName": "Lemon Bottle 10iu x10 vials",
+    "spec": "10IU*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LB",
+    "name": "Lemon Bottle",
+    "newName": "Lemon Bottle 10mg x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$72.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LB5",
+    "name": "Lemon Bottle",
+    "newName": "Lemon Bottle 10ml x10 vials",
+    "spec": "10ml*5vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$75.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "L10",
+    "name": "Liraglutide",
+    "newName": "Liraglutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$144.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$144.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "L30",
+    "name": "Liraglutide",
+    "newName": "Liraglutide 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$432.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$432.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "L5",
+    "name": "Liraglutide",
+    "newName": "Liraglutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$81.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$81.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "LL37",
+    "name": "LL37",
+    "newName": "LL37 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$102.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "M10",
+    "name": "Matrixyl",
+    "newName": "Matrixyl 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$34.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$34.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MDT10",
+    "name": "Mazdutide",
+    "newName": "Mazdutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$195.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$195.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$200.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$218.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$219.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$220.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MDT5",
+    "name": "Mazdutide",
+    "newName": "Mazdutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "ERP",
+        "price": "$119.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "ERP",
+        "price": "$119.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MT1",
+    "name": "Melanotan 1",
+    "newName": "Melanotan 1 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$62.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ML10",
+    "name": "Melanotan 2",
+    "newName": "Melanotan 2 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$41.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$62.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$65.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "ML5",
+    "name": "Melanotan 2",
+    "newName": "Melanotan 2 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$34.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$34.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MT10",
+    "name": "Melatonin",
+    "newName": "Melatonin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$53.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$120.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$53.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$120.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FM2",
+    "name": "MGF",
+    "newName": "MGF 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$75.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MS10",
+    "name": "MOTS-C",
+    "newName": "MOTS-C 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$52.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$57.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$57.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$58.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$75.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MS20",
+    "name": "MOTS-C",
+    "newName": "MOTS-C 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$125.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$130.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$125.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$130.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MS40",
+    "name": "MOTS-C",
+    "newName": "MOTS-C 40mg x10 vials",
+    "spec": "40mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$173.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$175.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$185.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$173.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$215.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$220.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$233.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "MS5",
+    "name": "MOTS-C",
+    "newName": "MOTS-C 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "NJ1000",
+    "name": "NAD+",
+    "newName": "NAD+ 1000mg x10 vials",
+    "spec": "1000mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$75.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$105.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$118.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$189.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$250.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "NJ100",
+    "name": "NAD+",
+    "newName": "NAD+ 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DP",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$57.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "NJ500",
+    "name": "NAD+",
+    "newName": "NAD+ 500mg x10 vials",
+    "spec": "500mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$58.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DP",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$58.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$66.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$68.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$99.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$122.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OA10",
+    "name": "Orexin A",
+    "newName": "Orexin A 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$578.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$578.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OB10",
+    "name": "Orexin B",
+    "newName": "Orexin B 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$234.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$234.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OB5",
+    "name": "Orexin B",
+    "newName": "Orexin B 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$116.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$116.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OT10",
+    "name": "Oxytocin Acetate",
+    "newName": "Oxytocin Acetate 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$92.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$95.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OT2",
+    "name": "Oxytocin Acetate",
+    "newName": "Oxytocin Acetate 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$25.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$29.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$25.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$29.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "OT5",
+    "name": "Oxytocin Acetate",
+    "newName": "Oxytocin Acetate 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$37.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$43.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$37.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$43.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$46.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "P21",
+    "name": "P21 (P021)",
+    "newName": "P21 (P021) 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$288.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$290.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$288.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$300.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PE10",
+    "name": "PE-22-28",
+    "newName": "PE-22-28 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$72.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$80.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PE5",
+    "name": "PE-22-28",
+    "newName": "PE-22-28 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$37.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$37.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$60.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "FMP2",
+    "name": "PEG MGF",
+    "newName": "PEG MGF 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$93.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$93.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$95.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "WA10",
+    "name": "Phosphate Buffered Saline",
+    "newName": "Sterile Water 10ml x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$10.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$10.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "WA3",
+    "name": "Phosphate Buffered Saline",
+    "newName": "Sterile Water 3ml x10 vials",
+    "spec": "3ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$5.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$5.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PIN10",
+    "name": "Pinealon",
+    "newName": "Pinealon 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$55.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$78.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$95.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PI20",
+    "name": "Pinealon",
+    "newName": "Pinealon 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$100.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PI5",
+    "name": "Pinealon",
+    "newName": "Pinealon 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$34.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$34.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "P25",
+    "name": "PNC-27",
+    "newName": "PNC-27 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$85.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$85.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "P41",
+    "name": "PT-141",
+    "newName": "PT-141 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "sexual",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$58.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$58.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "PD1",
+    "name": "PTD-DBM",
+    "newName": "PTD-DBM 1mg x10 vials",
+    "spec": "1mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$59.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$59.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RA50",
+    "name": "RA260",
+    "newName": "RA260 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$56.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$56.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT100",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$325.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$430.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$325.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$430.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT10",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$80.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$85.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$93.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$99.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$130.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT15",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 15mg x10 vials",
+    "spec": "15mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$105.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$105.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "CHP",
+        "price": "$110.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$105.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$125.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$125.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$133.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT20",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$130.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$130.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$145.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$159.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$163.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$198.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT30",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$170.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$170.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$188.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$188.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$189.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$210.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$210.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$237.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$240.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$260.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$280.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT40",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 40mg x10 vials",
+    "spec": "40mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$210.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$210.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$228.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$210.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$210.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$228.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$230.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$230.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$260.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$335.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT50",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$250.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$250.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$255.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$250.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$250.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$255.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$255.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$260.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$310.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$310.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$340.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$350.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$380.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT5",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$69.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RT60",
+    "name": "Retatrutide",
+    "newName": "Retatrutide 60mg x10 vials",
+    "spec": "60mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$290.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$290.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$298.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$298.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$299.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$315.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$320.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$330.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$330.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$340.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$380.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$450.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$450.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "RC10",
+    "name": "Retatrutide + Cagrilintide",
+    "newName": "Retatrutide + Cagrilintide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$200.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$200.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SK10",
+    "name": "Selank",
+    "newName": "Selank 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Jeep",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$63.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SK30",
+    "name": "Selank",
+    "newName": "Selank 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$170.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$170.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SK5",
+    "name": "Selank",
+    "newName": "Selank 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$50.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM10",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DP",
+        "price": "$45.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$45.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$45.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$47.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$56.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$58.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$59.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$71.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM15",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 15mg x10 vials",
+    "spec": "15mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$83.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM20",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$65.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$83.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$97.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM2",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$29.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "QYC",
+        "price": "$30.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$30.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$29.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$30.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$30.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM30",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$85.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$109.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$112.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$160.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM50",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$180.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SM5",
+    "name": "Semaglutide",
+    "newName": "Semaglutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DP",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$35.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$35.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$45.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XA10",
+    "name": "Semax",
+    "newName": "Semax 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Jeep",
+        "price": "$55.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$90.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XA11",
+    "name": "Semax",
+    "newName": "Semax 11mg x10 vials",
+    "spec": "11mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$71.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$71.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XA30",
+    "name": "Semax",
+    "newName": "Semax 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$170.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$170.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "XA5",
+    "name": "Semax",
+    "newName": "Semax 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "nootropic",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$47.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SMO10",
+    "name": "Sermorelin",
+    "newName": "Sermorelin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$95.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$110.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$110.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$128.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$135.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$138.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$165.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SMO2",
+    "name": "Sermorelin",
+    "newName": "Sermorelin 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "QYC",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$40.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SMO5",
+    "name": "Sermorelin",
+    "newName": "Sermorelin 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "QYC",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$69.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$69.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$74.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$121.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SLU5",
+    "name": "SLU-PP-322",
+    "newName": "SLU-PP-322 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$100.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$102.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "CS10",
+    "name": "SM5+CGL5",
+    "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$157.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$157.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "NP810",
+    "name": "Snap-8",
+    "newName": "Snap-8 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$52.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$65.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "2S10",
+    "name": "SS-31",
+    "newName": "SS-31 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$75.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "CHP",
+        "price": "$75.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKP",
+        "price": "$77.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$83.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$86.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$86.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$87.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "2S50",
+    "name": "SS-31",
+    "newName": "SS-31 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$280.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$285.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$280.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$285.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$285.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$298.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$310.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$360.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$365.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "WA10",
+    "name": "Sterile Water",
+    "newName": "Sterile Water 10ml x10 vials",
+    "spec": "10ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$11.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$20.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$22.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$11.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$20.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$22.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "WA3",
+    "name": "Sterile Water",
+    "newName": "Sterile Water 3ml x10 vials",
+    "spec": "3ml*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "KR",
+        "price": "$10.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$10.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$12.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "KR",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$10.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$12.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SUR10",
+    "name": "Survodutide",
+    "newName": "Survodutide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$200.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "ERP",
+        "price": "$249.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "WBS",
+        "price": "$250.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$249.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$250.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$252.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$257.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$270.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$300.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SUR2",
+    "name": "Survodutide",
+    "newName": "Survodutide 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$100.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "SUR5",
+    "name": "Survodutide",
+    "newName": "Survodutide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$180.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BT10",
+    "name": "TB-500",
+    "newName": "TB500 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$110.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "CHP",
+        "price": "$110.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$110.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$128.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$167.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BT20",
+    "name": "TB-500",
+    "newName": "TB-500 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$280.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DP",
+        "price": "$300.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$300.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$280.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$300.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BT2",
+    "name": "TB-500",
+    "newName": "TB500 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "Yunke",
+        "price": "$43.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$43.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$45.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "BT5",
+    "name": "TB-500",
+    "newName": "TB500 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DP",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$77.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$82.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TSM10",
+    "name": "Tesamorelin",
+    "newName": "Tesamorelin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$148.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "CHP",
+        "price": "$150.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HHB",
+        "price": "$150.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$148.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$155.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$158.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$162.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$165.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$185.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$200.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$250.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TSM20",
+    "name": "Tesamorelin",
+    "newName": "Tesamorelin 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$240.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$298.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$300.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$240.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$298.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$350.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TSM2",
+    "name": "Tesamorelin",
+    "newName": "Tesamorelin 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$42.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$48.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "QYC",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$42.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$48.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$57.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TSM5",
+    "name": "Tesamorelin",
+    "newName": "Tesamorelin 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Jeep",
+        "price": "$88.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "QYC",
+        "price": "$90.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$90.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Jeep",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$90.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$92.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$125.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TI15",
+    "name": "Tesamorelin 10mg+Ipamorelin 5mg",
+    "newName": "Tesamorelin 10mg+Ipamorelin 5mg x10 vials",
+    "spec": "15mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$250.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$250.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TI10",
+    "name": "Tesamorelin 5mg+Ipamorelin 5mg",
+    "newName": "Tesamorelin 5mg+Ipamorelin 5mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "gh",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$115.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$150.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$115.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$150.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TY10",
+    "name": "Thymalin",
+    "newName": "Thymalin 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$57.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$60.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$57.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$62.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$80.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TA10",
+    "name": "Thymosin Alpha-1",
+    "newName": "Thymosin Alpha-1 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$145.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$150.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$155.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$178.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TA2",
+    "name": "Thymosin Alpha-1",
+    "newName": "Thymosin Alpha-1 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$48.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$54.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$48.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$54.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TA5",
+    "name": "Thymosin Alpha-1",
+    "newName": "Thymosin Alpha-1 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "healing",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$75.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "AAG",
+        "price": "$80.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$98.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$100.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR100",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 100mg x10 vials",
+    "spec": "100mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$240.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$290.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$240.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$285.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$290.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$380.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR10",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DP",
+        "price": "$50.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$50.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DP",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$50.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$63.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$78.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR120",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 120mg x10 vials",
+    "spec": "120mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$300.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$300.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "HKMS",
+        "price": "$310.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$300.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$310.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$360.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$360.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$450.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$450.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR12",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 12mg x10 vials",
+    "spec": "12mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "Yunke",
+        "price": "$70.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "Yunke",
+        "price": "$70.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR15",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 15mg x10 vials",
+    "spec": "15mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$60.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$65.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$60.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$68.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$72.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$82.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$83.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$98.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR20",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$65.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$70.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$75.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$65.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$70.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$80.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$89.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$94.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$108.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR2",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "UPP",
+        "price": "$35.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DP",
+        "price": "$35.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "UPP",
+        "price": "$35.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$35.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR30",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 30mg x10 vials",
+    "spec": "30mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$85.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$95.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$88.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$95.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$100.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$108.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$109.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$115.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$115.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$128.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$132.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$138.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$140.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR40",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 40mg x10 vials",
+    "spec": "40mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "SSY",
+        "price": "$115.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "AAG",
+        "price": "$115.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "CHP",
+        "price": "$120.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "SSY",
+        "price": "$115.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$115.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$120.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$149.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$155.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$166.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$180.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR45",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 45mg x10 vials",
+    "spec": "45mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "DEPU",
+        "price": "$165.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "DEPU",
+        "price": "$165.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR50",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 50mg x10 vials",
+    "spec": "50mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKP",
+        "price": "$138.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$145.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKP",
+        "price": "$138.00"
+      },
+      {
+        "vendor": "HHB",
+        "price": "$140.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$165.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$175.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$230.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR5",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "QYC",
+        "price": "$40.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "DP",
+        "price": "$40.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "DEPU",
+        "price": "$40.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "QYC",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$40.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$45.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$55.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$55.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR60",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 60mg x10 vials",
+    "spec": "60mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$160.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "HKP",
+        "price": "$165.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "SSY",
+        "price": "$170.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$160.00"
+      },
+      {
+        "vendor": "HKP",
+        "price": "$165.00"
+      },
+      {
+        "vendor": "SSY",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$170.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$190.00"
+      },
+      {
+        "vendor": "CHP",
+        "price": "$195.00"
+      },
+      {
+        "vendor": "ERP",
+        "price": "$209.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$210.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$212.00"
+      },
+      {
+        "vendor": "KR",
+        "price": "$228.00"
+      },
+      {
+        "vendor": "QYC",
+        "price": "$240.00"
+      },
+      {
+        "vendor": "Jeep",
+        "price": "$250.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$252.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR70",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 70mg x10 vials",
+    "spec": "70mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$210.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$210.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR80",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 80mg x10 vials",
+    "spec": "80mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$230.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$250.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$230.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$250.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TR90",
+    "name": "Tirzepatide",
+    "newName": "Tirzepatide 90mg x10 vials",
+    "spec": "90mg*10vials",
+    "category": "weight",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$260.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$260.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "TRI2",
+    "name": "Triptorelin Acetate",
+    "newName": "Triptorelin Acetate 2mg x10 vials",
+    "spec": "2mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$39.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "Yunke",
+        "price": "$78.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$39.00"
+      },
+      {
+        "vendor": "Yunke",
+        "price": "$78.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "VE10",
+    "name": "Vesugen",
+    "newName": "Vesugen 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HKMS",
+        "price": "$62.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HKMS",
+        "price": "$62.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "VE20",
+    "name": "Vesugen",
+    "newName": "Vesugen 20mg x10 vials",
+    "spec": "20mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "JKL",
+        "price": "$103.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "WBS",
+        "price": "$105.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "JKL",
+        "price": "$103.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$105.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "VP10",
+    "name": "VIP",
+    "newName": "VIP 10mg x10 vials",
+    "spec": "10mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "HHB",
+        "price": "$110.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "UPP",
+        "price": "$130.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "JKL",
+        "price": "$143.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "HHB",
+        "price": "$110.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$130.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$143.00"
+      },
+      {
+        "vendor": "AAG",
+        "price": "$145.00"
+      },
+      {
+        "vendor": "HKMS",
+        "price": "$150.00"
+      },
+      {
+        "vendor": "DP",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "DEPU",
+        "price": "$180.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$182.00"
+      }
+    ]
+  },
+  {
+    "cat_no": "VP5",
+    "name": "VIP",
+    "newName": "VIP 5mg x10 vials",
+    "spec": "5mg*10vials",
+    "category": "other",
+    "vendors": [
+      {
+        "rank": 1,
+        "vendor": "AAG",
+        "price": "$75.00"
+      },
+      {
+        "rank": 2,
+        "vendor": "JKL",
+        "price": "$83.00"
+      },
+      {
+        "rank": 3,
+        "vendor": "UPP",
+        "price": "$85.00"
+      }
+    ],
+    "allVendors": [
+      {
+        "vendor": "AAG",
+        "price": "$75.00"
+      },
+      {
+        "vendor": "JKL",
+        "price": "$83.00"
+      },
+      {
+        "vendor": "UPP",
+        "price": "$85.00"
+      },
+      {
+        "vendor": "WBS",
+        "price": "$85.00"
+      }
+    ]
+  }
+]
