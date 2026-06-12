@@ -165,6 +165,7 @@ var _sha = '';
 
 function buildPcIndex(pc) {
   _pcBySiteName = {};
+  function numSort(a,b){ return (parseFloat(a.size)||0)-(parseFloat(b.size)||0); }
   pc.forEach(function(entry) {
     if (!entry.allVendors || !entry.allVendors.length) return;
     var best = entry.allVendors[0];
@@ -183,6 +184,8 @@ function buildPcIndex(pc) {
       _pcBySiteName[sn].push(sizeData);
     });
   });
+  // Sort sizes numerically for each product
+  Object.keys(_pcBySiteName).forEach(function(k){ _pcBySiteName[k].sort(numSort); });
 }
 
 function getSizes(p) {
