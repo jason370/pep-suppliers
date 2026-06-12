@@ -1047,7 +1047,7 @@
   {
     "id": "melanotan-1-overseas-warehouse",
     "name": "Melanotan 1",
-    "category": "sexual",
+    "category": "Hormone Support",
     "price": "$17.20",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
@@ -1068,7 +1068,7 @@
   {
     "id": "melanotan-2-overseas-warehouse",
     "name": "Melanotan 2",
-    "category": "sexual",
+    "category": "Hormone Support",
     "price": "$16.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
@@ -1308,7 +1308,7 @@
   {
     "id": "pt-141-bremelanotide-overseas-warehouse",
     "name": "PT-141 (Bremelanotide)",
-    "category": "sexual",
+    "category": "Hormone Support",
     "price": "$17.20",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
@@ -1412,7 +1412,7 @@
   {
     "id": "n-acetyl-selank-overseas-warehouse",
     "name": "N-Acetyl Selank",
-    "category": "nootropic",
+    "category": "Other Research",
     "price": "$28.40",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
@@ -1456,7 +1456,7 @@
   {
     "id": "n-acetyl-semax-overseas-warehouse",
     "name": "N-Acetyl Semax",
-    "category": "nootropic",
+    "category": "Other Research",
     "price": "$24.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
