@@ -6647,7 +6647,7 @@
     ]
   },
   {
-    "cat_no": "WA10",
+    "cat_no": "PBS10",
     "name": "Phosphate Buffered Saline",
     "newName": "Sterile Water 10ml x10 vials",
     "spec": "10ml*10vials",
@@ -6667,7 +6667,7 @@
     ]
   },
   {
-    "cat_no": "WA3",
+    "cat_no": "PBS3",
     "name": "Phosphate Buffered Saline",
     "newName": "Sterile Water 3ml x10 vials",
     "spec": "3ml*10vials",
@@ -8650,7 +8650,7 @@
     ]
   },
   {
-    "cat_no": "CS10",
+    "cat_no": "CS10B",
     "name": "SM5+CGL5",
     "newName": "Cagrilintide + Semaglutide 10mg x10 vials",
     "spec": "10mg*10vials",
