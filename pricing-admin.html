@@ -78,6 +78,7 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
     <h1>⚡ Pricing Admin</h1>
     <p>Pep Suppliers internal tool</p>
     <input type="password" id="pw-input" placeholder="Site password" autocomplete="current-password">
+    <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off" style="margin-top:0">
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;margin-bottom:12px;cursor:pointer">
       <input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device
     </label>
@@ -177,19 +178,20 @@ function lookupCost(p) {
 function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
-
-  // Load token from storage, or prompt once and save it
-  GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
+  var tokenField = document.getElementById('token-input').value.trim();
+  if (tokenField) GITHUB_TOKEN = tokenField;
+  else GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
   if (!GITHUB_TOKEN) {
-    GITHUB_TOKEN = (prompt('Enter GitHub token (saved for this browser):') || '').trim();
-    if (GITHUB_TOKEN) localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
+    document.getElementById('login-error').style.display = 'block';
+    document.getElementById('login-error').textContent = 'GitHub token required.';
+    return;
   }
-  if (!GITHUB_TOKEN) return;
-
   if (document.getElementById('remember-me').checked) {
     localStorage.setItem('pep_admin_pw', pw);
+    localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
   } else {
     localStorage.removeItem('pep_admin_pw');
+    localStorage.removeItem('pep_gh_token');
   }
   loadData();
 }
@@ -382,11 +384,12 @@ function pushToGitHub() {
 (function(){
   var savedPw = localStorage.getItem('pep_admin_pw');
   var savedToken = localStorage.getItem('pep_gh_token');
+  if (savedToken) document.getElementById('token-input').value = savedToken;
   if (savedPw && savedToken) {
     document.getElementById('pw-input').value = savedPw;
     document.getElementById('remember-me').checked = true;
     GITHUB_TOKEN = savedToken;
-    loadData();  // skip doLogin() entirely — no prompt
+    loadData();
   }
 })();
 </script>
