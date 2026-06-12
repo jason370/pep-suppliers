@@ -5244,7 +5244,7 @@
     "visible": true,
     "vendor": "UPP",
     "vendor_cat_no": "AP5",
-    "newName": "Adipotide/FTTP 5mg x10 vials",
+    "newName": "Adipotide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6496,8 +6496,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "a5-other-hkms",
-    "name": "A5",
+    "id": "ada5-other-hkms",
+    "name": "ADA5",
     "category": "other",
     "price": "$77.00",
     "vialSizes": [
@@ -6507,13 +6507,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "A5",
-    "newName": "Admax 5mg x10 vials",
+    "vendor_cat_no": "ADA5",
+    "newName": "Adamax 5mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "a10-other-hkms",
-    "name": "A10",
+    "id": "ada10-other-hkms",
+    "name": "ADA10",
     "category": "other",
     "price": "$110.00",
     "vialSizes": [
@@ -6523,8 +6523,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "A10",
-    "newName": "Admax 10mg x10 vials",
+    "vendor_cat_no": "ADA10",
+    "newName": "Adamax 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6624,8 +6624,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "b32-other-hkms",
-    "name": "B32",
+    "id": "b7332-other-hkms",
+    "name": "B733-2",
     "category": "other",
     "price": "$55.00",
     "vialSizes": [
@@ -6635,13 +6635,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "B32",
+    "vendor_cat_no": "B733-2",
     "newName": "B7-33 2mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "b310-other-hkms",
-    "name": "B310",
+    "id": "b73310-other-hkms",
+    "name": "B733-10",
     "category": "other",
     "price": "$200.00",
     "vialSizes": [
@@ -6651,7 +6651,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "B310",
+    "vendor_cat_no": "B733-10",
     "newName": "B7-33 10mg x10 vials",
     "extraWarehouses": []
   },
@@ -6668,7 +6668,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -6684,7 +6684,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -7740,7 +7740,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "LB",
-    "newName": "Lemon Bottle 10ml x5 vials",
+    "newName": "Lemon Bottle 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7756,7 +7756,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "LC600",
-    "newName": "L-carnitine 10ml*600mg/ml 10ml x10 vials",
+    "newName": "L-Carnitine 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11036,7 +11036,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x10 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -11052,7 +11052,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x10 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -11292,7 +11292,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x10 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -11308,7 +11308,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x10 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -12508,7 +12508,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "LB",
-    "newName": "Lemon Bottle 10iu x10 vials",
+    "newName": "Lemon Bottle 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12876,7 +12876,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x10 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -12892,7 +12892,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x10 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -17184,8 +17184,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ftpp-other-wbs",
-    "name": "FTPP",
+    "id": "ap5-other-wbs",
+    "name": "AP5",
     "category": "other",
     "price": "$160.00",
     "vialSizes": [
@@ -17195,8 +17195,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "WBS",
-    "vendor_cat_no": "FTPP",
-    "newName": "Adipotide/FTPP 5mg x10 vials",
+    "vendor_cat_no": "AP5",
+    "newName": "Adipotide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17324,7 +17324,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x10 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -17340,7 +17340,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x10 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -19228,7 +19228,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "LB",
-    "newName": "Lemon Bottle 10ml x10 vials",
+    "newName": "Lemon Bottle 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -19408,8 +19408,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ba3-other-aag",
-    "name": "BA3",
+    "id": "bac3-other-aag",
+    "name": "BAC3",
     "category": "other",
     "price": "$5.00",
     "vialSizes": [
@@ -19419,13 +19419,13 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "BA3",
-    "newName": "Bacteriostatic Water 3ml x10 vials",
+    "vendor_cat_no": "BAC3",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
-    "id": "ba10-other-aag",
-    "name": "BA10",
+    "id": "bac10-other-aag",
+    "name": "BAC10",
     "category": "other",
     "price": "$10.00",
     "vialSizes": [
@@ -19435,8 +19435,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "AAG",
-    "vendor_cat_no": "BA10",
-    "newName": "Bacteriostatic Water 10ml x10 vials",
+    "vendor_cat_no": "BAC10",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -20028,7 +20028,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x10 vials",
+    "newName": "BAC Water 3ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -20044,7 +20044,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x10 vials",
+    "newName": "BAC Water 10ml x1 vial",
     "extraWarehouses": []
   },
   {
@@ -20956,7 +20956,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "AP5",
-    "newName": "Adipotide/FTTP 5mg x10 vials",
+    "newName": "Adipotide 5mg x10 vials",
     "extraWarehouses": []
   },
   {
