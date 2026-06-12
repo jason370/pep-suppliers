@@ -170,11 +170,16 @@ function buildPcIndex(pc) {
     if (!entry.allVendors || !entry.allVendors.length) return;
     var best = entry.allVendors[0];
     var cost = parseFloat((best.price||'').replace(/[^0-9.]/g,''));
+    var specStr = (entry.spec||'').trim();
+    var vialMatch = specStr.match(/\*(\d+)vial/i);
+    var vialCount = vialMatch ? parseInt(vialMatch[1]) : 10;
     var sizeData = {
       cat_no: (entry.cat_no||'').trim(),
-      spec: (entry.spec||'').trim(),
-      size: (entry.spec||'').split('*')[0].trim(),
+      spec: specStr,
+      size: specStr.split('*')[0].trim(),
       cost: cost || null,
+      costPerVial: cost ? cost / vialCount : null,
+      vialCount: vialCount,
       vendor: (best.vendor||'').trim()
     };
     var names = entry.site_names || [entry.name];
@@ -193,7 +198,7 @@ function getSizes(p) {
   var pcSizes = _pcBySiteName[p.name] || [];
   if (pcSizes.length) {
     return pcSizes.map(function(s) {
-      return {cat_no: s.cat_no, size: s.size, cost: s.cost, vendor: s.vendor, key: p.id + '::' + s.size};
+      return {cat_no: s.cat_no, size: s.size, cost: s.cost, costPerVial: s.costPerVial, vialCount: s.vialCount, vendor: s.vendor, key: p.id + '::' + s.size};
     });
   }
   // Fallback: use vialSizes from product with no cost data
@@ -306,7 +311,7 @@ function renderTable() {
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
         (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
-        '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) + ' <span style="color:#bbb;font-size:10px">($' + s.costPerVial.toFixed(2) + '/vial)</span>' : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
           'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-original="' + escAttr(origPrice) + '" ' +
           'oninput="onPriceChange(this)"></td>' +
