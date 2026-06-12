@@ -13,63 +13,60 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .login-box{background:#fff;border-radius:16px;border:1px solid var(--border);padding:48px 40px;width:360px;text-align:center;box-shadow:0 4px 24px rgba(7,24,51,.10)}
 .login-box h1{font-size:22px;margin-bottom:8px}
 .login-box p{color:#6b7f94;font-size:14px;margin-bottom:24px}
-.login-box input{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin-bottom:12px;outline:none}
-.login-box input:focus{border-color:var(--teal)}
+.login-box input[type=password]{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin-bottom:12px;outline:none}
+.login-box input[type=password]:focus{border-color:var(--teal)}
 .login-box button{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
 .login-error{color:#c0392b;font-size:13px;margin-top:8px;display:none}
 
 #admin-screen{display:none;min-height:100vh}
-.admin-header{background:var(--navy);color:#fff;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.admin-header h1{font-size:18px;font-weight:900}
+.admin-header{background:var(--navy);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.admin-header h1{font-size:17px;font-weight:900}
 
-.toolbar{display:flex;align-items:center;gap:12px;padding:16px 32px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
-.toolbar input[type=search]{flex:1;min-width:200px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
-.toolbar select{padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:#fff;outline:none;cursor:pointer}
-.btn{padding:9px 18px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;white-space:nowrap}
+.toolbar{display:flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.toolbar input[type=search]{width:160px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;outline:none}
+.toolbar select{padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:#fff;outline:none;cursor:pointer}
+.btn{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;white-space:nowrap}
 .btn-primary{background:var(--teal);color:#fff}
 .btn-primary:hover{background:#0a5a5f}
 .btn-primary:disabled{background:#9aabb8;cursor:not-allowed}
 .btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
 .btn-secondary:hover{background:var(--bg)}
 .btn-danger{background:#fff;color:#c0392b;border:1px solid #f5c6cb}
-.toolbar-divider{width:1px;height:28px;background:var(--border)}
+.toolbar-divider{width:1px;height:26px;background:var(--border);flex-shrink:0}
+.markup-group{display:flex;align-items:center;gap:6px;background:#fffbe6;border:1px solid #f0e68c;border-radius:8px;padding:5px 10px}
+.markup-group label{font-size:12px;font-weight:700;color:#856404;white-space:nowrap}
+.markup-group input[type=number]{width:64px;padding:5px 8px;border:1px solid #f0e68c;border-radius:6px;font-size:13px;font-weight:700;text-align:center;outline:none;background:#fff}
+.markup-group input:focus{border-color:var(--teal)}
 
-.markup-bar{display:flex;align-items:center;gap:10px;padding:12px 32px;background:#fffbe6;border-bottom:1px solid #f0e68c;flex-wrap:wrap}
-.markup-bar label{font-size:13px;font-weight:700;color:#856404}
-.markup-bar input[type=number]{width:80px;padding:7px 10px;border:1px solid #f0e68c;border-radius:8px;font-size:14px;font-weight:700;text-align:center;outline:none}
-.markup-bar input:focus{border-color:var(--teal)}
-.markup-bar small{color:#6b7f94;font-size:12px}
-
-.status-bar{padding:10px 32px;font-size:13px;font-weight:600;display:none}
+.status-bar{padding:9px 24px;font-size:13px;font-weight:600;display:none}
 .status-bar.success{background:#d4edda;color:#155724;display:block}
 .status-bar.error{background:#f8d7da;color:#721c24;display:block}
 .status-bar.loading{background:#d1ecf1;color:#0c5460;display:block}
 
-.table-wrap{padding:24px 32px;overflow-x:auto}
+.table-wrap{padding:20px 24px;overflow-x:auto}
 table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:13px}
 thead tr{background:var(--navy);color:#fff}
-thead th{padding:11px 12px;text-align:left;font-weight:700;white-space:nowrap}
+thead th{padding:10px 11px;text-align:left;font-weight:700;white-space:nowrap}
 tbody tr:nth-child(even){background:#f7fafc}
 tbody tr:hover{background:#EEF8FA}
-tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:middle}
 .changed-row{background:#fffbe6!important}
 .changed-row td:first-child{border-left:3px solid #f0a500}
 
-.badge{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:700}
+.badge{display:inline-block;padding:3px 8px;border-radius:12px;font-size:11px;font-weight:700}
 .badge-weight{background:#fce7f3;color:#9d174d}
 .badge-gh{background:#d1fae5;color:#065f46}
 .badge-healing{background:#dbeafe;color:#1e40af}
 .badge-blends{background:#ede9fe;color:#5b21b6}
 .badge-other{background:#f3f4f6;color:#374151}
 
-.price-input{width:110px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:right;outline:none;font-family:monospace}
+.price-input{width:100px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:right;outline:none;font-family:monospace}
 .price-input:focus{border-color:var(--teal)}
 .price-input.changed{border-color:#f0a500;background:#fffbe6}
 .cost-cell{color:#9aabb8;font-size:12px;font-family:monospace}
+.vendor-cell{font-size:11px;font-weight:700;color:#0D6D72;font-family:monospace}
 
-.changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
-
-.push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:14px 32px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
+.push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:12px 24px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
 .push-bar.show{display:flex}
 .push-bar p{font-size:14px;font-weight:600}
 </style>
@@ -81,7 +78,9 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
     <h1>⚡ Pricing Admin</h1>
     <p>Pep Suppliers internal tool</p>
     <input type="password" id="pw-input" placeholder="Site password" autocomplete="current-password">
-    <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;cursor:pointer"><input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device</label>
+    <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;margin-bottom:12px;cursor:pointer">
+      <input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device
+    </label>
     <button onclick="doLogin()">Sign In</button>
     <div class="login-error" id="login-error"></div>
   </div>
@@ -90,32 +89,26 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
 <div id="admin-screen">
   <div class="admin-header">
     <h1>⚡ Pricing Admin</h1>
-    <span id="product-count"></span>
-  </div>
-
-  <div class="markup-bar">
-    <label>Global Markup %</label>
-    <input type="number" id="global-markup" min="0" max="1000" step="1" placeholder="e.g. 50">
-    <button class="btn btn-secondary" onclick="applyGlobalMarkup()">Apply to All</button>
-    <button class="btn btn-danger" onclick="resetAll()">Reset All</button>
-    <small>Sets sale price = best cost price × (1 + markup%). Then adjust rows individually.</small>
+    <span id="product-count" style="font-size:13px;opacity:.7"></span>
   </div>
 
   <div class="toolbar">
     <input type="search" id="search-box" placeholder="Search..." oninput="filterTable()">
     <select id="category-filter" onchange="filterTable()">
       <option value="">All Categories</option>
-      <option value="Weight Management">Weight Management</option>
-      <option value="Hormone Support">Hormone Support</option>
-      <option value="Recovery &amp; Healing">Recovery &amp; Healing</option>
-      <option value="Peptide Blends">Peptide Blends</option>
-      <option value="Other Research">Other Research</option>
+      <option value="weight management">Weight Management</option>
+      <option value="hormone support">Hormone Support</option>
+      <option value="recovery & healing">Recovery &amp; Healing</option>
+      <option value="peptide blends">Peptide Blends</option>
+      <option value="other research">Other Research</option>
     </select>
-    <select id="wh-filter" onchange="filterTable()">
-      <option value="">All Warehouses</option>
-      <option value="US Warehouse">US Warehouse</option>
-      <option value="Overseas Warehouse">Overseas Warehouse</option>
-    </select>
+    <div class="toolbar-divider"></div>
+    <div class="markup-group">
+      <label>Markup %</label>
+      <input type="number" id="global-markup" min="0" max="1000" step="1" placeholder="50">
+      <button class="btn btn-secondary" style="padding:5px 12px;font-size:12px" onclick="applyGlobalMarkup()">Apply</button>
+      <button class="btn btn-danger" style="padding:5px 12px;font-size:12px" onclick="resetAll()">Reset</button>
+    </div>
     <div class="toolbar-divider"></div>
     <span id="changes-label" style="font-size:13px;font-weight:600;color:#6b7f94">No changes</span>
   </div>
@@ -127,9 +120,10 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
       <thead>
         <tr>
           <th>#</th>
+          <th>Cat No</th>
           <th>Product</th>
           <th>Category</th>
-          <th>Warehouse</th>
+          <th>Vendor</th>
           <th>Best Cost</th>
           <th>Sale Price</th>
           <th>In Stock</th>
@@ -153,23 +147,120 @@ var GITHUB_TOKEN = '';
 var REPO = 'jason370/pep-suppliers';
 var GH_RAW = 'https://raw.githubusercontent.com/' + REPO + '/main/';
 
-var _products = [];      // site products.json (old format)
-var _costMap = {};       // cat_no -> best cost price from price-compare.json
-var _changes = {};       // id -> new price string
+var _products = [];
+var _costMap = {};    // normalized_name -> {cost, vendor, cat_no}
+var _changes = {};
 var _sha = '';
 
+// Name normalization for matching
+function norm(s) {
+  return String(s||'').toLowerCase()
+    .replace(/\s*\(.*?\)\s*/g, '')   // remove parentheticals
+    .replace(/[\s\-_\/&+,\.]/g, '')  // remove punctuation/spaces
+    .replace(/acetate$/, '')          // strip common suffixes
+    .replace(/hghfragment/, 'fragment')
+    .replace(/nodac/, '')
+    .replace(/withdac/, 'dac')
+    .trim();
+}
+
+// Manual name overrides: products.json name -> price-compare.json name
+var NAME_OVERRIDES = {
+  'abp7': null,
+  'acetylhexapeptide3argireline': 'acetylhexapeptide3',
+  'adipotidefTpp': 'adipotide',
+  'adipotideftpp': 'adipotide',
+  'fragment176191': 'hghfragment176191',
+  'fragment176191cjc1295ipamorelin': 'hghfragment176191cjc1295ipamorelin',
+  'fragment176191modgrf129ipamorelin': 'hghfragment176191modgrf129ipamorelin',
+  'ghkbasic': 'ghkcu',
+  'ghkbasictripeptide1': 'ghkcu',
+  'ghkcucopper': 'ghkcu',
+  'gonadorelingingrh': 'gonadorelin',
+  'hexarelin': 'hexarelin',
+  'mgfigf1ec': 'mgf',
+  'oxytocin': 'oxytocinacetate',
+  'p21p021': 'p21p021',
+  'pt141bremelanotide': 'pt141',
+  'tb500thymosinbeta4': 'tb500',
+  'triptorelin': 'triptorelin',
+  'follistatin344': 'follistatin',
+  'nacetylselank': 'selank',
+  'nacetylsemax': 'semax',
+  'cjc1295': 'cjc1295',
+  'cjc1295dac': 'cjc1295dac',
+  'cjc1295ipamorelin': 'cjc1295ipamorelin',
+  'cjc1295ghrp2': 'cjc1295ghrp2',
+  'cjc1295ghrp6': 'cjc1295ghrp6',
+  'cjc1295ipamorelin ghrp2': 'cjc1295ipamorelin',
+  'bpc157tb500ghkcublend': 'bpc157tb500ghkcu',
+  'bpc157tb500blend': 'bpc157tb500',
+  'sermorelinipamorelin': 'sermorelinipamorelin',
+  'sermorelin ghrp2blend': 'semorelinipamorelin',
+  'receptorgradeigf1lr3': 'receptorgradeigf1lr3',
+  'peGmgf': 'pegmgf',
+  'pegmgf': 'pegmgf',
+};
+
+function buildCostMap(priceCompare) {
+  _costMap = {};
+  priceCompare.forEach(function(pc) {
+    if (!pc.allVendors || !pc.allVendors.length) return;
+    var bestVendor = pc.allVendors[0];
+    var cost = parseFloat((bestVendor.price||'').replace(/[^0-9.]/g,''));
+    if (!cost) return;
+    var entry = {cost: cost, vendor: bestVendor.vendor, cat_no: pc.cat_no, name: pc.name};
+    // Index by normalized name
+    var n = norm(pc.name);
+    if (!_costMap[n]) _costMap[n] = entry;
+    // Also index by cat_no
+    if (pc.cat_no) _costMap[pc.cat_no.toLowerCase()] = entry;
+  });
+}
+
+function lookupCost(p) {
+  var n = norm(p.name);
+  // 1. Check manual overrides
+  if (NAME_OVERRIDES.hasOwnProperty(n)) {
+    var target = NAME_OVERRIDES[n];
+    if (!target) return null;
+    return _costMap[norm(target)] || _costMap[target] || null;
+  }
+  // 2. Direct normalized match
+  if (_costMap[n]) return _costMap[n];
+  // 3. Try stripping 'blend' suffix
+  var n2 = n.replace(/blend$/, '');
+  if (_costMap[n2]) return _costMap[n2];
+  // 4. Try cat_no from id
+  var idBase = (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'');
+  // Convert id slug to possible cat_no (e.g. "bpc-157" -> "bpc157")
+  var idNorm = idBase.replace(/-/g,'').toLowerCase();
+  if (_costMap[idNorm]) return _costMap[idNorm];
+  return null;
+}
+
+function getCatNo(p) {
+  var entry = lookupCost(p);
+  if (entry && entry.cat_no) return entry.cat_no;
+  // Fallback: derive from id
+  return (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'').toUpperCase();
+}
+
 function doLogin() {
+  var pwInput = document.getElementById('pw-input');
+  var pw = pwInput.value.trim();
+  if (!pw) return;
   GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
   if (!GITHUB_TOKEN) {
     GITHUB_TOKEN = prompt('Enter GitHub token (saved locally):');
     if (GITHUB_TOKEN) localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
   }
   if (!GITHUB_TOKEN) return;
-  if (document.getElementById("remember-me") && document.getElementById("remember-me").checked) {
-    localStorage.setItem("pep_admin_pw", document.getElementById("pw-input").value.trim());
+  if (document.getElementById('remember-me').checked) {
+    localStorage.setItem('pep_admin_pw', pw);
+  } else {
+    localStorage.removeItem('pep_admin_pw');
   }
-  var pw = document.getElementById('pw-input').value.trim();
-  if (!pw) return;
   loadData();
 }
 document.getElementById('pw-input').addEventListener('keydown', function(e){ if(e.key==='Enter') doLogin(); });
@@ -183,7 +274,6 @@ function hideStatus(){ document.getElementById('status-bar').className = 'status
 
 function loadData() {
   showStatus('Loading...', 'loading');
-  // Load both files in parallel
   Promise.all([
     fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }),
     fetch(GH_RAW + 'price-compare.json?t=' + Date.now()).then(function(r){ return r.json(); }),
@@ -192,20 +282,8 @@ function loadData() {
   ])
   .then(function(results) {
     _products = results[0];
-    var priceCompare = results[1];
+    buildCostMap(results[1]);
     _sha = results[2].sha;
-
-    // Build cost map: product name (lowercase) -> best cost price
-    priceCompare.forEach(function(pc) {
-      if (pc.allVendors && pc.allVendors.length) {
-        var bestCost = parseFloat(pc.allVendors[0].price.replace(/[^0-9.]/g,''));
-        // Map by product name variations
-        var key = pc.name.toLowerCase().trim();
-        _costMap[key] = bestCost;
-        if (pc.cat_no) _costMap[pc.cat_no.toLowerCase()] = bestCost;
-      }
-    });
-
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
     document.getElementById('product-count').textContent = _products.length + ' products';
@@ -213,33 +291,17 @@ function loadData() {
     renderTable();
   })
   .catch(function(e){
-    document.getElementById('login-error').style.display = 'block';
-    document.getElementById('login-error').textContent = 'Load failed: ' + e.message;
+    var el = document.getElementById('login-error');
+    el.style.display = 'block';
+    el.textContent = 'Load failed: ' + e.message;
     hideStatus();
   });
 }
 
-function getBestCost(p) {
-  var name = (p.name || '').toLowerCase().trim();
-  if (_costMap[name] !== undefined) return _costMap[name];
-  // Try stripping warehouse suffix from id
-  var idBase = (p.id || '').replace(/-us-warehouse|-overseas-warehouse/g,'').replace(/-/g,' ');
-  if (_costMap[idBase] !== undefined) return _costMap[idBase];
-  return null;
-}
-
 function catBadge(cat) {
-  var map = {
-    'Weight Management':'badge-weight',
-    'Hormone Support':'badge-gh',
-    'Recovery & Healing':'badge-healing',
-    'Peptide Blends':'badge-blends',
-    'Other Research':'badge-other'
-  };
-  var cls = map[cat] || 'badge-other';
-  return '<span class="badge ' + cls + '">' + esc(cat) + '</span>';
+  var map = {'Weight Management':'badge-weight','Hormone Support':'badge-gh','Recovery & Healing':'badge-healing','Peptide Blends':'badge-blends','Other Research':'badge-other'};
+  return '<span class="badge ' + (map[cat]||'badge-other') + '">' + esc(cat) + '</span>';
 }
-
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function escAttr(s){ return String(s||'').replace(/"/g,'&quot;'); }
 
@@ -247,19 +309,22 @@ function renderTable() {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
   _products.forEach(function(p, i) {
-    var cost = getBestCost(p);
+    var entry = lookupCost(p);
+    var cost = entry ? entry.cost : null;
+    var vendor = entry ? entry.vendor : null;
+    var catNo = entry ? entry.cat_no : (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'').toUpperCase();
     var currentPrice = _changes[p.id] !== undefined ? _changes[p.id] : (p.price || '');
     var isChanged = _changes[p.id] !== undefined;
     var tr = document.createElement('tr');
     if (isChanged) tr.classList.add('changed-row');
-    tr.dataset.name = (p.name||'').toLowerCase();
+    tr.dataset.name = ((p.name||'') + ' ' + (catNo||'')).toLowerCase();
     tr.dataset.category = (p.category||'').toLowerCase();
-    tr.dataset.warehouse = (p.warehouse||'').toLowerCase();
     tr.innerHTML =
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
+      '<td><span style="font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)">' + esc(catNo) + '</span></td>' +
       '<td><strong>' + esc(p.name) + '</strong></td>' +
       '<td>' + catBadge(p.category) + '</td>' +
-      '<td style="font-size:12px;color:#6b7f94">' + esc(p.warehouse||'—') + '</td>' +
+      '<td class="vendor-cell">' + (vendor ? esc(vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
       '<td class="cost-cell">' + (cost !== null ? '$' + cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
       '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" data-id="' + escAttr(p.id) + '" data-cost="' + (cost||'') + '" data-original="' + escAttr(p.price||'') + '" oninput="onPriceChange(this)"></td>' +
       '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
@@ -305,7 +370,7 @@ function applyGlobalMarkup() {
     onPriceChange(input);
     applied++;
   });
-  showStatus('✅ Applied ' + pct + '% markup to ' + applied + ' visible products.', 'success');
+  showStatus('✅ Applied ' + pct + '% markup to ' + applied + ' products with cost data.', 'success');
 }
 
 function resetAll() {
@@ -325,22 +390,16 @@ function updateChangesLabel() {
   label.textContent = count > 0 ? count + ' change' + (count===1?'':'s') + ' pending' : 'No changes';
   label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
   var pb = document.getElementById('push-bar');
-  if (count > 0) {
-    pb.classList.add('show');
-    document.getElementById('push-summary').textContent = count + ' change' + (count===1?'':'s') + ' ready to push';
-  } else {
-    pb.classList.remove('show');
-  }
+  if (count > 0) { pb.classList.add('show'); document.getElementById('push-summary').textContent = count + ' change' + (count===1?'':'s') + ' ready to push'; }
+  else { pb.classList.remove('show'); }
 }
 
 function filterTable() {
   var search = document.getElementById('search-box').value.toLowerCase();
   var cat = document.getElementById('category-filter').value.toLowerCase();
-  var wh = document.getElementById('wh-filter').value.toLowerCase();
   document.querySelectorAll('#table-body tr').forEach(function(row){
     var show = (!search || row.dataset.name.includes(search)) &&
-               (!cat || row.dataset.category === cat) &&
-               (!wh || row.dataset.warehouse === wh);
+               (!cat || row.dataset.category === cat);
     row.style.display = show ? '' : 'none';
   });
 }
@@ -349,18 +408,13 @@ function pushToGitHub() {
   if (!Object.keys(_changes).length) return;
   document.querySelector('#push-bar .btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
-
-  // Apply changes to products array
   var updated = _products.map(function(p) {
     var out = Object.assign({}, p);
     if (_changes[p.id] !== undefined) out.price = _changes[p.id];
     if (_changes['_stock_' + p.id] !== undefined) out.inStock = _changes['_stock_' + p.id];
     return out;
   });
-
   var content = btoa(unescape(encodeURIComponent(JSON.stringify(updated, null, 2))));
-
-  // Refresh SHA then push
   fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
     {headers:{'Authorization':'token ' + GITHUB_TOKEN}})
   .then(function(r){ return r.json(); })
@@ -374,10 +428,8 @@ function pushToGitHub() {
   .then(function(r){ return r.json(); })
   .then(function(result){
     if (result.content) {
-      _products = updated;
-      _changes = {};
-      updateChangesLabel();
-      renderTable();
+      _products = updated; _changes = {};
+      updateChangesLabel(); renderTable();
       showStatus('✅ Pushed! Site updates in ~30 seconds.', 'success');
     } else {
       showStatus('❌ Push failed: ' + JSON.stringify(result), 'error');
@@ -389,16 +441,14 @@ function pushToGitHub() {
     document.querySelector('#push-bar .btn').disabled = false;
   });
 }
-</script>
 
-<script>
-// Auto-login if saved password exists
+// Auto-login if password saved
 (function(){
   var saved = localStorage.getItem('pep_admin_pw');
   if (saved) {
     document.getElementById('pw-input').value = saved;
     document.getElementById('remember-me').checked = true;
-    loadData();
+    doLogin();
   }
 })();
 </script>
