@@ -90,6 +90,7 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
   <div class="admin-header">
     <h1>⚡ Pricing Admin</h1>
     <span id="product-count" style="font-size:13px;opacity:.7"></span>
+    <button class="btn btn-secondary" style="font-size:11px;padding:5px 10px;opacity:.6" onclick="clearToken()">Reset Token</button>
   </div>
 
   <div class="toolbar">
@@ -174,21 +175,29 @@ function lookupCost(p) {
 }
 
 function doLogin() {
-  var pwInput = document.getElementById('pw-input');
-  var pw = pwInput.value.trim();
+  var pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
+
+  // Load token from storage, or prompt once and save it
   GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
   if (!GITHUB_TOKEN) {
-    GITHUB_TOKEN = prompt('Enter GitHub token (saved locally):');
+    GITHUB_TOKEN = (prompt('Enter GitHub token (saved for this browser):') || '').trim();
     if (GITHUB_TOKEN) localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
   }
   if (!GITHUB_TOKEN) return;
+
   if (document.getElementById('remember-me').checked) {
     localStorage.setItem('pep_admin_pw', pw);
   } else {
     localStorage.removeItem('pep_admin_pw');
   }
   loadData();
+}
+
+function clearToken() {
+  localStorage.removeItem('pep_gh_token');
+  GITHUB_TOKEN = '';
+  alert('Token cleared. You will be prompted next login.');
 }
 document.getElementById('pw-input').addEventListener('keydown', function(e){ if(e.key==='Enter') doLogin(); });
 
