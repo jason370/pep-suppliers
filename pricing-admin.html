@@ -152,55 +152,6 @@ var _costMap = {};    // normalized_name -> {cost, vendor, cat_no}
 var _changes = {};
 var _sha = '';
 
-// Name normalization for matching
-function norm(s) {
-  return String(s||'').toLowerCase()
-    .replace(/\s*\(.*?\)\s*/g, '')   // remove parentheticals
-    .replace(/[\s\-_\/&+,\.]/g, '')  // remove punctuation/spaces
-    .replace(/acetate$/, '')          // strip common suffixes
-    .replace(/hghfragment/, 'fragment')
-    .replace(/nodac/, '')
-    .replace(/withdac/, 'dac')
-    .trim();
-}
-
-// Manual name overrides: products.json name -> price-compare.json name
-var NAME_OVERRIDES = {
-  'abp7': null,
-  'acetylhexapeptide3argireline': 'acetylhexapeptide3',
-  'adipotidefTpp': 'adipotide',
-  'adipotideftpp': 'adipotide',
-  'fragment176191': 'hghfragment176191',
-  'fragment176191cjc1295ipamorelin': 'hghfragment176191cjc1295ipamorelin',
-  'fragment176191modgrf129ipamorelin': 'hghfragment176191modgrf129ipamorelin',
-  'ghkbasic': 'ghkcu',
-  'ghkbasictripeptide1': 'ghkcu',
-  'ghkcucopper': 'ghkcu',
-  'gonadorelingingrh': 'gonadorelin',
-  'hexarelin': 'hexarelin',
-  'mgfigf1ec': 'mgf',
-  'oxytocin': 'oxytocinacetate',
-  'p21p021': 'p21p021',
-  'pt141bremelanotide': 'pt141',
-  'tb500thymosinbeta4': 'tb500',
-  'triptorelin': 'triptorelin',
-  'follistatin344': 'follistatin',
-  'nacetylselank': 'selank',
-  'nacetylsemax': 'semax',
-  'cjc1295': 'cjc1295',
-  'cjc1295dac': 'cjc1295dac',
-  'cjc1295ipamorelin': 'cjc1295ipamorelin',
-  'cjc1295ghrp2': 'cjc1295ghrp2',
-  'cjc1295ghrp6': 'cjc1295ghrp6',
-  'cjc1295ipamorelin ghrp2': 'cjc1295ipamorelin',
-  'bpc157tb500ghkcublend': 'bpc157tb500ghkcu',
-  'bpc157tb500blend': 'bpc157tb500',
-  'sermorelinipamorelin': 'sermorelinipamorelin',
-  'sermorelin ghrp2blend': 'semorelinipamorelin',
-  'receptorgradeigf1lr3': 'receptorgradeigf1lr3',
-  'peGmgf': 'pegmgf',
-  'pegmgf': 'pegmgf',
-};
 
 function buildCostMap(priceCompare) {
   _costMap = {};
@@ -209,41 +160,17 @@ function buildCostMap(priceCompare) {
     var bestVendor = pc.allVendors[0];
     var cost = parseFloat((bestVendor.price||'').replace(/[^0-9.]/g,''));
     if (!cost) return;
-    var entry = {cost: cost, vendor: bestVendor.vendor, cat_no: pc.cat_no, name: pc.name};
-    // Index by normalized name
-    var n = norm(pc.name);
-    if (!_costMap[n]) _costMap[n] = entry;
+    var entry = {cost: cost, vendor: bestVendor.vendor.trim(), cat_no: (pc.cat_no||'').trim(), name: pc.name.trim()};
+    // Index by every site_name if present
+    var names = pc.site_names || [pc.name];
+    names.forEach(function(sn) { _costMap[sn.trim().toLowerCase()] = entry; });
     // Also index by cat_no
-    if (pc.cat_no) _costMap[pc.cat_no.toLowerCase()] = entry;
+    if (pc.cat_no) _costMap[pc.cat_no.trim().toLowerCase()] = entry;
   });
 }
 
 function lookupCost(p) {
-  var n = norm(p.name);
-  // 1. Check manual overrides
-  if (NAME_OVERRIDES.hasOwnProperty(n)) {
-    var target = NAME_OVERRIDES[n];
-    if (!target) return null;
-    return _costMap[norm(target)] || _costMap[target] || null;
-  }
-  // 2. Direct normalized match
-  if (_costMap[n]) return _costMap[n];
-  // 3. Try stripping 'blend' suffix
-  var n2 = n.replace(/blend$/, '');
-  if (_costMap[n2]) return _costMap[n2];
-  // 4. Try cat_no from id
-  var idBase = (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'');
-  // Convert id slug to possible cat_no (e.g. "bpc-157" -> "bpc157")
-  var idNorm = idBase.replace(/-/g,'').toLowerCase();
-  if (_costMap[idNorm]) return _costMap[idNorm];
-  return null;
-}
-
-function getCatNo(p) {
-  var entry = lookupCost(p);
-  if (entry && entry.cat_no) return entry.cat_no;
-  // Fallback: derive from id
-  return (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'').toUpperCase();
+  return _costMap[(p.name||'').trim().toLowerCase()] || null;
 }
 
 function doLogin() {
