@@ -6668,7 +6668,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6684,7 +6684,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8976,8 +8976,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "b1210-other-hkms",
-    "name": "B1210",
+    "id": "b1201-other-hkms",
+    "name": "B1201",
     "category": "other",
     "price": "$10.00",
     "vialSizes": [
@@ -8987,8 +8987,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "B1210",
-    "newName": "Vitamin B12 2ml x10 vials",
+    "vendor_cat_no": "B1201",
+    "newName": "B12 2mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11036,7 +11036,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11052,7 +11052,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11292,7 +11292,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11308,7 +11308,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12876,7 +12876,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -12892,7 +12892,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17244,7 +17244,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "B1201",
-    "newName": "B12 10ml x10 vials",
+    "newName": "B12 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17324,7 +17324,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -17340,7 +17340,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -19420,7 +19420,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -19436,7 +19436,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20028,7 +20028,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BAC3",
-    "newName": "BAC Water 3ml x1 vial",
+    "newName": "BAC Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20044,7 +20044,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "BAC10",
-    "newName": "BAC Water 10ml x1 vial",
+    "newName": "BAC Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
