@@ -124,7 +124,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "MT1",
-    "newName": "MT-1 10mg x10 vials",
+    "newName": "Melanotan 1 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -140,7 +140,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "ML5",
-    "newName": "MT-2 (Melanotan 2) 5mg x10 vials",
+    "newName": "Melanotan 2 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -156,7 +156,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "ML10",
-    "newName": "MT-2 (Melanotan 2) 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -172,7 +172,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -320,9 +320,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot2-other-yunke",
+    "id": "ot2-sexual-yunke",
     "name": "OT2",
-    "category": "other",
+    "category": "sexual",
     "price": "$29.00",
     "vialSizes": [
       "2mg"
@@ -336,9 +336,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-yunke",
+    "id": "ot5-sexual-yunke",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$52.00",
     "vialSizes": [
       "5mg"
@@ -352,9 +352,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-yunke",
+    "id": "ot10-sexual-yunke",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -4384,9 +4384,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-upp",
+    "id": "mt1-sexual-upp",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -4400,9 +4400,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-upp",
+    "id": "ml10-sexual-upp",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -4688,9 +4688,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot2-other-upp",
+    "id": "ot2-sexual-upp",
     "name": "OT2",
-    "category": "other",
+    "category": "sexual",
     "price": "$40.00",
     "vialSizes": [
       "2mg"
@@ -4704,9 +4704,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-upp",
+    "id": "ot5-sexual-upp",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "5mg"
@@ -4720,9 +4720,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-upp",
+    "id": "ot10-sexual-upp",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$90.00",
     "vialSizes": [
       "10mg"
@@ -4736,9 +4736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-upp",
+    "id": "p41-sexual-upp",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -4748,7 +4748,7 @@
     "visible": true,
     "vendor": "UPP",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7904,9 +7904,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-hkms",
+    "id": "mt1-sexual-hkms",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$41.00",
     "vialSizes": [
       "10mg"
@@ -7916,13 +7916,13 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "MT1",
-    "newName": "MT-1 10mg x10 vials",
+    "newName": "Melanotan 1 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-hkms",
+    "id": "ml10-sexual-hkms",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$41.00",
     "vialSizes": [
       "10mg"
@@ -7932,7 +7932,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "ML10",
-    "newName": "MT-2 (Melanotan 2 Acetate) 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8016,9 +8016,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot2-other-hkms",
+    "id": "ot2-sexual-hkms",
     "name": "OT2",
-    "category": "other",
+    "category": "sexual",
     "price": "$25.00",
     "vialSizes": [
       "2mg"
@@ -8032,9 +8032,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-hkms",
+    "id": "ot5-sexual-hkms",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$43.00",
     "vialSizes": [
       "5mg"
@@ -8160,9 +8160,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-hkms",
+    "id": "p41-sexual-hkms",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -8172,7 +8172,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8380,7 +8380,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "SLU5",
-    "newName": "Slu-pp-332 5mg x10 vials",
+    "newName": "SLU-PP-322 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -10352,9 +10352,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-hhb",
+    "id": "mt1-sexual-hhb",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -10368,9 +10368,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-hhb",
+    "id": "ml10-sexual-hhb",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -10768,9 +10768,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-hhb",
+    "id": "ot5-sexual-hhb",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$45.00",
     "vialSizes": [
       "5mg"
@@ -10784,9 +10784,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-hhb",
+    "id": "ot10-sexual-hhb",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -10880,9 +10880,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-hhb",
+    "id": "p41-sexual-hhb",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -10892,7 +10892,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11872,9 +11872,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-kr",
+    "id": "mt1-sexual-kr",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$62.00",
     "vialSizes": [
       "10mg"
@@ -11888,9 +11888,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-kr",
+    "id": "ml10-sexual-kr",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$62.00",
     "vialSizes": [
       "10mg"
@@ -11936,9 +11936,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-kr",
+    "id": "ot5-sexual-kr",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$37.00",
     "vialSizes": [
       "5mg"
@@ -11952,9 +11952,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-kr",
+    "id": "ot10-sexual-kr",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -12000,9 +12000,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-kr",
+    "id": "p41-sexual-kr",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$58.00",
     "vialSizes": [
       "10mg"
@@ -12012,7 +12012,7 @@
     "visible": true,
     "vendor": "KR",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13664,9 +13664,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-depu",
+    "id": "p41-sexual-depu",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -13676,7 +13676,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13904,9 +13904,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-depu",
+    "id": "mt1-sexual-depu",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -13920,9 +13920,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-depu",
+    "id": "ml10-sexual-depu",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -13932,7 +13932,7 @@
     "visible": true,
     "vendor": "DEPU",
     "vendor_cat_no": "ML10",
-    "newName": "Melanotan 2 Acetate 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -13968,9 +13968,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-depu",
+    "id": "ot5-sexual-depu",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "5mg"
@@ -13984,9 +13984,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-depu",
+    "id": "ot10-sexual-depu",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$95.00",
     "vialSizes": [
       "10mg"
@@ -14656,9 +14656,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-ssy",
+    "id": "ml10-sexual-ssy",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$45.00",
     "vialSizes": [
       "10mg"
@@ -14668,13 +14668,13 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "ML10",
-    "newName": "Melanotan 2 Acetate 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-ssy",
+    "id": "p41-sexual-ssy",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -14684,7 +14684,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15776,9 +15776,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-wbs",
+    "id": "mt1-sexual-wbs",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -15792,9 +15792,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-wbs",
+    "id": "ml10-sexual-wbs",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -15804,7 +15804,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "ML10",
-    "newName": "Melanotan 2 Acetate 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16640,9 +16640,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-wbs",
+    "id": "p41-sexual-wbs",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -16652,7 +16652,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16848,9 +16848,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-wbs",
+    "id": "ot5-sexual-wbs",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$70.00",
     "vialSizes": [
       "5mg"
@@ -16864,9 +16864,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-wbs",
+    "id": "ot10-sexual-wbs",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$90.00",
     "vialSizes": [
       "10mg"
@@ -18160,9 +18160,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-aag",
+    "id": "mt1-sexual-aag",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$45.00",
     "vialSizes": [
       "10mg"
@@ -18176,9 +18176,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-aag",
+    "id": "ml10-sexual-aag",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$45.00",
     "vialSizes": [
       "10mg"
@@ -18188,7 +18188,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "ML10",
-    "newName": "Melanotan 2 Acetate 10mg x10 vials",
+    "newName": "Melanotan 2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18784,9 +18784,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-aag",
+    "id": "p41-sexual-aag",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -18796,13 +18796,13 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "ot2-other-aag",
+    "id": "ot2-sexual-aag",
     "name": "OT2",
-    "category": "other",
+    "category": "sexual",
     "price": "$25.00",
     "vialSizes": [
       "2mg"
@@ -18816,9 +18816,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-aag",
+    "id": "ot5-sexual-aag",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$46.00",
     "vialSizes": [
       "5mg"
@@ -20592,9 +20592,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-healing-jkl",
+    "id": "p41-sexual-jkl",
     "name": "P41",
-    "category": "healing",
+    "category": "sexual",
     "price": "$72.00",
     "vialSizes": [
       "10mg"
@@ -20604,7 +20604,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "P41",
-    "newName": "PT141 10mg x10 vials",
+    "newName": "PT-141 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20896,9 +20896,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot5-other-jkl",
+    "id": "ot5-sexual-jkl",
     "name": "OT5",
-    "category": "other",
+    "category": "sexual",
     "price": "$72.00",
     "vialSizes": [
       "5mg"
@@ -20912,9 +20912,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ot10-other-jkl",
+    "id": "ot10-sexual-jkl",
     "name": "OT10",
-    "category": "other",
+    "category": "sexual",
     "price": "$92.00",
     "vialSizes": [
       "10mg"
@@ -21312,9 +21312,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "mt1-other-jkl",
+    "id": "mt1-sexual-jkl",
     "name": "MT1",
-    "category": "other",
+    "category": "sexual",
     "price": "$52.00",
     "vialSizes": [
       "10mg"
@@ -21328,9 +21328,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ml10-other-jkl",
+    "id": "ml10-sexual-jkl",
     "name": "ML10",
-    "category": "other",
+    "category": "sexual",
     "price": "$52.00",
     "vialSizes": [
       "10mg"
