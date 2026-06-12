@@ -370,7 +370,7 @@ function applyGlobalMarkup() {
     if (row.style.display === 'none') return;
     var input = row.querySelector('.price-input');
     if (!input) return;
-    var cost = parseFloat(input.dataset.cost);
+    var cost = parseFloat(input.dataset.costpervial);
     if (!cost) return;
     input.value = '$' + (cost * mult).toFixed(2);
     onPriceChange(input);
