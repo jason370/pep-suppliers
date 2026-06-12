@@ -4080,8 +4080,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ti10-gh-upp",
-    "name": "TI10",
+    "id": "ti15-gh-upp",
+    "name": "TI15",
     "category": "gh",
     "price": "$250.00",
     "vialSizes": [
@@ -4091,8 +4091,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "UPP",
-    "vendor_cat_no": "TI10",
-    "newName": "Tesamorelin 10mg+Ipamorelin 5mg 15mg x10 vials",
+    "vendor_cat_no": "TI15",
+    "newName": "Tesamorelin 10mg+Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -11020,7 +11020,7 @@
     "visible": true,
     "vendor": "HHB",
     "vendor_cat_no": "TI10",
-    "newName": "Tesamorelin 5mg + Ipamorelin 5mg x10 vials",
+    "newName": "Tesamorelin 5mg+Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -16172,7 +16172,7 @@
     "visible": true,
     "vendor": "WBS",
     "vendor_cat_no": "TI10",
-    "newName": "Tesamorelin 5mg+Ipamorelin 5mg 10mg x10 vials",
+    "newName": "Tesamorelin 5mg+Ipamorelin 5mg x10 vials",
     "extraWarehouses": []
   },
   {
