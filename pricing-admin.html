@@ -50,8 +50,14 @@ thead th{padding:10px 11px;text-align:left;font-weight:700;white-space:nowrap}
 tbody tr:nth-child(even){background:#f7fafc}
 tbody tr:hover{background:#EEF8FA}
 tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:middle}
-.changed-row{background:#fffbe6!important}
-.changed-row td:first-child{border-left:3px solid #f0a500}
+
+/* Product group header row */
+tr.product-header td{background:#e8f4f8;font-weight:700;border-top:2px solid var(--teal);padding:6px 11px}
+tr.product-header td:first-child{color:var(--teal)}
+
+tr.size-row td{padding:6px 11px}
+tr.size-row.changed-row{background:#fffbe6!important}
+tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 
 .badge{display:inline-block;padding:3px 8px;border-radius:12px;font-size:11px;font-weight:700}
 .badge-weight{background:#fce7f3;color:#9d174d}
@@ -65,6 +71,7 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
 .price-input.changed{border-color:#f0a500;background:#fffbe6}
 .cost-cell{color:#9aabb8;font-size:12px;font-family:monospace}
 .vendor-cell{font-size:11px;font-weight:700;color:#0D6D72;font-family:monospace}
+.catno-cell{font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)}
 
 .push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:12px 24px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
 .push-bar.show{display:flex}
@@ -78,7 +85,7 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
     <h1>⚡ Pricing Admin</h1>
     <p>Pep Suppliers internal tool</p>
     <input type="password" id="pw-input" placeholder="Site password" autocomplete="current-password">
-    <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off" style="margin-top:0">
+    <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off">
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;margin-bottom:12px;cursor:pointer">
       <input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device
     </label>
@@ -90,8 +97,10 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
 <div id="admin-screen">
   <div class="admin-header">
     <h1>⚡ Pricing Admin</h1>
-    <span id="product-count" style="font-size:13px;opacity:.7"></span>
-    <button class="btn btn-secondary" style="font-size:11px;padding:5px 10px;opacity:.6" onclick="clearToken()">Reset Token</button>
+    <div style="display:flex;align-items:center;gap:12px">
+      <span id="product-count" style="font-size:13px;opacity:.7"></span>
+      <button class="btn btn-secondary" style="font-size:11px;padding:5px 10px;opacity:.6" onclick="clearToken()">Reset Token</button>
+    </div>
   </div>
 
   <div class="toolbar">
@@ -121,9 +130,9 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
     <table>
       <thead>
         <tr>
-          <th>#</th>
           <th>Cat No</th>
           <th>Product</th>
+          <th>Size</th>
           <th>Category</th>
           <th>Vendor</th>
           <th>Best Cost</th>
@@ -150,29 +159,53 @@ var REPO = 'jason370/pep-suppliers';
 var GH_RAW = 'https://raw.githubusercontent.com/' + REPO + '/main/';
 
 var _products = [];
-var _costMap = {};    // normalized_name -> {cost, vendor, cat_no}
-var _changes = {};
+var _pcBySiteName = {};  // site product name -> [{cat_no, spec, cost, vendor}]
+var _changes = {};       // "productId::spec" -> new price string, or "_stock_::productId" -> bool
 var _sha = '';
 
-
-function buildCostMap(priceCompare) {
-  _costMap = {};
-  priceCompare.forEach(function(pc) {
-    if (!pc.allVendors || !pc.allVendors.length) return;
-    var bestVendor = pc.allVendors[0];
-    var cost = parseFloat((bestVendor.price||'').replace(/[^0-9.]/g,''));
-    if (!cost) return;
-    var entry = {cost: cost, vendor: bestVendor.vendor.trim(), cat_no: (pc.cat_no||'').trim(), name: pc.name.trim()};
-    // Index by every site_name if present
-    var names = pc.site_names || [pc.name];
-    names.forEach(function(sn) { _costMap[sn.trim().toLowerCase()] = entry; });
-    // Also index by cat_no
-    if (pc.cat_no) _costMap[pc.cat_no.trim().toLowerCase()] = entry;
+function buildPcIndex(pc) {
+  _pcBySiteName = {};
+  pc.forEach(function(entry) {
+    if (!entry.allVendors || !entry.allVendors.length) return;
+    var best = entry.allVendors[0];
+    var cost = parseFloat((best.price||'').replace(/[^0-9.]/g,''));
+    var sizeData = {
+      cat_no: (entry.cat_no||'').trim(),
+      spec: (entry.spec||'').trim(),
+      size: (entry.spec||'').split('*')[0].trim(),
+      cost: cost || null,
+      vendor: (best.vendor||'').trim()
+    };
+    var names = entry.site_names || [entry.name];
+    names.forEach(function(sn) {
+      sn = sn.trim();
+      if (!_pcBySiteName[sn]) _pcBySiteName[sn] = [];
+      _pcBySiteName[sn].push(sizeData);
+    });
   });
 }
 
-function lookupCost(p) {
-  return _costMap[(p.name||'').trim().toLowerCase()] || null;
+function getSizes(p) {
+  // Returns array of {cat_no, size, cost, vendor, key}
+  var pcSizes = _pcBySiteName[p.name] || [];
+  if (pcSizes.length) {
+    return pcSizes.map(function(s) {
+      return {cat_no: s.cat_no, size: s.size, cost: s.cost, vendor: s.vendor, key: p.id + '::' + s.size};
+    });
+  }
+  // Fallback: use vialSizes from product with no cost data
+  return (p.vialSizes||[]).map(function(sz) {
+    return {cat_no: '', size: sz, cost: null, vendor: null, key: p.id + '::' + sz};
+  });
+}
+
+function getOriginalPrice(p, size) {
+  // Try to find existing price for this size from p.prices or p.price
+  if (p.prices && p.prices[size] !== undefined) return p.prices[size];
+  // If only one size, use p.price
+  var sizes = getSizes(p);
+  if (sizes.length === 1) return p.price || '';
+  return '';
 }
 
 function doLogin() {
@@ -199,8 +232,9 @@ function doLogin() {
 function clearToken() {
   localStorage.removeItem('pep_gh_token');
   GITHUB_TOKEN = '';
-  alert('Token cleared. You will be prompted next login.');
+  alert('Token cleared.');
 }
+
 document.getElementById('pw-input').addEventListener('keydown', function(e){ if(e.key==='Enter') doLogin(); });
 
 function showStatus(msg, type) {
@@ -220,7 +254,7 @@ function loadData() {
   ])
   .then(function(results) {
     _products = results[0];
-    buildCostMap(results[1]);
+    buildPcIndex(results[1]);
     _sha = results[2].sha;
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
@@ -246,40 +280,54 @@ function escAttr(s){ return String(s||'').replace(/"/g,'&quot;'); }
 function renderTable() {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
-  _products.forEach(function(p, i) {
-    var entry = lookupCost(p);
-    var cost = entry ? entry.cost : null;
-    var vendor = entry ? entry.vendor : null;
-    var catNo = entry ? entry.cat_no : (p.id||'').replace(/-us-warehouse|-overseas-warehouse/gi,'').toUpperCase();
-    var currentPrice = _changes[p.id] !== undefined ? _changes[p.id] : (p.price || '');
-    var isChanged = _changes[p.id] !== undefined;
-    var tr = document.createElement('tr');
-    if (isChanged) tr.classList.add('changed-row');
-    tr.dataset.name = ((p.name||'') + ' ' + (catNo||'')).toLowerCase();
-    tr.dataset.category = (p.category||'').toLowerCase();
-    tr.innerHTML =
-      '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
-      '<td><span style="font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)">' + esc(catNo) + '</span></td>' +
-      '<td><strong>' + esc(p.name) + '</strong>' + (p.warehouse ? ' <span style="font-size:10px;color:#9aabb8;font-weight:600">' + (p.warehouse === 'US Warehouse' ? '🇺🇸' : '🌐') + '</span>' : '') + '</td>' +
-      '<td>' + catBadge(p.category) + '</td>' +
-      '<td class="vendor-cell">' + (vendor ? esc(vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
-      '<td class="cost-cell">' + (cost !== null ? '$' + cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
-      '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" data-id="' + escAttr(p.id) + '" data-cost="' + (cost||'') + '" data-original="' + escAttr(p.price||'') + '" oninput="onPriceChange(this)"></td>' +
-      '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
-    tbody.appendChild(tr);
+
+  _products.forEach(function(p) {
+    var sizes = getSizes(p);
+    var isFirstSize = true;
+
+    sizes.forEach(function(s) {
+      var key = s.key;
+      var origPrice = getOriginalPrice(p, s.size);
+      var currentPrice = _changes[key] !== undefined ? _changes[key] : origPrice;
+      var isChanged = _changes[key] !== undefined;
+
+      var tr = document.createElement('tr');
+      tr.className = 'size-row' + (isChanged ? ' changed-row' : '');
+      tr.dataset.name = (p.name + ' ' + s.cat_no).toLowerCase();
+      tr.dataset.category = (p.category||'').toLowerCase();
+      tr.dataset.productid = p.id;
+
+      tr.innerHTML =
+        '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
+        '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '<span style="color:#9aabb8">↳</span>') + '</td>' +
+        '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
+        (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
+        '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.cost !== null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
+          'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-original="' + escAttr(origPrice) + '" ' +
+          'oninput="onPriceChange(this)"></td>' +
+        (isFirstSize ?
+          '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' :
+          '<td></td>');
+
+      tbody.appendChild(tr);
+      isFirstSize = false;
+    });
   });
+
   filterTable();
 }
 
 function onPriceChange(input) {
-  var id = input.dataset.id;
+  var key = input.dataset.key;
   var val = input.value.trim();
   if (val !== input.dataset.original) {
-    _changes[id] = val;
+    _changes[key] = val;
     input.classList.add('changed');
     input.closest('tr').classList.add('changed-row');
   } else {
-    delete _changes[id];
+    delete _changes[key];
     input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
   }
@@ -288,8 +336,8 @@ function onPriceChange(input) {
 
 function onStockChange(cb) {
   var id = cb.dataset.id;
-  var p = _products.find(function(x){ return x.id === id; });
-  if (p) { p.inStock = cb.checked; _changes['_stock_' + id] = cb.checked; updateChangesLabel(); }
+  _changes['_stock_::' + id] = cb.checked;
+  updateChangesLabel();
 }
 
 function applyGlobalMarkup() {
@@ -297,18 +345,17 @@ function applyGlobalMarkup() {
   if (isNaN(pct)) { alert('Enter a markup % first'); return; }
   var mult = 1 + pct / 100;
   var applied = 0;
-  document.querySelectorAll('#table-body tr').forEach(function(row) {
+  document.querySelectorAll('#table-body tr.size-row').forEach(function(row) {
     if (row.style.display === 'none') return;
     var input = row.querySelector('.price-input');
     if (!input) return;
     var cost = parseFloat(input.dataset.cost);
     if (!cost) return;
-    var newPrice = '$' + (cost * mult).toFixed(2);
-    input.value = newPrice;
+    input.value = '$' + (cost * mult).toFixed(2);
     onPriceChange(input);
     applied++;
   });
-  showStatus('✅ Applied ' + pct + '% markup to ' + applied + ' products with cost data.', 'success');
+  showStatus('✅ Applied ' + pct + '% markup to ' + applied + ' sizes with cost data.', 'success');
 }
 
 function resetAll() {
@@ -335,9 +382,12 @@ function updateChangesLabel() {
 function filterTable() {
   var search = document.getElementById('search-box').value.toLowerCase();
   var cat = document.getElementById('category-filter').value.toLowerCase();
-  document.querySelectorAll('#table-body tr').forEach(function(row){
+  // Track which product ids are visible
+  var visibleProducts = {};
+  document.querySelectorAll('#table-body tr.size-row').forEach(function(row){
     var show = (!search || row.dataset.name.includes(search)) &&
                (!cat || row.dataset.category === cat);
+    if (show) visibleProducts[row.dataset.productid] = true;
     row.style.display = show ? '' : 'none';
   });
 }
@@ -346,12 +396,40 @@ function pushToGitHub() {
   if (!Object.keys(_changes).length) return;
   document.querySelector('#push-bar .btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
+
+  // Build updated products: collect per-size prices
   var updated = _products.map(function(p) {
     var out = Object.assign({}, p);
-    if (_changes[p.id] !== undefined) out.price = _changes[p.id];
-    if (_changes['_stock_' + p.id] !== undefined) out.inStock = _changes['_stock_' + p.id];
+    // Apply stock changes
+    if (_changes['_stock_::' + p.id] !== undefined) out.inStock = _changes['_stock_::' + p.id];
+
+    // Collect size prices
+    var sizes = getSizes(p);
+    var newPrices = Object.assign({}, p.prices || {});
+    var allPrices = [];
+    sizes.forEach(function(s) {
+      var key = s.key;
+      var val = _changes[key] !== undefined ? _changes[key] : getOriginalPrice(p, s.size);
+      if (val) {
+        newPrices[s.size] = val;
+        var num = parseFloat(val.replace(/[^0-9.]/g,''));
+        if (num) allPrices.push(num);
+      }
+    });
+
+    if (Object.keys(newPrices).length) {
+      out.prices = newPrices;
+      // Set p.price to cheapest for card display
+      if (allPrices.length) {
+        allPrices.sort(function(a,b){return a-b;});
+        var cheapest = '$' + allPrices[0].toFixed(2);
+        var mostExp = '$' + allPrices[allPrices.length-1].toFixed(2);
+        out.price = allPrices.length > 1 ? cheapest + ' – ' + mostExp : cheapest;
+      }
+    }
     return out;
   });
+
   var content = btoa(unescape(encodeURIComponent(JSON.stringify(updated, null, 2))));
   fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
     {headers:{'Authorization':'token ' + GITHUB_TOKEN}})
@@ -380,7 +458,6 @@ function pushToGitHub() {
   });
 }
 
-// Auto-login if password AND token are both saved
 (function(){
   var savedPw = localStorage.getItem('pep_admin_pw');
   var savedToken = localStorage.getItem('pep_gh_token');
