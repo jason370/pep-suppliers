@@ -260,7 +260,7 @@ function renderTable() {
     tr.innerHTML =
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
       '<td><span style="font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)">' + esc(catNo) + '</span></td>' +
-      '<td><strong>' + esc(p.name) + '</strong></td>' +
+      '<td><strong>' + esc(p.name) + '</strong>' + (p.warehouse ? ' <span style="font-size:10px;color:#9aabb8;font-weight:600">' + (p.warehouse === 'US Warehouse' ? '🇺🇸' : '🌐') + '</span>' : '') + '</td>' +
       '<td>' + catBadge(p.category) + '</td>' +
       '<td class="vendor-cell">' + (vendor ? esc(vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
       '<td class="cost-cell">' + (cost !== null ? '$' + cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
