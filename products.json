@@ -368,9 +368,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-yunke",
+    "id": "et10-gh-yunke",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$35.00",
     "vialSizes": [
       "10mg"
@@ -384,9 +384,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-yunke",
+    "id": "et50-gh-yunke",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$155.00",
     "vialSizes": [
       "50mg"
@@ -1088,9 +1088,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-yunke",
+    "id": "g5k-gh-yunke",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$85.00",
     "vialSizes": [
       "5000iu"
@@ -1104,9 +1104,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-yunke",
+    "id": "g10k-gh-yunke",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$165.00",
     "vialSizes": [
       "10000iu"
@@ -1408,9 +1408,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-yunke",
+    "id": "et10-gh-yunke",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$35.00",
     "vialSizes": [
       "10mg"
@@ -1840,9 +1840,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "sur10-other-erp",
+    "id": "sur10-weight-erp",
     "name": "SUR10",
-    "category": "other",
+    "category": "weight",
     "price": "$249.00",
     "vialSizes": [
       "10mg"
@@ -3776,9 +3776,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc2-other-upp",
+    "id": "bc2-healing-upp",
     "name": "BC2",
-    "category": "other",
+    "category": "healing",
     "price": "$35.00",
     "vialSizes": [
       "2mg"
@@ -3792,9 +3792,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-upp",
+    "id": "bc5-healing-upp",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$45.00",
     "vialSizes": [
       "5mg"
@@ -3808,9 +3808,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-upp",
+    "id": "bc10-healing-upp",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -3824,9 +3824,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-upp",
+    "id": "bb10-healing-upp",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "10mg"
@@ -3840,9 +3840,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-upp",
+    "id": "bb20-healing-upp",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$160.00",
     "vialSizes": [
       "20mg"
@@ -3856,9 +3856,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb30-other-upp",
+    "id": "bb30-healing-upp",
     "name": "BB30",
-    "category": "other",
+    "category": "healing",
     "price": "$230.00",
     "vialSizes": [
       "30mg"
@@ -3872,9 +3872,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt2-other-upp",
+    "id": "bt2-healing-upp",
     "name": "BT2",
-    "category": "other",
+    "category": "healing",
     "price": "$45.00",
     "vialSizes": [
       "2mg"
@@ -3888,9 +3888,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-upp",
+    "id": "bt5-healing-upp",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -3904,9 +3904,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-upp",
+    "id": "bt10-healing-upp",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$130.00",
     "vialSizes": [
       "10mg"
@@ -3920,9 +3920,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-upp",
+    "id": "g5k-gh-upp",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$90.00",
     "vialSizes": [
       "5000iu"
@@ -3936,9 +3936,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-upp",
+    "id": "glow-healing-upp",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "70mg"
@@ -3952,9 +3952,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-upp",
+    "id": "klow80-healing-upp",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$215.00",
     "vialSizes": [
       "80mg"
@@ -4208,9 +4208,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-upp",
+    "id": "2ad-gh-upp",
     "name": "2AD",
-    "category": "other",
+    "category": "gh",
     "price": "$50.00",
     "vialSizes": [
       "2mg"
@@ -4224,9 +4224,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-upp",
+    "id": "5ad-gh-upp",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$100.00",
     "vialSizes": [
       "5mg"
@@ -4240,9 +4240,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-upp",
+    "id": "10ad-gh-upp",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$160.00",
     "vialSizes": [
       "10mg"
@@ -4592,9 +4592,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-upp",
+    "id": "ta5-healing-upp",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "5mg"
@@ -4608,9 +4608,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-upp",
+    "id": "ta10-healing-upp",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$160.00",
     "vialSizes": [
       "10mg"
@@ -4736,9 +4736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-upp",
+    "id": "p41-healing-upp",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$65.00",
     "vialSizes": [
       "10mg"
@@ -4912,9 +4912,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-upp",
+    "id": "et10-gh-upp",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -4928,9 +4928,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-upp",
+    "id": "et50-gh-upp",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$150.00",
     "vialSizes": [
       "50mg"
@@ -5040,9 +5040,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "hu10-other-upp",
+    "id": "hu10-gh-upp",
     "name": "HU10",
-    "category": "other",
+    "category": "gh",
     "price": "$220.00",
     "vialSizes": [
       "10mg"
@@ -6576,9 +6576,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-hkms",
+    "id": "2ad-gh-hkms",
     "name": "2AD",
-    "category": "other",
+    "category": "gh",
     "price": "$41.00",
     "vialSizes": [
       "2mg"
@@ -6592,9 +6592,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-hkms",
+    "id": "5ad-gh-hkms",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -6704,9 +6704,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc2-other-hkms",
+    "id": "bc2-healing-hkms",
     "name": "BC2",
-    "category": "other",
+    "category": "healing",
     "price": "$21.00",
     "vialSizes": [
       "2mg"
@@ -6720,9 +6720,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-hkms",
+    "id": "bc5-healing-hkms",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$41.00",
     "vialSizes": [
       "5mg"
@@ -6736,9 +6736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-hkms",
+    "id": "bc10-healing-hkms",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "10mg"
@@ -6752,9 +6752,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-hkms",
+    "id": "bb10-healing-hkms",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$90.00",
     "vialSizes": [
       "10mg"
@@ -6768,9 +6768,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-hkms",
+    "id": "bb20-healing-hkms",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "20mg"
@@ -6784,9 +6784,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-hkms",
+    "id": "glow-healing-hkms",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$190.00",
     "vialSizes": [
       "70mg"
@@ -6896,9 +6896,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cnd2-other-hkms",
+    "id": "cnd2-gh-hkms",
     "name": "CND2",
-    "category": "other",
+    "category": "gh",
     "price": "$30.00",
     "vialSizes": [
       "2mg"
@@ -6912,9 +6912,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cnd5-other-hkms",
+    "id": "cnd5-gh-hkms",
     "name": "CND5",
-    "category": "other",
+    "category": "gh",
     "price": "$70.00",
     "vialSizes": [
       "5mg"
@@ -6928,9 +6928,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cnd10-other-hkms",
+    "id": "cnd10-gh-hkms",
     "name": "CND10",
-    "category": "other",
+    "category": "gh",
     "price": "$140.00",
     "vialSizes": [
       "10mg"
@@ -6944,9 +6944,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cp10-other-hkms",
+    "id": "cp10-gh-hkms",
     "name": "CP10",
-    "category": "other",
+    "category": "gh",
     "price": "$95.00",
     "vialSizes": [
       "10mg"
@@ -6960,9 +6960,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cd2-other-hkms",
+    "id": "cd2-gh-hkms",
     "name": "CD2",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "2mg"
@@ -6976,9 +6976,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "cd5-other-hkms",
+    "id": "cd5-gh-hkms",
     "name": "CD5",
-    "category": "other",
+    "category": "gh",
     "price": "$140.00",
     "vialSizes": [
       "5mg"
@@ -7088,9 +7088,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "d5-other-hkms",
+    "id": "d5-weight-hkms",
     "name": "D5",
-    "category": "other",
+    "category": "weight",
     "price": "$149.00",
     "vialSizes": [
       "5mg"
@@ -7104,9 +7104,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "d10-other-hkms",
+    "id": "d10-weight-hkms",
     "name": "D10",
-    "category": "other",
+    "category": "weight",
     "price": "$265.00",
     "vialSizes": [
       "10mg"
@@ -7120,9 +7120,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-hkms",
+    "id": "et10-gh-hkms",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$35.00",
     "vialSizes": [
       "10mg"
@@ -7136,9 +7136,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-hkms",
+    "id": "et50-gh-hkms",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$140.00",
     "vialSizes": [
       "50mg"
@@ -7152,9 +7152,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "e3k-other-hkms",
+    "id": "e3k-gh-hkms",
     "name": "E3K",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "3000iu"
@@ -7168,9 +7168,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "e10k-other-hkms",
+    "id": "e10k-gh-hkms",
     "name": "E10K",
-    "category": "other",
+    "category": "gh",
     "price": "$180.00",
     "vialSizes": [
       "10000iu"
@@ -7376,9 +7376,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-hkms",
+    "id": "g10k-gh-hkms",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$130.00",
     "vialSizes": [
       "10000iu"
@@ -7392,9 +7392,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-hkms",
+    "id": "g5k-gh-hkms",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$68.00",
     "vialSizes": [
       "50001iu"
@@ -7408,9 +7408,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g2k-other-hkms",
+    "id": "g2k-gh-hkms",
     "name": "G2K",
-    "category": "other",
+    "category": "gh",
     "price": "$40.00",
     "vialSizes": [
       "20000iu"
@@ -7776,9 +7776,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "l5-other-hkms",
+    "id": "l5-weight-hkms",
     "name": "L5",
-    "category": "other",
+    "category": "weight",
     "price": "$81.00",
     "vialSizes": [
       "5mg"
@@ -7792,9 +7792,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "l10-other-hkms",
+    "id": "l10-weight-hkms",
     "name": "L10",
-    "category": "other",
+    "category": "weight",
     "price": "$144.00",
     "vialSizes": [
       "10mg"
@@ -7808,9 +7808,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "l30-other-hkms",
+    "id": "l30-weight-hkms",
     "name": "L30",
-    "category": "other",
+    "category": "weight",
     "price": "$432.00",
     "vialSizes": [
       "30mg"
@@ -8160,9 +8160,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-hkms",
+    "id": "p41-healing-hkms",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -8512,9 +8512,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "sur10-other-hkms",
+    "id": "sur10-weight-hkms",
     "name": "SUR10",
-    "category": "other",
+    "category": "weight",
     "price": "$257.00",
     "vialSizes": [
       "10mg"
@@ -8528,9 +8528,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt2-other-hkms",
+    "id": "bt2-healing-hkms",
     "name": "BT2",
-    "category": "other",
+    "category": "healing",
     "price": "$35.00",
     "vialSizes": [
       "2mg"
@@ -8544,9 +8544,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-hkms",
+    "id": "bt5-healing-hkms",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "5mg"
@@ -8560,9 +8560,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-hkms",
+    "id": "bt10-healing-hkms",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "10mg"
@@ -8576,9 +8576,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-hkms",
+    "id": "klow80-healing-hkms",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$220.00",
     "vialSizes": [
       "80mg"
@@ -8672,9 +8672,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta2-other-hkms",
+    "id": "ta2-healing-hkms",
     "name": "TA2",
-    "category": "other",
+    "category": "healing",
     "price": "$48.00",
     "vialSizes": [
       "2mg"
@@ -8688,9 +8688,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-hkms",
+    "id": "ta5-healing-hkms",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -8704,9 +8704,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-hkms",
+    "id": "ta10-healing-hkms",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$150.00",
     "vialSizes": [
       "10mg"
@@ -9536,9 +9536,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et5-other-hkp",
+    "id": "et5-gh-hkp",
     "name": "ET5",
-    "category": "other",
+    "category": "gh",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -9552,9 +9552,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-hkp",
+    "id": "et10-gh-hkp",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -10032,9 +10032,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-hhb",
+    "id": "bc5-healing-hhb",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -10048,9 +10048,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-hhb",
+    "id": "bc10-healing-hhb",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$55.00",
     "vialSizes": [
       "10mg"
@@ -10064,9 +10064,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc20-other-hhb",
+    "id": "bc20-healing-hhb",
     "name": "BC20",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "20mg"
@@ -10080,9 +10080,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-hhb",
+    "id": "bt5-healing-hhb",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -10096,9 +10096,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-hhb",
+    "id": "bt10-healing-hhb",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$110.00",
     "vialSizes": [
       "10mg"
@@ -10112,9 +10112,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-hhb",
+    "id": "bb10-healing-hhb",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "10mg"
@@ -10128,9 +10128,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-hhb",
+    "id": "bb20-healing-hhb",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "20mg"
@@ -10160,9 +10160,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow50-other-hhb",
+    "id": "glow50-healing-hhb",
     "name": "GLOW50",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "50mg"
@@ -10176,9 +10176,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-hhb",
+    "id": "glow-healing-hhb",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$150.00",
     "vialSizes": [
       "70mg"
@@ -10192,9 +10192,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-hhb",
+    "id": "klow80-healing-hhb",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$170.00",
     "vialSizes": [
       "80mg"
@@ -10480,9 +10480,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et5-other-hhb",
+    "id": "et5-gh-hhb",
     "name": "ET5",
-    "category": "other",
+    "category": "gh",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -10496,9 +10496,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-hhb",
+    "id": "et10-gh-hhb",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -10512,9 +10512,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-hhb",
+    "id": "et50-gh-hhb",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$135.00",
     "vialSizes": [
       "50mg"
@@ -10736,9 +10736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-hhb",
+    "id": "5ad-gh-hhb",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -10752,9 +10752,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-hhb",
+    "id": "10ad-gh-hhb",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$150.00",
     "vialSizes": [
       "10mg"
@@ -10800,9 +10800,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-hhb",
+    "id": "ta5-healing-hhb",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$85.00",
     "vialSizes": [
       "5mg"
@@ -10816,9 +10816,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-hhb",
+    "id": "ta10-healing-hhb",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$155.00",
     "vialSizes": [
       "10mg"
@@ -10880,9 +10880,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-hhb",
+    "id": "p41-healing-hhb",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -11104,9 +11104,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-kr",
+    "id": "5ad-gh-kr",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$95.00",
     "vialSizes": [
       "5mg"
@@ -11120,9 +11120,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-kr",
+    "id": "10ad-gh-kr",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$165.00",
     "vialSizes": [
       "10mg"
@@ -11200,9 +11200,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-kr",
+    "id": "bc5-healing-kr",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$36.00",
     "vialSizes": [
       "5mg"
@@ -11216,9 +11216,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-kr",
+    "id": "bc10-healing-kr",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$66.00",
     "vialSizes": [
       "10mg"
@@ -11232,9 +11232,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-kr",
+    "id": "bb10-healing-kr",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "10mg"
@@ -11248,9 +11248,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-kr",
+    "id": "bb20-healing-kr",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$200.00",
     "vialSizes": [
       "20mg"
@@ -11264,9 +11264,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb30-other-kr",
+    "id": "bb30-healing-kr",
     "name": "BB30",
-    "category": "other",
+    "category": "healing",
     "price": "$270.00",
     "vialSizes": [
       "30mg"
@@ -11504,9 +11504,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-kr",
+    "id": "et10-gh-kr",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$36.00",
     "vialSizes": [
       "10mg"
@@ -11520,9 +11520,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-kr",
+    "id": "et50-gh-kr",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$152.00",
     "vialSizes": [
       "50mg"
@@ -11616,9 +11616,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-kr",
+    "id": "glow-healing-kr",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$170.00",
     "vialSizes": [
       "70mg"
@@ -11632,9 +11632,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g2k-other-kr",
+    "id": "g2k-gh-kr",
     "name": "G2K",
-    "category": "other",
+    "category": "gh",
     "price": "$35.00",
     "vialSizes": [
       "2000iu"
@@ -11648,9 +11648,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-kr",
+    "id": "g5k-gh-kr",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$80.00",
     "vialSizes": [
       "5000iu"
@@ -11664,9 +11664,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-kr",
+    "id": "g10k-gh-kr",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$140.00",
     "vialSizes": [
       "10000iu"
@@ -11680,9 +11680,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "hu10-other-kr",
+    "id": "hu10-gh-kr",
     "name": "HU10",
-    "category": "other",
+    "category": "gh",
     "price": "$300.00",
     "vialSizes": [
       "10mg"
@@ -11744,9 +11744,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-kr",
+    "id": "klow80-healing-kr",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "80mg"
@@ -12000,9 +12000,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-kr",
+    "id": "p41-healing-kr",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$58.00",
     "vialSizes": [
       "10mg"
@@ -12256,9 +12256,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-kr",
+    "id": "ta5-healing-kr",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "5mg"
@@ -12272,9 +12272,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-kr",
+    "id": "ta10-healing-kr",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$160.00",
     "vialSizes": [
       "10mg"
@@ -12288,9 +12288,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt2-other-kr",
+    "id": "bt2-healing-kr",
     "name": "BT2",
-    "category": "other",
+    "category": "healing",
     "price": "$40.00",
     "vialSizes": [
       "2mg"
@@ -12304,9 +12304,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-kr",
+    "id": "bt5-healing-kr",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -12320,9 +12320,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-kr",
+    "id": "bt10-healing-kr",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$150.00",
     "vialSizes": [
       "10mg"
@@ -13104,9 +13104,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow50-other-depu",
+    "id": "glow50-healing-depu",
     "name": "GLOW50",
-    "category": "other",
+    "category": "healing",
     "price": "$160.00",
     "vialSizes": [
       "50mg"
@@ -13120,9 +13120,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-depu",
+    "id": "glow-healing-depu",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "70mg"
@@ -13136,9 +13136,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-depu",
+    "id": "klow80-healing-depu",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$190.00",
     "vialSizes": [
       "80mg"
@@ -13296,9 +13296,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-depu",
+    "id": "bb10-healing-depu",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "10mg"
@@ -13312,9 +13312,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-depu",
+    "id": "bb20-healing-depu",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "20mg"
@@ -13376,9 +13376,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-depu",
+    "id": "bt5-healing-depu",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "5mg"
@@ -13392,9 +13392,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-depu",
+    "id": "bt10-healing-depu",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$130.00",
     "vialSizes": [
       "10mg"
@@ -13408,9 +13408,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt20-other-depu",
+    "id": "bt20-healing-depu",
     "name": "BT20",
-    "category": "other",
+    "category": "healing",
     "price": "$300.00",
     "vialSizes": [
       "20mg"
@@ -13424,9 +13424,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-depu",
+    "id": "bc10-healing-depu",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -13440,9 +13440,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc20-other-depu",
+    "id": "bc20-healing-depu",
     "name": "BC20",
-    "category": "other",
+    "category": "healing",
     "price": "$130.00",
     "vialSizes": [
       "20mg"
@@ -13488,9 +13488,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-depu",
+    "id": "5ad-gh-depu",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -13504,9 +13504,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-depu",
+    "id": "10ad-gh-depu",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$150.00",
     "vialSizes": [
       "10mg"
@@ -13664,9 +13664,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-depu",
+    "id": "p41-healing-depu",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -13680,9 +13680,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-depu",
+    "id": "ta5-healing-depu",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$75.00",
     "vialSizes": [
       "5mg"
@@ -13696,9 +13696,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-depu",
+    "id": "ta10-healing-depu",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "10mg"
@@ -13936,9 +13936,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-depu",
+    "id": "et10-gh-depu",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -13952,9 +13952,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-depu",
+    "id": "et50-gh-depu",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$140.00",
     "vialSizes": [
       "50mg"
@@ -14528,9 +14528,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-ssy",
+    "id": "bb10-healing-ssy",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$95.00",
     "vialSizes": [
       "10mg"
@@ -14544,9 +14544,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-ssy",
+    "id": "bb20-healing-ssy",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$170.00",
     "vialSizes": [
       "20mg"
@@ -14672,9 +14672,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-ssy",
+    "id": "p41-healing-ssy",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -14688,9 +14688,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-ssy",
+    "id": "bc5-healing-ssy",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -14704,9 +14704,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-ssy",
+    "id": "bc10-healing-ssy",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -14720,9 +14720,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-ssy",
+    "id": "bt5-healing-ssy",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$75.00",
     "vialSizes": [
       "5mg"
@@ -14736,9 +14736,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-ssy",
+    "id": "bt10-healing-ssy",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "10mg"
@@ -14752,9 +14752,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-ssy",
+    "id": "klow80-healing-ssy",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$195.00",
     "vialSizes": [
       "80mg"
@@ -14768,9 +14768,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-ssy",
+    "id": "glow-healing-ssy",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$195.00",
     "vialSizes": [
       "70mg"
@@ -15056,9 +15056,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-ssy",
+    "id": "5ad-gh-ssy",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$105.00",
     "vialSizes": [
       "5mg"
@@ -15248,9 +15248,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-ssy",
+    "id": "g5k-gh-ssy",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$85.00",
     "vialSizes": [
       "5000iu"
@@ -15264,9 +15264,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-ssy",
+    "id": "g10k-gh-ssy",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$160.00",
     "vialSizes": [
       "10000iu"
@@ -15680,9 +15680,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-wbs",
+    "id": "bc5-healing-wbs",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -15696,9 +15696,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-wbs",
+    "id": "bc10-healing-wbs",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -15712,9 +15712,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-wbs",
+    "id": "bt5-healing-wbs",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$75.00",
     "vialSizes": [
       "5mg"
@@ -15728,9 +15728,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-wbs",
+    "id": "bt10-healing-wbs",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$130.00",
     "vialSizes": [
       "10mg"
@@ -15744,9 +15744,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-wbs",
+    "id": "bb10-healing-wbs",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "10mg"
@@ -15760,9 +15760,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-wbs",
+    "id": "bb20-healing-wbs",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "20mg"
@@ -15952,9 +15952,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-wbs",
+    "id": "glow-healing-wbs",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "70mg"
@@ -15968,9 +15968,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-wbs",
+    "id": "klow80-healing-wbs",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$190.00",
     "vialSizes": [
       "80mg"
@@ -15984,9 +15984,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-wbs",
+    "id": "g5k-gh-wbs",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$75.00",
     "vialSizes": [
       "5000iu"
@@ -16000,9 +16000,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-wbs",
+    "id": "g10k-gh-wbs",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$135.00",
     "vialSizes": [
       "10000iu"
@@ -16016,9 +16016,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-wbs",
+    "id": "et10-gh-wbs",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$50.00",
     "vialSizes": [
       "10mg"
@@ -16032,9 +16032,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-wbs",
+    "id": "et50-gh-wbs",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$150.00",
     "vialSizes": [
       "50mg"
@@ -16592,9 +16592,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-wbs",
+    "id": "5ad-gh-wbs",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$100.00",
     "vialSizes": [
       "5mg"
@@ -16608,9 +16608,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-wbs",
+    "id": "10ad-gh-wbs",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$180.00",
     "vialSizes": [
       "10mg"
@@ -16640,9 +16640,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-wbs",
+    "id": "p41-healing-wbs",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -16816,9 +16816,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-wbs",
+    "id": "ta5-healing-wbs",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$100.00",
     "vialSizes": [
       "5mg"
@@ -16832,9 +16832,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-wbs",
+    "id": "ta10-healing-wbs",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$180.00",
     "vialSizes": [
       "10mg"
@@ -17088,9 +17088,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "hu10-other-wbs",
+    "id": "hu10-gh-wbs",
     "name": "HU10",
-    "category": "other",
+    "category": "gh",
     "price": "$220.00",
     "vialSizes": [
       "10mg"
@@ -17936,9 +17936,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-aag",
+    "id": "glow-healing-aag",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$160.00",
     "vialSizes": [
       "70mg"
@@ -17952,9 +17952,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-aag",
+    "id": "klow80-healing-aag",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$195.00",
     "vialSizes": [
       "80mg"
@@ -17968,9 +17968,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc2-other-aag",
+    "id": "bc2-healing-aag",
     "name": "BC2",
-    "category": "other",
+    "category": "healing",
     "price": "$28.00",
     "vialSizes": [
       "2mg"
@@ -17984,9 +17984,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-aag",
+    "id": "bc5-healing-aag",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$40.00",
     "vialSizes": [
       "5mg"
@@ -18000,9 +18000,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-aag",
+    "id": "bc10-healing-aag",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$70.00",
     "vialSizes": [
       "10mg"
@@ -18016,9 +18016,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt2-other-aag",
+    "id": "bt2-healing-aag",
     "name": "BT2",
-    "category": "other",
+    "category": "healing",
     "price": "$45.00",
     "vialSizes": [
       "2mg"
@@ -18032,9 +18032,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-aag",
+    "id": "bt5-healing-aag",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$75.00",
     "vialSizes": [
       "5mg"
@@ -18048,9 +18048,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-aag",
+    "id": "bt10-healing-aag",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$140.00",
     "vialSizes": [
       "10mg"
@@ -18064,9 +18064,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-aag",
+    "id": "bb10-healing-aag",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$95.00",
     "vialSizes": [
       "10mg"
@@ -18080,9 +18080,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-aag",
+    "id": "bb20-healing-aag",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$170.00",
     "vialSizes": [
       "20mg"
@@ -18352,9 +18352,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "2ad-other-aag",
+    "id": "2ad-gh-aag",
     "name": "2AD",
-    "category": "other",
+    "category": "gh",
     "price": "$72.00",
     "vialSizes": [
       "2mg"
@@ -18368,9 +18368,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-aag",
+    "id": "5ad-gh-aag",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$105.00",
     "vialSizes": [
       "5mg"
@@ -18384,9 +18384,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "10ad-other-aag",
+    "id": "10ad-gh-aag",
     "name": "10AD",
-    "category": "other",
+    "category": "gh",
     "price": "$160.00",
     "vialSizes": [
       "10mg"
@@ -18672,9 +18672,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-aag",
+    "id": "g5k-gh-aag",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$85.00",
     "vialSizes": [
       "5000iu"
@@ -18688,9 +18688,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-aag",
+    "id": "g10k-gh-aag",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$160.00",
     "vialSizes": [
       "10000iu"
@@ -18784,9 +18784,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-aag",
+    "id": "p41-healing-aag",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$60.00",
     "vialSizes": [
       "10mg"
@@ -18832,9 +18832,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-aag",
+    "id": "et10-gh-aag",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$48.00",
     "vialSizes": [
       "10mg"
@@ -18848,9 +18848,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-aag",
+    "id": "et50-gh-aag",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$150.00",
     "vialSizes": [
       "50mg"
@@ -18944,9 +18944,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-aag",
+    "id": "ta5-healing-aag",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$80.00",
     "vialSizes": [
       "5mg"
@@ -18960,9 +18960,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-aag",
+    "id": "ta10-healing-aag",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$145.00",
     "vialSizes": [
       "10mg"
@@ -19728,9 +19728,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc5-other-jkl",
+    "id": "bc5-healing-jkl",
     "name": "BC5",
-    "category": "other",
+    "category": "healing",
     "price": "$42.00",
     "vialSizes": [
       "5mg"
@@ -19744,9 +19744,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bc10-other-jkl",
+    "id": "bc10-healing-jkl",
     "name": "BC10",
-    "category": "other",
+    "category": "healing",
     "price": "$59.00",
     "vialSizes": [
       "10mg"
@@ -19760,9 +19760,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt5-other-jkl",
+    "id": "bt5-healing-jkl",
     "name": "BT5",
-    "category": "other",
+    "category": "healing",
     "price": "$77.00",
     "vialSizes": [
       "5mg"
@@ -19776,9 +19776,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bt10-other-jkl",
+    "id": "bt10-healing-jkl",
     "name": "BT10",
-    "category": "other",
+    "category": "healing",
     "price": "$128.00",
     "vialSizes": [
       "10mg"
@@ -19792,9 +19792,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb10-other-jkl",
+    "id": "bb10-healing-jkl",
     "name": "BB10",
-    "category": "other",
+    "category": "healing",
     "price": "$102.00",
     "vialSizes": [
       "10mg"
@@ -19808,9 +19808,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "bb20-other-jkl",
+    "id": "bb20-healing-jkl",
     "name": "BB20",
-    "category": "other",
+    "category": "healing",
     "price": "$178.00",
     "vialSizes": [
       "20mg"
@@ -20144,9 +20144,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g5k-other-jkl",
+    "id": "g5k-gh-jkl",
     "name": "G5K",
-    "category": "other",
+    "category": "gh",
     "price": "$76.00",
     "vialSizes": [
       "5000iu"
@@ -20160,9 +20160,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "g10k-other-jkl",
+    "id": "g10k-gh-jkl",
     "name": "G10K",
-    "category": "other",
+    "category": "gh",
     "price": "$132.00",
     "vialSizes": [
       "10000iu"
@@ -20464,9 +20464,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "klow80-other-jkl",
+    "id": "klow80-healing-jkl",
     "name": "KLOW80",
-    "category": "other",
+    "category": "healing",
     "price": "$198.00",
     "vialSizes": [
       "80mg"
@@ -20480,9 +20480,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "glow-other-jkl",
+    "id": "glow-healing-jkl",
     "name": "GLOW",
-    "category": "other",
+    "category": "healing",
     "price": "$188.00",
     "vialSizes": [
       "70mg"
@@ -20544,9 +20544,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "5ad-other-jkl",
+    "id": "5ad-gh-jkl",
     "name": "5AD",
-    "category": "other",
+    "category": "gh",
     "price": "$98.00",
     "vialSizes": [
       "5mg"
@@ -20592,9 +20592,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "p41-other-jkl",
+    "id": "p41-healing-jkl",
     "name": "P41",
-    "category": "other",
+    "category": "healing",
     "price": "$72.00",
     "vialSizes": [
       "10mg"
@@ -20640,9 +20640,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et10-other-jkl",
+    "id": "et10-gh-jkl",
     "name": "ET10",
-    "category": "other",
+    "category": "gh",
     "price": "$47.00",
     "vialSizes": [
       "10mg"
@@ -20656,9 +20656,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "et50-other-jkl",
+    "id": "et50-gh-jkl",
     "name": "ET50",
-    "category": "other",
+    "category": "gh",
     "price": "$147.00",
     "vialSizes": [
       "50mg"
@@ -20672,9 +20672,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta5-other-jkl",
+    "id": "ta5-healing-jkl",
     "name": "TA5",
-    "category": "other",
+    "category": "healing",
     "price": "$98.00",
     "vialSizes": [
       "5mg"
@@ -20688,9 +20688,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "ta10-other-jkl",
+    "id": "ta10-healing-jkl",
     "name": "TA10",
-    "category": "other",
+    "category": "healing",
     "price": "$178.00",
     "vialSizes": [
       "10mg"
@@ -21264,9 +21264,9 @@
     "extraWarehouses": []
   },
   {
-    "id": "hu10-other-jkl",
+    "id": "hu10-gh-jkl",
     "name": "HU10",
-    "category": "other",
+    "category": "gh",
     "price": "$222.00",
     "vialSizes": [
       "10mg"
