@@ -6412,7 +6412,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AA3",
-    "newName": "AA Water 3ml x10 vials",
+    "newName": "Acetic Acid Water 3ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6428,7 +6428,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "AA10",
-    "newName": "AA Water 10ml x10 vials",
+    "newName": "Acetic Acid Water 10ml x10 vials",
     "extraWarehouses": []
   },
   {
@@ -6460,7 +6460,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "A15",
-    "newName": "Acth 1-39 5mg x10 vials",
+    "newName": "ACTH 1-39 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -8192,8 +8192,8 @@
     "extraWarehouses": []
   },
   {
-    "id": "ar50-other-hkms",
-    "name": "AR50",
+    "id": "ra50-other-hkms",
+    "name": "RA50",
     "category": "other",
     "price": "$56.00",
     "vialSizes": [
@@ -8203,7 +8203,7 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "AR50",
+    "vendor_cat_no": "RA50",
     "newName": "RA260 50mg x10 vials",
     "extraWarehouses": []
   },
