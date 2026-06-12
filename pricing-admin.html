@@ -44,7 +44,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .status-bar.loading{background:#d1ecf1;color:#0c5460;display:block}
 
 .table-wrap{padding:20px 24px;overflow-x:auto}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:13px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border);font-size:13px;table-layout:fixed}
 thead tr{background:var(--navy);color:#fff}
 thead th{padding:10px 11px;text-align:left;font-weight:700;white-space:nowrap}
 tbody tr:nth-child(even){background:#f7fafc}
@@ -55,7 +55,7 @@ tbody td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:m
 tr.product-header td{background:#e8f4f8;font-weight:700;border-top:2px solid var(--teal);padding:6px 11px}
 tr.product-header td:first-child{color:var(--teal)}
 
-tr.size-row td{padding:6px 11px}
+tr.size-row td{padding:5px 8px}
 tr.size-row.changed-row{background:#fffbe6!important}
 tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 
@@ -128,6 +128,17 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 
   <div class="table-wrap">
     <table>
+      <colgroup>
+        <col style="width:200px">
+        <col style="width:60px">
+        <col style="width:70px">
+        <col style="width:110px">
+        <col style="width:70px">
+        <col style="width:80px">
+        <col style="width:75px">
+        <col style="width:100px">
+        <col style="width:55px">
+      </colgroup>
       <thead>
         <tr>
           <th>Product</th>
@@ -307,7 +318,7 @@ function renderTable() {
       tr.dataset.productid = p.id;
 
       tr.innerHTML =
-        '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '<span style="color:#9aabb8">↳</span>') + '</td>' +
+        '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
         '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
         (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
