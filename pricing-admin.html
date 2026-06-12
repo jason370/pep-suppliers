@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing Admin | Pep Suppliers</title>
 <style>
-:root{--navy:#071833;--teal:#0D6D72;--teal-light:#6CC6C9;--border:#e2ecf0;--bg:#f7fafc}
+:root{--navy:#071833;--teal:#0D6D72;--border:#e2ecf0;--bg:#f7fafc}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
+
 #login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh}
 .login-box{background:#fff;border-radius:16px;border:1px solid var(--border);padding:48px 40px;width:360px;text-align:center;box-shadow:0 4px 24px rgba(7,24,51,.10)}
 .login-box h1{font-size:22px;margin-bottom:8px}
@@ -15,17 +16,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .login-box input{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:10px;font-size:15px;margin-bottom:12px;outline:none}
 .login-box input:focus{border-color:var(--teal)}
 .login-box button{width:100%;background:var(--navy);color:#fff;border:none;border-radius:10px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
-.login-box button:hover{background:#0e2a52}
 .login-error{color:#c0392b;font-size:13px;margin-top:8px;display:none}
 
 #admin-screen{display:none;min-height:100vh}
-.admin-header{background:var(--navy);color:#fff;padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
+.admin-header{background:var(--navy);color:#fff;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .admin-header h1{font-size:18px;font-weight:900}
-.admin-header span{font-size:13px;opacity:.7}
 
 .toolbar{display:flex;align-items:center;gap:12px;padding:16px 32px;background:#fff;border-bottom:1px solid var(--border);flex-wrap:wrap}
-.toolbar input[type=search]{flex:1;min-width:180px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
-.toolbar input[type=search]:focus{border-color:var(--teal)}
+.toolbar input[type=search]{flex:1;min-width:200px;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none}
 .toolbar select{padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:14px;background:#fff;outline:none;cursor:pointer}
 .btn{padding:9px 18px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;white-space:nowrap}
 .btn-primary{background:var(--teal);color:#fff}
@@ -34,8 +32,13 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--navy)}
 .btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
 .btn-secondary:hover{background:var(--bg)}
 .btn-danger{background:#fff;color:#c0392b;border:1px solid #f5c6cb}
-.btn-danger:hover{background:#f8d7da}
-.toolbar-divider{width:1px;height:28px;background:var(--border);margin:0 4px}
+.toolbar-divider{width:1px;height:28px;background:var(--border)}
+
+.markup-bar{display:flex;align-items:center;gap:10px;padding:12px 32px;background:#fffbe6;border-bottom:1px solid #f0e68c;flex-wrap:wrap}
+.markup-bar label{font-size:13px;font-weight:700;color:#856404}
+.markup-bar input[type=number]{width:80px;padding:7px 10px;border:1px solid #f0e68c;border-radius:8px;font-size:14px;font-weight:700;text-align:center;outline:none}
+.markup-bar input:focus{border-color:var(--teal)}
+.markup-bar small{color:#6b7f94;font-size:12px}
 
 .status-bar{padding:10px 32px;font-size:13px;font-weight:600;display:none}
 .status-bar.success{background:#d4edda;color:#155724;display:block}
@@ -51,163 +54,85 @@ tbody tr:hover{background:#EEF8FA}
 tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
 .changed-row{background:#fffbe6!important}
 .changed-row td:first-child{border-left:3px solid #f0a500}
-.no-vendor-row{background:#fff0f0!important}
-.no-vendor-row td:first-child{border-left:3px solid #e74c3c}
-
-.price-input{width:100px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;font-family:inherit;text-align:right;outline:none}
-.price-input:focus{border-color:var(--teal)}
-.price-input.changed{border-color:#f0a500;background:#fffbe6}
 
 .badge{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:700}
-.badge-us{background:#EEF8FA;color:var(--teal)}
-.badge-cn{background:#fff3cd;color:#856404}
-.badge-ca{background:#d4edda;color:#155724}
-.badge-vendor{background:#ede9fe;color:#5b21b6}
+.badge-weight{background:#fce7f3;color:#9d174d}
+.badge-gh{background:#d1fae5;color:#065f46}
+.badge-healing{background:#dbeafe;color:#1e40af}
+.badge-blends{background:#ede9fe;color:#5b21b6}
+.badge-other{background:#f3f4f6;color:#374151}
 
-.wh-checks{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.wh-label{display:flex;align-items:center;gap:4px;font-size:12px;font-weight:600;cursor:pointer;padding:3px 8px;border-radius:10px;border:1px solid var(--border);background:#fff;user-select:none}
-.wh-label:hover{background:var(--bg)}
-.wh-label input{cursor:pointer;accent-color:var(--teal)}
-.wh-label.us{color:var(--teal)}
-.wh-label.ca{color:#155724}
-.star-btn{background:none;border:none;cursor:pointer;font-size:16px;padding:2px 4px;line-height:1;opacity:.3;transition:opacity .15s}
-.star-btn:hover{opacity:.7}
-.star-btn.active{opacity:1}
-.tab-bar{display:flex;gap:0;border-bottom:2px solid var(--border);padding:0 32px;background:#fff}
-.tab-btn{padding:10px 20px;font-size:14px;font-weight:700;border:none;background:none;cursor:pointer;color:#6b7f94;border-bottom:2px solid transparent;margin-bottom:-2px}
-.tab-btn.active{color:var(--teal);border-bottom-color:var(--teal)}
-.tab-btn .tab-count{background:#e2ecf0;color:#6b7f94;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:5px}
-.tab-btn.active .tab-count{background:var(--teal);color:#fff}
+.price-input{width:110px;padding:5px 8px;border:1px solid var(--border);border-radius:6px;font-size:13px;text-align:right;outline:none;font-family:monospace}
+.price-input:focus{border-color:var(--teal)}
+.price-input.changed{border-color:#f0a500;background:#fffbe6}
+.cost-cell{color:#9aabb8;font-size:12px;font-family:monospace}
 
 .changes-count{background:#f0a500;color:#fff;border-radius:12px;padding:2px 8px;font-size:12px;font-weight:700;margin-left:6px;display:none}
-.markup-input{width:65px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;text-align:center;outline:none}
-.markup-input:focus{border-color:var(--teal)}
-.vial-input{width:120px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;outline:none}
-.vial-input:focus{border-color:var(--teal)}
-.vial-input.changed,.name-input.changed{border-color:#f0a500;background:#fffbe6}
-.name-input{width:160px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-weight:700;outline:none}
-.name-input:focus{border-color:var(--teal)}
+
+.push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:14px 32px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
+.push-bar.show{display:flex}
+.push-bar p{font-size:14px;font-weight:600}
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 
-<!-- LOGIN -->
 <div id="login-screen">
   <div class="login-box">
-    <h1>Pricing Admin</h1>
+    <h1>⚡ Pricing Admin</h1>
     <p>Pep Suppliers internal tool</p>
-    <input type="password" id="pw-input" placeholder="Admin password" autocomplete="current-password">
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;justify-content:flex-start">
-    <input type="checkbox" id="remember-me" style="width:auto;margin:0;cursor:pointer">
-    <label for="remember-me" style="font-size:13px;color:#6b7f94;cursor:pointer;user-select:none">Remember me on this device</label>
-  </div>
-  <button onclick="doLogin()">Sign In</button>
-    <div class="login-error" id="login-error">Incorrect password</div>
+    <input type="password" id="pw-input" placeholder="Site password" autocomplete="current-password">
+    <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;cursor:pointer"><input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device</label>
+    <button onclick="doLogin()">Sign In</button>
+    <div class="login-error" id="login-error"></div>
   </div>
 </div>
 
-<!-- ADMIN -->
 <div id="admin-screen">
   <div class="admin-header">
     <h1>⚡ Pricing Admin</h1>
     <span id="product-count"></span>
   </div>
 
-  <div class="tab-bar">
-    <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">All Products <span class="tab-count" id="tab-all-count">0</span></button>
-    <button class="tab-btn" id="tab-fav" onclick="switchTab('fav')">⭐ Favorites <span class="tab-count" id="tab-fav-count">0</span></button>
+  <div class="markup-bar">
+    <label>Global Markup %</label>
+    <input type="number" id="global-markup" min="0" max="1000" step="1" placeholder="e.g. 50">
+    <button class="btn btn-secondary" onclick="applyGlobalMarkup()">Apply to All</button>
+    <button class="btn btn-danger" onclick="resetAll()">Reset All</button>
+    <small>Sets sale price = best cost price × (1 + markup%). Then adjust rows individually.</small>
   </div>
+
   <div class="toolbar">
-    <input type="search" id="search-box" placeholder="Search products..." oninput="filterTable()">
-    <select id="warehouse-filter" onchange="filterTable()">
-      <option value="">All Warehouses</option>
-      <option value="Overseas Warehouse">China</option>
-      <option value="US Warehouse">US</option>
-      <option value="Canada Warehouse">Canada</option>
-    </select>
-    <select id="vendor-filter" onchange="filterTable()">
-      <option value="">All Vendors</option>
-      <option value="__none__">⚠ No Vendor</option>
-      <option value="yunke">Yunke</option>
-      <option value="erp">ERP</option>
-      <option value="jeep">Jeep</option>
-      <option value="qyc">QYC</option>
-      <option value="upp">UPP</option>
-      <option value="dp">DP</option>
-      <option value="chp">CHP</option>
-      <option value="hkms">HKMS</option>
-      <option value="hkp">HKP</option>
-    </select>
+    <input type="search" id="search-box" placeholder="Search..." oninput="filterTable()">
     <select id="category-filter" onchange="filterTable()">
       <option value="">All Categories</option>
-      <option value="peptide">Peptide</option>
-      <option value="gh">GH</option>
-      <option value="Growth Hormone">Growth Hormone</option>
-      <option value="Hormone Support">Hormone Support</option>
-      <option value="weight">Weight</option>
       <option value="Weight Management">Weight Management</option>
-      <option value="healing">Healing</option>
+      <option value="Hormone Support">Hormone Support</option>
       <option value="Recovery &amp; Healing">Recovery &amp; Healing</option>
-      <option value="neuro">Neuro</option>
-      <option value="sexual">Sexual</option>
-      <option value="immune">Immune</option>
-      <option value="anti-aging">Anti-Aging</option>
-      <option value="cosmetic">Cosmetic</option>
       <option value="Peptide Blends">Peptide Blends</option>
       <option value="Other Research">Other Research</option>
-      <option value="other">Other</option>
     </select>
-    <select id="stock-filter" onchange="filterTable()">
-      <option value="">All Stock</option>
-      <option value="instock">In Stock</option>
-      <option value="oos">Out of Stock</option>
+    <select id="wh-filter" onchange="filterTable()">
+      <option value="">All Warehouses</option>
+      <option value="US Warehouse">US Warehouse</option>
+      <option value="Overseas Warehouse">Overseas Warehouse</option>
     </select>
-    <select id="name-filter" onchange="filterTable()" style="min-width:200px;max-width:300px">
-      <option value="">All Products</option>
-    </select>
-
     <div class="toolbar-divider"></div>
-    <button class="btn btn-secondary" onclick="clearLockedFields()" title="Allow uploads to overwrite your manual edits again">🔓 Clear Edit Locks (<span id="lock-count">0</span>)</button>
-    <div class="toolbar-divider"></div>
-
-    <label class="btn btn-secondary" style="cursor:pointer">📂 Upload Price Sheet<input type="file" id="xlsx-upload" accept=".xlsx,.xls,.csv" style="display:none" onchange="handleXlsxUpload(this)"></label>
-    <button class="btn btn-secondary" onclick="applyMarkup()">Apply % Markup</button>
-
-    <div class="toolbar-divider"></div>
-
-    <button class="btn btn-danger" onclick="clearWarehouse('US Warehouse')" title="Remove all US warehouse assignments — items stay in China">🇺🇸 Clear US</button>
-    <button class="btn btn-danger" onclick="clearWarehouse('Canada Warehouse')" title="Remove all Canada warehouse assignments — items stay in China">🇨🇦 Clear Canada</button>
-
-    <div class="toolbar-divider"></div>
-
-    <button class="btn btn-danger" id="delete-selected-btn" onclick="deleteSelected()" style="display:none">🗑 Delete selected</button>
-    <button class="btn btn-secondary" onclick="resetChanges()">Reset Changes</button>
-    <button class="btn btn-primary" id="push-btn" onclick="pushChanges()" disabled>
-      Push to Site <span class="changes-count" id="changes-count">0</span>
-    </button>
+    <span id="changes-label" style="font-size:13px;font-weight:600;color:#6b7f94">No changes</span>
   </div>
 
   <div class="status-bar" id="status-bar"></div>
 
   <div class="table-wrap">
-    <table id="price-table">
+    <table>
       <thead>
         <tr>
-          <th></th>
-          <th onclick="sortTable('index')" style="cursor:pointer;user-select:none" title="Sort by #"># <span id="sort-index-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('name')" title="Sort by Name">Name <span id="sort-name-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('newname')" title="Sort by New Name">New Name <span id="sort-newname-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('vendor')" title="Sort by Vendor">Vendor <span id="sort-vendor-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('category')" title="Sort by Category">Category <span id="sort-category-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('vialsizes')" title="Sort by Vial Sizes">Vial Sizes <span id="sort-vialsizes-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('cost')" title="Sort by Cost Price">Cost Price <span id="sort-cost-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('pervial')" title="Sort by Per Vial">Per Vial <span id="sort-pervial-ind"></span></th>
-          <th>Markup %</th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('saleprice')" title="Sort by Sale Price">Sale Price <span id="sort-saleprice-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('warehouse')" title="Sort by Warehouse">Warehouses <span id="sort-warehouse-ind"></span></th>
-          <th style="cursor:pointer;user-select:none" onclick="sortTable('stock')" title="Sort by Stock">In Stock <span id="sort-stock-ind"></span></th>
-          <th><input type="checkbox" id="select-all-cb" onchange="toggleSelectAll(this)" title="Select all visible" style="width:15px;height:15px;cursor:pointer;accent-color:#c0392b"></th>
+          <th>#</th>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Warehouse</th>
+          <th>Best Cost</th>
+          <th>Sale Price</th>
+          <th>In Stock</th>
         </tr>
       </thead>
       <tbody id="table-body"></tbody>
@@ -215,626 +140,267 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:m
   </div>
 </div>
 
+<div class="push-bar" id="push-bar">
+  <div>
+    <p id="push-summary">Ready to push</p>
+    <small style="opacity:.7;font-size:12px">Updates products.json on GitHub → live in ~30s</small>
+  </div>
+  <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
+</div>
+
 <script>
-var _products = [];
+var GITHUB_TOKEN = '';
+var REPO = 'jason370/pep-suppliers';
+var GH_RAW = 'https://raw.githubusercontent.com/' + REPO + '/main/';
+
+var _products = [];      // site products.json (old format)
+var _costMap = {};       // cat_no -> best cost price from price-compare.json
+var _changes = {};       // id -> new price string
 var _sha = '';
-var _lockedFields = JSON.parse(localStorage.getItem('_lockedFields')||'{}'); // {id: {name:true, vialSizes:true, ...}}
-var _password = '';
-var _changes = {};
-var _sortCol = '';
-var _sortDir = 1;
-var _favs = {};
-var _activeTab = 'all';
-try { _favs = JSON.parse(localStorage.getItem('admin_favs') || '{}'); } catch(e){}
-var _savedPw = localStorage.getItem('admin_saved_pw');
-if (_savedPw) {
-  _password = _savedPw;
-  window.addEventListener('DOMContentLoaded', function() {
-    var cb = document.getElementById('remember-me');
-    if (cb) cb.checked = true;
-    loadProducts();
-  });
-}
 
 function doLogin() {
+  GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
+  if (!GITHUB_TOKEN) {
+    GITHUB_TOKEN = prompt('Enter GitHub token (saved locally):');
+    if (GITHUB_TOKEN) localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
+  }
+  if (!GITHUB_TOKEN) return;
+  if (document.getElementById("remember-me") && document.getElementById("remember-me").checked) {
+    localStorage.setItem("pep_admin_pw", document.getElementById("pw-input").value.trim());
+  }
   var pw = document.getElementById('pw-input').value.trim();
   if (!pw) return;
-  _password = pw;
-  if (document.getElementById('remember-me').checked) {
-    localStorage.setItem('admin_saved_pw', pw);
-  } else {
-    localStorage.removeItem('admin_saved_pw');
-  }
-  loadProducts();
+  loadData();
 }
-document.getElementById('pw-input').addEventListener('keydown', function(e){ if (e.key==='Enter') doLogin(); });
+document.getElementById('pw-input').addEventListener('keydown', function(e){ if(e.key==='Enter') doLogin(); });
 
 function showStatus(msg, type) {
   var bar = document.getElementById('status-bar');
-  bar.textContent = msg;
+  bar.innerHTML = msg;
   bar.className = 'status-bar ' + type;
 }
-function hideStatus() { document.getElementById('status-bar').className = 'status-bar'; }
+function hideStatus(){ document.getElementById('status-bar').className = 'status-bar'; }
 
-function loadProducts() {
-  showStatus('Loading products...', 'loading');
-  fetch('https://api.github.com/repos/jason370/pep-suppliers/contents/products.json')
-    .then(function(r){ return r.json(); })
-    .then(function(data) {
-      _sha = data.sha;
-      return fetch('/products.json?t=' + Date.now());
-    })
-    .then(function(r){ return r.json(); })
-    .then(function(products) {
-      _products = products;
-      document.getElementById('login-screen').style.display = 'none';
-      document.getElementById('admin-screen').style.display = 'block';
-      document.getElementById('product-count').textContent = products.length + ' products';
-      hideStatus();
-      renderTable(products);
-      // Populate name dropdown with unique base names
-      var nameSet = {};
-      products.forEach(function(p){ if(p.name) nameSet[p.name] = 1; });
-      var namesSorted = Object.keys(nameSet).sort();
-      var nameFilter = document.getElementById('name-filter');
-      nameFilter.innerHTML = '<option value="">All Products</option>';
-      namesSorted.forEach(function(n){
-        var opt = document.createElement('option');
-        opt.value = n.toLowerCase();
-        opt.textContent = n;
-        nameFilter.appendChild(opt);
-      });
-    })
-    .catch(function(e) {
-      document.getElementById('login-error').style.display = 'block';
-      document.getElementById('login-error').textContent = 'Failed to load: ' + e.message;
-      hideStatus();
+function loadData() {
+  showStatus('Loading...', 'loading');
+  // Load both files in parallel
+  Promise.all([
+    fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }),
+    fetch(GH_RAW + 'price-compare.json?t=' + Date.now()).then(function(r){ return r.json(); }),
+    fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
+      {headers:{'Authorization':'token ' + GITHUB_TOKEN}}).then(function(r){ return r.json(); })
+  ])
+  .then(function(results) {
+    _products = results[0];
+    var priceCompare = results[1];
+    _sha = results[2].sha;
+
+    // Build cost map: product name (lowercase) -> best cost price
+    priceCompare.forEach(function(pc) {
+      if (pc.allVendors && pc.allVendors.length) {
+        var bestCost = parseFloat(pc.allVendors[0].price.replace(/[^0-9.]/g,''));
+        // Map by product name variations
+        var key = pc.name.toLowerCase().trim();
+        _costMap[key] = bestCost;
+        if (pc.cat_no) _costMap[pc.cat_no.toLowerCase()] = bestCost;
+      }
     });
+
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('admin-screen').style.display = 'block';
+    document.getElementById('product-count').textContent = _products.length + ' products';
+    hideStatus();
+    renderTable();
+  })
+  .catch(function(e){
+    document.getElementById('login-error').style.display = 'block';
+    document.getElementById('login-error').textContent = 'Load failed: ' + e.message;
+    hideStatus();
+  });
 }
 
-// Each product has a primary `warehouse` field (China by default).
-// US/Canada availability is stored in `extraWarehouses: ["US Warehouse", "Canada Warehouse"]`
-// The site renderer should show the product in all warehouses it belongs to.
-
-function getWarehouses(p) {
-  var list = [p.warehouse || 'Overseas Warehouse'];
-  if (p.extraWarehouses) {
-    p.extraWarehouses.forEach(function(w){ if (list.indexOf(w) === -1) list.push(w); });
-  }
-  return list;
+function getBestCost(p) {
+  var name = (p.name || '').toLowerCase().trim();
+  if (_costMap[name] !== undefined) return _costMap[name];
+  // Try stripping warehouse suffix from id
+  var idBase = (p.id || '').replace(/-us-warehouse|-overseas-warehouse/g,'').replace(/-/g,' ');
+  if (_costMap[idBase] !== undefined) return _costMap[idBase];
+  return null;
 }
 
-function renderTable(products) {
+function catBadge(cat) {
+  var map = {
+    'Weight Management':'badge-weight',
+    'Hormone Support':'badge-gh',
+    'Recovery & Healing':'badge-healing',
+    'Peptide Blends':'badge-blends',
+    'Other Research':'badge-other'
+  };
+  var cls = map[cat] || 'badge-other';
+  return '<span class="badge ' + cls + '">' + esc(cat) + '</span>';
+}
+
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escAttr(s){ return String(s||'').replace(/"/g,'&quot;'); }
+
+function renderTable() {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
-  products.forEach(function(p, i) {
-    var changed = _changes['_sale_'+p.id];
+  _products.forEach(function(p, i) {
+    var cost = getBestCost(p);
+    var currentPrice = _changes[p.id] !== undefined ? _changes[p.id] : (p.price || '');
+    var isChanged = _changes[p.id] !== undefined;
     var tr = document.createElement('tr');
-    if (changed) tr.classList.add('changed-row');
-    if (!p.vendor) tr.classList.add('no-vendor-row');
-    tr.dataset.id = p.id;
-    tr.dataset.name = (p.name || '').toLowerCase();
-    tr.dataset.warehouse = p.warehouse || '';
-    tr.dataset.vendor = (p.vendor || '').toLowerCase();
-    tr.dataset.category = (p.category || '').toLowerCase();
-    tr.dataset.stock = p.inStock ? 'instock' : 'oos';
-
-    var warehouses = getWarehouses(p);
-    var hasUS = warehouses.indexOf('US Warehouse') > -1;
-    var hasCA = warehouses.indexOf('Canada Warehouse') > -1;
-
-    var salePrice = _changes['_sale_'+p.id] !== undefined ? _changes['_sale_'+p.id] : (p.salePrice || '');
-    var inputClass = _changes['_sale_'+p.id] ? 'price-input changed' : 'price-input';
-    var vendorLabel = p.vendor || '—';
-
-    var warehouseBadges = warehouses.map(function(w) {
-      var lbl = w === 'Overseas Warehouse' ? 'China' : (w === 'US Warehouse' ? 'US' : 'Canada');
-      var cls = w === 'US Warehouse' ? 'badge-us' : (w === 'Canada Warehouse' ? 'badge-ca' : 'badge-cn');
-      return '<span class="badge ' + cls + '">' + lbl + '</span>';
-    }).join(' ');
-
+    if (isChanged) tr.classList.add('changed-row');
+    tr.dataset.name = (p.name||'').toLowerCase();
+    tr.dataset.category = (p.category||'').toLowerCase();
+    tr.dataset.warehouse = (p.warehouse||'').toLowerCase();
     tr.innerHTML =
-      '<td><button class="star-btn ' + (_favs[p.id]?'active':'') + '" onclick="toggleFav(\'' + p.id + '\')" title="Add to favorites">' + (_favs[p.id]?'⭐':'☆') + '</button>' + (_lockedFields[p.id]?'<button onclick="unlockProduct(\'' + p.id + '\')" title="Click to unlock — uploads can overwrite this product\'s fields again" style="background:none;border:none;cursor:pointer;font-size:12px;padding:0 2px">🔒</button>':'') + '</td>' +
       '<td style="color:#9aabb8;font-size:11px">' + (i+1) + '</td>' +
-      '<td style="font-size:12px;font-weight:700;padding:4px 8px">' + escHtml(p.name||'') + '</td>' +
-      '<td><input class="name-input' + (_changes['_name_'+p.id]?' changed':'') + '" type="text" value="' + escAttr(_changes['_name_'+p.id]||p.newName||'') + '" data-id="' + p.id + '" placeholder="Rename..." oninput="onNameChange(this)"></td>' +
-      '<td>' + (p.vendor ? '<span class="badge badge-vendor">' + escHtml(vendorLabel) + '</span>' : '<span style="color:#e74c3c;font-size:12px;font-weight:700">⚠ No vendor</span>') + '</td>' +
-      '<td><span style="font-size:12px;color:#405267;font-weight:600">' + escHtml(p.category||'—') + '</span></td>' +
-      '<td><input class="vial-input" type="text" value="' + escAttr((p.vialSizes||[]).join(', ')) + '" data-id="' + p.id + '" placeholder="e.g. 5mg, 10mg" oninput="onVialChange(this)"></td>' +
-      '<td style="color:#6b7f94">' + escHtml(p.price||'—') + '</td>' +
-      '<td style="color:#6b7f94">' + calcPerVial(p.price) + '</td>' +
-      '<td><input class="markup-input" type="number" min="0" max="500" placeholder="%" data-id="' + p.id + '" oninput="onMarkupChange(this)"></td>' +
-      '<td><input class="' + inputClass + '" type="text" value="' + escAttr(salePrice) + '" data-id="' + p.id + '" data-original="' + escAttr(p.salePrice||'') + '" oninput="onPriceChange(this)"></td>' +
-      '<td>' +
-        '<div class="wh-checks">' +
-          warehouseBadges +
-          '<label class="wh-label us"><input type="checkbox" ' + (hasUS?'checked':'') + ' data-id="' + p.id + '" data-wh="US Warehouse" onchange="onWarehouseCheck(this)"> +US</label>' +
-          '<label class="wh-label ca"><input type="checkbox" ' + (hasCA?'checked':'') + ' data-id="' + p.id + '" data-wh="Canada Warehouse" onchange="onWarehouseCheck(this)"> +CA</label>' +
-        '</div>' +
-      '</td>' +
-      '<td><input type="checkbox" ' + (p.inStock?'checked':'') + ' data-id="' + p.id + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' +
-      '<td><input type="checkbox" class="row-select-cb" data-id="' + p.id + '" style="width:15px;height:15px;cursor:pointer;accent-color:#c0392b" onchange="onRowSelect()"></td>';
+      '<td><strong>' + esc(p.name) + '</strong></td>' +
+      '<td>' + catBadge(p.category) + '</td>' +
+      '<td style="font-size:12px;color:#6b7f94">' + esc(p.warehouse||'—') + '</td>' +
+      '<td class="cost-cell">' + (cost !== null ? '$' + cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+      '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" data-id="' + escAttr(p.id) + '" data-cost="' + (cost||'') + '" data-original="' + escAttr(p.price||'') + '" oninput="onPriceChange(this)"></td>' +
+      '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>';
     tbody.appendChild(tr);
   });
   filterTable();
-  updateTabCounts();
-  updateLockCount();
 }
 
-function escAttr(s){ return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-function escHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-
-function onWarehouseCheck(cb) {
-  var id = cb.dataset.id;
-  var wh = cb.dataset.wh;
-  var p = _products.find(function(x){ return x.id === id; });
-  if (!p) return;
-  p.extraWarehouses = p.extraWarehouses || [];
-  if (cb.checked) {
-    if (p.extraWarehouses.indexOf(wh) === -1) p.extraWarehouses.push(wh);
-  } else {
-    p.extraWarehouses = p.extraWarehouses.filter(function(w){ return w !== wh; });
-  }
-  _changes['_wh_' + id] = p.extraWarehouses.slice();
-  cb.closest('tr').classList.add('changed-row');
-  updateChangeCount();
-  // Refresh the badge display in the same cell
-  var whCell = cb.closest('.wh-checks');
-  var badges = whCell.querySelectorAll('.badge');
-  badges.forEach(function(b){ b.remove(); });
-  var warehouses = getWarehouses(p);
-  var frag = document.createDocumentFragment();
-  warehouses.forEach(function(w) {
-    var lbl = w==='Overseas Warehouse'?'China':(w==='US Warehouse'?'US':'Canada');
-    var cls = w==='US Warehouse'?'badge-us':(w==='Canada Warehouse'?'badge-ca':'badge-cn');
-    var span = document.createElement('span');
-    span.className = 'badge ' + cls;
-    span.textContent = lbl;
-    frag.appendChild(span);
-  });
-  whCell.insertBefore(frag, whCell.firstChild);
-}
-
-function clearWarehouse(wh) {
-  var label = wh === 'US Warehouse' ? 'US' : 'Canada';
-  if (!confirm('Remove ALL ' + label + ' warehouse assignments? Products will move to China only. This cannot be undone without pushing.')) return;
-  var count = 0;
-  _products.forEach(function(p) {
-    // Handle both: direct warehouse field AND extraWarehouses array
-    if (p.warehouse === wh) {
-      p.warehouse = 'Overseas Warehouse';
-      _changes['_warehouse_' + p.id] = 'Overseas Warehouse';
-      count++;
-    }
-    if (p.extraWarehouses && p.extraWarehouses.indexOf(wh) > -1) {
-      p.extraWarehouses = p.extraWarehouses.filter(function(w){ return w !== wh; });
-      _changes['_wh_' + p.id] = p.extraWarehouses.slice();
-      count++;
-    }
-  });
-  if (count === 0) {
-    showStatus('No ' + label + ' warehouse assignments found.', 'success');
-  } else {
-    renderTable(_products);
-    updateChangeCount();
-    showStatus('Cleared ' + count + ' ' + label + ' assignments. Push to Site to save.', 'success');
-  }
-}
-
-function handleXlsxUpload(input) {
-  var file = input.files[0];
-  if (!file) return;
-  showStatus('Reading price sheet...', 'loading');
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      var data = new Uint8Array(e.target.result);
-      var wb = XLSX.read(data, {type:'array'});
-      var sheet = null, headers = [];
-      for (var si = 0; si < wb.SheetNames.length; si++) {
-        var ws = wb.Sheets[wb.SheetNames[si]];
-        var rows = XLSX.utils.sheet_to_json(ws, {header:1, defval:''});
-        for (var r = 0; r < Math.min(rows.length, 5); r++) {
-          var hrow = rows[r].map(function(c){ return String(c).toLowerCase().trim(); });
-          if (hrow.indexOf('name') > -1 && hrow.indexOf('price') > -1) {
-            headers = hrow; sheet = rows.slice(r+1); break;
-          }
-        }
-        if (sheet) break;
-      }
-      if (!sheet) { showStatus('❌ Could not find header row with "name" and "price" columns', 'error'); input.value=''; return; }
-
-      var iName=headers.indexOf('name'), iPrice=headers.indexOf('price'),
-          iId=headers.indexOf('id'), iCat=headers.indexOf('category'),
-          iVials=headers.indexOf('vialsizes'), iVendor=-1, iCatNo=-1;
-      headers.forEach(function(h,i){
-        if (h==='source_vendor'||h==='vendor') iVendor=i;
-        if (h==='vendor_cat_no'||h==='cat no'||h==='serial number') iCatNo=i;
-      });
-
-      var matched=0, added=0, skipped=0;
-      sheet.forEach(function(row) {
-        var name=String(row[iName]||'').trim(), price=String(row[iPrice]||'').trim();
-        if (!name||!price){skipped++;return;}
-        var priceNum=parseFloat(price.replace(/[^0-9.]/g,''));
-        if(isNaN(priceNum)){skipped++;return;}
-        var priceFmt='$'+priceNum.toFixed(2);
-        var id=iId>=0?String(row[iId]||'').trim():'';
-        var vendor=iVendor>=0?String(row[iVendor]||'').trim():'';
-        var cat=iCat>=0?String(row[iCat]||'').trim():'other';
-        var vials=iVials>=0?String(row[iVials]||'').trim():'';
-        var catNo=iCatNo>=0?String(row[iCatNo]||'').trim():'';
-        var vialArr=[];
-        if(vials){try{vialArr=JSON.parse(vials);}catch(e){vialArr=vials.split(',').map(function(s){return s.trim();}).filter(Boolean);}}
-
-        var existing=null;
-        // 1. Match by id (most reliable)
-        if(id) existing=_products.find(function(p){return p.id===id;});
-        // 2. Match by vendor_cat_no + source_vendor (stable cross-upload key)
-        if(!existing&&catNo&&vendor) existing=_products.find(function(p){
-          return p.vendor_cat_no&&p.vendor_cat_no.toLowerCase()===catNo.toLowerCase()&&
-                 p.vendor&&p.vendor.toLowerCase()===vendor.toLowerCase();
-        });
-        // 3. Match by name + vendor (both must agree)
-        if(!existing&&vendor) existing=_products.find(function(p){
-          return p.name&&p.name.toLowerCase()===name.toLowerCase()&&
-                 p.vendor&&p.vendor.toLowerCase()===vendor.toLowerCase();
-        });
-        // 4. Name-only match — only if upload row has NO vendor (avoid cross-vendor collisions)
-        if(!existing&&!vendor) existing=_products.find(function(p){
-          return p.name&&p.name.toLowerCase()===name.toLowerCase();
-        });
-
-        if(existing){
-          var locked=_lockedFields[existing.id]||{};
-          if(existing.price!==priceFmt){_changes[existing.id]=priceFmt; existing.price=priceFmt;}
-          if(vialArr.length && !locked.vialSizes) existing.vialSizes=vialArr;
-          if(vendor) existing.vendor=vendor;
-          if(catNo) existing.vendor_cat_no=catNo;
-          if(!locked.name && name) existing.name=name;
-          // Always keep in China (Overseas Warehouse) — never overwrite warehouse from upload
-          existing.warehouse='Overseas Warehouse';
-          existing.visible=true;
-          matched++;
-        } else {
-          var newId=id||(name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-'+(cat||'other')+'-'+(vendor||'import').toLowerCase());
-          _products.push({id:newId,name:name,category:cat,price:priceFmt,vialSizes:vialArr,
-            warehouse:'Overseas Warehouse',inStock:true,visible:true,vendor:vendor,vendor_cat_no:catNo,extraWarehouses:[]});
-          _changes['_new_'+newId]=priceFmt;
-          added++;
-        }
-      });
-      document.getElementById('product-count').textContent=_products.length+' products';
-      renderTable(_products);
-      // Force push button to enable after any upload
-      if(matched > 0 && Object.keys(_changes).length === 0){ _changes['_upload_refresh']=Date.now(); }
-      updateChangeCount();
-      showStatus('✅ '+matched+' updated, '+added+' new (all set to China). Use +US / +CA checkboxes to assign warehouses. '+
-        (skipped?skipped+' skipped.':''), 'success');
-    } catch(err){ showStatus('❌ Error: '+err.message,'error'); }
-    input.value='';
-  };
-  reader.readAsArrayBuffer(file);
-}
-
-function onNameChange(input) {
-  var id=input.dataset.id, p=_products.find(function(x){return x.id===id;});
-  if(!p)return;
-  var val=input.value.trim();
-  if(val){
-    _changes['_name_'+id]=val;
-    if(!_lockedFields[id]) _lockedFields[id]={};
-    _lockedFields[id].name=true;
-    localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
+function onPriceChange(input) {
+  var id = input.dataset.id;
+  var val = input.value.trim();
+  if (val !== input.dataset.original) {
+    _changes[id] = val;
     input.classList.add('changed');
     input.closest('tr').classList.add('changed-row');
   } else {
-    delete _changes['_name_'+id];
+    delete _changes[id];
     input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
   }
-  updateChangeCount();
+  updateChangesLabel();
 }
 
-function onVialChange(input) {
-  var id=input.dataset.id, p=_products.find(function(x){return x.id===id;});
-  if(!p)return;
-  p.vialSizes=input.value.trim()?input.value.trim().split(',').map(function(s){return s.trim();}).filter(Boolean):[];
-  _changes['_vials_'+id]=p.vialSizes;
-  if(!_lockedFields[id]) _lockedFields[id]={};
-  _lockedFields[id].vialSizes=true;
-  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
-  input.classList.add('changed');
-  input.closest('tr').classList.add('changed-row');
-  updateChangeCount();
+function onStockChange(cb) {
+  var id = cb.dataset.id;
+  var p = _products.find(function(x){ return x.id === id; });
+  if (p) { p.inStock = cb.checked; _changes['_stock_' + id] = cb.checked; updateChangesLabel(); }
 }
 
-function calcPerVial(priceStr){
-  if(!priceStr)return'—';
-  var m=(priceStr+'').match(/[\d.]+/);
-  if(!m)return'—';
-  var t=parseFloat(m[0]);
-  return isNaN(t)?'—':'$'+(t/10).toFixed(2);
-}
-
-function onMarkupChange(input){
-  var id=input.dataset.id, pct=parseFloat(input.value);
-  var p=_products.find(function(x){return x.id===id;});
-  if(!p||isNaN(pct))return;
-  var cost=parseFloat((p.price||'').replace(/[^\d.]/g,''));
-  if(isNaN(cost))return;
-  var ppv=cost/10; // price per vial
-  var priceInput=input.closest('tr').querySelector('.price-input');
-  if(priceInput){
-    priceInput.value='$'+(ppv*(1+pct/100)).toFixed(2);
-    priceInput.dataset.original=p.salePrice||'';
-    onPriceChange(priceInput);
-  }
-}
-
-function onPriceChange(input){
-  var id=input.dataset.id, val=input.value.trim();
-  var p=_products.find(function(x){return x.id===id;});
-  if(val!==input.dataset.original){
-    _changes['_sale_'+id]=val;
-    if(p) p.salePrice=val;
-    if(!_lockedFields[id]) _lockedFields[id]={};
-    _lockedFields[id].salePrice=true;
-    localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
-    input.classList.add('changed'); input.closest('tr').classList.add('changed-row');
-  } else {
-    delete _changes['_sale_'+id];
-    if(p) p.salePrice=input.dataset.original;
-    input.classList.remove('changed'); input.closest('tr').classList.remove('changed-row');
-  }
-  updateChangeCount();
-}
-
-function onStockChange(cb){
-  var id=cb.dataset.id, p=_products.find(function(x){return x.id===id;});
-  if(p){p.inStock=cb.checked; _changes['_stock_'+id]=cb.checked; updateChangeCount();}
-}
-
-function updateChangeCount(){
-  var count=Object.keys(_changes).length;
-  var badge=document.getElementById('changes-count'), btn=document.getElementById('push-btn');
-  badge.textContent=count; badge.style.display=count>0?'inline':'none'; btn.disabled=count===0;
-}
-
-function switchTab(tab){
-  _activeTab = tab;
-  document.getElementById('tab-all').classList.toggle('active', tab==='all');
-  document.getElementById('tab-fav').classList.toggle('active', tab==='fav');
-  filterTable();
-}
-
-function toggleFav(id){
-  if(_favs[id]){ delete _favs[id]; } else { _favs[id]=true; }
-  try { localStorage.setItem('admin_favs', JSON.stringify(_favs)); } catch(e){}
-  // Update just this button
-  document.querySelectorAll('#table-body tr').forEach(function(tr){
-    if(tr.dataset.id===id){
-      var btn=tr.querySelector('.star-btn');
-      if(btn){ btn.classList.toggle('active',!!_favs[id]); btn.textContent=_favs[id]?'⭐':'☆'; }
-    }
+function applyGlobalMarkup() {
+  var pct = parseFloat(document.getElementById('global-markup').value);
+  if (isNaN(pct)) { alert('Enter a markup % first'); return; }
+  var mult = 1 + pct / 100;
+  var applied = 0;
+  document.querySelectorAll('#table-body tr').forEach(function(row) {
+    if (row.style.display === 'none') return;
+    var input = row.querySelector('.price-input');
+    if (!input) return;
+    var cost = parseFloat(input.dataset.cost);
+    if (!cost) return;
+    var newPrice = '$' + (cost * mult).toFixed(2);
+    input.value = newPrice;
+    onPriceChange(input);
+    applied++;
   });
-  updateTabCounts();
-  if(_activeTab==='fav') filterTable();
+  showStatus('✅ Applied ' + pct + '% markup to ' + applied + ' visible products.', 'success');
 }
 
-function updateTabCounts(){
-  var favCount=Object.keys(_favs).length;
-  document.getElementById('tab-all-count').textContent=_products.length;
-  document.getElementById('tab-fav-count').textContent=favCount;
-}
-
-function sortTable(col){
-  if(_sortCol===col){_sortDir*=-1;}else{_sortCol=col;_sortDir=1;}
-  // Clear all indicators
-  ['index','name','newname','vendor','category','vialsizes','cost','pervial','saleprice','warehouse','stock'].forEach(function(c){
-    var el=document.getElementById('sort-'+c+'-ind');
-    if(el) el.textContent='';
-  });
-  var ind=document.getElementById('sort-'+col+'-ind');
-  if(ind) ind.textContent=_sortDir===1?' ▲':' ▼';
-
-  function numVal(str){ var m=String(str||'').replace(/[^0-9.]/g,''); return m?parseFloat(m):0; }
-
-  _products.sort(function(a,b){
-    var va, vb, d=_sortDir;
-    if(col==='name'){
-      va=(a.name||'').toLowerCase(); vb=(b.name||'').toLowerCase();
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='newname'){
-      va=(_changes['_name_'+a.id]||a.name||'').toLowerCase();
-      vb=(_changes['_name_'+b.id]||b.name||'').toLowerCase();
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='vendor'){
-      va=(a.vendor||'').toLowerCase(); vb=(b.vendor||'').toLowerCase();
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='category'){
-      va=(a.category||'').toLowerCase(); vb=(b.category||'').toLowerCase();
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='vialsizes'){
-      va=(a.vialSizes||[]).join(',').toLowerCase(); vb=(b.vialSizes||[]).join(',').toLowerCase();
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='cost'){
-      return (numVal(a.price)-numVal(b.price))*d;
-    } else if(col==='pervial'){
-      return (numVal(a.price)/10 - numVal(b.price)/10)*d;
-    } else if(col==='saleprice'){
-      va=_changes['_sale_'+a.id]!==undefined?_changes['_sale_'+a.id]:(a.salePrice||'');
-      vb=_changes['_sale_'+b.id]!==undefined?_changes['_sale_'+b.id]:(b.salePrice||'');
-      return (numVal(va)-numVal(vb))*d;
-    } else if(col==='warehouse'){
-      va=getWarehouses(a).join(','); vb=getWarehouses(b).join(',');
-      return va<vb?-d:va>vb?d:0;
-    } else if(col==='stock'){
-      va=a.inStock?1:0; vb=b.inStock?1:0;
-      return (va-vb)*d;
-    } else if(col==='index'){
-      // reset to original order — just re-render
-      return 0;
-    }
-    return 0;
-  });
-  renderTable(_products);
-}
-
-function toggleSelectAll(cb){
-  document.querySelectorAll('#table-body tr:not([style*="display: none"]) .row-select-cb').forEach(function(c){ c.checked=cb.checked; });
-  onRowSelect();
-}
-
-function onRowSelect(){
-  var checked=document.querySelectorAll('.row-select-cb:checked').length;
-  var btn=document.getElementById('delete-selected-btn');
-  if(btn){ btn.style.display=checked>0?'':'none'; btn.textContent='🗑 Delete '+checked+' selected'; }
-  var all=document.querySelectorAll('#table-body tr:not([style*="display: none"]) .row-select-cb');
-  var selAll=document.getElementById('select-all-cb');
-  if(selAll) selAll.checked=all.length>0&&checked===all.length;
-}
-
-function deleteSelected(){
-  var checked=[].slice.call(document.querySelectorAll('.row-select-cb:checked'));
-  if(checked.length===0)return;
-  if(!confirm('Delete '+checked.length+' selected product(s)? This cannot be undone without pushing.'))return;
-  checked.forEach(function(cb){
-    var id=cb.dataset.id;
-    _products=_products.filter(function(x){return x.id!==id;});
-    delete _changes[id];
-    _changes['_del_'+id]=true;
-  });
-  updateChangeCount();
-  renderTable(_products);
-  onRowSelect();
-}
-
-function deleteProduct(id){
-  var p=_products.find(function(x){return x.id===id;});
-  if(!p)return;
-  if(!confirm('Delete "'+p.name+'"? This cannot be undone without pushing.'))return;
-  _products=_products.filter(function(x){return x.id!==id;});
-  delete _changes[id];
-  _changes['_del_'+id]=true;
-  updateChangeCount();
-  renderTable(_products);
-}
-
-function filterTable(){
-  var search=document.getElementById('search-box').value.toLowerCase();
-  var warehouse=document.getElementById('warehouse-filter').value;
-  var vendor=document.getElementById('vendor-filter').value;
-  var category=document.getElementById('category-filter').value.toLowerCase();
-  var stock=document.getElementById('stock-filter').value;
-  var nameExact=document.getElementById('name-filter')?document.getElementById('name-filter').value:'';
-  document.querySelectorAll('#table-body tr').forEach(function(row){
-    var nameMatch=!search||row.dataset.name.includes(search);
-    var nameExactMatch=!nameExact||row.dataset.name===nameExact;
-    var whMatch=!warehouse||row.dataset.warehouse===warehouse;
-    var vendorMatch=!vendor||(vendor==='__none__'?!row.dataset.vendor:row.dataset.vendor===vendor);
-    var catMatch=!category||row.dataset.category===category;
-    var stMatch=!stock||row.dataset.stock===stock;
-    var favMatch=_activeTab!=='fav'||!!_favs[row.dataset.id];
-    row.style.display=(nameMatch&&nameExactMatch&&whMatch&&vendorMatch&&catMatch&&stMatch&&favMatch)?'':'none';
-  });
-}
-
-function applyMarkup(){
-  var pct=prompt('Apply markup to ALL visible products.\nSale price = (cost ÷ 10) × (1 + markup%)\n\nEnter markup % (e.g. 50 for 50%):');
-  if(!pct)return;
-  var mult=1+(parseFloat(pct)/100);
-  if(isNaN(mult))return alert('Invalid number');
-  document.querySelectorAll('#table-body tr:not([style*="display: none"])').forEach(function(tr){
-    var id=tr.dataset.id;
-    var p=_products.find(function(x){return x.id===id;});
-    if(!p)return;
-    var cost=parseFloat((p.price||'').replace(/[^0-9.]/g,''));
-    if(isNaN(cost))return;
-    var ppv=cost/10;
-    var priceInput=tr.querySelector('.price-input');
-    if(priceInput){
-      priceInput.value='$'+(ppv*mult).toFixed(2);
-      priceInput.dataset.original=p.salePrice||''; // compare against salePrice not cost
-      onPriceChange(priceInput);
-    }
-  });
-}
-
-function unlockProduct(id){
-  if(!_lockedFields[id]) return;
-  delete _lockedFields[id];
-  localStorage.setItem('_lockedFields', JSON.stringify(_lockedFields));
-  updateLockCount();
-  renderTable(_products);
-  showStatus('🔓 Unlocked — uploads can now overwrite this product.', 'success');
-}
-
-function clearLockedFields(){
-  var count=Object.keys(_lockedFields).length;
-  if(!confirm('Remove edit locks from '+count+' product(s)? Future uploads will overwrite your manual edits for those products.'))return;
-  _lockedFields={};
-  localStorage.removeItem('_lockedFields');
-  updateLockCount();
-  showStatus('🔓 Edit locks cleared.','success');
-}
-
-function updateLockCount(){
-  var el=document.getElementById('lock-count');
-  if(el) el.textContent=Object.keys(_lockedFields).length;
-}
-
-function resetChanges(){
-  if(!confirm('Reset all unsaved changes?'))return;
-  _changes={};
+function resetAll() {
+  if (!confirm('Reset all price changes?')) return;
+  _changes = {};
   document.querySelectorAll('.price-input').forEach(function(input){
-    input.value=input.dataset.original; input.classList.remove('changed');
+    input.value = input.dataset.original;
+    input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
   });
-  updateChangeCount();
+  updateChangesLabel();
 }
 
-function pushChanges(){
-  if(Object.keys(_changes).length===0)return;
-  if(!confirm('Push '+Object.keys(_changes).length+' change(s) to the live site?'))return;
-  showStatus('Pushing changes to site...','loading');
-  document.getElementById('push-btn').disabled=true;
-  var updated=_products.map(function(p){
-    var out=Object.assign({},p);
-    if(_changes['_sale_'+p.id]!==undefined) out.salePrice=_changes['_sale_'+p.id];
-    if(_changes['_stock_'+p.id]!==undefined) out.inStock=_changes['_stock_'+p.id];
-    if(_changes['_vials_'+p.id]!==undefined) out.vialSizes=_changes['_vials_'+p.id];
-    if(_changes['_name_'+p.id]!==undefined) out.name=_changes['_name_'+p.id];
-    if(_changes['_wh_'+p.id]!==undefined) out.extraWarehouses=_changes['_wh_'+p.id];
-    if(_changes['_warehouse_'+p.id]!==undefined) out.warehouse=_changes['_warehouse_'+p.id];
+function updateChangesLabel() {
+  var count = Object.keys(_changes).length;
+  var label = document.getElementById('changes-label');
+  label.textContent = count > 0 ? count + ' change' + (count===1?'':'s') + ' pending' : 'No changes';
+  label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
+  var pb = document.getElementById('push-bar');
+  if (count > 0) {
+    pb.classList.add('show');
+    document.getElementById('push-summary').textContent = count + ' change' + (count===1?'':'s') + ' ready to push';
+  } else {
+    pb.classList.remove('show');
+  }
+}
+
+function filterTable() {
+  var search = document.getElementById('search-box').value.toLowerCase();
+  var cat = document.getElementById('category-filter').value.toLowerCase();
+  var wh = document.getElementById('wh-filter').value.toLowerCase();
+  document.querySelectorAll('#table-body tr').forEach(function(row){
+    var show = (!search || row.dataset.name.includes(search)) &&
+               (!cat || row.dataset.category === cat) &&
+               (!wh || row.dataset.warehouse === wh);
+    row.style.display = show ? '' : 'none';
+  });
+}
+
+function pushToGitHub() {
+  if (!Object.keys(_changes).length) return;
+  document.querySelector('#push-bar .btn').disabled = true;
+  showStatus('⏳ Pushing...', 'loading');
+
+  // Apply changes to products array
+  var updated = _products.map(function(p) {
+    var out = Object.assign({}, p);
+    if (_changes[p.id] !== undefined) out.price = _changes[p.id];
+    if (_changes['_stock_' + p.id] !== undefined) out.inStock = _changes['_stock_' + p.id];
     return out;
   });
-  fetch('/.netlify/functions/update-products',{
-    method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({password:_password,products:updated,sha:_sha})
+
+  var content = btoa(unescape(encodeURIComponent(JSON.stringify(updated, null, 2))));
+
+  // Refresh SHA then push
+  fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
+    {headers:{'Authorization':'token ' + GITHUB_TOKEN}})
+  .then(function(r){ return r.json(); })
+  .then(function(d){
+    return fetch('https://api.github.com/repos/' + REPO + '/contents/products.json', {
+      method: 'PUT',
+      headers: {'Authorization':'token ' + GITHUB_TOKEN, 'Content-Type':'application/json'},
+      body: JSON.stringify({message:'Update prices from admin', content: content, sha: d.sha})
+    });
   })
-  .then(function(r){return r.json();})
-  .then(function(data){
-    if(data.ok){
-      _sha=data.sha; _products=updated; _changes={}; updateChangeCount();
-      renderTable(_products);
-      showStatus('✅ Changes pushed! Site will update in ~30 seconds.','success');
+  .then(function(r){ return r.json(); })
+  .then(function(result){
+    if (result.content) {
+      _products = updated;
+      _changes = {};
+      updateChangesLabel();
+      renderTable();
+      showStatus('✅ Pushed! Site updates in ~30 seconds.', 'success');
     } else {
-      if(data.error&&data.error.indexOf('Conflict')>-1){
-        fetch('https://api.github.com/repos/jason370/pep-suppliers/contents/products.json')
-          .then(function(r){return r.json();})
-          .then(function(d){_sha=d.sha;showStatus('SHA refreshed — please push again.','error');});
-      } else {
-        showStatus('\u274c Error: '+(data.error||'Unknown error'),'error');
-      }
-      document.getElementById('push-btn').disabled=false;
+      showStatus('❌ Push failed: ' + JSON.stringify(result), 'error');
+      document.querySelector('#push-bar .btn').disabled = false;
     }
   })
   .catch(function(e){
-    showStatus('\u274c Network error: '+e.message,'error');
-    document.getElementById('push-btn').disabled=false;
+    showStatus('❌ Error: ' + e.message, 'error');
+    document.querySelector('#push-bar .btn').disabled = false;
   });
 }
+</script>
+
+<script>
+// Auto-login if saved password exists
+(function(){
+  var saved = localStorage.getItem('pep_admin_pw');
+  if (saved) {
+    document.getElementById('pw-input').value = saved;
+    document.getElementById('remember-me').checked = true;
+    loadData();
+  }
+})();
 </script>
 </body>
 </html>
