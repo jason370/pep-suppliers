@@ -1100,7 +1100,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "G5K",
-    "newName": "HCG 5000IU x10 vials",
+    "newName": "HCG 5000iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -1116,7 +1116,7 @@
     "visible": true,
     "vendor": "Yunke",
     "vendor_cat_no": "G10K",
-    "newName": "HCG 10000IU x10 vials",
+    "newName": "HCG 10000iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7260,7 +7260,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G25",
-    "newName": "GHRP-2 Acetate 5mg x10 vials",
+    "newName": "GHRP-2 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7276,7 +7276,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G210",
-    "newName": "GHRP-2 Acetate 10mg x10 vials",
+    "newName": "GHRP-2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7292,7 +7292,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G65",
-    "newName": "GHRP-6 Acetate 5mg x10 vials",
+    "newName": "GHRP-6 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7308,7 +7308,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G610",
-    "newName": "GHRP-6 Acetate 10mg x10 vials",
+    "newName": "GHRP-6 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7388,7 +7388,7 @@
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G10K",
-    "newName": "HCG 10000IU x10 vials",
+    "newName": "HCG 10000iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -7397,19 +7397,19 @@
     "category": "gh",
     "price": "$68.00",
     "vialSizes": [
-      "50001iu"
+      "5000IU"
     ],
     "warehouse": "Overseas Warehouse",
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
     "vendor_cat_no": "G5K",
-    "newName": "HCG 50001IU x10 vials",
+    "newName": "HCG 5000IU x10 vials",
     "extraWarehouses": []
   },
   {
-    "id": "g2k-gh-hkms",
-    "name": "G2K",
+    "id": "g20k-gh-hkms",
+    "name": "G20K",
     "category": "gh",
     "price": "$40.00",
     "vialSizes": [
@@ -7419,8 +7419,8 @@
     "inStock": true,
     "visible": true,
     "vendor": "HKMS",
-    "vendor_cat_no": "G2K",
-    "newName": "HCG 20000IU x10 vials",
+    "vendor_cat_no": "G20K",
+    "newName": "HCG 20000iu x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15212,7 +15212,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "G65",
-    "newName": "GHRP-6 Acetate 5mg x10 vials",
+    "newName": "GHRP-6 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -15228,7 +15228,7 @@
     "visible": true,
     "vendor": "SSY",
     "vendor_cat_no": "G610",
-    "newName": "GHRP-6 Acetate 10mg x10 vials",
+    "newName": "GHRP-6 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18556,7 +18556,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "G65",
-    "newName": "GHRP-6 Acetate 5mg x10 vials",
+    "newName": "GHRP-6 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -18572,7 +18572,7 @@
     "visible": true,
     "vendor": "AAG",
     "vendor_cat_no": "G610",
-    "newName": "GHRP-6 Acetate 10mg x10 vials",
+    "newName": "GHRP-6 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20716,7 +20716,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "G25",
-    "newName": "GHRP-2 Acetate 5mg x10 vials",
+    "newName": "GHRP-2 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20732,7 +20732,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "G210",
-    "newName": "GHRP-2 Acetate 10mg x10 vials",
+    "newName": "GHRP-2 10mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20748,7 +20748,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "G65",
-    "newName": "GHRP-6 Acetate 5mg x10 vials",
+    "newName": "GHRP-6 5mg x10 vials",
     "extraWarehouses": []
   },
   {
@@ -20764,7 +20764,7 @@
     "visible": true,
     "vendor": "JKL",
     "vendor_cat_no": "G610",
-    "newName": "GHRP-6 Acetate 10mg x10 vials",
+    "newName": "GHRP-6 10mg x10 vials",
     "extraWarehouses": []
   },
   {
