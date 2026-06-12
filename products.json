@@ -6,7 +6,7 @@
     "price": "$13.65 \u2013 $28.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -52,7 +52,7 @@
     "price": "$21.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg"
@@ -73,7 +73,7 @@
     "price": "$26.95 \u2013 $38.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -309,7 +309,7 @@
     "price": "$28.00 \u2013 $85.75",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -334,7 +334,7 @@
     "price": "$49.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -488,7 +488,7 @@
     "price": "$23.45",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "20mg"
@@ -509,7 +509,7 @@
     "price": "$12.25 \u2013 $29.75",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -532,7 +532,7 @@
     "price": "$45.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -582,7 +582,7 @@
     "price": "$52.15 \u2013 $92.75",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -741,7 +741,7 @@
     "price": "$47.25 \u2013 $52.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "50mg",
@@ -808,7 +808,7 @@
     "price": "$14.35 \u2013 $52.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "6IU",
@@ -910,7 +910,7 @@
     "price": "$16.80",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "2mg"
@@ -979,7 +979,7 @@
     "price": "$59.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "80mg"
@@ -1023,7 +1023,7 @@
     "price": "$42.70",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg/ml/vial"
@@ -1044,7 +1044,7 @@
     "price": "$19.25 \u2013 $52.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10IU",
@@ -1068,7 +1068,7 @@
     "price": "$28.35 \u2013 $151.20",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -1135,7 +1135,7 @@
     "price": "$41.65 \u2013 $68.25",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -1275,7 +1275,7 @@
     "price": "$202.30",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -1296,7 +1296,7 @@
     "price": "$40.60 \u2013 $81.90",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -1497,7 +1497,7 @@
     "price": "$19.60",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "50mg"
@@ -1518,7 +1518,7 @@
     "price": "$17.50 \u2013 $113.75",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg",
@@ -1555,7 +1555,7 @@
     "price": "$70.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -1601,7 +1601,7 @@
     "price": "$10.15 \u2013 $63.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "2mg",
@@ -1686,7 +1686,7 @@
     "price": "$24.50",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "5mg"
@@ -1707,7 +1707,7 @@
     "price": "$54.95",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg"
@@ -1749,7 +1749,7 @@
     "price": "$26.25 \u2013 $98.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "10mg",
@@ -1772,7 +1772,7 @@
     "price": "$35.00 \u2013 $70.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "2mg",
@@ -1919,7 +1919,7 @@
     "price": "$12.25 \u2013 $105.00",
     "description": "Research Use Only",
     "warehouse": "Overseas Warehouse",
-    "inStock": false,
+    "inStock": true,
     "visible": true,
     "vialSizes": [
       "2mg",
