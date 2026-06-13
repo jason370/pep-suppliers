@@ -1,5 +1,30 @@
 [
   {
+    "id": "5-amino-1mq-5mg",
+    "name": "5-Amino-1MQ",
+    "category": "Other Research",
+    "price": "Contact for price",
+    "description": "Research Use Only",
+    "warehouse": "US Warehouse",
+    "inStock": true,
+    "visible": true,
+    "vialSizes": [
+      "5mg",
+      "10mg",
+      "50mg"
+    ],
+    "vialImages": {
+      "5mg": "/images/cropped_vials/5AM.png",
+      "10mg": "/images/cropped_vials/10AM.png",
+      "50mg": "/images/cropped_vials/50AM.png"
+    },
+    "tags": [],
+    "dataAttributes": {
+      "data-category": "Other Research",
+      "data-warehouse": "US Warehouse"
+    }
+  },
+  {
     "id": "5-amino-1mq-overseas-warehouse",
     "name": "5-Amino-1MQ",
     "category": "Other Research",
@@ -1999,35 +2024,4 @@
     ],
     "tags": [],
     "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "prices": {
-      "10mg": "$21.70",
-      "20mg": "$36.05"
-    }
-  },
-  {
-    "id": "vip-overseas-warehouse",
-    "name": "VIP",
-    "category": "Other Research",
-    "price": "$26.25 \u2013 $38.50",
-    "description": "Research Use Only",
-    "warehouse": "Overseas Warehouse",
-    "inStock": true,
-    "visible": true,
-    "vialSizes": [
-      "5mg",
-      "10mg"
-    ],
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "Overseas Warehouse"
-    },
-    "prices": {
-      "5mg": "$26.25",
-      "10mg": "$38.50"
-    }
-  }
-]
+      "data-category": "Other Resea
