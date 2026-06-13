@@ -487,6 +487,11 @@ window.cartCheckout = function() {
         // Update price display
         var p = priceMap[size];
         if (p) document.getElementById('product-price').textContent = p;
+        // Swap vial image if per-size images exist
+        if (product && product.vialImages && product.vialImages[size]) {
+          var pImg = document.getElementById('product-img');
+          if (pImg) pImg.src = product.vialImages[size];
+        }
       });
       el.appendChild(btn);
     });
@@ -504,7 +509,13 @@ window.cartCheckout = function() {
     document.getElementById('product-not-found').style.display = 'none';
     document.getElementById('product-content').style.display = 'block';
     var pImg = document.getElementById('product-img');
-    if (pImg) pImg.src = '/images/vials/' + p.id + '.png';
+    if (pImg) {
+      if (p.vialImages && p.vialSizes && p.vialImages[p.vialSizes[0]]) {
+        pImg.src = p.vialImages[p.vialSizes[0]];
+      } else {
+        pImg.src = '/images/vials/' + p.id + '.png';
+      }
+    }
   }
 
   document.getElementById('qty-minus').addEventListener('click', function() {
@@ -568,3 +579,4 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 </body>
 </html>
+                                                                                                  
