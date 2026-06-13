@@ -166,7 +166,7 @@ body.cart-open iframe[src*="tawk"]{display:none!important}
     <div id="product-content" style="display:none">
       <div class="product-grid">
         <div class="product-visual" aria-hidden="true">
-          <img src="/images/vial-placeholder.jpg" alt="Pep Suppliers vials" style="width:100%;max-width:420px;height:auto;border-radius:12px;object-fit:cover;">
+          <img id="product-img" src="/images/vial-placeholder.jpg" alt="Pep Suppliers vials" style="width:100%;height:auto;display:block;border-radius:12px;">
         </div>
         <div class="product-info">
           <h1 id="product-name"></h1>
@@ -503,6 +503,8 @@ window.cartCheckout = function() {
     renderVialSelector(p.vialSizes || []);
     document.getElementById('product-not-found').style.display = 'none';
     document.getElementById('product-content').style.display = 'block';
+    var pImg = document.getElementById('product-img');
+    if (pImg) pImg.src = '/images/vials/' + p.id + '.png';
   }
 
   document.getElementById('qty-minus').addEventListener('click', function() {
