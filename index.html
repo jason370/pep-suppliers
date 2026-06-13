@@ -6979,6 +6979,7 @@ input.invalid{
   <div class="drawer-panel">
     <button class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
     <div class="drawer-body">
+      <img id="drawer-img" src="" alt="" style="width:100%;height:auto;display:block;border-radius:10px;margin-bottom:16px;background:#f7f7f8;">
       <p class="drawer-category" id="drawer-category"></p>
       <h2 class="drawer-name" id="drawer-name"></h2>
       <p class="drawer-desc" id="drawer-desc"></p>
@@ -7004,6 +7005,14 @@ input.invalid{
     document.getElementById('drawer-category').textContent = product.category || '';
     document.getElementById('drawer-name').textContent = product.name || '';
     document.getElementById('drawer-desc').textContent = product.description || 'Research Use Only';
+    // Set drawer image from product's primary catno
+    var drawerImgEl = document.getElementById('drawer-img');
+    if (drawerImgEl) {
+      var sizeImgs = (window._sizeImages && window._sizeImages[product.id]) || {};
+      var firstSize = (product.vialSizes || [])[0];
+      var imgSrc = sizeImgs[firstSize] || 'images/vials/' + product.id + '.png';
+      drawerImgEl.src = imgSrc;
+    }
     document.getElementById('drawer-price').textContent = product.price || 'Contact for price';
 
     var vialsEl = document.getElementById('drawer-vials');
@@ -7568,6 +7577,7 @@ s0.parentNode.insertBefore(s1,s0);
   <div class="drawer-panel">
     <button class="drawer-close" id="drawer-close" aria-label="Close">&times;</button>
     <div class="drawer-body">
+      <img id="drawer-img" src="" alt="" style="width:100%;height:auto;display:block;border-radius:10px;margin-bottom:16px;background:#f7f7f8;">
       <p class="drawer-category" id="drawer-category"></p>
       <h2 class="drawer-name" id="drawer-name"></h2>
       <p class="drawer-desc" id="drawer-desc"></p>
@@ -7593,6 +7603,14 @@ s0.parentNode.insertBefore(s1,s0);
     document.getElementById('drawer-category').textContent = product.category || '';
     document.getElementById('drawer-name').textContent = product.name || '';
     document.getElementById('drawer-desc').textContent = product.description || 'Research Use Only';
+    // Set drawer image from product's primary catno
+    var drawerImgEl = document.getElementById('drawer-img');
+    if (drawerImgEl) {
+      var sizeImgs = (window._sizeImages && window._sizeImages[product.id]) || {};
+      var firstSize = (product.vialSizes || [])[0];
+      var imgSrc = sizeImgs[firstSize] || 'images/vials/' + product.id + '.png';
+      drawerImgEl.src = imgSrc;
+    }
     document.getElementById('drawer-price').textContent = product.price || 'Contact for price';
 
     var vialsEl = document.getElementById('drawer-vials');
