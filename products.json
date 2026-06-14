@@ -14,9 +14,9 @@
       "50mg"
     ],
     "vialImages": {
-      "5mg": "/images/cropped_vials/5AM.png",
-      "10mg": "/images/cropped_vials/10AM.png",
-      "50mg": "/images/cropped_vials/50AM.png"
+      "5mg": "/images/vials/5AM.png",
+      "10mg": "/images/vials/10AM.png",
+      "50mg": "/images/vials/50AM.png"
     },
     "tags": [],
     "dataAttributes": {
@@ -73,6 +73,9 @@
     },
     "prices": {
       "1mg": "$28.00"
+    },
+    "vialImages": {
+      "1mg": "/images/vials/AE1.png"
     }
   },
   {
@@ -94,6 +97,9 @@
     },
     "prices": {
       "5mg": "$21.00"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/A15.png"
     }
   },
   {
@@ -117,6 +123,10 @@
     "prices": {
       "5mg": "$26.95",
       "10mg": "$38.50"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/ADA5.png",
+      "10mg": "/images/vials/ADA10.png"
     }
   },
   {
@@ -140,6 +150,10 @@
     "prices": {
       "2mg": "$22.75",
       "5mg": "$45.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/AP2.png",
+      "5mg": "/images/vials/AP5.png"
     }
   },
   {
@@ -163,6 +177,10 @@
     "prices": {
       "50mg": "$14.00",
       "100mg": "$23.80"
+    },
+    "vialImages": {
+      "50mg": "/images/vials/AU50.png",
+      "100mg": "/images/vials/AU100.png"
     }
   },
   {
@@ -186,6 +204,10 @@
     "prices": {
       "50mg": "$16.10",
       "100mg": "$28.00"
+    },
+    "vialImages": {
+      "50mg": "/images/vials/AICAR50.png",
+      "100mg": "/images/vials/AICAR100.png"
     }
   },
   {
@@ -211,6 +233,11 @@
       "2mg": "$14.35",
       "5mg": "$28.00",
       "10mg": "$52.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/2AD.png",
+      "5mg": "/images/vials/5AD.png",
+      "10mg": "/images/vials/10AD.png"
     }
   },
   {
@@ -232,6 +259,9 @@
     },
     "prices": {
       "10mg": "$21.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/RA10.png"
     }
   },
   {
@@ -255,6 +285,10 @@
     "prices": {
       "2mg": "$19.25",
       "10mg": "$70.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/B733-2.png",
+      "10mg": "/images/vials/B733-10.png"
     }
   },
   {
@@ -282,6 +316,12 @@
       "5mg": "$12.60",
       "10mg": "$19.25",
       "20mg": "$35.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/BC2.png",
+      "5mg": "/images/vials/BC5.png",
+      "10mg": "/images/vials/BB10.png",
+      "20mg": "/images/vials/BB20.png"
     }
   },
   {
@@ -309,6 +349,12 @@
       "10mg": "$29.75",
       "20mg": "$49.00",
       "30mg": "$80.50"
+    },
+    "vialImages": {
+      "4mg": "/images/vials/BB4.png",
+      "10mg": "/images/vials/BB10.png",
+      "20mg": "/images/vials/BB20.png",
+      "30mg": "/images/vials/BB30.png"
     }
   },
   {
@@ -330,6 +376,9 @@
     },
     "prices": {
       "20mg": "$32.20"
+    },
+    "vialImages": {
+      "20mg": "/images/vials/B20.png"
     }
   },
   {
@@ -355,6 +404,11 @@
       "5mg": "$28.00",
       "10mg": "$48.65",
       "20mg": "$85.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/CGL5.png",
+      "10mg": "/images/vials/CGL10.png",
+      "20mg": "/images/vials/CGL20.png"
     }
   },
   {
@@ -376,6 +430,9 @@
     },
     "prices": {
       "10mg": "$49.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/CS10.png"
     }
   },
   {
@@ -397,6 +454,9 @@
     },
     "prices": {
       "20mg": "$34.30"
+    },
+    "vialImages": {
+      "20mg": "/images/vials/CAD20.png"
     }
   },
   {
@@ -418,6 +478,9 @@
     },
     "prices": {
       "20mg": "$32.55"
+    },
+    "vialImages": {
+      "20mg": "/images/vials/Cart20.png"
     }
   },
   {
@@ -443,6 +506,11 @@
       "2mg": "$10.50",
       "5mg": "$24.50",
       "10mg": "$47.25"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/CND2.png",
+      "5mg": "/images/vials/CND5.png",
+      "10mg": "/images/vials/CND10.png"
     }
   },
   {
@@ -465,6 +533,10 @@
     },
     "prices": {
       "10mg": "$32.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/CP10.png",
+      "20mg": "/images/vials/CP20.png"
     }
   },
   {
@@ -488,6 +560,10 @@
     "prices": {
       "2mg": "$21.00",
       "5mg": "$49.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/CD2.png",
+      "5mg": "/images/vials/CD5.png"
     }
   },
   {
@@ -509,6 +585,9 @@
     },
     "prices": {
       "20mg": "$34.30"
+    },
+    "vialImages": {
+      "20mg": "/images/vials/COR20.png"
     }
   },
   {
@@ -530,6 +609,9 @@
     },
     "prices": {
       "20mg": "$23.45"
+    },
+    "vialImages": {
+      "20mg": "/images/vials/C20.png"
     }
   },
   {
@@ -553,6 +635,10 @@
     "prices": {
       "5mg": "$12.25",
       "10mg": "$29.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/DR5.png",
+      "10mg": "/images/vials/DR10.png"
     }
   },
   {
@@ -574,6 +660,9 @@
     },
     "prices": {
       "10mg": "$45.50"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/DIHEXA.png"
     }
   },
   {
@@ -603,6 +692,13 @@
       "10mg": "$21.00",
       "12mg": "$35.00",
       "15mg": "$29.75"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/DS2.png",
+      "5mg": "/images/vials/DS5.png",
+      "10mg": "/images/vials/DS10.png",
+      "12mg": "/images/vials/DS12.png",
+      "15mg": "/images/vials/DS15.png"
     }
   },
   {
@@ -626,6 +722,10 @@
     "prices": {
       "5mg": "$52.15",
       "10mg": "$92.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/D5.png",
+      "10mg": "/images/vials/D10.png"
     }
   },
   {
@@ -651,6 +751,11 @@
       "5mg": "$14.00",
       "10mg": "$12.25",
       "50mg": "$47.25"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/ET5.png",
+      "10mg": "/images/vials/ET10.png",
+      "50mg": "/images/vials/ET50.png"
     }
   },
   {
@@ -672,6 +777,9 @@
     },
     "prices": {
       "1mg": "$66.50"
+    },
+    "vialImages": {
+      "1mg": "/images/vials/FN1.png"
     }
   },
   {
@@ -693,6 +801,9 @@
     },
     "prices": {
       "10mg": "$91.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/F410.png"
     }
   },
   {
@@ -716,6 +827,10 @@
     "prices": {
       "50mg": "$8.75",
       "100mg": "$15.75"
+    },
+    "vialImages": {
+      "50mg": "/images/vials/CU50.png",
+      "100mg": "/images/vials/CU100.png"
     }
   },
   {
@@ -739,6 +854,10 @@
     "prices": {
       "5mg": "$8.75",
       "10mg": "$15.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/G25.png",
+      "10mg": "/images/vials/G210.png"
     }
   },
   {
@@ -762,6 +881,10 @@
     "prices": {
       "5mg": "$8.75",
       "10mg": "$15.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/G65.png",
+      "10mg": "/images/vials/G610.png"
     }
   },
   {
@@ -785,6 +908,10 @@
     "prices": {
       "50mg": "$47.25",
       "70mg": "$52.50"
+    },
+    "vialImages": {
+      "50mg": "/images/vials/GLOW50.png",
+      "70mg": "/images/vials/GLOW.png"
     }
   },
   {
@@ -806,6 +933,9 @@
     },
     "prices": {
       "2mg": "$10.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/GND2.png"
     }
   },
   {
@@ -829,6 +959,10 @@
     "prices": {
       "2mg": "$12.25",
       "5mg": "$17.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/HX2.png",
+      "5mg": "/images/vials/HX5.png"
     }
   },
   {
@@ -862,6 +996,15 @@
       "15IU": "$22.75",
       "24IU": "$37.80",
       "36IU": "$52.50"
+    },
+    "vialImages": {
+      "6IU": "/images/vials/H06.png",
+      "8IU": "/images/vials/H08.png",
+      "10IU": "/images/vials/H10.png",
+      "12IU": "/images/vials/H12.png",
+      "15IU": "/images/vials/H15.png",
+      "24IU": "/images/vials/H24.png",
+      "36IU": "/images/vials/H36.png"
     }
   },
   {
@@ -887,6 +1030,11 @@
       "2mg": "$12.25",
       "5mg": "$28.00",
       "10mg": "$55.30"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/FR2.png",
+      "5mg": "/images/vials/FR5.png",
+      "10mg": "/images/vials/FR10.png"
     }
   },
   {
@@ -908,6 +1056,9 @@
     },
     "prices": {
       "10mg": "$77.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/HU10.png"
     }
   },
   {
@@ -931,6 +1082,10 @@
     "prices": {
       "1mg": "$63.70",
       "100mcg": "$12.95"
+    },
+    "vialImages": {
+      "1mg": "/images/vials/IG1.png",
+      "100mcg": "/images/vials/IG01.png"
     }
   },
   {
@@ -952,6 +1107,9 @@
     },
     "prices": {
       "2mg": "$16.80"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/IGD.png"
     }
   },
   {
@@ -977,6 +1135,11 @@
       "2mg": "$8.75",
       "5mg": "$11.55",
       "10mg": "$21.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/IP2.png",
+      "5mg": "/images/vials/IP5.png",
+      "10mg": "/images/vials/CP10.png"
     }
   },
   {
@@ -1000,6 +1163,10 @@
     "prices": {
       "5mg": "$15.75",
       "10mg": "$17.50"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/KS5.png",
+      "10mg": "/images/vials/KS10.png"
     }
   },
   {
@@ -1021,6 +1188,9 @@
     },
     "prices": {
       "80mg": "$59.50"
+    },
+    "vialImages": {
+      "80mg": "/images/vials/KLOW80.png"
     }
   },
   {
@@ -1044,6 +1214,10 @@
     "prices": {
       "5mg": "$14.00",
       "10mg": "$18.90"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/KP5.png",
+      "10mg": "/images/vials/KP10.png"
     }
   },
   {
@@ -1065,6 +1239,9 @@
     },
     "prices": {
       "10mg/ml/vial": "$42.70"
+    },
+    "vialImages": {
+      "10mg/ml/vial": "/images/vials/LC216.png"
     }
   },
   {
@@ -1089,6 +1266,10 @@
     "prices": {
       "10IU": "$19.25",
       "10ml": "$52.50"
+    },
+    "vialImages": {
+      "10IU": "/images/vials/LBIU.png",
+      "10ml": "/images/vials/LB.png"
     }
   },
   {
@@ -1114,6 +1295,11 @@
       "5mg": "$28.35",
       "10mg": "$50.40",
       "30mg": "$151.20"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/L5.png",
+      "10mg": "/images/vials/L10.png",
+      "30mg": "/images/vials/L30.png"
     }
   },
   {
@@ -1135,6 +1321,9 @@
     },
     "prices": {
       "5mg": "$28.00"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/LL37.png"
     }
   },
   {
@@ -1156,6 +1345,9 @@
     },
     "prices": {
       "10mg": "$11.90"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/M10.png"
     }
   },
   {
@@ -1179,6 +1371,10 @@
     "prices": {
       "5mg": "$41.65",
       "10mg": "$68.25"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/MDT5.png",
+      "10mg": "/images/vials/MDT10.png"
     }
   },
   {
@@ -1200,6 +1396,9 @@
     },
     "prices": {
       "10mg": "$14.35"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/MT1.png"
     }
   },
   {
@@ -1223,6 +1422,10 @@
     "prices": {
       "5mg": "$11.90",
       "10mg": "$14.35"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/ML5.png",
+      "10mg": "/images/vials/ML10.png"
     }
   },
   {
@@ -1244,6 +1447,9 @@
     },
     "prices": {
       "2mg": "$10.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/FM2.png"
     }
   },
   {
@@ -1271,6 +1477,12 @@
       "10mg": "$18.20",
       "20mg": "$38.50",
       "40mg": "$60.55"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/MS5.png",
+      "10mg": "/images/vials/MS10.png",
+      "20mg": "/images/vials/MS20.png",
+      "40mg": "/images/vials/MS40.png"
     }
   },
   {
@@ -1296,6 +1508,11 @@
       "100mg": "$14.00",
       "500mg": "$17.50",
       "1000mg": "$26.25"
+    },
+    "vialImages": {
+      "100mg": "/images/vials/NJ100.png",
+      "500mg": "/images/vials/NJ500.png",
+      "1000mg": "/images/vials/NJ1000.png"
     }
   },
   {
@@ -1317,6 +1534,9 @@
     },
     "prices": {
       "10mg": "$202.30"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/OA10.png"
     }
   },
   {
@@ -1340,6 +1560,10 @@
     "prices": {
       "5mg": "$40.60",
       "10mg": "$81.90"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/OB5.png",
+      "10mg": "/images/vials/OB10.png"
     }
   },
   {
@@ -1365,6 +1589,11 @@
       "2mg": "$8.75",
       "5mg": "$12.95",
       "10mg": "$21.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/OT2.png",
+      "5mg": "/images/vials/OT5.png",
+      "10mg": "/images/vials/OT10.png"
     }
   },
   {
@@ -1386,6 +1615,9 @@
     },
     "prices": {
       "5mg": "$99.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/P21.png"
     }
   },
   {
@@ -1409,6 +1641,10 @@
     "prices": {
       "5mg": "$12.25",
       "10mg": "$25.20"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/PE5.png",
+      "10mg": "/images/vials/PE10.png"
     }
   },
   {
@@ -1430,6 +1666,9 @@
     },
     "prices": {
       "2mg": "$24.50"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/FMP2.png"
     }
   },
   {
@@ -1455,6 +1694,11 @@
       "5mg": "$11.90",
       "10mg": "$19.25",
       "20mg": "$35.00"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/PI5.png",
+      "10mg": "/images/vials/PIN10.png",
+      "20mg": "/images/vials/PI20.png"
     }
   },
   {
@@ -1476,6 +1720,9 @@
     },
     "prices": {
       "5mg": "$29.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/P25.png"
     }
   },
   {
@@ -1497,6 +1744,9 @@
     },
     "prices": {
       "10mg": "$19.25"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/P41.png"
     }
   },
   {
@@ -1518,6 +1768,9 @@
     },
     "prices": {
       "1mg": "$20.65"
+    },
+    "vialImages": {
+      "1mg": "/images/vials/PD1.png"
     }
   },
   {
@@ -1539,6 +1792,9 @@
     },
     "prices": {
       "50mg": "$19.60"
+    },
+    "vialImages": {
+      "50mg": "/images/vials/RA50.png"
     }
   },
   {
@@ -1576,6 +1832,17 @@
       "50mg": "$87.50",
       "60mg": "$101.50",
       "100mg": "$113.75"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/RT5.png",
+      "10mg": "/images/vials/RT10.png",
+      "15mg": "/images/vials/RT15.png",
+      "20mg": "/images/vials/RT20.png",
+      "30mg": "/images/vials/RT30.png",
+      "40mg": "/images/vials/RT40.png",
+      "50mg": "/images/vials/RT50.png",
+      "60mg": "/images/vials/RT60.png",
+      "100mg": "/images/vials/RT100.png"
     }
   },
   {
@@ -1597,6 +1864,9 @@
     },
     "prices": {
       "10mg": "$70.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/RC10.png"
     }
   },
   {
@@ -1622,6 +1892,11 @@
       "5mg": "$14.00",
       "10mg": "$17.50",
       "30mg": "$56.00"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/SK5.png",
+      "10mg": "/images/vials/SK10.png",
+      "30mg": "/images/vials/SK30.png"
     }
   },
   {
@@ -1655,6 +1930,15 @@
       "20mg": "$22.75",
       "30mg": "$29.75",
       "50mg": "$63.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/SM2.png",
+      "5mg": "/images/vials/SM5.png",
+      "10mg": "/images/vials/SM10.png",
+      "15mg": "/images/vials/SM15.png",
+      "20mg": "/images/vials/SM20.png",
+      "30mg": "/images/vials/SM30.png",
+      "50mg": "/images/vials/SM50.png"
     }
   },
   {
@@ -1682,6 +1966,12 @@
       "10mg": "$17.50",
       "11mg": "$24.85",
       "30mg": "$49.00"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/XA5.png",
+      "10mg": "/images/vials/XA10.png",
+      "11mg": "/images/vials/XA11.png",
+      "30mg": "/images/vials/XA30.png"
     }
   },
   {
@@ -1707,6 +1997,11 @@
       "2mg": "$14.00",
       "5mg": "$19.25",
       "10mg": "$33.25"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/SMO2.png",
+      "5mg": "/images/vials/SMO5.png",
+      "10mg": "/images/vials/SMO10.png"
     }
   },
   {
@@ -1728,6 +2023,9 @@
     },
     "prices": {
       "5mg": "$24.50"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/SLU5.png"
     }
   },
   {
@@ -1749,6 +2047,9 @@
     },
     "prices": {
       "10mg": "$54.95"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/CS10B.png"
     }
   },
   {
@@ -1770,6 +2071,9 @@
     },
     "prices": {
       "10mg": "$12.25"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/NP810.png"
     }
   },
   {
@@ -1793,6 +2097,10 @@
     "prices": {
       "10mg": "$26.25",
       "50mg": "$98.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/2S10.png",
+      "50mg": "/images/vials/2S50.png"
     }
   },
   {
@@ -1818,6 +2126,11 @@
       "2mg": "$35.00",
       "5mg": "$63.00",
       "10mg": "$70.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/SUR2.png",
+      "5mg": "/images/vials/SUR5.png",
+      "10mg": "/images/vials/SUR10.png"
     }
   },
   {
@@ -1845,6 +2158,12 @@
       "5mg": "$21.00",
       "10mg": "$38.50",
       "20mg": "$98.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/BT2.png",
+      "5mg": "/images/vials/BT5.png",
+      "10mg": "/images/vials/BT10.png",
+      "20mg": "/images/vials/BT20.png"
     }
   },
   {
@@ -1872,6 +2191,12 @@
       "5mg": "$30.80",
       "10mg": "$51.80",
       "20mg": "$84.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/TSM2.png",
+      "5mg": "/images/vials/TSM5.png",
+      "10mg": "/images/vials/TSM10.png",
+      "20mg": "/images/vials/TSM20.png"
     }
   },
   {
@@ -1894,6 +2219,10 @@
     },
     "prices": {
       "10mg": "$36.00"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/TI10.png",
+      "15mg": "/images/vials/TI15.png"
     }
   },
   {
@@ -1915,6 +2244,9 @@
     },
     "prices": {
       "10mg": "$19.25"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/TY10.png"
     }
   },
   {
@@ -1940,6 +2272,11 @@
       "2mg": "$16.80",
       "5mg": "$26.25",
       "10mg": "$49.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/TA2.png",
+      "5mg": "/images/vials/TA5.png",
+      "10mg": "/images/vials/TA10.png"
     }
   },
   {
@@ -1991,6 +2328,24 @@
       "90mg": "$91.00",
       "100mg": "$84.00",
       "120mg": "$105.00"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/TR2.png",
+      "5mg": "/images/vials/TR5.png",
+      "10mg": "/images/vials/TR10.png",
+      "12mg": "/images/vials/TR12.png",
+      "15mg": "/images/vials/TR15.png",
+      "20mg": "/images/vials/TR20.png",
+      "30mg": "/images/vials/TR30.png",
+      "40mg": "/images/vials/TR40.png",
+      "45mg": "/images/vials/TR45.png",
+      "50mg": "/images/vials/TR50.png",
+      "60mg": "/images/vials/TR60.png",
+      "70mg": "/images/vials/TR70.png",
+      "80mg": "/images/vials/TR70.png",
+      "90mg": "/images/vials/TR70.png",
+      "100mg": "/images/vials/TR120.png",
+      "120mg": "/images/vials/TR120.png"
     }
   },
   {
@@ -2012,6 +2367,9 @@
     },
     "prices": {
       "2mg": "$13.65"
+    },
+    "vialImages": {
+      "2mg": "/images/vials/TRI2.png"
     }
   },
   {
@@ -2035,6 +2393,10 @@
     "prices": {
       "10mg": "$21.70",
       "20mg": "$36.05"
+    },
+    "vialImages": {
+      "10mg": "/images/vials/VE10.png",
+      "20mg": "/images/vials/VE20.png"
     }
   },
   {
@@ -2058,6 +2420,10 @@
     "prices": {
       "5mg": "$26.25",
       "10mg": "$38.50"
+    },
+    "vialImages": {
+      "5mg": "/images/vials/VP5.png",
+      "10mg": "/images/vials/VP10.png"
     }
   }
 ]
