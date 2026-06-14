@@ -38,6 +38,11 @@
       "10mg",
       "50mg"
     ],
+    "vialImages": {
+      "5mg": "/images/vials/5AM.png",
+      "10mg": "/images/vials/10AM.png",
+      "50mg": "/images/vials/50AM.png"
+    },
     "tags": [],
     "dataAttributes": {
       "data-category": "Other Research",
