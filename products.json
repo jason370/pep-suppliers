@@ -39,9 +39,9 @@
       "50mg"
     ],
     "vialImages": {
-      "5mg": "/images/vials/5AM.png",
-      "10mg": "/images/vials/10AM.png",
-      "50mg": "/images/vials/50AM.png"
+      "5mg": "/images/cards/5AM-front.png",
+      "10mg": "/images/cards/10AM-front.png",
+      "50mg": "/images/cards/50AM-front.png"
     },
     "tags": [],
     "dataAttributes": {
