@@ -6505,14 +6505,14 @@ input.invalid{
         </div>
       </div>
       <div class="price-list-tabs" role="tablist" aria-label="Price list options">
-        <button class="price-list-tab active" type="button" role="tab" aria-selected="true" data-pdf="pep-suppliers-us-warehouse-price-list.pdf" data-download="Pep-Suppliers-US-Warehouse-Price-List.pdf" data-title="Pep Suppliers US Warehouse Price List">US Warehouse</button>
+        <button class="price-list-tab active" type="button" role="tab" aria-selected="true" data-pdf="pep-suppliers-us-warehouse-price-list.pdf" data-html="pep-suppliers-us-warehouse-price-list.html" data-download="Pep-Suppliers-US-Warehouse-Price-List.pdf" data-title="Pep Suppliers US Warehouse Price List">US Warehouse</button>
         <button class="price-list-tab" type="button" role="tab" aria-selected="false" data-pdf="pep-suppliers-china-warehouse-10-vial-kit-price-list.pdf" data-download="Pep-Suppliers-China-Warehouse-10-Vial-Kit-Price-List.pdf" data-title="Pep Suppliers China Warehouse 10 Vial Kit Price List">China Warehouse (10 Vial Kit)</button>
       </div>
       <div class="price-list-actions">
         <a class="price-list-download" id="price-list-download" href="pep-suppliers-us-warehouse-price-list.pdf" download="Pep-Suppliers-US-Warehouse-Price-List.pdf">Download PDF</a>
-        <a class="price-list-view" id="price-list-view" href="pep-suppliers-us-warehouse-price-list.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <a class="price-list-view" id="price-list-view" href="pep-suppliers-us-warehouse-price-list.html" target="_blank" rel="noopener">Open in new tab</a>
       </div>
-      <iframe class="price-list-frame" id="price-list-frame" src="pep-suppliers-us-warehouse-price-list.pdf" title="Pep Suppliers US Warehouse Price List"></iframe>
+      <iframe class="price-list-frame" id="price-list-frame" src="pep-suppliers-us-warehouse-price-list.html" title="Pep Suppliers US Warehouse Price List"></iframe>
     </div>
   </section>
   <script>
@@ -6525,13 +6525,15 @@ input.invalid{
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
       var pdf = tab.getAttribute('data-pdf');
+      var html = tab.getAttribute('data-html');
+      var preview = html || pdf;
       var dl = tab.getAttribute('data-download');
       var title = tab.getAttribute('data-title');
       document.getElementById('price-list-download').href = pdf;
       document.getElementById('price-list-download').setAttribute('download', dl);
-      document.getElementById('price-list-view').href = pdf;
+      document.getElementById('price-list-view').href = preview;
       var frame = document.getElementById('price-list-frame');
-      frame.src = pdf;
+      frame.src = preview;
       frame.title = title;
     });
   });
@@ -6874,6 +6876,24 @@ input.invalid{
     return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;');
   }
 
+  function applyProductPrices(card, product) {
+    if (!product.prices) return;
+    card.querySelectorAll('.size-pill').forEach(function(pill) {
+      var size = pill.textContent.trim();
+      var cardPrice = pill.getAttribute('data-price');
+      var jsonPrice = product.prices[size];
+      if ((!cardPrice || cardPrice === '') && jsonPrice) {
+        pill.setAttribute('data-price', jsonPrice);
+      }
+    });
+    var active = card.querySelector('.size-pill.active') || card.querySelector('.size-pill');
+    var priceEl = card.querySelector('.price');
+    if (priceEl && active) {
+      var dp = active.getAttribute('data-price');
+      if (dp) priceEl.textContent = dp;
+    }
+  }
+
   function renderCard(p){
     var inner = CARD_INNER_HTML[p.id];
     if (!inner) return '';
@@ -6907,6 +6927,11 @@ input.invalid{
           var pool = visible.filter(function(p){ return p.warehouse === 'US Warehouse'; });
           var filtered = cat ? pool.filter(function(p){ return p.category === cat; }) : pool;
           grid.innerHTML = filtered.map(renderCard).join('\n');
+          grid.querySelectorAll('.product-card').forEach(function(card) {
+            var id = card.getAttribute('data-id');
+            var product = filtered.find(function(p){ return p.id === id; });
+            if (product) applyProductPrices(card, product);
+          });
           grid.querySelectorAll('.size-pill:first-child').forEach(function(pill){ pill.classList.add('active'); });
           updateCounts(pool);
         }
