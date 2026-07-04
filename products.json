@@ -211,8 +211,12 @@
       "100mg": "$24.00"
     },
     "vialImages": {
-      "50mg": "/images/vials/AICAR50.png",
-      "100mg": "/images/vials/AICAR100.png"
+      "50mg": "/images/vials/AR50.png",
+      "100mg": "/images/vials/AR100.png"
+    },
+    "catalogNos": {
+      "50mg": "AR50",
+      "100mg": "AR100"
     }
   },
   {
