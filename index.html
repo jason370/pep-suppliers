@@ -6284,6 +6284,16 @@ input.invalid{
 .contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center}
 .contact-chat-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--teal);color:#fff;padding:14px 26px;border-radius:12px;font-weight:900;font-size:16px;border:none;cursor:pointer;transition:opacity .15s ease}
 .contact-chat-btn:hover{opacity:.88}
+.price-list-section{background:linear-gradient(180deg,#FFFFFF,#F8FAFC);padding:56px 0 64px}
+.price-list-section .section-head{margin-bottom:22px}
+.price-list-section h2{margin:0 0 10px;font-size:clamp(26px,3vw,32px);color:var(--navy);font-weight:950}
+.price-list-section p{margin:0;color:#566574;line-height:1.65;font-size:16px;max-width:720px}
+.price-list-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 18px}
+.price-list-download,.price-list-view{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:12px;font-weight:900;font-size:16px;text-decoration:none;transition:opacity .15s ease}
+.price-list-download{background:var(--teal);color:#fff;border:none;cursor:pointer}
+.price-list-view{background:#fff;color:var(--navy);border:1px solid var(--border)}
+.price-list-download:hover,.price-list-view:hover{opacity:.88}
+.price-list-frame{width:100%;min-height:720px;border:1px solid var(--border);border-radius:14px;background:#fff;box-shadow:var(--shadow-soft)}
 .chat-fab{position:fixed;right:22px;bottom:22px;z-index:99999;width:56px;height:56px;border-radius:50%;border:none;background:var(--teal);color:#fff;box-shadow:0 8px 24px rgba(13,109,114,.35);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s ease,box-shadow .15s ease}
 .chat-fab:hover{transform:scale(1.05);box-shadow:0 10px 28px rgba(13,109,114,.45)}
 #tawkchat-minified-box,#tawkchat-minified-wrapper{display:none!important}
@@ -6484,11 +6494,27 @@ input.invalid{
     </div>
   </section>
 
+  <section id="price-list" class="price-list-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>US Warehouse Price List</h2>
+          <p>Download or view the current US Warehouse price list. Pricing is for research-use catalog planning and should be confirmed before ordering.</p>
+        </div>
+      </div>
+      <div class="price-list-actions">
+        <a class="price-list-download" href="pep-suppliers-us-warehouse-price-list.pdf" download="Pep-Suppliers-US-Warehouse-Price-List.pdf">Download PDF</a>
+        <a class="price-list-view" href="pep-suppliers-us-warehouse-price-list.pdf" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+      <iframe class="price-list-frame" src="pep-suppliers-us-warehouse-price-list.pdf" title="Pep Suppliers US Warehouse Price List"></iframe>
+    </div>
+  </section>
+
   <section id="shop" class="catalog-section shop">
     <div class="container">
       <div class="section-head">
         <div>
-          <h2 id="price-list">Browse Peptides</h2>
+          <h2>Browse Peptides</h2>
           <p>103 research-use peptides adapted into the Pep Suppliers catalog with pricing set 60% below the listed reference prices.</p>
         </div>
         <a class="view-all" href="#shop">View all peptides ›</a>
