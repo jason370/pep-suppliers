@@ -2,6 +2,7 @@
  * Regenerate US Warehouse price list HTML/PDF from live catalog.
  * Catalog numbers come from products.json (sync via scripts/sync-catalog-from-price-compare.js).
  */
+const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
