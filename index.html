@@ -38,6 +38,8 @@ button,input,select,textarea{font:inherit}
 #top{position:absolute;top:0;left:0}
 section{scroll-margin-top:88px}
 #price-list{scroll-margin-top:88px}
+#us-warehouse,#overseas-warehouse{scroll-margin-top:88px}
+.warehouse-anchor{height:0;overflow:hidden;pointer-events:none}
 .container{max-width:var(--max);margin:0 auto;padding:0 52px}
 
 /* Header */
@@ -6512,9 +6514,11 @@ input.invalid{
           </div>
           <div class="filter-group">
             <p class="filter-title">Warehouse</p>
+            <div id="us-warehouse" class="warehouse-anchor" aria-hidden="true"></div>
+            <div id="overseas-warehouse" class="warehouse-anchor" aria-hidden="true"></div>
             <div class="warehouse-toggles">
-              <a class="wh-toggle active" href="#us-warehouse">US Warehouse</a>
-              <a class="wh-toggle" href="#overseas-warehouse">Overseas Warehouse</a>
+              <a class="wh-toggle active" href="#us-warehouse" data-warehouse="US Warehouse">US Warehouse</a>
+              <a class="wh-toggle" href="#overseas-warehouse" data-warehouse="Overseas Warehouse">Overseas Warehouse</a>
             </div>
           </div>
         </aside>
@@ -6724,7 +6728,7 @@ input.invalid{
         </div>
       </div>
       <div class="path-grid">
-        <div id="us-warehouse" class="path-card">
+        <div id="us-warehouse-info" class="path-card">
           <h3>US Warehouse</h3>
           <p>Designed for faster fulfillment when timing matters.</p>
           <ul>
@@ -6734,7 +6738,7 @@ input.invalid{
             
           </ul>
         </div>
-        <div id="overseas-warehouse" class="path-card">
+        <div id="overseas-warehouse-info" class="path-card">
           <h3>Overseas Warehouse</h3>
           <p>Designed for planned sourcing and bulk-friendly value paths.</p>
           <ul>
@@ -6851,24 +6855,52 @@ input.invalid{
       .then(function(items){
         window._products = items;
         var visible = items.filter(function(p){ return p.visible === true; });
-        grid.innerHTML = visible.map(renderCard).join('\n');
-        // Update category counts from live data
+        var currentWarehouse = 'US Warehouse';
         var catMap = {'Weight Management':'fc-weight','Recovery & Healing':'fc-recovery','Hormone Support':'fc-hormone','Other Research':'fc-other','Peptide Blends':'fc-blends','Research Kits':'fc-kits'};
-        var overseas = visible.filter(function(p){ return p.warehouse === 'Overseas Warehouse'; });
-        // Update counts dynamically
-        var el = document.getElementById('fc-all'); if(el) el.textContent = overseas.length;
-        Object.keys(catMap).forEach(function(cat){
-          var c = overseas.filter(function(p){ return p.category === cat; }).length;
-          var e = document.getElementById(catMap[cat]); if(e) e.textContent = c;
-        });
-        // Render grid
-        function renderGrid(cat) {
-          var filtered = cat ? overseas.filter(function(p){ return p.category === cat; }) : overseas;
-          grid.innerHTML = filtered.map(renderCard).join('\n');
-          // Re-attach size pill active state
-          grid.querySelectorAll('.size-pill:first-child').forEach(function(pill){ pill.classList.add('active'); });
+
+        function updateCounts(pool) {
+          var el = document.getElementById('fc-all'); if (el) el.textContent = pool.length;
+          Object.keys(catMap).forEach(function(cat) {
+            var c = pool.filter(function(p){ return p.category === cat; }).length;
+            var e = document.getElementById(catMap[cat]); if (e) e.textContent = c;
+          });
         }
-        // Filter row click handler
+
+        function renderGrid(cat) {
+          var pool = visible.filter(function(p){ return p.warehouse === currentWarehouse; });
+          var filtered = cat ? pool.filter(function(p){ return p.category === cat; }) : pool;
+          grid.innerHTML = filtered.map(renderCard).join('\n');
+          grid.querySelectorAll('.size-pill:first-child').forEach(function(pill){ pill.classList.add('active'); });
+          updateCounts(pool);
+        }
+
+        function setWarehouse(wh) {
+          currentWarehouse = wh;
+          document.querySelectorAll('.wh-toggle').forEach(function(toggle) {
+            toggle.classList.toggle('active', toggle.getAttribute('data-warehouse') === wh);
+          });
+          var activeCat = document.querySelector('.filter-row.active');
+          var cat = activeCat ? activeCat.getAttribute('data-cat') : null;
+          renderGrid(cat);
+        }
+
+        function applyHashWarehouse() {
+          var hash = (location.hash || '').replace('#', '');
+          if (hash === 'us-warehouse') setWarehouse('US Warehouse');
+          else if (hash === 'overseas-warehouse') setWarehouse('Overseas Warehouse');
+        }
+
+        document.querySelectorAll('.wh-toggle').forEach(function(toggle) {
+          toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            setWarehouse(toggle.getAttribute('data-warehouse'));
+            var anchorId = toggle.getAttribute('data-warehouse') === 'US Warehouse' ? 'us-warehouse' : 'overseas-warehouse';
+            history.replaceState(null, '', '#' + anchorId);
+            var anchor = document.getElementById(anchorId);
+            if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+
         var filterRows = document.querySelectorAll('.filter-row');
         filterRows.forEach(function(row) {
           row.addEventListener('click', function() {
@@ -6878,8 +6910,13 @@ input.invalid{
             renderGrid(cat);
           });
         });
-        // Initial render (all)
-        renderGrid(null);
+
+        applyHashWarehouse();
+        window.applyHashWarehouse = applyHashWarehouse;
+        window.addEventListener('hashchange', applyHashWarehouse);
+        if (location.hash !== '#us-warehouse' && location.hash !== '#overseas-warehouse') {
+          renderGrid(null);
+        }
       })
       .catch(function(err){ console.error('products.json load failed', err); });
   });
