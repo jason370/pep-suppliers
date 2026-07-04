@@ -6,6 +6,7 @@ const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const products = JSON.parse(fs.readFileSync(path.join(root, 'products.json'), 'utf8')).filter(
   (p) => p.visible && p.warehouse === 'US Warehouse'
 );
+const productsById = Object.fromEntries(products.map((p) => [p.id, p]));
 
 const cardMatch = indexHtml.match(/var CARD_INNER_HTML = (\{[\s\S]*?\});\s*\n\s*window\._sizeImages/);
 const sizeMatch = indexHtml.match(/window\._sizeImages = (\{[\s\S]*?\});\s*\n/);
@@ -18,6 +19,10 @@ const CARD_INNER_HTML = JSON.parse(cardMatch[1]);
 const _sizeImages = JSON.parse(sizeMatch[1]);
 
 function catalogNo(productId, size) {
+  const product = productsById[productId];
+  if (product && product.catalogNos && product.catalogNos[size]) {
+    return product.catalogNos[size];
+  }
   const img = ((_sizeImages[productId] || {})[size] || '').replace(/\\/g, '/');
   const base = path.basename(img, '.png');
   return base || '—';
