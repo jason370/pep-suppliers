@@ -37,6 +37,7 @@ a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit}
 #top{position:absolute;top:0;left:0}
 section{scroll-margin-top:88px}
+#price-list{scroll-margin-top:88px}
 .container{max-width:var(--max);margin:0 auto;padding:0 52px}
 
 /* Header */
@@ -6276,8 +6277,15 @@ input.invalid{
 .contact-simple-inner{max-width:520px;margin:0 auto}
 .contact-simple h2{margin:0 0 12px;font-size:clamp(26px,3vw,32px);color:var(--navy);font-weight:950}
 .contact-simple p{margin:0 0 22px;color:#566574;line-height:1.65;font-size:16px}
-.contact-telegram-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#229ED9;color:#fff;padding:14px 26px;border-radius:12px;font-weight:900;font-size:16px;transition:opacity .15s ease}
+.contact-telegram-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#229ED9;color:#fff;padding:14px 26px;border-radius:12px;font-weight:900;font-size:16px;transition:opacity .15s ease;text-decoration:none}
 .contact-telegram-btn:hover{opacity:.88}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center}
+.contact-chat-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--teal);color:#fff;padding:14px 26px;border-radius:12px;font-weight:900;font-size:16px;border:none;cursor:pointer;transition:opacity .15s ease}
+.contact-chat-btn:hover{opacity:.88}
+.chat-fab{position:fixed;right:22px;bottom:22px;z-index:99999;width:56px;height:56px;border-radius:50%;border:none;background:var(--teal);color:#fff;box-shadow:0 8px 24px rgba(13,109,114,.35);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s ease,box-shadow .15s ease}
+.chat-fab:hover{transform:scale(1.05);box-shadow:0 10px 28px rgba(13,109,114,.45)}
+#tawkchat-minified-box,#tawkchat-minified-wrapper{display:none!important}
+#tawkchat-container,.tawk-max-container,iframe[title="chat widget"],iframe[src*="tawk.to"]{display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;z-index:99998!important}
 
 
 .tg-icon-btn{display:flex;align-items:center;padding:8px;color:#229ED9;transition:opacity .15s}
@@ -6330,8 +6338,6 @@ input.invalid{
 .search-bar-wrap.open{display:flex;gap:8px}
 .search-bar-wrap input{flex:1;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:14px;outline:none}
 .search-bar-wrap input:focus{border-color:var(--teal)}
-/* Hide Tawk "Hi Jason" welcome bubble */
-#tawkchat-minified-box,#tawkchat-minified-wrapper,.tawk-min-container,.tawk-card-container,[class*="tawk-welcome"],[id*="tawk-welcome"]{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
 .header-actions{display:flex;align-items:center;gap:6px;margin-left:auto}
 .hdr-icon-btn{background:none;border:none;cursor:pointer;width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#14253e;transition:background .15s}
 .hdr-icon-btn:hover{background:#EEF8FA;color:var(--teal)}
@@ -6396,7 +6402,8 @@ input.invalid{
           <a href="#build-kit">Build Your Kit <span>›</span></a>
         </div>
       </div>
-<a href="#faq">FAQ</a>
+      <a href="#price-list">Price List</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
     
@@ -6410,6 +6417,10 @@ input.invalid{
       <input type="text" placeholder="Search peptides…" id="hdr-search-input" onkeydown="if(event.key==='Enter'){var q=this.value.trim();if(q){document.getElementById('hdr-search-bar').classList.remove('open');var cards=document.querySelectorAll('.product-card');cards.forEach(function(c){var n=c.querySelector('h3');if(n&&n.textContent.toLowerCase().includes(q.toLowerCase())){c.style.display='';} else {c.style.display='none';}});}}" />
     </div>
   </div>
+  <!-- Live chat -->
+  <button class="hdr-icon-btn" type="button" aria-label="Live chat" onclick="window.openTawkChat()">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
   <!-- Telegram -->
   <a class="hdr-icon-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener" aria-label="Telegram" style="color:#229ED9">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 14.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/></svg>
@@ -6475,7 +6486,7 @@ input.invalid{
     <div class="container">
       <div class="section-head">
         <div>
-          <h2>Browse Peptides</h2>
+          <h2 id="price-list">Browse Peptides</h2>
           <p>103 research-use peptides adapted into the Pep Suppliers catalog with pricing set 60% below the listed reference prices.</p>
         </div>
         <a class="view-all" href="#shop">View all peptides ›</a>
@@ -6763,8 +6774,11 @@ input.invalid{
     <div class="container">
       <div class="contact-simple-inner">
         <h2>Contact</h2>
-        <p>Questions about orders, products, or bulk sourcing? Message us on Telegram.</p>
-        <a class="contact-telegram-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener">@PepSuppliers on Telegram</a>
+        <p>Questions about orders, products, or bulk sourcing? Chat with us live or message on Telegram.</p>
+        <div class="contact-actions">
+          <button type="button" class="contact-chat-btn" onclick="window.openTawkChat()">Live Chat</button>
+          <a class="contact-telegram-btn" href="https://t.me/PepSuppliers" target="_blank" rel="noopener">@PepSuppliers on Telegram</a>
+        </div>
       </div>
     </div>
   </section>
@@ -6777,6 +6791,7 @@ input.invalid{
     <nav>
       <a href="#top">Home</a>
       <a href="#shop">Shop Peptides</a>
+      <a href="#price-list">Price List</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -7256,29 +7271,37 @@ window.cartRender = function() {
   }).join('');
 };
 
+window.openTawkChat = function(beforeOpen) {
+  var run = function() {
+    if (typeof beforeOpen === 'function') beforeOpen();
+    if (window.Tawk_API && window.Tawk_API.showWidget) window.Tawk_API.showWidget();
+    if (window.Tawk_API && window.Tawk_API.maximize) window.Tawk_API.maximize();
+  };
+  if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
+    run();
+  } else {
+    window._pendingTawkOpen = run;
+  }
+};
+
+window.lockTawkVisible = function() {
+  if (!window.Tawk_API) return;
+  window.Tawk_API.hideWidget = function(){};
+  window.Tawk_API.onChatMaximized = function(){};
+};
+
 window.cartCheckout = function() {
   var items = window._cart;
   if (items.length === 0) return;
   var msg = 'Hi, I would like to place an order:\n\n' +
     items.map(function(i){ return '• ' + i.name + ' ' + i.vialSize + ' x' + i.qty + ' — ' + i.price; }).join('\n') +
     '\n\nPlease send me crypto payment details.';
-  // Set Tawk visitor attributes so cart shows in your dashboard
   var cartSummary = items.map(function(i){ return i.name + ' ' + i.vialSize + ' x' + i.qty; }).join(', ');
-  var doOpen = function() {
+  window.openTawkChat(function() {
     if (window.Tawk_API && window.Tawk_API.setAttributes) {
       window.Tawk_API.setAttributes({ 'cart': cartSummary, 'order': msg }, function(err){});
     }
-    if (window.Tawk_API && window.Tawk_API.maximize) {
-      window.Tawk_API.maximize();
-    }
-  };
-  if (window.Tawk_API && window.Tawk_API.maximize) {
-    doOpen();
-  } else {
-    window.Tawk_API = window.Tawk_API || {};
-    var _origLoad = window.Tawk_API.onLoad;
-    window.Tawk_API.onLoad = function() { if (_origLoad) _origLoad(); doOpen(); };
-  }
+  });
   window.cartClose();
 };
 </script>
@@ -7298,14 +7321,18 @@ window.cartCheckout = function() {
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.hideWidget=function(){};
 Tawk_API.onLoad=function(){
-  Tawk_API.hideWidget();
-  var _hc=0,_hi=setInterval(function(){
-    if(Tawk_API&&Tawk_API.hideWidget)Tawk_API.hideWidget();
-    if(++_hc>=20)clearInterval(_hi);
-  },300);
+  window.lockTawkVisible();
+  setInterval(window.lockTawkVisible, 1000);
+  document.querySelectorAll('style').forEach(function(st){
+    if(st.textContent && /iframe\[src\*=.tawk\.to.\].*display\s*:\s*none/i.test(st.textContent)) st.remove();
+  });
+  if (window._pendingTawkOpen) {
+    window._pendingTawkOpen();
+    window._pendingTawkOpen = null;
+  }
 };
-Tawk_API.onChatMaximized=function(){ Tawk_API.hideWidget(); };
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
@@ -7316,7 +7343,10 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-<style>body > div[id^="tawk-"],body > div[class*="tawk-"]{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}iframe[src*="tawk.to"]{display:none!important}</style>
+
+<button class="chat-fab" type="button" aria-label="Live chat" onclick="window.openTawkChat()">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
 
 </body>
 </html>
