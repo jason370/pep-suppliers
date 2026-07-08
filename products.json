@@ -584,7 +584,7 @@
     "id": "cjc-1295-ipamorelin-blend-overseas-warehouse",
     "name": "CJC-1295 & Ipamorelin Blend",
     "category": "Peptide Blends",
-    "price": "$32 – $51",
+    "price": "$32",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -599,8 +599,7 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "10mg": "$32",
-      "20mg": "$51"
+      "10mg": "$32"
     },
     "vialImages": {
       "10mg": "/images/vials/CP10.png",
@@ -1083,7 +1082,7 @@
     "id": "hgh-191aa-somatropin-overseas-warehouse",
     "name": "HGH 191AA (Somatropin)",
     "category": "Hormone Support",
-    "price": "$12.30 – $45",
+    "price": "$14.35 – $52.50",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -1103,13 +1102,13 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "6IU": "$13.50",
-      "8IU": "$12.30",
-      "10IU": "$14.10",
-      "12IU": "$16.20",
-      "15IU": "$19.50",
-      "24IU": "$32.40",
-      "36IU": "$45"
+      "6IU": "$15.75",
+      "8IU": "$14.35",
+      "10IU": "$16.45",
+      "12IU": "$18.90",
+      "15IU": "$22.75",
+      "24IU": "$37.80",
+      "36IU": "$52.50"
     },
     "vialImages": {
       "6IU": "/images/vials/H06.png",
@@ -2448,7 +2447,7 @@
     "id": "tesamorelin-ipamorelin-blend-overseas-warehouse",
     "name": "Tesamorelin & Ipamorelin Blend",
     "category": "Peptide Blends",
-    "price": "$36 – $75",
+    "price": "$36",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -2463,8 +2462,7 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "10mg": "$36",
-      "15mg": "$75"
+      "10mg": "$36"
     },
     "vialImages": {
       "10mg": "/images/vials/TI10.png",

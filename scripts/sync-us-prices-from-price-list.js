@@ -131,13 +131,15 @@ function catalogCode(product, size) {
   return null;
 }
 
-// Parse price list rows — site format: Product · Size · Catalog No · Sale Price
+// Parse price list rows from pep-suppliers-us-warehouse-price-list.html only
 const byCode = new Map();
 const byNameSize = new Map();
 const rowPatterns = [
-  // Original site price list (199 items)
+  // Peptide Price List / US site list: Product · Size · Price (Single Vial)
+  /<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>/gi,
+  // Product · Size · Catalog No · Sale Price
   /<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>/gi,
-  // Legacy Code · Product Name · Price layout
+  // Code · Product Name · Price
   /<td[^>]*class="code"[^>]*>([^<]*)<\/td>\s*<td[^>]*class="name"[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*class="price"[^>]*>([^<]*)<\/td>/gi,
 ];
 
@@ -152,6 +154,11 @@ for (const re of rowPatterns) {
       fullName = decodeEntities(m[2]).trim();
       price = money(m[3]);
       size = parseSizeFromName(fullName);
+    } else if (re.source.includes('class="size"')) {
+      fullName = decodeEntities(m[1]).trim();
+      size = decodeEntities(m[2]).trim().toLowerCase().replace(/\s+/g, '');
+      price = money(m[3]);
+      code = null;
     } else if (m.length >= 5) {
       fullName = decodeEntities(m[1]).trim();
       size = decodeEntities(m[2]).trim().toLowerCase().replace(/\s+/g, '');
@@ -160,12 +167,12 @@ for (const re of rowPatterns) {
     } else {
       continue;
     }
-    if (!code || !price) continue;
+    if (!price) continue;
     rowCount++;
-    byCode.set(code, { price, fullName, size });
+    if (code) byCode.set(code, { price, fullName, size });
     if (fullName && size) {
       const key = norm(fullName) + '|' + size;
-      byNameSize.set(key, { price, code });
+      byNameSize.set(key, { price, code: code || '' });
     }
   }
 }

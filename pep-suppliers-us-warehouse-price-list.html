@@ -16,1221 +16,1016 @@
   th { background: #0f766e; color: #fff; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.04em; }
   tbody tr:nth-child(even) { background: #f8fafc; }
   td.price, th.price { text-align: right; white-space: nowrap; }
-  col.c-product { width: 32%; }
-  col.c-size { width: 10%; }
-  col.c-no { width: 12%; }
-  col.c-price { width: 12%; }
+  td.size, th.size { text-align: center; white-space: nowrap; }
+  col.c-product { width: 50%; }
+  col.c-size { width: 15%; }
+  col.c-price { width: 35%; }
   @media print { .no-print { display: none; } }
 </style>
 </head>
 <body>
   <h1>Pep-Suppliers US Warehouse</h1>
-  <div class="sub">Product · Size · Catalog No · Sale Price · 199 items · Research use only · Generated from live catalog</div>
+  <div class="sub">Product · Size · Price (Single Vial) · 198 items · Research use only</div>
   <table>
     <colgroup>
-      <col class="c-product"><col class="c-size"><col class="c-no"><col class="c-price">
+      <col class="c-product"><col class="c-size"><col class="c-price">
     </colgroup>
     <thead>
       <tr>
         <th>Product</th>
-        <th>Size</th>
-        <th>No</th>
-        <th class="price">Sale Price</th>
+        <th class="size">Size</th>
+        <th class="price">Price (Single Vial)</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>5-Amino-1MQ</td>
-        <td>5mg</td>
-        <td>5AM</td>
+        <td class="size">5mg</td>
         <td class="price">$13.65</td>
       </tr>
       <tr>
         <td>5-Amino-1MQ</td>
-        <td>10mg</td>
-        <td>10AM</td>
+        <td class="size">10mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>5-Amino-1MQ</td>
-        <td>50mg</td>
-        <td>50AM</td>
+        <td class="size">50mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>ACE-031</td>
-        <td>1mg</td>
-        <td>AE1</td>
+        <td class="size">1mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>Acth 1-39</td>
-        <td>5mg</td>
-        <td>A15</td>
+        <td class="size">5mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>Adamax</td>
-        <td>5mg</td>
-        <td>ADA5</td>
+        <td class="size">5mg</td>
         <td class="price">$26.95</td>
       </tr>
       <tr>
         <td>Adamax</td>
-        <td>10mg</td>
-        <td>ADA10</td>
+        <td class="size">10mg</td>
         <td class="price">$38.50</td>
       </tr>
       <tr>
         <td>Adipotide (FTPP)</td>
-        <td>2mg</td>
-        <td>AP2</td>
+        <td class="size">2mg</td>
         <td class="price">$22.75</td>
       </tr>
       <tr>
         <td>Adipotide (FTPP)</td>
-        <td>5mg</td>
-        <td>AP5</td>
+        <td class="size">5mg</td>
         <td class="price">$45.50</td>
       </tr>
       <tr>
         <td>AHK-CU</td>
-        <td>50mg</td>
-        <td>AU50</td>
+        <td class="size">50mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>AHK-CU</td>
-        <td>100mg</td>
-        <td>AU100</td>
+        <td class="size">100mg</td>
         <td class="price">$23.80</td>
       </tr>
       <tr>
         <td>AICAR</td>
-        <td>50mg</td>
-        <td>AR50</td>
+        <td class="size">50mg</td>
         <td class="price">$16.10</td>
       </tr>
       <tr>
         <td>AICAR</td>
-        <td>100mg</td>
-        <td>AR100</td>
+        <td class="size">100mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>AOD 9604</td>
-        <td>2mg</td>
-        <td>2AD</td>
+        <td class="size">2mg</td>
         <td class="price">$14.35</td>
       </tr>
       <tr>
         <td>AOD 9604</td>
-        <td>5mg</td>
-        <td>5AD</td>
+        <td class="size">5mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>AOD 9604</td>
-        <td>10mg</td>
-        <td>10AD</td>
+        <td class="size">10mg</td>
         <td class="price">$52.50</td>
       </tr>
       <tr>
         <td>ARA-290</td>
-        <td>10mg</td>
-        <td>RA10</td>
+        <td class="size">10mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>B7-33</td>
-        <td>2mg</td>
-        <td>B733-2</td>
+        <td class="size">2mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>B7-33</td>
-        <td>10mg</td>
-        <td>B733-10</td>
+        <td class="size">10mg</td>
         <td class="price">$70.00</td>
       </tr>
       <tr>
         <td>BPC-157</td>
-        <td>2mg</td>
-        <td>BC2</td>
+        <td class="size">2mg</td>
         <td class="price">$7.35</td>
       </tr>
       <tr>
         <td>BPC-157</td>
-        <td>5mg</td>
-        <td>BC5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.60</td>
       </tr>
       <tr>
         <td>BPC-157</td>
-        <td>10mg</td>
-        <td>BC10</td>
+        <td class="size">10mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>BPC-157</td>
-        <td>20mg</td>
-        <td>BC20</td>
+        <td class="size">20mg</td>
         <td class="price">$35.00</td>
       </tr>
       <tr>
-        <td>BPC-157 &amp; TB-500 Blend</td>
-        <td>4mg</td>
-        <td>BB4</td>
+        <td>BPC-157 &amp;amp; TB-500 Blend</td>
+        <td class="size">4mg</td>
         <td class="price">$24.50</td>
       </tr>
       <tr>
-        <td>BPC-157 &amp; TB-500 Blend</td>
-        <td>10mg</td>
-        <td>BB10</td>
+        <td>BPC-157 &amp;amp; TB-500 Blend</td>
+        <td class="size">10mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
-        <td>BPC-157 &amp; TB-500 Blend</td>
-        <td>20mg</td>
-        <td>BB20</td>
+        <td>BPC-157 &amp;amp; TB-500 Blend</td>
+        <td class="size">20mg</td>
         <td class="price">$49.00</td>
       </tr>
       <tr>
-        <td>BPC-157 &amp; TB-500 Blend</td>
-        <td>30mg</td>
-        <td>BB30</td>
+        <td>BPC-157 &amp;amp; TB-500 Blend</td>
+        <td class="size">30mg</td>
         <td class="price">$80.50</td>
       </tr>
       <tr>
         <td>Bronchogen</td>
-        <td>20mg</td>
-        <td>B20</td>
+        <td class="size">20mg</td>
         <td class="price">$32.20</td>
       </tr>
       <tr>
         <td>Cagrilintide</td>
-        <td>5mg</td>
-        <td>CGL5</td>
+        <td class="size">5mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>Cagrilintide</td>
-        <td>10mg</td>
-        <td>CGL10</td>
+        <td class="size">10mg</td>
         <td class="price">$48.65</td>
       </tr>
       <tr>
         <td>Cagrilintide</td>
-        <td>20mg</td>
-        <td>CGL20</td>
+        <td class="size">20mg</td>
         <td class="price">$85.75</td>
       </tr>
       <tr>
         <td>Cagrilintide + Semaglutide</td>
-        <td>10mg</td>
-        <td>CS10</td>
+        <td class="size">10mg</td>
         <td class="price">$49.00</td>
       </tr>
       <tr>
         <td>Cardiogen</td>
-        <td>20mg</td>
-        <td>CAD20</td>
+        <td class="size">20mg</td>
         <td class="price">$34.30</td>
       </tr>
       <tr>
         <td>Cartalax</td>
-        <td>20mg</td>
-        <td>Cart20</td>
+        <td class="size">20mg</td>
         <td class="price">$32.55</td>
       </tr>
       <tr>
-        <td>CJC-1295 &amp; Ipamorelin Blend</td>
-        <td>10mg</td>
-        <td>CP10</td>
+        <td>CJC-1295 &amp;amp; Ipamorelin Blend</td>
+        <td class="size">10mg</td>
         <td class="price">$32.00</td>
       </tr>
       <tr>
-        <td>CJC-1295 &amp; Ipamorelin Blend</td>
-        <td>20mg</td>
-        <td>CP20</td>
-        <td class="price">$51.00</td>
-      </tr>
-      <tr>
         <td>CJC-1295 DAC</td>
-        <td>2mg</td>
-        <td>CD2</td>
+        <td class="size">2mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>CJC-1295 DAC</td>
-        <td>5mg</td>
-        <td>CD5</td>
+        <td class="size">5mg</td>
         <td class="price">$49.00</td>
       </tr>
       <tr>
         <td>CJC-1295 NO DAC (Mod GRF 1-29)</td>
-        <td>2mg</td>
-        <td>CND2</td>
+        <td class="size">2mg</td>
         <td class="price">$10.50</td>
       </tr>
       <tr>
         <td>CJC-1295 NO DAC (Mod GRF 1-29)</td>
-        <td>5mg</td>
-        <td>CND5</td>
+        <td class="size">5mg</td>
         <td class="price">$24.50</td>
       </tr>
       <tr>
         <td>CJC-1295 NO DAC (Mod GRF 1-29)</td>
-        <td>10mg</td>
-        <td>CND10</td>
+        <td class="size">10mg</td>
         <td class="price">$47.25</td>
       </tr>
       <tr>
         <td>Cortagen</td>
-        <td>20mg</td>
-        <td>COR20</td>
+        <td class="size">20mg</td>
         <td class="price">$34.30</td>
       </tr>
       <tr>
         <td>Crystagen</td>
-        <td>20mg</td>
-        <td>C20</td>
+        <td class="size">20mg</td>
         <td class="price">$23.45</td>
       </tr>
       <tr>
         <td>Dermorphin</td>
-        <td>5mg</td>
-        <td>DR5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Dermorphin</td>
-        <td>10mg</td>
-        <td>DR10</td>
+        <td class="size">10mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
         <td>Dihexa</td>
-        <td>10mg</td>
-        <td>DIHEXA</td>
+        <td class="size">10mg</td>
         <td class="price">$45.50</td>
       </tr>
       <tr>
         <td>DSIP</td>
-        <td>2mg</td>
-        <td>DS2</td>
+        <td class="size">2mg</td>
         <td class="price">$7.00</td>
       </tr>
       <tr>
         <td>DSIP</td>
-        <td>5mg</td>
-        <td>DS5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.60</td>
       </tr>
       <tr>
         <td>DSIP</td>
-        <td>10mg</td>
-        <td>DS10</td>
+        <td class="size">10mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>DSIP</td>
-        <td>12mg</td>
-        <td>DS12</td>
+        <td class="size">12mg</td>
         <td class="price">$35.00</td>
       </tr>
       <tr>
         <td>DSIP</td>
-        <td>15mg</td>
-        <td>DS15</td>
+        <td class="size">15mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
         <td>Dulaglutide</td>
-        <td>5mg</td>
-        <td>D5</td>
+        <td class="size">5mg</td>
         <td class="price">$52.15</td>
       </tr>
       <tr>
         <td>Dulaglutide</td>
-        <td>10mg</td>
-        <td>D10</td>
+        <td class="size">10mg</td>
         <td class="price">$92.75</td>
       </tr>
       <tr>
         <td>Epithalon</td>
-        <td>5mg</td>
-        <td>ET5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>Epithalon</td>
-        <td>10mg</td>
-        <td>ET10</td>
+        <td class="size">10mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Epithalon</td>
-        <td>50mg</td>
-        <td>ET50</td>
+        <td class="size">50mg</td>
         <td class="price">$47.25</td>
       </tr>
       <tr>
         <td>Follistatin-344</td>
-        <td>1mg</td>
-        <td>FN1</td>
+        <td class="size">1mg</td>
         <td class="price">$66.50</td>
       </tr>
       <tr>
         <td>FOXO4-DRI</td>
-        <td>10mg</td>
-        <td>F410</td>
+        <td class="size">10mg</td>
         <td class="price">$91.00</td>
       </tr>
       <tr>
         <td>Fragment 176-191</td>
-        <td>2mg</td>
-        <td>FR2</td>
+        <td class="size">2mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Fragment 176-191</td>
-        <td>5mg</td>
-        <td>FR5</td>
+        <td class="size">5mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>Fragment 176-191</td>
-        <td>10mg</td>
-        <td>FR10</td>
+        <td class="size">10mg</td>
         <td class="price">$55.30</td>
       </tr>
       <tr>
         <td>GHK-Cu (Copper)</td>
-        <td>50mg</td>
-        <td>CU50</td>
+        <td class="size">50mg</td>
         <td class="price">$8.75</td>
       </tr>
       <tr>
         <td>GHK-Cu (Copper)</td>
-        <td>100mg</td>
-        <td>CU100</td>
+        <td class="size">100mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>GHRP-2</td>
-        <td>5mg</td>
-        <td>G25</td>
+        <td class="size">5mg</td>
         <td class="price">$8.75</td>
       </tr>
       <tr>
         <td>GHRP-2</td>
-        <td>10mg</td>
-        <td>G210</td>
+        <td class="size">10mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>GHRP-6</td>
-        <td>5mg</td>
-        <td>G65</td>
+        <td class="size">5mg</td>
         <td class="price">$8.75</td>
       </tr>
       <tr>
         <td>GHRP-6</td>
-        <td>10mg</td>
-        <td>G610</td>
+        <td class="size">10mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>GLOW</td>
-        <td>50mg</td>
-        <td>GLOW50</td>
+        <td class="size">50mg</td>
         <td class="price">$47.25</td>
       </tr>
       <tr>
         <td>GLOW</td>
-        <td>70mg</td>
-        <td>GLOW</td>
+        <td class="size">70mg</td>
         <td class="price">$52.50</td>
       </tr>
       <tr>
         <td>Gonadorelin (GnRH)</td>
-        <td>2mg</td>
-        <td>GND2</td>
+        <td class="size">2mg</td>
         <td class="price">$10.50</td>
       </tr>
       <tr>
         <td>Hexarelin</td>
-        <td>2mg</td>
-        <td>HX2</td>
+        <td class="size">2mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Hexarelin</td>
-        <td>5mg</td>
-        <td>HX5</td>
+        <td class="size">5mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>6IU</td>
-        <td>H06</td>
-        <td class="price">$13.50</td>
+        <td class="size">6IU</td>
+        <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>8IU</td>
-        <td>H08</td>
-        <td class="price">$12.30</td>
+        <td class="size">8IU</td>
+        <td class="price">$14.35</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>10IU</td>
-        <td>H10</td>
-        <td class="price">$14.10</td>
+        <td class="size">10IU</td>
+        <td class="price">$16.45</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>12IU</td>
-        <td>H12</td>
-        <td class="price">$16.20</td>
+        <td class="size">12IU</td>
+        <td class="price">$18.90</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>15IU</td>
-        <td>H15</td>
-        <td class="price">$19.50</td>
+        <td class="size">15IU</td>
+        <td class="price">$22.75</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>24IU</td>
-        <td>H24</td>
-        <td class="price">$32.40</td>
+        <td class="size">24IU</td>
+        <td class="price">$37.80</td>
       </tr>
       <tr>
         <td>HGH 191AA (Somatropin)</td>
-        <td>36IU</td>
-        <td>H36</td>
-        <td class="price">$45.00</td>
+        <td class="size">36IU</td>
+        <td class="price">$52.50</td>
       </tr>
       <tr>
         <td>Humanin</td>
-        <td>10mg</td>
-        <td>HU10</td>
+        <td class="size">10mg</td>
         <td class="price">$77.00</td>
       </tr>
       <tr>
         <td>IGF-DES</td>
-        <td>2mg</td>
-        <td>IGD</td>
+        <td class="size">2mg</td>
         <td class="price">$16.80</td>
       </tr>
       <tr>
         <td>Ipamorelin</td>
-        <td>2mg</td>
-        <td>IP2</td>
+        <td class="size">2mg</td>
         <td class="price">$8.75</td>
       </tr>
       <tr>
         <td>Ipamorelin</td>
-        <td>5mg</td>
-        <td>IP5</td>
+        <td class="size">5mg</td>
         <td class="price">$11.55</td>
       </tr>
       <tr>
         <td>Ipamorelin</td>
-        <td>10mg</td>
-        <td>IP10</td>
+        <td class="size">10mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>KissPeptin-10</td>
-        <td>5mg</td>
-        <td>KS5</td>
+        <td class="size">5mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>KissPeptin-10</td>
-        <td>10mg</td>
-        <td>KS10</td>
+        <td class="size">10mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>KLOW</td>
-        <td>80mg</td>
-        <td>KLOW80</td>
+        <td class="size">80mg</td>
         <td class="price">$59.50</td>
       </tr>
       <tr>
         <td>KPV</td>
-        <td>5mg</td>
-        <td>KP5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>KPV</td>
-        <td>10mg</td>
-        <td>KP10</td>
+        <td class="size">10mg</td>
         <td class="price">$18.90</td>
       </tr>
       <tr>
         <td>LC216</td>
-        <td>10mg/ml/vial</td>
-        <td>LC216</td>
+        <td class="size">10mg/ml/vial</td>
         <td class="price">$42.70</td>
       </tr>
       <tr>
         <td>Lemon Bottle</td>
-        <td>10IU</td>
-        <td>LBIU</td>
-        <td class="price">$16.50</td>
+        <td class="size">10IU</td>
+        <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>Lemon Bottle</td>
-        <td>10ml</td>
-        <td>LB</td>
+        <td class="size">10ml</td>
+        <td class="price">$52.50</td>
+      </tr>
+      <tr>
+        <td>Lemon Bottle</td>
+        <td class="size">10ml</td>
         <td class="price">$52.50</td>
       </tr>
       <tr>
         <td>Liraglutide</td>
-        <td>5mg</td>
-        <td>L5</td>
+        <td class="size">5mg</td>
         <td class="price">$28.35</td>
       </tr>
       <tr>
         <td>Liraglutide</td>
-        <td>10mg</td>
-        <td>L10</td>
+        <td class="size">10mg</td>
         <td class="price">$50.40</td>
       </tr>
       <tr>
         <td>Liraglutide</td>
-        <td>30mg</td>
-        <td>L30</td>
+        <td class="size">30mg</td>
         <td class="price">$151.20</td>
       </tr>
       <tr>
         <td>LL-37</td>
-        <td>5mg</td>
-        <td>LL37</td>
+        <td class="size">5mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>Matrixyl</td>
-        <td>10mg</td>
-        <td>M10</td>
+        <td class="size">10mg</td>
         <td class="price">$11.90</td>
       </tr>
       <tr>
         <td>Mazdutide</td>
-        <td>5mg</td>
-        <td>MDT5</td>
+        <td class="size">5mg</td>
         <td class="price">$41.65</td>
       </tr>
       <tr>
         <td>Mazdutide</td>
-        <td>10mg</td>
-        <td>MDT10</td>
+        <td class="size">10mg</td>
         <td class="price">$68.25</td>
       </tr>
       <tr>
         <td>Melanotan 1</td>
-        <td>10mg</td>
-        <td>MT1</td>
+        <td class="size">10mg</td>
         <td class="price">$14.35</td>
       </tr>
       <tr>
         <td>Melanotan 2</td>
-        <td>5mg</td>
-        <td>ML5</td>
+        <td class="size">5mg</td>
         <td class="price">$11.90</td>
       </tr>
       <tr>
         <td>Melanotan 2</td>
-        <td>10mg</td>
-        <td>ML10</td>
+        <td class="size">10mg</td>
         <td class="price">$14.35</td>
       </tr>
       <tr>
         <td>MGF IGF-1 EC</td>
-        <td>2mg</td>
-        <td>FM2</td>
+        <td class="size">2mg</td>
         <td class="price">$10.50</td>
       </tr>
       <tr>
         <td>MOTS-C</td>
-        <td>5mg</td>
-        <td>MS5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>MOTS-C</td>
-        <td>10mg</td>
-        <td>MS10</td>
+        <td class="size">10mg</td>
         <td class="price">$18.20</td>
       </tr>
       <tr>
         <td>MOTS-C</td>
-        <td>20mg</td>
-        <td>MS20</td>
+        <td class="size">20mg</td>
         <td class="price">$38.50</td>
       </tr>
       <tr>
         <td>MOTS-C</td>
-        <td>40mg</td>
-        <td>MS40</td>
+        <td class="size">40mg</td>
         <td class="price">$60.55</td>
       </tr>
       <tr>
         <td>N-Acetyl Selank</td>
-        <td>5mg</td>
-        <td>SK5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>N-Acetyl Selank</td>
-        <td>10mg</td>
-        <td>SK10</td>
+        <td class="size">10mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>N-Acetyl Selank</td>
-        <td>30mg</td>
-        <td>SK30</td>
+        <td class="size">30mg</td>
         <td class="price">$56.00</td>
       </tr>
       <tr>
         <td>N-Acetyl Semax</td>
-        <td>5mg</td>
-        <td>XA5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>N-Acetyl Semax</td>
-        <td>10mg</td>
-        <td>XA10</td>
+        <td class="size">10mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>N-Acetyl Semax</td>
-        <td>11mg</td>
-        <td>XA11</td>
+        <td class="size">11mg</td>
         <td class="price">$24.85</td>
       </tr>
       <tr>
         <td>N-Acetyl Semax</td>
-        <td>30mg</td>
-        <td>XA30</td>
+        <td class="size">30mg</td>
         <td class="price">$49.00</td>
       </tr>
       <tr>
         <td>NAD+</td>
-        <td>100mg</td>
-        <td>NJ100</td>
+        <td class="size">100mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>NAD+</td>
-        <td>500mg</td>
-        <td>NJ500</td>
+        <td class="size">500mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>NAD+</td>
-        <td>1000mg</td>
-        <td>NJ1000</td>
+        <td class="size">1000mg</td>
         <td class="price">$26.25</td>
       </tr>
       <tr>
         <td>Orexin A</td>
-        <td>10mg</td>
-        <td>OA10</td>
+        <td class="size">10mg</td>
         <td class="price">$202.30</td>
       </tr>
       <tr>
         <td>Orexin B</td>
-        <td>5mg</td>
-        <td>OB5</td>
+        <td class="size">5mg</td>
         <td class="price">$40.60</td>
       </tr>
       <tr>
         <td>Orexin B</td>
-        <td>10mg</td>
-        <td>OB10</td>
+        <td class="size">10mg</td>
         <td class="price">$81.90</td>
       </tr>
       <tr>
         <td>Oxytocin</td>
-        <td>2mg</td>
-        <td>OT2</td>
+        <td class="size">2mg</td>
         <td class="price">$8.75</td>
       </tr>
       <tr>
         <td>Oxytocin</td>
-        <td>5mg</td>
-        <td>OT5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.95</td>
       </tr>
       <tr>
         <td>Oxytocin</td>
-        <td>10mg</td>
-        <td>OT10</td>
+        <td class="size">10mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>P21</td>
-        <td>5mg</td>
-        <td>P21</td>
+        <td class="size">5mg</td>
         <td class="price">$99.75</td>
       </tr>
       <tr>
         <td>PE-22-28</td>
-        <td>5mg</td>
-        <td>PE5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>PE-22-28</td>
-        <td>10mg</td>
-        <td>PE10</td>
+        <td class="size">10mg</td>
         <td class="price">$25.20</td>
       </tr>
       <tr>
         <td>PEG-MGF</td>
-        <td>2mg</td>
-        <td>FMP2</td>
+        <td class="size">2mg</td>
         <td class="price">$24.50</td>
       </tr>
       <tr>
         <td>Pinealon</td>
-        <td>5mg</td>
-        <td>PI5</td>
+        <td class="size">5mg</td>
         <td class="price">$11.90</td>
       </tr>
       <tr>
         <td>Pinealon</td>
-        <td>10mg</td>
-        <td>PIN10</td>
+        <td class="size">10mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>Pinealon</td>
-        <td>20mg</td>
-        <td>PI20</td>
+        <td class="size">20mg</td>
         <td class="price">$35.00</td>
       </tr>
       <tr>
         <td>PNC-27</td>
-        <td>5mg</td>
-        <td>P25</td>
+        <td class="size">5mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
         <td>PT-141 (Bremelanotide)</td>
-        <td>10mg</td>
-        <td>P41</td>
+        <td class="size">10mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>PTD-DBM</td>
-        <td>1mg</td>
-        <td>PD1</td>
+        <td class="size">1mg</td>
         <td class="price">$20.65</td>
       </tr>
       <tr>
         <td>RA260</td>
-        <td>50mg</td>
-        <td>RA50</td>
+        <td class="size">50mg</td>
         <td class="price">$19.60</td>
       </tr>
       <tr>
         <td>Receptor Grade IGF-1 LR3</td>
-        <td>1mg</td>
-        <td>IG1</td>
-        <td class="price">$63.70</td>
-      </tr>
-      <tr>
-        <td>Receptor Grade IGF-1 LR3</td>
-        <td>100mcg</td>
-        <td>IG01</td>
+        <td class="size">100mcg</td>
         <td class="price">$12.95</td>
       </tr>
       <tr>
+        <td>Receptor Grade IGF-1 LR3</td>
+        <td class="size">1mg</td>
+        <td class="price">$63.70</td>
+      </tr>
+      <tr>
         <td>Retatrutide</td>
-        <td>5mg</td>
-        <td>RT5</td>
+        <td class="size">5mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>10mg</td>
-        <td>RT10</td>
+        <td class="size">10mg</td>
         <td class="price">$28.00</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>15mg</td>
-        <td>RT15</td>
+        <td class="size">15mg</td>
         <td class="price">$36.75</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>20mg</td>
-        <td>RT20</td>
+        <td class="size">20mg</td>
         <td class="price">$45.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>30mg</td>
-        <td>RT30</td>
+        <td class="size">30mg</td>
         <td class="price">$59.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>40mg</td>
-        <td>RT40</td>
+        <td class="size">40mg</td>
         <td class="price">$73.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>50mg</td>
-        <td>RT50</td>
+        <td class="size">50mg</td>
         <td class="price">$87.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>60mg</td>
-        <td>RT60</td>
+        <td class="size">60mg</td>
         <td class="price">$101.50</td>
       </tr>
       <tr>
         <td>Retatrutide</td>
-        <td>100mg</td>
-        <td>RT100</td>
+        <td class="size">100mg</td>
         <td class="price">$113.75</td>
       </tr>
       <tr>
         <td>Retatrutide + Cagrilintide</td>
-        <td>10mg</td>
-        <td>RC10</td>
+        <td class="size">10mg</td>
         <td class="price">$70.00</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>2mg</td>
-        <td>SM2</td>
+        <td class="size">2mg</td>
         <td class="price">$10.15</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>5mg</td>
-        <td>SM5</td>
+        <td class="size">5mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>10mg</td>
-        <td>SM10</td>
+        <td class="size">10mg</td>
         <td class="price">$15.75</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>15mg</td>
-        <td>SM15</td>
+        <td class="size">15mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>20mg</td>
-        <td>SM20</td>
+        <td class="size">20mg</td>
         <td class="price">$22.75</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>30mg</td>
-        <td>SM30</td>
+        <td class="size">30mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
         <td>Semaglutide</td>
-        <td>50mg</td>
-        <td>SM50</td>
+        <td class="size">50mg</td>
         <td class="price">$63.00</td>
       </tr>
       <tr>
         <td>Sermorelin</td>
-        <td>2mg</td>
-        <td>SMO2</td>
+        <td class="size">2mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>Sermorelin</td>
-        <td>5mg</td>
-        <td>SMO5</td>
+        <td class="size">5mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>Sermorelin</td>
-        <td>10mg</td>
-        <td>SMO10</td>
+        <td class="size">10mg</td>
         <td class="price">$33.25</td>
       </tr>
       <tr>
         <td>SLU-PP-322</td>
-        <td>5mg</td>
-        <td>SLU5</td>
+        <td class="size">5mg</td>
         <td class="price">$24.50</td>
       </tr>
       <tr>
         <td>SM5+CGL5</td>
-        <td>10mg</td>
-        <td>CS10B</td>
+        <td class="size">10mg</td>
         <td class="price">$54.95</td>
       </tr>
       <tr>
         <td>Snap-8</td>
-        <td>10mg</td>
-        <td>NP810</td>
+        <td class="size">10mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>SS-31</td>
-        <td>10mg</td>
-        <td>2S10</td>
+        <td class="size">10mg</td>
         <td class="price">$26.25</td>
       </tr>
       <tr>
         <td>SS-31</td>
-        <td>50mg</td>
-        <td>2S50</td>
+        <td class="size">50mg</td>
         <td class="price">$98.00</td>
       </tr>
       <tr>
         <td>Survodutide</td>
-        <td>2mg</td>
-        <td>SUR2</td>
+        <td class="size">2mg</td>
         <td class="price">$35.00</td>
       </tr>
       <tr>
         <td>Survodutide</td>
-        <td>5mg</td>
-        <td>SUR5</td>
+        <td class="size">5mg</td>
         <td class="price">$63.00</td>
       </tr>
       <tr>
         <td>Survodutide</td>
-        <td>10mg</td>
-        <td>SUR10</td>
+        <td class="size">10mg</td>
         <td class="price">$70.00</td>
       </tr>
       <tr>
         <td>TB-500 (Thymosin Beta 4)</td>
-        <td>2mg</td>
-        <td>BT2</td>
+        <td class="size">2mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>TB-500 (Thymosin Beta 4)</td>
-        <td>5mg</td>
-        <td>BT5</td>
+        <td class="size">5mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>TB-500 (Thymosin Beta 4)</td>
-        <td>10mg</td>
-        <td>BT10</td>
+        <td class="size">10mg</td>
         <td class="price">$38.50</td>
       </tr>
       <tr>
         <td>TB-500 (Thymosin Beta 4)</td>
-        <td>20mg</td>
-        <td>BT20</td>
+        <td class="size">20mg</td>
         <td class="price">$98.00</td>
       </tr>
       <tr>
         <td>Tesamorelin</td>
-        <td>2mg</td>
-        <td>TSM2</td>
+        <td class="size">2mg</td>
         <td class="price">$14.70</td>
       </tr>
       <tr>
         <td>Tesamorelin</td>
-        <td>5mg</td>
-        <td>TSM5</td>
+        <td class="size">5mg</td>
         <td class="price">$30.80</td>
       </tr>
       <tr>
         <td>Tesamorelin</td>
-        <td>10mg</td>
-        <td>TSM10</td>
+        <td class="size">10mg</td>
         <td class="price">$51.80</td>
       </tr>
       <tr>
         <td>Tesamorelin</td>
-        <td>20mg</td>
-        <td>TSM20</td>
+        <td class="size">20mg</td>
         <td class="price">$84.00</td>
       </tr>
       <tr>
-        <td>Tesamorelin &amp; Ipamorelin Blend</td>
-        <td>10mg</td>
-        <td>TI10</td>
+        <td>Tesamorelin &amp;amp; Ipamorelin Blend</td>
+        <td class="size">10mg</td>
         <td class="price">$36.00</td>
       </tr>
       <tr>
-        <td>Tesamorelin &amp; Ipamorelin Blend</td>
-        <td>15mg</td>
-        <td>TI15</td>
-        <td class="price">$75.00</td>
-      </tr>
-      <tr>
         <td>Thymalin</td>
-        <td>10mg</td>
-        <td>TY10</td>
+        <td class="size">10mg</td>
         <td class="price">$19.25</td>
       </tr>
       <tr>
         <td>Thymosin Alpha-1</td>
-        <td>2mg</td>
-        <td>TA2</td>
+        <td class="size">2mg</td>
         <td class="price">$16.80</td>
       </tr>
       <tr>
         <td>Thymosin Alpha-1</td>
-        <td>5mg</td>
-        <td>TA5</td>
+        <td class="size">5mg</td>
         <td class="price">$26.25</td>
       </tr>
       <tr>
         <td>Thymosin Alpha-1</td>
-        <td>10mg</td>
-        <td>TA10</td>
+        <td class="size">10mg</td>
         <td class="price">$49.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>2mg</td>
-        <td>TR2</td>
+        <td class="size">2mg</td>
         <td class="price">$12.25</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>5mg</td>
-        <td>TR5</td>
+        <td class="size">5mg</td>
         <td class="price">$14.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>10mg</td>
-        <td>TR10</td>
+        <td class="size">10mg</td>
         <td class="price">$17.50</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>12mg</td>
-        <td>TR12</td>
+        <td class="size">12mg</td>
         <td class="price">$24.50</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>15mg</td>
-        <td>TR15</td>
+        <td class="size">15mg</td>
         <td class="price">$21.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>20mg</td>
-        <td>TR20</td>
+        <td class="size">20mg</td>
         <td class="price">$22.75</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>30mg</td>
-        <td>TR30</td>
+        <td class="size">30mg</td>
         <td class="price">$29.75</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>40mg</td>
-        <td>TR40</td>
+        <td class="size">40mg</td>
         <td class="price">$40.25</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>45mg</td>
-        <td>TR45</td>
+        <td class="size">45mg</td>
         <td class="price">$57.75</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>50mg</td>
-        <td>TR50</td>
+        <td class="size">50mg</td>
         <td class="price">$48.30</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>60mg</td>
-        <td>TR60</td>
+        <td class="size">60mg</td>
         <td class="price">$56.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>70mg</td>
-        <td>TR70</td>
+        <td class="size">70mg</td>
         <td class="price">$73.50</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>80mg</td>
-        <td>TR80</td>
+        <td class="size">80mg</td>
         <td class="price">$80.50</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>90mg</td>
-        <td>TR90</td>
+        <td class="size">90mg</td>
         <td class="price">$91.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>100mg</td>
-        <td>TR100</td>
+        <td class="size">100mg</td>
         <td class="price">$84.00</td>
       </tr>
       <tr>
         <td>Tirzepatide</td>
-        <td>120mg</td>
-        <td>TR120</td>
+        <td class="size">120mg</td>
         <td class="price">$105.00</td>
       </tr>
       <tr>
         <td>Triptorelin</td>
-        <td>2mg</td>
-        <td>TRI2</td>
+        <td class="size">2mg</td>
         <td class="price">$13.65</td>
       </tr>
       <tr>
         <td>Vesugen</td>
-        <td>10mg</td>
-        <td>VE10</td>
+        <td class="size">10mg</td>
         <td class="price">$21.70</td>
       </tr>
       <tr>
         <td>Vesugen</td>
-        <td>20mg</td>
-        <td>VE20</td>
+        <td class="size">20mg</td>
         <td class="price">$36.05</td>
       </tr>
       <tr>
         <td>VIP</td>
-        <td>5mg</td>
-        <td>VP5</td>
+        <td class="size">5mg</td>
         <td class="price">$26.25</td>
       </tr>
       <tr>
         <td>VIP</td>
-        <td>10mg</td>
-        <td>VP10</td>
+        <td class="size">10mg</td>
         <td class="price">$38.50</td>
       </tr>
     </tbody>
