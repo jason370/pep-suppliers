@@ -304,13 +304,12 @@
     "id": "bpc-157-overseas-warehouse",
     "name": "BPC-157",
     "category": "Recovery & Healing",
-    "price": "$7.35 \u2013 $41",
+    "price": "$14 \u2013 $41",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "20mg"
@@ -321,13 +320,11 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$7.35",
       "5mg": "$14",
       "10mg": "$22",
       "20mg": "$41"
     },
     "vialImages": {
-      "2mg": "/images/vials/BC2.png",
       "5mg": "/images/vials/BC5.png",
       "10mg": "/images/vials/BC10.png",
       "20mg": "/images/vials/BC20.png"
@@ -341,16 +338,14 @@
     "id": "bpc-157-tb-500-blend-overseas-warehouse",
     "name": "BPC-157 & TB-500 Blend",
     "category": "Peptide Blends",
-    "price": "$24.50 \u2013 $80.50",
+    "price": "$29 \u2013 $39",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "4mg",
       "10mg",
-      "20mg",
-      "30mg"
+      "20mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -358,16 +353,12 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "4mg": "$24.50",
       "10mg": "$29",
-      "20mg": "$39",
-      "30mg": "$80.50"
+      "20mg": "$39"
     },
     "vialImages": {
-      "4mg": "/images/vials/BB4.png",
       "10mg": "/images/vials/BB10.png",
-      "20mg": "/images/vials/BB20.png",
-      "30mg": "/images/vials/BB30.png"
+      "20mg": "/images/vials/BB20.png"
     }
   },
   {
@@ -500,13 +491,12 @@
     "id": "cjc-1295-no-dac-mod-grf-1-29-overseas-warehouse",
     "name": "CJC-1295 NO DAC (Mod GRF 1-29)",
     "category": "Hormone Support",
-    "price": "$10.50 \u2013 $27",
+    "price": "$17 \u2013 $27",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -516,12 +506,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$10.50",
       "5mg": "$17",
       "10mg": "$27"
     },
     "vialImages": {
-      "2mg": "/images/vials/CND2.png",
       "5mg": "/images/vials/CND5.png",
       "10mg": "/images/vials/CND10.png"
     }
@@ -557,13 +545,12 @@
     "id": "cjc-1295-dac-overseas-warehouse",
     "name": "CJC-1295 DAC",
     "category": "Hormone Support",
-    "price": "$21 \u2013 $25",
+    "price": "$25",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg"
     ],
     "tags": [],
@@ -572,11 +559,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$21.00",
       "5mg": "$25"
     },
     "vialImages": {
-      "2mg": "/images/vials/CD2.png",
       "5mg": "/images/vials/CD5.png"
     }
   },
@@ -683,16 +668,14 @@
     "id": "dsip-overseas-warehouse",
     "name": "DSIP",
     "category": "Other Research",
-    "price": "$7 \u2013 $38",
+    "price": "$15 \u2013 $38",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
-      "12mg",
       "15mg"
     ],
     "tags": [],
@@ -701,17 +684,13 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$7.00",
       "5mg": "$15",
       "10mg": "$24",
-      "12mg": "$35.00",
       "15mg": "$38"
     },
     "vialImages": {
-      "2mg": "/images/vials/DS2.png",
       "5mg": "/images/vials/DS5.png",
       "10mg": "/images/vials/DS10.png",
-      "12mg": "/images/vials/DS12.png",
       "15mg": "/images/vials/DS15.png"
     }
   },
@@ -746,13 +725,12 @@
     "id": "epithalon-overseas-warehouse",
     "name": "Epithalon",
     "category": "Hormone Support",
-    "price": "$14 \u2013 $57",
+    "price": "$17 \u2013 $57",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
       "50mg"
     ],
@@ -762,12 +740,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "$14.00",
       "10mg": "$17",
       "50mg": "$57"
     },
     "vialImages": {
-      "5mg": "/images/vials/ET5.png",
       "10mg": "/images/vials/ET10.png",
       "50mg": "/images/vials/ET50.png"
     }
@@ -905,14 +881,13 @@
     "id": "glow-overseas-warehouse",
     "name": "GLOW",
     "category": "Peptide Blends",
-    "price": "$41 \u2013 $52.50",
+    "price": "$41",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "50mg",
-      "70mg"
+      "50mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -920,12 +895,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "50mg": "$41",
-      "70mg": "$52.50"
+      "50mg": "$41"
     },
     "vialImages": {
-      "50mg": "/images/vials/GLOW50.png",
-      "70mg": "/images/vials/GLOW.png"
+      "50mg": "/images/vials/GLOW50.png"
     }
   },
   {
@@ -1025,13 +998,12 @@
     "id": "fragment-176-191-overseas-warehouse",
     "name": "Fragment 176-191",
     "category": "Weight Management",
-    "price": "$12.25 \u2013 $60",
+    "price": "$31 \u2013 $60",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1041,12 +1013,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$12.25",
       "5mg": "$31",
       "10mg": "$60"
     },
     "vialImages": {
-      "2mg": "/images/vials/FR2.png",
       "5mg": "/images/vials/FR5.png",
       "10mg": "/images/vials/FR10.png"
     }
@@ -1130,13 +1100,12 @@
     "id": "ipamorelin-overseas-warehouse",
     "name": "Ipamorelin",
     "category": "Hormone Support",
-    "price": "$8.75 \u2013 $22",
+    "price": "$17 \u2013 $22",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1146,12 +1115,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$8.75",
       "5mg": "$17",
       "10mg": "$22"
     },
     "vialImages": {
-      "2mg": "/images/vials/IP2.png",
       "5mg": "/images/vials/IP5.png",
       "10mg": "/images/vials/IP10.png"
     },
@@ -1265,13 +1232,12 @@
     "id": "lemon-bottle-overseas-warehouse",
     "name": "Lemon Bottle",
     "category": "Other Research",
-    "price": "$19.25 \u2013 $22",
+    "price": "$22",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10IU",
       "10ml",
       "10ml"
     ],
@@ -1281,11 +1247,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "10IU": "$19.25",
       "10ml": "$22"
     },
     "vialImages": {
-      "10IU": "/images/vials/LBIU.png",
       "10ml": "/images/vials/LB.png"
     }
   },
@@ -1506,13 +1470,12 @@
     "id": "nad-overseas-warehouse",
     "name": "NAD+",
     "category": "Peptide Blends",
-    "price": "$14 \u2013 $44",
+    "price": "$25 \u2013 $44",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "100mg",
       "500mg",
       "1000mg"
     ],
@@ -1522,12 +1485,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "100mg": "$14.00",
       "500mg": "$25",
       "1000mg": "$44"
     },
     "vialImages": {
-      "100mg": "/images/vials/NJ100.png",
       "500mg": "/images/vials/NJ500.png",
       "1000mg": "/images/vials/NJ1000.png"
     }
@@ -1587,13 +1548,12 @@
     "id": "oxytocin-overseas-warehouse",
     "name": "Oxytocin",
     "category": "Recovery & Healing",
-    "price": "$8.75 \u2013 $35",
+    "price": "$24 \u2013 $35",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1603,12 +1563,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$8.75",
       "5mg": "$24",
       "10mg": "$35"
     },
     "vialImages": {
-      "2mg": "/images/vials/OT2.png",
       "5mg": "/images/vials/OT5.png",
       "10mg": "/images/vials/OT10.png"
     }
@@ -1641,13 +1599,12 @@
     "id": "pe-22-28-overseas-warehouse",
     "name": "PE-22-28",
     "category": "Other Research",
-    "price": "$12.25 \u2013 $30",
+    "price": "$30",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -1656,11 +1613,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "$12.25",
       "10mg": "$30"
     },
     "vialImages": {
-      "5mg": "/images/vials/PE5.png",
       "10mg": "/images/vials/PE10.png"
     }
   },
@@ -1692,15 +1647,13 @@
     "id": "pinealon-overseas-warehouse",
     "name": "Pinealon",
     "category": "Other Research",
-    "price": "$11.90 \u2013 $35",
+    "price": "$27",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
-      "10mg",
-      "20mg"
+      "10mg"
     ],
     "tags": [],
     "dataAttributes": {
@@ -1708,14 +1661,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "$11.90",
-      "10mg": "$27",
-      "20mg": "$35.00"
+      "10mg": "$27"
     },
     "vialImages": {
-      "5mg": "/images/vials/PI5.png",
-      "10mg": "/images/vials/PIN10.png",
-      "20mg": "/images/vials/PI20.png"
+      "10mg": "/images/vials/PIN10.png"
     }
   },
   {
@@ -1920,13 +1869,12 @@
     "id": "semaglutide-overseas-warehouse",
     "name": "Semaglutide",
     "category": "Weight Management",
-    "price": "$10.15 \u2013 $100",
+    "price": "$17 \u2013 $100",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "15mg",
@@ -1940,7 +1888,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$10.15",
       "5mg": "$17",
       "10mg": "$26",
       "15mg": "$37",
@@ -1949,7 +1896,6 @@
       "50mg": "$100"
     },
     "vialImages": {
-      "2mg": "/images/vials/SM2.png",
       "5mg": "/images/vials/SM5.png",
       "10mg": "/images/vials/SM10.png",
       "15mg": "/images/vials/SM15.png",
@@ -1970,7 +1916,6 @@
     "vialSizes": [
       "5mg",
       "10mg",
-      "11mg",
       "30mg"
     ],
     "tags": [],
@@ -1981,13 +1926,11 @@
     "prices": {
       "5mg": "$16",
       "10mg": "$21",
-      "11mg": "$24.85",
       "30mg": "$55"
     },
     "vialImages": {
       "5mg": "/images/vials/XA5.png",
       "10mg": "/images/vials/XA10.png",
-      "11mg": "/images/vials/XA11.png",
       "30mg": "/images/vials/XA30.png"
     }
   },
@@ -1995,13 +1938,12 @@
     "id": "sermorelin-overseas-warehouse",
     "name": "Sermorelin",
     "category": "Hormone Support",
-    "price": "$14 \u2013 $31",
+    "price": "$22 \u2013 $31",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -2011,12 +1953,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$14.00",
       "5mg": "$22",
       "10mg": "$31"
     },
     "vialImages": {
-      "2mg": "/images/vials/SMO2.png",
       "5mg": "/images/vials/SMO5.png",
       "10mg": "/images/vials/SMO10.png"
     }
@@ -2124,14 +2064,12 @@
     "id": "survodutide-overseas-warehouse",
     "name": "Survodutide",
     "category": "Weight Management",
-    "price": "$35 \u2013 $63",
+    "price": "$47",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -2140,13 +2078,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$35.00",
-      "5mg": "$63.00",
       "10mg": "$47"
     },
     "vialImages": {
-      "2mg": "/images/vials/SUR2.png",
-      "5mg": "/images/vials/SUR5.png",
       "10mg": "/images/vials/SUR10.png"
     }
   },
@@ -2154,13 +2088,12 @@
     "id": "tb-500-thymosin-beta-4-overseas-warehouse",
     "name": "TB-500 (Thymosin Beta 4)",
     "category": "Recovery & Healing",
-    "price": "$12.25 \u2013 $50",
+    "price": "$17 \u2013 $50",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "20mg"
@@ -2171,13 +2104,11 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$12.25",
       "5mg": "$17",
       "10mg": "$24",
       "20mg": "$50"
     },
     "vialImages": {
-      "2mg": "/images/vials/BT2.png",
       "5mg": "/images/vials/BT5.png",
       "10mg": "/images/vials/BT10.png",
       "20mg": "/images/vials/BT20.png"
@@ -2187,13 +2118,12 @@
     "id": "tesamorelin-overseas-warehouse",
     "name": "Tesamorelin",
     "category": "Hormone Support",
-    "price": "$14.70 \u2013 $67",
+    "price": "$21 \u2013 $67",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "20mg"
@@ -2204,13 +2134,11 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$14.70",
       "5mg": "$21",
       "10mg": "$31",
       "20mg": "$67"
     },
     "vialImages": {
-      "2mg": "/images/vials/TSM2.png",
       "5mg": "/images/vials/TSM5.png",
       "10mg": "/images/vials/TSM10.png",
       "20mg": "/images/vials/TSM20.png"
@@ -2271,13 +2199,12 @@
     "id": "thymosin-alpha-1-overseas-warehouse",
     "name": "Thymosin Alpha-1",
     "category": "Recovery & Healing",
-    "price": "$16.80 \u2013 $33",
+    "price": "$26 \u2013 $33",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -2287,12 +2214,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$16.80",
       "5mg": "$26",
       "10mg": "$33"
     },
     "vialImages": {
-      "2mg": "/images/vials/TA2.png",
       "5mg": "/images/vials/TA5.png",
       "10mg": "/images/vials/TA10.png"
     }
@@ -2301,21 +2226,17 @@
     "id": "tirzepatide-overseas-warehouse",
     "name": "Tirzepatide",
     "category": "Weight Management",
-    "price": "$12.25 \u2013 $244",
+    "price": "$25 \u2013 $244",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
-      "5mg",
       "10mg",
-      "12mg",
       "15mg",
       "20mg",
       "30mg",
       "40mg",
-      "45mg",
       "50mg",
       "60mg",
       "70mg",
@@ -2330,15 +2251,11 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "$12.25",
-      "5mg": "$14.00",
       "10mg": "$25",
-      "12mg": "$24.50",
       "15mg": "$37",
       "20mg": "$42",
       "30mg": "$48",
       "40mg": "$73",
-      "45mg": "$57.75",
       "50mg": "$120",
       "60mg": "$145",
       "70mg": "$175",
@@ -2348,15 +2265,11 @@
       "120mg": "$244"
     },
     "vialImages": {
-      "2mg": "/images/vials/TR2.png",
-      "5mg": "/images/vials/TR5.png",
       "10mg": "/images/vials/TR10.png",
-      "12mg": "/images/vials/TR12.png",
       "15mg": "/images/vials/TR15.png",
       "20mg": "/images/vials/TR20.png",
       "30mg": "/images/vials/TR30.png",
       "40mg": "/images/vials/TR40.png",
-      "45mg": "/images/vials/TR45.png",
       "50mg": "/images/vials/TR50.png",
       "60mg": "/images/vials/TR60.png",
       "70mg": "/images/vials/TR70.png",
@@ -2399,13 +2312,12 @@
     "id": "vesugen-overseas-warehouse",
     "name": "Vesugen",
     "category": "Other Research",
-    "price": "$21.70 \u2013 $45",
+    "price": "$45",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "10mg",
       "20mg"
     ],
     "tags": [],
@@ -2414,11 +2326,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "10mg": "$21.70",
       "20mg": "$45"
     },
     "vialImages": {
-      "10mg": "/images/vials/VE10.png",
       "20mg": "/images/vials/VE20.png"
     }
   },

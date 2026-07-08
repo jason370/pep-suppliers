@@ -128,6 +128,37 @@ def set_pill_price(card_html: str, size: str, price: str) -> str:
     return card_html
 
 
+def remove_pill(card_html: str, size: str) -> str:
+    return re.sub(
+        rf'<span class="size-pill[^"]*"[^>]*>\s*{esc_size(size)}\s*</span>\s*',
+        "",
+        card_html,
+    )
+
+
+def normalize_card_active(card_html: str) -> str:
+    card_html = re.sub(r'class="size-pill active"', 'class="size-pill"', card_html)
+    card_html = re.sub(
+        r'class="size-pill([^"]*)\s+active"',
+        r'class="size-pill\1"',
+        card_html,
+    )
+    card_html = re.sub(r'(<span class="size-pill)([^"]*")', r'\1 active\2', card_html, count=1)
+    return card_html
+
+
+def prune_product_fields(product: dict, pid: str, keep_sizes: list[str], size_images: dict):
+    product["vialSizes"] = keep_sizes[:]
+    if product.get("prices"):
+        product["prices"] = {k: v for k, v in product["prices"].items() if k in keep_sizes}
+    if product.get("vialImages"):
+        product["vialImages"] = {k: v for k, v in product["vialImages"].items() if k in keep_sizes}
+    if product.get("catalogNos"):
+        product["catalogNos"] = {k: v for k, v in product["catalogNos"].items() if k in keep_sizes}
+    if pid in size_images:
+        size_images[pid] = {k: v for k, v in size_images[pid].items() if k in keep_sizes}
+
+
 def price_range(prices: dict[str, str]) -> str | None:
     vals = []
     for p in prices.values():
@@ -149,40 +180,54 @@ def main():
 
     updated_products = 0
     updated_sizes = 0
+    pruned_sizes = 0
     missing_codes = []
     changes = []
 
     us_products = [p for p in products if p.get("warehouse") == "US Warehouse"]
     for product in us_products:
         pid = product["id"]
-        prices = dict(product.get("prices") or {})
-        changed = False
+        keep_sizes: list[str] = []
+        prices: dict[str, str] = {}
+        drop_sizes: list[str] = []
+
         for size in product.get("vialSizes") or []:
             code = catalog_code_for(product, size, size_images)
             if not code:
                 missing_codes.append(f"{product['name']} {size}: no catalog code")
+                drop_sizes.append(size)
                 continue
             row = by_code.get(code)
             if not row or not row["single"]:
                 missing_codes.append(f"{product['name']} {size}: code {code} not in PRICE_COMPARE")
+                drop_sizes.append(size)
                 continue
+            keep_sizes.append(size)
             new_price = row["single"]
-            old_price = prices.get(size)
+            old_price = (product.get("prices") or {}).get(size)
+            prices[size] = new_price
             if old_price != new_price:
                 changes.append(f"{product['name']} {size} ({code}): {old_price} -> {new_price}")
-                prices[size] = new_price
-                changed = True
                 updated_sizes += 1
             if pid in cards:
-                new_html = set_pill_price(cards[pid], size, new_price)
-                if new_html != cards[pid]:
-                    cards[pid] = new_html
-        if changed:
+                cards[pid] = set_pill_price(cards[pid], size, new_price)
+
+        if drop_sizes and pid in cards:
+            for size in drop_sizes:
+                cards[pid] = remove_pill(cards[pid], size)
+                pruned_sizes += 1
+
+        if keep_sizes:
+            prune_product_fields(product, pid, keep_sizes, size_images)
             product["prices"] = prices
             rng = price_range(prices)
             if rng:
                 product["price"] = rng
+            if pid in cards:
+                cards[pid] = normalize_card_active(cards[pid])
             updated_products += 1
+        elif product.get("visible"):
+            missing_codes.append(f"{product['name']}: no PRICE_COMPARE sizes kept")
 
     PRODUCTS.write_text(json.dumps(products, indent=2) + "\n", encoding="utf-8")
 
