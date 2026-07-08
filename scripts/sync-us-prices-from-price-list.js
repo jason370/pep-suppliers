@@ -131,12 +131,14 @@ function catalogCode(product, size) {
   return null;
 }
 
-// Parse price list rows (3-col with classes OR 4-col plain td)
+// Parse price list rows — site format: Product · Size · Catalog No · Sale Price
 const byCode = new Map();
 const byNameSize = new Map();
 const rowPatterns = [
+  // Original site price list (199 items)
+  /<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>/gi,
+  // Legacy Code · Product Name · Price layout
   /<td[^>]*class="code"[^>]*>([^<]*)<\/td>\s*<td[^>]*class="name"[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*class="price"[^>]*>([^<]*)<\/td>/gi,
-  /<td>([^<]+)<\/td>\s*<td>([^<]+)<\/td>\s*<td class="price">([^<]+)<\/td>/gi,
 ];
 
 let rowCount = 0;
@@ -144,16 +146,25 @@ for (const re of rowPatterns) {
   re.lastIndex = 0;
   let m;
   while ((m = re.exec(priceListHtml))) {
-    const code = decodeEntities(m[1]).trim();
-    const fullName = decodeEntities(m[2]).trim();
-    const price = money(m[3]);
+    let code, fullName, size, price;
+    if (re.source.includes('class="code"')) {
+      code = decodeEntities(m[1]).trim();
+      fullName = decodeEntities(m[2]).trim();
+      price = money(m[3]);
+      size = parseSizeFromName(fullName);
+    } else if (m.length >= 5) {
+      fullName = decodeEntities(m[1]).trim();
+      size = decodeEntities(m[2]).trim().toLowerCase().replace(/\s+/g, '');
+      code = decodeEntities(m[3]).trim();
+      price = money(m[4]);
+    } else {
+      continue;
+    }
     if (!code || !price) continue;
     rowCount++;
-    byCode.set(code, { price, fullName });
-    const size = parseSizeFromName(fullName);
-    const base = baseFromName(fullName);
-    if (size && base) {
-      const key = norm(base) + '|' + size.toLowerCase();
+    byCode.set(code, { price, fullName, size });
+    if (fullName && size) {
+      const key = norm(fullName) + '|' + size;
       byNameSize.set(key, { price, code });
     }
   }
@@ -177,6 +188,9 @@ const ALIASES = {
 
 function lookupPrice(productName, size, code) {
   const sizeNorm = String(size).toLowerCase().replace(/\s+/g, '');
+  if (code && byCode.has(code)) {
+    return { price: byCode.get(code).price, via: 'code:' + code };
+  }
   let key = norm(productName);
   if (ALIASES[key]) key = ALIASES[key];
   const nsKey = key + '|' + sizeNorm;
@@ -191,7 +205,6 @@ function lookupPrice(productName, size, code) {
       return { price: v.price, via: 'fuzzy:' + v.code };
     }
   }
-  if (code && byCode.has(code)) return { price: byCode.get(code).price, via: 'code:' + code };
   return null;
 }
 
@@ -245,12 +258,6 @@ const newBlock =
   JSON.stringify(_sizeImages) +
   lineTerm;
 fs.writeFileSync(indexPath, indexHtml.slice(0, cardStart) + newBlock + indexHtml.slice(sizeEnd + lineTerm.length), 'utf8');
-
-// Fix price list title for site branding
-let pl = fs.readFileSync(priceListPath, 'utf8');
-pl = pl.replace(/<title>US Warehouse<\/title>/, '<title>Pep-Suppliers US Warehouse Price List</title>');
-pl = pl.replace(/<h1>US Warehouse<\/h1>/, '<h1>Pep-Suppliers US Warehouse</h1>');
-fs.writeFileSync(priceListPath, pl, 'utf8');
 
 console.log(`Price list rows parsed: ${rowCount}`);
 console.log(`Products updated: ${updatedProducts}`);
