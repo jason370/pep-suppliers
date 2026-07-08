@@ -27,6 +27,11 @@
       "5mg": "$17",
       "10mg": "$19",
       "50mg": "$40"
+    },
+    "catalogNos": {
+      "5mg": "5AM",
+      "10mg": "10AM",
+      "50mg": "50AM"
     }
   },
   {
@@ -57,6 +62,11 @@
       "5mg": "$17",
       "10mg": "$19",
       "50mg": "$40"
+    },
+    "catalogNos": {
+      "5mg": "5AM",
+      "10mg": "10AM",
+      "50mg": "50AM"
     }
   },
   {
@@ -132,6 +142,10 @@
     "vialImages": {
       "5mg": "/images/vials/ADA5.png",
       "10mg": "/images/vials/ADA10.png"
+    },
+    "catalogNos": {
+      "5mg": "ADA5",
+      "10mg": "ADA10"
     }
   },
   {
@@ -186,6 +200,10 @@
     "vialImages": {
       "50mg": "/images/vials/AU50.png",
       "100mg": "/images/vials/AU100.png"
+    },
+    "catalogNos": {
+      "50mg": "AU50",
+      "100mg": "AU100"
     }
   },
   {
@@ -247,6 +265,11 @@
       "2mg": "/images/vials/2AD.png",
       "5mg": "/images/vials/5AD.png",
       "10mg": "/images/vials/10AD.png"
+    },
+    "catalogNos": {
+      "2mg": "2AD",
+      "5mg": "5AD",
+      "10mg": "10AD"
     }
   },
   {
@@ -271,6 +294,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/RA10.png"
+    },
+    "catalogNos": {
+      "10mg": "RA10"
     }
   },
   {
@@ -331,7 +357,8 @@
     },
     "catalogNos": {
       "10mg": "BC10",
-      "20mg": "BC20"
+      "20mg": "BC20",
+      "5mg": "BC5"
     }
   },
   {
@@ -359,6 +386,10 @@
     "vialImages": {
       "10mg": "/images/vials/BB10.png",
       "20mg": "/images/vials/BB20.png"
+    },
+    "catalogNos": {
+      "10mg": "BB10",
+      "20mg": "BB20"
     }
   },
   {
@@ -383,6 +414,9 @@
     },
     "vialImages": {
       "20mg": "/images/vials/B20.png"
+    },
+    "catalogNos": {
+      "20mg": "B20"
     }
   },
   {
@@ -413,6 +447,11 @@
       "5mg": "/images/vials/CGL5.png",
       "10mg": "/images/vials/CGL10.png",
       "20mg": "/images/vials/CGL20.png"
+    },
+    "catalogNos": {
+      "5mg": "CGL5",
+      "10mg": "CGL10",
+      "20mg": "CGL20"
     }
   },
   {
@@ -437,6 +476,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/CS10.png"
+    },
+    "catalogNos": {
+      "10mg": "CS10"
     }
   },
   {
@@ -485,6 +527,9 @@
     },
     "vialImages": {
       "20mg": "/images/vials/Cart20.png"
+    },
+    "catalogNos": {
+      "20mg": "Cart20"
     }
   },
   {
@@ -512,6 +557,10 @@
     "vialImages": {
       "5mg": "/images/vials/CND5.png",
       "10mg": "/images/vials/CND10.png"
+    },
+    "catalogNos": {
+      "5mg": "CND5",
+      "10mg": "CND10"
     }
   },
   {
@@ -539,6 +588,10 @@
     "vialImages": {
       "10mg": "/images/vials/CP10.png",
       "20mg": "/images/vials/CP20.png"
+    },
+    "catalogNos": {
+      "10mg": "CP10",
+      "20mg": "CP20"
     }
   },
   {
@@ -563,6 +616,9 @@
     },
     "vialImages": {
       "5mg": "/images/vials/CD5.png"
+    },
+    "catalogNos": {
+      "5mg": "CD5"
     }
   },
   {
@@ -587,6 +643,9 @@
     },
     "vialImages": {
       "20mg": "/images/vials/COR20.png"
+    },
+    "catalogNos": {
+      "20mg": "COR20"
     }
   },
   {
@@ -662,6 +721,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/DIHEXA.png"
+    },
+    "catalogNos": {
+      "10mg": "DIHEXA"
     }
   },
   {
@@ -692,6 +754,11 @@
       "5mg": "/images/vials/DS5.png",
       "10mg": "/images/vials/DS10.png",
       "15mg": "/images/vials/DS15.png"
+    },
+    "catalogNos": {
+      "5mg": "DS5",
+      "10mg": "DS10",
+      "15mg": "DS15"
     }
   },
   {
@@ -746,6 +813,10 @@
     "vialImages": {
       "10mg": "/images/vials/ET10.png",
       "50mg": "/images/vials/ET50.png"
+    },
+    "catalogNos": {
+      "10mg": "ET10",
+      "50mg": "ET50"
     }
   },
   {
@@ -770,6 +841,9 @@
     },
     "vialImages": {
       "1mg": "/images/vials/FN1.png"
+    },
+    "catalogNos": {
+      "1mg": "FN1"
     }
   },
   {
@@ -794,6 +868,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/F410.png"
+    },
+    "catalogNos": {
+      "10mg": "F410"
     }
   },
   {
@@ -821,6 +898,10 @@
     "vialImages": {
       "50mg": "/images/vials/CU50.png",
       "100mg": "/images/vials/CU100.png"
+    },
+    "catalogNos": {
+      "50mg": "CU50",
+      "100mg": "CU100"
     }
   },
   {
@@ -848,6 +929,10 @@
     "vialImages": {
       "5mg": "/images/vials/G25.png",
       "10mg": "/images/vials/G210.png"
+    },
+    "catalogNos": {
+      "5mg": "G25",
+      "10mg": "G210"
     }
   },
   {
@@ -875,6 +960,10 @@
     "vialImages": {
       "5mg": "/images/vials/G65.png",
       "10mg": "/images/vials/G610.png"
+    },
+    "catalogNos": {
+      "5mg": "G65",
+      "10mg": "G610"
     }
   },
   {
@@ -899,6 +988,9 @@
     },
     "vialImages": {
       "50mg": "/images/vials/GLOW50.png"
+    },
+    "catalogNos": {
+      "50mg": "GLOW50"
     }
   },
   {
@@ -923,6 +1015,9 @@
     },
     "vialImages": {
       "2mg": "/images/vials/GND2.png"
+    },
+    "catalogNos": {
+      "2mg": "GND2"
     }
   },
   {
@@ -950,6 +1045,10 @@
     "vialImages": {
       "2mg": "/images/vials/HX2.png",
       "5mg": "/images/vials/HX5.png"
+    },
+    "catalogNos": {
+      "2mg": "HX2",
+      "5mg": "HX5"
     }
   },
   {
@@ -992,6 +1091,15 @@
       "15IU": "/images/vials/H15.png",
       "24IU": "/images/vials/H24.png",
       "36IU": "/images/vials/H36.png"
+    },
+    "catalogNos": {
+      "6IU": "H06",
+      "8IU": "H08",
+      "10IU": "H10",
+      "12IU": "H12",
+      "15IU": "H15",
+      "24IU": "H24",
+      "36IU": "H36"
     }
   },
   {
@@ -1019,6 +1127,10 @@
     "vialImages": {
       "5mg": "/images/vials/FR5.png",
       "10mg": "/images/vials/FR10.png"
+    },
+    "catalogNos": {
+      "5mg": "FR5",
+      "10mg": "FR10"
     }
   },
   {
@@ -1043,6 +1155,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/HU10.png"
+    },
+    "catalogNos": {
+      "10mg": "HU10"
     }
   },
   {
@@ -1070,6 +1185,10 @@
     "vialImages": {
       "1mg": "/images/vials/IG1.png",
       "100mcg": "/images/vials/IG01.png"
+    },
+    "catalogNos": {
+      "1mg": "IG1",
+      "100mcg": "IG01"
     }
   },
   {
@@ -1123,7 +1242,8 @@
       "10mg": "/images/vials/IP10.png"
     },
     "catalogNos": {
-      "10mg": "IP10"
+      "10mg": "IP10",
+      "5mg": "IP5"
     }
   },
   {
@@ -1151,6 +1271,10 @@
     "vialImages": {
       "5mg": "/images/vials/KS5.png",
       "10mg": "/images/vials/KS10.png"
+    },
+    "catalogNos": {
+      "5mg": "KS5",
+      "10mg": "KS10"
     }
   },
   {
@@ -1175,6 +1299,9 @@
     },
     "vialImages": {
       "80mg": "/images/vials/KLOW80.png"
+    },
+    "catalogNos": {
+      "80mg": "KLOW80"
     }
   },
   {
@@ -1202,6 +1329,10 @@
     "vialImages": {
       "5mg": "/images/vials/KP5.png",
       "10mg": "/images/vials/KP10.png"
+    },
+    "catalogNos": {
+      "5mg": "KP5",
+      "10mg": "KP10"
     }
   },
   {
@@ -1251,6 +1382,9 @@
     },
     "vialImages": {
       "10ml": "/images/vials/LB.png"
+    },
+    "catalogNos": {
+      "10ml": "LB"
     }
   },
   {
@@ -1305,6 +1439,9 @@
     },
     "vialImages": {
       "5mg": "/images/vials/LL37.png"
+    },
+    "catalogNos": {
+      "5mg": "LL37"
     }
   },
   {
@@ -1329,6 +1466,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/M10.png"
+    },
+    "catalogNos": {
+      "10mg": "M10"
     }
   },
   {
@@ -1356,6 +1496,10 @@
     "vialImages": {
       "5mg": "/images/vials/MDT5.png",
       "10mg": "/images/vials/MDT10.png"
+    },
+    "catalogNos": {
+      "5mg": "MDT5",
+      "10mg": "MDT10"
     }
   },
   {
@@ -1380,6 +1524,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/MT1.png"
+    },
+    "catalogNos": {
+      "10mg": "MT1"
     }
   },
   {
@@ -1407,6 +1554,10 @@
     "vialImages": {
       "5mg": "/images/vials/ML5.png",
       "10mg": "/images/vials/ML10.png"
+    },
+    "catalogNos": {
+      "5mg": "ML5",
+      "10mg": "ML10"
     }
   },
   {
@@ -1431,6 +1582,9 @@
     },
     "vialImages": {
       "2mg": "/images/vials/FM2.png"
+    },
+    "catalogNos": {
+      "2mg": "FM2"
     }
   },
   {
@@ -1464,6 +1618,12 @@
       "10mg": "/images/vials/MS10.png",
       "20mg": "/images/vials/MS20.png",
       "40mg": "/images/vials/MS40.png"
+    },
+    "catalogNos": {
+      "5mg": "MS5",
+      "10mg": "MS10",
+      "20mg": "MS20",
+      "40mg": "MS40"
     }
   },
   {
@@ -1491,6 +1651,10 @@
     "vialImages": {
       "500mg": "/images/vials/NJ500.png",
       "1000mg": "/images/vials/NJ1000.png"
+    },
+    "catalogNos": {
+      "500mg": "NJ500",
+      "1000mg": "NJ1000"
     }
   },
   {
@@ -1569,6 +1733,10 @@
     "vialImages": {
       "5mg": "/images/vials/OT5.png",
       "10mg": "/images/vials/OT10.png"
+    },
+    "catalogNos": {
+      "5mg": "OT5",
+      "10mg": "OT10"
     }
   },
   {
@@ -1593,6 +1761,9 @@
     },
     "vialImages": {
       "5mg": "/images/vials/P21.png"
+    },
+    "catalogNos": {
+      "5mg": "P21"
     }
   },
   {
@@ -1617,6 +1788,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/PE10.png"
+    },
+    "catalogNos": {
+      "10mg": "PE10"
     }
   },
   {
@@ -1641,6 +1815,9 @@
     },
     "vialImages": {
       "2mg": "/images/vials/FMP2.png"
+    },
+    "catalogNos": {
+      "2mg": "FMP2"
     }
   },
   {
@@ -1665,6 +1842,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/PIN10.png"
+    },
+    "catalogNos": {
+      "10mg": "PIN10"
     }
   },
   {
@@ -1689,6 +1869,9 @@
     },
     "vialImages": {
       "5mg": "/images/vials/P25.png"
+    },
+    "catalogNos": {
+      "5mg": "P25"
     }
   },
   {
@@ -1713,6 +1896,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/P41.png"
+    },
+    "catalogNos": {
+      "10mg": "P41"
     }
   },
   {
@@ -1809,6 +1995,17 @@
       "50mg": "/images/vials/RT50.png",
       "60mg": "/images/vials/RT60.png",
       "100mg": "/images/vials/RT100.png"
+    },
+    "catalogNos": {
+      "5mg": "RT5",
+      "10mg": "RT10",
+      "15mg": "RT15",
+      "20mg": "RT20",
+      "30mg": "RT30",
+      "40mg": "RT40",
+      "50mg": "RT50",
+      "60mg": "RT60",
+      "100mg": "RT100"
     }
   },
   {
@@ -1833,6 +2030,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/RC10.png"
+    },
+    "catalogNos": {
+      "10mg": "RC10"
     }
   },
   {
@@ -1863,6 +2063,11 @@
       "5mg": "/images/vials/SK5.png",
       "10mg": "/images/vials/SK10.png",
       "30mg": "/images/vials/SK30.png"
+    },
+    "catalogNos": {
+      "5mg": "SK5",
+      "10mg": "SK10",
+      "30mg": "SK30"
     }
   },
   {
@@ -1902,6 +2107,14 @@
       "20mg": "/images/vials/SM20.png",
       "30mg": "/images/vials/SM30.png",
       "50mg": "/images/vials/SM50.png"
+    },
+    "catalogNos": {
+      "5mg": "SM5",
+      "10mg": "SM10",
+      "15mg": "SM15",
+      "20mg": "SM20",
+      "30mg": "SM30",
+      "50mg": "SM50"
     }
   },
   {
@@ -1932,6 +2145,11 @@
       "5mg": "/images/vials/XA5.png",
       "10mg": "/images/vials/XA10.png",
       "30mg": "/images/vials/XA30.png"
+    },
+    "catalogNos": {
+      "5mg": "XA5",
+      "10mg": "XA10",
+      "30mg": "XA30"
     }
   },
   {
@@ -1959,6 +2177,10 @@
     "vialImages": {
       "5mg": "/images/vials/SMO5.png",
       "10mg": "/images/vials/SMO10.png"
+    },
+    "catalogNos": {
+      "5mg": "SMO5",
+      "10mg": "SMO10"
     }
   },
   {
@@ -1983,6 +2205,9 @@
     },
     "vialImages": {
       "5mg": "/images/vials/SLU5.png"
+    },
+    "catalogNos": {
+      "5mg": "SLU5"
     }
   },
   {
@@ -2031,6 +2256,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/NP810.png"
+    },
+    "catalogNos": {
+      "10mg": "NP810"
     }
   },
   {
@@ -2082,6 +2310,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/SUR10.png"
+    },
+    "catalogNos": {
+      "10mg": "SUR10"
     }
   },
   {
@@ -2112,6 +2343,11 @@
       "5mg": "/images/vials/BT5.png",
       "10mg": "/images/vials/BT10.png",
       "20mg": "/images/vials/BT20.png"
+    },
+    "catalogNos": {
+      "5mg": "BT5",
+      "10mg": "BT10",
+      "20mg": "BT20"
     }
   },
   {
@@ -2142,6 +2378,11 @@
       "5mg": "/images/vials/TSM5.png",
       "10mg": "/images/vials/TSM10.png",
       "20mg": "/images/vials/TSM20.png"
+    },
+    "catalogNos": {
+      "5mg": "TSM5",
+      "10mg": "TSM10",
+      "20mg": "TSM20"
     }
   },
   {
@@ -2193,6 +2434,9 @@
     },
     "vialImages": {
       "10mg": "/images/vials/TY10.png"
+    },
+    "catalogNos": {
+      "10mg": "TY10"
     }
   },
   {
@@ -2220,6 +2464,10 @@
     "vialImages": {
       "5mg": "/images/vials/TA5.png",
       "10mg": "/images/vials/TA10.png"
+    },
+    "catalogNos": {
+      "5mg": "TA5",
+      "10mg": "TA10"
     }
   },
   {
@@ -2281,7 +2529,16 @@
     "catalogNos": {
       "80mg": "TR80",
       "90mg": "TR90",
-      "100mg": "TR100"
+      "100mg": "TR100",
+      "10mg": "TR10",
+      "15mg": "TR15",
+      "20mg": "TR20",
+      "30mg": "TR30",
+      "40mg": "TR40",
+      "50mg": "TR50",
+      "60mg": "TR60",
+      "70mg": "TR70",
+      "120mg": "TR120"
     }
   },
   {
@@ -2330,6 +2587,9 @@
     },
     "vialImages": {
       "20mg": "/images/vials/VE20.png"
+    },
+    "catalogNos": {
+      "20mg": "VE20"
     }
   },
   {
@@ -2357,6 +2617,10 @@
     "vialImages": {
       "5mg": "/images/vials/VP5.png",
       "10mg": "/images/vials/VP10.png"
+    },
+    "catalogNos": {
+      "5mg": "VP5",
+      "10mg": "VP10"
     }
   }
 ]
