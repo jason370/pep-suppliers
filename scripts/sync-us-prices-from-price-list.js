@@ -179,19 +179,82 @@ for (const re of rowPatterns) {
 
 const ALIASES = {
   'bpc-157 & tb-500 blend': 'bpc 157 & tb 500 blend',
-  'cjc-1295 no dac (mod grf 1-29)': 'cjc 1295 no dac',
-  'cjc-1295 dac': 'cjc 1295 with dac',
-  'cjc-1295 & ipamorelin blend': 'cjc 1295 no dac 5mg ipamorelin 5mg',
-  'tesamorelin & ipamorelin blend': 'tesamorelin & ipamorelin blend',
-  'tb-500 (thymosin beta 4)': 'tb 500',
-  'ghk-cu (copper)': 'ghk cu',
-  'pt-141 (bremelanotide)': 'pt 141',
-  'n-acetyl selank': 'selank',
-  'n-acetyl semax': 'semax',
+  'cjc-1295 no dac (mod grf 1-29)': 'cjc 1295 no dac mod grf 1 29',
+  'cjc-1295 dac': 'cjc 1295 dac',
+  'tb-500 (thymosin beta 4)': 'tb 500 thymosin beta 4',
+  'ghk-cu (copper)': 'ghk cu copper',
+  'pt-141 (bremelanotide)': 'pt 141 bremelanotide',
+  'n-acetyl selank': 'n acetyl selank',
+  'n-acetyl semax': 'n acetyl semax',
   'hgh 191aa (somatropin)': 'hgh 191aa somatropin',
   'kisspeptin-10': 'kisspeptin 10',
-  'fragment 176-191': 'hgh fragment 176 191',
+  'fragment 176-191': 'fragment 176 191',
+  'acth 1-39': 'acth 1 39',
+  'adipotide (ftpp)': 'adipotide ftpp',
+  'gonadorelin (gnrh)': 'gonadorelin gnrh',
 };
+
+const byProduct = new Map();
+for (const [k, v] of byNameSize.entries()) {
+  const [base, sz] = k.split('|');
+  if (!byProduct.has(base)) byProduct.set(base, []);
+  byProduct.get(base).push({ size: sz, price: v.price, code: v.code || '' });
+}
+
+function productListKey(productName) {
+  const k = norm(productName);
+  if (byProduct.has(k)) return k;
+  if (ALIASES[k] && byProduct.has(ALIASES[k])) return ALIASES[k];
+  for (const pk of byProduct.keys()) {
+    if (pk === k) return pk;
+    if (pk.replace(/\s+/g, '') === k.replace(/\s+/g, '')) return pk;
+  }
+  for (const pk of byProduct.keys()) {
+    if (pk.includes(k) || k.includes(pk)) return pk;
+  }
+  return null;
+}
+
+function parsePills(cardHtml) {
+  const pills = [];
+  const re = /<span class="size-pill([^"]*)"([^>]*)>([^<]+)<\/span>/g;
+  let m;
+  while ((m = re.exec(cardHtml))) {
+    const attrs = m[2];
+    pills.push({
+      size: m[3].trim(),
+      code: (attrs.match(/data-code="([^"]*)"/) || [])[1] || '',
+      img: (attrs.match(/data-img="([^"]*)"/) || [])[1] || '',
+      price: (attrs.match(/data-price="([^"]*)"/) || [])[1] || '',
+      active: /active/.test(m[1] + m[2]),
+    });
+  }
+  return pills;
+}
+
+function normSize(size) {
+  return String(size).toLowerCase().replace(/\s+/g, '');
+}
+
+function rebuildSizePills(cardHtml, entries, productId) {
+  if (!entries.length) return cardHtml;
+  const existing = parsePills(cardHtml);
+  const bySize = new Map(existing.map((p) => [normSize(p.size), p]));
+  const imgs = _sizeImages[productId] || {};
+  const pillsHtml = entries
+    .map((entry, i) => {
+      const ex = bySize.get(normSize(entry.size)) || {};
+      const code = entry.code || ex.code;
+      const img = ex.img || imgs[entry.size] || imgs[entry.size.replace(/\/vial$/, '')] || '';
+      const active = i === 0 ? ' active' : '';
+      let attrs = ` data-price="${entry.price}"`;
+      if (code) attrs += ` data-code="${code}"`;
+      if (img) attrs += ` data-img="${img}"`;
+      return `<span class="size-pill${active}"${attrs}>${entry.size}</span>`;
+    })
+    .join('');
+  return cardHtml.replace(/(<div class="size-pills">)[\s\S]*?(<\/div>)/, `$1${pillsHtml}$2`);
+}
 
 function lookupPrice(productName, size, code) {
   const sizeNorm = String(size).toLowerCase().replace(/\s+/g, '');
@@ -222,8 +285,36 @@ const missing = [];
 
 for (const p of products) {
   if (p.warehouse !== 'US Warehouse' || !p.visible) continue;
+  const listKey = productListKey(p.name);
+  const listEntries = listKey ? byProduct.get(listKey) || [] : [];
   const nextPrices = {};
+  const nextSizes = [];
+  const nextCatalogNos = {};
   let changed = false;
+
+  if (listEntries.length) {
+    for (const entry of listEntries) {
+      const code = entry.code || catalogCode(p, entry.size);
+      nextSizes.push(entry.size);
+      nextPrices[entry.size] = entry.price;
+      if (code) nextCatalogNos[entry.size] = code;
+      if ((p.prices || {})[entry.size] !== entry.price) {
+        report.push(`${p.name} ${entry.size}: ${(p.prices || {})[entry.size] || '-'} -> ${entry.price}`);
+        changed = true;
+        updatedSizes++;
+      }
+    }
+    p.vialSizes = nextSizes;
+    p.prices = nextPrices;
+    p.catalogNos = nextCatalogNos;
+    const rng = rangeFromPrices(nextPrices);
+    if (rng) p.price = rng;
+    if (CARD_INNER_HTML[p.id]) {
+      CARD_INNER_HTML[p.id] = rebuildSizePills(CARD_INNER_HTML[p.id], listEntries, p.id);
+    }
+    if (changed) updatedProducts++;
+    continue;
+  }
 
   for (const size of p.vialSizes || []) {
     const code = catalogCode(p, size);

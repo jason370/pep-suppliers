@@ -6,3 +6,6 @@
 
 /pep-suppliers-us-warehouse-price-list.html
   Cache-Control: no-cache, no-store, must-revalidate
+
+/pep-suppliers-us-warehouse-price-list.pdf
+  Cache-Control: no-cache, no-store, must-revalidate
