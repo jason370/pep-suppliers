@@ -134,12 +134,10 @@ function catalogCode(product, size) {
 // Parse price list rows from pep-suppliers-us-warehouse-price-list.html only
 const byCode = new Map();
 const byNameSize = new Map();
+// Peptide Price List: Product · Size · 1 Vial (US) · Kit (China) — use US column only
 const rowPatterns = [
-  // Peptide Price List / US site list: Product · Size · Price (Single Vial)
-  /<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>/gi,
-  // Product · Size · Catalog No · Sale Price
-  /<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td>([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>/gi,
-  // Code · Product Name · Price
+  /<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<td class="price">[^<]*<\/td>/gi,
+  /<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>(?!\s*<td)/gi,
   /<td[^>]*class="code"[^>]*>([^<]*)<\/td>\s*<td[^>]*class="name"[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*class="price"[^>]*>([^<]*)<\/td>/gi,
 ];
 
