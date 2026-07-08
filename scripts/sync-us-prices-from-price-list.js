@@ -98,10 +98,10 @@ function setPillPrice(cardHtml, size, price, code) {
     `(<span class="size-pill[^"]*"[^>]*data-price=")[^"]*("[^>]*>\\s*${escSize(size)}\\s*</span>)`
   );
   if (pricePat.test(out)) {
-    out = out.replace(pricePat, `$1${price}$2`);
+    out = out.replace(pricePat, (_, a, b) => a + price + b);
   } else {
     const addPat = new RegExp(`(<span class="size-pill[^"]*")([^>]*>\\s*${escSize(size)}\\s*</span>)`);
-    if (addPat.test(out)) out = out.replace(addPat, `$1 data-price="${price}"$2`);
+    if (addPat.test(out)) out = out.replace(addPat, (_, a, b) => `${a} data-price="${price}"${b}`);
   }
   if (code) {
     const codePat = new RegExp(`(<span class="size-pill[^"]*")([^>]*>\\s*${escSize(size)}\\s*</span>)`);
