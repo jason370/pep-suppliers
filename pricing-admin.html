@@ -76,6 +76,7 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 .btn-icon:hover{background:#fff5f5;color:#c0392b;border-color:#f5c6cb}
 .btn-icon.card-del{color:#c0392b;border-color:#f5c6cb}
 tr.deleted-row td{opacity:.45;text-decoration:line-through}
+tr.deleted-row td.product-header-cell{opacity:1;text-decoration:none}
 tr.deleted-row .btn-icon{display:none}
 
 .push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:12px 24px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
@@ -373,18 +374,22 @@ function removePriceListRowsForDeletions(allProducts) {
 function deleteCard(productId, productName) {
   if (!confirm('Remove "' + productName + '" from the US Warehouse grid and price list?\n\nThe product will be hidden (not permanently erased).')) return;
   _deletions.products[productId] = true;
-  document.querySelectorAll('#table-body tr[data-productid="' + productId + '"]').forEach(function(row) {
-    row.classList.add('deleted-row');
-  });
+  renderTable();
   updateChangesLabel();
 }
 
 function deleteSize(key, productName, size) {
   if (!confirm('Remove ' + size + ' from "' + productName + '"?')) return;
   _deletions.sizes[key] = true;
-  var input = document.querySelector('.price-input[data-key="' + key.replace(/"/g, '\\"') + '"]');
-  if (input) input.closest('tr').classList.add('deleted-row');
+  renderTable();
   updateChangesLabel();
+}
+
+function headerRowKey(sizes) {
+  for (var i = 0; i < sizes.length; i++) {
+    if (!_deletions.sizes[sizes[i].key]) return sizes[i].key;
+  }
+  return sizes.length ? sizes[0].key : '';
 }
 
 function buildPcIndex(pc) {
@@ -566,13 +571,14 @@ function renderTable() {
 
   _products.forEach(function(p) {
     var sizes = getSizes(p);
-    var isFirstSize = true;
+    var nameRowKey = headerRowKey(sizes);
 
     sizes.forEach(function(s) {
       var key = s.key;
       var origPrice = getOriginalPrice(p, s.size);
       var currentPrice = _changes[key] !== undefined ? _changes[key] : origPrice;
       var isChanged = _changes[key] !== undefined;
+      var isHeaderRow = key === nameRowKey;
 
       var tr = document.createElement('tr');
       tr.className = 'size-row' + (isChanged ? ' changed-row' : '');
@@ -584,26 +590,25 @@ function renderTable() {
       if (_deletions.products[p.id] || _deletions.sizes[key]) tr.classList.add('deleted-row');
 
       tr.innerHTML =
-        '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
+        '<td' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' + (isHeaderRow ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
         '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
-        (isFirstSize ? '<td>' + catBadge(p.category) + '</td>' : '<td></td>') +
+        (isHeaderRow ? '<td class="product-header-cell">' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.cost != null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.costPerVial != null ? '$' + s.costPerVial.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td><input class="price-input' + (isChanged?' changed':'') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
           'data-key="' + escAttr(key) + '" data-cost="' + (s.cost||'') + '" data-costpervial="' + (s.costPerVial||'') + '" data-original="' + escAttr(origPrice) + '" ' +
           'oninput="onPriceChange(this)"></td>' +
-        (isFirstSize ?
-          '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' :
+        (isHeaderRow ?
+          '<td class="product-header-cell"><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' :
           '<td></td>') +
-        '<td style="white-space:nowrap">' +
-          (isFirstSize ? '<button type="button" class="btn-icon card-del" title="Delete card" onclick="deleteCard(\'' + jsStr(p.id) + '\',\'' + jsStr(p.name) + '\')">🗑 Card</button> ' : '') +
+        '<td style="white-space:nowrap"' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' +
+          (isHeaderRow ? '<button type="button" class="btn-icon card-del" title="Delete card" onclick="deleteCard(\'' + jsStr(p.id) + '\',\'' + jsStr(p.name) + '\')">🗑 Card</button> ' : '') +
           '<button type="button" class="btn-icon" title="Delete size" onclick="deleteSize(\'' + jsStr(key) + '\',\'' + jsStr(p.name) + '\',\'' + jsStr(s.size) + '\')">×</button>' +
         '</td>';
 
       tbody.appendChild(tr);
-      isFirstSize = false;
     });
   });
 
@@ -661,6 +666,7 @@ function resetAll() {
   document.querySelectorAll('#table-body tr.deleted-row').forEach(function(row) {
     row.classList.remove('deleted-row');
   });
+  renderTable();
   updateChangesLabel();
 }
 
