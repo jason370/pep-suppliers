@@ -69,7 +69,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "5mg"
     ],
@@ -127,7 +127,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "2mg",
       "5mg"
@@ -282,7 +282,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "2mg",
       "10mg"
@@ -315,7 +315,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "20mg"
@@ -326,7 +325,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "$15",
       "10mg": "$19.25",
       "20mg": "$47"
@@ -352,7 +350,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "4mg",
       "10mg",
       "20mg",
       "30mg"
@@ -363,7 +360,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "4mg": "N/A",
       "10mg": "$33",
       "20mg": "$42",
       "30mg": "71"
@@ -385,7 +381,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "20mg"
     ],
@@ -474,7 +470,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "20mg"
     ],
@@ -530,7 +526,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -540,7 +535,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "19",
       "10mg": "34"
     },
@@ -557,7 +551,7 @@
     "id": "cjc-1295-ipamorelin-blend-overseas-warehouse",
     "name": "CJC-1295 & Ipamorelin Blend",
     "category": "Peptide Blends",
-    "price": "$28.00",
+    "price": "$28.00 – $49.00",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -592,7 +586,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg"
     ],
     "tags": [],
@@ -601,7 +594,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "27"
     },
     "vialImages": {
@@ -619,7 +611,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "20mg"
     ],
@@ -646,7 +638,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "20mg"
     ],
@@ -673,7 +665,7 @@
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": false,
-    "visible": true,
+    "visible": false,
     "vialSizes": [
       "5mg",
       "10mg"
@@ -733,10 +725,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
-      "12mg",
       "15mg"
     ],
     "tags": [],
@@ -745,10 +735,8 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "13",
       "10mg": "$21",
-      "12mg": "N/A",
       "15mg": "$37"
     },
     "vialImages": {
@@ -803,7 +791,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
       "50mg"
     ],
@@ -813,7 +800,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$17",
       "50mg": "$59"
     },
@@ -983,7 +969,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "50mg",
       "70mg"
     ],
     "tags": [],
@@ -992,15 +977,10 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "50mg": "N/A",
       "70mg": "$41"
     },
-    "vialImages": {
-      "50mg": "/images/vials/GLOW50.png"
-    },
-    "catalogNos": {
-      "50mg": "GLOW50"
-    }
+    "vialImages": {},
+    "catalogNos": {}
   },
   {
     "id": "gonadorelin-gnrh-overseas-warehouse",
@@ -1039,7 +1019,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg"
     ],
     "tags": [],
@@ -1048,15 +1027,12 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "21"
     },
     "vialImages": {
-      "2mg": "/images/vials/HX2.png",
       "5mg": "/images/vials/HX5.png"
     },
     "catalogNos": {
-      "2mg": "HX2",
       "5mg": "HX5"
     }
   },
@@ -1113,7 +1089,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1123,7 +1098,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "$28",
       "10mg": "52"
     },
@@ -1231,7 +1205,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1241,7 +1214,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "16",
       "10mg": "$21"
     },
@@ -1264,7 +1236,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -1273,15 +1244,12 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$23"
     },
     "vialImages": {
-      "5mg": "/images/vials/KS5.png",
       "10mg": "/images/vials/KS10.png"
     },
     "catalogNos": {
-      "5mg": "KS5",
       "10mg": "KS10"
     }
   },
@@ -1322,7 +1290,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -1331,15 +1298,12 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "20"
     },
     "vialImages": {
-      "5mg": "/images/vials/KP5.png",
       "10mg": "/images/vials/KP10.png"
     },
     "catalogNos": {
-      "5mg": "KP5",
       "10mg": "KP10"
     }
   },
@@ -1556,7 +1520,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -1565,15 +1528,12 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$17.35"
     },
     "vialImages": {
-      "5mg": "/images/vials/ML5.png",
       "10mg": "/images/vials/ML10.png"
     },
     "catalogNos": {
-      "5mg": "ML5",
       "10mg": "ML10"
     }
   },
@@ -1614,7 +1574,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
       "20mg",
       "40mg"
@@ -1625,19 +1584,16 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$21",
       "20mg": "$41",
       "40mg": "$60.55"
     },
     "vialImages": {
-      "5mg": "/images/vials/MS5.png",
       "10mg": "/images/vials/MS10.png",
       "20mg": "/images/vials/MS20.png",
       "40mg": "/images/vials/MS40.png"
     },
     "catalogNos": {
-      "5mg": "MS5",
       "10mg": "MS10",
       "20mg": "MS20",
       "40mg": "MS40"
@@ -1744,7 +1700,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -1754,7 +1709,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "$17",
       "10mg": "$33"
     },
@@ -1860,7 +1814,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
       "20mg"
     ],
@@ -1870,7 +1823,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$22",
       "20mg": "42"
     },
@@ -2001,7 +1953,6 @@
     "vialSizes": [
       "5mg",
       "10mg",
-      "15mg",
       "20mg",
       "30mg",
       "40mg",
@@ -2017,7 +1968,6 @@
     "prices": {
       "5mg": "$17.50",
       "10mg": "29",
-      "15mg": "N/A",
       "20mg": "51",
       "30mg": "71",
       "40mg": "99",
@@ -2028,7 +1978,6 @@
     "vialImages": {
       "5mg": "/images/vials/RT5.png",
       "10mg": "/images/vials/RT10.png",
-      "15mg": "/images/vials/RT15.png",
       "20mg": "/images/vials/RT20.png",
       "30mg": "/images/vials/RT30.png",
       "40mg": "/images/vials/RT40.png",
@@ -2039,7 +1988,6 @@
     "catalogNos": {
       "5mg": "RT5",
       "10mg": "RT10",
-      "15mg": "RT15",
       "20mg": "RT20",
       "30mg": "RT30",
       "40mg": "RT40",
@@ -2085,7 +2033,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
       "30mg"
     ],
@@ -2095,17 +2042,14 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "19",
       "30mg": "65"
     },
     "vialImages": {
-      "5mg": "/images/vials/SK5.png",
       "10mg": "/images/vials/SK10.png",
       "30mg": "/images/vials/SK30.png"
     },
     "catalogNos": {
-      "5mg": "SK5",
       "10mg": "SK10",
       "30mg": "SK30"
     }
@@ -2120,10 +2064,8 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
-      "15mg",
       "20mg",
       "30mg",
       "50mg"
@@ -2134,10 +2076,8 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "15",
       "10mg": "$29.25",
-      "15mg": "N/A",
       "20mg": "49",
       "30mg": "71",
       "50mg": "121"
@@ -2145,7 +2085,6 @@
     "vialImages": {
       "5mg": "/images/vials/SM5.png",
       "10mg": "/images/vials/SM10.png",
-      "15mg": "/images/vials/SM15.png",
       "20mg": "/images/vials/SM20.png",
       "30mg": "/images/vials/SM30.png",
       "50mg": "/images/vials/SM50.png"
@@ -2153,7 +2092,6 @@
     "catalogNos": {
       "5mg": "SM5",
       "10mg": "SM10",
-      "15mg": "SM15",
       "20mg": "SM20",
       "30mg": "SM30",
       "50mg": "SM50"
@@ -2169,9 +2107,7 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "5mg",
       "10mg",
-      "11mg",
       "30mg"
     ],
     "tags": [],
@@ -2180,18 +2116,14 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "N/A",
       "10mg": "$17.50",
-      "11mg": "N/A",
       "30mg": "$48"
     },
     "vialImages": {
-      "5mg": "/images/vials/XA5.png",
       "10mg": "/images/vials/XA10.png",
       "30mg": "/images/vials/XA30.png"
     },
     "catalogNos": {
-      "5mg": "XA5",
       "10mg": "XA10",
       "30mg": "XA30"
     }
@@ -2351,8 +2283,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
-      "5mg",
       "10mg"
     ],
     "tags": [],
@@ -2361,8 +2291,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
-      "5mg": "N/A",
       "10mg": "$66"
     },
     "vialImages": {
@@ -2419,7 +2347,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg",
       "20mg"
@@ -2430,7 +2357,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "$21",
       "10mg": "33",
       "20mg": "$81"
@@ -2511,7 +2437,6 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
       "5mg",
       "10mg"
     ],
@@ -2521,7 +2446,6 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
       "5mg": "$22",
       "10mg": "33"
     },
@@ -2544,15 +2468,11 @@
     "inStock": true,
     "visible": true,
     "vialSizes": [
-      "2mg",
-      "5mg",
       "10mg",
-      "12mg",
       "15mg",
       "20mg",
       "30mg",
       "40mg",
-      "45mg",
       "50mg",
       "60mg",
       "70mg",
@@ -2567,15 +2487,11 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "2mg": "N/A",
-      "5mg": "N/A",
       "10mg": "23",
-      "12mg": "N/A",
       "15mg": "36",
       "20mg": "41",
       "30mg": "49",
       "40mg": "71",
-      "45mg": "N/A",
       "50mg": "95",
       "60mg": "111",
       "70mg": "135",
