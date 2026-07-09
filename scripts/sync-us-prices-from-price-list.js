@@ -1,6 +1,6 @@
 /**
  * Sync US Warehouse catalog from pep-suppliers-us-warehouse-price-list.html ONLY.
- * Updates products.json and index.html CARD_INNER_HTML size-pill data-price values.
+ * Updates products.json only. US Warehouse card prices are applied at runtime from products.json.
  */
 const fs = require('fs');
 const path = require('path');
@@ -154,9 +154,15 @@ for (const re of rowPatterns) {
       size = parseSizeFromName(fullName);
     } else if (re.source.includes('class="size"')) {
       fullName = decodeEntities(m[1]).trim();
-      size = decodeEntities(m[2]).trim().toLowerCase().replace(/\s+/g, '');
+      const sizeDisplay = decodeEntities(m[2]).trim();
+      size = normSize(sizeDisplay);
       price = money(m[3]);
       code = null;
+      if (!price) continue;
+      rowCount++;
+      const key = norm(fullName) + '|' + size;
+      byNameSize.set(key, { price, code: code || '', sizeDisplay });
+      continue;
     } else if (m.length >= 5) {
       fullName = decodeEntities(m[1]).trim();
       size = decodeEntities(m[2]).trim().toLowerCase().replace(/\s+/g, '');
@@ -170,7 +176,9 @@ for (const re of rowPatterns) {
     if (code) byCode.set(code, { price, fullName, size });
     if (fullName && size) {
       const key = norm(fullName) + '|' + size;
-      byNameSize.set(key, { price, code: code || '' });
+      if (!byNameSize.has(key)) {
+        byNameSize.set(key, { price, code: code || '', sizeDisplay: size });
+      }
     }
   }
 }
@@ -196,7 +204,7 @@ const byProduct = new Map();
 for (const [k, v] of byNameSize.entries()) {
   const [base, sz] = k.split('|');
   if (!byProduct.has(base)) byProduct.set(base, []);
-  byProduct.get(base).push({ size: sz, price: v.price, code: v.code || '' });
+  byProduct.get(base).push({ size: v.sizeDisplay || sz, price: v.price, code: v.code || '' });
 }
 
 function productListKey(productName) {
@@ -307,9 +315,6 @@ for (const p of products) {
     p.catalogNos = nextCatalogNos;
     const rng = rangeFromPrices(nextPrices);
     if (rng) p.price = rng;
-    if (CARD_INNER_HTML[p.id]) {
-      CARD_INNER_HTML[p.id] = rebuildSizePills(CARD_INNER_HTML[p.id], listEntries, p.id);
-    }
     if (changed) updatedProducts++;
     continue;
   }
@@ -327,9 +332,6 @@ for (const p of products) {
       changed = true;
       updatedSizes++;
     }
-    if (CARD_INNER_HTML[p.id]) {
-      CARD_INNER_HTML[p.id] = setPillPrice(CARD_INNER_HTML[p.id], size, hit.price, code);
-    }
     if (code) {
       p.catalogNos = p.catalogNos || {};
       p.catalogNos[size] = code;
@@ -345,15 +347,7 @@ for (const p of products) {
 }
 
 fs.writeFileSync(productsPath, JSON.stringify(products, null, 2) + '\n', 'utf8');
-
-const lineTerm = sizePrefix.slice(0, sizePrefix.indexOf('window'));
-const newBlock =
-  cardPrefix +
-  JSON.stringify(CARD_INNER_HTML) +
-  sizePrefix +
-  JSON.stringify(_sizeImages) +
-  lineTerm;
-fs.writeFileSync(indexPath, indexHtml.slice(0, cardStart) + newBlock + indexHtml.slice(sizeEnd + lineTerm.length), 'utf8');
+console.log('products.json updated (CARD_INNER_HTML unchanged — prices applied at runtime)');
 
 console.log(`Price list rows parsed: ${rowCount}`);
 console.log(`Products updated: ${updatedProducts}`);

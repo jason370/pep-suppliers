@@ -160,7 +160,7 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 <div class="push-bar" id="push-bar">
   <div>
     <p id="push-summary">Ready to push</p>
-    <small style="opacity:.7;font-size:12px">Updates products.json on GitHub → live in ~30s</small>
+    <small style="opacity:.7;font-size:12px">Updates US Warehouse cards + Peptide Price List (HTML) → live in ~30s. PDF is not auto-updated.</small>
   </div>
   <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
 </div>
@@ -169,11 +169,137 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 var GITHUB_TOKEN = '';
 var REPO = 'jason370/pep-suppliers';
 var GH_RAW = 'https://raw.githubusercontent.com/' + REPO + '/main/';
+var PRICE_LIST_FILE = 'pep-suppliers-us-warehouse-price-list.html';
 
 var _products = [];
 var _pcBySiteName = {};  // site product name -> [{cat_no, spec, cost, vendor}]
 var _changes = {};       // "productId::spec" -> new price string, or "_stock_::productId" -> bool
 var _sha = '';
+var _priceListSha = '';
+var _priceListHead = '';
+var _priceListTail = '';
+var _priceListRows = [];
+
+var ALIASES = {
+  'bpc-157 & tb-500 blend': 'bpc 157 & tb 500 blend',
+  'cjc-1295 no dac (mod grf 1-29)': 'cjc 1295 no dac mod grf 1 29',
+  'cjc-1295 dac': 'cjc 1295 dac',
+  'tb-500 (thymosin beta 4)': 'tb 500 thymosin beta 4',
+  'ghk-cu (copper)': 'ghk cu copper',
+  'pt-141 (bremelanotide)': 'pt 141 bremelanotide',
+  'n-acetyl selank': 'n acetyl selank',
+  'n-acetyl semax': 'n acetyl semax',
+  'hgh 191aa (somatropin)': 'hgh 191aa somatropin',
+  'kisspeptin-10': 'kisspeptin 10',
+  'fragment 176-191': 'fragment 176 191',
+  'acth 1-39': 'acth 1 39',
+  'adipotide (ftpp)': 'adipotide ftpp',
+  'gonadorelin (gnrh)': 'gonadorelin gnrh'
+};
+
+function normName(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/[+]/g, ' & ')
+    .replace(/[^a-z0-9&]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normSize(s) {
+  return String(s || '').toLowerCase().replace(/\s+/g, '');
+}
+
+function formatMoney(val) {
+  if (!val) return '';
+  var n = parseFloat(String(val).replace(/[^0-9.]/g, ''));
+  if (!Number.isFinite(n)) return String(val).trim();
+  if (Number.isInteger(n)) return '$' + n;
+  return '$' + n.toFixed(2);
+}
+
+function parsePriceListHtml(html) {
+  var tbodyStart = html.indexOf('<tbody>');
+  var tbodyEnd = html.indexOf('</tbody>');
+  if (tbodyStart < 0 || tbodyEnd < 0) throw new Error('Could not parse price list HTML');
+  _priceListHead = html.slice(0, tbodyStart + 7);
+  _priceListTail = html.slice(tbodyEnd);
+  _priceListRows = [];
+  var re = /<tr>\s*<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<\/tr>/gi;
+  var m;
+  while ((m = re.exec(html))) {
+    _priceListRows.push({ product: m[1], size: m[2], us: m[3], china: m[4] });
+  }
+}
+
+function buildPriceListHtml() {
+  var rows = _priceListRows.map(function(r) {
+    return '    <tr>\n' +
+      '      <td>' + esc(r.product) + '</td>\n' +
+      '      <td class="size">' + esc(r.size) + '</td>\n' +
+      '      <td class="price">' + esc(r.us) + '</td>\n' +
+      '      <td class="price">' + esc(r.china) + '</td>\n' +
+      '    </tr>';
+  }).join('\n');
+  var head = _priceListHead.replace(/\d+\s+items/, _priceListRows.length + ' items');
+  return head + '\n' + rows + '\n' + _priceListTail;
+}
+
+function buildPriceLookup(products) {
+  var lookup = {};
+  products.forEach(function(p) {
+    if (!p.visible || p.warehouse !== 'US Warehouse') return;
+    var base = normName(p.name);
+    var keys = [base];
+    if (ALIASES[base]) keys.push(ALIASES[base]);
+    Object.keys(p.prices || {}).forEach(function(size) {
+      var sz = normSize(size);
+      keys.forEach(function(k) {
+        lookup[k + '|' + sz] = formatMoney(p.prices[size]);
+      });
+    });
+  });
+  return lookup;
+}
+
+function syncPriceListFromProducts(products) {
+  var lookup = buildPriceLookup(products);
+  var updated = 0;
+  _priceListRows.forEach(function(row) {
+    var base = normName(row.product);
+    if (ALIASES[base]) base = ALIASES[base];
+    var key = base + '|' + normSize(row.size);
+    var price = lookup[key];
+    if (!price) {
+      Object.keys(lookup).forEach(function(k) {
+        if (price) return;
+        var parts = k.split('|');
+        if (parts[1] !== normSize(row.size)) return;
+        if (parts[0] === base || parts[0].includes(base) || base.includes(parts[0])) price = lookup[k];
+      });
+    }
+    if (price && row.us !== price) {
+      row.us = price;
+      updated++;
+    }
+  });
+  return updated;
+}
+
+function ghGetFile(path) {
+  return fetch('https://api.github.com/repos/' + REPO + '/contents/' + path, {
+    headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
+  }).then(function(r) { return r.json(); });
+}
+
+function ghPutFile(path, text, message, sha) {
+  var content = btoa(unescape(encodeURIComponent(text)));
+  return fetch('https://api.github.com/repos/' + REPO + '/contents/' + path, {
+    method: 'PUT',
+    headers: { 'Authorization': 'token ' + GITHUB_TOKEN, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: message, content: content, sha: sha })
+  }).then(function(r) { return r.json(); });
+}
 
 function buildPcIndex(pc) {
   _pcBySiteName = {};
@@ -205,18 +331,63 @@ function buildPcIndex(pc) {
   Object.keys(_pcBySiteName).forEach(function(k){ _pcBySiteName[k].sort(numSort); });
 }
 
-function getSizes(p) {
-  // Returns array of {cat_no, size, cost, vendor, key}
-  var pcSizes = _pcBySiteName[p.name] || [];
-  if (pcSizes.length) {
-    return pcSizes.map(function(s) {
-      return {cat_no: s.cat_no, size: s.size, cost: s.cost, costPerVial: s.costPerVial, vialCount: s.vialCount, vendor: s.vendor, key: p.id + '::' + s.size};
-    });
-  }
-  // Fallback: use vialSizes from product with no cost data
-  return (p.vialSizes||[]).map(function(sz) {
-    return {cat_no: '', size: sz, cost: null, vendor: null, key: p.id + '::' + sz};
+function dedupePcSizes(pcSizes, p) {
+  var catalogNos = p.catalogNos || {};
+  var seen = {};
+  var out = [];
+  pcSizes.forEach(function(s) {
+    var k = normSize(s.size);
+    if (!seen[k]) {
+      seen[k] = s;
+      out.push(s);
+      return;
+    }
+    var want = catalogNos[s.size];
+    var prev = seen[k];
+    if (want && s.cat_no === want && prev.cat_no !== want) {
+      var idx = out.indexOf(prev);
+      out[idx] = s;
+      seen[k] = s;
+    }
   });
+  return out;
+}
+
+function getSizes(p) {
+  var pcSizes = dedupePcSizes(_pcBySiteName[p.name] || [], p);
+  var catalogNos = p.catalogNos || {};
+  var vialSizes = p.vialSizes || [];
+
+  function rowForSize(sz, match) {
+    return {
+      cat_no: match ? match.cat_no : (catalogNos[sz] || ''),
+      size: sz,
+      cost: match ? match.cost : null,
+      costPerVial: match ? match.costPerVial : null,
+      vialCount: match ? match.vialCount : null,
+      vendor: match ? match.vendor : null,
+      key: p.id + '::' + sz
+    };
+  }
+
+  function findPcSize(sz) {
+    var wantCat = catalogNos[sz];
+    var match = null;
+    pcSizes.forEach(function(s) {
+      if (normSize(s.size) !== normSize(sz)) return;
+      if (!match) match = s;
+      if (wantCat && s.cat_no === wantCat) match = s;
+    });
+    return match;
+  }
+
+  if (vialSizes.length) {
+    return vialSizes.map(function(sz) { return rowForSize(sz, findPcSize(sz)); });
+  }
+  if (pcSizes.length) {
+    return pcSizes.map(function(s) { return rowForSize(s.size, s); });
+  }
+  return [];
 }
 
 function getOriginalPrice(p, size) {
@@ -269,16 +440,21 @@ function loadData() {
   Promise.all([
     fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }),
     fetch(GH_RAW + 'price-compare.json?t=' + Date.now()).then(function(r){ return r.json(); }),
-    fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
-      {headers:{'Authorization':'token ' + GITHUB_TOKEN}}).then(function(r){ return r.json(); })
+    ghGetFile('products.json'),
+    ghGetFile(PRICE_LIST_FILE),
+    fetch(GH_RAW + PRICE_LIST_FILE + '?t=' + Date.now()).then(function(r){ return r.text(); })
   ])
   .then(function(results) {
-    _products = results[0];
+    _products = results[0].filter(function(p) {
+      return p.visible && p.warehouse === 'US Warehouse';
+    });
     buildPcIndex(results[1]);
     _sha = results[2].sha;
+    _priceListSha = results[3].sha;
+    parsePriceListHtml(results[4]);
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
-    document.getElementById('product-count').textContent = _products.length + ' products';
+    document.getElementById('product-count').textContent = _products.length + ' US Warehouse products';
     hideStatus();
     renderTable();
   })
@@ -451,27 +627,50 @@ function pushToGitHub() {
     return out;
   });
 
-  var content = btoa(unescape(encodeURIComponent(JSON.stringify(updated, null, 2))));
-  fetch('https://api.github.com/repos/' + REPO + '/contents/products.json',
-    {headers:{'Authorization':'token ' + GITHUB_TOKEN}})
-  .then(function(r){ return r.json(); })
-  .then(function(d){
-    return fetch('https://api.github.com/repos/' + REPO + '/contents/products.json', {
-      method: 'PUT',
-      headers: {'Authorization':'token ' + GITHUB_TOKEN, 'Content-Type':'application/json'},
-      body: JSON.stringify({message:'Update prices from admin', content: content, sha: d.sha})
+  // Merge US Warehouse edits into full products.json
+  var updatedById = {};
+  updated.forEach(function(p) { updatedById[p.id] = p; });
+
+  ghGetFile('products.json')
+  .then(function(meta) {
+    return fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }).then(function(all) {
+      var merged = all.map(function(p) {
+        return updatedById[p.id] ? Object.assign({}, p, updatedById[p.id]) : p;
+      });
+      return ghPutFile('products.json', JSON.stringify(merged, null, 2), 'Update US Warehouse prices from admin', meta.sha)
+        .then(function(result) {
+          if (!result.content) throw new Error('products.json: ' + JSON.stringify(result));
+          return merged;
+        });
     });
   })
-  .then(function(r){ return r.json(); })
-  .then(function(result){
-    if (result.content) {
-      _products = updated; _changes = {};
-      updateChangesLabel(); renderTable();
-      showStatus('✅ Pushed! Site updates in ~30 seconds.', 'success');
-    } else {
-      showStatus('❌ Push failed: ' + JSON.stringify(result), 'error');
-      document.querySelector('#push-bar .btn').disabled = false;
-    }
+  .then(function(mergedProducts) {
+    var listUpdates = syncPriceListFromProducts(mergedProducts.filter(function(p) {
+      return p.visible && p.warehouse === 'US Warehouse';
+    }));
+    var listHtml = buildPriceListHtml();
+    return ghPutFile(
+      PRICE_LIST_FILE,
+      listHtml,
+      'Sync Peptide Price List US prices from admin (' + listUpdates + ' rows)',
+      _priceListSha
+    ).then(function(result) {
+      if (!result.content) throw new Error(PRICE_LIST_FILE + ': ' + JSON.stringify(result));
+      if (result.content.sha) _priceListSha = result.content.sha;
+      return { mergedProducts: mergedProducts, listUpdates: listUpdates };
+    });
+  })
+  .then(function(result) {
+    _products = result.mergedProducts.filter(function(p) {
+      return p.visible && p.warehouse === 'US Warehouse';
+    });
+    _changes = {};
+    updateChangesLabel();
+    renderTable();
+    var msg = '✅ Pushed! US Warehouse + price list update in ~30 seconds.';
+    if (result.listUpdates) msg += ' (' + result.listUpdates + ' price list rows synced)';
+    showStatus(msg, 'success');
+    document.querySelector('#push-bar .btn').disabled = false;
   })
   .catch(function(e){
     showStatus('❌ Error: ' + e.message, 'error');

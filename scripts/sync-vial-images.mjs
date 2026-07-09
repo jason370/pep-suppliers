@@ -35,7 +35,7 @@ for (const product of products) {
 }
 
 // US 5-amino entry: use full composites when master art exists
-const us5am = products.find((p) => p.id === '5-amino-1mq-5mg');
+const us5am = products.find((p) => p.id === '5-amino-1mq-overseas-warehouse');
 if (us5am) {
   us5am.vialImages = {
     '5mg': '/images/vials/5AM.png',

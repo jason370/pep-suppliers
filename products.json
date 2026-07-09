@@ -1,44 +1,9 @@
 [
   {
-    "id": "5-amino-1mq-5mg",
-    "name": "5-Amino-1MQ",
-    "category": "Other Research",
-    "price": "$24.00 – $43.00",
-    "description": "Research Use Only",
-    "warehouse": "US Warehouse",
-    "inStock": true,
-    "visible": false,
-    "vialSizes": [
-      "5mg",
-      "10mg",
-      "50mg"
-    ],
-    "vialImages": {
-      "5mg": "/images/vials/5AM.png",
-      "10mg": "/images/vials/10AM.png",
-      "50mg": "/images/vials/50AM.png"
-    },
-    "tags": [],
-    "dataAttributes": {
-      "data-category": "Other Research",
-      "data-warehouse": "US Warehouse"
-    },
-    "prices": {
-      "5mg": "$24",
-      "10mg": "$30",
-      "50mg": "43"
-    },
-    "catalogNos": {
-      "5mg": "5AM",
-      "10mg": "10AM",
-      "50mg": "50AM"
-    }
-  },
-  {
     "id": "5-amino-1mq-overseas-warehouse",
     "name": "5-Amino-1MQ",
     "category": "Other Research",
-    "price": "$13.65 – $28.00",
+    "price": "$24.00 – $43.00",
     "description": "Research Use Only",
     "warehouse": "US Warehouse",
     "inStock": true,
@@ -59,9 +24,9 @@
       "data-warehouse": "US Warehouse"
     },
     "prices": {
-      "5mg": "$13.65",
-      "10mg": "$15.75",
-      "50mg": "$28"
+      "5mg": "$24",
+      "10mg": "$30",
+      "50mg": "$43"
     },
     "catalogNos": {
       "5mg": "5AM",
