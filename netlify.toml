@@ -5,6 +5,16 @@
   directory = "functions"
 
 [[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/product.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
   for = "/products.json"
   [headers.values]
     Cache-Control = "no-cache, no-store, must-revalidate"

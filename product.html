@@ -440,7 +440,21 @@ window.cartCheckout = function() {
     document.getElementById('breadcrumb-name').textContent = 'Not found';
   }
 
-  // Split a price range string into per-size prices
+  function priceForSize(size) {
+    if (!product || !size) return '';
+    var prices = product.prices || {};
+    if (prices[size]) return prices[size];
+    var target = String(size).trim().toLowerCase().replace(/\s+/g, '');
+    var keys = Object.keys(prices);
+    for (var i = 0; i < keys.length; i++) {
+      if (String(keys[i]).trim().toLowerCase().replace(/\s+/g, '') === target) {
+        return prices[keys[i]];
+      }
+    }
+    return '';
+  }
+
+  // Fallback when products.json has no per-size prices
   function buildSizePrices(sizes, priceStr) {
     var map = {};
     if (!sizes || !sizes.length) return map;
@@ -473,7 +487,14 @@ window.cartCheckout = function() {
     }
     el.classList.remove('hidden');
     selectedSize = sizes[0];
-    var priceMap = buildSizePrices(sizes, product ? product.price : '');
+    var priceMap = {};
+    sizes.forEach(function(size) {
+      var direct = priceForSize(size);
+      if (direct) priceMap[size] = direct;
+    });
+    if (!Object.keys(priceMap).length) {
+      priceMap = buildSizePrices(sizes, product ? product.price : '');
+    }
     // Set initial price
     if (priceMap[sizes[0]]) document.getElementById('product-price').textContent = priceMap[sizes[0]];
     sizes.forEach(function(size, i) {
@@ -485,8 +506,7 @@ window.cartCheckout = function() {
         el.querySelectorAll('.vial-option').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         selectedSize = size;
-        // Update price display
-        var p = priceMap[size];
+        var p = priceMap[size] || priceForSize(size);
         if (p) document.getElementById('product-price').textContent = p;
         // Swap vial image if per-size images exist
         if (product && product.vialImages && product.vialImages[size]) {
@@ -504,7 +524,9 @@ window.cartCheckout = function() {
     document.getElementById('breadcrumb-name').textContent = p.name || 'Product';
     document.title = (p.name || 'Product') + ' — Pep Suppliers';
     document.getElementById('product-warehouse').textContent = p.warehouse || '';
-    document.getElementById('product-price').textContent = p.price || '';
+    var firstSize = (p.vialSizes && p.vialSizes[0]) || '';
+    var initialPrice = (firstSize && p.prices && p.prices[firstSize]) || p.price || '';
+    document.getElementById('product-price').textContent = initialPrice;
     document.getElementById('product-description').textContent = p.description || 'Research Use Only';
     renderVialSelector(p.vialSizes || []);
     document.getElementById('product-not-found').style.display = 'none';
@@ -530,8 +552,12 @@ window.cartCheckout = function() {
 
   document.getElementById('add-cart-btn').addEventListener('click', function() {
     if (!product || !window.cartAddItem) return;
+    var sizePrice = priceForSize(selectedSize) || product.price || '';
     for (var i = 0; i < quantity; i++) {
-      window.cartAddItem(Object.assign({}, product, { selectedVialSize: selectedSize }));
+      window.cartAddItem(Object.assign({}, product, {
+        selectedVialSize: selectedSize,
+        price: sizePrice
+      }));
     }
     window.cartOpen();
   });
@@ -542,7 +568,7 @@ window.cartCheckout = function() {
     this.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
-  fetch('/products.json')
+  fetch('/products.json?v=' + Date.now(), { cache: 'no-store' })
     .then(function(r) { return r.ok ? r.json() : []; })
     .then(function(items) {
       if (!Array.isArray(items)) { showNotFound(); return; }
