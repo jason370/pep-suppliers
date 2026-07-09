@@ -6885,6 +6885,15 @@ input.invalid{
     var usedPills = [];
 
     function normSz(s) { return String(s).trim().toLowerCase().replace(/\s+/g, ''); }
+    function isNaPrice(price) {
+      var s = String(price || '').trim().toLowerCase();
+      return !s || s === 'n/a' || s === 'na' || s === '—';
+    }
+    function parsePriceNum(price) {
+      if (isNaPrice(price)) return NaN;
+      var n = parseFloat(String(price).replace(/[^0-9.]/g, ''));
+      return Number.isFinite(n) ? n : NaN;
+    }
     function priceForSize(size) {
       var prices = product.prices || {};
       if (prices[size] != null && prices[size] !== '') return prices[size];
@@ -6907,7 +6916,8 @@ input.invalid{
 
     wrap.querySelectorAll('.size-pill').forEach(function(pill) { pill.style.display = 'none'; pill.classList.remove('active'); });
 
-    (product.vialSizes || []).forEach(function(size, i) {
+    var activeSet = false;
+    (product.vialSizes || []).forEach(function(size) {
       var price = priceForSize(size);
       if (!price) return;
       var pill = findPill(size);
@@ -6923,14 +6933,31 @@ input.invalid{
       if (catalogNos[size]) pill.setAttribute('data-code', catalogNos[size]);
       var img = sizeImages[size] || sizeImages[normSz(size)];
       if (img) pill.setAttribute('data-img', img);
-      if (i === 0) pill.classList.add('active');
+      if (!activeSet && !isNaPrice(price)) {
+        pill.classList.add('active');
+        activeSet = true;
+      }
     });
+
+    if (!activeSet) {
+      var first = wrap.querySelector('.size-pill:not([style*="display: none"])');
+      if (first) first.classList.add('active');
+    }
 
     var active = wrap.querySelector('.size-pill.active') || wrap.querySelector('.size-pill:not([style*="display: none"])');
     var priceEl = card.querySelector('.price');
-    if (priceEl && active) {
-      var dp = active.getAttribute('data-price');
-      if (dp) priceEl.textContent = dp;
+    if (priceEl) {
+      var lowestPrice = '';
+      var lowestNum = Infinity;
+      (product.vialSizes || []).forEach(function(size) {
+        var p = priceForSize(size);
+        var n = parsePriceNum(p);
+        if (Number.isFinite(n) && n < lowestNum) { lowestNum = n; lowestPrice = p; }
+      });
+      var dp = active && active.getAttribute('data-price');
+      if (dp && !isNaPrice(dp)) priceEl.textContent = dp;
+      else if (lowestPrice) priceEl.textContent = lowestPrice;
+      else if (dp) priceEl.textContent = dp;
     }
   }
 

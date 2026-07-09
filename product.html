@@ -454,6 +454,35 @@ window.cartCheckout = function() {
     return '';
   }
 
+  function isNaPrice(price) {
+    var s = String(price || '').trim().toLowerCase();
+    return !s || s === 'n/a' || s === 'na' || s === '—';
+  }
+
+  function parsePriceNum(price) {
+    if (isNaPrice(price)) return NaN;
+    var n = parseFloat(String(price).replace(/[^0-9.]/g, ''));
+    return Number.isFinite(n) ? n : NaN;
+  }
+
+  function lowestNumericalPrice(sizes) {
+    var best = '';
+    var bestNum = Infinity;
+    (sizes || []).forEach(function(size) {
+      var p = priceForSize(size);
+      var n = parsePriceNum(p);
+      if (Number.isFinite(n) && n < bestNum) { bestNum = n; best = p; }
+    });
+    return best;
+  }
+
+  function firstPricedSize(sizes) {
+    for (var i = 0; i < (sizes || []).length; i++) {
+      if (!isNaPrice(priceForSize(sizes[i]))) return sizes[i];
+    }
+    return (sizes && sizes[0]) || '';
+  }
+
   // Fallback when products.json has no per-size prices
   function buildSizePrices(sizes, priceStr) {
     var map = {};
@@ -486,7 +515,7 @@ window.cartCheckout = function() {
       return;
     }
     el.classList.remove('hidden');
-    selectedSize = sizes[0];
+    selectedSize = firstPricedSize(sizes);
     var priceMap = {};
     sizes.forEach(function(size) {
       var direct = priceForSize(size);
@@ -495,12 +524,12 @@ window.cartCheckout = function() {
     if (!Object.keys(priceMap).length) {
       priceMap = buildSizePrices(sizes, product ? product.price : '');
     }
-    // Set initial price
-    if (priceMap[sizes[0]]) document.getElementById('product-price').textContent = priceMap[sizes[0]];
-    sizes.forEach(function(size, i) {
+    var defaultPrice = priceMap[selectedSize] || lowestNumericalPrice(sizes);
+    if (defaultPrice) document.getElementById('product-price').textContent = defaultPrice;
+    sizes.forEach(function(size) {
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'vial-option' + (i === 0 ? ' active' : '');
+      btn.className = 'vial-option' + (size === selectedSize ? ' active' : '');
       btn.textContent = size;
       btn.addEventListener('click', function() {
         el.querySelectorAll('.vial-option').forEach(function(b) { b.classList.remove('active'); });
@@ -508,6 +537,7 @@ window.cartCheckout = function() {
         selectedSize = size;
         var p = priceMap[size] || priceForSize(size);
         if (p) document.getElementById('product-price').textContent = p;
+        else document.getElementById('product-price').textContent = lowestNumericalPrice(sizes) || 'Contact for price';
         // Swap vial image if per-size images exist
         if (product && product.vialImages && product.vialImages[size]) {
           var pImg = document.getElementById('product-img');
@@ -524,8 +554,8 @@ window.cartCheckout = function() {
     document.getElementById('breadcrumb-name').textContent = p.name || 'Product';
     document.title = (p.name || 'Product') + ' — Pep Suppliers';
     document.getElementById('product-warehouse').textContent = p.warehouse || '';
-    var firstSize = (p.vialSizes && p.vialSizes[0]) || '';
-    var initialPrice = (firstSize && p.prices && p.prices[firstSize]) || p.price || '';
+    var sizes = p.vialSizes || [];
+    var initialPrice = lowestNumericalPrice(sizes) || p.price || 'Contact for price';
     document.getElementById('product-price').textContent = initialPrice;
     document.getElementById('product-description').textContent = p.description || 'Research Use Only';
     renderVialSelector(p.vialSizes || []);
@@ -533,8 +563,9 @@ window.cartCheckout = function() {
     document.getElementById('product-content').style.display = 'block';
     var pImg = document.getElementById('product-img');
     if (pImg) {
-      if (p.vialImages && p.vialSizes && p.vialImages[p.vialSizes[0]]) {
-        pImg.src = p.vialImages[p.vialSizes[0]];
+      var defaultSize = firstPricedSize(sizes) || sizes[0];
+      if (p.vialImages && defaultSize && p.vialImages[defaultSize]) {
+        pImg.src = p.vialImages[defaultSize];
       } else {
         pImg.src = '/images/vials/' + p.id + '.png';
       }
@@ -552,7 +583,8 @@ window.cartCheckout = function() {
 
   document.getElementById('add-cart-btn').addEventListener('click', function() {
     if (!product || !window.cartAddItem) return;
-    var sizePrice = priceForSize(selectedSize) || product.price || '';
+    var sizePrice = priceForSize(selectedSize);
+    if (isNaPrice(sizePrice)) sizePrice = lowestNumericalPrice(product.vialSizes || []) || product.price || '';
     for (var i = 0; i < quantity; i++) {
       window.cartAddItem(Object.assign({}, product, {
         selectedVialSize: selectedSize,

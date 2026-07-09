@@ -72,6 +72,11 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 .cost-cell{color:#9aabb8;font-size:12px;font-family:monospace}
 .vendor-cell{font-size:18px;font-weight:700;color:#0D6D72;font-family:monospace}
 .catno-cell{font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)}
+.btn-icon{background:#fff;border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:12px;font-weight:700;cursor:pointer;color:#6b7f94;line-height:1.4}
+.btn-icon:hover{background:#fff5f5;color:#c0392b;border-color:#f5c6cb}
+.btn-icon.card-del{color:#c0392b;border-color:#f5c6cb}
+tr.deleted-row td{opacity:.45;text-decoration:line-through}
+tr.deleted-row .btn-icon{display:none}
 
 .push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:12px 24px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
 .push-bar.show{display:flex}
@@ -138,6 +143,7 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
         <col style="width:75px">
         <col style="width:100px">
         <col style="width:55px">
+        <col style="width:88px">
       </colgroup>
       <thead>
         <tr>
@@ -150,6 +156,7 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
           <th>Cost/Vial</th>
           <th>Sale Price</th>
           <th>In Stock</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody id="table-body"></tbody>
@@ -160,7 +167,7 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 <div class="push-bar" id="push-bar">
   <div>
     <p id="push-summary">Ready to push</p>
-    <small style="opacity:.7;font-size:12px">Updates US Warehouse cards + Peptide Price List (HTML) → live in ~30s. PDF is not auto-updated.</small>
+    <small style="opacity:.7;font-size:12px">Updates US Warehouse cards + Peptide Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.</small>
   </div>
   <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
 </div>
@@ -174,6 +181,7 @@ var PRICE_LIST_FILE = 'pep-suppliers-us-warehouse-price-list.html';
 var _products = [];
 var _pcBySiteName = {};  // site product name -> [{cat_no, spec, cost, vendor}]
 var _changes = {};       // "productId::spec" -> new price string, or "_stock_::productId" -> bool
+var _deletions = { products: {}, sizes: {} };
 var _sha = '';
 var _priceListSha = '';
 var _priceListHead = '';
@@ -299,6 +307,84 @@ function ghPutFile(path, text, message, sha) {
     headers: { 'Authorization': 'token ' + GITHUB_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: message, content: content, sha: sha })
   }).then(function(r) { return r.json(); });
+}
+
+function removeFromObjectBySize(obj, size) {
+  if (!obj) return;
+  Object.keys(obj).forEach(function(k) {
+    if (normSize(k) === normSize(size)) delete obj[k];
+  });
+}
+
+function applySizeDeletions(p) {
+  var out = Object.assign({}, p);
+  Object.keys(_deletions.sizes).forEach(function(key) {
+    var parts = key.split('::');
+    if (parts[0] !== p.id) return;
+    var sz = parts[1];
+    if (out.vialSizes) {
+      out.vialSizes = out.vialSizes.filter(function(s) { return normSize(s) !== normSize(sz); });
+    }
+    removeFromObjectBySize(out.prices, sz);
+    removeFromObjectBySize(out.catalogNos, sz);
+    removeFromObjectBySize(out.vialImages, sz);
+  });
+  return out;
+}
+
+function recalcProductPriceRange(p) {
+  var nums = [];
+  Object.keys(p.prices || {}).forEach(function(sz) {
+    var val = p.prices[sz];
+    var n = parseFloat(String(val || '').replace(/[^0-9.]/g, ''));
+    if (Number.isFinite(n)) nums.push(n);
+  });
+  if (!nums.length) return p;
+  nums.sort(function(a, b) { return a - b; });
+  var cheapest = '$' + nums[0].toFixed(2);
+  var mostExp = '$' + nums[nums.length - 1].toFixed(2);
+  p.price = nums.length > 1 ? cheapest + ' – ' + mostExp : cheapest;
+  return p;
+}
+
+function removePriceListRowsForDeletions(allProducts) {
+  _priceListRows = _priceListRows.filter(function(row) {
+    var rowName = normName(row.product);
+    var rowSize = normSize(row.size);
+    var matchedId = null;
+    allProducts.forEach(function(p) {
+      if (matchedId) return;
+      var base = normName(p.name);
+      var keys = [base];
+      if (ALIASES[base]) keys.push(ALIASES[base]);
+      keys.forEach(function(k) {
+        if (k === rowName || rowName.includes(k) || k.includes(rowName)) matchedId = p.id;
+      });
+    });
+    if (matchedId && _deletions.products[matchedId]) return false;
+    var sizeDeleted = Object.keys(_deletions.sizes).some(function(key) {
+      var parts = key.split('::');
+      return parts[0] === matchedId && normSize(parts[1]) === rowSize;
+    });
+    return !sizeDeleted;
+  });
+}
+
+function deleteCard(productId, productName) {
+  if (!confirm('Remove "' + productName + '" from the US Warehouse grid and price list?\n\nThe product will be hidden (not permanently erased).')) return;
+  _deletions.products[productId] = true;
+  document.querySelectorAll('#table-body tr[data-productid="' + productId + '"]').forEach(function(row) {
+    row.classList.add('deleted-row');
+  });
+  updateChangesLabel();
+}
+
+function deleteSize(key, productName, size) {
+  if (!confirm('Remove ' + size + ' from "' + productName + '"?')) return;
+  _deletions.sizes[key] = true;
+  var input = document.querySelector('.price-input[data-key="' + key.replace(/"/g, '\\"') + '"]');
+  if (input) input.closest('tr').classList.add('deleted-row');
+  updateChangesLabel();
 }
 
 function buildPcIndex(pc) {
@@ -472,6 +558,7 @@ function catBadge(cat) {
 }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function escAttr(s){ return String(s||'').replace(/"/g,'&quot;'); }
+function jsStr(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n'); }
 
 function renderTable() {
   var tbody = document.getElementById('table-body');
@@ -492,6 +579,9 @@ function renderTable() {
       tr.dataset.name = (p.name + ' ' + s.cat_no).toLowerCase();
       tr.dataset.category = (p.category||'').toLowerCase();
       tr.dataset.productid = p.id;
+      tr.dataset.sizekey = key;
+
+      if (_deletions.products[p.id] || _deletions.sizes[key]) tr.classList.add('deleted-row');
 
       tr.innerHTML =
         '<td>' + (isFirstSize ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
@@ -506,7 +596,11 @@ function renderTable() {
           'oninput="onPriceChange(this)"></td>' +
         (isFirstSize ?
           '<td><input type="checkbox"' + (p.inStock?' checked':'') + ' data-id="' + escAttr(p.id) + '" onchange="onStockChange(this)" style="width:16px;height:16px;cursor:pointer;accent-color:var(--teal)"></td>' :
-          '<td></td>');
+          '<td></td>') +
+        '<td style="white-space:nowrap">' +
+          (isFirstSize ? '<button type="button" class="btn-icon card-del" title="Delete card" onclick="deleteCard(\'' + jsStr(p.id) + '\',\'' + jsStr(p.name) + '\')">🗑 Card</button> ' : '') +
+          '<button type="button" class="btn-icon" title="Delete size" onclick="deleteSize(\'' + jsStr(key) + '\',\'' + jsStr(p.name) + '\',\'' + jsStr(s.size) + '\')">×</button>' +
+        '</td>';
 
       tbody.appendChild(tr);
       isFirstSize = false;
@@ -556,53 +650,60 @@ function applyGlobalMarkup() {
 }
 
 function resetAll() {
-  if (!confirm('Reset all price changes?')) return;
+  if (!confirm('Reset all pending changes and deletions?')) return;
   _changes = {};
+  _deletions = { products: {}, sizes: {} };
   document.querySelectorAll('.price-input').forEach(function(input){
     input.value = input.dataset.original;
     input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
   });
+  document.querySelectorAll('#table-body tr.deleted-row').forEach(function(row) {
+    row.classList.remove('deleted-row');
+  });
   updateChangesLabel();
 }
 
 function updateChangesLabel() {
-  var count = Object.keys(_changes).length;
+  var priceCount = Object.keys(_changes).length;
+  var delCount = Object.keys(_deletions.products).length + Object.keys(_deletions.sizes).length;
+  var count = priceCount + delCount;
   var label = document.getElementById('changes-label');
-  label.textContent = count > 0 ? count + ' change' + (count===1?'':'s') + ' pending' : 'No changes';
+  var parts = [];
+  if (priceCount) parts.push(priceCount + ' price');
+  if (delCount) parts.push(delCount + ' deletion');
+  label.textContent = count > 0 ? parts.join(', ') + (count === 1 ? '' : 's') + ' pending' : 'No changes';
   label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
   var pb = document.getElementById('push-bar');
-  if (count > 0) { pb.classList.add('show'); document.getElementById('push-summary').textContent = count + ' change' + (count===1?'':'s') + ' ready to push'; }
+  if (count > 0) { pb.classList.add('show'); document.getElementById('push-summary').textContent = count + ' pending change' + (count===1?'':'s') + ' ready to push'; }
   else { pb.classList.remove('show'); }
 }
 
 function filterTable() {
   var search = document.getElementById('search-box').value.toLowerCase();
   var cat = document.getElementById('category-filter').value.toLowerCase();
-  // Track which product ids are visible
-  var visibleProducts = {};
   document.querySelectorAll('#table-body tr.size-row').forEach(function(row){
     var show = (!search || row.dataset.name.includes(search)) &&
                (!cat || row.dataset.category === cat);
-    if (show) visibleProducts[row.dataset.productid] = true;
     row.style.display = show ? '' : 'none';
   });
 }
 
 function pushToGitHub() {
-  if (!Object.keys(_changes).length) return;
+  var pending = Object.keys(_changes).length + Object.keys(_deletions.products).length + Object.keys(_deletions.sizes).length;
+  if (!pending) return;
   document.querySelector('#push-bar .btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
 
   // Build updated products: collect per-size prices
   var updated = _products.map(function(p) {
-    var out = Object.assign({}, p);
+    var out = applySizeDeletions(Object.assign({}, p));
     // Apply stock changes
     if (_changes['_stock_::' + p.id] !== undefined) out.inStock = _changes['_stock_::' + p.id];
 
     // Collect size prices
-    var sizes = getSizes(p);
-    var newPrices = Object.assign({}, p.prices || {});
+    var sizes = getSizes(p).filter(function(s) { return !_deletions.sizes[s.key]; });
+    var newPrices = Object.assign({}, out.prices || {});
     var allPrices = [];
     sizes.forEach(function(s) {
       var key = s.key;
@@ -616,7 +717,6 @@ function pushToGitHub() {
 
     if (Object.keys(newPrices).length) {
       out.prices = newPrices;
-      // Set p.price to cheapest for card display
       if (allPrices.length) {
         allPrices.sort(function(a,b){return a-b;});
         var cheapest = '$' + allPrices[0].toFixed(2);
@@ -624,7 +724,7 @@ function pushToGitHub() {
         out.price = allPrices.length > 1 ? cheapest + ' – ' + mostExp : cheapest;
       }
     }
-    return out;
+    return recalcProductPriceRange(out);
   });
 
   // Merge US Warehouse edits into full products.json
@@ -635,7 +735,17 @@ function pushToGitHub() {
   .then(function(meta) {
     return fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }).then(function(all) {
       var merged = all.map(function(p) {
-        return updatedById[p.id] ? Object.assign({}, p, updatedById[p.id]) : p;
+        if (_deletions.products[p.id]) {
+          return Object.assign({}, p, { visible: false });
+        }
+        var sizeOnly = applySizeDeletions(p);
+        if (updatedById[p.id]) {
+          return Object.assign({}, sizeOnly, updatedById[p.id]);
+        }
+        if (Object.keys(_deletions.sizes).some(function(k) { return k.split('::')[0] === p.id; })) {
+          return recalcProductPriceRange(sizeOnly);
+        }
+        return p;
       });
       return ghPutFile('products.json', JSON.stringify(merged, null, 2), 'Update US Warehouse prices from admin', meta.sha)
         .then(function(result) {
@@ -645,6 +755,7 @@ function pushToGitHub() {
     });
   })
   .then(function(mergedProducts) {
+    removePriceListRowsForDeletions(mergedProducts);
     var listUpdates = syncPriceListFromProducts(mergedProducts.filter(function(p) {
       return p.visible && p.warehouse === 'US Warehouse';
     }));
@@ -665,6 +776,7 @@ function pushToGitHub() {
       return p.visible && p.warehouse === 'US Warehouse';
     });
     _changes = {};
+    _deletions = { products: {}, sizes: {} };
     updateChangesLabel();
     renderTable();
     var msg = '✅ Pushed! US Warehouse + price list update in ~30 seconds.';
