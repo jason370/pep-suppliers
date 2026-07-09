@@ -6882,11 +6882,25 @@ input.invalid{
     if (!wrap) return;
     var sizeImages = (window._sizeImages || {})[product.id] || {};
     var catalogNos = product.catalogNos || {};
+    var usedPills = [];
 
-    function normSz(s) { return String(s).trim().toLowerCase(); }
+    function normSz(s) { return String(s).trim().toLowerCase().replace(/\s+/g, ''); }
+    function priceForSize(size) {
+      var prices = product.prices || {};
+      if (prices[size] != null && prices[size] !== '') return prices[size];
+      var target = normSz(size);
+      var keys = Object.keys(prices);
+      for (var i = 0; i < keys.length; i++) {
+        if (normSz(keys[i]) === target && prices[keys[i]] != null && prices[keys[i]] !== '') {
+          return prices[keys[i]];
+        }
+      }
+      return '';
+    }
     function findPill(size) {
       var target = normSz(size);
       return Array.prototype.find.call(wrap.querySelectorAll('.size-pill'), function(pill) {
+        if (usedPills.indexOf(pill) >= 0) return false;
         return normSz(pill.textContent) === target;
       });
     }
@@ -6894,7 +6908,7 @@ input.invalid{
     wrap.querySelectorAll('.size-pill').forEach(function(pill) { pill.style.display = 'none'; pill.classList.remove('active'); });
 
     (product.vialSizes || []).forEach(function(size, i) {
-      var price = product.prices[size];
+      var price = priceForSize(size);
       if (!price) return;
       var pill = findPill(size);
       if (!pill) {
@@ -6903,6 +6917,7 @@ input.invalid{
         pill.textContent = size;
         wrap.appendChild(pill);
       }
+      usedPills.push(pill);
       pill.style.display = '';
       pill.setAttribute('data-price', price);
       if (catalogNos[size]) pill.setAttribute('data-code', catalogNos[size]);
@@ -6933,7 +6948,7 @@ input.invalid{
   document.addEventListener('DOMContentLoaded', function(){
     var grid = document.getElementById('products-grid');
     if (!grid) return;
-    fetch('/products.json?v=' + Date.now())
+    fetch('/products.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(items){
         window._products = items;
