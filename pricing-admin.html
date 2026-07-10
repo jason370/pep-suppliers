@@ -86,15 +86,36 @@ tr.deleted-row .btn-icon{display:none}
 .push-bar{display:none;position:sticky;bottom:0;background:var(--navy);color:#fff;padding:12px 24px;align-items:center;justify-content:space-between;gap:16px;z-index:10}
 .push-bar.show{display:flex}
 .push-bar p{font-size:14px;font-weight:600}
+.admin-tabs{display:flex;gap:6px;margin-left:16px}
+.admin-tab{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:800;cursor:pointer}
+.admin-tab.active{background:#fff;color:var(--navy);border-color:#fff}
+.reviews-panel{padding:20px 24px 80px;max-width:920px}
+.reviews-add{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:20px}
+.reviews-add h2{font-size:15px;margin-bottom:12px}
+.reviews-add label{display:block;font-size:12px;font-weight:700;margin-bottom:4px;color:#6b7f94}
+.reviews-add input,.reviews-add textarea{width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;margin-bottom:10px}
+.reviews-add textarea{min-height:80px;resize:vertical}
+.reviews-add .row{display:flex;gap:10px;flex-wrap:wrap}
+.reviews-add .row > div{flex:1;min-width:140px}
+.reviews-add .row .stars-field{max-width:100px;flex:0 0 100px}
+.review-list{display:grid;gap:10px}
+.review-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px}
+.review-item .stars{color:#e8a317;letter-spacing:1px;font-size:14px}
+.review-item blockquote{margin:8px 0;font-size:14px;line-height:1.55;color:#2d4055}
+.review-item .meta{font-size:12px;color:#6b7f94;margin-bottom:8px}
+.review-item .actions{display:flex;gap:8px}
+.review-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
+.review-badge.on{background:#d4edda;color:#155724}
+.review-badge.off{background:#f8d7da;color:#721c24}
 </style>
 </head>
 <body>
 
 <div id="login-screen">
   <div class="login-box">
-    <h1>⚡ Pricing Admin</h1>
-    <p>Pep Suppliers internal tool</p>
-    <input type="password" id="pw-input" placeholder="Site password" autocomplete="current-password">
+    <h1>⚡ Pep Suppliers Admin</h1>
+    <p>Pricing &amp; reviews — one sign-in (GitHub token)</p>
+    <input type="password" id="pw-input" placeholder="Site password (optional)" autocomplete="current-password">
     <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off">
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;margin-bottom:12px;cursor:pointer">
       <input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device
@@ -106,13 +127,20 @@ tr.deleted-row .btn-icon{display:none}
 
 <div id="admin-screen">
   <div class="admin-header">
-    <h1>⚡ Pricing Admin</h1>
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px">
+      <h1>⚡ Pep Suppliers Admin</h1>
+      <div class="admin-tabs">
+        <button type="button" class="admin-tab active" id="tab-pricing" onclick="setAdminTab('pricing')">Pricing</button>
+        <button type="button" class="admin-tab" id="tab-reviews" onclick="setAdminTab('reviews')">Reviews</button>
+      </div>
+    </div>
     <div style="display:flex;align-items:center;gap:12px">
       <span id="product-count" style="font-size:13px;opacity:.7"></span>
       <button class="btn btn-secondary" style="font-size:11px;padding:5px 10px;opacity:.6" onclick="clearToken()">Reset Token</button>
     </div>
   </div>
 
+  <div id="pricing-panel">
   <div class="toolbar">
     <select id="warehouse-mode" class="warehouse-select" onchange="setWarehouseMode(this.value)">
       <option value="us">US Warehouse (1–3 day delivery)</option>
@@ -172,6 +200,35 @@ tr.deleted-row .btn-icon{display:none}
       <tbody id="table-body"></tbody>
     </table>
   </div>
+  </div>
+
+  <div id="reviews-panel" class="reviews-panel" style="display:none">
+    <div class="reviews-add">
+      <h2>Add review</h2>
+      <div class="row">
+        <div class="stars-field">
+          <label for="rev-stars">Stars</label>
+          <input type="number" id="rev-stars" min="1" max="5" value="5">
+        </div>
+        <div>
+          <label for="rev-name">Display name</label>
+          <input type="text" id="rev-name" placeholder="Lab coordinator">
+        </div>
+        <div>
+          <label for="rev-detail">Role / detail</label>
+          <input type="text" id="rev-detail" placeholder="US research facility">
+        </div>
+      </div>
+      <label for="rev-text">Review text</label>
+      <textarea id="rev-text" placeholder="Short review about ordering, delivery, or support…"></textarea>
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:12px;cursor:pointer">
+        <input type="checkbox" id="rev-published" checked style="width:auto;margin:0"> Published on homepage
+      </label>
+      <button class="btn btn-primary" type="button" onclick="addReview()">Add review</button>
+    </div>
+    <p id="reviews-count" style="font-size:13px;color:#6b7f94;margin-bottom:12px"></p>
+    <div class="review-list" id="review-list"></div>
+  </div>
 </div>
 
 <div class="push-bar" id="push-bar">
@@ -179,7 +236,7 @@ tr.deleted-row .btn-icon{display:none}
     <p id="push-summary">Ready to push</p>
     <small id="push-hint" style="opacity:.7;font-size:12px">Updates US Warehouse cards + US Price List (HTML). Edit Cat No to fix catalog codes in products.json and overseas list. PDF is not auto-updated.</small>
   </div>
-  <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
+  <button class="btn btn-primary" id="push-btn" onclick="pushCurrentTab()">🚀 Push to Site</button>
 </div>
 
 <script>
@@ -198,6 +255,10 @@ var _chinaChanges = {};  // "china::CODE" -> kit price string
 var _chinaDeletions = { products: {}, codes: {} };
 var _catNoChanges = {};  // productId::size -> { oldCode, newCode }
 var _deletions = { products: {}, sizes: {} };
+var _adminTab = 'pricing';
+var _reviews = [];
+var _reviewsSha = '';
+var _reviewDirty = false;
 var _sha = '';
 var _priceListSha = '';
 var _priceListHead = '';
@@ -738,7 +799,6 @@ function getOriginalPrice(p, size) {
 
 function doLogin() {
   var pw = document.getElementById('pw-input').value.trim();
-  if (!pw) return;
   var tokenField = document.getElementById('token-input').value.trim();
   if (tokenField) GITHUB_TOKEN = tokenField;
   else GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
@@ -748,7 +808,8 @@ function doLogin() {
     return;
   }
   if (document.getElementById('remember-me').checked) {
-    localStorage.setItem('pep_admin_pw', pw);
+    if (pw) localStorage.setItem('pep_admin_pw', pw);
+    else localStorage.removeItem('pep_admin_pw');
     localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
   } else {
     localStorage.removeItem('pep_admin_pw');
@@ -781,7 +842,9 @@ function loadData() {
     ghGetFile(PRICE_LIST_FILE),
     fetch(GH_RAW + PRICE_LIST_FILE + '?t=' + Date.now()).then(function(r){ return r.text(); }),
     ghGetFile(CHINA_PRICE_LIST_FILE),
-    fetch(GH_RAW + CHINA_PRICE_LIST_FILE + '?t=' + Date.now()).then(function(r){ return r.text(); })
+    fetch(GH_RAW + CHINA_PRICE_LIST_FILE + '?t=' + Date.now()).then(function(r){ return r.text(); }),
+    ghGetFile('reviews.json'),
+    fetch(GH_RAW + 'reviews.json?t=' + Date.now()).then(function(r){ return r.json(); })
   ])
   .then(function(results) {
     _products = results[0].filter(function(p) {
@@ -793,11 +856,16 @@ function loadData() {
     parsePriceListHtml(results[4]);
     _chinaListSha = results[5].sha;
     parseChinaPriceListHtml(results[6]);
+    _reviewsSha = results[7].sha;
+    _reviews = Array.isArray(results[8]) ? results[8] : [];
+    _reviewDirty = false;
+    renderReviewsList();
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
     document.getElementById('product-count').textContent = _products.length + ' US · ' + _chinaListRows.length + ' overseas kits';
     hideStatus();
     renderTable();
+    if (location.search.indexOf('tab=reviews') >= 0) setAdminTab('reviews');
   })
   .catch(function(e){
     var el = document.getElementById('login-error');
@@ -1030,13 +1098,152 @@ function updateChangesLabel() {
   if (catNoCount) parts.push(catNoCount + ' cat no');
   label.textContent = count > 0 ? parts.join(', ') + ' pending' : 'No changes';
   label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
+  updatePushBarForTab();
+}
+
+function setAdminTab(tab) {
+  _adminTab = tab === 'reviews' ? 'reviews' : 'pricing';
+  document.getElementById('pricing-panel').style.display = _adminTab === 'pricing' ? '' : 'none';
+  document.getElementById('reviews-panel').style.display = _adminTab === 'reviews' ? '' : 'none';
+  document.getElementById('tab-pricing').classList.toggle('active', _adminTab === 'pricing');
+  document.getElementById('tab-reviews').classList.toggle('active', _adminTab === 'reviews');
+  updatePushBarForTab();
+}
+
+function updatePushBarForTab() {
   var pb = document.getElementById('push-bar');
+  var hint = document.getElementById('push-hint');
+  var summary = document.getElementById('push-summary');
+  if (_adminTab === 'reviews') {
+    if (_reviewDirty) {
+      pb.classList.add('show');
+      summary.textContent = 'Review changes ready to push';
+      hint.textContent = 'Updates reviews.json on the homepage Reviews section (~30 seconds after deploy).';
+    } else {
+      pb.classList.remove('show');
+    }
+    return;
+  }
+  var count = countUsPending() + countChinaPending() + countCatNoPending();
   if (count > 0) {
     pb.classList.add('show');
-    document.getElementById('push-summary').textContent = count + ' pending change' + (count === 1 ? '' : 's') + ' ready to push';
+    summary.textContent = count + ' pending change' + (count === 1 ? '' : 's') + ' ready to push';
+    hint.textContent = 'Updates US Warehouse cards + US Price List (HTML). Edit Cat No to fix catalog codes in products.json and overseas list. PDF is not auto-updated.';
   } else {
     pb.classList.remove('show');
   }
+}
+
+function pushCurrentTab() {
+  if (_adminTab === 'reviews') pushReviewsToGitHub();
+  else pushToGitHub();
+}
+
+function reviewStarsDisplay(n) {
+  var s = Math.max(1, Math.min(5, Math.round(Number(n) || 5)));
+  return '★★★★★'.slice(0, s) + '☆☆☆☆☆'.slice(0, 5 - s);
+}
+
+function newReviewId(name) {
+  return 'review-' + String(name || 'item').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) + '-' + Date.now().toString(36);
+}
+
+function markReviewDirty() {
+  _reviewDirty = true;
+  updatePushBarForTab();
+}
+
+function renderReviewsList() {
+  var list = document.getElementById('review-list');
+  var published = _reviews.filter(function (r) { return r.published !== false; }).length;
+  document.getElementById('reviews-count').textContent = _reviews.length + ' total · ' + published + ' published on site';
+  if (!_reviews.length) {
+    list.innerHTML = '<p style="color:#6b7f94;font-size:14px">No reviews yet.</p>';
+    return;
+  }
+  list.innerHTML = _reviews.map(function (r, index) {
+    return '<div class="review-item">' +
+      '<div style="display:flex;justify-content:space-between;gap:8px;align-items:center">' +
+        '<span class="stars">' + reviewStarsDisplay(r.stars) + '</span>' +
+        '<span class="review-badge ' + (r.published !== false ? 'on' : 'off') + '">' + (r.published !== false ? 'Published' : 'Hidden') + '</span>' +
+      '</div>' +
+      '<blockquote>' + esc(r.text || '') + '</blockquote>' +
+      '<div class="meta">' + esc(r.name || 'Research customer') + (r.detail ? ' · ' + esc(r.detail) : '') + '</div>' +
+      '<div class="actions">' +
+        '<button type="button" class="btn btn-secondary" style="padding:4px 10px;font-size:12px" onclick="editReview(' + index + ')">Edit</button>' +
+        '<button type="button" class="btn btn-danger" style="padding:4px 10px;font-size:12px" onclick="deleteReview(' + index + ')">Delete</button>' +
+      '</div></div>';
+  }).join('');
+}
+
+function addReview() {
+  var text = document.getElementById('rev-text').value.trim();
+  if (!text) {
+    showStatus('Review text is required.', 'error');
+    return;
+  }
+  _reviews.unshift({
+    id: newReviewId(document.getElementById('rev-name').value),
+    stars: Math.max(1, Math.min(5, parseInt(document.getElementById('rev-stars').value, 10) || 5)),
+    text: text,
+    name: document.getElementById('rev-name').value.trim() || 'Research customer',
+    detail: document.getElementById('rev-detail').value.trim(),
+    published: document.getElementById('rev-published').checked
+  });
+  document.getElementById('rev-text').value = '';
+  document.getElementById('rev-name').value = '';
+  document.getElementById('rev-detail').value = '';
+  markReviewDirty();
+  renderReviewsList();
+  showStatus('Review added — click Push to Site when ready.', 'success');
+}
+
+function editReview(index) {
+  var r = _reviews[index];
+  if (!r) return;
+  var text = prompt('Review text:', r.text || '');
+  if (text === null) return;
+  var name = prompt('Display name:', r.name || '');
+  if (name === null) return;
+  var detail = prompt('Role / detail:', r.detail || '');
+  if (detail === null) return;
+  var stars = prompt('Stars (1-5):', String(r.stars || 5));
+  if (stars === null) return;
+  r.text = text.trim();
+  r.name = name.trim();
+  r.detail = detail.trim();
+  r.stars = Math.max(1, Math.min(5, parseInt(stars, 10) || 5));
+  r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
+  markReviewDirty();
+  renderReviewsList();
+}
+
+function deleteReview(index) {
+  if (!confirm('Delete this review?')) return;
+  _reviews.splice(index, 1);
+  markReviewDirty();
+  renderReviewsList();
+}
+
+function pushReviewsToGitHub() {
+  if (!_reviewDirty) return;
+  document.getElementById('push-btn').disabled = true;
+  showStatus('⏳ Pushing reviews...', 'loading');
+  ghGetFile('reviews.json').then(function (meta) {
+    var sha = meta.sha || _reviewsSha;
+    return ghPutFile('reviews.json', JSON.stringify(_reviews, null, 2) + '\n', 'Update reviews from pricing admin', sha);
+  }).then(function (result) {
+    if (!result.content) throw new Error('reviews.json: ' + JSON.stringify(result));
+    if (result.content.sha) _reviewsSha = result.content.sha;
+    _reviewDirty = false;
+    renderReviewsList();
+    updatePushBarForTab();
+    showStatus('✅ Reviews pushed! Homepage updates in ~30 seconds.', 'success');
+    document.getElementById('push-btn').disabled = false;
+  }).catch(function (e) {
+    showStatus('❌ Error: ' + e.message, 'error');
+    document.getElementById('push-btn').disabled = false;
+  });
 }
 
 function filterTable() {
@@ -1054,7 +1261,7 @@ function pushToGitHub() {
   var chinaPending = countChinaPending();
   var catNoPending = countCatNoPending();
   if (!usPending && !chinaPending && !catNoPending) return;
-  document.querySelector('#push-bar .btn').disabled = true;
+  document.getElementById('push-btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
 
   var updated = _products.map(function(p) {
@@ -1190,11 +1397,11 @@ function pushToGitHub() {
     if (catNoPending) msg += ' Catalog numbers updated.';
     if (chinaPending) msg += ' Overseas kit list updated.';
     showStatus(msg, 'success');
-    document.querySelector('#push-bar .btn').disabled = false;
+    document.getElementById('push-btn').disabled = false;
   })
   .catch(function(e){
     showStatus('❌ Error: ' + e.message, 'error');
-    document.querySelector('#push-bar .btn').disabled = false;
+    document.getElementById('push-btn').disabled = false;
   });
 }
 
