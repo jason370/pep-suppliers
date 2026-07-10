@@ -248,10 +248,10 @@ function parsePriceListHtml(html) {
   _priceListHead = html.slice(0, tbodyStart + 7);
   _priceListTail = html.slice(tbodyEnd);
   _priceListRows = [];
-  var re = /<tr>\s*<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<\/tr>/gi;
+  var re = /<tr>\s*<td>([^<]*)<\/td>\s*<td class="size">([^<]*)<\/td>\s*<td class="price">([^<]*)<\/td>\s*<\/tr>/gi;
   var m;
   while ((m = re.exec(html))) {
-    _priceListRows.push({ product: m[1], size: m[2], us: m[3], china: m[4] });
+    _priceListRows.push({ product: m[1], size: m[2], us: m[3] });
   }
 }
 
@@ -261,7 +261,6 @@ function buildPriceListHtml() {
       '      <td>' + esc(r.product) + '</td>\n' +
       '      <td class="size">' + esc(r.size) + '</td>\n' +
       '      <td class="price">' + esc(r.us) + '</td>\n' +
-      '      <td class="price">' + esc(r.china) + '</td>\n' +
       '    </tr>';
   }).join('\n');
   var head = _priceListHead.replace(/\d+\s+items/, _priceListRows.length + ' items');
@@ -304,20 +303,7 @@ function getChinaKitCost(code) {
 }
 
 function syncCombinedChinaFromChinaList() {
-  var lookup = {};
-  _chinaListRows.forEach(function(row) {
-    lookup[normName(row.name)] = row.price;
-  });
-  var updated = 0;
-  _priceListRows.forEach(function(row) {
-    var key = normName(row.product + ' ' + row.size);
-    var price = lookup[key];
-    if (price && row.china !== price) {
-      row.china = price;
-      updated++;
-    }
-  });
-  return updated;
+  return 0;
 }
 
 function applyChinaChangesToRows() {
@@ -654,7 +640,7 @@ function setWarehouseMode(mode) {
     head.innerHTML =
       '<th>Code</th><th>Product Name</th><th></th><th></th><th>Vendor</th><th>Kit Cost</th><th></th><th>Kit Price</th><th></th><th></th>';
     document.getElementById('push-hint').textContent =
-      'Updates Overseas Shipping kit price list (HTML) and syncs matching rows in the Peptide Price List overseas column. PDF is not auto-updated.';
+      'Updates Overseas Shipping kit price list (HTML). PDF is not auto-updated.';
     renderChinaTable();
   } else {
     head.innerHTML =
@@ -930,31 +916,30 @@ function pushToGitHub() {
   }
 
   chain = chain.then(function(mergedProducts) {
-    if (!usPending && !chinaPending) return { mergedProducts: null, listUpdates: 0, chinaCombinedUpdates: 0 };
+    if (!usPending && !chinaPending) return { mergedProducts: null, listUpdates: 0 };
 
-    if (usPending && mergedProducts) {
-      removePriceListRowsForDeletions(mergedProducts);
-      var listUpdates = syncPriceListFromProducts(mergedProducts.filter(function(p) {
-        return p.visible && p.warehouse === 'US Warehouse';
-      }));
-    } else {
-      var listUpdates = 0;
+    var listUpdates = 0;
+    if (usPending) {
+      if (mergedProducts) {
+        removePriceListRowsForDeletions(mergedProducts);
+        listUpdates = syncPriceListFromProducts(mergedProducts.filter(function(p) {
+          return p.visible && p.warehouse === 'US Warehouse';
+        }));
+      }
+      var listHtml = buildPriceListHtml();
+      return ghPutFile(
+        PRICE_LIST_FILE,
+        listHtml,
+        'Sync Peptide Price List from admin (US ' + listUpdates + ' rows)',
+        _priceListSha
+      ).then(function(result) {
+        if (!result.content) throw new Error(PRICE_LIST_FILE + ': ' + JSON.stringify(result));
+        if (result.content.sha) _priceListSha = result.content.sha;
+        return { mergedProducts: mergedProducts, listUpdates: listUpdates };
+      });
     }
 
-    var chinaCombinedUpdates = 0;
-    if (chinaPending) chinaCombinedUpdates = syncCombinedChinaFromChinaList();
-
-    var listHtml = buildPriceListHtml();
-    return ghPutFile(
-      PRICE_LIST_FILE,
-      listHtml,
-      'Sync Peptide Price List from admin (US ' + listUpdates + ', China ' + chinaCombinedUpdates + ' rows)',
-      _priceListSha
-    ).then(function(result) {
-      if (!result.content) throw new Error(PRICE_LIST_FILE + ': ' + JSON.stringify(result));
-      if (result.content.sha) _priceListSha = result.content.sha;
-      return { mergedProducts: mergedProducts, listUpdates: listUpdates, chinaCombinedUpdates: chinaCombinedUpdates };
-    });
+    return { mergedProducts: mergedProducts, listUpdates: listUpdates };
   });
 
   if (chinaPending) {
@@ -988,8 +973,7 @@ function pushToGitHub() {
     else renderTable();
     var msg = '✅ Pushed! Site updates in ~30 seconds.';
     if (result && result.listUpdates) msg += ' (' + result.listUpdates + ' US price list rows)';
-    if (result && result.chinaCombinedUpdates) msg += ' (' + result.chinaCombinedUpdates + ' China column rows)';
-    if (chinaPending) msg += ' China kit list updated.';
+    if (chinaPending) msg += ' Overseas kit list updated.';
     showStatus(msg, 'success');
     document.querySelector('#push-bar .btn').disabled = false;
   })
