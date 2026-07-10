@@ -97,7 +97,12 @@ tr.deleted-row .btn-icon{display:none}
 .reviews-add textarea{min-height:80px;resize:vertical}
 .reviews-add .row{display:flex;gap:10px;flex-wrap:wrap}
 .reviews-add .row > div{flex:1;min-width:140px}
-.reviews-add .row .stars-field{max-width:100px;flex:0 0 100px}
+.reviews-add .row .stars-field{max-width:140px;flex:0 0 140px}
+.star-picker{display:flex;gap:2px;margin-bottom:4px}
+.star-pick{background:none;border:0;padding:0;font-size:24px;line-height:1;cursor:pointer;color:#d0d7de;transition:color .12s ease,transform .12s ease}
+.star-pick.on{color:#e8a317}
+.star-pick:hover,.star-pick:focus{color:#e8a317;transform:scale(1.08);outline:none}
+.review-item .star-picker{margin-top:4px}
 .review-list{display:grid;gap:10px}
 .review-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px}
 .review-item .stars{color:#e8a317;letter-spacing:1px;font-size:14px}
@@ -210,8 +215,15 @@ tr.deleted-row .btn-icon{display:none}
       <h2>Add review</h2>
       <div class="row">
         <div class="stars-field">
-          <label for="rev-stars">Stars</label>
-          <input type="number" id="rev-stars" min="1" max="5" value="5">
+          <label>Stars</label>
+          <div class="star-picker" id="rev-star-picker" role="group" aria-label="Star rating">
+            <button type="button" class="star-pick on" data-value="1" aria-label="1 star" onclick="setAddReviewStars(1)">★</button>
+            <button type="button" class="star-pick on" data-value="2" aria-label="2 stars" onclick="setAddReviewStars(2)">★</button>
+            <button type="button" class="star-pick on" data-value="3" aria-label="3 stars" onclick="setAddReviewStars(3)">★</button>
+            <button type="button" class="star-pick on" data-value="4" aria-label="4 stars" onclick="setAddReviewStars(4)">★</button>
+            <button type="button" class="star-pick on" data-value="5" aria-label="5 stars" onclick="setAddReviewStars(5)">★</button>
+          </div>
+          <input type="hidden" id="rev-stars" value="5">
         </div>
         <div>
           <label for="rev-name">Name</label>
@@ -1170,6 +1182,36 @@ function reviewStarsDisplay(n) {
   return '★★★★★'.slice(0, s) + '☆☆☆☆☆'.slice(0, 5 - s);
 }
 
+function paintStarPicker(pickerId, value) {
+  var picker = document.getElementById(pickerId);
+  if (!picker) return;
+  var v = Math.max(1, Math.min(5, Math.round(Number(value) || 5)));
+  picker.querySelectorAll('.star-pick').forEach(function(btn) {
+    var n = parseInt(btn.getAttribute('data-value'), 10);
+    btn.classList.toggle('on', n <= v);
+  });
+  return v;
+}
+
+function setAddReviewStars(n) {
+  var v = paintStarPicker('rev-star-picker', n);
+  document.getElementById('rev-stars').value = String(v);
+}
+
+function setReviewStars(index, n) {
+  var r = _reviews[index];
+  if (!r) return;
+  r.stars = paintStarPicker('review-stars-' + index, n);
+  markReviewDirty();
+}
+
+function reviewStarsPickerHtml(index, stars) {
+  var current = Math.max(1, Math.min(5, Math.round(Number(stars) || 5)));
+  return [1, 2, 3, 4, 5].map(function(v) {
+    return '<button type="button" class="star-pick' + (v <= current ? ' on' : '') + '" data-value="' + v + '" aria-label="' + v + ' star' + (v === 1 ? '' : 's') + '" onclick="setReviewStars(' + index + ',' + v + ')">★</button>';
+  }).join('');
+}
+
 function newReviewId(name) {
   return 'review-' + String(name || 'item').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40) + '-' + Date.now().toString(36);
 }
@@ -1265,8 +1307,8 @@ function renderReviewsList() {
       '<label style="font-size:12px;color:#6b7f94;margin:0">Change photo<br><input type="file" class="review-photo-input" accept="image/jpeg,image/png,image/webp" onchange="onReviewPhotoSelected(' + index + ', this)"></label>' +
       '</div>';
     return '<div class="review-item">' +
-      '<div style="display:flex;justify-content:space-between;gap:8px;align-items:center">' +
-        '<span class="stars">' + reviewStarsDisplay(r.stars) + '</span>' +
+      '<div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap">' +
+        '<div><div style="font-size:11px;font-weight:700;color:#6b7f94;margin-bottom:4px">Stars</div><div class="star-picker" id="review-stars-' + index + '" role="group" aria-label="Star rating">' + reviewStarsPickerHtml(index, r.stars) + '</div></div>' +
         '<span class="review-badge ' + (r.published !== false ? 'on' : 'off') + '">' + (r.published !== false ? 'Published' : 'Hidden') + '</span>' +
       '</div>' +
       photoBlock +
@@ -1305,6 +1347,7 @@ function addReview() {
     document.getElementById('rev-role').value = '';
     document.getElementById('rev-location').value = '';
     document.getElementById('rev-photo').value = '';
+    setAddReviewStars(5);
     markReviewDirty();
     renderReviewsList();
     showStatus('Review added — click Push to Site when ready.', 'success');
@@ -1331,14 +1374,11 @@ function editReview(index) {
   if (role === null) return;
   var location = prompt('Location:', r.location || '');
   if (location === null) return;
-  var stars = prompt('Stars (1-5):', String(r.stars || 5));
-  if (stars === null) return;
   r.text = text.trim();
   r.name = name.trim();
   r.role = role.trim();
   delete r.detail;
   r.location = location.trim();
-  r.stars = Math.max(1, Math.min(5, parseInt(stars, 10) || 5));
   r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
   markReviewDirty();
   renderReviewsList();
