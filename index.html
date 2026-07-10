@@ -6868,6 +6868,12 @@ input.invalid{
   function esc(s) {
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   }
+  function reviewMetaLine(r) {
+    var parts = [];
+    if (r.detail) parts.push(r.detail);
+    if (r.location) parts.push(r.location);
+    return parts.join(' · ');
+  }
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('reviews-grid');
     if (!grid) return;
@@ -6887,7 +6893,7 @@ input.invalid{
             '<div class="review-stars" aria-label="' + esc(r.stars || 5) + ' out of 5 stars">' + stars + '</div>' +
             '<blockquote>' + esc(r.text) + '</blockquote>' +
             '<div class="review-meta"><strong>' + esc(r.name || 'Research customer') + '</strong>' +
-            (r.detail ? '<span>' + esc(r.detail) + '</span>' : '') +
+            (reviewMetaLine(r) ? '<span>' + esc(reviewMetaLine(r)) + '</span>' : '') +
             '</div></article>';
         }).join('');
       })

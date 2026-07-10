@@ -215,8 +215,12 @@ tr.deleted-row .btn-icon{display:none}
           <input type="text" id="rev-name" placeholder="Lab coordinator">
         </div>
         <div>
-          <label for="rev-detail">Role / detail</label>
-          <input type="text" id="rev-detail" placeholder="US research facility">
+          <label for="rev-detail">Role / organization</label>
+          <input type="text" id="rev-detail" placeholder="Academic research group">
+        </div>
+        <div>
+          <label for="rev-location">Location</label>
+          <input type="text" id="rev-location" placeholder="Texas, US">
         </div>
       </div>
       <label for="rev-text">Review text</label>
@@ -1153,6 +1157,13 @@ function markReviewDirty() {
   updatePushBarForTab();
 }
 
+function reviewMetaText(r) {
+  var parts = [];
+  if (r.detail) parts.push(r.detail);
+  if (r.location) parts.push(r.location);
+  return parts.join(' · ');
+}
+
 function renderReviewsList() {
   var list = document.getElementById('review-list');
   var published = _reviews.filter(function (r) { return r.published !== false; }).length;
@@ -1168,7 +1179,7 @@ function renderReviewsList() {
         '<span class="review-badge ' + (r.published !== false ? 'on' : 'off') + '">' + (r.published !== false ? 'Published' : 'Hidden') + '</span>' +
       '</div>' +
       '<blockquote>' + esc(r.text || '') + '</blockquote>' +
-      '<div class="meta">' + esc(r.name || 'Research customer') + (r.detail ? ' · ' + esc(r.detail) : '') + '</div>' +
+      '<div class="meta">' + esc(r.name || 'Research customer') + (reviewMetaText(r) ? ' · ' + esc(reviewMetaText(r)) : '') + '</div>' +
       '<div class="actions">' +
         '<button type="button" class="btn btn-secondary" style="padding:4px 10px;font-size:12px" onclick="editReview(' + index + ')">Edit</button>' +
         '<button type="button" class="btn btn-danger" style="padding:4px 10px;font-size:12px" onclick="deleteReview(' + index + ')">Delete</button>' +
@@ -1188,11 +1199,13 @@ function addReview() {
     text: text,
     name: document.getElementById('rev-name').value.trim() || 'Research customer',
     detail: document.getElementById('rev-detail').value.trim(),
+    location: document.getElementById('rev-location').value.trim(),
     published: document.getElementById('rev-published').checked
   });
   document.getElementById('rev-text').value = '';
   document.getElementById('rev-name').value = '';
   document.getElementById('rev-detail').value = '';
+  document.getElementById('rev-location').value = '';
   markReviewDirty();
   renderReviewsList();
   showStatus('Review added — click Push to Site when ready.', 'success');
@@ -1205,13 +1218,16 @@ function editReview(index) {
   if (text === null) return;
   var name = prompt('Display name:', r.name || '');
   if (name === null) return;
-  var detail = prompt('Role / detail:', r.detail || '');
+  var detail = prompt('Role / organization:', r.detail || '');
   if (detail === null) return;
+  var location = prompt('Location (city, state, or country):', r.location || '');
+  if (location === null) return;
   var stars = prompt('Stars (1-5):', String(r.stars || 5));
   if (stars === null) return;
   r.text = text.trim();
   r.name = name.trim();
   r.detail = detail.trim();
+  r.location = location.trim();
   r.stars = Math.max(1, Math.min(5, parseInt(stars, 10) || 5));
   r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
   markReviewDirty();
