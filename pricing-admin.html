@@ -112,8 +112,8 @@ tr.deleted-row .btn-icon{display:none}
 
   <div class="toolbar">
     <select id="warehouse-mode" class="warehouse-select" onchange="setWarehouseMode(this.value)">
-      <option value="us">US Warehouse</option>
-      <option value="china">China Warehouse (10 Vial Kit)</option>
+      <option value="us">US Warehouse (1–3 day delivery)</option>
+      <option value="china">Overseas Shipping (two week delivery)</option>
     </select>
     <div class="toolbar-divider"></div>
     <input type="search" id="search-box" placeholder="Search..." oninput="filterTable()">
@@ -654,7 +654,7 @@ function setWarehouseMode(mode) {
     head.innerHTML =
       '<th>Code</th><th>Product Name</th><th></th><th></th><th>Vendor</th><th>Kit Cost</th><th></th><th>Kit Price</th><th></th><th></th>';
     document.getElementById('push-hint').textContent =
-      'Updates China Warehouse kit price list (HTML) and syncs matching rows in the Peptide Price List China column. PDF is not auto-updated.';
+      'Updates Overseas Shipping kit price list (HTML) and syncs matching rows in the Peptide Price List overseas column. PDF is not auto-updated.';
     renderChinaTable();
   } else {
     head.innerHTML =
@@ -963,7 +963,7 @@ function pushToGitHub() {
       return ghPutFile(
         CHINA_PRICE_LIST_FILE,
         chinaHtml,
-        'Update China Warehouse kit prices from admin (' + Object.keys(_chinaChanges).length + ' rows)',
+        'Update Overseas Shipping kit prices from admin (' + Object.keys(_chinaChanges).length + ' rows)',
         _chinaListSha
       ).then(function(result) {
         if (!result.content) throw new Error(CHINA_PRICE_LIST_FILE + ': ' + JSON.stringify(result));

@@ -129,8 +129,8 @@ body.cart-open iframe[src*="tawk"]{display:none!important}
       <div class="dropdown">
         <button class="dropdown-trigger" type="button">Shop Peptides <span class="chev">▼</span></button>
         <div class="dropdown-menu">
-          <a href="/#us-warehouse">US Warehouse <span>›</span></a>
-          <a href="/#overseas-warehouse">Overseas Warehouse <span>›</span></a>
+          <a href="/#us-warehouse">US Warehouse (1–3 day delivery) <span>›</span></a>
+          <a href="/#overseas-warehouse">Overseas Shipping (two week delivery) <span>›</span></a>
           <a href="/#kits">Research Kits <span>›</span></a>
           <a href="/#build-kit">Build Your Kit <span>›</span></a>
         </div>
@@ -548,12 +548,20 @@ window.cartCheckout = function() {
     });
   }
 
+  function formatWarehouseLabel(warehouse) {
+    if (warehouse === 'US Warehouse') return 'US Warehouse (1–3 day delivery)';
+    if (warehouse === 'Overseas Warehouse' || warehouse === 'China Warehouse') {
+      return 'Overseas Shipping (two week delivery)';
+    }
+    return warehouse || '';
+  }
+
   function renderProduct(p) {
     product = p;
     document.getElementById('product-name').textContent = p.name || '';
     document.getElementById('breadcrumb-name').textContent = p.name || 'Product';
     document.title = (p.name || 'Product') + ' — Pep Suppliers';
-    document.getElementById('product-warehouse').textContent = p.warehouse || '';
+    document.getElementById('product-warehouse').textContent = formatWarehouseLabel(p.warehouse);
     var sizes = p.vialSizes || [];
     var initialPrice = lowestNumericalPrice(sizes) || p.price || 'Contact for price';
     document.getElementById('product-price').textContent = initialPrice;

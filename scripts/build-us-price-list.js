@@ -83,7 +83,7 @@ const htmlOut = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pep-Suppliers US Warehouse Price List</title>
+<title>Pep-Suppliers US Warehouse (1–3 day delivery) Price List</title>
 <style>
   @page { size: letter landscape; margin: 0.45in 0.4in; }
   * { box-sizing: border-box; }
@@ -104,7 +104,7 @@ const htmlOut = `<!DOCTYPE html>
 </style>
 </head>
 <body>
-  <h1>Pep-Suppliers US Warehouse</h1>
+  <h1>Pep-Suppliers US Warehouse (1–3 day delivery)</h1>
   <div class="sub">Product · Size · Catalog No · Sale Price · ${rows.length} items · Research use only · Generated from live catalog</div>
   <table>
     <colgroup>
