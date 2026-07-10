@@ -328,6 +328,14 @@ section{scroll-margin-top:88px}
 .path-card li::before{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--teal)}
 .faq{background:var(--surface);padding:58px 0}
 .faq-list{display:grid;gap:10px;margin-top:22px}
+.reviews{background:#fff;padding:58px 0}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-soft)}
+.review-stars{color:#e8a317;font-size:15px;letter-spacing:2px;margin-bottom:12px}
+.review-card blockquote{margin:0 0 16px;color:#2d4055;line-height:1.65;font-size:15px;font-weight:600}
+.review-meta{display:flex;flex-direction:column;gap:2px}
+.review-meta strong{color:var(--navy);font-size:14px;font-weight:900}
+.review-meta span{color:var(--muted);font-size:13px}
 details{background:#fff;border:1px solid var(--border);border-radius:11px;padding:15px 18px}
 summary{cursor:pointer;font-weight:900;color:var(--navy)}
 details p{color:var(--muted);line-height:1.6;margin:12px 0 2px}
@@ -6418,6 +6426,7 @@ input.invalid{
       </div>
       <a href="#price-list">Price List</a>
       <a href="#faq">FAQ</a>
+      <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
     
@@ -6815,6 +6824,34 @@ input.invalid{
     </div>
   </section>
 
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Reviews</h2>
+          <p>What researchers say about sourcing, fulfillment speed, and support with Pep Suppliers.</p>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>US Warehouse orders have been consistent for our lab. Catalog is easy to browse, checkout is straightforward, and 1–3 day delivery has matched what we plan around.</blockquote>
+          <div class="review-meta"><strong>Lab coordinator</strong><span>US research facility</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Telegram support answered product and documentation questions quickly. Helpful when we were comparing sizes and planning a multi-vial kit order.</blockquote>
+          <div class="review-meta"><strong>Principal investigator</strong><span>Academic research group</span></div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>Price lists are clear for both US and Overseas Shipping paths. The Build Your Kit flow made it simple to send a bulk inquiry without back-and-forth.</blockquote>
+          <div class="review-meta"><strong>Operations lead</strong><span>Contract research org</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="contact contact-simple">
     <div class="container">
       <div class="contact-simple-inner">
@@ -6838,6 +6875,7 @@ input.invalid{
       <a href="#shop">Shop Peptides</a>
       <a href="#price-list">Price List</a>
       <a href="#faq">FAQ</a>
+      <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
     <p class="disclaimer">Products for laboratory research use only. Not for human consumption.</p>
