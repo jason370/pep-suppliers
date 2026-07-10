@@ -340,6 +340,30 @@ section{scroll-margin-top:88px}
 .review-meta .review-role,.review-meta .review-location{color:var(--muted);font-size:13px}
 .reviews-submit{margin-top:28px;text-align:center;max-width:560px}
 .reviews-submit p{margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:15px}
+.review-form-wrap{max-width:640px;margin:32px auto 0;text-align:left}
+.review-form{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow-soft)}
+.review-form h3{margin:0 0 6px;font-size:22px;color:var(--navy)}
+.review-form > p{margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.55}
+.review-form label{display:block;margin-bottom:6px;color:var(--muted);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.review-form input,.review-form textarea{width:100%;border:1px solid var(--border);border-radius:10px;padding:12px 14px;font-size:15px;margin-bottom:14px;outline:none;color:var(--ink)}
+.review-form textarea{min-height:110px;resize:vertical}
+.review-form input:focus,.review-form textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,109,125,.12)}
+.review-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.review-form .form-row > div{min-width:0}
+.review-form .star-picker{display:flex;gap:4px;margin-bottom:14px}
+.review-form .star-pick{background:none;border:0;padding:0;font-size:28px;line-height:1;cursor:pointer;color:#d0d7de}
+.review-form .star-pick.on{color:#e8a317}
+.review-form .star-pick:hover,.review-form .star-pick:focus{color:#e8a317;outline:none}
+.review-form-submit{background:var(--teal);color:#fff;border:0;border-radius:12px;padding:14px 22px;font-size:16px;font-weight:900;cursor:pointer;width:100%}
+.review-form-submit:hover{opacity:.9}
+.review-form-submit:disabled{opacity:.55;cursor:not-allowed}
+.review-form-note{margin:12px 0 0;font-size:12px;color:#9aabb8;line-height:1.5}
+.review-form-status{display:none;margin-top:12px;padding:12px 14px;border-radius:10px;font-size:14px;font-weight:600}
+.review-form-status.show{display:block}
+.review-form-status.ok{background:#d4edda;color:#155724;border:1px solid #b7dfc3}
+.review-form-status.err{background:#f8d7da;color:#721c24;border:1px solid #f1b8be}
+.review-honeypot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:640px){.review-form .form-row{grid-template-columns:1fr}}
 details{background:#fff;border:1px solid var(--border);border-radius:11px;padding:15px 18px}
 summary{cursor:pointer;font-weight:900;color:var(--navy)}
 details p{color:var(--muted);line-height:1.6;margin:12px 0 2px}
@@ -6839,9 +6863,47 @@ input.invalid{
       <div class="reviews-grid" id="reviews-grid" aria-live="polite">
         <p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Loading reviews…</p>
       </div>
+      <div class="review-form-wrap">
+        <form class="review-form" id="public-review-form" novalidate>
+          <h3>Write a review</h3>
+          <p>Share your research-order experience. Reviews post after a quick approval.</p>
+          <label>Your rating</label>
+          <div class="star-picker" id="public-star-picker" role="group" aria-label="Star rating">
+            <button type="button" class="star-pick on" data-value="1" aria-label="1 star">★</button>
+            <button type="button" class="star-pick on" data-value="2" aria-label="2 stars">★</button>
+            <button type="button" class="star-pick on" data-value="3" aria-label="3 stars">★</button>
+            <button type="button" class="star-pick on" data-value="4" aria-label="4 stars">★</button>
+            <button type="button" class="star-pick on" data-value="5" aria-label="5 stars">★</button>
+          </div>
+          <input type="hidden" id="public-review-stars" name="stars" value="5">
+          <div class="form-row">
+            <div>
+              <label for="public-review-name">Name</label>
+              <input type="text" id="public-review-name" name="name" maxlength="80" placeholder="Lab coordinator" required>
+            </div>
+            <div>
+              <label for="public-review-role">Role</label>
+              <input type="text" id="public-review-role" name="role" maxlength="120" placeholder="Academic research group">
+            </div>
+          </div>
+          <label for="public-review-location">Location</label>
+          <input type="text" id="public-review-location" name="location" maxlength="120" placeholder="Texas, US">
+          <label for="public-review-text">Your review</label>
+          <textarea id="public-review-text" name="text" maxlength="1200" placeholder="What was your experience with ordering, delivery, or support?" required></textarea>
+          <label for="public-review-photo">Photo (optional, max 2 MB)</label>
+          <input type="file" id="public-review-photo" name="photo" accept="image/jpeg,image/png,image/webp">
+          <div class="review-honeypot" aria-hidden="true">
+            <label for="public-review-company">Company</label>
+            <input type="text" id="public-review-company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="review-form-submit" id="public-review-submit">Post review</button>
+          <p class="review-form-note">Products are for laboratory research use only. Please do not include medical claims, dosing, or human-use guidance.</p>
+          <div class="review-form-status" id="public-review-status" role="status"></div>
+        </form>
+      </div>
       <div class="reviews-submit">
-        <p>Ordered from Pep Suppliers? Join our Telegram reviews chat and share your experience. Approved feedback may be featured here.</p>
-        <a class="contact-telegram-btn" href="https://t.me/+hXGilkkTrWgxMGEx" target="_blank" rel="noopener">Submit a review on Telegram</a>
+        <p>Prefer Telegram? You can also share feedback in our reviews chat.</p>
+        <a class="contact-telegram-btn" href="https://t.me/+hXGilkkTrWgxMGEx" target="_blank" rel="noopener">Submit on Telegram</a>
       </div>
     </div>
   </section>
@@ -6878,7 +6940,7 @@ input.invalid{
   }
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('reviews-grid');
-    if (!grid) return;
+    if (grid) {
     fetch('/reviews.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { return r.json(); })
       .then(function (items) {
@@ -6910,6 +6972,110 @@ input.invalid{
       .catch(function () {
         grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Could not load reviews.</p>';
       });
+    }
+
+    function paintPublicStars(n) {
+      var v = Math.max(1, Math.min(5, Math.round(Number(n) || 5)));
+      var picker = document.getElementById('public-star-picker');
+      if (!picker) return v;
+      picker.querySelectorAll('.star-pick').forEach(function (btn) {
+        btn.classList.toggle('on', parseInt(btn.getAttribute('data-value'), 10) <= v);
+      });
+      var hidden = document.getElementById('public-review-stars');
+      if (hidden) hidden.value = String(v);
+      return v;
+    }
+
+    var publicPicker = document.getElementById('public-star-picker');
+    if (publicPicker) {
+      publicPicker.querySelectorAll('.star-pick').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          paintPublicStars(parseInt(btn.getAttribute('data-value'), 10));
+        });
+      });
+    }
+
+    function setPublicReviewStatus(type, message) {
+      var el = document.getElementById('public-review-status');
+      if (!el) return;
+      el.className = 'review-form-status show ' + type;
+      el.textContent = message;
+    }
+
+    function readPublicPhotoFile(file) {
+      return new Promise(function (resolve, reject) {
+        if (!file) { resolve(null); return; }
+        if (!/^image\/(jpeg|png|webp)$/i.test(file.type)) {
+          reject(new Error('Photo must be JPG, PNG, or WebP.'));
+          return;
+        }
+        if (file.size > 2 * 1024 * 1024) {
+          reject(new Error('Photo must be under 2 MB.'));
+          return;
+        }
+        var reader = new FileReader();
+        reader.onload = function () {
+          var dataUrl = reader.result;
+          resolve({
+            photoBase64: dataUrl.split(',')[1],
+            photoMime: file.type.toLowerCase()
+          });
+        };
+        reader.onerror = function () { reject(new Error('Could not read photo.')); };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    var publicForm = document.getElementById('public-review-form');
+    if (publicForm) {
+      publicForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var submitBtn = document.getElementById('public-review-submit');
+        var text = document.getElementById('public-review-text').value.trim();
+        if (text.length < 10) {
+          setPublicReviewStatus('err', 'Please write at least 10 characters in your review.');
+          return;
+        }
+        var payload = {
+          stars: paintPublicStars(document.getElementById('public-review-stars').value),
+          name: document.getElementById('public-review-name').value.trim(),
+          role: document.getElementById('public-review-role').value.trim(),
+          location: document.getElementById('public-review-location').value.trim(),
+          text: text,
+          company: document.getElementById('public-review-company').value
+        };
+        var photoInput = document.getElementById('public-review-photo');
+        var file = photoInput && photoInput.files && photoInput.files[0];
+        submitBtn.disabled = true;
+        setPublicReviewStatus('ok', 'Submitting your review…');
+        readPublicPhotoFile(file).then(function (photoData) {
+          if (photoData) {
+            payload.photoBase64 = photoData.photoBase64;
+            payload.photoMime = photoData.photoMime;
+          }
+          return fetch('/.netlify/functions/submit-review', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+        }).then(function (res) {
+          return res.json().then(function (body) {
+            return { ok: res.ok, body: body };
+          });
+        }).then(function (result) {
+          if (!result.ok) {
+            throw new Error((result.body && result.body.error) || 'Could not submit review.');
+          }
+          publicForm.reset();
+          paintPublicStars(5);
+          setPublicReviewStatus('ok', result.body.message || 'Thank you! Your review was submitted.');
+        }).catch(function (err) {
+          setPublicReviewStatus('err', err.message || 'Could not submit review.');
+        }).finally(function () {
+          submitBtn.disabled = false;
+        });
+      });
+    }
   });
 })();
 </script>

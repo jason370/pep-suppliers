@@ -112,6 +112,7 @@ tr.deleted-row .btn-icon{display:none}
 .review-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
 .review-badge.on{background:#d4edda;color:#155724}
 .review-badge.off{background:#f8d7da;color:#721c24}
+.review-badge.pending{background:#fff3cd;color:#856404}
 .review-item .photo-row{display:flex;align-items:center;gap:12px;margin:8px 0}
 .review-item .photo-thumb{width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid var(--border);background:#f0f4f8}
 .review-photo-input{font-size:12px;max-width:100%}
@@ -1292,31 +1293,52 @@ function uploadPendingReviewPhotos() {
   });
 }
 
+function toggleReviewPublished(index) {
+  var r = _reviews[index];
+  if (!r) return;
+  r.published = r.published === false;
+  markReviewDirty();
+  renderReviewsList();
+  showStatus(r.published ? 'Review marked published — Push to Site.' : 'Review unpublished — Push to Site.', 'success');
+}
+
 function renderReviewsList() {
   var list = document.getElementById('review-list');
   var published = _reviews.filter(function (r) { return r.published !== false; }).length;
-  document.getElementById('reviews-count').textContent = _reviews.length + ' total · ' + published + ' published on site';
+  var pending = _reviews.length - published;
+  document.getElementById('reviews-count').textContent = _reviews.length + ' total · ' + published + ' published' + (pending ? ' · ' + pending + ' pending' : '');
   if (!_reviews.length) {
     list.innerHTML = '<p style="color:#6b7f94;font-size:14px">No reviews yet.</p>';
     return;
   }
-  list.innerHTML = _reviews.map(function (r, index) {
+  var ordered = _reviews.map(function (r, index) { return { r: r, index: index }; }).sort(function (a, b) {
+    if (a.r.published === false && b.r.published !== false) return -1;
+    if (b.r.published === false && a.r.published !== false) return 1;
+    return 0;
+  });
+  list.innerHTML = ordered.map(function (item) {
+    var r = item.r;
+    var index = item.index;
     var photoSrc = reviewPhotoSrc(r);
+    var statusClass = r.published !== false ? 'on' : 'pending';
+    var statusLabel = r.published !== false ? 'Published' : 'Pending';
     var photoBlock = '<div class="photo-row">' +
       (photoSrc ? '<img class="photo-thumb" src="' + escAttr(photoSrc) + '" alt="">' : '<div class="photo-thumb" style="display:flex;align-items:center;justify-content:center;font-size:10px;color:#9aabb8">No photo</div>') +
       '<label style="font-size:12px;color:#6b7f94;margin:0">Change photo<br><input type="file" class="review-photo-input" accept="image/jpeg,image/png,image/webp" onchange="onReviewPhotoSelected(' + index + ', this)"></label>' +
       '</div>';
+    var submitted = r.submittedAt ? '<br><span>Submitted ' + esc(new Date(r.submittedAt).toLocaleString()) + '</span>' : '';
     return '<div class="review-item">' +
       '<div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap">' +
         '<div><div style="font-size:11px;font-weight:700;color:#6b7f94;margin-bottom:4px">Stars</div><div class="star-picker" id="review-stars-' + index + '" role="group" aria-label="Star rating">' + reviewStarsPickerHtml(index, r.stars) + '</div></div>' +
-        '<span class="review-badge ' + (r.published !== false ? 'on' : 'off') + '">' + (r.published !== false ? 'Published' : 'Hidden') + '</span>' +
+        '<span class="review-badge ' + statusClass + '">' + statusLabel + '</span>' +
       '</div>' +
       photoBlock +
       '<blockquote>' + esc(r.text || '') + '</blockquote>' +
       '<div class="meta"><strong>' + esc(r.name || 'Research customer') + '</strong>' +
       (reviewRole(r) ? '<br><span>' + esc(reviewRole(r)) + '</span>' : '') +
-      (r.location ? '<br><span>' + esc(r.location) + '</span>' : '') + '</div>' +
+      (r.location ? '<br><span>' + esc(r.location) + '</span>' : '') + submitted + '</div>' +
       '<div class="actions">' +
+        '<button type="button" class="btn btn-primary" style="padding:4px 10px;font-size:12px" onclick="toggleReviewPublished(' + index + ')">' + (r.published !== false ? 'Unpublish' : 'Publish') + '</button>' +
         '<button type="button" class="btn btn-secondary" style="padding:4px 10px;font-size:12px" onclick="editReview(' + index + ')">Edit</button>' +
         '<button type="button" class="btn btn-danger" style="padding:4px 10px;font-size:12px" onclick="deleteReview(' + index + ')">Delete</button>' +
       '</div></div>';
