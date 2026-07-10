@@ -898,6 +898,9 @@ function loadData() {
     _reviewsSha = results[7].sha;
     _reviews = Array.isArray(results[8]) ? results[8] : [];
     _reviewDirty = false;
+    return fetchPendingBlobReviews();
+  })
+  .then(function() {
     renderReviewsList();
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
@@ -1230,8 +1233,73 @@ function reviewPhotoSrc(r) {
   if (_pendingReviewPhotos[r.id] && _pendingReviewPhotos[r.id].preview) {
     return _pendingReviewPhotos[r.id].preview;
   }
+  if (r.photoBase64 && r.photoMime) {
+    return 'data:' + r.photoMime + ';base64,' + r.photoBase64;
+  }
   if (r.photo) return r.photo + (r.photo.indexOf('?') >= 0 ? '&' : '?') + 'v=' + Date.now();
   return '';
+}
+
+function prepareBlobReviewPhoto(r) {
+  if (!r || !r.photoBase64 || !r.photoMime) return;
+  var mime = String(r.photoMime).toLowerCase();
+  var ext = mime === 'image/png' ? 'png' : mime === 'image/webp' ? 'webp' : 'jpg';
+  var path = 'images/reviews/' + r.id + '.' + ext;
+  _pendingReviewPhotos[r.id] = {
+    base64: r.photoBase64,
+    ext: ext,
+    preview: 'data:' + mime + ';base64,' + r.photoBase64,
+    path: path
+  };
+  r.photo = path;
+  delete r.photoBase64;
+  delete r.photoMime;
+}
+
+function mergePendingBlobReviews(items) {
+  (Array.isArray(items) ? items : []).forEach(function (r) {
+    if (!r || !r.id) return;
+    if (_reviews.some(function (x) { return x.id === r.id; })) return;
+    prepareBlobReviewPhoto(r);
+    r._blobPending = true;
+    if (r.published === undefined) r.published = false;
+    _reviews.unshift(r);
+  });
+}
+
+function fetchPendingBlobReviews() {
+  return fetch('/.netlify/functions/pending-reviews', {
+    headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
+  }).then(function (res) {
+    if (res.status === 401) return { reviews: [] };
+    if (!res.ok) throw new Error('Could not load pending customer reviews.');
+    return res.json();
+  }).then(function (data) {
+    mergePendingBlobReviews(data.reviews);
+  });
+}
+
+function clearPendingBlobReviews(ids) {
+  if (!ids.length) return Promise.resolve();
+  return fetch('/.netlify/functions/pending-reviews', {
+    method: 'DELETE',
+    headers: {
+      'Authorization': 'token ' + GITHUB_TOKEN,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ids: ids })
+  }).then(function (res) {
+    if (!res.ok) throw new Error('Could not clear pending review queue.');
+    return res.json();
+  });
+}
+
+function reviewsForGitHub() {
+  return _reviews.map(function (r) {
+    var copy = Object.assign({}, r);
+    delete copy._blobPending;
+    return copy;
+  });
 }
 
 function readReviewPhotoFile(file, reviewId) {
@@ -1409,10 +1477,16 @@ function editReview(index) {
 function deleteReview(index) {
   if (!confirm('Delete this review?')) return;
   var r = _reviews[index];
+  var blobId = r && r._blobPending ? r.id : '';
   if (r && r.id) delete _pendingReviewPhotos[r.id];
   _reviews.splice(index, 1);
   markReviewDirty();
   renderReviewsList();
+  if (blobId) {
+    clearPendingBlobReviews([blobId]).catch(function (e) {
+      showStatus('Review removed locally but queue cleanup failed: ' + e.message, 'error');
+    });
+  }
 }
 
 function pushReviewsToGitHub() {
@@ -1421,13 +1495,21 @@ function pushReviewsToGitHub() {
   showStatus('⏳ Pushing reviews...', 'loading');
   uploadPendingReviewPhotos()
   .then(function() {
-    return ghGetFile('reviews.json');
-  }).then(function (meta) {
-    var sha = meta.sha || _reviewsSha;
-    return ghPutFile('reviews.json', JSON.stringify(_reviews, null, 2) + '\n', 'Update reviews from pricing admin', sha);
-  }).then(function (result) {
+    var blobIdsToClear = _reviews.filter(function (r) { return r && r._blobPending; }).map(function (r) { return r.id; });
+    return ghGetFile('reviews.json').then(function (meta) {
+      return { meta: meta, blobIdsToClear: blobIdsToClear };
+    });
+  }).then(function (ctx) {
+    var sha = ctx.meta.sha || _reviewsSha;
+    return ghPutFile('reviews.json', JSON.stringify(reviewsForGitHub(), null, 2) + '\n', 'Update reviews from pricing admin', sha)
+      .then(function (result) { return { result: result, blobIdsToClear: ctx.blobIdsToClear }; });
+  }).then(function (ctx) {
+    var result = ctx.result;
     if (!result.content) throw new Error('reviews.json: ' + JSON.stringify(result));
     if (result.content.sha) _reviewsSha = result.content.sha;
+    return clearPendingBlobReviews(ctx.blobIdsToClear).then(function () { return result; });
+  }).then(function () {
+    _reviews.forEach(function (r) { delete r._blobPending; });
     _reviewDirty = false;
     renderReviewsList();
     updatePushBarForTab();

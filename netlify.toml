@@ -1,8 +1,10 @@
 [build]
   publish = "."
+  command = "npm install"
 
 [functions]
   directory = "functions"
+  node_bundler = "esbuild"
 
 [[headers]]
   for = "/index.html"
