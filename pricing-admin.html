@@ -174,7 +174,7 @@ tr.deleted-row .btn-icon{display:none}
 <div class="push-bar" id="push-bar">
   <div>
     <p id="push-summary">Ready to push</p>
-    <small id="push-hint" style="opacity:.7;font-size:12px">Updates US Warehouse cards + Peptide Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.</small>
+    <small id="push-hint" style="opacity:.7;font-size:12px">Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.</small>
   </div>
   <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
 </div>
@@ -646,7 +646,7 @@ function setWarehouseMode(mode) {
     head.innerHTML =
       '<th>Product</th><th>Size</th><th>Cat No</th><th>Category</th><th>Vendor</th><th>Cost</th><th>Cost/Vial</th><th>Sale Price</th><th>In Stock</th><th>Actions</th>';
     document.getElementById('push-hint').textContent =
-      'Updates US Warehouse cards + Peptide Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.';
+      'Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.';
     renderTable();
   }
   updateChangesLabel();
@@ -930,7 +930,7 @@ function pushToGitHub() {
       return ghPutFile(
         PRICE_LIST_FILE,
         listHtml,
-        'Sync Peptide Price List from admin (US ' + listUpdates + ' rows)',
+        'Sync US Price List from admin (US ' + listUpdates + ' rows)',
         _priceListSha
       ).then(function(result) {
         if (!result.content) throw new Error(PRICE_LIST_FILE + ': ' + JSON.stringify(result));
