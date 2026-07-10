@@ -330,7 +330,9 @@ section{scroll-margin-top:88px}
 .faq-list{display:grid;gap:10px;margin-top:22px}
 .reviews{background:#fff;padding:58px 0}
 .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
-.review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-soft)}
+.review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-soft);display:flex;gap:16px;align-items:flex-start}
+.review-card-body{flex:1;min-width:0}
+.review-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #fff;box-shadow:0 2px 8px rgba(7,24,51,.08)}
 .review-stars{color:#e8a317;font-size:15px;letter-spacing:2px;margin-bottom:12px}
 .review-card blockquote{margin:0 0 16px;color:#2d4055;line-height:1.65;font-size:15px;font-weight:600}
 .review-meta{display:flex;flex-direction:column;gap:3px}
@@ -6891,14 +6893,18 @@ input.invalid{
           var stars = reviewStars(r.stars);
           var role = reviewRole(r);
           var location = reviewLocation(r);
+          var photo = String(r.photo || '').trim();
+          var photoHtml = photo ? '<img class="review-photo" src="' + esc(photo) + '" alt="">' : '';
           return '<article class="review-card">' +
+            photoHtml +
+            '<div class="review-card-body">' +
             '<div class="review-stars" aria-label="' + esc(r.stars || 5) + ' out of 5 stars">' + stars + '</div>' +
             '<blockquote>' + esc(r.text) + '</blockquote>' +
             '<div class="review-meta">' +
             '<strong>' + esc(r.name || 'Research customer') + '</strong>' +
             (role ? '<span class="review-role">' + esc(role) + '</span>' : '') +
             (location ? '<span class="review-location">' + esc(location) + '</span>' : '') +
-            '</div></article>';
+            '</div></div></article>';
         }).join('');
       })
       .catch(function () {
