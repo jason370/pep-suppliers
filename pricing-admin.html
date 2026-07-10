@@ -1161,14 +1161,6 @@ function reviewRole(r) {
   return String(r.role || r.detail || '').trim();
 }
 
-function reviewMetaText(r) {
-  var parts = [];
-  var role = reviewRole(r);
-  if (role) parts.push(role);
-  if (r.location) parts.push(r.location);
-  return parts.join(' · ');
-}
-
 function renderReviewsList() {
   var list = document.getElementById('review-list');
   var published = _reviews.filter(function (r) { return r.published !== false; }).length;
