@@ -192,6 +192,7 @@ var _pcBySiteName = {};  // site product name -> [{cat_no, spec, cost, vendor}]
 var _pcByCatNo = {};     // cat_no -> {cost, vendor}
 var _changes = {};       // "productId::spec" -> new price string, or "_stock_::productId" -> bool
 var _chinaChanges = {};  // "china::CODE" -> kit price string
+var _chinaDeletions = { products: {}, codes: {} };
 var _deletions = { products: {}, sizes: {} };
 var _sha = '';
 var _priceListSha = '';
@@ -306,10 +307,54 @@ function syncCombinedChinaFromChinaList() {
   return 0;
 }
 
+function getChinaListPrice(code) {
+  if (!code) return '';
+  for (var i = 0; i < _chinaListRows.length; i++) {
+    if (_chinaListRows[i].code === code) return _chinaListRows[i].price;
+  }
+  return '';
+}
+
+function findChinaNameForCode(code) {
+  for (var i = 0; i < _products.length; i++) {
+    var p = _products[i];
+    var sizes = getSizes(p);
+    for (var j = 0; j < sizes.length; j++) {
+      if (sizes[j].cat_no === code) return p.name + ' ' + sizes[j].size;
+    }
+  }
+  return code;
+}
+
+function parseChinaName(name) {
+  var m = String(name || '').match(/^(.+?)\s+(\d+(?:\.\d+)?)(mg|mcg|iu|g|ml)\b/i);
+  if (!m) return { product: String(name || '').trim(), size: '' };
+  return { product: m[1].trim(), size: m[2] + m[3].toLowerCase() };
+}
+
 function applyChinaChangesToRows() {
-  _chinaListRows.forEach(function(row) {
-    var key = chinaRowKey(row.code);
-    if (_chinaChanges[key] !== undefined) row.price = formatMoney(_chinaChanges[key]);
+  Object.keys(_chinaChanges).forEach(function(key) {
+    var code = key.replace('china::', '');
+    var price = formatMoney(_chinaChanges[key]);
+    var found = false;
+    _chinaListRows.forEach(function(row) {
+      if (row.code === code) {
+        row.price = price;
+        found = true;
+      }
+    });
+    if (!found && price) {
+      _chinaListRows.push({ code: code, name: findChinaNameForCode(code), price: price });
+    }
+  });
+}
+
+function removeChinaRowsForDeletions() {
+  _chinaListRows = _chinaListRows.filter(function(row) {
+    if (_chinaDeletions.codes[row.code]) return false;
+    var parsed = parseChinaName(row.name);
+    if (_chinaDeletions.products[normName(parsed.product)]) return false;
+    return true;
   });
 }
 
@@ -428,6 +473,20 @@ function removePriceListRowsForDeletions(allProducts) {
     });
     return !sizeDeleted;
   });
+}
+
+function deleteChinaCard(productName) {
+  if (!confirm('Remove all overseas kit sizes for "' + productName + '" from the price list?')) return;
+  _chinaDeletions.products[normName(productName)] = true;
+  renderChinaTable();
+  updateChangesLabel();
+}
+
+function deleteChinaSize(code, productName, size) {
+  if (!confirm('Remove ' + size + ' (' + code + ') from overseas price list for "' + productName + '"?')) return;
+  _chinaDeletions.codes[code] = true;
+  renderChinaTable();
+  updateChangesLabel();
 }
 
 function deleteCard(productId, productName) {
@@ -613,7 +672,7 @@ function loadData() {
     parseChinaPriceListHtml(results[6]);
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
-    document.getElementById('product-count').textContent = _products.length + ' US · ' + _chinaListRows.length + ' China kits';
+    document.getElementById('product-count').textContent = _products.length + ' US · ' + _chinaListRows.length + ' overseas kits';
     hideStatus();
     renderTable();
   })
@@ -635,52 +694,64 @@ function jsStr(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"
 
 function setWarehouseMode(mode) {
   _warehouseMode = mode === 'china' ? 'china' : 'us';
-  var head = document.getElementById('table-head-row');
-  if (_warehouseMode === 'china') {
-    head.innerHTML =
-      '<th>Code</th><th>Product Name</th><th></th><th></th><th>Vendor</th><th>Kit Cost</th><th></th><th>Kit Price</th><th></th><th></th>';
-    document.getElementById('push-hint').textContent =
-      'Updates Overseas Shipping kit price list (HTML). PDF is not auto-updated.';
-    renderChinaTable();
-  } else {
-    head.innerHTML =
-      '<th>Product</th><th>Size</th><th>Cat No</th><th>Category</th><th>Vendor</th><th>Cost</th><th>Cost/Vial</th><th>Sale Price</th><th>In Stock</th><th>Actions</th>';
-    document.getElementById('push-hint').textContent =
-      'Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.';
-    renderTable();
-  }
+  document.getElementById('push-hint').textContent = _warehouseMode === 'china'
+    ? 'Updates Overseas Shipping kit price list (HTML). Same product layout as US Warehouse. PDF is not auto-updated.'
+    : 'Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.';
+  if (_warehouseMode === 'china') renderChinaTable();
+  else renderTable();
   updateChangesLabel();
 }
 
 function renderChinaTable() {
   var tbody = document.getElementById('table-body');
   tbody.innerHTML = '';
-  _chinaListRows.forEach(function(row) {
-    var key = chinaRowKey(row.code);
-    var origPrice = row.price;
-    var currentPrice = _chinaChanges[key] !== undefined ? _chinaChanges[key] : origPrice;
-    var isChanged = _chinaChanges[key] !== undefined;
-    var cost = getChinaKitCost(row.code);
-    var vendor = _pcByCatNo[row.code] ? _pcByCatNo[row.code].vendor : null;
 
-    var tr = document.createElement('tr');
-    tr.className = 'size-row' + (isChanged ? ' changed-row' : '');
-    tr.dataset.name = (row.code + ' ' + row.name).toLowerCase();
-    tr.dataset.category = '';
+  _products.forEach(function(p) {
+    var sizes = getSizes(p).filter(function(s) { return !!s.cat_no; });
+    if (!sizes.length) return;
+    var nameRowKey = headerRowKey(sizes);
+    var productDeleted = _chinaDeletions.products[normName(p.name)];
 
-    tr.innerHTML =
-      '<td class="catno-cell"><strong>' + esc(row.code) + '</strong></td>' +
-      '<td colspan="3"><strong>' + esc(row.name) + '</strong></td>' +
-      '<td class="vendor-cell">' + (vendor ? esc(vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
-      '<td class="cost-cell">' + (cost != null ? '$' + cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
-      '<td></td>' +
-      '<td><input class="price-input' + (isChanged ? ' changed' : '') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
-        'data-key="' + escAttr(key) + '" data-cost="' + (cost || '') + '" data-original="' + escAttr(origPrice) + '" ' +
-        'oninput="onChinaPriceChange(this)"></td>' +
-      '<td></td><td></td>';
+    sizes.forEach(function(s) {
+      var code = s.cat_no;
+      var key = chinaRowKey(code);
+      var origPrice = getChinaListPrice(code);
+      var currentPrice = _chinaChanges[key] !== undefined ? _chinaChanges[key] : origPrice;
+      var isChanged = _chinaChanges[key] !== undefined;
+      var isHeaderRow = s.key === nameRowKey;
+      var sizeDeleted = _chinaDeletions.codes[code];
 
-    tbody.appendChild(tr);
+      var tr = document.createElement('tr');
+      tr.className = 'size-row' + (isChanged ? ' changed-row' : '');
+      tr.dataset.name = (p.name + ' ' + code + ' ' + s.size).toLowerCase();
+      tr.dataset.category = (p.category || '').toLowerCase();
+      tr.dataset.productid = p.id;
+      tr.dataset.sizekey = s.key;
+      tr.dataset.code = code;
+
+      if (productDeleted || sizeDeleted) tr.classList.add('deleted-row');
+
+      tr.innerHTML =
+        '<td' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' + (isHeaderRow ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
+        '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
+        '<td class="catno-cell">' + esc(code) + '</td>' +
+        (isHeaderRow ? '<td class="product-header-cell">' + catBadge(p.category) + '</td>' : '<td></td>') +
+        '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.cost != null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td class="cost-cell">' + (s.costPerVial != null ? '$' + s.costPerVial.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
+        '<td><input class="price-input' + (isChanged ? ' changed' : '') + '" type="text" value="' + escAttr(currentPrice) + '" ' +
+          'data-key="' + escAttr(key) + '" data-cost="' + (s.cost || '') + '" data-costpervial="' + (s.costPerVial || '') + '" data-original="' + escAttr(origPrice) + '" ' +
+          'oninput="onChinaPriceChange(this)"></td>' +
+        '<td></td>' +
+        '<td style="white-space:nowrap"' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' +
+          (isHeaderRow ? '<button type="button" class="btn-icon card-del" title="Delete card" onclick="deleteChinaCard(\'' + jsStr(p.name) + '\')">🗑 Card</button> ' : '') +
+          '<button type="button" class="btn-icon" title="Delete size" onclick="deleteChinaSize(\'' + jsStr(code) + '\',\'' + jsStr(p.name) + '\',\'' + jsStr(s.size) + '\')">×</button>' +
+        '</td>';
+
+      tbody.appendChild(tr);
+    });
   });
+
   filterTable();
 }
 
@@ -795,6 +866,7 @@ function resetAll() {
   if (!confirm('Reset all pending changes and deletions?')) return;
   _changes = {};
   _chinaChanges = {};
+  _chinaDeletions = { products: {}, codes: {} };
   _deletions = { products: {}, sizes: {} };
   document.querySelectorAll('.price-input').forEach(function(input){
     input.value = input.dataset.original;
@@ -816,14 +888,20 @@ function countUsPending() {
   return priceCount + Object.keys(_deletions.products).length + Object.keys(_deletions.sizes).length;
 }
 
+function countChinaPending() {
+  return Object.keys(_chinaChanges).length +
+    Object.keys(_chinaDeletions.products).length +
+    Object.keys(_chinaDeletions.codes).length;
+}
+
 function updateChangesLabel() {
   var usCount = countUsPending();
-  var chinaCount = Object.keys(_chinaChanges).length;
+  var chinaCount = countChinaPending();
   var count = usCount + chinaCount;
   var label = document.getElementById('changes-label');
   var parts = [];
   if (usCount) parts.push(usCount + ' US');
-  if (chinaCount) parts.push(chinaCount + ' China');
+  if (chinaCount) parts.push(chinaCount + ' overseas');
   label.textContent = count > 0 ? parts.join(', ') + ' pending' : 'No changes';
   label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
   var pb = document.getElementById('push-bar');
@@ -840,14 +918,14 @@ function filterTable() {
   var cat = document.getElementById('category-filter').value.toLowerCase();
   document.querySelectorAll('#table-body tr.size-row').forEach(function(row){
     var show = (!search || row.dataset.name.includes(search)) &&
-               (_warehouseMode === 'china' || !cat || row.dataset.category === cat);
+               (!cat || row.dataset.category === cat);
     row.style.display = show ? '' : 'none';
   });
 }
 
 function pushToGitHub() {
   var usPending = countUsPending();
-  var chinaPending = Object.keys(_chinaChanges).length;
+  var chinaPending = countChinaPending();
   if (!usPending && !chinaPending) return;
   document.querySelector('#push-bar .btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
@@ -944,6 +1022,7 @@ function pushToGitHub() {
 
   if (chinaPending) {
     chain = chain.then(function(ctx) {
+      removeChinaRowsForDeletions();
       var chinaHtml = buildChinaPriceListHtml();
       return ghPutFile(
         CHINA_PRICE_LIST_FILE,
@@ -967,6 +1046,7 @@ function pushToGitHub() {
     }
     _changes = {};
     _chinaChanges = {};
+    _chinaDeletions = { products: {}, codes: {} };
     _deletions = { products: {}, sizes: {} };
     updateChangesLabel();
     if (_warehouseMode === 'china') renderChinaTable();
