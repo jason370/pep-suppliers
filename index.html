@@ -333,9 +333,9 @@ section{scroll-margin-top:88px}
 .review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-soft)}
 .review-stars{color:#e8a317;font-size:15px;letter-spacing:2px;margin-bottom:12px}
 .review-card blockquote{margin:0 0 16px;color:#2d4055;line-height:1.65;font-size:15px;font-weight:600}
-.review-meta{display:flex;flex-direction:column;gap:2px}
+.review-meta{display:flex;flex-direction:column;gap:3px}
 .review-meta strong{color:var(--navy);font-size:14px;font-weight:900}
-.review-meta span{color:var(--muted);font-size:13px}
+.review-meta .review-role,.review-meta .review-location{color:var(--muted);font-size:13px}
 .reviews-submit{margin-top:28px;text-align:center;max-width:560px}
 .reviews-submit p{margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:15px}
 details{background:#fff;border:1px solid var(--border);border-radius:11px;padding:15px 18px}
@@ -6868,11 +6868,11 @@ input.invalid{
   function esc(s) {
     return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   }
-  function reviewMetaLine(r) {
-    var parts = [];
-    if (r.detail) parts.push(r.detail);
-    if (r.location) parts.push(r.location);
-    return parts.join(' · ');
+  function reviewRole(r) {
+    return String(r.role || r.detail || '').trim();
+  }
+  function reviewLocation(r) {
+    return String(r.location || '').trim();
   }
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('reviews-grid');
@@ -6889,11 +6889,15 @@ input.invalid{
         }
         grid.innerHTML = list.map(function (r) {
           var stars = reviewStars(r.stars);
+          var role = reviewRole(r);
+          var location = reviewLocation(r);
           return '<article class="review-card">' +
             '<div class="review-stars" aria-label="' + esc(r.stars || 5) + ' out of 5 stars">' + stars + '</div>' +
             '<blockquote>' + esc(r.text) + '</blockquote>' +
-            '<div class="review-meta"><strong>' + esc(r.name || 'Research customer') + '</strong>' +
-            (reviewMetaLine(r) ? '<span>' + esc(reviewMetaLine(r)) + '</span>' : '') +
+            '<div class="review-meta">' +
+            '<strong>' + esc(r.name || 'Research customer') + '</strong>' +
+            (role ? '<span class="review-role">' + esc(role) + '</span>' : '') +
+            (location ? '<span class="review-location">' + esc(location) + '</span>' : '') +
             '</div></article>';
         }).join('');
       })
