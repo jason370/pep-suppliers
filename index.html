@@ -6834,22 +6834,8 @@ input.invalid{
           <p>What researchers say about sourcing, fulfillment speed, and support with Pep Suppliers.</p>
         </div>
       </div>
-      <div class="reviews-grid">
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>US Warehouse orders have been consistent for our lab. Catalog is easy to browse, checkout is straightforward, and 1–3 day delivery has matched what we plan around.</blockquote>
-          <div class="review-meta"><strong>Lab coordinator</strong><span>US research facility</span></div>
-        </article>
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>Telegram support answered product and documentation questions quickly. Helpful when we were comparing sizes and planning a multi-vial kit order.</blockquote>
-          <div class="review-meta"><strong>Principal investigator</strong><span>Academic research group</span></div>
-        </article>
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote>Price lists are clear for both US and Overseas Shipping paths. The Build Your Kit flow made it simple to send a bulk inquiry without back-and-forth.</blockquote>
-          <div class="review-meta"><strong>Operations lead</strong><span>Contract research org</span></div>
-        </article>
+      <div class="reviews-grid" id="reviews-grid" aria-live="polite">
+        <p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Loading reviews…</p>
       </div>
       <div class="reviews-submit">
         <p>Ordered from Pep Suppliers? Join our Telegram reviews chat and share your experience. Approved feedback may be featured here.</p>
@@ -6872,6 +6858,45 @@ input.invalid{
   </section>
 
 </main>
+
+<script>
+(function () {
+  function reviewStars(n) {
+    var s = Math.max(1, Math.min(5, Math.round(Number(n) || 5)));
+    return '★★★★★'.slice(0, s) + '☆☆☆☆☆'.slice(0, 5 - s);
+  }
+  function esc(s) {
+    return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    var grid = document.getElementById('reviews-grid');
+    if (!grid) return;
+    fetch('/reviews.json?v=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (items) {
+        var list = (Array.isArray(items) ? items : []).filter(function (r) {
+          return r && r.published !== false && String(r.text || '').trim();
+        });
+        if (!list.length) {
+          grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Reviews will appear here soon.</p>';
+          return;
+        }
+        grid.innerHTML = list.map(function (r) {
+          var stars = reviewStars(r.stars);
+          return '<article class="review-card">' +
+            '<div class="review-stars" aria-label="' + esc(r.stars || 5) + ' out of 5 stars">' + stars + '</div>' +
+            '<blockquote>' + esc(r.text) + '</blockquote>' +
+            '<div class="review-meta"><strong>' + esc(r.name || 'Research customer') + '</strong>' +
+            (r.detail ? '<span>' + esc(r.detail) + '</span>' : '') +
+            '</div></article>';
+        }).join('');
+      })
+      .catch(function () {
+        grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Could not load reviews.</p>';
+      });
+  });
+})();
+</script>
 
 <footer class="footer">
   <div class="container footer-inner">

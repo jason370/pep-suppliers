@@ -20,6 +20,11 @@
     Cache-Control = "no-cache, no-store, must-revalidate"
 
 [[headers]]
+  for = "/reviews.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
   for = "/pep-suppliers-us-warehouse-price-list.html"
   [headers.values]
     Cache-Control = "no-cache, no-store, must-revalidate"

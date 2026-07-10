@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews Admin | Pep Suppliers</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 24px; background: #f4f6f8; color: #071833; }
+    h1 { margin: 0 0 8px; font-size: 1.5rem; }
+    h2 { margin: 24px 0 12px; font-size: 1.1rem; }
+    .panel { max-width: 960px; margin: 0 auto; background: #fff; border: 1px solid #d8dee4; border-radius: 8px; padding: 24px; }
+    .muted { color: #5c6670; font-size: 0.9rem; }
+    label { display: block; margin-bottom: 4px; font-weight: 600; font-size: 0.85rem; }
+    input, select, textarea, button { font: inherit; }
+    input[type="text"], input[type="password"], input[type="number"], select, textarea {
+      width: 100%; padding: 8px 10px; border: 1px solid #c5cdd6; border-radius: 6px; margin-bottom: 12px;
+    }
+    textarea { min-height: 88px; resize: vertical; }
+    button {
+      padding: 8px 14px; border: 1px solid #0D6D72; background: #0D6D72; color: #fff;
+      border-radius: 6px; cursor: pointer; font-weight: 600;
+    }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    button.secondary { background: #fff; color: #0D6D72; }
+    button.danger { background: #b42318; border-color: #b42318; }
+    button.small { padding: 4px 8px; font-size: 0.8rem; }
+    .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-start; }
+    .row > * { flex: 1; min-width: 140px; }
+    .toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 16px 0; }
+    .status { padding: 10px 12px; border-radius: 6px; margin: 12px 0; display: none; }
+    .status.show { display: block; }
+    .status.ok { background: #e8f5e9; border: 1px solid #81c784; }
+    .status.err { background: #fdecea; border: 1px solid #e57373; }
+    .status.warn { background: #fff8e1; border: 1px solid #ffd54f; }
+    .review-list { display: grid; gap: 12px; }
+    .review-item { border: 1px solid #e6ebf0; border-radius: 8px; padding: 14px; background: #fafbfc; }
+    .review-item header { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 8px; }
+    .review-item .stars { color: #e8a317; letter-spacing: 1px; }
+    .review-item blockquote { margin: 0 0 8px; line-height: 1.55; color: #2d4055; }
+    .review-item .meta { font-size: 0.85rem; color: #6b7f94; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+    .badge.yes { background: #e8f5e9; color: #2e7d32; }
+    .badge.no { background: #fdecea; color: #c62828; }
+    .hidden { display: none !important; }
+    .add-form { border: 1px solid #e6ebf0; border-radius: 8px; padding: 16px; background: #f7fafc; }
+    #gate { max-width: 420px; margin: 80px auto; }
+    .check-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .check-row input { width: auto; margin: 0; }
+  </style>
+</head>
+<body>
+
+<div id="gate" class="panel">
+  <h1>Reviews Admin</h1>
+  <p class="muted">Same site password as Product Admin. Manage reviews shown on pep-suppliers.com.</p>
+  <label for="gate-password">Password</label>
+  <input type="password" id="gate-password" autocomplete="current-password">
+  <div class="toolbar">
+    <button type="button" id="gate-submit">Enter Admin</button>
+  </div>
+  <div id="gate-status" class="status err"></div>
+</div>
+
+<div id="app" class="panel hidden">
+  <h1>Reviews Admin</h1>
+  <p class="muted">Edits <code>reviews.json</code>. Published reviews appear on the homepage Reviews section after deploy (~1 min).</p>
+  <div id="app-status" class="status"></div>
+
+  <div class="toolbar">
+    <button type="button" id="save-btn">Save to Site</button>
+    <button type="button" id="reload-btn" class="secondary">Reload</button>
+    <a href="/" class="secondary" style="padding:8px 14px;border:1px solid #0D6D72;border-radius:6px;text-decoration:none;color:#0D6D72;font-weight:600">View homepage</a>
+    <span class="muted" id="review-count"></span>
+    <span class="muted" id="dirty-flag"></span>
+  </div>
+
+  <h2>Add review</h2>
+  <div class="add-form">
+    <div class="row">
+      <div style="max-width:120px">
+        <label for="add-stars">Stars (1–5)</label>
+        <input type="number" id="add-stars" min="1" max="5" value="5">
+      </div>
+      <div>
+        <label for="add-name">Display name</label>
+        <input type="text" id="add-name" placeholder="Lab coordinator">
+      </div>
+      <div>
+        <label for="add-detail">Role / detail</label>
+        <input type="text" id="add-detail" placeholder="US research facility">
+      </div>
+    </div>
+    <label for="add-text">Review text</label>
+    <textarea id="add-text" placeholder="Short review about ordering, delivery, or support…"></textarea>
+    <div class="check-row">
+      <input type="checkbox" id="add-published" checked>
+      <label for="add-published" style="margin:0">Published on site</label>
+    </div>
+    <button type="button" id="add-btn">Add review</button>
+  </div>
+
+  <h2>Current reviews</h2>
+  <div id="review-list" class="review-list"></div>
+</div>
+
+<script>
+(function () {
+  var API = '/.netlify/functions/update-reviews';
+  var GITHUB_CONTENTS = 'https://api.github.com/repos/jason370/pep-suppliers/contents/reviews.json?ref=main';
+
+  var sessionPassword = null;
+  var reviews = [];
+  var currentSha = '';
+  var dirty = false;
+  var saving = false;
+
+  var gate = document.getElementById('gate');
+  var app = document.getElementById('app');
+  var gatePassword = document.getElementById('gate-password');
+  var gateSubmit = document.getElementById('gate-submit');
+  var gateStatus = document.getElementById('gate-status');
+  var appStatus = document.getElementById('app-status');
+  var saveBtn = document.getElementById('save-btn');
+  var reloadBtn = document.getElementById('reload-btn');
+  var reviewList = document.getElementById('review-list');
+  var reviewCount = document.getElementById('review-count');
+  var dirtyFlag = document.getElementById('dirty-flag');
+
+  function slugify(text) {
+    return String(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
+  }
+
+  function newId(name) {
+    return 'review-' + slugify(name || 'item') + '-' + Date.now().toString(36);
+  }
+
+  function setStatus(el, type, message) {
+    el.className = 'status show ' + type;
+    el.textContent = message;
+  }
+
+  function clearStatus(el) {
+    el.className = 'status';
+    el.textContent = '';
+  }
+
+  function markDirty() {
+    dirty = true;
+    dirtyFlag.textContent = 'Unsaved changes';
+  }
+
+  function markClean() {
+    dirty = false;
+    dirtyFlag.textContent = '';
+  }
+
+  function showAppStatus(type, message) {
+    setStatus(appStatus, type, message);
+  }
+
+  function fetchSha() {
+    return fetch(GITHUB_CONTENTS, { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Could not fetch SHA from GitHub (' + res.status + ')');
+        return res.json();
+      })
+      .then(function (data) {
+        currentSha = data.sha || '';
+        return currentSha;
+      });
+  }
+
+  function fetchReviews() {
+    return fetch('/reviews.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (res) {
+        if (!res.ok) throw new Error('Could not load reviews.json');
+        return res.json();
+      })
+      .then(function (data) {
+        reviews = Array.isArray(data) ? data : [];
+        return reviews;
+      });
+  }
+
+  function postUpdate(payload) {
+    return fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      return res.json().then(function (body) {
+        return { status: res.status, body: body };
+      });
+    });
+  }
+
+  function starsDisplay(n) {
+    var s = Math.max(1, Math.min(5, Math.round(Number(n) || 5)));
+    return '★★★★★'.slice(0, s) + '☆☆☆☆☆'.slice(0, 5 - s);
+  }
+
+  function renderList() {
+    reviewList.innerHTML = '';
+    var published = reviews.filter(function (r) { return r.published !== false; }).length;
+    reviewCount.textContent = reviews.length + ' total · ' + published + ' published';
+
+    if (!reviews.length) {
+      reviewList.innerHTML = '<p class="muted">No reviews yet. Add one above.</p>';
+      return;
+    }
+
+    reviews.forEach(function (r, index) {
+      var item = document.createElement('div');
+      item.className = 'review-item';
+      item.innerHTML =
+        '<header>' +
+          '<span class="stars" aria-label="' + (r.stars || 5) + ' stars">' + starsDisplay(r.stars) + '</span>' +
+          '<span class="badge ' + (r.published !== false ? 'yes' : 'no') + '">' + (r.published !== false ? 'Published' : 'Hidden') + '</span>' +
+        '</header>' +
+        '<blockquote></blockquote>' +
+        '<div class="meta"></div>' +
+        '<div class="toolbar" style="margin-top:10px">' +
+          '<button type="button" class="small secondary edit-btn">Edit</button>' +
+          '<button type="button" class="small danger del-btn">Delete</button>' +
+        '</div>';
+
+      item.querySelector('blockquote').textContent = r.text || '';
+      item.querySelector('.meta').textContent = (r.name || 'Anonymous') + (r.detail ? ' · ' + r.detail : '');
+
+      item.querySelector('.del-btn').addEventListener('click', function () {
+        if (!confirm('Delete this review?')) return;
+        reviews.splice(index, 1);
+        markDirty();
+        renderList();
+      });
+
+      item.querySelector('.edit-btn').addEventListener('click', function () {
+        var text = prompt('Review text:', r.text || '');
+        if (text === null) return;
+        var name = prompt('Display name:', r.name || '');
+        if (name === null) return;
+        var detail = prompt('Role / detail:', r.detail || '');
+        if (detail === null) return;
+        var stars = prompt('Stars (1-5):', String(r.stars || 5));
+        if (stars === null) return;
+        var pub = confirm('Published on site? OK = yes, Cancel = hide');
+        r.text = text.trim();
+        r.name = name.trim();
+        r.detail = detail.trim();
+        r.stars = Math.max(1, Math.min(5, parseInt(stars, 10) || 5));
+        r.published = pub;
+        markDirty();
+        renderList();
+      });
+
+      reviewList.appendChild(item);
+    });
+  }
+
+  function loadData() {
+    return Promise.all([fetchSha(), fetchReviews()]).then(function () {
+      renderList();
+    });
+  }
+
+  function saveReviews() {
+    if (saving || !sessionPassword) return;
+    saving = true;
+    saveBtn.disabled = true;
+    showAppStatus('warn', 'Saving…');
+
+    postUpdate({
+      password: sessionPassword,
+      reviews: reviews,
+      sha: currentSha
+    }).then(function (result) {
+      if (result.status === 401) {
+        showAppStatus('err', 'Session expired. Reload and sign in again.');
+        return;
+      }
+      if (result.status === 409) {
+        if (result.body && result.body.sha) currentSha = result.body.sha;
+        showAppStatus('err', 'Conflict: reviews.json changed elsewhere. Click Reload, then save again.');
+        return;
+      }
+      if (result.status !== 200) {
+        showAppStatus('err', (result.body && result.body.error) || 'Save failed (' + result.status + ').');
+        return;
+      }
+      if (result.body && result.body.sha) currentSha = result.body.sha;
+      markClean();
+      showAppStatus('ok', 'Saved. Homepage updates after Netlify deploy (~1 minute).');
+    }).catch(function (err) {
+      showAppStatus('err', err.message || 'Save failed.');
+    }).finally(function () {
+      saving = false;
+      saveBtn.disabled = false;
+    });
+  }
+
+  function enterAdmin() {
+    var password = gatePassword.value.trim();
+    if (!password) {
+      setStatus(gateStatus, 'err', 'Password is required.');
+      return;
+    }
+
+    gateSubmit.disabled = true;
+    setStatus(gateStatus, 'warn', 'Verifying…');
+    sessionPassword = password;
+
+    loadData().then(function () {
+      return postUpdate({
+        password: sessionPassword,
+        reviews: reviews,
+        sha: currentSha
+      });
+    }).then(function (result) {
+      if (result.status === 401) {
+        sessionPassword = null;
+        setStatus(gateStatus, 'err', 'Incorrect password.');
+        return;
+      }
+      if (result.status === 409) {
+        if (result.body && result.body.sha) currentSha = result.body.sha;
+        setStatus(gateStatus, 'err', 'Conflict loading SHA. Reload page and try again.');
+        sessionPassword = null;
+        return;
+      }
+      if (result.status !== 200) {
+        sessionPassword = null;
+        setStatus(gateStatus, 'err', (result.body && result.body.error) || 'Verification failed (' + result.status + ').');
+        return;
+      }
+      if (result.body && result.body.sha) currentSha = result.body.sha;
+      gate.classList.add('hidden');
+      app.classList.remove('hidden');
+      clearStatus(gateStatus);
+      markClean();
+      showAppStatus('ok', 'Ready. ' + reviews.length + ' reviews loaded.');
+    }).catch(function (err) {
+      sessionPassword = null;
+      setStatus(gateStatus, 'err', err.message || 'Failed to load admin data.');
+    }).finally(function () {
+      gateSubmit.disabled = false;
+    });
+  }
+
+  document.getElementById('add-btn').addEventListener('click', function () {
+    var text = document.getElementById('add-text').value.trim();
+    var name = document.getElementById('add-name').value.trim();
+    if (!text) {
+      showAppStatus('err', 'Review text is required.');
+      return;
+    }
+    reviews.unshift({
+      id: newId(name),
+      stars: Math.max(1, Math.min(5, parseInt(document.getElementById('add-stars').value, 10) || 5)),
+      text: text,
+      name: name || 'Research customer',
+      detail: document.getElementById('add-detail').value.trim(),
+      published: document.getElementById('add-published').checked
+    });
+    document.getElementById('add-text').value = '';
+    document.getElementById('add-name').value = '';
+    document.getElementById('add-detail').value = '';
+    markDirty();
+    renderList();
+    showAppStatus('ok', 'Review added locally. Click Save to Site to publish.');
+  });
+
+  gateSubmit.addEventListener('click', enterAdmin);
+  gatePassword.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') enterAdmin();
+  });
+  saveBtn.addEventListener('click', saveReviews);
+  reloadBtn.addEventListener('click', function () {
+    loadData().then(function () {
+      markClean();
+      showAppStatus('ok', 'Reloaded from server.');
+    }).catch(function (err) {
+      showAppStatus('err', err.message || 'Reload failed.');
+    });
+  });
+})();
+</script>
+</body>
+</html>
