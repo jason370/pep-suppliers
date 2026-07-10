@@ -38,12 +38,13 @@ async function validateGithubToken(token) {
   }
 }
 
-function pendingStore() {
-  return getStore({ name: 'pending-reviews', consistency: 'strong' });
+function pendingStore(event) {
+  connectLambda(event);
+  return getStore('pending-reviews');
 }
 
-async function listPendingReviews() {
-  const store = pendingStore();
+async function listPendingReviews(event) {
+  const store = pendingStore(event);
   const { blobs } = await store.list();
   const reviews = [];
   for (const blob of blobs) {
@@ -68,7 +69,7 @@ exports.handler = async function handler(event) {
 
   if (event.httpMethod === 'GET') {
     try {
-      const reviews = await listPendingReviews();
+      const reviews = await listPendingReviews(event);
       return jsonResponse(200, { reviews });
     } catch (err) {
       console.error('pending-reviews list failed', err);
@@ -88,7 +89,7 @@ exports.handler = async function handler(event) {
       return jsonResponse(400, { error: 'id or ids required' });
     }
     try {
-      const store = pendingStore();
+      const store = pendingStore(event);
       await Promise.all(ids.map(function (id) {
         return store.delete(String(id));
       }));

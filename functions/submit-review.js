@@ -1,4 +1,4 @@
-const { getStore } = require('@netlify/blobs');
+const { connectLambda, getStore } = require('@netlify/blobs');
 
 const MAX_TEXT = 1200;
 const MAX_NAME = 80;
@@ -30,6 +30,11 @@ function cleanText(value, maxLen) {
 
 function newReviewId() {
   return 'review-guest-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+}
+
+function pendingStore(event) {
+  connectLambda(event);
+  return getStore('pending-reviews');
 }
 
 exports.handler = async function handler(event) {
@@ -98,7 +103,7 @@ exports.handler = async function handler(event) {
   }
 
   try {
-    const store = getStore({ name: 'pending-reviews', consistency: 'strong' });
+    const store = pendingStore(event);
     await store.setJSON(reviewId, review);
     return jsonResponse(200, {
       ok: true,
