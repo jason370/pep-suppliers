@@ -73,6 +73,9 @@ tr.size-row.changed-row td:first-child{border-left:3px solid #f0a500}
 .cost-cell{color:#9aabb8;font-size:12px;font-family:monospace}
 .vendor-cell{font-size:18px;font-weight:700;color:#0D6D72;font-family:monospace}
 .catno-cell{font-family:monospace;font-weight:700;font-size:12px;color:var(--teal)}
+.catno-input{width:64px;padding:4px 6px;border:1px solid var(--border);border-radius:6px;font-size:12px;font-weight:700;font-family:monospace;text-align:center;outline:none}
+.catno-input:focus{border-color:var(--teal)}
+.catno-input.changed{border-color:#f0a500;background:#fffbe6}
 .btn-icon{background:#fff;border:1px solid var(--border);border-radius:6px;padding:3px 8px;font-size:12px;font-weight:700;cursor:pointer;color:#6b7f94;line-height:1.4}
 .btn-icon:hover{background:#fff5f5;color:#c0392b;border-color:#f5c6cb}
 .btn-icon.card-del{color:#c0392b;border-color:#f5c6cb}
@@ -174,7 +177,7 @@ tr.deleted-row .btn-icon{display:none}
 <div class="push-bar" id="push-bar">
   <div>
     <p id="push-summary">Ready to push</p>
-    <small id="push-hint" style="opacity:.7;font-size:12px">Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.</small>
+    <small id="push-hint" style="opacity:.7;font-size:12px">Updates US Warehouse cards + US Price List (HTML). Edit Cat No to fix catalog codes in products.json and overseas list. PDF is not auto-updated.</small>
   </div>
   <button class="btn btn-primary" onclick="pushToGitHub()">🚀 Push to Site</button>
 </div>
@@ -193,6 +196,7 @@ var _pcByCatNo = {};     // cat_no -> {cost, vendor}
 var _changes = {};       // "productId::spec" -> new price string, or "_stock_::productId" -> bool
 var _chinaChanges = {};  // "china::CODE" -> kit price string
 var _chinaDeletions = { products: {}, codes: {} };
+var _catNoChanges = {};  // productId::size -> { oldCode, newCode }
 var _deletions = { products: {}, sizes: {} };
 var _sha = '';
 var _priceListSha = '';
@@ -232,6 +236,124 @@ function normName(s) {
 
 function normSize(s) {
   return String(s || '').toLowerCase().replace(/\s+/g, '');
+}
+
+function decodeHtmlEntities(s) {
+  return String(s || '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+}
+
+function catNoChangeKey(productId, size) {
+  return productId + '::' + size;
+}
+
+function getEffectiveCatNo(p, size) {
+  var ck = catNoChangeKey(p.id, size);
+  if (_catNoChanges[ck]) return _catNoChanges[ck].newCode;
+  return (p.catalogNos || {})[size] || '';
+}
+
+function renderCatNoInput(p, s, code) {
+  var orig = (p.catalogNos || {})[s.size] || '';
+  var display = code || orig;
+  var isChanged = !!_catNoChanges[catNoChangeKey(p.id, s.size)];
+  return '<input class="catno-input' + (isChanged ? ' changed' : '') + '" type="text" value="' + escAttr(display) + '" ' +
+    'data-product-id="' + escAttr(p.id) + '" data-size="' + escAttr(s.size) + '" data-original="' + escAttr(orig) + '" ' +
+    'oninput="onCatNoChange(this)">';
+}
+
+function onCatNoChange(input) {
+  var productId = input.dataset.productId;
+  var size = input.dataset.size;
+  var key = catNoChangeKey(productId, size);
+  var val = input.value.trim().toUpperCase();
+  var orig = input.dataset.original;
+  if (val && val !== orig) {
+    _catNoChanges[key] = { oldCode: orig, newCode: val };
+    input.classList.add('changed');
+    input.closest('tr').classList.add('changed-row');
+  } else {
+    delete _catNoChanges[key];
+    input.classList.remove('changed');
+    if (input.value.trim().toUpperCase() === orig) input.closest('tr').classList.remove('changed-row');
+  }
+  updateChangesLabel();
+}
+
+function remapChinaChangesForCatNo() {
+  Object.keys(_catNoChanges).forEach(function(k) {
+    var oldCode = _catNoChanges[k].oldCode;
+    var newCode = _catNoChanges[k].newCode;
+    var oldKey = chinaRowKey(oldCode);
+    var newKey = chinaRowKey(newCode);
+    if (_chinaChanges[oldKey] !== undefined) {
+      _chinaChanges[newKey] = _chinaChanges[oldKey];
+      delete _chinaChanges[oldKey];
+    }
+  });
+}
+
+function applyCatNoChangesToProduct(p) {
+  var out = Object.assign({}, p);
+  var catalogNos = Object.assign({}, p.catalogNos || {});
+  var changed = false;
+  (p.vialSizes || []).forEach(function(sz) {
+    var ck = catNoChangeKey(p.id, sz);
+    if (_catNoChanges[ck]) {
+      catalogNos[sz] = _catNoChanges[ck].newCode;
+      changed = true;
+    }
+  });
+  if (changed) out.catalogNos = catalogNos;
+  return out;
+}
+
+function rebuildChinaListFromProducts() {
+  remapChinaChangesForCatNo();
+
+  var priceByCode = {};
+  var priceByNameSize = {};
+  _chinaListRows.forEach(function(row) {
+    if (row.price) priceByCode[row.code] = row.price;
+    var parsed = parseChinaName(decodeHtmlEntities(row.name));
+    priceByNameSize[normName(parsed.product) + '|' + normSize(parsed.size)] = row.price;
+  });
+
+  var newRows = [];
+  _products.forEach(function(p) {
+    if (_chinaDeletions.products[normName(p.name)]) return;
+    var sizes = getSizes(p);
+    sizes.forEach(function(s) {
+      var code = s.cat_no;
+      if (!code || _chinaDeletions.codes[code]) return;
+      var ck = catNoChangeKey(p.id, s.size);
+      var oldCode = _catNoChanges[ck] ? _catNoChanges[ck].oldCode : code;
+      var price = _chinaChanges[chinaRowKey(code)];
+      if (price === undefined) price = _chinaChanges[chinaRowKey(oldCode)];
+      if (price === undefined) price = priceByCode[code];
+      if (price === undefined) price = priceByCode[oldCode];
+      if (price === undefined) {
+        price = priceByNameSize[normName(p.name) + '|' + normSize(s.size)];
+      }
+      if (!price || price === '') price = 'N/A';
+      newRows.push({
+        code: code,
+        name: p.name + ' ' + s.size,
+        price: formatMoney(price) || price
+      });
+    });
+  });
+
+  newRows.sort(function(a, b) {
+    return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+  });
+  _chinaListRows = newRows;
+}
+
+function countCatNoPending() {
+  return Object.keys(_catNoChanges).length;
 }
 
 function formatMoney(val) {
@@ -573,8 +695,9 @@ function getSizes(p) {
   var vialSizes = p.vialSizes || [];
 
   function rowForSize(sz, match) {
+    var effectiveCat = getEffectiveCatNo(p, sz) || (match ? match.cat_no : (catalogNos[sz] || ''));
     return {
-      cat_no: match ? match.cat_no : (catalogNos[sz] || ''),
+      cat_no: effectiveCat,
       size: sz,
       cost: match ? match.cost : null,
       costPerVial: match ? match.costPerVial : null,
@@ -695,8 +818,8 @@ function jsStr(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"
 function setWarehouseMode(mode) {
   _warehouseMode = mode === 'china' ? 'china' : 'us';
   document.getElementById('push-hint').textContent = _warehouseMode === 'china'
-    ? 'Updates Overseas Shipping kit price list (HTML). Same product layout as US Warehouse. PDF is not auto-updated.'
-    : 'Updates US Warehouse cards + US Price List (HTML). Use Actions to delete cards or sizes. PDF is not auto-updated.';
+    ? 'Updates Overseas Shipping kit price list (HTML). Edit Cat No to fix catalog codes — list rebuilds from catalog on push. PDF is not auto-updated.'
+    : 'Updates US Warehouse cards + US Price List (HTML). Edit Cat No to fix catalog codes in products.json and overseas list. PDF is not auto-updated.';
   if (_warehouseMode === 'china') renderChinaTable();
   else renderTable();
   updateChangesLabel();
@@ -734,7 +857,7 @@ function renderChinaTable() {
       tr.innerHTML =
         '<td' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' + (isHeaderRow ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
-        '<td class="catno-cell">' + esc(code) + '</td>' +
+        '<td>' + renderCatNoInput(p, s, code) + '</td>' +
         (isHeaderRow ? '<td class="product-header-cell">' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.cost != null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
@@ -797,7 +920,7 @@ function renderTable() {
       tr.innerHTML =
         '<td' + (isHeaderRow ? ' class="product-header-cell"' : '') + '>' + (isHeaderRow ? '<strong>' + esc(p.name) + '</strong>' : '') + '</td>' +
         '<td style="font-size:12px;font-weight:600">' + esc(s.size) + '</td>' +
-        '<td class="catno-cell">' + esc(s.cat_no) + '</td>' +
+        '<td>' + renderCatNoInput(p, s, s.cat_no) + '</td>' +
         (isHeaderRow ? '<td class="product-header-cell">' + catBadge(p.category) + '</td>' : '<td></td>') +
         '<td class="vendor-cell">' + (s.vendor ? esc(s.vendor) : '<span style="color:#ddd">—</span>') + '</td>' +
         '<td class="cost-cell">' + (s.cost != null ? '$' + s.cost.toFixed(2) : '<span style="color:#ddd">—</span>') + '</td>' +
@@ -867,8 +990,9 @@ function resetAll() {
   _changes = {};
   _chinaChanges = {};
   _chinaDeletions = { products: {}, codes: {} };
+  _catNoChanges = {};
   _deletions = { products: {}, sizes: {} };
-  document.querySelectorAll('.price-input').forEach(function(input){
+  document.querySelectorAll('.price-input, .catno-input').forEach(function(input){
     input.value = input.dataset.original;
     input.classList.remove('changed');
     input.closest('tr').classList.remove('changed-row');
@@ -897,11 +1021,13 @@ function countChinaPending() {
 function updateChangesLabel() {
   var usCount = countUsPending();
   var chinaCount = countChinaPending();
-  var count = usCount + chinaCount;
+  var catNoCount = countCatNoPending();
+  var count = usCount + chinaCount + catNoCount;
   var label = document.getElementById('changes-label');
   var parts = [];
   if (usCount) parts.push(usCount + ' US');
   if (chinaCount) parts.push(chinaCount + ' overseas');
+  if (catNoCount) parts.push(catNoCount + ' cat no');
   label.textContent = count > 0 ? parts.join(', ') + ' pending' : 'No changes';
   label.style.color = count > 0 ? '#f0a500' : '#6b7f94';
   var pb = document.getElementById('push-bar');
@@ -926,14 +1052,13 @@ function filterTable() {
 function pushToGitHub() {
   var usPending = countUsPending();
   var chinaPending = countChinaPending();
-  if (!usPending && !chinaPending) return;
+  var catNoPending = countCatNoPending();
+  if (!usPending && !chinaPending && !catNoPending) return;
   document.querySelector('#push-bar .btn').disabled = true;
   showStatus('⏳ Pushing...', 'loading');
 
-  applyChinaChangesToRows();
-
   var updated = _products.map(function(p) {
-    var out = applySizeDeletions(Object.assign({}, p));
+    var out = applyCatNoChangesToProduct(applySizeDeletions(Object.assign({}, p)));
     if (_changes['_stock_::' + p.id] !== undefined) out.inStock = _changes['_stock_::' + p.id];
 
     var sizes = getSizes(p).filter(function(s) { return !_deletions.sizes[s.key]; });
@@ -966,7 +1091,7 @@ function pushToGitHub() {
 
   var chain = Promise.resolve(null);
 
-  if (usPending) {
+  if (usPending || catNoPending) {
     chain = chain.then(function() {
       return ghGetFile('products.json').then(function(meta) {
         return fetch(GH_RAW + 'products.json?t=' + Date.now()).then(function(r){ return r.json(); }).then(function(all) {
@@ -978,12 +1103,18 @@ function pushToGitHub() {
             if (updatedById[p.id]) {
               return Object.assign({}, sizeOnly, updatedById[p.id]);
             }
+            if (Object.keys(_catNoChanges).some(function(k) { return k.split('::')[0] === p.id; })) {
+              return applyCatNoChangesToProduct(sizeOnly);
+            }
             if (Object.keys(_deletions.sizes).some(function(k) { return k.split('::')[0] === p.id; })) {
               return recalcProductPriceRange(sizeOnly);
             }
             return p;
           });
-          return ghPutFile('products.json', JSON.stringify(merged, null, 2), 'Update US Warehouse prices from admin', meta.sha)
+          var msg = catNoPending && !usPending
+            ? 'Update catalog numbers from pricing admin'
+            : 'Update US Warehouse prices from admin';
+          return ghPutFile('products.json', JSON.stringify(merged, null, 2), msg, meta.sha)
             .then(function(result) {
               if (!result.content) throw new Error('products.json: ' + JSON.stringify(result));
               return merged;
@@ -994,7 +1125,7 @@ function pushToGitHub() {
   }
 
   chain = chain.then(function(mergedProducts) {
-    if (!usPending && !chinaPending) return { mergedProducts: null, listUpdates: 0 };
+    if (!usPending && !chinaPending && !catNoPending) return { mergedProducts: null, listUpdates: 0 };
 
     var listUpdates = 0;
     if (usPending) {
@@ -1020,8 +1151,10 @@ function pushToGitHub() {
     return { mergedProducts: mergedProducts, listUpdates: listUpdates };
   });
 
-  if (chinaPending) {
+  if (chinaPending || catNoPending) {
     chain = chain.then(function(ctx) {
+      rebuildChinaListFromProducts();
+      applyChinaChangesToRows();
       removeChinaRowsForDeletions();
       var chinaHtml = buildChinaPriceListHtml();
       return ghPutFile(
@@ -1047,12 +1180,14 @@ function pushToGitHub() {
     _changes = {};
     _chinaChanges = {};
     _chinaDeletions = { products: {}, codes: {} };
+    _catNoChanges = {};
     _deletions = { products: {}, sizes: {} };
     updateChangesLabel();
     if (_warehouseMode === 'china') renderChinaTable();
     else renderTable();
     var msg = '✅ Pushed! Site updates in ~30 seconds.';
     if (result && result.listUpdates) msg += ' (' + result.listUpdates + ' US price list rows)';
+    if (catNoPending) msg += ' Catalog numbers updated.';
     if (chinaPending) msg += ' Overseas kit list updated.';
     showStatus(msg, 'success');
     document.querySelector('#push-bar .btn').disabled = false;
