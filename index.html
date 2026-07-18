@@ -6940,12 +6940,21 @@ input.invalid{
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('reviews-grid');
     if (grid) {
-    fetch('/reviews.json?v=' + Date.now(), { cache: 'no-store' })
-      .then(function (r) { return r.json(); })
-      .then(function (items) {
-        var list = (Array.isArray(items) ? items : []).filter(function (r) {
-          return r && r.published !== false && String(r.text || '').trim();
+    Promise.all([
+      fetch('/reviews.json?v=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return []; }),
+      fetch('/.netlify/functions/public-reviews?v=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return { reviews: [] }; })
+    ])
+      .then(function (results) {
+        var fromFile = Array.isArray(results[0]) ? results[0] : [];
+        var fromQueue = results[1] && Array.isArray(results[1].reviews) ? results[1].reviews : [];
+        var byId = {};
+        fromFile.concat(fromQueue).forEach(function (r) {
+          if (!r || !r.id) return;
+          if (r.published === false) return;
+          if (!String(r.text || '').trim()) return;
+          byId[r.id] = r;
         });
+        var list = Object.keys(byId).map(function (id) { return byId[id]; });
         if (!list.length) {
           grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Reviews will appear here soon.</p>';
           return;
