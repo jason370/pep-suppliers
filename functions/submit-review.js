@@ -61,18 +61,28 @@ async function getFile(path, token) {
 async function putFile(path, contentB64, message, sha, token) {
   const body = { message, content: contentB64, branch: BRANCH };
   if (sha) body.sha = sha;
-  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-    method: 'PUT',
-    headers: { ...githubHeaders(token), 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const data = await res.json().catch(function () { return {}; });
-  if (!res.ok) {
-    const err = new Error(data.message || `GitHub write failed (${res.status})`);
-    err.status = res.status;
-    throw err;
+  const attempts = [
+    { Authorization: `Bearer ${token}` },
+    { Authorization: `token ${token}` },
+  ];
+  let lastErr = null;
+  for (const auth of attempts) {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+      method: 'PUT',
+      headers: {
+        ...githubHeaders(token),
+        ...auth,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+    const data = await res.json().catch(function () { return {}; });
+    if (res.ok) return data;
+    lastErr = new Error(data.message || `GitHub write failed (${res.status})`);
+    lastErr.status = res.status;
+    if (res.status !== 401 && res.status !== 403) break;
   }
-  return data;
+  throw lastErr;
 }
 
 async function saveToBlobs(event, reviewId, review) {
@@ -208,6 +218,7 @@ exports.handler = async function handler(event) {
       ok: true,
       message: 'Thank you! Your review was submitted and will appear after a quick approval.',
       stored: { github: githubOk, blob: blobOk },
+      githubError: githubOk ? undefined : githubError,
     });
   }
 

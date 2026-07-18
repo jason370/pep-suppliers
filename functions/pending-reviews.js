@@ -5,7 +5,7 @@ const REPO = 'jason370/pep-suppliers';
 const JSON_HEADERS = {
   'Content-Type': 'application/json',
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-GitHub-Token',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-GitHub-Token, X-Admin-Password',
   'Access-Control-Allow-Methods': 'GET, DELETE, OPTIONS',
 };
 
@@ -17,18 +17,25 @@ function jsonResponse(statusCode, payload) {
   };
 }
 
-function getRequestToken(event) {
+function headerValue(event, name) {
   const headers = event.headers || {};
-  const custom = headers['x-github-token'] || headers['X-GitHub-Token'] || '';
-  if (custom) return String(custom).trim();
-  const auth = headers.authorization || headers.Authorization || '';
+  const lower = name.toLowerCase();
+  for (const key of Object.keys(headers)) {
+    if (key.toLowerCase() === lower) return String(headers[key] || '').trim();
+  }
+  return '';
+}
+
+function getRequestToken(event) {
+  const custom = headerValue(event, 'x-github-token');
+  if (custom) return custom;
+  const auth = headerValue(event, 'authorization');
   const match = auth.match(/^Bearer\s+(.+)$/i) || auth.match(/^token\s+(.+)$/i);
   return match ? match[1].trim() : '';
 }
 
 async function validateGithubToken(token) {
   if (!token) return false;
-  // Accept the site's own Netlify GITHUB_TOKEN as a shared secret.
   if (process.env.GITHUB_TOKEN && token === process.env.GITHUB_TOKEN) return true;
   try {
     const res = await fetch(`https://api.github.com/repos/${REPO}/contents/reviews.json?ref=main`, {
@@ -43,6 +50,15 @@ async function validateGithubToken(token) {
   } catch (_err) {
     return false;
   }
+}
+
+async function isAuthorized(event) {
+  const adminPassword = process.env.ADMIN_PASSWORD || '';
+  const providedPassword = headerValue(event, 'x-admin-password');
+  if (adminPassword && providedPassword && providedPassword === adminPassword) {
+    return true;
+  }
+  return validateGithubToken(getRequestToken(event));
 }
 
 function pendingStore(event) {
@@ -69,15 +85,16 @@ exports.handler = async function handler(event) {
     return { statusCode: 204, headers: JSON_HEADERS, body: '' };
   }
 
-  const token = getRequestToken(event);
-  if (!(await validateGithubToken(token))) {
-    return jsonResponse(401, { error: 'Unauthorized — GitHub token could not read the repo.' });
+  if (!(await isAuthorized(event))) {
+    return jsonResponse(401, {
+      error: 'Unauthorized — enter the site password on the admin login screen to load pending customer reviews.',
+    });
   }
 
   if (event.httpMethod === 'GET') {
     try {
       const reviews = await listPendingReviews(event);
-      return jsonResponse(200, { reviews });
+      return jsonResponse(200, { reviews, count: reviews.length });
     } catch (err) {
       console.error('pending-reviews list failed', err);
       return jsonResponse(502, {

@@ -123,8 +123,8 @@ tr.deleted-row .btn-icon{display:none}
 <div id="login-screen">
   <div class="login-box">
     <h1>⚡ Pep Suppliers Admin</h1>
-    <p>Pricing &amp; reviews — one sign-in (GitHub token)</p>
-    <input type="password" id="pw-input" placeholder="Site password (optional)" autocomplete="current-password">
+    <p>Pricing &amp; reviews — GitHub token required. Site password loads customer review submissions.</p>
+    <input type="password" id="pw-input" placeholder="Site password (needed for customer reviews)" autocomplete="current-password">
     <input type="password" id="token-input" placeholder="GitHub token" autocomplete="off">
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:#6b7f94;margin-top:4px;margin-bottom:12px;cursor:pointer">
       <input type="checkbox" id="remember-me" style="cursor:pointer"> Remember me on this device
@@ -263,6 +263,7 @@ tr.deleted-row .btn-icon{display:none}
 
 <script>
 var GITHUB_TOKEN = '';
+var ADMIN_PW = '';
 var REPO = 'jason370/pep-suppliers';
 var GH_RAW = 'https://raw.githubusercontent.com/' + REPO + '/main/';
 var PRICE_LIST_FILE = 'pep-suppliers-us-warehouse-price-list.html';
@@ -842,13 +843,14 @@ function doLogin() {
   var tokenField = document.getElementById('token-input').value.trim();
   if (tokenField) GITHUB_TOKEN = tokenField;
   else GITHUB_TOKEN = localStorage.getItem('pep_gh_token') || '';
+  ADMIN_PW = pw || localStorage.getItem('pep_admin_pw') || '';
   if (!GITHUB_TOKEN) {
     document.getElementById('login-error').style.display = 'block';
     document.getElementById('login-error').textContent = 'GitHub token required.';
     return;
   }
   if (document.getElementById('remember-me').checked) {
-    if (pw) localStorage.setItem('pep_admin_pw', pw);
+    if (ADMIN_PW) localStorage.setItem('pep_admin_pw', ADMIN_PW);
     else localStorage.removeItem('pep_admin_pw');
     localStorage.setItem('pep_gh_token', GITHUB_TOKEN);
   } else {
@@ -1287,13 +1289,13 @@ function fetchPendingGithubReviews() {
 }
 
 function fetchPendingBlobReviews() {
-  return fetch('/.netlify/functions/pending-reviews', {
-    headers: {
-      'X-GitHub-Token': GITHUB_TOKEN,
-      'Authorization': 'Bearer ' + GITHUB_TOKEN,
-      'Accept': 'application/json'
-    }
-  }).then(function (res) {
+  var headers = {
+    'X-GitHub-Token': GITHUB_TOKEN,
+    'Authorization': 'Bearer ' + GITHUB_TOKEN,
+    'Accept': 'application/json'
+  };
+  if (ADMIN_PW) headers['X-Admin-Password'] = ADMIN_PW;
+  return fetch('/.netlify/functions/pending-reviews', { headers: headers }).then(function (res) {
     return res.json().then(function (data) {
       return { ok: res.ok, status: res.status, data: data || {} };
     }).catch(function () {
@@ -1301,9 +1303,8 @@ function fetchPendingBlobReviews() {
     });
   }).then(function (result) {
     if (!result.ok) {
-      // Blobs queue is a backup — GitHub pending-reviews.json is primary.
-      console.warn('Blob pending queue unavailable', result.status, result.data);
-      return 0;
+      var msg = (result.data && result.data.error) || ('HTTP ' + result.status);
+      throw new Error(msg);
     }
     mergePendingBlobReviews(result.data.reviews);
     return Array.isArray(result.data.reviews) ? result.data.reviews.length : 0;
@@ -1316,26 +1317,35 @@ function loadAllPendingReviews() {
       console.warn(err);
       return 0;
     })
-    .then(function (githubCount) {
-      return fetchPendingBlobReviews().then(function (blobCount) {
-        var pending = _reviews.filter(function (r) { return r.published === false; }).length;
-        if (pending) {
-          showStatus(pending + ' customer review' + (pending === 1 ? '' : 's') + ' waiting for approval — open the Reviews tab.', 'success');
+    .then(function () {
+      return fetchPendingBlobReviews().catch(function (err) {
+        if (!ADMIN_PW) {
+          showStatus('Enter the site password on login to load customer review submissions.', 'error');
+          return 0;
         }
-        return githubCount + blobCount;
+        throw err;
       });
+    })
+    .then(function () {
+      var pending = _reviews.filter(function (r) { return r.published === false; }).length;
+      if (pending) {
+        showStatus(pending + ' customer review' + (pending === 1 ? '' : 's') + ' waiting for approval — open the Reviews tab.', 'success');
+      }
+      return pending;
     });
 }
 
 function clearPendingBlobReviews(ids) {
   if (!ids.length) return Promise.resolve();
+  var headers = {
+    'X-GitHub-Token': GITHUB_TOKEN,
+    'Authorization': 'Bearer ' + GITHUB_TOKEN,
+    'Content-Type': 'application/json'
+  };
+  if (ADMIN_PW) headers['X-Admin-Password'] = ADMIN_PW;
   return fetch('/.netlify/functions/pending-reviews', {
     method: 'DELETE',
-    headers: {
-      'X-GitHub-Token': GITHUB_TOKEN,
-      'Authorization': 'Bearer ' + GITHUB_TOKEN,
-      'Content-Type': 'application/json'
-    },
+    headers: headers,
     body: JSON.stringify({ ids: ids })
   }).then(function (res) {
     if (!res.ok) console.warn('Could not clear blob pending review queue.');
@@ -1754,6 +1764,7 @@ function pushToGitHub() {
     document.getElementById('pw-input').value = savedPw;
     document.getElementById('remember-me').checked = true;
     GITHUB_TOKEN = savedToken;
+    ADMIN_PW = savedPw;
     loadData();
   }
 })();
