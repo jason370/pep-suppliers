@@ -1476,34 +1476,74 @@ function toggleReviewPublished(index) {
   showStatus('Review unpublished — click Push to Site to update the homepage.', 'success');
 }
 
-function publishReviewLive(review) {
+function syncReviewsLive(options) {
+  options = options || {};
   var headers = {
     'Content-Type': 'application/json',
     'X-GitHub-Token': GITHUB_TOKEN,
     'Authorization': 'Bearer ' + GITHUB_TOKEN
   };
   if (ADMIN_PW) headers['X-Admin-Password'] = ADMIN_PW;
+  var payload = {
+    reviews: reviewsForGitHub(),
+    syncAll: options.syncAll === true
+  };
+  if (options.ids && options.ids.length) payload.ids = options.ids;
+  else if (options.id) payload.ids = [options.id];
   return fetch('/.netlify/functions/publish-reviews', {
     method: 'POST',
     headers: headers,
-    body: JSON.stringify({
-      id: review.id,
-      ids: [review.id],
-      reviews: reviewsForGitHub()
-    })
+    body: JSON.stringify(payload)
   }).then(function (res) {
     return res.json().then(function (data) {
       return { ok: res.ok, status: res.status, data: data || {} };
     });
   }).then(function (result) {
     if (!result.ok) {
-      throw new Error((result.data && result.data.error) || ('Publish failed (HTTP ' + result.status + ')'));
-    }
-    if (result.data && result.data.ok) {
-      showStatus(result.data.message || 'Review is live on the site.', 'success');
+      throw new Error((result.data && result.data.error) || ('Sync failed (HTTP ' + result.status + ')'));
     }
     return result.data;
   });
+}
+
+function publishReviewLive(review) {
+  return syncReviewsLive({ id: review.id }).then(function (data) {
+    if (data && data.ok) {
+      showStatus(data.message || 'Review is live on the site.', 'success');
+    }
+    return data;
+  });
+}
+
+function editReview(index) {
+  var r = _reviews[index];
+  if (!r) return;
+  var text = prompt('Review text:', r.text || '');
+  if (text === null) return;
+  var name = prompt('Name:', r.name || '');
+  if (name === null) return;
+  var role = prompt('Role:', reviewRole(r) || '');
+  if (role === null) return;
+  var location = prompt('Location:', r.location || '');
+  if (location === null) return;
+  r.text = text.trim();
+  r.name = name.trim();
+  r.role = role.trim();
+  delete r.detail;
+  r.location = location.trim();
+  r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
+  markReviewDirty();
+  renderReviewsList();
+  showStatus('Saving review changes to the site…', 'loading');
+  syncReviewsLive({ id: r.id, syncAll: false })
+    .then(function (data) {
+      showStatus(data.message || 'Review changes are live on the site.', 'success');
+      // Best-effort GitHub file push for backups / admin reload.
+      return pushReviewsToGitHub();
+    })
+    .catch(function (err) {
+      showStatus('❌ ' + (err && err.message ? err.message : err), 'error');
+    });
 }
 
 function renderReviewsList() {
@@ -1589,78 +1629,52 @@ function addReview() {
   finish();
 }
 
-function editReview(index) {
-  var r = _reviews[index];
-  if (!r) return;
-  var text = prompt('Review text:', r.text || '');
-  if (text === null) return;
-  var name = prompt('Name:', r.name || '');
-  if (name === null) return;
-  var role = prompt('Role:', reviewRole(r) || '');
-  if (role === null) return;
-  var location = prompt('Location:', r.location || '');
-  if (location === null) return;
-  r.text = text.trim();
-  r.name = name.trim();
-  r.role = role.trim();
-  delete r.detail;
-  r.location = location.trim();
-  r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
-  markReviewDirty();
-  renderReviewsList();
-}
-
 function deleteReview(index) {
   if (!confirm('Delete this review?')) return;
   var r = _reviews[index];
-  var blobId = r && r._blobPending ? r.id : '';
+  var blobId = r && r.id ? r.id : '';
   if (r && r.id) delete _pendingReviewPhotos[r.id];
   _reviews.splice(index, 1);
   markReviewDirty();
   renderReviewsList();
-  if (blobId) {
-    clearPendingBlobReviews([blobId]).catch(function (e) {
-      showStatus('Review removed locally but queue cleanup failed: ' + e.message, 'error');
+  showStatus('Removing review from the site…', 'loading');
+  syncReviewsLive({ syncAll: true })
+    .then(function () {
+      if (!blobId) return;
+      return clearPendingBlobReviews([blobId]);
+    })
+    .then(function () {
+      _reviewDirty = false;
+      updatePushBarForTab();
+      showStatus('Review removed from the site.', 'success');
+    })
+    .catch(function (e) {
+      showStatus('Review removed locally but live sync failed: ' + (e.message || e), 'error');
     });
-  }
 }
 
 function pushReviewsToGitHub() {
-  if (!_reviewDirty) return;
+  if (!_reviewDirty) return Promise.resolve();
   document.getElementById('push-btn').disabled = true;
   showStatus('⏳ Pushing reviews...', 'loading');
-  uploadPendingReviewPhotos()
-  .then(function() {
-    var blobIdsToClear = _reviews.filter(function (r) { return r && r._blobPending; }).map(function (r) { return r.id; });
-    return ghGetFile('reviews.json').then(function (meta) {
-      if (!meta || !meta.sha) {
-        throw new Error('Could not read reviews.json from GitHub. Check your token permissions (Contents: Read and Write).');
-      }
-      return { meta: meta, blobIdsToClear: blobIdsToClear };
+  return uploadPendingReviewPhotos()
+    .then(function () {
+      return syncReviewsLive({ syncAll: true });
+    })
+    .then(function (data) {
+      _reviews.forEach(function (r) { delete r._blobPending; });
+      _reviewDirty = false;
+      renderReviewsList();
+      updatePushBarForTab();
+      showStatus((data && data.message) || '✅ Reviews pushed! Homepage updates right away.', 'success');
+      document.getElementById('push-btn').disabled = false;
+      return data;
+    })
+    .catch(function (e) {
+      showStatus('❌ Error: ' + (e && e.message ? e.message : e), 'error');
+      document.getElementById('push-btn').disabled = false;
+      throw e;
     });
-  }).then(function (ctx) {
-    var sha = ctx.meta.sha || _reviewsSha;
-    var payload = JSON.stringify(reviewsForGitHub(), null, 2) + '\n';
-    return ghPutFile('reviews.json', payload, 'Update reviews from pricing admin', sha)
-      .then(function (result) { return { result: result, blobIdsToClear: ctx.blobIdsToClear }; });
-  }).then(function (ctx) {
-    var result = ctx.result;
-    if (!result.content) throw new Error('reviews.json: ' + JSON.stringify(result));
-    if (result.content.sha) _reviewsSha = result.content.sha;
-    return clearPendingBlobReviews(ctx.blobIdsToClear)
-      .then(function () { return clearPendingGithubFile(); })
-      .then(function () { return result; });
-  }).then(function () {
-    _reviews.forEach(function (r) { delete r._blobPending; });
-    _reviewDirty = false;
-    renderReviewsList();
-    updatePushBarForTab();
-    showStatus('✅ Reviews pushed! Homepage updates in ~30 seconds.', 'success');
-    document.getElementById('push-btn').disabled = false;
-  }).catch(function (e) {
-    showStatus('❌ Error: ' + (e && e.message ? e.message : e), 'error');
-    document.getElementById('push-btn').disabled = false;
-  });
 }
 
 function filterTable() {

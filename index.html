@@ -6989,7 +6989,8 @@ input.invalid{
         var fromFile = Array.isArray(results[0]) ? results[0] : [];
         var fromQueue = results[1] && Array.isArray(results[1].reviews) ? results[1].reviews : [];
         var byId = {};
-        fromFile.concat(fromQueue).forEach(function (r) {
+        // Blobs first, then reviews.json — file wins when both exist.
+        fromQueue.concat(fromFile).forEach(function (r) {
           if (!r || !r.id) return;
           if (r.published === false) return;
           if (!String(r.text || '').trim()) return;

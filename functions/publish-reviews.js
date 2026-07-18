@@ -73,6 +73,19 @@ function githubHeaders(token) {
   };
 }
 
+function cleanReviewForStore(review) {
+  const copy = Object.assign({}, review);
+  delete copy._blobPending;
+  return copy;
+}
+
+function cleanReviewForGithub(review) {
+  const copy = cleanReviewForStore(review);
+  delete copy.photoBase64;
+  delete copy.photoMime;
+  return copy;
+}
+
 async function writeReviewsJson(token, reviews) {
   const apiUrl = `https://api.github.com/repos/${REPO}/contents/${REVIEWS_PATH}`;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -82,19 +95,13 @@ async function writeReviewsJson(token, reviews) {
       throw new Error(errBody.message || `GitHub read failed (${getRes.status})`);
     }
     const meta = await getRes.json();
-    const clean = reviews.map(function (r) {
-      const copy = Object.assign({}, r);
-      delete copy._blobPending;
-      delete copy.photoBase64;
-      delete copy.photoMime;
-      return copy;
-    });
+    const clean = reviews.map(cleanReviewForGithub);
     const contentB64 = Buffer.from(JSON.stringify(clean, null, 2) + '\n', 'utf8').toString('base64');
     const putRes = await fetch(apiUrl, {
       method: 'PUT',
       headers: { ...githubHeaders(token), 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        message: 'Publish reviews from pricing admin',
+        message: 'Update reviews from pricing admin',
         content: contentB64,
         sha: meta.sha,
         branch: BRANCH,
@@ -107,6 +114,28 @@ async function writeReviewsJson(token, reviews) {
     }
   }
   throw new Error('GitHub write conflict');
+}
+
+async function upsertBlobReviews(store, reviews) {
+  const saved = [];
+  for (const review of reviews) {
+    if (!review || !review.id) continue;
+    const existing = await store.get(String(review.id), { type: 'json' });
+    const next = cleanReviewForStore(review);
+    if (existing && typeof existing === 'object') {
+      if (!next.photoBase64 && existing.photoBase64) {
+        next.photoBase64 = existing.photoBase64;
+        next.photoMime = existing.photoMime || next.photoMime;
+      }
+      if (!next.photo && existing.photo) next.photo = existing.photo;
+      if (!next.submittedAt && existing.submittedAt) next.submittedAt = existing.submittedAt;
+      if (!next.source && existing.source) next.source = existing.source;
+    }
+    if (next.published === undefined) next.published = true;
+    await store.setJSON(String(review.id), next);
+    saved.push(String(review.id));
+  }
+  return saved;
 }
 
 exports.handler = async function handler(event) {
@@ -129,19 +158,30 @@ exports.handler = async function handler(event) {
 
   const ids = Array.isArray(body.ids) ? body.ids.map(String) : body.id ? [String(body.id)] : [];
   const reviews = Array.isArray(body.reviews) ? body.reviews : null;
+  const syncAll = body.syncAll === true;
   const token = getRequestToken(event) || process.env.GITHUB_TOKEN || '';
 
   try {
     const store = pendingStore(event);
-    const published = [];
+    let savedIds = [];
 
-    if (ids.length) {
+    // Full review payloads: upsert into Blobs so homepage edits go live immediately.
+    if (reviews && reviews.length) {
+      const toSave = syncAll
+        ? reviews
+        : ids.length
+          ? reviews.filter(function (r) { return r && ids.indexOf(String(r.id)) >= 0; })
+          : reviews.filter(function (r) { return r && r.published !== false; });
+      savedIds = await upsertBlobReviews(store, toSave.length ? toSave : reviews.filter(function (r) {
+        return r && ids.indexOf(String(r.id)) >= 0;
+      }));
+    } else if (ids.length) {
       for (const id of ids) {
         const existing = await store.get(id, { type: 'json' });
         if (!existing || typeof existing !== 'object') continue;
         existing.published = true;
         await store.setJSON(id, existing);
-        published.push(id);
+        savedIds.push(id);
       }
     }
 
@@ -157,21 +197,21 @@ exports.handler = async function handler(event) {
       }
     }
 
-    if (!published.length && !githubOk) {
+    if (!savedIds.length && !githubOk) {
       return jsonResponse(502, {
         error: 'Could not publish reviews.',
-        detail: githubError || 'No matching pending reviews found.',
+        detail: githubError || 'No matching reviews found to update.',
       });
     }
 
     return jsonResponse(200, {
       ok: true,
-      publishedIds: published,
+      publishedIds: savedIds,
       github: githubOk,
       githubError: githubOk ? undefined : githubError || undefined,
       message: githubOk
-        ? 'Reviews published to the site.'
-        : 'Reviews are live on the site now. GitHub sync failed, but customers can already see them.',
+        ? 'Reviews updated on the site.'
+        : 'Reviews updated on the live site. GitHub file sync failed, but customers can already see the changes.',
     });
   } catch (err) {
     console.error('publish-reviews failed', err);
