@@ -134,7 +134,10 @@ async function upsertBlobReviews(store, reviews) {
     }
 
     if (existing && typeof existing === 'object') {
-      if (!next.photoBase64 && existing.photoBase64) {
+      // Prefer newly uploaded photo data over stale Blobs photo.
+      if (next.photoBase64) {
+        // keep next.photoBase64 / photoMime
+      } else if (existing.photoBase64) {
         next.photoBase64 = existing.photoBase64;
         next.photoMime = existing.photoMime || next.photoMime;
       }

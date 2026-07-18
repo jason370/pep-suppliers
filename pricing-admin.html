@@ -1413,6 +1413,26 @@ function reviewsForGitHub() {
   });
 }
 
+function photoMimeFromExt(ext) {
+  if (ext === 'png') return 'image/png';
+  if (ext === 'webp') return 'image/webp';
+  return 'image/jpeg';
+}
+
+function reviewsForLiveSync() {
+  return _reviews.map(function (r) {
+    var copy = Object.assign({}, r);
+    delete copy._blobPending;
+    var pending = _pendingReviewPhotos[r.id];
+    if (pending && pending.base64) {
+      copy.photoBase64 = pending.base64;
+      copy.photoMime = photoMimeFromExt(pending.ext);
+      copy.photo = '/' + pending.path;
+    }
+    return copy;
+  });
+}
+
 function readReviewPhotoFile(file, reviewId) {
   return new Promise(function(resolve, reject) {
     if (!file) { resolve(null); return; }
@@ -1441,13 +1461,29 @@ function readReviewPhotoFile(file, reviewId) {
 function onReviewPhotoSelected(index, input) {
   var r = _reviews[index];
   if (!r || !input.files || !input.files[0]) return;
+  showStatus('Saving photo to the site…', 'loading');
   readReviewPhotoFile(input.files[0], r.id).then(function(p) {
-    if (p) r.photo = '/' + p.path;
+    if (!p) throw new Error('Could not read photo.');
+    r.photo = '/' + p.path;
+    r.photoBase64 = p.base64;
+    r.photoMime = photoMimeFromExt(p.ext);
+    r.updatedAt = new Date().toISOString();
     markReviewDirty();
     renderReviewsList();
-    showStatus('Photo ready — click Push to Site to publish.', 'success');
-  }).catch(function(e) {
-    showStatus(e.message || 'Photo upload failed.', 'error');
+    // Sync photo into live Blobs first so the homepage can show it immediately.
+    return syncReviewsLive({ id: r.id, syncAll: false }).then(function (data) {
+      return uploadPendingReviewPhotos().then(function () {
+        delete r.photoBase64;
+        delete r.photoMime;
+        return data;
+      });
+    });
+  }).then(function (data) {
+    _reviewDirty = false;
+    updatePushBarForTab();
+    showStatus((data && data.message) || 'Photo is live on the review.', 'success');
+  }).catch(function (e) {
+    showStatus('❌ ' + (e.message || 'Photo upload failed.'), 'error');
     input.value = '';
   });
 }
@@ -1475,16 +1511,10 @@ function uploadPendingReviewPhotos() {
       });
     });
   }, Promise.resolve()).then(function() {
-    failed.forEach(function(id) {
-      var review = _reviews.find(function(r) { return r.id === id; });
-      if (review) delete review.photo;
-      delete _pendingReviewPhotos[id];
-    });
-    ids.forEach(function(id) {
-      if (failed.indexOf(id) < 0) delete _pendingReviewPhotos[id];
-    });
+    // Keep local photo path even if GitHub file upload fails — live Blobs may already have photoBase64.
+    ids.forEach(function(id) { delete _pendingReviewPhotos[id]; });
     if (failed.length) {
-      showStatus('Published without ' + failed.length + ' photo' + (failed.length === 1 ? '' : 's') + ' (upload failed).', 'error');
+      console.warn('GitHub photo upload failed for ' + failed.length + ' review(s); live Blobs copy still used.');
     }
   });
 }
@@ -1518,7 +1548,7 @@ function syncReviewsLive(options) {
   };
   if (ADMIN_PW) headers['X-Admin-Password'] = ADMIN_PW;
   var payload = {
-    reviews: reviewsForGitHub(),
+    reviews: reviewsForLiveSync(),
     syncAll: options.syncAll === true
   };
   if (options.ids && options.ids.length) payload.ids = options.ids;
