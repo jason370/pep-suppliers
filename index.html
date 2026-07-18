@@ -6997,6 +6997,11 @@ input.invalid{
           byId[r.id] = r;
         });
         var list = Object.keys(byId).map(function (id) { return byId[id]; });
+        list.sort(function (a, b) {
+          var ta = Date.parse(a.updatedAt || a.submittedAt || 0) || 0;
+          var tb = Date.parse(b.updatedAt || b.submittedAt || 0) || 0;
+          return tb - ta;
+        });
         if (!list.length) {
           grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Reviews will appear here soon.</p>';
           return;
