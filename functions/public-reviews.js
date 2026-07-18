@@ -35,9 +35,11 @@ function sanitizePublicReview(review) {
     updatedAt: review.updatedAt,
     source: review.source || 'website',
   };
-  if (review.photo) out.photo = review.photo;
-  else if (review.photoBase64 && review.photoMime) {
+  // Prefer embedded photo bytes when present. Path-only photos often 404 if GitHub upload failed.
+  if (review.photoBase64 && review.photoMime) {
     out.photo = 'data:' + review.photoMime + ';base64,' + review.photoBase64;
+  } else if (review.photo) {
+    out.photo = review.photo;
   }
   return out;
 }

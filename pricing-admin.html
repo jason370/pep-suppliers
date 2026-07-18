@@ -1464,17 +1464,24 @@ function onReviewPhotoSelected(index, input) {
   showStatus('Saving photo to the site…', 'loading');
   readReviewPhotoFile(input.files[0], r.id).then(function(p) {
     if (!p) throw new Error('Could not read photo.');
-    r.photo = '/' + p.path;
+    // Keep bytes on the review for live Blobs sync. Don't trust the file path until GitHub upload succeeds.
     r.photoBase64 = p.base64;
     r.photoMime = photoMimeFromExt(p.ext);
+    r.photo = p.preview; // local preview / data URL until file is on GitHub
     r.updatedAt = new Date().toISOString();
     markReviewDirty();
     renderReviewsList();
-    // Sync photo into live Blobs first so the homepage can show it immediately.
     return syncReviewsLive({ id: r.id, syncAll: false }).then(function (data) {
-      return uploadPendingReviewPhotos().then(function () {
-        delete r.photoBase64;
-        delete r.photoMime;
+      return uploadOneReviewPhoto(r.id).then(function (uploadedPath) {
+        if (uploadedPath) {
+          r.photo = uploadedPath;
+          delete r.photoBase64;
+          delete r.photoMime;
+          // Persist the working public path, but keep bytes in Blobs from the earlier sync.
+          return syncReviewsLive({ id: r.id, syncAll: false }).then(function () { return data; });
+        }
+        // GitHub upload failed — keep data-URL/bytes as the live photo source.
+        r.photo = p.preview;
         return data;
       });
     });
@@ -1488,35 +1495,44 @@ function onReviewPhotoSelected(index, input) {
   });
 }
 
+function uploadOneReviewPhoto(reviewId) {
+  var p = _pendingReviewPhotos[reviewId];
+  if (!p || !p.base64) return Promise.resolve(null);
+  return ghGetFileOptional(p.path).then(function(meta) {
+    return ghPutBinaryFile(p.path, p.base64, 'Add review photo ' + reviewId, meta.sha || undefined);
+  }).then(function(result) {
+    delete _pendingReviewPhotos[reviewId];
+    if (result && result.content && result.content.path) {
+      return '/' + p.path;
+    }
+    if (result && result.message && !result.content) {
+      console.warn('Photo upload failed for ' + reviewId, result);
+      return null;
+    }
+    return '/' + p.path;
+  }).catch(function(err) {
+    console.warn('Photo upload failed for ' + reviewId, err);
+    delete _pendingReviewPhotos[reviewId];
+    return null;
+  });
+}
+
 function uploadPendingReviewPhotos() {
   var ids = Object.keys(_pendingReviewPhotos);
   if (!ids.length) return Promise.resolve();
-  var failed = [];
   return ids.reduce(function(chain, id) {
     return chain.then(function() {
-      var p = _pendingReviewPhotos[id];
-      return ghGetFileOptional(p.path).then(function(meta) {
-        return ghPutBinaryFile(p.path, p.base64, 'Add review photo ' + id, meta.sha || undefined);
-      }).then(function(result) {
-        if (result.message && !result.content) {
-          failed.push(id);
-          console.warn('Photo upload failed for ' + id, result);
-          return;
-        }
+      return uploadOneReviewPhoto(id).then(function(uploadedPath) {
+        if (!uploadedPath) return;
         var review = _reviews.find(function(r) { return r.id === id; });
-        if (review) review.photo = '/' + p.path;
-      }).catch(function(err) {
-        failed.push(id);
-        console.warn('Photo upload failed for ' + id, err);
+        if (review) {
+          review.photo = uploadedPath;
+          delete review.photoBase64;
+          delete review.photoMime;
+        }
       });
     });
-  }, Promise.resolve()).then(function() {
-    // Keep local photo path even if GitHub file upload fails — live Blobs may already have photoBase64.
-    ids.forEach(function(id) { delete _pendingReviewPhotos[id]; });
-    if (failed.length) {
-      console.warn('GitHub photo upload failed for ' + failed.length + ' review(s); live Blobs copy still used.');
-    }
-  });
+  }, Promise.resolve());
 }
 
 function toggleReviewPublished(index) {

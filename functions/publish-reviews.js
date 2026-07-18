@@ -83,7 +83,21 @@ function cleanReviewForGithub(review) {
   const copy = cleanReviewForStore(review);
   delete copy.photoBase64;
   delete copy.photoMime;
+  // Never commit giant data-URL photos into reviews.json
+  if (copy.photo && String(copy.photo).indexOf('data:') === 0) delete copy.photo;
   return copy;
+}
+
+function normalizeIncomingPhoto(review) {
+  const next = cleanReviewForStore(review);
+  if ((!next.photoBase64 || !next.photoMime) && next.photo && String(next.photo).indexOf('data:') === 0) {
+    const match = String(next.photo).match(/^data:(image\/[a-zA-Z0-9+.-]+);base64,(.+)$/);
+    if (match) {
+      next.photoMime = match[1];
+      next.photoBase64 = match[2];
+    }
+  }
+  return next;
 }
 
 async function writeReviewsJson(token, reviews) {
@@ -121,7 +135,7 @@ async function upsertBlobReviews(store, reviews) {
   for (const review of reviews) {
     if (!review || !review.id) continue;
     const existing = await store.get(String(review.id), { type: 'json' });
-    const next = cleanReviewForStore(review);
+    const next = normalizeIncomingPhoto(review);
     const existingStamp = existing && typeof existing === 'object'
       ? Date.parse(existing.updatedAt || existing.submittedAt || 0) || 0
       : 0;
