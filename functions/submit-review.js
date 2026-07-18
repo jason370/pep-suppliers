@@ -1,5 +1,8 @@
 const { connectLambda, getStore } = require('@netlify/blobs');
 
+const REPO = 'jason370/pep-suppliers';
+const PENDING_PATH = 'pending-reviews.json';
+const BRANCH = 'main';
 const MAX_TEXT = 1200;
 const MAX_NAME = 80;
 const MAX_ROLE = 120;
@@ -32,9 +35,90 @@ function newReviewId() {
   return 'review-guest-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
 }
 
-function pendingStore(event) {
-  connectLambda(event);
-  return getStore('pending-reviews');
+function githubHeaders(token) {
+  return {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28',
+    'User-Agent': 'pep-suppliers-submit-review',
+  };
+}
+
+async function getFile(path, token) {
+  const res = await fetch(
+    `https://api.github.com/repos/${REPO}/contents/${path}?ref=${BRANCH}`,
+    { headers: githubHeaders(token) }
+  );
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    const err = new Error(`GitHub read failed (${res.status})`);
+    err.status = res.status;
+    throw err;
+  }
+  return res.json();
+}
+
+async function putFile(path, contentB64, message, sha, token) {
+  const body = { message, content: contentB64, branch: BRANCH };
+  if (sha) body.sha = sha;
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    method: 'PUT',
+    headers: { ...githubHeaders(token), 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  const data = await res.json().catch(function () { return {}; });
+  if (!res.ok) {
+    const err = new Error(data.message || `GitHub write failed (${res.status})`);
+    err.status = res.status;
+    throw err;
+  }
+  return data;
+}
+
+async function saveToBlobs(event, reviewId, review) {
+  try {
+    connectLambda(event);
+    const store = getStore('pending-reviews');
+    await store.setJSON(reviewId, review);
+    return true;
+  } catch (err) {
+    console.error('blob save failed', err);
+    return false;
+  }
+}
+
+async function saveToGithub(token, review) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const meta = await getFile(PENDING_PATH, token);
+      let list = [];
+      if (meta && meta.content) {
+        try {
+          const decoded = Buffer.from(meta.content, 'base64').toString('utf8');
+          list = JSON.parse(decoded);
+          if (!Array.isArray(list)) list = [];
+        } catch (_err) {
+          list = [];
+        }
+      }
+      list.unshift(review);
+      const contentStr = JSON.stringify(list, null, 2) + '\n';
+      await putFile(
+        PENDING_PATH,
+        Buffer.from(contentStr, 'utf8').toString('base64'),
+        'Customer review submission (pending)',
+        meta && meta.sha ? meta.sha : undefined,
+        token
+      );
+      return true;
+    } catch (err) {
+      if (attempt === 2 || err.status !== 409) {
+        console.error('github pending save failed', err);
+        throw err;
+      }
+    }
+  }
+  return false;
 }
 
 exports.handler = async function handler(event) {
@@ -102,15 +186,33 @@ exports.handler = async function handler(event) {
     review.photoMime = photoMime;
   }
 
-  try {
-    const store = pendingStore(event);
-    await store.setJSON(reviewId, review);
+  const token = process.env.GITHUB_TOKEN;
+  let githubOk = false;
+  let blobOk = false;
+  let githubError = '';
+
+  blobOk = await saveToBlobs(event, reviewId, review);
+
+  if (token) {
+    try {
+      githubOk = await saveToGithub(token, review);
+    } catch (err) {
+      githubError = String(err && err.message ? err.message : err);
+    }
+  } else {
+    githubError = 'GITHUB_TOKEN missing';
+  }
+
+  if (githubOk || blobOk) {
     return jsonResponse(200, {
       ok: true,
       message: 'Thank you! Your review was submitted and will appear after a quick approval.',
+      stored: { github: githubOk, blob: blobOk },
     });
-  } catch (err) {
-    console.error('submit-review blob write failed', err);
-    return jsonResponse(502, { error: 'Could not save review. Please try again in a moment.' });
   }
+
+  return jsonResponse(502, {
+    error: 'Could not save review. Please try again in a moment.',
+    detail: githubError || 'storage failed',
+  });
 };

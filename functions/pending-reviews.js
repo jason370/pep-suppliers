@@ -5,7 +5,7 @@ const REPO = 'jason370/pep-suppliers';
 const JSON_HEADERS = {
   'Content-Type': 'application/json',
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-GitHub-Token',
   'Access-Control-Allow-Methods': 'GET, DELETE, OPTIONS',
 };
 
@@ -17,16 +17,20 @@ function jsonResponse(statusCode, payload) {
   };
 }
 
-function getBearerToken(event) {
-  const auth = event.headers.authorization || event.headers.Authorization || '';
+function getRequestToken(event) {
+  const headers = event.headers || {};
+  const custom = headers['x-github-token'] || headers['X-GitHub-Token'] || '';
+  if (custom) return String(custom).trim();
+  const auth = headers.authorization || headers.Authorization || '';
   const match = auth.match(/^Bearer\s+(.+)$/i) || auth.match(/^token\s+(.+)$/i);
   return match ? match[1].trim() : '';
 }
 
 async function validateGithubToken(token) {
   if (!token) return false;
+  // Accept the site's own Netlify GITHUB_TOKEN as a shared secret.
+  if (process.env.GITHUB_TOKEN && token === process.env.GITHUB_TOKEN) return true;
   try {
-    // Check repo access (works with fine-grained PATs). /user often fails for those tokens.
     const res = await fetch(`https://api.github.com/repos/${REPO}/contents/reviews.json?ref=main`, {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -65,7 +69,7 @@ exports.handler = async function handler(event) {
     return { statusCode: 204, headers: JSON_HEADERS, body: '' };
   }
 
-  const token = getBearerToken(event);
+  const token = getRequestToken(event);
   if (!(await validateGithubToken(token))) {
     return jsonResponse(401, { error: 'Unauthorized — GitHub token could not read the repo.' });
   }

@@ -280,6 +280,7 @@ var _deletions = { products: {}, sizes: {} };
 var _adminTab = 'pricing';
 var _reviews = [];
 var _reviewsSha = '';
+var _pendingReviewsSha = '';
 var _reviewDirty = false;
 var _pendingReviewPhotos = {};
 var _sha = '';
@@ -898,7 +899,7 @@ function loadData() {
     _reviewsSha = results[7].sha;
     _reviews = Array.isArray(results[8]) ? results[8] : [];
     _reviewDirty = false;
-    return fetchPendingBlobReviews().catch(function (err) {
+    return loadAllPendingReviews().catch(function (err) {
       console.error(err);
       showStatus(err.message || 'Could not load pending customer reviews.', 'error');
     });
@@ -1270,9 +1271,25 @@ function mergePendingBlobReviews(items) {
   });
 }
 
+function fetchPendingGithubReviews() {
+  return Promise.all([
+    ghGetFileOptional('pending-reviews.json'),
+    fetch(GH_RAW + 'pending-reviews.json?t=' + Date.now()).then(function (r) {
+      if (r.status === 404) return [];
+      if (!r.ok) throw new Error('Could not load pending-reviews.json');
+      return r.json();
+    })
+  ]).then(function (results) {
+    _pendingReviewsSha = results[0] && results[0].sha ? results[0].sha : '';
+    mergePendingBlobReviews(results[1]);
+    return Array.isArray(results[1]) ? results[1].length : 0;
+  });
+}
+
 function fetchPendingBlobReviews() {
   return fetch('/.netlify/functions/pending-reviews', {
     headers: {
+      'X-GitHub-Token': GITHUB_TOKEN,
       'Authorization': 'Bearer ' + GITHUB_TOKEN,
       'Accept': 'application/json'
     }
@@ -1284,15 +1301,30 @@ function fetchPendingBlobReviews() {
     });
   }).then(function (result) {
     if (!result.ok) {
-      var msg = (result.data && result.data.error) || ('HTTP ' + result.status);
-      throw new Error('Pending customer reviews failed to load: ' + msg);
+      // Blobs queue is a backup — GitHub pending-reviews.json is primary.
+      console.warn('Blob pending queue unavailable', result.status, result.data);
+      return 0;
     }
     mergePendingBlobReviews(result.data.reviews);
-    var pendingCount = Array.isArray(result.data.reviews) ? result.data.reviews.length : 0;
-    if (pendingCount) {
-      showStatus(pendingCount + ' customer review' + (pendingCount === 1 ? '' : 's') + ' waiting for approval — open the Reviews tab.', 'success');
-    }
+    return Array.isArray(result.data.reviews) ? result.data.reviews.length : 0;
   });
+}
+
+function loadAllPendingReviews() {
+  return fetchPendingGithubReviews()
+    .catch(function (err) {
+      console.warn(err);
+      return 0;
+    })
+    .then(function (githubCount) {
+      return fetchPendingBlobReviews().then(function (blobCount) {
+        var pending = _reviews.filter(function (r) { return r.published === false; }).length;
+        if (pending) {
+          showStatus(pending + ' customer review' + (pending === 1 ? '' : 's') + ' waiting for approval — open the Reviews tab.', 'success');
+        }
+        return githubCount + blobCount;
+      });
+    });
 }
 
 function clearPendingBlobReviews(ids) {
@@ -1300,13 +1332,27 @@ function clearPendingBlobReviews(ids) {
   return fetch('/.netlify/functions/pending-reviews', {
     method: 'DELETE',
     headers: {
+      'X-GitHub-Token': GITHUB_TOKEN,
       'Authorization': 'Bearer ' + GITHUB_TOKEN,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ ids: ids })
   }).then(function (res) {
-    if (!res.ok) throw new Error('Could not clear pending review queue.');
-    return res.json();
+    if (!res.ok) console.warn('Could not clear blob pending review queue.');
+    return res.json().catch(function () { return {}; });
+  }).catch(function (err) {
+    console.warn(err);
+  });
+}
+
+function clearPendingGithubFile() {
+  return ghGetFileOptional('pending-reviews.json').then(function (meta) {
+    var sha = (meta && meta.sha) || _pendingReviewsSha;
+    return ghPutFile('pending-reviews.json', '[]\n', 'Clear pending customer reviews after publish', sha || undefined);
+  }).then(function (result) {
+    if (result && result.content && result.content.sha) _pendingReviewsSha = result.content.sha;
+  }).catch(function (err) {
+    console.warn('Could not clear pending-reviews.json', err);
   });
 }
 
@@ -1314,6 +1360,8 @@ function reviewsForGitHub() {
   return _reviews.map(function (r) {
     var copy = Object.assign({}, r);
     delete copy._blobPending;
+    delete copy.photoBase64;
+    delete copy.photoMime;
     return copy;
   });
 }
@@ -1523,7 +1571,9 @@ function pushReviewsToGitHub() {
     var result = ctx.result;
     if (!result.content) throw new Error('reviews.json: ' + JSON.stringify(result));
     if (result.content.sha) _reviewsSha = result.content.sha;
-    return clearPendingBlobReviews(ctx.blobIdsToClear).then(function () { return result; });
+    return clearPendingBlobReviews(ctx.blobIdsToClear)
+      .then(function () { return clearPendingGithubFile(); })
+      .then(function () { return result; });
   }).then(function () {
     _reviews.forEach(function (r) { delete r._blobPending; });
     _reviewDirty = false;
