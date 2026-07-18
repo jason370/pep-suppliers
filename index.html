@@ -330,14 +330,21 @@ section{scroll-margin-top:88px}
 .faq-list{display:grid;gap:10px;margin-top:22px}
 .reviews{background:#fff;padding:58px 0}
 .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
-.review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;box-shadow:var(--shadow-soft);display:flex;gap:16px;align-items:flex-start}
-.review-card-body{flex:1;min-width:0}
-.review-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid #fff;box-shadow:0 2px 8px rgba(7,24,51,.08)}
+.review-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:0;overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column}
+.review-card-body{flex:1;min-width:0;padding:20px 22px 22px}
+.review-photo-wrap{display:block;width:100%;background:#eef2f6;cursor:zoom-in;border:0;padding:0;margin:0}
+.review-photo{display:block;width:100%;max-height:320px;height:auto;object-fit:contain;background:#eef2f6}
+.review-photo-hint{display:block;padding:6px 12px 0;font-size:11px;color:#9aabb8;text-align:center}
 .review-stars{color:#e8a317;font-size:15px;letter-spacing:2px;margin-bottom:12px}
 .review-card blockquote{margin:0 0 16px;color:#2d4055;line-height:1.65;font-size:15px;font-weight:600}
 .review-meta{display:flex;flex-direction:column;gap:3px}
 .review-meta strong{color:var(--navy);font-size:14px;font-weight:900}
 .review-meta .review-role,.review-meta .review-location{color:var(--muted);font-size:13px}
+.review-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(7,24,51,.88);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.review-lightbox.show{display:flex}
+.review-lightbox img{max-width:min(960px,96vw);max-height:90vh;width:auto;height:auto;object-fit:contain;border-radius:8px;box-shadow:0 16px 48px rgba(0,0,0,.35)}
+.review-lightbox-close{position:absolute;top:16px;right:20px;background:transparent;border:0;color:#fff;font-size:32px;line-height:1;cursor:pointer;opacity:.85}
+.review-lightbox-close:hover{opacity:1}
 .reviews-submit{margin-top:28px;text-align:center;max-width:560px}
 .reviews-submit p{margin:0 0 16px;color:var(--muted);line-height:1.6;font-size:15px}
 .review-form-wrap{max-width:640px;margin:32px auto 0;text-align:left}
@@ -6937,6 +6944,40 @@ input.invalid{
   function reviewLocation(r) {
     return String(r.location || '').trim();
   }
+  function bindReviewPhotoLightbox(grid) {
+    if (!grid || grid._lightboxBound) return;
+    grid._lightboxBound = true;
+    var overlay = document.getElementById('review-lightbox');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'review-lightbox';
+      overlay.className = 'review-lightbox';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      overlay.setAttribute('aria-label', 'Review photo');
+      overlay.innerHTML = '<button type="button" class="review-lightbox-close" aria-label="Close">&times;</button><img alt="Full-size review photo">';
+      document.body.appendChild(overlay);
+    }
+    var img = overlay.querySelector('img');
+    function closeLightbox() {
+      overlay.classList.remove('show');
+      img.removeAttribute('src');
+    }
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay || e.target.classList.contains('review-lightbox-close')) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('show')) closeLightbox();
+    });
+    grid.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-review-photo]');
+      if (!btn || !grid.contains(btn)) return;
+      var src = btn.getAttribute('data-review-photo');
+      if (!src) return;
+      img.src = src;
+      overlay.classList.add('show');
+    });
+  }
   document.addEventListener('DOMContentLoaded', function () {
     var grid = document.getElementById('reviews-grid');
     if (grid) {
@@ -6964,7 +7005,11 @@ input.invalid{
           var role = reviewRole(r);
           var location = reviewLocation(r);
           var photo = String(r.photo || '').trim();
-          var photoHtml = photo ? '<img class="review-photo" src="' + esc(photo) + '" alt="">' : '';
+          var photoHtml = photo
+            ? '<button type="button" class="review-photo-wrap" data-review-photo="' + esc(photo) + '" aria-label="View full-size review photo">' +
+              '<img class="review-photo" src="' + esc(photo) + '" alt="Customer review photo">' +
+              '<span class="review-photo-hint">Click to enlarge</span></button>'
+            : '';
           return '<article class="review-card">' +
             photoHtml +
             '<div class="review-card-body">' +
@@ -6976,6 +7021,7 @@ input.invalid{
             (location ? '<span class="review-location">' + esc(location) + '</span>' : '') +
             '</div></div></article>';
         }).join('');
+        bindReviewPhotoLightbox(grid);
       })
       .catch(function () {
         grid.innerHTML = '<p class="muted" style="grid-column:1/-1;margin:0;color:#6b7f94">Could not load reviews.</p>';
