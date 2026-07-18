@@ -615,7 +615,12 @@ function ghGetFile(path) {
 
 function ghPutFile(path, text, message, sha) {
   var content = btoa(unescape(encodeURIComponent(text)));
-  return ghPutBinaryFile(path, content, message, sha);
+  return ghPutBinaryFile(path, content, message, sha).then(function(result) {
+    if (!result || (result.message && !result.content)) {
+      throw new Error((result && result.message) ? (path + ': ' + result.message) : ('Failed to write ' + path));
+    }
+    return result;
+  });
 }
 
 function ghPutBinaryFile(path, base64Content, message, sha) {
@@ -1257,7 +1262,7 @@ function prepareBlobReviewPhoto(r) {
     preview: 'data:' + mime + ';base64,' + r.photoBase64,
     path: path
   };
-  r.photo = path;
+  r.photo = '/' + path;
   delete r.photoBase64;
   delete r.photoMime;
 }
@@ -1418,30 +1423,53 @@ function onReviewPhotoSelected(index, input) {
 function uploadPendingReviewPhotos() {
   var ids = Object.keys(_pendingReviewPhotos);
   if (!ids.length) return Promise.resolve();
+  var failed = [];
   return ids.reduce(function(chain, id) {
     return chain.then(function() {
       var p = _pendingReviewPhotos[id];
       return ghGetFileOptional(p.path).then(function(meta) {
         return ghPutBinaryFile(p.path, p.base64, 'Add review photo ' + id, meta.sha || undefined);
       }).then(function(result) {
-        if (result.message && !result.content) throw new Error('Photo upload failed: ' + JSON.stringify(result));
+        if (result.message && !result.content) {
+          failed.push(id);
+          console.warn('Photo upload failed for ' + id, result);
+          return;
+        }
+        var review = _reviews.find(function(r) { return r.id === id; });
+        if (review) review.photo = '/' + p.path;
+      }).catch(function(err) {
+        failed.push(id);
+        console.warn('Photo upload failed for ' + id, err);
       });
     });
   }, Promise.resolve()).then(function() {
-    _reviews.forEach(function(r) {
-      if (_pendingReviewPhotos[r.id]) r.photo = '/' + _pendingReviewPhotos[r.id].path;
+    failed.forEach(function(id) {
+      var review = _reviews.find(function(r) { return r.id === id; });
+      if (review) delete review.photo;
+      delete _pendingReviewPhotos[id];
     });
-    _pendingReviewPhotos = {};
+    ids.forEach(function(id) {
+      if (failed.indexOf(id) < 0) delete _pendingReviewPhotos[id];
+    });
+    if (failed.length) {
+      showStatus('Published without ' + failed.length + ' photo' + (failed.length === 1 ? '' : 's') + ' (upload failed).', 'error');
+    }
   });
 }
 
 function toggleReviewPublished(index) {
   var r = _reviews[index];
   if (!r) return;
-  r.published = r.published === false;
+  var publishing = r.published === false;
+  r.published = publishing;
   markReviewDirty();
   renderReviewsList();
-  showStatus(r.published ? 'Review marked published — Push to Site.' : 'Review unpublished — Push to Site.', 'success');
+  if (publishing) {
+    showStatus('Publishing review to site…', 'loading');
+    pushReviewsToGitHub();
+    return;
+  }
+  showStatus('Review unpublished — click Push to Site to update the homepage.', 'success');
 }
 
 function renderReviewsList() {
@@ -1480,7 +1508,7 @@ function renderReviewsList() {
       (reviewRole(r) ? '<br><span>' + esc(reviewRole(r)) + '</span>' : '') +
       (r.location ? '<br><span>' + esc(r.location) + '</span>' : '') + submitted + '</div>' +
       '<div class="actions">' +
-        '<button type="button" class="btn btn-primary" style="padding:4px 10px;font-size:12px" onclick="toggleReviewPublished(' + index + ')">' + (r.published !== false ? 'Unpublish' : 'Publish') + '</button>' +
+        '<button type="button" class="btn btn-primary" style="padding:4px 10px;font-size:12px" onclick="toggleReviewPublished(' + index + ')">' + (r.published !== false ? 'Unpublish' : 'Publish to site') + '</button>' +
         '<button type="button" class="btn btn-secondary" style="padding:4px 10px;font-size:12px" onclick="editReview(' + index + ')">Edit</button>' +
         '<button type="button" class="btn btn-danger" style="padding:4px 10px;font-size:12px" onclick="deleteReview(' + index + ')">Delete</button>' +
       '</div></div>';
@@ -1571,11 +1599,15 @@ function pushReviewsToGitHub() {
   .then(function() {
     var blobIdsToClear = _reviews.filter(function (r) { return r && r._blobPending; }).map(function (r) { return r.id; });
     return ghGetFile('reviews.json').then(function (meta) {
+      if (!meta || !meta.sha) {
+        throw new Error('Could not read reviews.json from GitHub. Check your token permissions (Contents: Read and Write).');
+      }
       return { meta: meta, blobIdsToClear: blobIdsToClear };
     });
   }).then(function (ctx) {
     var sha = ctx.meta.sha || _reviewsSha;
-    return ghPutFile('reviews.json', JSON.stringify(reviewsForGitHub(), null, 2) + '\n', 'Update reviews from pricing admin', sha)
+    var payload = JSON.stringify(reviewsForGitHub(), null, 2) + '\n';
+    return ghPutFile('reviews.json', payload, 'Update reviews from pricing admin', sha)
       .then(function (result) { return { result: result, blobIdsToClear: ctx.blobIdsToClear }; });
   }).then(function (ctx) {
     var result = ctx.result;
@@ -1592,7 +1624,7 @@ function pushReviewsToGitHub() {
     showStatus('✅ Reviews pushed! Homepage updates in ~30 seconds.', 'success');
     document.getElementById('push-btn').disabled = false;
   }).catch(function (e) {
-    showStatus('❌ Error: ' + e.message, 'error');
+    showStatus('❌ Error: ' + (e && e.message ? e.message : e), 'error');
     document.getElementById('push-btn').disabled = false;
   });
 }
