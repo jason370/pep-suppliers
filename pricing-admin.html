@@ -1217,7 +1217,18 @@ function setReviewStars(index, n) {
   var r = _reviews[index];
   if (!r) return;
   r.stars = paintStarPicker('review-stars-' + index, n);
+  r.updatedAt = new Date().toISOString();
   markReviewDirty();
+  showStatus('Saving star rating…', 'loading');
+  syncReviewsLive({ id: r.id, syncAll: false })
+    .then(function (data) {
+      _reviewDirty = false;
+      updatePushBarForTab();
+      showStatus(data.message || 'Star rating saved to the site.', 'success');
+    })
+    .catch(function (err) {
+      showStatus('❌ ' + (err && err.message ? err.message : err), 'error');
+    });
 }
 
 function reviewStarsPickerHtml(index, stars) {
@@ -1462,18 +1473,19 @@ function toggleReviewPublished(index) {
   if (!r) return;
   var publishing = r.published === false;
   r.published = publishing;
+  r.updatedAt = new Date().toISOString();
   markReviewDirty();
   renderReviewsList();
-  if (publishing) {
-    showStatus('Publishing review to site…', 'loading');
-    publishReviewLive(r).then(function () {
-      return pushReviewsToGitHub();
-    }).catch(function (err) {
+  showStatus(publishing ? 'Publishing review to site…' : 'Unpublishing review…', 'loading');
+  syncReviewsLive({ id: r.id, syncAll: false })
+    .then(function (data) {
+      _reviewDirty = false;
+      updatePushBarForTab();
+      showStatus(data.message || (publishing ? 'Review is live on the site.' : 'Review unpublished from the site.'), 'success');
+    })
+    .catch(function (err) {
       showStatus('❌ ' + (err && err.message ? err.message : err), 'error');
     });
-    return;
-  }
-  showStatus('Review unpublished — click Push to Site to update the homepage.', 'success');
 }
 
 function syncReviewsLive(options) {
@@ -1532,14 +1544,16 @@ function editReview(index) {
   delete r.detail;
   r.location = location.trim();
   r.published = confirm('Published on homepage? OK = yes, Cancel = hide');
+  r.updatedAt = new Date().toISOString();
   markReviewDirty();
   renderReviewsList();
   showStatus('Saving review changes to the site…', 'loading');
+  // Sync this review into live Blobs immediately (homepage reads Blobs over reviews.json).
   syncReviewsLive({ id: r.id, syncAll: false })
     .then(function (data) {
+      _reviewDirty = false;
+      updatePushBarForTab();
       showStatus(data.message || 'Review changes are live on the site.', 'success');
-      // Best-effort GitHub file push for backups / admin reload.
-      return pushReviewsToGitHub();
     })
     .catch(function (err) {
       showStatus('❌ ' + (err && err.message ? err.message : err), 'error');

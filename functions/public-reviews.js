@@ -22,7 +22,7 @@ function pendingStore(event) {
 
 function sanitizePublicReview(review) {
   if (!review || typeof review !== 'object') return null;
-  if (review.published !== true) return null;
+  if (review.published === false) return null;
   const out = {
     id: review.id,
     stars: review.stars,
@@ -32,6 +32,7 @@ function sanitizePublicReview(review) {
     location: review.location,
     published: true,
     submittedAt: review.submittedAt,
+    updatedAt: review.updatedAt,
     source: review.source || 'website',
   };
   if (review.photo) out.photo = review.photo;

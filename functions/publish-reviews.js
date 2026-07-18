@@ -132,6 +132,7 @@ async function upsertBlobReviews(store, reviews) {
       if (!next.source && existing.source) next.source = existing.source;
     }
     if (next.published === undefined) next.published = true;
+    next.updatedAt = next.updatedAt || new Date().toISOString();
     await store.setJSON(String(review.id), next);
     saved.push(String(review.id));
   }
