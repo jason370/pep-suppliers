@@ -1278,13 +1278,34 @@ function prepareBlobReviewPhoto(r) {
   delete r.photoMime;
 }
 
+function reviewStamp(r) {
+  return Date.parse((r && (r.updatedAt || r.submittedAt)) || 0) || 0;
+}
+
 function mergePendingBlobReviews(items) {
   (Array.isArray(items) ? items : []).forEach(function (r) {
     if (!r || !r.id) return;
-    if (_reviews.some(function (x) { return x.id === r.id; })) return;
     prepareBlobReviewPhoto(r);
-    r._blobPending = true;
     if (r.published === undefined) r.published = false;
+    r._blobPending = true;
+    var existingIndex = -1;
+    for (var i = 0; i < _reviews.length; i++) {
+      if (_reviews[i] && _reviews[i].id === r.id) {
+        existingIndex = i;
+        break;
+      }
+    }
+    if (existingIndex >= 0) {
+      var existing = _reviews[existingIndex];
+      // Live Blobs copy wins when it's newer or the file copy was never edited.
+      if (reviewStamp(r) >= reviewStamp(existing) || r.updatedAt || !existing.updatedAt) {
+        var merged = Object.assign({}, existing, r);
+        // Keep a usable photo path from whichever side has it.
+        if (!merged.photo && existing.photo) merged.photo = existing.photo;
+        _reviews[existingIndex] = merged;
+      }
+      return;
+    }
     _reviews.unshift(r);
   });
 }

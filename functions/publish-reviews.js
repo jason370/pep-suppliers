@@ -122,6 +122,17 @@ async function upsertBlobReviews(store, reviews) {
     if (!review || !review.id) continue;
     const existing = await store.get(String(review.id), { type: 'json' });
     const next = cleanReviewForStore(review);
+    const existingStamp = existing && typeof existing === 'object'
+      ? Date.parse(existing.updatedAt || existing.submittedAt || 0) || 0
+      : 0;
+    const nextStamp = Date.parse(next.updatedAt || next.submittedAt || 0) || 0;
+
+    // Never clobber a newer live Blobs edit with an older reviews.json/admin copy.
+    if (existing && typeof existing === 'object' && existingStamp > nextStamp) {
+      saved.push(String(review.id));
+      continue;
+    }
+
     if (existing && typeof existing === 'object') {
       if (!next.photoBase64 && existing.photoBase64) {
         next.photoBase64 = existing.photoBase64;
