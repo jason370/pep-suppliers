@@ -898,14 +898,17 @@ function loadData() {
     _reviewsSha = results[7].sha;
     _reviews = Array.isArray(results[8]) ? results[8] : [];
     _reviewDirty = false;
-    return fetchPendingBlobReviews();
+    return fetchPendingBlobReviews().catch(function (err) {
+      console.error(err);
+      showStatus(err.message || 'Could not load pending customer reviews.', 'error');
+    });
   })
   .then(function() {
     renderReviewsList();
     document.getElementById('login-screen').style.display = 'none';
     document.getElementById('admin-screen').style.display = 'block';
     document.getElementById('product-count').textContent = _products.length + ' US · ' + _chinaListRows.length + ' overseas kits';
-    hideStatus();
+    if (!_reviewDirty) hideStatus();
     renderTable();
     if (location.search.indexOf('tab=reviews') >= 0) setAdminTab('reviews');
   })
@@ -1269,13 +1272,26 @@ function mergePendingBlobReviews(items) {
 
 function fetchPendingBlobReviews() {
   return fetch('/.netlify/functions/pending-reviews', {
-    headers: { 'Authorization': 'token ' + GITHUB_TOKEN }
+    headers: {
+      'Authorization': 'Bearer ' + GITHUB_TOKEN,
+      'Accept': 'application/json'
+    }
   }).then(function (res) {
-    if (res.status === 401) return { reviews: [] };
-    if (!res.ok) throw new Error('Could not load pending customer reviews.');
-    return res.json();
-  }).then(function (data) {
-    mergePendingBlobReviews(data.reviews);
+    return res.json().then(function (data) {
+      return { ok: res.ok, status: res.status, data: data || {} };
+    }).catch(function () {
+      return { ok: res.ok, status: res.status, data: {} };
+    });
+  }).then(function (result) {
+    if (!result.ok) {
+      var msg = (result.data && result.data.error) || ('HTTP ' + result.status);
+      throw new Error('Pending customer reviews failed to load: ' + msg);
+    }
+    mergePendingBlobReviews(result.data.reviews);
+    var pendingCount = Array.isArray(result.data.reviews) ? result.data.reviews.length : 0;
+    if (pendingCount) {
+      showStatus(pendingCount + ' customer review' + (pendingCount === 1 ? '' : 's') + ' waiting for approval — open the Reviews tab.', 'success');
+    }
   });
 }
 
@@ -1284,7 +1300,7 @@ function clearPendingBlobReviews(ids) {
   return fetch('/.netlify/functions/pending-reviews', {
     method: 'DELETE',
     headers: {
-      'Authorization': 'token ' + GITHUB_TOKEN,
+      'Authorization': 'Bearer ' + GITHUB_TOKEN,
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ ids: ids })

@@ -1,4 +1,6 @@
-const { getStore } = require('@netlify/blobs');
+const { connectLambda, getStore } = require('@netlify/blobs');
+
+const REPO = 'jason370/pep-suppliers';
 
 const JSON_HEADERS = {
   'Content-Type': 'application/json',
@@ -24,7 +26,8 @@ function getBearerToken(event) {
 async function validateGithubToken(token) {
   if (!token) return false;
   try {
-    const res = await fetch('https://api.github.com/user', {
+    // Check repo access (works with fine-grained PATs). /user often fails for those tokens.
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/reviews.json?ref=main`, {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: 'application/vnd.github+json',
@@ -64,7 +67,7 @@ exports.handler = async function handler(event) {
 
   const token = getBearerToken(event);
   if (!(await validateGithubToken(token))) {
-    return jsonResponse(401, { error: 'Unauthorized' });
+    return jsonResponse(401, { error: 'Unauthorized — GitHub token could not read the repo.' });
   }
 
   if (event.httpMethod === 'GET') {
@@ -73,7 +76,10 @@ exports.handler = async function handler(event) {
       return jsonResponse(200, { reviews });
     } catch (err) {
       console.error('pending-reviews list failed', err);
-      return jsonResponse(502, { error: 'Could not load pending reviews.' });
+      return jsonResponse(502, {
+        error: 'Could not load pending reviews.',
+        detail: String(err && err.message ? err.message : err),
+      });
     }
   }
 
